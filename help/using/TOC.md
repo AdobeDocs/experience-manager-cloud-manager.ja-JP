@@ -5,7 +5,7 @@ archtype: administrator
 user-guide-title: Experience Manager Cloud Manager ヘルプ
 index: n
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 8031df1c1ce9d7fee4ef33de289c6952370b7589
 
 ---
 
@@ -40,7 +40,8 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
    + [通知](notifications.md)
    + [カスタムコードの品質ルール](custom-code-quality-rules.md)
 + リリースノート {#release-notes}
-   + [最新のリリースノート（2019.4.0）](release-notes-current.md)
+   + [最新のリリースノート（2019.5.0）](release-notes-current.md)
+   + [リリースノート（2019.4.0）](release-notes-2019-4-0.md)
    + [リリースノート（2019.3.0）](release-notes-2019-3-0.md)
    + [リリースノート（2019.2.0）](release-notes-2019-2-0.md)
    + [リリースノート（2019.1.0）](release-notes-2019-1-0.md)
@@ -49,4 +50,5 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
    + [リリースノート（2018.7.0）](release-notes-2018-7-0.md)
    + [リリースノート（2018.6.0）](release-notes-2018-6-0.md)
    + [リリースノート（2018.5.0）](release-notes-2018-5-0.md)
++ [その他のリソース](additional-resources.md)
 
