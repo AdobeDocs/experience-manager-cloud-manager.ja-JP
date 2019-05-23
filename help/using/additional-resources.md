@@ -6,7 +6,7 @@ seo-description: Adobe AEM Cloud Managerについて詳しくは、このペー�
 uuid: 9aa90a99-f049-422e-9e06-b00b843ed98b
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 translation-type: tm+mt
-source-git-commit: 8031df1c1ce9d7fee4ef33de289c6952370b7589
+source-git-commit: 7236e9d3bf5955509068757b34c81f0021db4270
 
 ---
 
@@ -23,8 +23,8 @@ Adobe [Experience Suite](https://expleague.azureedge.net/labs/L722/index.html) �
 
 ## ウェビナーシリーズ {#webinar-series}
 
-[アドビフォーラム] （https://forums.adobe.com/message/11061595)）に従って、Cloud Manager用に作成した追加の学習パスをウェビナーシリーズとして入手できます。
+[Adobeフォーラム](https://forums.adobe.com/message/11061595) に従って、Cloud Manager用に作成した追加の学習パスをウェビナーシリーズとして入手できます。
 
 ## デモビデオシリーズ {#demo-videos}
 
-エラーおよび成功シナリオの両方で、Cloud [ManagerのCI/CDパイプラインを設定および実行するビデオシリーズを含むAEM] （https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cloud-manager-cicd-pipeline-feature-video-use.html)）用に、Cloud ManagerのCI/CDパイプラインを使用してフォローします。
+ビデオシリーズを含むAEM用のCI/CDパイプラインの [使用については、失敗および成功シナリオの両方で、Cloud](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cloud-manager-cicd-pipeline-feature-video-use.html)ManagerのCI/CDパイプラインの設定、設定および実行のビデオシリーズを参照してください。
