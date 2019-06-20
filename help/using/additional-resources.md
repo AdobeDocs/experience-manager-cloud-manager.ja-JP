@@ -6,25 +6,12 @@ seo-description: Adobe AEM Cloud Managerについて詳しくは、このペー�
 uuid: 9aa90a99-f049-422e-9e06-b00b843ed98b
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 translation-type: tm+mt
-source-git-commit: 7236e9d3bf5955509068757b34c81f0021db4270
+source-git-commit: e3e7fbd9c44c69e5bcdd92e4099c764aa6a99fe4
 
 ---
 
 
-# Cloud Managerへ [!UICONTROL の追加リソース]{#additional-resources-to-cloud-manager}
+# Additional Resources to [!UICONTROL Cloud Manager]{#additional-resources-to-cloud-manager}
 
-## 概要 {#introduction}
+Cloud Manager に関するサポートを受けるには、最初に Adobe Managed Services カスタマーサクセスエンジニア（CSE）に問い合わせる必要があります。担当の CSE は、お客様の問題を支援できるかどうか、カスタマーケアを使用してサポートチケットを作成する必要があるかどうかをお知らせします。You can access [Enterprise Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) to create Support tickets. カスタマーケアのサポートチケットの作成について詳しくは、&quot;AEMサポートポータルへのアクセス」を参照してください。
 
-ここでは、Adobe Managed Cloud Servicesの一部として [!UICONTROL 、Cloud Manager]のその他の役に立つリソースについて説明します。
-
-## Experience League {#experience-league-resource}
-
-Adobe [Experience Suite](https://expleague.azureedge.net/labs/L722/index.html) に従って、Cloud Managerのチュートリアルの概要と統合されたチュートリアルを利用できます。
-
-## ウェビナーシリーズ {#webinar-series}
-
-[Adobeフォーラム](https://forums.adobe.com/message/11061595) に従って、Cloud Manager用に作成した追加の学習パスをウェビナーシリーズとして入手できます。
-
-## デモビデオシリーズ {#demo-videos}
-
-ビデオシリーズを含むAEM用のCI/CDパイプラインの [使用については、失敗および成功シナリオの両方で、Cloud](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cloud-manager-cicd-pipeline-feature-video-use.html)ManagerのCI/CDパイプラインの設定、設定および実行のビデオシリーズを参照してください。
