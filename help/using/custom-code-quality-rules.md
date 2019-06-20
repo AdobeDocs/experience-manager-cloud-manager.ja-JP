@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: f8cea9d52ebb01d7f5291d4dfcd82011da8dacc2
+source-git-commit: f76b8e6a036ab920f11fb913d3ad29818f1e153f
 
 ---
 
@@ -554,3 +554,78 @@ public void doThis(Resource resource) {
   return resource.isResourceType("foundation/components/text");
 }
 ```
+
+
+## OakPAL Content Rules {#oakpal-rules}
+
+Cloud Managerによって実行されたAakPalチェックの下にあるを確認してください。
+
+>[!NOTE]
+>OakpalはAEMパートナー（2019年のAEM Rockstar North Americaの推奨結果）で開発されたフレームワークで、スタンドアロンのOakリポジトリを使用してコンテンツパッケージを検証します。
+
+### Customer Packages Should Not Create or Modify Nodes Under /libs {#oakpal-customer-package}
+
+**キー**:bannedPaths
+
+**タイプ**：バグ
+
+**重大度**:ブロック
+
+**最初の対象バージョン**：バージョン 2019.6.0
+
+AEMコンテンツリポジトリ内の/content/help/jp/digital- publishing- suite/help/content- repository. htmlAEMコンテンツリポジトリのコンテンツツリーをお客様によって読み取り専用と見なすことをお勧めします。*/libs* のノードとプロパティを変更すると、メジャーアップデートとマイナーアップデートのリスクが大きくなります。*/libs* に対する変更は、アドビによる公式チャネルからのみ行う必要があります。
+
+### Packages Should Not Contain Duplicate OSGi Configurations {#oakpal-package-osgi}
+
+**キー**:duplicateOSGIConfigurationations
+
+**タイプ**：バグ
+
+**深刻度**：重大
+
+**最初の対象バージョン**：バージョン 2019.6.0
+
+複雑なプロジェクトで発生する一般的な問題は、同じOSGiコンポーネントが複数回設定されている場合です。これにより、どの設定を実行できるかに関して曖昧なものが作成されます。このルールは&quot;runmode- aware&quot;です。同じコンポーネントが同じ実行モードで複数回設定されている（または実行モードの組み合わせ）問題のみが特定されます。
+
+#### Non Compliant Code {#non-compliant-code-osgi}
+
+```+ apps
+  + projectA
+    + config
+      + com.day.cq.commons.impl.ExternalizerImpl
+  + projectB
+    + config
+      + com.day.cq.commons.impl.ExternalizerImpl
+```
+
+#### 準拠しているコード {#compliant-code-osgi}
+
+```+ apps
+  + shared-config
+    + config
+      + com.day.cq.commons.impl.ExternalizerImpl
+```
+
+### Config and Install Folders Should Only Contain OSGi Nodes {#oakpal-config-install}
+
+**キー**:configAndInstallshouldOnlyContainsRegionodes
+
+**タイプ**：バグ
+
+**深刻度**：重大
+
+**最初の対象バージョン**：バージョン 2019.6.0
+
+For security reasons, paths containing */config/ and /install/* are only readable by administrative users in AEM and should be used only for OSGi configuration and OSGi bundles. これらのセグメントを含むパス下に他のタイプのコンテンツを配置すると、管理者ユーザーと非管理者ユーザー間で意図せずに異なるアプリケーション行動が発生します。
+
+### Packages Should Not Overlap {#oakpal-no-overlap}
+
+**キー**:packageOverlays
+
+**タイプ**：バグ
+
+**深刻度**：重大
+
+**最初の対象バージョン**：バージョン 2019.6.0
+
+*パッケージに重複するOSGi設定* に類似していますが、同じノードパスが複数の個別コンテンツパッケージによって書き込まれる複雑なプロジェクトでは、これが共通の問題です。コンテンツパッケージの依存関係を使用して一貫性のある結果を得ることができますが、完全に重複しないようにすることをお勧めします。
