@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: f8cea9d52ebb01d7f5291d4dfcd82011da8dacc2
+source-git-commit: 4c1c6786db9b8972f9315bd2f12fc1752881492f
 
 ---
 
@@ -36,7 +36,7 @@ source-git-commit: f8cea9d52ebb01d7f5291d4dfcd82011da8dacc2
 
 ## コード品質テスト {#code-quality-testing}
 
-パイプラインの一環として、ソースコードをスキャンし、デプロイメントが特定の品質条件を満たしているかどうかを確認します（現在は SonarQube で実装されています）。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。テスト条件の評価の概要を次の表に示します。
+パイプラインの一環として、ソースコードをスキャンし、デプロイメントが特定の品質条件を満たしているかどうかを確認します現在、これはSonarquoとコンテンツパッケージレベルの調査においてOakPalを使用して実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。テスト条件の評価の概要を次の表に示します。
 
 | 名前 | 定義 | カテゴリ | 不合格のしきい値 |
 |--- |--- |--- |--- |
@@ -53,8 +53,7 @@ source-git-commit: f8cea9d52ebb01d7f5291d4dfcd82011da8dacc2
 >
 >[詳細な定義については、指標の定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) を参照してください。
 
-
-ここにルールのリストをダウンロードできます。 [code-quality-rules.xlsx](assets/code-quality-rules.xlsx)
+You can download the list of rules here [code-quality-rules.xlsx](/help/using/assets/code-quality-rules.xlsx)
 
 >[!NOTE]
 >
