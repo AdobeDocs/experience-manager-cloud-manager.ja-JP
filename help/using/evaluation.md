@@ -8,16 +8,16 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 47331787d45fe68144cb90c4b907560fe0079b3c
+source-git-commit: 2fda16bb4826171c993ec07c7ff3e38d1675b9f5
 
 ---
 
 
-# Evaulation Phase {#evaluation}
+# Evaluation Phase {#evaluation}
 
-「アップデートを開始」をクリックすると、製品アップデートウィザードの最初のフェーズが評価フェーズになります。この段階では、ウィザードから直接アクセスできるパターン検出機能を使用して、アップグレードの複雑さを評価できます。この手順の最後に、評価レポートにアクセスできます。
+Once you click **[!UICONTROL Start Update]**, the first phase in Product Update Wizard is the Evaluation phase. この段階では、ウィザードから直接アクセスできるパターン検出機能を使用して、アップグレードの複雑さを評価できます。この手順の最後に、評価レポートにアクセスできます。
 
-生成されたレポートでは、使用中のパターンを検出して、アップグレード可能性の作成者インスタンスを確認できます。
+生成されたレポートでは、次のパターンを検出して、アップグレード可能性の作成者インスタンスを確認できます。
 
 * 特定のルールに違反し、アップグレードに影響または上書きされる領域で実行されます。
 
@@ -33,11 +33,15 @@ source-git-commit: 47331787d45fe68144cb90c4b907560fe0079b3c
 
 評価基準を実行するには、次の手順に従います。
 
-1. Select [!UICONTROL Run evaluation] to run the pattern detector. パターン検出は任意の環境で実行できます。ただし、検出率を向上させ、ビジネス重要インスタンスの低下を防ぐために、Cloud Managerは作成者インスタンス上のステージング環境で実行します。
+1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector. パターン検出は任意の環境で実行できます。ただし、検出率を向上させ、ビジネス重要インスタンスの低下を防ぐために、Cloud Managerは作成者インスタンス上のステージング環境で実行します。
+
+![](assets/Run-Evaluation.png)
 
 1. ウィザードによってアクションのステータスが通知されます。You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
 
 Once the report is generated, you can select [!UICONTROL Download] to save a copy of the evaluation report.
+
+![](assets/Evaluation-1.png)
 
 >[!NOTE]
 >The other four phases succeeding **Evaluation** namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon and are not available in the current release.
