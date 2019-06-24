@@ -8,22 +8,22 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 2ac4a59f1af46cfb1cae8cda3c24e217620cec70
+source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
 
 ---
 
 
-# introduction {#introduction}
+# Overview to Product Update Wizard {#overview-product-update-wizard}
 
 製品アップデートウィザードは、最新のAdobe Experience Manager（AEM）6.5にアップグレードしているCloud Managerユーザー向けのガイド付きの手順です。これにより、エンドツーエンドのプロセスを合理化し、Cloud ManagerのCI/CDフレームワークおよび組み込み自動テストを使用してAEMベストプラクティスを遵守することができます。
 
 このウィザードには、AEM製品のアップデート中にユーザーをガイドする5つのフェーズが含まれています。5つのフェーズは次のとおりです。
 
-* 評価
-* 是正策
-* 実行
-* 検証
-* 完了
+* **評価**
+* **是正策**
+* **実行**
+* **検証**
+* **完了**
 
 >[!NOTE]
 >The current release of Product Update feature in Cloud Manager supports the **Evaluation** phase only. **「修正」**、 **「実行」**、 **「検証」** および「 **完了」** の4段階は、近日中に提供されます。
