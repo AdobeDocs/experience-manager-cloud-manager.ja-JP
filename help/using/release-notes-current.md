@@ -4,7 +4,7 @@ seo-title: AEM Cloud Manager リリースノート（2019.6.0）
 description: このページでは、Cloud Manager リリース 2019.6.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2019.6.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 75563d3f4b2a27d943c052993c97d830338ead9c
+source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
 
 ---
 
@@ -14,12 +14,12 @@ source-git-commit: 75563d3f4b2a27d943c052993c97d830338ead9c
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン2019.6.0のリリース日です。
+[!UICONTROL Cloud Manager] バージョン2019.6.0のリリース日は、2019年6月21日です。
 
 ## 最新情報 {#whats-new}
 
-* AEMアップデートを正常に実行できるようにするための新しい製品アップデートウィザード。（製品アップデートウィザードページへのリンク）
-* コンテンツ構造を調べるコード品質ルール。（カスタムコード品質ルールページへのリンク）
+* AEMアップデートを正常に実行できるようにするための新しい製品アップデートウィザード。Refer to [Product Update Wizard](overview-productupdate-wizard.md) to learn more.
+* コンテンツ構造を調べるコード品質ルール。Refer to [Custom Code Quality Rules](custom-code-quality-rules.md)for more information.
 * gitプッシュの最大サイズが1GBに増加しました。
 
 ## バグ修正 {#bug-fixes}
@@ -29,4 +29,4 @@ source-git-commit: 75563d3f4b2a27d943c052993c97d830338ead9c
 ## 既知の問題 {#known-issues}
 
 * コード品質のCSVダウンロードは、重大度に従って並べ替えられるとは限りません。
-* OSGi設定がconfigフォルダーの下のネストフォルダーに配置されている場合、False陽性はconfigAndInstallshouldOnlyContainsIdentityodesルールによってレポートされることがあります。
+* False positives may be reported by the *ConfigAndInstallShouldOnlyContainOsgiNodes* rule if OSGi configurations are placed in a nested folder under a config folder.
