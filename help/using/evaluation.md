@@ -8,21 +8,20 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 2ac4a59f1af46cfb1cae8cda3c24e217620cec70
+source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
 
 ---
 
 
 # Evaluation Phase {#evaluation}
 
-Once you click **[!UICONTROL Start Update]**, the first phase in Product Update Wizard is the Evaluation phase. この段階では、ウィザードから直接アクセスできるパターン検出機能を使用して、アップグレードの複雑さを評価できます。この手順の最後に、評価レポートにアクセスできます。
+Once you click **[!UICONTROL Start Update]**, the first phase in Product Update wizard is the **[!UICONTROL Evaluation]** phase. この段階では、ウィザードから直接アクセスできるパターン検出機能を使用して、アップグレードの複雑さを評価できます。この手順の最後に、評価レポートにアクセスできます。
 
 生成されたレポートでは、次のパターンを検出して、アップグレード可能性の作成者インスタンスを確認できます。
 
 * 特定のルールに違反し、アップグレードに影響または上書きされる領域で実行されます。
 
 * AEM6. xの機能または新しいAEMで下位互換性のないAPIを使用して、アップグレード後に中断する可能性がある可能性があります。
-
 
 これは、Adobe Experience Manager（AEM）6.5へのアップグレードに関与する開発作業の査定として機能します。
 
@@ -33,7 +32,7 @@ Once you click **[!UICONTROL Start Update]**, the first phase in Product Update 
 
 評価基準を実行するには、次の手順に従います。
 
-1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector.
+1. Click on **[!UICONTROL Run Evaluation]** to run the pattern detector.
 
    >[!NOTE]
    >パターン検出は任意の環境で実行できます。ただし、検出率を向上させ、ビジネス重要インスタンスの低下を防ぐために、Cloud Managerは作成者インスタンス上のステージング環境で実行します。
