@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 2fda16bb4826171c993ec07c7ff3e38d1675b9f5
+source-git-commit: 2ac4a59f1af46cfb1cae8cda3c24e217620cec70
 
 ---
 
@@ -33,15 +33,22 @@ Once you click **[!UICONTROL Start Update]**, the first phase in Product Update 
 
 評価基準を実行するには、次の手順に従います。
 
-1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector. パターン検出は任意の環境で実行できます。ただし、検出率を向上させ、ビジネス重要インスタンスの低下を防ぐために、Cloud Managerは作成者インスタンス上のステージング環境で実行します。
+1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector.
 
-![](assets/Run-Evaluation.png)
+   >[!NOTE]
+   >パターン検出は任意の環境で実行できます。ただし、検出率を向上させ、ビジネス重要インスタンスの低下を防ぐために、Cloud Managerは作成者インスタンス上のステージング環境で実行します。
+
+   ![](assets/Run-Evaluation.png)
 
 1. ウィザードによってアクションのステータスが通知されます。You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
 
-Once the report is generated, you can select [!UICONTROL Download] to save a copy of the evaluation report.
+   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy of the evaluation report.
 
-![](assets/Evaluation-1.png)
+   ![](assets/Evaluation-1.png)
+
+   Additionlyでは、更新されたパルス通知をステータス更新として表示できます。
+
+   ![](assets/Evaluation-pulse-notification.png)
 
 >[!NOTE]
 >The other four phases succeeding **Evaluation** namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon and are not available in the current release.
