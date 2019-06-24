@@ -4,7 +4,7 @@ seo-title: AEM Cloud Manager リリースノート（2019.6.0）
 description: このページでは、Cloud Manager リリース 2019.6.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2019.6.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
+source-git-commit: ef6a0a0bdc22e37357304823d6f0a70d84917fa4
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
 ## 最新情報 {#whats-new}
 
 * AEMアップデートを正常に実行できるようにするための新しい製品アップデートウィザード。Refer to [Product Update Wizard](overview-productupdate-wizard.md) to learn more.
-* コンテンツ構造を調べるコード品質ルール。Refer to [Custom Code Quality Rules](custom-code-quality-rules.md)for more information.
+* コンテンツ構造を調べるコード品質ルール。Refer to [Custom Code Quality Rules](custom-code-quality-rules.md) for more information.
 * gitプッシュの最大サイズが1GBに増加しました。
 
 ## バグ修正 {#bug-fixes}
@@ -29,4 +29,4 @@ source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
 ## 既知の問題 {#known-issues}
 
 * コード品質のCSVダウンロードは、重大度に従って並べ替えられるとは限りません。
-* False positives may be reported by the *ConfigAndInstallShouldOnlyContainOsgiNodes* rule if OSGi configurations are placed in a nested folder under a config folder.
+* False positives may be reported by the *ConfigAndInstallShouldOnlyContainOsgiNodes* rule if OSGi configurations are placed in a nested folder under a *config* folder.
