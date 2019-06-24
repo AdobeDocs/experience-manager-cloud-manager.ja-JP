@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: ea5bf33dc67c9ce174801f6d905abfc4a21886a2
+source-git-commit: e8db535b09f0b273de2d3908a85176f38d307c80
 
 ---
 
@@ -57,7 +57,7 @@ source-git-commit: ea5bf33dc67c9ce174801f6d905abfc4a21886a2
 >
 >[詳細な定義については、指標の定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) を参照してください。
 
-You can download the list of rules here [code-quality-rules.xlsx](/help/using/assets/code-quality-rules.xlsx)
+You can download the list of rules here [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx)
 
 >[!NOTE]
 >
