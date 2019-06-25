@@ -1,6 +1,6 @@
 ---
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
-translation-type: tm+mt
+translation-type: ht
 
 ---
 # 投稿
@@ -11,7 +11,7 @@ translation-type: tm+mt
 
 ## 行動規範
 
-このプロジェクトは、[アドビ行動規範](code-of-conduct.md)に従っています。プロジェクトに参加する際には、この行動規範を順守することが求められます。許容できない行為は [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com) までご報告ください。
+このプロジェクトは、[アドビ行動規範](code-of-conduct.md)に従っています。プロジェクトに参加する際には、この行動規範を遵守することが求められます。許容できない行為は [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com) までご報告ください。
 
 ## 質問がある場合
 
@@ -19,11 +19,11 @@ translation-type: tm+mt
 
 ## 投稿者使用許諾契約
 
-このプロジェクトへの第三者によるすべての投稿には、署名済みの投稿者使用許諾契約が含まれている必要があります。これにより、アドビはお客様の投稿をプロジェクトの一部として再配布できるようになります。[CLAに署名](http://opensource.adobe.com/cla.html)します。アドビの CLA は一度提出するだけでよいので、以前に提出したことがある場合は、次へ進むことができます。
+このプロジェクトへの第三者によるすべての投稿には、署名済みの投稿者使用許諾契約が含まれている必要があります。これにより、アドビはお客様の投稿をプロジェクトの一部として再配布できるようになります。[CLA に署名](http://opensource.adobe.com/cla.html)してください。アドビの CLA は一度提出するだけでよいので、以前に提出したことがある場合は、次へ進むことができます。
 
 ## コードのレビュー
 
-提出はすべて、プル要求の形でおこなわれ、プロジェクトコミッターのレビューを受ける必要があります。プル要求の送信の詳細については [、GitHubのプルリクエストのドキュメント](https://help.github.com/articles/about-pull-requests/)を読みます。
+提出はすべて、プル要求の形でおこなわれ、プロジェクトコミッターのレビューを受ける必要があります。プル要求の送信について詳しくは、[GitHub のプル要求に関するドキュメント](https://help.github.com/articles/about-pull-requests/)を参照してください。
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
@@ -36,4 +36,4 @@ submitting a pull request!
 
 ## セキュリティ上の問題
 
-セキュリティ上の問題は、この問題トラッカーで報告しないでください。代わりに、セキュリティ専門家に問題を [報告します](https://helpx.adobe.com/security/alertus.html)
+セキュリティ上の問題は、この問題トラッカーで報告しないでください。代わりに、[アドビのセキュリティエキスパートに問題を報告](https://helpx.adobe.com/jp/security/alertus.html)してください。
