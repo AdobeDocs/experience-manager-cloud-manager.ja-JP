@@ -8,7 +8,7 @@ contentOwner: jsyal
 topic-tags: release-notes
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -18,7 +18,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 次の節では、**自動スケーリング機能を提供する [!UICONTROL Cloud Manager] 2018.7.0 リリースの概要を説明します。
 
-**自動スケーリング**は、実稼働環境での`Dispatcher/Publish`セグメントの水平方向スケールアウトによって有効になり、負荷、ボリューム、アクセスなどの定義済み監視対象指標の増加に対応できます。
+**自動スケーリング** は、実稼動環境での`Dispatcher/Publish`セグメントの水平方向スケールアウトによって有効になり、負荷、ボリューム、アクセスなどの定義済み監視対象指標の増加に対応できます。
 
 ## リリース日 {#release-date}
 
@@ -26,7 +26,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ## 最新情報 {#what-s-new}
 
-* **プロビジョニング** - [!UICONTROL Cloud Manager] では、ディスパッチャー／パブリッシュセグメントを対象とする水平方向スケールアウトによって顧客プログラムの実稼働環境を自動スケーリングできるようになりました。UI の新機能は、顧客プログラムで自動スケーリングが有効になっている場合にプログラム設定に表示される「プロビジョニング」セクションです。詳しくは、[プログラムの設定](setting-up-program.md)を参照してください。
+* **プロビジョニング** - [!UICONTROL Cloud Manager] では、ディスパッチャー／パブリッシュセグメントを対象とする水平方向スケールアウトによって顧客プログラムの実稼動環境を自動スケーリングできるようになりました。UI の新機能は、顧客プログラムで自動スケーリングが有効になっている場合にプログラム設定に表示される「プロビジョニング」セクションです。詳しくは、[プログラムの設定](setting-up-program.md)を参照してください。
 
 * **環境** - 実稼動環境とステージング環境の詳細ビューに加えて、各環境に関連付けられているノードのサイズ、ストレージ、地域およびステータスを表示できるようになりました。詳しくは、[環境の管理](manage-your-environment.md)を参照してください。
 
