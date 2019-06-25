@@ -6,7 +6,7 @@ seo-description: Adobe AEM Cloud Manager の設定とユーザーインターフ
 uuid: 65d795f9-aa97-4816-b66b-03b5ae961f47
 contentOwner: jsyal
 discoiquuid: 03241b88-8d28-401b-aa42-17ead6183cd8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -43,13 +43,13 @@ Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファ�
 >
 >Adobe Admin Console では、組織全体にわたるアドビ製品の使用権限を一元的に管理できます。
 >
->Adobe Admin Consoleについて詳しくは、管理コンソールの [マニュアル](https://helpx.adobe.com/enterprise/using/admin-console.html)を参照してください。
+>Adobe Admin Console について詳しくは、[Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) のドキュメントを参照してください。
 
 | **[!UICONTROL Cloud Manager]のロール** | **説明** |
 |---|---|
-| ビジネスオーナー | KPI の定義、実稼働デプロイメントの承認、重大な 3 層エラーのオーバーライドを担当します。 |
+| ビジネスオーナー | KPI の定義、実稼動デプロイメントの承認、重大な 3 層エラーのオーバーライドを担当します。 |
 | プログラムマネージャー | [!UICONTROL Cloud Manager] を使用して、チームの設定、ステータスのレビュー、KPI の確認をおこないます。重大な 3 層エラーを承認することができます。 |
-| デプロイメントマネージャー | デプロイメント作業を管理します。[!UICONTROL Cloud Manager] を使用して、ステージング環境または実稼働環境へのデプロイメントを実行します。重大な 3 層エラーを承認することができます。Git にアクセスできます。 |
+| デプロイメントマネージャー | デプロイメント作業を管理します。[!UICONTROL Cloud Manager] を使用して、ステージング環境または実稼動環境へのデプロイメントを実行します。重大な 3 層エラーを承認することができます。Git にアクセスできます。 |
 | デベロッパー | カスタムアプリケーションコードを開発およびテストします。主に [!UICONTROL Cloud Manager] を使用してステータスを確認します。Git にコミットする権限があります。 |
 | カスタマーサクセスエンジニア | AMS のお客様のカスタマーサクセスを全般的にサポートします。CSE 管理が必要なデプロイメントを実行するために、[!UICONTROL Cloud Manager] を操作します。 |
 | コンテンツ作成者 | 通常は、[!UICONTROL Cloud Manager] を操作しません。（[!UICONTROL Experience Cloud] からナビゲートした）[!UICONTROL Cloud Manager] プログラムスイッチャーを使用して、AEM にアクセスできます。 |
@@ -90,13 +90,13 @@ Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファ�
 
 新しい AEM プロジェクトの場合は、既存のプロジェクトを活用し、[!UICONTROL Cloud Manager] を操作します。
 
-詳しくは、[AEM 6.4 のユーザーガイド](https://chl-author./content/help/en/experience-manager/6-4/sites/deploying/using/deploy.html). 詳しくは、 [AEMリソース](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) を参照してください。
+詳しくは、[AEM 6.4 のユーザーガイド](https://chl-author./content/help/en/experience-manager/6-4/sites/deploying/using/deploy.html)を参照してください。さらに、[AEM の関連資料](https://www.adobe.com/jp/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&amp;mv=other)も参照してください。
 
 * **既存の AEM プロジェクト**：
 
 既存の AEM プロジェクトは、プロジェクト設定ルールに従っている必要があります。既存の AEM インストールをアップグレードして、AEM 6.4 で提供されている新機能および機能強化を入手し、[!UICONTROL Cloud Manager] の使用を開始することができます。これらの条件は、最小限の変更で達成できます。サポートについては、カスタマーサクセスエンジニア（CSE）にお問い合わせください。
 
-AEMインスタンスの6.4へのアップグレードに関する詳細は、&quot;AEM6.4へのアップグレード」を参照 [](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/upgrade.html)してください。
+AEM インスタンスの 6.4 へのアップグレードについて詳しくは、[AEM 6.4 へのアップグレード](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/upgrade.html)を参照してください。
 
 ### リポジトリの設定 {#setting-up-repository}
 
@@ -106,20 +106,20 @@ AEMインスタンスの6.4へのアップグレードに関する詳細は、&q
 
 ## Dispatcher の設定 {#dispatcher-configurations}
 
-[!UICONTROL Cloud Manager] では、通常の AEM コンテンツパッケージに加えて、Web サーバーとディスパッチャーの設定ファイルも Git リポジトリに格納されていると仮定して、それらの設定ファイルをデプロイできます。
+[!UICONTROL Cloud Manager] では、Web サーバーとディスパッチャーの設定ファイルが、通常の AEM コンテンツパッケージに加え、Git リポジトリに格納されていると仮定して、それらの設定ファイルをデプロイできます。
 
 この機能を活用するために、Maven ビルドでは、***conf*** と ***conf.d*** の 2 つのディレクトリを含んだ zip ファイルが生成されます。
 
-ディスパッチャーインスタンスにデプロイすると、ディスパッチャーインスタンス上の既存のディレクトリの内容は、これらのディレクトリの内容に上書きされます。この機能を正しく使用するには、Web サーバーおよびディスパッチャーの設定ファイルに環境固有の情報が必要になることが多いので、まず、カスタマーサクセスエンジニア（CSE）と協力して、これらの環境変数を /etc/sysconfig/httpd に抽出する必要があります。
+ディスパッチャーインスタンスにデプロイすると、ディスパッチャーインスタンス上の既存のディレクトリの内容は、これらのディレクトリの内容で上書きされます。この機能を正しく使用するには、Web サーバーおよびディスパッチャーの設定ファイルに環境固有の情報が必要になることが多いので、まず、カスタマーサクセスエンジニア（CSE）と協力して、これらの環境変数を /etc/sysconfig/httpd に抽出する必要があります。
 
-以下の手順に従って、ディスパッチャー設定の最初のプロセスを完了します。
+以下の手順に従って、Dispatcher 設定の最初のプロセスを完了します。
 
-1. 現在の実稼働環境の設定ファイルを CSE から取得します。
+1. 現在の実稼動環境の設定ファイルを CSE から取得します。
 1. ハードコードされた環境固有のデータ（例：パブリッシュレンダラーの IP）を削除し、変数に置き換えます。
 1. 必要な変数を、各ターゲットディスパッチャーに対するキーと値のペアで定義し、CSE にリクエストして各インスタンス上の ***/etc/sysconfig/httpd*** に追加してもらいます。
-1. 更新された設定をステージング環境でテストした後、CSE にリクエストしてそれらの設定を実稼働環境にデプロイしてもらい、正しく動作していることを確認します。
+1. 更新された設定をステージング環境でテストした後、CSE にリクエストしてそれらの設定を実稼動環境にデプロイしてもらい、正しく動作していることを確認します。
 1. ファイルを Git にコミットします。
-1. [!UICONTROL Cloud Manager] を通じてデプロイします。
+1. [!UICONTROL Cloud Manager] を使用してデプロイします。
 
 実際の zip ファイルは、maven-assembly-plugin を使用して生成できます。Lazybones AEM マルチモジュールテンプレートを使用して生成されたプロジェクトでは、プロジェクト作成の一環として、適切な Maven プロジェクト構造を作成できます。
 
@@ -129,15 +129,15 @@ AEMインスタンスの6.4へのアップグレードに関する詳細は、&q
 
 ### パフォーマンステスト用の Dispatcher の設定 {#configuring-dispatcher-for-performance-testing}
 
-[!UICONTROL Cloud Manager] がパフォーマンステストを適切に実行するには、ステージディスパッチャーサーバーが、実稼動サーバーと一貫性のある方法で、実稼働ディスパッチャーと同じホスト名に応答する必要があります。
+[!UICONTROL Cloud Manager] がパフォーマンステストを適切に実行するには、ステージディスパッチャーサーバーが、実稼動サーバーと一貫性のある方法で、実稼動ディスパッチャーと同じホスト名に応答する必要があります。
 
-*例えば、顧客*が [www.myco.com](http://www.myco.com/) および [www.myotherco.comを実稼動用のホスト名と](http://www.myotherco.com,/) して、stage- myco. adobecqms. netをステージホスト名として持っている場合、次のようなリクエストが適切に応答する必要があります。
+*例えば、*顧客の実稼動ホスト名が [www.myco.com](http://www.myco.com/) と [www.myotherco.com](http://www.myotherco.com/) で、ステージホスト名が stage-myco.adobecqms.net の場合は、次のような要求に適切に応答する必要があります。
 
 ```
 curl -H"Host: www.myco.com" http://stage-myco.adobecqms.net/en/home.html
 ```
 
-それには、ディスパッチャー設定でホスト名を正しく設定するだけでなく、ステージ環境と実稼動環境で一貫性のある方法を使用して ***/etc/map***、任意の Apache リライト、その他のすべてのパス***マッピング／フィルター***ルールを実装する必要があります。
+それには、Dispatcher 設定でホスト名を正しく設定するだけでなく、ステージ環境と実稼動環境で一貫性のある方法を使用して ***/etc/map***、任意の Apache リライト、その他のすべてのパス***マッピング／フィルター***ルールを実装する必要があります。
 
 ## 開発のベストプラクティス {#development-best-practices}
 
@@ -174,4 +174,4 @@ change as per KT
 
 一般的な設定が完了したら、いつでも [!UICONTROL Cloud Manager] を使用できます。
 
-[[!UNAMROL Cloud Manager&quot;](https://helpx.adobe.com/experience-manager/cloud-manager/using/using-cloud-manager.html)[!UICONTROL ]を参照してください。
+[!UICONTROL Cloud Manager] の使用を開始するには、[[!UICONTROL Cloud Manager] の使用](https://helpx.adobe.com/experience-manager/cloud-manager/using/using-cloud-manager.html)を参照してください。
