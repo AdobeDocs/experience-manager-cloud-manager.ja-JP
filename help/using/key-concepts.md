@@ -1,14 +1,14 @@
 ---
 title: 主要な概念
 seo-title: 主要な概念
-description: このページには、Cloud Managerに関連付けられているキーワードが記載されています。
+description: このページには、Cloud Manager に関連付けられている重要な用語が記載されています。
 seo-description: このページでは、Cloud Manager に関連する重要な用語について説明しています。
 uuid: 2a37810b-98f8-4f01-90de-1e52c754ad16
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: b702dfc0-3534-4d90-af19-8559d8baf6a6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -38,7 +38,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 **製品** 組織でライセンスされたソリューションに含まれる機能の特定のセット。1 つの組織内の異なるプログラムが、異なる製品セットに含まれる場合があります。例えば、サイト、フォームのアセットなどです。
 
-**プログラム** 通常、購入したサービス契約（SLA）に対応する顧客の構想の論理的なグループをサポートする環境のセット。各プログラムには 1 つの実稼働環境があり、場合によっては、実稼働環境以外の環境も多数あります。
+**プログラム** 通常、購入したサービス契約（SLA）に対応する顧客の構想の論理的なグループをサポートする環境のセット。各プログラムには 1 つの実稼動環境があり、場合によっては、実稼動環境以外の環境も多数あります。
 
 **ソリューション** Adobe [!UICONTROL Experience Cloud] ソリューションの 1 つ。例えば、Adobe Experience Manager、Adobe Target、Adobe Analytics などです。
 
