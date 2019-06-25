@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
