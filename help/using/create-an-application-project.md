@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -18,9 +18,9 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ## ウィザードを使用した AEM アプリケーションプロジェクトの作成 {#using-wizard-to-create-an-aem-application-project}
 
-ユーザーが Cloud Manager にオンボーディングされると、空の Git リポジトリが提供されます。現在の Adobe Managed Services（AMS）ユーザー（または AMSに移行中のオンプレミス AEM ユーザー）は、通常、プロジェクトコードを既に Git（または別のバージョン管理システム）に格納してあり、プロジェクトを Cloud Manager の Git リポジトリにインポートすることになります。ただし、新規ユーザーは既存のプロジェクトを持っていません。
+ユーザーが Cloud Manager にオンボーディングされると、空の Git リポジトリが提供されます。現在の Adobe Managed Services（AMS）ユーザー（または AMS に移行中のオンプレミス AEM ユーザー）は、通常、プロジェクトコードを既に Git（または別のバージョン管理システム）に格納してあり、プロジェクトを Cloud Manager の Git リポジトリにインポートすることになります。ただし、新規ユーザーは既存のプロジェクトを持っていません。
 
-新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは [**、AEMプロジェクトのアーキタイプ**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいています。
+新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
 
 <!-- 
 
@@ -32,13 +32,13 @@ Last Modified Date: 2018-10-08T12:52:50.071-0400
 
  -->
 
-Cloud Manager で AEMアプリケーションプロジェクトを作成するには、次の手順に従います。
+Cloud Manager で AEM アプリケーションプロジェクトを作成するには、次の手順に従います。
 
-1. Cloud Manager にログインし、基本的なプログラム設定が完了すると、リポジトリが空の場合、**概要**画面に特別なコールトゥアクションカードが表示されます。
+1. Cloud Manager にログインし、基本的なプログラム設定が完了すると、リポジトリが空の場合、**概要** 画面に特別なコールトゥアクションカードが表示されます。
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-1. 「**作成**」をクリックして、**パイプライン設定**画面に移動します。
+1. 「**作成**」をクリックして、**パイプライン設定** 画面に移動します。
 
    ![](assets/image2018-10-3_14-30-22.png)
 
@@ -49,7 +49,7 @@ Cloud Manager で AEMアプリケーションプロジェクトを作成する�
    * **新しいブランチ名** - デフォルトでは *master* になっています。
    ![](assets/screen_shot_2018-10-08at55825am.png)
 
-   ダイアログボックスには、ダイアログの下部近くにあるハンドルをクリックして開くことができるドロワーがあります。これを展開すると、そのアーキタイプの設定パラメーターがすべてダイアログに表示されます。これらのパラメーターの多くは、**タイトル**に基づいて生成されるデフォルト値を持っています。
+   ダイアログボックスには、ダイアログの下部近くにあるハンドルをクリックして開くことができるドロワーがあります。これを展開すると、そのアーキタイプの設定パラメーターがすべてダイアログに表示されます。これらのパラメーターの多くは、**タイトル** に基づいて生成されるデフォルト値を持っています。
 
    ![](assets/screen_shot_2018-10-08at60032am.png)
 
@@ -90,7 +90,7 @@ Last Modified Date: 2018-10-08T09:20:10.106-0400
 
 ## ビルド環境の詳細 {#build-environment-details}
 
-Cloud Manager では、専用のビルドランタイム**環境**を使用して、コードの作成およびテストをおこないます。この環境には次のような特性があります。
+Cloud Manager では、専用のビルドランタイム **環境** を使用して、コードの作成およびテストをおこないます。この環境には次のような特性があります。
 
 * ビルド環境は Linux ベースです。
 * Apache Maven 3.6.0 がインストールされています。
@@ -105,7 +105,7 @@ Cloud Manager では、専用のビルドランタイム**環境**を使用し�
    * 他のパッケージが必要な場合は、担当のカスタマーサクセスエンジニア（CSE）を通じて要求する必要があります。
 
 * Maven は常に *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package* というコマンドで実行されます。
-* Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開**アーティファクト**リポジトリが自動的に含まれています（詳しくは [、Adobe Public Maven Repository](https://repo.adobe.com/) を参照してください）。
+* Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開 **アーティファクト** リポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo.adobe.com/)を参照してください）。
 
 ## Cloud Manager での Maven プロファイルのアクティブ化 {#activating-maven-profiles-in-cloud-manager}
 
@@ -189,7 +189,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 
 場合によっては、顧客のビルドプロセスが、Git リポジトリに格納するのに適さない特定の設定変数に依存していることがあります。Cloud Manager では、カスタマーサクセスエンジニア（CSE）がこれらの変数を顧客別に設定できます。これらの変数は、安全な格納先に保存され、特定の顧客のビルドコンテナにのみ表示されます。この機能を使用する顧客は、担当の CSE に連絡して変数を設定してもらう必要があります。
 
-設定が完了すると、これらの変数は環境変数として使用可能になります。これらをMavenプロパティとして使用するには、/content/help/jp/aem- forms/6-1/mobile- workspace/supported- file. htmlファイル内でそれらを参照することができます。前述のように、プロファイル内で参照できます。
+設定が完了すると、これらの変数は環境変数として使用可能になります。これらの変数を Maven プロパティとして使用するには、pom.xml ファイルを参照します（変数は、前述のようにプロファイル内にあるはずです）。
 
 ```xml
         <profile>
@@ -207,8 +207,8 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 
 >[!NOTE]
 >
->環境変数名に使用できるのは、英数字（_）文字のみです。慣例では、名前はすべて大文字である必要があります。
+>環境変数名に使用できるのは、英数字と下線（_）のみです。慣例では、名前はすべて大文字である必要があります。
 
 ## ベストプラクティスに基づくコードの開発 {#develop-your-code-based-on-best-practices}
 
-アドビエンジニアリングチームおよびコンサルティングチームは、 [AEM開発者](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)のための包括的なベストプラクティスのセットを開発しました。
+アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
