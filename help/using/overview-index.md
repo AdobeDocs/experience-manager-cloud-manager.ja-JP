@@ -9,7 +9,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 discoiquuid: 5ca5a413-639e-43fb-93dd-16ce8935a3fd
 preview: 'true'
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
