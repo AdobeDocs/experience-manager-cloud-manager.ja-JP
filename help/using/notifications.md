@@ -1,14 +1,14 @@
 ---
 title: 通知
 seo-title: 通知
-description: AEM Cloud Managerでのユーザーの通知の受信方法
+description: AEM Cloud Manager でユーザーが通知を受け取る方法
 seo-description: このページでは、AEM Cloud Manager でパイプラインの開始および完了に成功または失敗したときにユーザーが通知を受け取る方法について説明します。
 uuid: 73e4bb80-36c1-4408-bdbd-1ac5328359d1
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -16,7 +16,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 # 通知 {#notifications}
 
-[!UICONTROL Cloud Manager] では、パイプラインの開始および完了に成功または失敗したとき、また **GoLive 承認**ステップおよび**スケジュール済み**ステップに達したときに、ユーザーは通知を受け取ることができます。これらの通知は、Adobe [!UICONTROL Experience Cloud] の通知システムを通じて送信されます。
+[!UICONTROL Cloud Manager] では、パイプラインの開始および完了に成功または失敗したとき、また **GoLive 承認** ステップおよび **スケジュール済み** ステップに達したときに、ユーザーは通知を受け取ることができます。これらの通知は、Adobe [!UICONTROL Experience Cloud] の通知システムを通じて送信されます。
 
 >[!NOTE]
 >
