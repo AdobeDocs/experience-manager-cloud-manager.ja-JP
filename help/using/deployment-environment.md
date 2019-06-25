@@ -8,7 +8,7 @@ uuid: 73436882-a3f7-4048-bb8d-7f5819d29c8f
 contentOwner: jsyal
 discoiquuid: 4ac3e831-2227-4ea8-abcc-c5734e023424
 preview: 'true'
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
