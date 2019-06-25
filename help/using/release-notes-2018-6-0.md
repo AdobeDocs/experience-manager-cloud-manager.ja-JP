@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 8584f467-3e61-41ea-98e4-f79e68c86469
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -28,7 +28,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 * **CI／CD パイプライン** - 品質ゲートの 1 つで重大なエラーが発生した場合のパイプラインの動作を、パイプラインの設定時に定義できるようになりました。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。
 
-* **CI／CDパイプライン** - 担当の CSE または対応可能な CSE に CSE 管理を実行してもらうかどうかを、パイプラインの設定時に選択できるようになりました。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。
+* **CI／CD パイプライン** - 担当の CSE または対応可能な CSE に CSE 管理を実行してもらうかどうかを、パイプラインの設定時に選択できるようになりました。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。
 
 * **CI／CD パイプライン** - CI／CD パイプラインがビジネス承認ステップに到達すると、デプロイメントを承認する権限を持っているユーザーに通知が送信されます。詳しくは、[通知](notifications.md)を参照してください。
 
