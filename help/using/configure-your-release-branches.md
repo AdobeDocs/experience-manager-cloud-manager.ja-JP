@@ -80,4 +80,4 @@ To <url>
 
 >[!NOTE]
 >
->よく使用される Git コマンドについては、[Git チートシート](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)を参照してください�
+>よく使用される Git コマンドについては、[Git チートシート](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)を参照してください
