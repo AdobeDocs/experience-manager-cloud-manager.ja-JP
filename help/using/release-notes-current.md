@@ -1,32 +1,30 @@
 ---
-title: リリースノート（2019.6.0）
-seo-title: AEM Cloud Manager リリースノート（2019.6.0）
-description: このページでは、Cloud Manager リリース 2019.6.0 について説明します。
-seo-description: このページでは、AEM Cloud Manager リリース 2019.6.0 について説明します。
+title: リリースノート（2019.7.0）
+seo-title: AEM Cloud Manager リリースノート（2019.7.0）
+description: このページでは、Cloud Manager リリース 2019.7.0 について説明します。
+seo-description: このページでは、AEM Cloud Manager リリース 2019.7.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 7373f674b9804c83fad0871a74ef85280ea24962
+source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
 
 ---
 
-# リリースノート（2019.6.0） {#release-notes-for}
+# リリースノート（2019.7.0） {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2019.6.0リリースには、新しいコード品質ルールと新しい製品アップデートウィザードが追加されています。詳細は、以下の節を参照してください。
+[!UICONTROL Cloud Manager] 2019.7.0リリースには、新しいコード品質ルールと新しい製品アップデートウィザードが追加されています。詳しくは、以下の節を参照してください。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン2019.6.0のリリース日は、2019年6月21日です。
+[!UICONTROL Cloud Manager] バージョン 2019.7.0 のリリース日は 2019 年 7 月 18 日です。
 
 ## 最新情報 {#whats-new}
 
-* AEMアップデートを正常に実行できるようにするための新しい製品アップデートウィザード。Refer to [Product Update Wizard](overview-productupdate-wizard.md) to learn more.
-* コンテンツ構造を調べるコード品質ルール。Refer to [Custom Code Quality Rules](custom-code-quality-rules.md) for more information.
-* gitプッシュの最大サイズが1GBに増加しました。
+本番用デプロイメントの開始時にExperience Cloud通知が送信されるようになりました。
 
 ## バグ修正 {#bug-fixes}
 
-* 場合によっては、以前のエラーが原因でパイプラインを開始できないことがありました。
-
-## 既知の問題 {#known-issues}
-
-* コード品質のCSVダウンロードは、重大度に従って並べ替えられるとは限りません。
-* False positives may be reported by the *ConfigAndInstallShouldOnlyContainOsgiNodes* rule if OSGi configurations are placed in a nested folder under a *config* folder.
+* 場合によっては、Cloud Managerは、PythonおよびPHPファイルに対して静的コード分析を実行します。
+* FileVault InstallHooksを含むパッケージが、コード品質手順で一貫して実行されませんでした。
+* 一部の組み合わせでは、コード品質の問題が一貫して並べ替えられませんでした。
+* パイプライン実行ページでいくつかの視覚的問題が発生していました。
+* パフォーマンステストステップは、基になるクラウドインフラストラクチャからリソース制約によってランダムに失敗することがあります。
+* ネットワークの問題によって、特定の顧客ビルドが失敗することがあります。
