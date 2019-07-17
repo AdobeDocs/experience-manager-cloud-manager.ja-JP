@@ -4,13 +4,13 @@ seo-title: AEM Cloud Manager リリースノート（2019.7.0）
 description: このページでは、Cloud Manager リリース 2019.7.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2019.7.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
+source-git-commit: 97a2b172d4513161fa729d9f3693569867c6ed3e
 
 ---
 
 # リリースノート（2019.7.0） {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2019.7.0リリースには、新しいコード品質ルールと新しい製品アップデートウィザードが追加されています。詳しくは、以下の節を参照してください。
+[!UICONTROL Cloud Manager] 2019.7.0リリースでは、Experience Cloudの通知とバグ修正に関するアップデートが追加されました。詳しくは、以下の節を参照してください。
 
 ## リリース日 {#release-date}
 
@@ -26,5 +26,5 @@ source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
 * FileVault InstallHooksを含むパッケージが、コード品質手順で一貫して実行されませんでした。
 * 一部の組み合わせでは、コード品質の問題が一貫して並べ替えられませんでした。
 * パイプライン実行ページでいくつかの視覚的問題が発生していました。
-* パフォーマンステストステップは、基になるクラウドインフラストラクチャからリソース制約によってランダムに失敗することがあります。
+* パフォーマンステストステップは、基になるクラウドインフラストラクチャからのリソース制限により、ランダムに失敗することがあります。
 * ネットワークの問題によって、特定の顧客ビルドが失敗することがあります。
