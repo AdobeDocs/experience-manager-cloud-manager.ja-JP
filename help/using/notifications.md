@@ -8,15 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
 
 ---
 
 
 # 通知 {#notifications}
 
-[!UICONTROL Cloud Manager] では、パイプラインの開始および完了に成功または失敗したとき、また **GoLive 承認** ステップおよび **スケジュール済み** ステップに達したときに、ユーザーは通知を受け取ることができます。これらの通知は、Adobe [!UICONTROL Experience Cloud] の通知システムを通じて送信されます。
+[!UICONTROL Cloud Manager] を使用すると、本番用のデプロイメントの開始時に通知を受信したり、 **"Go- Live Approval** »および?«スケジュール済み&#x200B;****&#x200B;これらの通知は、Adobe [!UICONTROL Experience Cloud] の通知システムを通じて送信されます。
 
 >[!NOTE]
 >
