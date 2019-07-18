@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
 translation-type: tm+mt
-source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
+source-git-commit: 1d4bb0b24cdcd6dc0ed9db58f1e14b6714bb96d6
 
 ---
 
 
 # 通知 {#notifications}
 
-[!UICONTROL Cloud Manager] を使用すると、本番用のデプロイメントの開始時に通知を受信したり、 **"Go- Live Approval** »および?«スケジュール済み&#x200B;****&#x200B;これらの通知は、Adobe [!UICONTROL Experience Cloud] の通知システムを通じて送信されます。
+[!UICONTROL Cloud Manager] では、実稼動環境の開始時、および **"Go- Live Approval** »と?«スケジュール済み?****&#x200B;これらの通知は、Adobe [!UICONTROL Experience Cloud] の通知システムを通じて送信されます。
 
 >[!NOTE]
 >
