@@ -1,22 +1,22 @@
 ---
-title: カスタムコードの品質ルール
-seo-title: カスタムコードの品質ルール
-description: このページでは、Cloud Managerが実行するカスタムコードの品質ルールについて説明します。
-seo-description: このページでは、Adobe Experience Manager Cloud Managerが実行するカスタムコードの品質ルールについて説明します。
+title: カスタムコード品質ルール
+seo-title: カスタムコード品質ルール
+description: このページでは、Cloud Manager で実行されるカスタムコード品質ルールについて説明します。
+seo-description: このページでは、Adobe Experience Manager の Cloud Manager で実行されるカスタムコード品質ルールについて説明します。
 uuid: a7feb465-1982-46be-9e57-e67b59849579
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4881ff8be97451aa90c3430259ce13faef182e4f
 
 ---
 
 
-# カスタムコードの品質ルール {#custom-code-quality-rules}
+# カスタムコード品質ルール {#custom-code-quality-rules}
 
-このページでは、AEMエンジニアリングのベストプラクティスに基づいて作成された、Cloud Managerが実行するカスタムコードの品質ルールについて説明します。
+このページでは、AEM エンジニアリングチームのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて説明します。
 
 >[!NOTE]
 >
@@ -195,9 +195,9 @@ public void orDoThis() {
 
 **最初の対象バージョン**：バージョン 2018.7.0
 
-AEM API には、カスタムコードによる使用のみ（ただし実装はしない）を意図した Java インターフェイスおよびクラスが含まれています。例えば、インターフェイス *com.day.cq.wcm.api.Page* は、***AEM のみ***によって実装されるように設計されています。
+AEM API には、カスタムコードによる使用のみ（ただし実装はしない）を意図した Java インターフェイスおよびクラスが含まれています。例えば、インターフェイス *com.day.cq.wcm.api.Page* は、***AEM のみ***&#x200B;によって実装されるように設計されています。
 
-これらのインターフェイスに新しいメソッドが追加される場合、それらの追加メソッドは、これらのインターフェイスを使用する既存のコードには影響しません。その結果、これらのインターフェイスへの新しいメソッドの追加は、下位互換性があると見なされます。ただし、カスタムコードがこれらのインターフェイスのいずれかを***実装***する場合、そのカスタムコードによってお客様に下位互換性のリスクがもたらされます。
+これらのインターフェイスに新しいメソッドが追加される場合、それらの追加メソッドは、これらのインターフェイスを使用する既存のコードには影響しません。その結果、これらのインターフェイスへの新しいメソッドの追加は、下位互換性があると見なされます。ただし、カスタムコードがこれらのインターフェイスのいずれかを&#x200B;***実装***&#x200B;する場合、そのカスタムコードによってお客様に下位互換性のリスクがもたらされます。
 
 AEM によってのみ実装されることを意図されたインターフェイス（およびクラス）は、*org.osgi.annotation.versioning.ProviderType*（場合によっては、従来の類似の注釈の *aQute.bnd.annotation.ProviderType*）で注釈が付けられます。このルールは、カスタムコードによってこのようなインターフェイスが実装されている（またはクラスが拡張されている）場合を特定します。
 
@@ -266,7 +266,7 @@ public void orDoThis(Session session) throws Exception {
 
 **最初の対象バージョン**：バージョン 2018.4.0
 
-[Slingドキュメント](http://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明しているように、パスごとに連結サーブレットは使用できません。パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
+[Sling ドキュメント](http://sling.apache.org/documentation/the-sling-engine/servlets.html) で説明されているように、パスによってサーブレットをバインドすることは推奨されません。パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
 
 #### 準拠していないコード {#non-compliant-code-5}
 
@@ -429,7 +429,7 @@ public void doThis() {
 
 **最初の対象バージョン**：バージョン 2018.4.0
 
-名前が示すように、Java の例外は常に**例外的な状況で使用する必要があります。結果として、例外がキャッチされる際に、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。これにより、これらのメッセージがログに正しく表示されます。
+名前が示すように、Java の例外は常に&#x200B;**&#x200B;例外的な状況で使用する必要があります。結果として、例外がキャッチされる際に、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。これにより、これらのメッセージがログに正しく表示されます。
 
 #### 準拠していないコード {#non-compliant-code-10}
 
@@ -465,7 +465,7 @@ public void doThis() {
 
 **最初の対象バージョン**：バージョン 2018.4.0
 
-既に述べたように、コンテキストはログメッセージを理解する場合に重要です。Exception.printStackTrace() を使用すると、スタックトレース **のみ** が標準エラーストリームに出力されるので、すべてのコンテキストが失われます。さらに、AEM などのマルチスレッドアプリケーションで、このメソッドを同時に使用して複数の例外がプリントされる場合、スタックトレースが重なって大きな混乱を招くことがあります。例外は、ログフレームワークによってのみ記録される必要があります。
+既に述べたように、コンテキストはログメッセージを理解する場合に重要です。Exception.printStackTrace() を使用すると、スタックトレース&#x200B;**のみ**&#x200B;が標準エラーストリームに出力されるので、すべてのコンテキストが失われます。さらに、AEM などのマルチスレッドアプリケーションで、このメソッドを同時に使用して複数の例外がプリントされる場合、スタックトレースが重なって大きな混乱を招くことがあります。例外は、ログフレームワークによってのみ記録される必要があります。
 
 #### 準拠していないコード {#non-compliant-code-11}
 
@@ -537,7 +537,7 @@ public void doThis() {
 
 **最初の対象バージョン**：バージョン 2018.4.0
 
-一般に、/libs および /apps で始まるパスは、参照先としてハードコーディングせず、Sling 検索パス（デフォルトで /libs,/apps に設定されている）に対する相対パスで格納する必要があります。絶対パスを使用すると、プロジェクトライフサイクルの後になって初めて現れるわかりにくい不具合が生じる可能性があります。
+一般に、/libs および /apps で始まるパスは、参照先としてハードコーディングせず、Sling 検索パス（デフォルトで /libs、/apps に設定されている）に対する相対パスで格納する必要があります。絶対パスを使用すると、プロジェクトライフサイクルの後になって初めて現れるわかりにくい不具合が生じる可能性があります。
 
 #### 準拠していないコード {#non-compliant-code-13}
 
@@ -556,28 +556,28 @@ public void doThis(Resource resource) {
 ```
 
 
-## OakPAL Content Rules {#oakpal-rules}
+## OakPAL コンテンツルール {#oakpal-rules}
 
-Cloud Managerによって実行されたAakPalチェックの下にあるを確認してください。
+Cloud Manager で実行される OakPAL 関連チェックについて、以下に説明します。
 
 >[!NOTE]
->OakpalはAEMパートナー（2019年のAEM Rockstar North Americaの推奨結果）で開発されたフレームワークで、スタンドアロンのOakリポジトリを使用してコンテンツパッケージを検証します。
+>OakPAL は AEM パートナー（2019 年の AEM Rockstar North America の優勝者）により開発されたフレームワークで、スタンドアロン の Oak リポジトリを使用してコンテンツパッケージを検証します。
 
-### Customer Packages Should Not Create or Modify Nodes Under /libs {#oakpal-customer-package}
+### 顧客パッケージでは /libs 下のノードを作成／変更しない {#oakpal-customer-package}
 
-**キー**:bannedPaths
+**キー**：BannedPaths
 
 **タイプ**：バグ
 
-**重大度**:ブロック
+**重大度**：ブロッカー
 
 **最初の対象バージョン**：バージョン 2019.6.0
 
-AEMコンテンツリポジトリ内の/content/help/jp/digital- publishing- suite/help/content- repository. htmlAEMコンテンツリポジトリのコンテンツツリーをお客様によって読み取り専用と見なすことをお勧めします。*/libs* のノードとプロパティを変更すると、メジャーアップデートとマイナーアップデートのリスクが大きくなります。*/libs* に対する変更は、アドビによる公式チャネルからのみ行う必要があります。
+AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み取り専用と見なすことは長年のベストプラクティスとなっています。*/libs* 下のノードやプロパティを変更すると、メジャーアップデートおよびマイナーアップデートの際に重大な問題が発生する可能性があります。*/libs* への変更は、アドビの公式チャネルを通じてのみおこなうことができます。
 
-### Packages Should Not Contain Duplicate OSGi Configurations {#oakpal-package-osgi}
+### パッケージには重複する OSGi 設定を含めない {#oakpal-package-osgi}
 
-**キー**:duplicateOSGIConfigurationations
+**キー**：DuplicateOsgiConfigurations
 
 **タイプ**：バグ
 
@@ -585,9 +585,9 @@ AEMコンテンツリポジトリ内の/content/help/jp/digital- publishing- sui
 
 **最初の対象バージョン**：バージョン 2019.6.0
 
-複雑なプロジェクトで発生する一般的な問題は、同じOSGiコンポーネントが複数回設定されている場合です。これにより、どの設定を実行できるかに関して曖昧なものが作成されます。このルールは&quot;runmode- aware&quot;です。同じコンポーネントが同じ実行モードで複数回設定されている（または実行モードの組み合わせ）問題のみが特定されます。
+複雑なプロジェクトでよく発生する問題は、同じ OSGi コンポーネントが複数回設定されることです。その結果、どの設定が使用可能かがあいまいになります。このルールは「実行モード対応」です。つまり、同じコンポーネントが同じ実行モード（または実行モードの組み合わせ）で複数回設定されている問題のみを特定します。
 
-#### Non Compliant Code {#non-compliant-code-osgi}
+#### 準拠していないコード {#non-compliant-code-osgi}
 
 ```+ apps
   + projectA
@@ -606,9 +606,9 @@ AEMコンテンツリポジトリ内の/content/help/jp/digital- publishing- sui
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-### Config and Install Folders Should Only Contain OSGi Nodes {#oakpal-config-install}
+### /config および /install フォルダーには OSGi ノードのみ含める {#oakpal-config-install}
 
-**キー**:configAndInstallshouldOnlyContainsRegionodes
+**キー**：ConfigAndInstallShouldOnlyContainOsgiNodes
 
 **タイプ**：バグ
 
@@ -616,11 +616,11 @@ AEMコンテンツリポジトリ内の/content/help/jp/digital- publishing- sui
 
 **最初の対象バージョン**：バージョン 2019.6.0
 
-For security reasons, paths containing */config/ and /install/* are only readable by administrative users in AEM and should be used only for OSGi configuration and OSGi bundles. これらのセグメントを含むパス下に他のタイプのコンテンツを配置すると、管理者ユーザーと非管理者ユーザー間で意図せずに異なるアプリケーション行動が発生します。
+セキュリティ上の理由から、*/config/ と /install/* を含むパスは、AEM の管理者ユーザーだけが読み取り可能です。また、OSGi 設定と OSGi バンドルにのみ使用してください。これらのセグメントを含むパスの下に他のタイプのコンテンツを配置すると、アプリケーションの動作が管理者ユーザーと非管理者ユーザーとで意図せず異なることになります。
 
-A common problem is use of nodes named `config` within component dialogs or when specifying the rich text editor configuration for inline editing. これを解決するには、問題のあるノードを、準拠する名前に変更する必要があります。For the rich text editor configuration make use of the `configPath` property on the `cq:inplaceEditing` node to specify the new location.
+よくある問題としては、コンポーネントダイアログ内や、インライン編集にリッチテキストエディター設定を指定する際に、`config` というノードを使用するケースがあります。これを解決するには、問題のあるノードを適切な名前に変更する必要があります。リッチテキストエディター設定については、`cq:inplaceEditing` ノードの `configPath` プロパティを使用して新しい場所を指定します。
 
-#### Non Compliant Code {#non-compliant-code-config-install}
+#### 準拠していないコード {#non-compliant-code-config-install}
 
 ```
 + cq:editConfig [cq:EditConfig]
@@ -639,9 +639,9 @@ A common problem is use of nodes named `config` within component dialogs or when
       + rtePlugins [nt:unstructured]
 ```
 
-### Packages Should Not Overlap {#oakpal-no-overlap}
+### パッケージは重複しない {#oakpal-no-overlap}
 
-**キー**:packageOverlays
+**キー**：PackageOverlaps
 
 **タイプ**：バグ
 
@@ -649,4 +649,4 @@ A common problem is use of nodes named `config` within component dialogs or when
 
 **最初の対象バージョン**：バージョン 2019.6.0
 
-*パッケージに重複するOSGi設定* に類似していますが、同じノードパスが複数の個別コンテンツパッケージによって書き込まれる複雑なプロジェクトでは、これが共通の問題です。コンテンツパッケージの依存関係を使用して一貫性のある結果を得ることができますが、完全に重複しないようにすることをお勧めします。
+*パッケージには重複する OSGi 設定を含めない*&#x200B;と同様に、これも複雑なプロジェクトでよく発生する問題です。複数の異なるコンテンツパッケージに同じノードパスが書き込まれるケースです。コンテンツパッケージの依存関係を使用すると、一貫性のある結果を得ることができますが、その際には、パッケージがまった
