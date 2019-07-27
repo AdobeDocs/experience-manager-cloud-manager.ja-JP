@@ -4,7 +4,7 @@ product: adobe experience manager cloud manager
 archtype: administrator
 user-guide-title: Experience Manager Cloud Manager ヘルプ
 index: n
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 97a2b172d4513161fa729d9f3693569867c6ed3e
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 97a2b172d4513161fa729d9f3693569867c6ed3e
    + [ソースコードリポジトリ](source-code-repository.md)
    + [ユーザーとロールの追加](setting-up-users-and-roles.md)
    + [プロビジョニング済み環境](environments-provisioned.md)
-+ 概要 {#getting-started}
++ はじめに{#getting-started}
    + [初回ログイン](first-time-login.md)
    + [プログラムの設定](setting-up-program.md)
    + [AEM アプリケーションプロジェクトの作成](create-an-application-project.md)
@@ -38,8 +38,8 @@ source-git-commit: 97a2b172d4513161fa729d9f3693569867c6ed3e
    + [環境の監視](monitor-your-environments.md)
    + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
    + [通知](notifications.md)
-   + [カスタムコードの品質ルール](custom-code-quality-rules.md)
-+ Product Update Wizard {#product-update-wizard}
+   + [カスタムコード品質ルール](custom-code-quality-rules.md)
++ 製品アップデートウィザード {#product-update-wizard}
    + [概要](overview-productupdate-wizard.md)
    + [評価](evaluation.md)
 + リリースノート {#release-notes}
