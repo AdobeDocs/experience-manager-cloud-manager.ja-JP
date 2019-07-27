@@ -1,51 +1,51 @@
 ---
 title: 評価
 seo-title: 評価
-description: 'このページは、製品アップデートウィザードの評価段階の開始点として機能します。 '
-seo-description: このページは、製品アップデートウィザードの評価段階の開始点として機能します。
+description: 'このページは、製品アップデートウィザードの評価段階を理解するための出発点となります。 '
+seo-description: このページは、製品アップデートウィザードの評価段階を理解するための出発点となります。
 uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
 
 ---
 
 
-# Evaluation Phase {#evaluation}
+# 評価段階 {#evaluation}
 
-The first phase in the Product Update wizard is **[!UICONTROL Evaluation]** phase.
-ここでは、ウィザードから直接アクセスできるパターン検出機能を使用して、アップグレードの複雑さを評価できます。この手順の最後に、評価レポートにアクセスできます。
+製品アップデートウィザードの第 1 段階は&#x200B;**[!UICONTROL 評価]**段階です。
+ここでは、ウィザードから直接アクセスできるパターン検出を使用して、アップグレードの複雑さを評価できます。このステップの終わりに、評価レポートにアクセスできます。
 
-生成されたレポートでは、次のパターンを検出して、アップグレード可能性の作成者インスタンスを確認できます。
+生成されたレポートでは、次のパターンを検出することで、オーサーインスタンスのアップグレード可能性をチェックできます。
 
-* 特定のルールに違反し、アップグレードに影響または上書きされる領域で実行されます。
+* 特定のルールに違反しており、アップグレードで影響を受けるか上書きされる領域で実行されている。
 
-* AEM6. xの機能または新しいAEMで下位互換性のないAPIを使用して、アップグレード後に中断する可能性がある可能性があります。
+* 新しい AEM との下位互換性のない AEM 6.x 機能や API を使用しており、アップグレード後に動作しない可能性がある。
 
-これは、Adobe Experience Manager（AEM）6.5へのアップグレードに関与する開発作業の査定として機能します。
+これにより、Adobe Experience Manager（AEM）6.5 へのアップグレードに必要な開発作業量を評価できます。
 
 >[!NOTE]
->To learn more about pattern detector, refer to [Assessing the Upgrade Complexity with the Pattern Detector](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
+>パターン検出について詳しくは、[パターン検出を使用したアップグレードの複雑性の評価](https://helpx.adobe.com/jp/experience-manager/6-4/sites/deploying/using/pattern-detector.html)を参照してください。
 
-## Running the Evaluator {#running-evaluator}
+## エバリュエーターの実行 {#running-evaluator}
 
 評価レポートを生成するには、次の手順に従います。
 
-1. Click on **[!UICONTROL Run Evaluation]**.
+1. 「**[!UICONTROL 評価を実行]**」をクリックします。
 
    >[!NOTE]
-   >パターン検出は任意の環境で実行できます。ただし、検出率を向上させ、ビジネス重要インスタンスの低下を防ぐために、Cloud Managerは作成者インスタンス上のステージング環境で実行します。
+   >パターン検出はどのような環境でも実行できます。ただし、検出率を向上させ、ビジネスクリティカルなインスタンスの速度低下を避けるために、Cloud Manager ではオーサーインスタンス上のステージング環境でパターン検出を実行します。
 
    ![](assets/Run-Evaluation.png)
 
-1. ウィザードによって、アクションのステータスが通知されます。You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
+1. ウィザードから、アクションのステータスが通知されます。評価レポートの生成中に、**進行中**&#x200B;または&#x200B;**完了**&#x200B;が適宜表示されます。
 
-   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy.
+   レポートが生成されたら、「**[!UICONTROL レポートのダウンロード]**」をクリックしてコピーを保存できます。
 
    ![](assets/Evaluation-1.png)
 
 
 >[!NOTE]
->The current release of Product Update wizard in Cloud Manager supports the **Evaluation** phase only. **「修正」**、 **「実行」**、 **「検証」** および「 **完了」** の4段階は、近日中に提供されます。
+>Cloud Manager における製品アップデートウィザードの現在のリリースでは、**評価**&#x200B;段階のみサポートされています。**修正**、**実行**、**検証**、**完了**&#x200B;の 4 段階は、現在準備中です。
