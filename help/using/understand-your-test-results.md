@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e8db535b09f0b273de2d3908a85176f38d307c80
 
 ---
@@ -16,7 +16,7 @@ source-git-commit: e8db535b09f0b273de2d3908a85176f38d307c80
 
 # テスト結果の理解 {#understand-your-test-results}
 
-**パイプライン** プロセス中は、多数の指標が取得され、ビジネスオーナーによって定義された主要業績評価指標（KPI）または Adobe Managed Services で設定された標準と比較されます。
+**パイプライン**&#x200B;プロセス中は、多数の指標が取得され、ビジネスオーナーによって定義された主要業績評価指標（KPI）または Adobe Managed Services で設定された標準と比較されます。
 
 これらは、この節で定義する 3 層ゲートシステムを使用して報告されます。
 
@@ -36,11 +36,11 @@ source-git-commit: e8db535b09f0b273de2d3908a85176f38d307c80
 
 >[!NOTE]
 >
->コード品質専用パイプラインでは、コード品質テストのステップがパイプラインの最後のステップであるため、コード品質テストゲートの重要なエラーは上書きできません。
+>コード品質専用パイプラインでは、コード品質テストステップがパイプラインの最終ステップであるため、コード品質テストゲートでの重要なエラーは無効にはできません。
 
 ## コード品質テスト {#code-quality-testing}
 
-パイプラインの一環として、ソースコードをスキャンし、デプロイメントが特定の品質条件を満たしているかどうかを確認します現在、これはSonarquoとコンテンツパッケージレベルの調査においてOakPalを使用して実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。テスト条件の評価の概要を次の表に示します。
+パイプラインの一環として、ソースコードをスキャンし、デプロイメントが特定の品質条件を満たしているかどうかを確認します現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。テスト条件の評価の概要を次の表に示します。
 
 | 名前 | 定義 | カテゴリ | 不合格のしきい値 |
 |--- |--- |--- |--- |
@@ -55,13 +55,13 @@ source-git-commit: e8db535b09f0b273de2d3908a85176f38d307c80
 
 >[!NOTE]
 >
->[詳細な定義については、指標の定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) を参照してください。
+>詳しくは、[指標の定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions)を参照してください。
 
-You can download the list of rules here [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx)
+ここでルールの一覧 [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx) をダウンロードできます。
 
 >[!NOTE]
 >
->[!UICONTROL Cloud Manager]が実行するカスタムコードの品質ルールについて詳しくは [、カスタムコード品質ルール](custom-code-quality-rules.md)を参照してください。
+>[!UICONTROL Cloud Manager] で実行されるカスタムコード品質ルールについて詳しくは、[カスタムコード品質ルール](custom-code-quality-rules.md)を参照してください。
 
 ### 偽陽性の処理 {#dealing-with-false-positives}
 
@@ -99,9 +99,9 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ## セキュリティテスト {#security-testing}
 
-[!UICONTROL Cloud Manager] では、デプロイメント後に既存の ***AEM セキュリティヘルスチェック***を実行し、UI を通じてそのステータスを報告します。結果は、環境内のすべての AEM インスタンスから集計されます。
+[!UICONTROL Cloud Manager] では、デプロイメント後に既存の ***AEM セキュリティヘルスチェック***&#x200B;を実行し、UI を通じてそのステータスを報告します。結果は、環境内のすべての AEM インスタンスから集計されます。
 
-いずれかの **インスタンス** が特定のヘルスチェックに対して不合格を報告した場合、**環境** 全体がそのヘルスチェックに対して不合格となります。コード品質テストやパフォーマンステストと同様に、これらのヘルスチェックもいくつかのカテゴリにまとめられ、3 層ゲートシステムを使用して報告されます。セキュリティテストの場合にはしきい値がない点だけが異なります。すべてのヘルスチェックでは、単純に合格または不合格のみの結果になります。
+いずれかの&#x200B;**インスタンス**&#x200B;が特定のヘルスチェックに対して不合格を報告した場合、**環境**&#x200B;全体がそのヘルスチェックに対して不合格となります。コード品質テストやパフォーマンステストと同様に、これらのヘルスチェックもいくつかのカテゴリにまとめられ、3 層ゲートシステムを使用して報告されます。セキュリティテストの場合にはしきい値がない点だけが異なります。すべてのヘルスチェックでは、単純に合格または不合格のみの結果になります。
 
 現在のチェックは次の表のとおりです。
 
@@ -130,7 +130,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ## パフォーマンステスト {#performance-testing}
 
-[!UICONTROL Cloud Manager] の*パフォーマンステスト*は、30 分間のテストを使用して実装されます。
+[!UICONTROL Cloud Manager] の&#x200B;*パフォーマンステスト*&#x200B;は、30 分間のテストを使用して実装されます。
 
 パイプラインの設定中に、デプロイメントマネージャーは各バケットに送るトラフィックの量を決定できます。
 
