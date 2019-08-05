@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: ht
-source-git-commit: b39fc865e3c34052fb94b223d9eebc0fce3495d2
+translation-type: tm+mt
+source-git-commit: 81f4e0b3b31a8be1f0620b70442b0268159e4ec0
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: b39fc865e3c34052fb94b223d9eebc0fce3495d2
 
 ユーザーが Cloud Manager にオンボーディングされると、空の Git リポジトリが提供されます。現在の Adobe Managed Services（AMS）ユーザー（または AMS に移行中のオンプレミス AEM ユーザー）は、通常、プロジェクトコードを既に Git（または別のバージョン管理システム）に格納してあり、プロジェクトを Cloud Manager の Git リポジトリにインポートすることになります。ただし、新規ユーザーは既存のプロジェクトを持っていません。
 
-新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
+新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。This process is based on the [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 <!-- 
 
@@ -90,9 +90,9 @@ Last Modified Date: 2018-10-08T09:20:10.106-0400
 
 ## ビルド環境の詳細 {#build-environment-details}
 
-Cloud Manager では、専用のビルドランタイム&#x200B;**環境**&#x200B;を使用して、コードの作成およびテストをおこないます。この環境には次のような特性があります。
+特殊なビルド環境を使用してコードを作成およびテストします。この環境には次のような特性があります。
 
-* ビルド環境は Linux ベースです。
+* ビルド環境は、Ubuntu18.04から派生するLinuxベースです。
 * Apache Maven 3.6.0 がインストールされています。
 * インストールされている Java のバージョンは Oracle JDK 8u202 です。
 * 必要な追加のシステムパッケージが、次のようにいくつかインストールされています。
@@ -102,11 +102,11 @@ Cloud Manager では、専用のビルドランタイム&#x200B;**環境**&#x200
    * libpng
    * imagemagick
    * graphicsmagick
-   * 他のパッケージが必要な場合は、担当のカスタマーサクセスエンジニア（CSE）を通じて要求する必要があります。
 
+* その他のパッケージは、以下に説明 [するようにビルド時にインストール](#installing-additional-system-packages)できます。
 * すべてのビルドは、Pristine 環境で実行されます。ビルドコンテナは実行から次回の実行までの間、状態を保持しません。
 * Maven は常に *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package* というコマンドで実行されます。
-* Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo.adobe.com/)を参照してください）。
+* Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています(Refer to [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
 
 ## Cloud Manager での Maven プロファイルのアクティブ化 {#activating-maven-profiles-in-cloud-manager}
 
@@ -210,6 +210,67 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 >
 >環境変数名に使用できるのは、英数字と下線（_）のみです。慣例では、名前はすべて大文字である必要があります。
 
+## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
+
+一部のビルドでは、完全に機能するために追加のシステムパッケージをインストールする必要があります。例えば、ビルドでPythonまたはrubyスクリプトを呼び出し、結果として適切な言語インタープリターをインストールする必要があるとします。これは [、](https://www.mojohaus.org/exec-maven-plugin/) exec- maven- pluginを呼び出してAPTを呼び出すことで実行できます。この実行は通常、Cloud Manager固有のMavenプロファイルに含める必要があります。例えば、Pythonをインストールするには:
+
+```xml
+        <profile>
+            <id>install-python</id>
+            <activation>
+                <property>
+                        <name>env.CM_BUILD</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>1.6.0</version>
+                        <executions>
+                            <execution>
+                                <id>apt-get-update</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>apt-get</executable>
+                                    <arguments>
+                                        <argument>update</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>install-python</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>apt-get</executable>
+                                    <arguments>
+                                        <argument>install</argument>
+                                        <argument>-y</argument>
+                                        <argument>--no-install-recommends</argument>
+                                        <argument>python</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+```
+
+この方法は、言語固有のパッケージ（RubyGEMやPythonパッケージ用など `gem` ）のインストールに `pip` も使用できます。
+
+>[!NOTE]
+>
+>この方法でシステムパッケージをインストールしても、 **Adobe Experience Managerの実行に使用されるランタイム環境に** はインストールされません。AEM環境にインストールされているシステムパッケージが必要な場合は、カスタマーサクセスエンジニア（CSE）にお問い合わせください。
+
 ## ベストプラクティスに基づくコードの開発 {#develop-your-code-based-on-best-practices}
 
-アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
+Adobe Engineering and Consulting teams have developed a [comprehensive set of best practices for AEM developers](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html).
