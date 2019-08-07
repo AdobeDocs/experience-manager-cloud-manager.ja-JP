@@ -8,8 +8,8 @@ getting-started-url: https://helpx.adobe.com/jp/experience-manager/get-started.h
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-manager/kt/index/aem-6-4-videos.html
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.en
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 9e27b90e12b64a525558364cda70ce1ff01d19fa
 
 ---
 
