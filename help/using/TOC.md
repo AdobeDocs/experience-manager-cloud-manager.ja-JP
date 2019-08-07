@@ -1,11 +1,10 @@
 ---
-cloud: experience-cloud
-product: adobe experience manager cloud manager
-archtype: administrator
+product: adobe experience manager
+sub-product: adobe experience manager cloud manager
+archetype: administrator
 user-guide-title: Experience Manager Cloud Manager ヘルプ
-index: n
-translation-type: ht
-source-git-commit: 97a2b172d4513161fa729d9f3693569867c6ed3e
+translation-type: tm+mt
+source-git-commit: c5f26158bd4268b866a0726fbd63009a779ddcf1
 
 ---
 
