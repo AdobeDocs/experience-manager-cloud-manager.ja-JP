@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 81f4e0b3b31a8be1f0620b70442b0268159e4ec0
 
 ---
@@ -20,7 +20,7 @@ source-git-commit: 81f4e0b3b31a8be1f0620b70442b0268159e4ec0
 
 ユーザーが Cloud Manager にオンボーディングされると、空の Git リポジトリが提供されます。現在の Adobe Managed Services（AMS）ユーザー（または AMS に移行中のオンプレミス AEM ユーザー）は、通常、プロジェクトコードを既に Git（または別のバージョン管理システム）に格納してあり、プロジェクトを Cloud Manager の Git リポジトリにインポートすることになります。ただし、新規ユーザーは既存のプロジェクトを持っていません。
 
-新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。This process is based on the [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
 
 <!-- 
 
@@ -90,9 +90,9 @@ Last Modified Date: 2018-10-08T09:20:10.106-0400
 
 ## ビルド環境の詳細 {#build-environment-details}
 
-特殊なビルド環境を使用してコードを作成およびテストします。この環境には次のような特性があります。
+Cloud Manager では、専用のビルド環境を使用して、コードのビルドおよびテストをおこないます。この環境には次のような特性があります。
 
-* ビルド環境は、Ubuntu18.04から派生するLinuxベースです。
+* ビルド環境は Linux ベースで、Ubuntu 18.04 から派生しています。
 * Apache Maven 3.6.0 がインストールされています。
 * インストールされている Java のバージョンは Oracle JDK 8u202 です。
 * 必要な追加のシステムパッケージが、次のようにいくつかインストールされています。
@@ -103,10 +103,10 @@ Last Modified Date: 2018-10-08T09:20:10.106-0400
    * imagemagick
    * graphicsmagick
 
-* その他のパッケージは、以下に説明 [するようにビルド時にインストール](#installing-additional-system-packages)できます。
+* [後述されている通り](#installing-additional-system-packages)、これ以外にも、ビルド時にパッケージがインストールされる場合があります。
 * すべてのビルドは、Pristine 環境で実行されます。ビルドコンテナは実行から次回の実行までの間、状態を保持しません。
 * Maven は常に *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package* というコマンドで実行されます。
-* Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています(Refer to [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
+* Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo.adobe.com/)を参照してください）。
 
 ## Cloud Manager での Maven プロファイルのアクティブ化 {#activating-maven-profiles-in-cloud-manager}
 
@@ -212,7 +212,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 
 ## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
 
-一部のビルドでは、完全に機能するために追加のシステムパッケージをインストールする必要があります。例えば、ビルドでPythonまたはrubyスクリプトを呼び出し、結果として適切な言語インタープリターをインストールする必要があるとします。これは [、](https://www.mojohaus.org/exec-maven-plugin/) exec- maven- pluginを呼び出してAPTを呼び出すことで実行できます。この実行は通常、Cloud Manager固有のMavenプロファイルに含める必要があります。例えば、Pythonをインストールするには:
+すべての機能を実装するにあたり、一部のビルドでは追加のシステムパッケージをインストールする必要があります。例えば、Python や Ruby のスクリプトが呼び出されるビルドでは、当然、適切な言語インタープリターをインストールすることが必要となります。これは、[exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) を呼び出して、APT を起動することで実行できます。この実行は通常、Cloud Manager 専用の Maven プロファイルにラップされます。例えば、Python は次のようにインストールします：
 
 ```xml
         <profile>
@@ -265,12 +265,12 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
         </profile>
 ```
 
-この方法は、言語固有のパッケージ（RubyGEMやPythonパッケージ用など `gem` ）のインストールに `pip` も使用できます。
+同じ方法を、RubyGems の `gem` や Python パッケージの `pip` など、特定の言語用のパッケージのインストールにも使用できます。
 
 >[!NOTE]
 >
->この方法でシステムパッケージをインストールしても、 **Adobe Experience Managerの実行に使用されるランタイム環境に** はインストールされません。AEM環境にインストールされているシステムパッケージが必要な場合は、カスタマーサクセスエンジニア（CSE）にお問い合わせください。
+>この方法でシステムパッケージをインストールしても、Adobe Experience Manager の実行に使用されているランタイム環境にはインストール&#x200B;**されません**。AEM 環境にシステムパッケージをインストールする必要がある場合は、カスタマーサクセスエンジニア（CSE）にお問い合わせください。
 
 ## ベストプラクティスに基づくコードの開発 {#develop-your-code-based-on-best-practices}
 
-Adobe Engineering and Consulting teams have developed a [comprehensive set of best practices for AEM developers](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html).
+アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
