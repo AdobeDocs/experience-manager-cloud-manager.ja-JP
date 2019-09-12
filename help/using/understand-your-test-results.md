@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
+source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 ---
 
@@ -114,13 +114,13 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | デフォルトのパスワードが変更されている | デフォルトのログインアカウント | 重大 |
 | Sling のデフォルトの GET サーブレットが DOS 攻撃から保護されている | Sling GET サーブレット | 重大 |
 | Dispatcher がリクエストを適切にフィルタリングしている | CQ Dispatcher 設定 | 重大 |
-| Adobe Granite HTML Library Manager が適切に設定されている | CQ HTML Library Manager 設定 | 重要 |
 | Sling Java Script Handler が適切に設定されている | Sling Java Script Handler | 重大 |
 | Sling JSP Script Handler が適切に設定されている | Sling JSP Script Handler | 重大 |
-| Sling Referrer Filter が CSRF 攻撃を防止するように設定されている | Sling Referrer Filter | 重要 |
 | SSL が正しく設定されている | SSL 設定 | 重大 |
 | 安全でないことが明確なユーザープロファイルポリシーが存在しない | ユーザープロファイルへのデフォルトアクセス | 重大 |
-| CRXDE サポートバンドルが無効である | CRXDE サポート | 重要 |
+| Sling Referrer Filter が CSRF 攻撃を防止するように設定されている | Sling Referrer Filter | 重要 |
+| Adobe Granite HTML Library Manager が適切に設定されている | CQ HTML Library Manager 設定 | 重要 |
+| CRXDE サポートバンドルは無効です | CRXDE サポート | 重要 |
 | Sling DavEx のバンドルおよびサーブレットが無効である | DavEx ヘルスチェック | 重要 |
 | サンプルコンテンツがインストールされていない | サンプルコンテンツパッケージ | 重要 |
 | WCM Request Filter と WCM Debug Filter が両方とも無効になっている | WCM フィルター設定 | 重要 |
