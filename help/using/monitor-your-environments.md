@@ -3,15 +3,15 @@ title: 環境の監視
 seo-title: 環境の監視
 description: 'null'
 seo-description: このページでは、環境内の個々のインスタンスを監視し、各インスタンスの様々な指標を追跡することでおこなわれる Cloud Manager のシステム監視について説明します。
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
 
 # システム監視 {#system-monitoring}
 
-[!UICONTROL Cloud Manager] のシステム監視は、環境内の個々のインスタンスを監視し、各インスタンスの様々な指標を追跡することでおこなわれます。各指標には、*警告しきい値*と*重大しきい値*の 2 つのしきい値が定義されています。
+[!UICONTROL Cloud Manager] のシステム監視は、環境内の個々のインスタンスを監視し、各インスタンスの様々な指標を追跡することでおこなわれます。各指標には、*警告しきい値*&#x200B;と&#x200B;*重大しきい値*&#x200B;の 2 つのしきい値が定義されています。
 
 指標が重大のしきい値を超えた場合は、重大な状態にあると見なされます。指標が警告しきい値を超えた（ただし、重大のしきい値は下回る）場合は、警告状態にあると見なされます。しきい値は Adobe Managed Services で設定され、[!UICONTROL Cloud Manager] で視覚化できます。ほとんどの場合、しきい値は顧客間で統一されていますが、特定の顧客要件に合わせて Adobe Managed Services がしきい値を変更する場合もあります。しきい値に関するご質問は、担当のカスタマーサクセスエンジニア（CSE）にお問い合わせください。
 
@@ -19,7 +19,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 システム監視機能に移動するには、2 とおりの方法があります。
 
-1. **Managed Services - プログラム** のランディングページにログインします。
+1. **Managed Services - プログラム**&#x200B;のランディングページにログインします。
 
    ![](assets/ProgramLanding.png)
 
@@ -29,7 +29,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
    *または*、
 
-* [!UICONTROL Cloud Manager] 内の **レポート** グローバルナビゲーションメニュー項目を使用して、**システムの監視** ランディングページに移動します。
+* [!UICONTROL Cloud Manager] 内の&#x200B;**レポート**&#x200B;グローバルナビゲーションメニュー項目を使用して、**システムの監視**&#x200B;ランディングページに移動します。
 
 
 ## システム監視の概要ページ {#system-monitoring-overview-page}
@@ -61,12 +61,12 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 個々のグラフには、ステータスとデータの時間変化のグラフのほか、しきい値が表示されます。複数のインスタンスが表示されている場合、各インスタンスのデータは別個の系列になります。
 
-![](assets/System-Monitoring3.png)
+![](assets/Monitoring_Graphs1.png)
 
 凡例で個々の系列をクリックして、その系列をグラフ上で非表示にすることができます。
 例えば、警告しきい値系列をクリックすると、重大のしきい値のみ表示されます。
 
-![](assets/System_Monitoring4.png)
+![](assets/Monitoring_Graphs2.png)
 
 ### 指標の定義 {#metric-definitions}
 
