@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
    ![](assets/Deploy1.png)
 
-1. **パイプライン実行** 画面が表示されます。
+1. **パイプライン実行**&#x200B;画面が表示されます。
 
    「**ビルド**」をクリックしてプロセスを開始します。
 
@@ -41,25 +41,27 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
    >
    >さらに、テスト条件のログを表示したり、結果を確認したりすることで、様々なデプロイメントプロセスから手順を確認できます。
 
-   **ステージのデプロイメント** には、以下の手順が含まれます。
+   **ステージのデプロイメント**&#x200B;には、以下の手順が含まれます。
 
    * ビルドおよび単体テスト
    * コードスキャン
    * ステージへのデプロイ
-   ![](assets/Stage_Testing.png)
+   ![](assets/Stage_Deployment1.png)
 
-   **ステージテスト** には、以下の手順が含まれます。
+   **ステージテスト**&#x200B;には、以下の手順が含まれます。
 
    * セキュリティテスト
    * パフォーマンステスト
-   ![](assets/Stage_Deployment.png)
+   ![](assets/Stage_Testing1.png)
 
-   **実稼動のデプロイメント** には、以下の手順が含まれます。
+   **実稼動のデプロイメント**&#x200B;には、以下の手順が含まれます。
 
    * **承認用アプリケーション**（有効な場合）
    * **実稼動のデプロイメントをスケジュール**（有効な場合）
    * **CSE サポート**（有効な場合）
    * **実稼動へのデプロイ**
+   ![](assets/Prod_Deployment1.png)
+
    >[!NOTE]
    >
    >「**実稼動のデプロイメントをスケジュール**」は、パイプラインの設定時に有効になります。
