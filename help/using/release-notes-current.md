@@ -4,17 +4,17 @@ seo-title: AEM Cloud Manager リリースノート（2019.9.0）
 description: このページでは、Cloud Manager リリース 2019.9.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2019.9.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
+source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 ---
 
 # リリースノート（2019.9.0） {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2019.9.0リリースでは、Slingリファラーフィルターのヘルスチェックおよび監視グラフにアップデートが追加されました。
+[!UICONTROL Cloud Manager] 2019.9.0リリースでは、セキュリティテスト条件が更新され、ダウンロード可能な監視グラフが追加され、お客様から報告された一部のユーザビリティ問題が修正されました。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2019.9.0 のリリース日は 2019 年 9 月 11 日です。
+[!UICONTROL Cloud Manager] バージョン 2019.9.0 のリリース日は 2019 年 9 月 12 日です。
 
 ## 最新情報 {#whats-new}
 
@@ -38,4 +38,4 @@ source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
 
 ## 既知の問題 {#known-issues}
 
-Safariでは、監視グラフのダウンロードはできません。
+* Safariでは、監視グラフのダウンロードはできません。
