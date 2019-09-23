@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: bc9a0d63-ae6b-4fe9-81e5-bf9844f04e54
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
 
 ---
 
@@ -36,7 +36,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
    また、AEM 環境に新しいコードの変更をデプロイするために、[!UICONTROL Cloud Manager] の使用を開始する際には、既存の AEM プロジェクトを、推奨されるベストプラクティスに従う必要があります。
 
-   AEM 6.4 へのアップグレードの利点について詳しくは、[AEM 6.4 へのアップグレード](https://helpx.adobe.com/jp/experience-manager/6-4/sites/deploying/using/upgrade.html)を参照してください。
+   To get additional information on the benefits of upgrading to AEM 6.4, see [Upgrading to AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/upgrade.html).
 
 ## [!UICONTROL Cloud Manager] {#accessing-cloud-manager} へのアクセス
 
@@ -44,13 +44,13 @@ Adobe Identity Management 資格情報を使用して [!UICONTROL Experience Clo
 
 [!UICONTROL Cloud Manager] に初めてログインした後、[!UICONTROL Cloud Manager] UI から直接 AEM 環境にアクセスできます。最初のコードブランチをステージおよび実稼動環境にデプロイすると、この時点で、[!UICONTROL Cloud Manager] のすべての機能を確認する準備が整います。
 
-[!UICONTROL Cloud Manager] を確認して使用を開始するには、[初回ログイン](first-time-login.md)を参照してください。AEM について詳しくは、[AEM 6.4 の概要](https://helpx.adobe.com/jp/experience-manager/6-4/sites/deploying/using/deploy.html)を参照してください。さらに、[AEM の関連資料](https://www.adobe.com/jp/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&amp;mv=other)も参照してください。
+[!UICONTROL Cloud Manager] を確認して使用を開始するには、[初回ログイン](first-time-login.md)を参照してください。AEMについて詳しくは、「AEM 6.4 [はじめに」を参照してください](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html)。 詳しくは、 [AEMのリソース](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) を参照してください。
 
 ## [!UICONTROL Cloud Manager] の概要 {#getting-started-with-cloud-manager}
 
 [!UICONTROL Cloud Manager] にログインすると、まずコードリポジトリ環境を設定し、チームと役割を設定することになります。具体的には、Admin Console UI を使用してユーザーを [!UICONTROL Cloud Manager] プロファイルに追加することで、役割のメンバーシップが割り当てられます。
 
-次に、**Git リポジトリ** にソースコードのブランチを設定する必要があります。これにより、ロードおよびパフォーマンス KPI に関して目標を定義し、すべての品質チェックに正常に合格したら、ステージおよび実稼動環境にコードを適切にデプロイするためのテストシナリオを定義します。
+次に、**Git リポジトリ**&#x200B;にソースコードのブランチを設定する必要があります。これにより、ロードおよびパフォーマンス KPI に関して目標を定義し、すべての品質チェックに正常に合格したら、ステージおよび実稼動環境にコードを適切にデプロイするためのテストシナリオを定義します。
 
 ## エンドツーエンドのプロセス {#end-to-end-journey}
 
