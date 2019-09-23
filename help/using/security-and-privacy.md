@@ -8,21 +8,21 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
 
 ---
 
 
 # セキュリティとプライバシー {#security-and-privacy}
 
-[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが用意されています。例えば、デベロッパーには、開発したコードを **Git リポジトリ** にプッシュする権限があります。また、ビジネスオーナーには、主要業績評価指標（KPI）を定義しデプロイメントを承認できる様々な権限があります。
+[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが用意されています。例えば、デベロッパーには、開発したコードを **Git リポジトリ**&#x200B;にプッシュする権限があります。また、ビジネスオーナーには、主要業績評価指標（KPI）を定義しデプロイメントを承認できる様々な権限があります。
 
 ## 役割に基づく権限 {#role-based-permissions}
 
 ### ユーザーのロール {#user-roles}
 
-[!UICONTROL Cloud Manager] のロール管理は、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) でおこないます。[!UICONTROL Cloud Manager] のユーザーは、顧客の IMS 組織のメンバーであり、Adobe Managed Services 製品コンテキストを持っている必要があります。特定のロールメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
+[!UICONTROL Cloud Managerの役割管理は] 、 [Adobe Admin Consoleで行います](https://helpx.adobe.com/enterprise/using/admin-console.html)。 [!UICONTROL Cloud Manager] のユーザーは、顧客の IMS 組織のメンバーであり、Adobe Managed Services 製品コンテキストを持っている必要があります。特定のロールメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
 
 ロールの設定方法について詳しくは、[ユーザーとロールの設定](setting-up-users-and-roles.md)を参照してください。
 
@@ -73,10 +73,10 @@ Admin Console で割り当てることができるロールの一覧を次の表
 
 [!UICONTROL Cloud Manager] では、コードは送信時に暗号化されます。Cod Manager でビルドされるバイナリは送信時および保存時に暗号化されます。
 
-顧客ごとに専用の **Git** リポジトリを取得します。顧客のコードはセキュリティで保護され、他の **組織** とは共有されません。
+顧客ごとに専用の **Git** リポジトリを取得します。顧客のコードはセキュリティで保護され、他の&#x200B;**組織**&#x200B;とは共有されません。
 
 ## データのプライバシー {#data-privacy}
 
-[!UICONTROL Cloud Manager] は、アドビが規定したプライバシー原則に従っています。デベロッパーは、HTTPS でコードを **Git リポジトリ** に安全にプッシュします。
+[!UICONTROL Cloud Manager] は、アドビが規定したプライバシー原則に従っています。デベロッパーは、HTTPS でコードを **Git リポジトリ**&#x200B;に安全にプッシュします。
 
 [!UICONTROL Cloud Manager] のユーザーインターフェイス（UI）は、アドビが規定した共通のコントロールフレームワークに準拠するサービスに基づいて構築されています。[!UICONTROL Cloud Manager] のユーザーインターフェイス（UI）では、複数のクラウドプロバイダーから提供されるセキュアなサービスを使用しています。
