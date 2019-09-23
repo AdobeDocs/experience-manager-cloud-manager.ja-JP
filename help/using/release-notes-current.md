@@ -10,7 +10,7 @@ source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 # リリースノート（2019.9.0） {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2019.9.0リリースでは、セキュリティテスト条件が更新され、ダウンロード可能な監視グラフが追加され、お客様から報告された一部のユーザビリティ問題が修正されました。
+The [!UICONTROL Cloud Manager] 2019.9.0 Release updates the security test criteria, adds downloadable monitoring graphs, and fixes some customer-reported usability issues.
 
 ## リリース日 {#release-date}
 
@@ -18,24 +18,24 @@ source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 ## 最新情報 {#whats-new}
 
-* Slingリファラーフィルターのヘルスチェックのカテゴリー化が、重要から重要に変更されました。
-* HTMLライブラリマネージャー設定のヘルスチェックのカテゴリー化が、重要から重要に変更されました。
-* グラフをダウンロードできるようになりました。詳しくは、[環境の監視](monitor-your-environments.md)を参照してください。
-* プログラムに実稼働環境のAEM環境がない場合は、ランディングページからプログラムカードをクリックして、Cloud Managerの概要ページに移動し、エラーダイアログを生成しません。
-* 概要ページの **パイプライン設定****カードに****「実稼動パイプライン設定**」という名称が付けられました。
-* 重要な失敗動作のラジオボタンは、コード画質のみのパイプラインから削除されました。
-* **アクティビティ** ページに、実行ごとにパイプラインの名前が表示されるようになりました。
-* 実行ページに、パイプラインの名前が表示されるようになりました。
-* コード品質サマリダイアログに、各レーティングの説明が表示されるようになりました。
+* The categorization of the Sling Referrer Filter health check has been changed from Critical to Important.
+* The categorization of the HTML Library Manager Config health check has been changed from Critical to Important.
+* Monitoring graphs can now be downloaded. 詳しくは、[環境の監視](monitor-your-environments.md)を参照してください。
+* If a program does not have a production AEM environment, clicking on the program card from the landing page will navigate to the Cloud Manager overview page, not produce an error dialog.
+* The Pipeline Settings Card on the Overview page has been retitled to Production Pipeline Settings.************
+* The Important Failure Behavior radio buttons have been removed from code-quality only pipelines.
+* The Activity page now displays the name of the pipeline for each execution.****
+* The execution page now displays the name of the pipeline.
+* The Code Quality summary dialog now shows a description for each rating.
 
 ## バグ修正 {#bug-fixes}
 
-* 承認の待機中に実行の詳細を表示できない場合がありました。
-* **概要** ページで、右側のマージンが一貫していませんでした。
-* ビルドコンテナは大規模なプロジェクトでメモリ不足になる可能性があります。
-* 特定の状況下で、bandedPathsのOakPalルールは、/libsにインストールされているコンテンツを識別しませんでした。
-* 品質ゲートが拒否された場合、ダイアログの見出しは *部分的に渡さ*&#x200B;れていました。
+* Some users could not view an execution details when it was waiting for approval.
+* On Overview page, the right margin was not consistent.****
+* ビルドコンテナーのメモリが大きなプロジェクトで不足する可能性があります。
+* 状況によっては、BoundedPaths OakPALルールが/libsの下にインストールされたコンテンツを識別しない場合がありました。
+* When a quality gate was rejected, the dialog heading still showed Partially Passed.**
 
 ## 既知の問題 {#known-issues}
 
-* Safariでは、監視グラフのダウンロードはできません。
+* Downloading of monitoring graphs is not available in Safari.
