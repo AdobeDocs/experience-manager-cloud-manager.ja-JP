@@ -3,8 +3,8 @@ title: リリースノート（2019.2.0）
 seo-title: AEM Cloud Manager リリースノート（2019.2.0）
 description: このページでは、Cloud Manager リリース 2019.2.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2019.2.0 について説明します。
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 98395c4413b1b6bfbb3a565388ffa32dc3880dff
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 * ウィザードで生成されたプロジェクトのディスパッチャーモジュールに README ファイルが含まれるようになりました。
 * コードスキャンの問題の順序が改善され、問題の優先順位と一致するようになりました。
 * デプロイメントの失敗時でも、ステージングインスタンスがロードバランサーに常に復元されるようになりました。
-* Admin Console で新しい「API デベロッパー」ロールが利用可能になりました。これを使用すると、Adobe I/O コンソールで統合を作成する権限を特定のユーザーに付与できます。詳細は、[デベロッパーの管理](https://www.adobe.com/go/aac_api_prod_learn_jp)を参照してください。
+* Admin Console で新しい「API デベロッパー」ロールが利用可能になりました。これを使用すると、Adobe I/O コンソールで統合を作成する権限を特定のユーザーに付与できます。Refer to [Manage Developers](https://www.adobe.com/go/aac_api_prod_learn) to learn more.
 * Maven アーキタイプのバージョンがバージョン 16 に更新されました。
 * Maven のバージョンがバージョン 3.6.0 に更新されました。
 
