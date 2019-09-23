@@ -7,7 +7,7 @@ page-status-flag: never-activated
 uuid: cef44d35-75ed-44bb-9636-2de2bca5e458
 contentOwner: jsyal
 discoiquuid: c37566d5-0d1b-4c44-abd7-b271ea443c1a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4c1c6786db9b8972f9315bd2f12fc1752881492f
 
 ---
