@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 73203dca7b20570103af429cf933610941b787be
 
 ---
 
@@ -56,13 +56,13 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 [!UICONTROL Cloud Manager] のロールは Adobe Admin Console で管理されます。特定のロールメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
 
-Adobe Admin Console でユーザーを [!UICONTROL Cloud Manager] **製品プロファイル** に追加することで、特定のロールメンバーシップを割り当てることができます。Admin Console では、組織全体にわたるアドビ製品の使用権限を一元的に管理できます。Adobe Admin Console について詳しくは、[Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) のドキュメントを参照してください。
+Adobe Admin Console でユーザーを [!UICONTROL Cloud Manager] **製品プロファイル**&#x200B;に追加することで、特定のロールメンバーシップを割り当てることができます。Admin Console では、組織全体にわたるアドビ製品の使用権限を一元的に管理できます。To learn more about the Adobe Admin Console, see the documentation for [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
 
 >[!NOTE]
 >
 >Admin Console にアクセスしてチーム（ユーザーとロール）を設定するには、ブラウザーを開き、[https://adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise) にアクセスします。
 
-ロールに基づく適切な権限を [!UICONTROL Cloud Manager] ユーザーに付与するには、顧客の **組織** の管理者が [!UICONTROL AEM Managed Services] 製品コンテキストの下で新しい製品プロファイルを作成する必要があります。
+ロールに基づく適切な権限を [!UICONTROL Cloud Manager] ユーザーに付与するには、顧客の&#x200B;**組織**&#x200B;の管理者が [!UICONTROL AEM Managed Services] 製品コンテキストの下で新しい製品プロファイルを作成する必要があります。
 
 ロールに基づく適切な権限を [!UICONTROL Cloud Manager] ユーザーに与えるには、4 つの [!UICONTROL Cloud Manager] ロールに対応する 4 つの新しい製品プロファイルを管理者が [!UICONTROL AEM Managed Services] 製品コンテキストの下に作成する必要があります。
 
@@ -71,7 +71,7 @@ Adobe Admin Console でユーザーを [!UICONTROL Cloud Manager] **製品プロ
 * デベロッパー
 * プログラムマネージャー
 
-以下の図に示すように、[Admin Console](https://adminconsole.adobe.com/) でこれらの製品プロファイルに [!UICONTROL Cloud Manager] のユーザーやグループを作成または追加できます。
+You can create, or add, users/groups to these Product Profiles with the [Admin Console](https://adminconsole.adobe.com/) for [!UICONTROL Cloud Manager], as shown in the figure below:
 
 1. Admin Console にログインし、「**新規プロファイル**」をクリックして新しいプロファイルを追加します。
 
@@ -85,7 +85,7 @@ Adobe Admin Console でユーザーを [!UICONTROL Cloud Manager] **製品プロ
 
    >[!NOTE]
    >
-   >これらの製品プロファイルを作成する際、**表示名** は、[!UICONTROL Cloud Manager] で定義されている値（以下の表を参照）である必要があります。**プロファイル名** は任意ですが、混乱を避けるために、以下の*推奨プロファイル名*列の値を使用することをお勧めします。それには、製品プロファイルの作成時に「**プロファイル名と同じ**」チェックボックスをオフにし、対応する値を「**表示名**」として指定します。
+   >これらの製品プロファイルを作成する際、**表示名**&#x200B;は、[!UICONTROL Cloud Manager] で定義されている値（以下の表を参照）である必要があります。**プロファイル名**&#x200B;は任意ですが、混乱を避けるために、以下の&#x200B;*推奨プロファイル名*&#x200B;列の値を使用することをお勧めします。それには、製品プロファイルの作成時に「**プロファイル名と同じ**」チェックボックスをオフにし、対応する値を「**表示名**」として指定します。
 
    | **ロール** | **表示名（必須）** | **推奨プロファイル名** |
    |---|---|---|
