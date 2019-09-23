@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: fea7cbe19989272100d76092198afcfac17c1c3a
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
-1. **Adobe[!UICONTROL Experience Cloud]** にログインすると、**プログラム** のリストが表示されます。
+1. **Adobe[!UICONTROL Experience Cloud]** にログインすると、**プログラム**&#x200B;のリストが表示されます。
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
@@ -36,8 +36,8 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
    ![](assets/FirstLogin1.png)
 
-1. **プログラム** の説明を設定し、主要業績評価指標（KPI）を定義するには、「**プログラムを設定**」をクリックします。
+1. **プログラム**&#x200B;の説明を設定し、主要業績評価指標（KPI）を定義するには、「**プログラムを設定**」をクリックします。
 
    >[!NOTE]
    >
-   >次の手順を完了するには、[プログラムの設定](https://helpx.adobe.com/jp/experience-manager/cloud-manager/using/setting-up-program.html)を参照してください。
+   >Please see Setup your Program to complete the next steps.[](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html)
