@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 66ed6bdc8a98c77464c7324806cb5d2cb81da469
 
 ---
 
@@ -18,11 +18,11 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ## Cloud Manager を使用した Dispatcher 設定ファイルのデプロイ {#using-cloud-manager-to-deploy-dispatcher-configuration-files}
 
-Cloud Manager では、Web サーバーとディスパッチャーの設定ファイルが、通常の AEM コンテンツパッケージに加え、**Git リポジトリ** に格納されていると仮定して、それらの設定ファイルをデプロイできます。
+Cloud Manager では、Web サーバーとディスパッチャーの設定ファイルが、通常の AEM コンテンツパッケージに加え、**Git リポジトリ**&#x200B;に格納されていると仮定して、それらの設定ファイルをデプロイできます。
 
 この機能を活用するために、Maven ビルドでは、少なくとも 2 つのディレクトリ（***conf*** および ***conf.d***）を含む zip ファイルを作成する必要があります。この zip ファイルは、maven-assembly-plugin を使用して作成できます。組み込みの[ウィザード](create-an-application-project.md)を使用して Cloud Manager で生成されたプロジェクトでは、プロジェクト作成の一環として正しい Maven プロジェクト構造が作成されています。
 
-ディスパッチャー **インスタンス** にデプロイすると、ディスパッチャーインスタンス上の既存のディレクトリの内容は、これらのディレクトリの内容で上書きされます。Web サーバーおよび Dispatcher 設定ファイルは頻繁に環境特有の情報を必要とするので、この機能を正しく使用するには、最初にカスタマーサクセスエンジニア（CSE）に依頼して、これらの環境変数を ***/etc/sysconfig/httpd*** に抽出する必要があります。[](create-an-application-project.md)
+ディスパッチャー&#x200B;**インスタンス**&#x200B;にデプロイすると、ディスパッチャーインスタンス上の既存のディレクトリの内容は、これらのディレクトリの内容で上書きされます。Web サーバーおよび Dispatcher 設定ファイルは頻繁に環境特有の情報を必要とするので、この機能を正しく使用するには、最初にカスタマーサクセスエンジニア（CSE）に依頼して、これらの環境変数を ***/etc/sysconfig/httpd*** に抽出する必要があります。[](create-an-application-project.md)
 
 ### Dispatcher の設定手順 {#steps-for-configuring-dispatcher}
 
@@ -32,13 +32,13 @@ Cloud Manager では、Web サーバーとディスパッチャーの設定フ�
 1. ハードコーディングされた環境特有のデータ（例えば、公開レンダラー IP）を削除し、変数に置き換えます。
 1. 各ターゲット Dispatcher に対して必要な変数をキーと値のペアで定義し、CSE に依頼して各インスタンスの ***/etc/sysconfig/httpd*** に追加します。
 1. ステージ環境で更新された設定をテストし、CSE に依頼して実稼動にデプロイします。
-1. ファイルを **Git リポジトリ** にコミットします。
+1. ファイルを **Git リポジトリ**&#x200B;にコミットします。
 
 1. Cloud Manager を使用してデプロイします。
 
 >[!NOTE]
 >
->Dispatcher と Web サーバーの設定の **Git リポジトリ** への移行は、Cloud Manager のオンボーディング時におこなうことができますが、後でおこなうこともできます。
+>Dispatcher と Web サーバーの設定の **Git リポジトリ**&#x200B;への移行は、Cloud Manager のオンボーディング時におこなうことができますが、後でおこなうこともできます。
 
 ### 例 {#example}
 
@@ -92,7 +92,7 @@ Cloud Manager では、Web サーバーとディスパッチャーの設定フ�
    >[!NOTE]
    手順 1 で説明したように、artifactId と名前は、必要に応じて他の値にすることができます。ここでは、シンプルにするために `dispatcher` を使用します。
 
-1. Maven Assembly Plugin には、zip ファイルの作成方法を定義する*記述子*が必要です。この記述子を作成するには、（サブディレクトリ `dispatcher` に）このコンテンツを含むファイルを作成し、`assembly.xml` という名前を付けます。このファイル名は、上記の `pom.xml` ファイルの 26 行目で参照されることに注意してください。
+1. Maven Assembly Plugin には、zip ファイルの作成方法を定義する&#x200B;*記述子*&#x200B;が必要です。この記述子を作成するには、（サブディレクトリ `dispatcher` に）このコンテンツを含むファイルを作成し、`assembly.xml` という名前を付けます。このファイル名は、上記の `pom.xml` ファイルの 26 行目で参照されることに注意してください。
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
@@ -215,7 +215,7 @@ Cloud Manager では、Web サーバーとディスパッチャーの設定フ�
    ```
 
    >[!NOTE]
-   手順 1 で述べたように、`<module>` 要素の値は、作成されたディレクトリ名と **一致する** 必要があります。
+   手順 1 で述べたように、`<module>` 要素の値は、作成されたディレクトリ名と&#x200B;**一致する**&#x200B;必要があります。
 
 1. 最後に、テストするには、プロジェクトのルートディレクトリで mvn clean package を実行します。出力には以下のような行が表示されます。
 
