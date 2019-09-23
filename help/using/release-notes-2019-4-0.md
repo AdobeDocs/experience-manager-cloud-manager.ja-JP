@@ -3,8 +3,8 @@ title: リリースノート（2019.4.0）
 seo-title: AEM Cloud Manager リリースノート（2019.4.0）
 description: このページでは、Cloud Manager リリース 2019.4.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2019.4.0 について説明します。
-translation-type: ht
-source-git-commit: 8031df1c1ce9d7fee4ef33de289c6952370b7589
+translation-type: tm+mt
+source-git-commit: b368c46c2a9f40d0c3867db6eb2a333bd71fe22a
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: 8031df1c1ce9d7fee4ef33de289c6952370b7589
 * 詳細が使用できない場合でも、コードスキャンステップ用の詳細ボタンが有効になっていました。
 * 1 分あたりのページビュー数に無効な値が指定されると表示されるエラーメッセージで、KPI の下限が正しくありませんでした。
 * 実稼動以外のパイプラインのデプロイメントカテゴリが、間違って大文字になっていました。
-* Git リポジトリが正しく設定されていない場合、**概要** ページのコールトゥアクションカードに間違ったテキストが表示されていました。
+* Git リポジトリが正しく設定されていない場合、**概要**&#x200B;ページのコールトゥアクションカードに間違ったテキストが表示されていました。
 
 ## 既知の問題 {#known-issues}
 
