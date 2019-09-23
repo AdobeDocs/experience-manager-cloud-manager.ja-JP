@@ -55,7 +55,7 @@ source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 >[!NOTE]
 >
->[詳細な定義については、指標の定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) を参照してください。
+>Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
 
 ここでルールの一覧 [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx) をダウンロードできます。
 
