@@ -8,17 +8,17 @@ contentOwner: jsyal
 topic-tags: release-notes
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: b78c29520414726ad2bbf86e5b7f8e65710c7f75
 
 ---
 
 
 # リリースノート（2018.7.0） {#release-notes-for}
 
-次の節では、**自動スケーリング機能を提供する [!UICONTROL Cloud Manager] 2018.7.0 リリースの概要を説明します。
+次の節では、**&#x200B;自動スケーリング機能を提供する [!UICONTROL Cloud Manager] 2018.7.0 リリースの概要を説明します。
 
-**自動スケーリング** は、実稼動環境での`Dispatcher/Publish`セグメントの水平方向スケールアウトによって有効になり、負荷、ボリューム、アクセスなどの定義済み監視対象指標の増加に対応できます。
+**自動スケーリング**&#x200B;は、実稼動環境での`Dispatcher/Publish`セグメントの水平方向スケールアウトによって有効になり、負荷、ボリューム、アクセスなどの定義済み監視対象指標の増加に対応できます。
 
 ## リリース日 {#release-date}
 
