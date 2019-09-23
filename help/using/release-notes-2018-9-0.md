@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
 
 ---
 
@@ -36,7 +36,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 * 状況によっては、アクティビティページで「詳細」ボタンをクリックすると、概要ページにリダイレクトされることがありました。
 * 予期しない状況でまれに、概要ページにカードが表示されないことがありました。
 * アセットアイコンが、すべての顧客のプログラムリストページに表示されていました。
-* バックエンドエラーが発生した場合、パイプラインの実行が**検証ステップに残っているように見えることがありました。
+* バックエンドエラーが発生した場合、パイプラインの実行が&#x200B;**&#x200B;検証ステップに残っているように見えることがありました。
 * ある状況で、プログラム説明の長さが誤って計算されていました。
 
 ## 既知の問題 {#known-issues}
