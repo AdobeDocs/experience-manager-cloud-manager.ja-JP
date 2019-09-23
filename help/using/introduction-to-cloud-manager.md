@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: d7c9ab3795fb3df02ab7dffd1328760ccd914a18
 
 ---
 
@@ -20,12 +20,12 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 Adobe Managed Cloud サービスの 1 つである [!UICONTROL Cloud Manager] を使用すると、組織は自らクラウド上で Experience Manager を管理できるようになります。このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
 
-[!UICONTROL Cloud Manager] のセルフサービスのカスタマーポータルを使用すると、**組織** は以下のことを実行および活用できます。
+[!UICONTROL Cloud Manager] のセルフサービスのカスタマーポータルを使用すると、**組織**&#x200B;は以下のことを実行および活用できます。
 
-* コードの **継続的統合／継続的配信** により、数か月／数週間かかっていた市場投入時間を数日／数時間へと短縮します。
-* 実稼動の中断を最小限に抑えるために、実稼動にプッシュする前のベストプラクティスに基づいた **コード調査、パフォーマンステストおよびセキュリティの検証**。
-* 最大限の柔軟性とコントロールを実現するための、業務時間以外の **自動、スケジュールまたは手動デプロイメント**。
-* **自動スケーリング** 機能により、容量増加の必要性がインテリジェントに検出され、追加の Dispatcher／パブリッシュセグメントが自動的にオンラインになります。
+* コードの&#x200B;**継続的統合／継続的配信**&#x200B;により、数か月／数週間かかっていた市場投入時間を数日／数時間へと短縮します。
+* 実稼動の中断を最小限に抑えるために、実稼動にプッシュする前のベストプラクティスに基づいた&#x200B;**コード調査、パフォーマンステストおよびセキュリティの検証**。
+* 最大限の柔軟性とコントロールを実現するための、業務時間以外の&#x200B;**自動、スケジュールまたは手動デプロイメント**。
+* **自動スケーリング**&#x200B;機能により、容量増加の必要性がインテリジェントに検出され、追加の Dispatcher／パブリッシュセグメントが自動的にオンラインになります。
 
 以下の画像に、[!UICONTROL Cloud Manager] で使用される CI／CD プロセスフローを示します。
 
@@ -41,7 +41,7 @@ Adobe Managed Cloud サービスの 1 つである [!UICONTROL Cloud Manager] �
 
 お客様は、アプリケーション特有の主要業績評価指標（KPI）（1 分あたりのピークページビュー数とページ読み込みに対する予想応答時間）を定義します。これが、最終的にデプロイメントが成功したかどうかを測定するための基礎となります。様々なチームメンバーの役割と権限を簡単に定義できます。新しいセルフサービスインターフェイスでは制御は自分でできますが、必要に応じて必要なアドバイスを提供できるアドビ内の専門家にアクセスできます。
 
-[!UICONTROL Cloud Manager] の UI を確認して使用を開始するには、[初回ログイン](https://helpx.adobe.com/jp/experience-manager/cloud-manager/using/first-time-login.html)を参照してください。
+[!UICONTROL Cloud ManagerのUIを参照して使い始めるに]は [、初回ログインを参照](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html)してください。
 
 ### CI／CD パイプライン {#ci-cd-pipeline}
 
@@ -49,7 +49,7 @@ Adobe Managed Cloud サービスの 1 つである [!UICONTROL Cloud Manager] �
 
 [!UICONTROL Cloud Manager] UI を使用して、CI／CD パイプラインを設定および開始できます。このパイプラインの間、徹底したコードスキャンが実行され、高品質なアプリケーションのみが実稼動環境に渡されます。
 
-[!UICONTROL Cloud Manager] の UI からのパイプラインの設定について詳しくは、[CI／CD パイプラインの設定](https://helpx.adobe.com/jp/experience-manager/cloud-manager/using/configuring-pipeline.html)を参照してください。
+Cloud ManagerのUIからパイプラインを設定する方法につ [!UICONTROL いて詳しくは]、「CI [/CDパイプライン](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html)の設定」を参照してください。
 
 ### 柔軟なデプロイメントモード {#flexible-deployment-modes}
 
