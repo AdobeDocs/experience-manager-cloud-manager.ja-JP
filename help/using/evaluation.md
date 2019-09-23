@@ -7,7 +7,7 @@ uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
 
 ---
@@ -27,7 +27,7 @@ source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
 これにより、Adobe Experience Manager（AEM）6.5 へのアップグレードに必要な開発作業量を評価できます。
 
 >[!NOTE]
->パターン検出について詳しくは、[パターン検出を使用したアップグレードの複雑性の評価](https://helpx.adobe.com/jp/experience-manager/6-4/sites/deploying/using/pattern-detector.html)を参照してください。
+>To learn more about pattern detector, refer to [Assessing the Upgrade Complexity with the Pattern Detector](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
 
 ## エバリュエーターの実行 {#running-evaluator}
 
