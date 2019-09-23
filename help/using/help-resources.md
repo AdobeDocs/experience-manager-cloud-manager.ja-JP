@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: e35be81f-cfe5-4f14-b9c8-59235a7ef22c
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
 
 ---
 
@@ -18,4 +18,4 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 [!UICONTROL Cloud Manager] に関するサポートを受けるには、最初に [!UICONTROL Adobe Managed Services カスタマーサクセスエンジニア]（CSE）に問い合わせる必要があります。担当の CSE は、お客様の問題を支援できるかどうか、カスタマーケアを使用してサポートチケットを作成する必要があるかどうかをお知らせします。
 
-[エンタープライズサポート](https://helpx.adobe.com/jp/contact/enterprise-support.ec.html)にアクセスして、サポートチケットを作成できます。カスタマーケアでサポートチケットを作成する方法について詳しくは、[AEM サポートポータルへのアクセス](https://help.adobe.com/experience-manager/kb/accessing-aem-support-portal.html)を参照してください。
+エンタープライズサポート [にアクセスして](https://helpx.adobe.com/contact/enterprise-support.ec.html) 、サポートチケットを作成できます。 See [Accessing the AEM Support Portal](https://help.adobe.com/experience-manager/kb/accessing-aem-support-portal.html) for more information on creating Support tickets in Customer Care.
