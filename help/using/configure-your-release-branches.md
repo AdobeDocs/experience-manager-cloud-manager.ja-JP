@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 9c0df236c1e800802d62dea09996bb8e1e7033f7
 
 ---
@@ -80,4 +80,4 @@ To <url>
 
 >[!NOTE]
 >
->よく使用される Git コマンドについては、[Git チートシート](https://github.github.com/training-kit/downloads/github-git-cheat-sheet)を参照してください。
+>To view the common git commands, see the [Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
