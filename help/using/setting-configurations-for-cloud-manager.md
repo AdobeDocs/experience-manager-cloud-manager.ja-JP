@@ -6,8 +6,8 @@ seo-description: Adobe AEM Cloud Manager の設定とユーザーインターフ
 uuid: 65d795f9-aa97-4816-b66b-03b5ae961f47
 contentOwner: jsyal
 discoiquuid: 03241b88-8d28-401b-aa42-17ead6183cd8
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 093e25fa1cf2f5cdc3d8ea0bffd5c02ade854a88
 
 ---
 
@@ -43,7 +43,7 @@ Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファ�
 >
 >Adobe Admin Console では、組織全体にわたるアドビ製品の使用権限を一元的に管理できます。
 >
->Adobe Admin Console について詳しくは、[Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) のドキュメントを参照してください。
+>To learn more about the Adobe Admin Console, see the documentation for [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
 
 | **[!UICONTROL Cloud Manager]のロール** | **説明** |
 |---|---|
@@ -90,13 +90,13 @@ Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファ�
 
 新しい AEM プロジェクトの場合は、既存のプロジェクトを活用し、[!UICONTROL Cloud Manager] を操作します。
 
-詳しくは、[AEM 6.4 のユーザーガイド](https://chl-author./content/help/en/experience-manager/6-4/sites/deploying/using/deploy.html)を参照してください。さらに、[AEM の関連資料](https://www.adobe.com/jp/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&amp;mv=other)も参照してください。
+詳しくは、[AEM 6.4 のユーザーガイド](https://chl-author./content/help/en/experience-manager/6-4/sites/deploying/using/deploy.html). Additionally, refer to [AEM Resources](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) for further information.
 
 * **既存の AEM プロジェクト**：
 
 既存の AEM プロジェクトは、プロジェクト設定ルールに従っている必要があります。既存の AEM インストールをアップグレードして、AEM 6.4 で提供されている新機能および機能強化を入手し、[!UICONTROL Cloud Manager] の使用を開始することができます。これらの条件は、最小限の変更で達成できます。サポートについては、カスタマーサクセスエンジニア（CSE）にお問い合わせください。
 
-AEM インスタンスの 6.4 へのアップグレードについて詳しくは、[AEM 6.4 へのアップグレード](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/upgrade.html)を参照してください。
+To get additional information on upgrading your AEM instance to 6.4, see [Upgrading to AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/upgrade.html).
 
 ### リポジトリの設定 {#setting-up-repository}
 
@@ -131,13 +131,13 @@ AEM インスタンスの 6.4 へのアップグレードについて詳しく�
 
 [!UICONTROL Cloud Manager] がパフォーマンステストを適切に実行するには、ステージディスパッチャーサーバーが、実稼動サーバーと一貫性のある方法で、実稼動ディスパッチャーと同じホスト名に応答する必要があります。
 
-*例えば、*顧客の実稼動ホスト名が [www.myco.com](http://www.myco.com/) と [www.myotherco.com](http://www.myotherco.com/) で、ステージホスト名が stage-myco.adobecqms.net の場合は、次のような要求に適切に応答する必要があります。
+*For example*, if a customer has [www.myco.com](http://www.myco.com/) and [www.myotherco.com](http://www.myotherco.com,/) as their production host names and stage-myco.adobecqms.net as their stage host name, a request like this must respond appropriately:
 
 ```
 curl -H"Host: www.myco.com" http://stage-myco.adobecqms.net/en/home.html
 ```
 
-それには、Dispatcher 設定でホスト名を正しく設定するだけでなく、ステージ環境と実稼動環境で一貫性のある方法を使用して ***/etc/map***、任意の Apache リライト、その他のすべてのパス***マッピング／フィルター***ルールを実装する必要があります。
+それには、Dispatcher 設定でホスト名を正しく設定するだけでなく、ステージ環境と実稼動環境で一貫性のある方法を使用して ***/etc/map***、任意の Apache リライト、その他のすべてのパス&#x200B;***マッピング／フィルター***&#x200B;ルールを実装する必要があります。
 
 ## 開発のベストプラクティス {#development-best-practices}
 
@@ -174,4 +174,4 @@ change as per KT
 
 一般的な設定が完了したら、いつでも [!UICONTROL Cloud Manager] を使用できます。
 
-[!UICONTROL Cloud Manager] の使用を開始するには、[[!UICONTROL Cloud Manager] の使用](https://helpx.adobe.com/experience-manager/cloud-manager/using/using-cloud-manager.html)を参照してください。
+Refer to [Using [!UICONTROL Cloud Manager]](https://helpx.adobe.com/experience-manager/cloud-manager/using/using-cloud-manager.html) to get started with [!UICONTROL Cloud Manager].
