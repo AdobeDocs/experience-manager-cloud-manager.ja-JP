@@ -6,7 +6,7 @@ seo-description: Adobe AEM Cloud Manager ヘルプの概要
 uuid: d4a23a6e-347e-41c3-9e3b-b7b7469c4754
 contentOwner: jsyal
 discoiquuid: 5ca5a413-639e-43fb-93dd-16ce8935a3fd
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 617b04e7465fa41542606b733ded76a32467738d
 
 ---
@@ -26,7 +26,7 @@ source-git-commit: 617b04e7465fa41542606b733ded76a32467738d
 
 「概要」節の次のリソースでは、[!UICONTROL Cloud Manager] の基本的事項について説明しています。
 
-* **[[!UICONTROL Cloud Manager の概要]](introduction-to-cloud-manager.md)**
+* **[[!UICONTROL Cloud Manager] の概要](introduction-to-cloud-manager.md)**
 * **[主要な概念](key-concepts.md)**
-* **[[!UICONTROL カスタマージャーニー]](customer-journey.md)**
+* **[[!UICONTROL Customer Journey]](customer-journey.md)**
 
