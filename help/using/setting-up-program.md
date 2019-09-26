@@ -97,4 +97,4 @@ source-git-commit: 2c05eb4610e35d5126c6c67e44f4b71f3026c887
 
 **パイプライン**&#x200B;を設定済みの場合、更新された設定は次回の実行で考慮されます。まだパイプラインを設定していない場合は、まず手順に従ってパイプラインを設定します。
 
-パイプライン [の設定については、「CI/CDパイプラインの設定](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html) 」を参照してください。
+Please see [Configure your CI/CD Pipeline](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html) for setting up the pipeline.
