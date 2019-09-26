@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 translation-type: tm+mt
-source-git-commit: 66ed6bdc8a98c77464c7324806cb5d2cb81da469
+source-git-commit: e0a280efddb1e31f5aef65f0f52fc5b4e71de3da
 
 ---
 
@@ -20,11 +20,11 @@ source-git-commit: 66ed6bdc8a98c77464c7324806cb5d2cb81da469
 
 Cloud Manager では、Web サーバーとディスパッチャーの設定ファイルが、通常の AEM コンテンツパッケージに加え、**Git リポジトリ**&#x200B;に格納されていると仮定して、それらの設定ファイルをデプロイできます。
 
-この機能を活用するために、Maven ビルドでは、少なくとも 2 つのディレクトリ（***conf*** および ***conf.d***）を含む zip ファイルを作成する必要があります。この zip ファイルは、maven-assembly-plugin を使用して作成できます。組み込みの[ウィザード](create-an-application-project.md)を使用して Cloud Manager で生成されたプロジェクトでは、プロジェクト作成の一環として正しい Maven プロジェクト構造が作成されています。
+この機能を活用するために、Maven ビルドでは、少なくとも 2 つのディレクトリ（***conf*** および ***conf.d***）を含む zip ファイルを作成する必要があります。この zip ファイルは、maven-assembly-plugin を使用して作成できます。組み込みの[ウィザード](create-an-application-project.md)を使用して Cloud Manager で生成されたプロジェクトでは、プロジェクト作成の一環として正しい Maven プロジェクト構造が作成されています。これは、新しいManaged Servicesのお客様に推奨されるパスです。
 
-ディスパッチャー&#x200B;**インスタンス**&#x200B;にデプロイすると、ディスパッチャーインスタンス上の既存のディレクトリの内容は、これらのディレクトリの内容で上書きされます。Web サーバーおよび Dispatcher 設定ファイルは頻繁に環境特有の情報を必要とするので、この機能を正しく使用するには、最初にカスタマーサクセスエンジニア（CSE）に依頼して、これらの環境変数を ***/etc/sysconfig/httpd*** に抽出する必要があります。[](create-an-application-project.md)
+ディスパッチャー&#x200B;**インスタンス**&#x200B;にデプロイすると、ディスパッチャーインスタンス上の既存のディレクトリの内容は、これらのディレクトリの内容で上書きされます。Since web server and Dispatcher configuration files frequently require environment-specific information, in order for this capability to be used correctly, you will first need to work with your Customer Success Engineers (CSE) to set these environment variables in ***/etc/sysconfig/httpd***.
 
-### Dispatcher の設定手順 {#steps-for-configuring-dispatcher}
+### 既存のManaged Servicesのお客様向けにディスパッチャーを設定する手順 {#steps-for-configuring-dispatcher}
 
 以下の手順に従って、Dispatcher 設定の最初のプロセスを完了します。
 
