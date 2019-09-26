@@ -18,8 +18,8 @@ The [!UICONTROL Cloud Manager] 2019.9.0 Release updates the security test criter
 
 ## 最新情報 {#whats-new}
 
-* The categorization of the Sling Referrer Filter health check has been changed from Critical to Important.
-* The categorization of the HTML Library Manager Config health check has been changed from Critical to Important.
+* Slingリファラーフィルターのヘルスチェックのカテゴリが「重要」から「重要」に変更されました。
+* HTMLライブラリマネージャー設定のヘルスチェックのカテゴリが「重要」から「重要」に変更されました。
 * Monitoring graphs can now be downloaded. 詳しくは、[環境の監視](monitor-your-environments.md)を参照してください。
 * If a program does not have a production AEM environment, clicking on the program card from the landing page will navigate to the Cloud Manager overview page, not produce an error dialog.
 * The Pipeline Settings Card on the Overview page has been retitled to Production Pipeline Settings.************
@@ -32,10 +32,10 @@ The [!UICONTROL Cloud Manager] 2019.9.0 Release updates the security test criter
 
 * Some users could not view an execution details when it was waiting for approval.
 * On Overview page, the right margin was not consistent.****
-* ビルドコンテナーのメモリが大きなプロジェクトで不足する可能性があります。
-* 状況によっては、BoundedPaths OakPALルールが/libsの下にインストールされたコンテンツを識別しない場合がありました。
+* The build container could run out of memory in large projects.
+* Under certain circumstances, the BannedPaths OakPAL rule did not identify installed content under /libs.
 * When a quality gate was rejected, the dialog heading still showed Partially Passed.**
 
 ## 既知の問題 {#known-issues}
 
-* Downloading of monitoring graphs is not available in Safari.
+* 監視グラフのダウンロードはSafariでは利用できません。
