@@ -90,7 +90,7 @@ Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファ�
 
 新しい AEM プロジェクトの場合は、既存のプロジェクトを活用し、[!UICONTROL Cloud Manager] を操作します。
 
-詳しくは、[AEM 6.4 のユーザーガイド](https://chl-author./content/help/en/experience-manager/6-4/sites/deploying/using/deploy.html). Additionally, refer to [AEM Resources](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) for further information.
+詳しくは、[AEM 6.4 のユーザーガイド](https://chl-author./content/help/en/experience-manager/6-4/sites/deploying/using/deploy.html). 詳しくは、 [AEMのリソース](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) を参照してください。
 
 * **既存の AEM プロジェクト**：
 
@@ -131,7 +131,7 @@ To get additional information on upgrading your AEM instance to 6.4, see [Upgrad
 
 [!UICONTROL Cloud Manager] がパフォーマンステストを適切に実行するには、ステージディスパッチャーサーバーが、実稼動サーバーと一貫性のある方法で、実稼動ディスパッチャーと同じホスト名に応答する必要があります。
 
-*For example*, if a customer has [www.myco.com](http://www.myco.com/) and [www.myotherco.com](http://www.myotherco.com,/) as their production host names and stage-myco.adobecqms.net as their stage host name, a request like this must respond appropriately:
+*例えば*、顧客の実稼働用ホスト名にwww.myco.com [、](http://www.myco.com/) www.myotherco.com [](http://www.myotherco.com,/) 、ステージホスト名にstage-myco.adobecqms.netを使用している場合、次のようなリクエストが適切に応答する必要があります。
 
 ```
 curl -H"Host: www.myco.com" http://stage-myco.adobecqms.net/en/home.html
