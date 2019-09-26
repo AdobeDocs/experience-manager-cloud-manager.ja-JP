@@ -40,4 +40,4 @@ source-git-commit: fea7cbe19989272100d76092198afcfac17c1c3a
 
    >[!NOTE]
    >
-   >Please see Setup your Program to complete the next steps.[](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html)
+   >次の手順を完了す [るには、「プログラムのセットアップ](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) 」を参照してください。
