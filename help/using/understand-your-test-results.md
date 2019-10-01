@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 ---
@@ -55,7 +55,7 @@ source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 >[!NOTE]
 >
->Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
+>詳しくは、[指標の定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions)を参照してください。
 
 ここでルールの一覧 [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx) をダウンロードできます。
 
@@ -120,7 +120,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | 安全でないことが明確なユーザープロファイルポリシーが存在しない | ユーザープロファイルへのデフォルトアクセス | 重大 |
 | Sling Referrer Filter が CSRF 攻撃を防止するように設定されている | Sling Referrer Filter | 重要 |
 | Adobe Granite HTML Library Manager が適切に設定されている | CQ HTML Library Manager 設定 | 重要 |
-| CRXDE サポートバンドルは無効です | CRXDE サポート | 重要 |
+| CRXDE サポートバンドルが無効である | CRXDE サポート | 重要 |
 | Sling DavEx のバンドルおよびサーブレットが無効である | DavEx ヘルスチェック | 重要 |
 | サンプルコンテンツがインストールされていない | サンプルコンテンツパッケージ | 重要 |
 | WCM Request Filter と WCM Debug Filter が両方とも無効になっている | WCM フィルター設定 | 重要 |
