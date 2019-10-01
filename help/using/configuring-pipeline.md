@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
 
 ---
@@ -160,7 +160,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
    >[!NOTE]
    >
-   >Additionally, once you have setup the pipeline, you can still edit settings for the same using **Production Pipeline Settings** tile from the [!UICONTROL Cloud Manager] UI.
+   >さらに、パイプラインを設定した後でも、[!UICONTROL Cloud Manager] UI の「**パイプライン設定**」タイルを使用して、同じ設定を編集できます。
 
    ![](assets/Prod-Pipeline-Settings-Dialog.png)
 
