@@ -3,14 +3,14 @@ title: リリースノート（2019.9.0）
 seo-title: AEM Cloud Manager リリースノート（2019.9.0）
 description: このページでは、Cloud Manager リリース 2019.9.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2019.9.0 について説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 ---
 
 # リリースノート（2019.9.0） {#release-notes-for}
 
-The [!UICONTROL Cloud Manager] 2019.9.0 Release updates the security test criteria, adds downloadable monitoring graphs, and fixes some customer-reported usability issues.
+[!UICONTROL Cloud Manager] 2019.9.0 リリースでは、セキュリティテスト条件を更新し、ダウンロード可能な監視グラフを追加し、お客様から報告されたユーザービリティの問題を修正しました。
 
 ## リリース日 {#release-date}
 
@@ -18,24 +18,24 @@ The [!UICONTROL Cloud Manager] 2019.9.0 Release updates the security test criter
 
 ## 最新情報 {#whats-new}
 
-* Slingリファラーフィルターのヘルスチェックのカテゴリが「重要」から「重要」に変更されました。
-* HTMLライブラリマネージャー設定のヘルスチェックのカテゴリが「重要」から「重要」に変更されました。
-* Monitoring graphs can now be downloaded. 詳しくは、[環境の監視](monitor-your-environments.md)を参照してください。
-* If a program does not have a production AEM environment, clicking on the program card from the landing page will navigate to the Cloud Manager overview page, not produce an error dialog.
-* The Pipeline Settings Card on the Overview page has been retitled to Production Pipeline Settings.************
-* The Important Failure Behavior radio buttons have been removed from code-quality only pipelines.
-* The Activity page now displays the name of the pipeline for each execution.****
-* The execution page now displays the name of the pipeline.
-* The Code Quality summary dialog now shows a description for each rating.
+* Sling Referrer Filter ヘルスチェックの分類が、Critical から Important に変更されました。
+* HTML Library Manager 設定ヘルスチェックの分類が、Critical から Important に変更されました。
+* 監視グラフがダウンロードできるようになりました。詳しくは、[環境の監視](monitor-your-environments.md)を参照してください。
+* プログラムに実稼動 AEM 環境がない場合、ランディングページからプログラムカードをクリックすることで、エラーダイアログが表示されることなく、Cloud Manager の概要ページにナビゲートします。
+* **概要**&#x200B;ページの&#x200B;**パイプライン設定**&#x200B;カードは、タイトルが&#x200B;**実稼動パイプライン設定**&#x200B;に変更されました。
+* コード品質のみのパイプラインから「重要な失敗の動作」ラジオボタンが削除されました。
+* **アクティビティ**&#x200B;ページに、各実行のパイプラインの名前が表示されるようになりました。
+* 実行ページに、パイプラインの名前が表示されるようになりました。
+* コード品質概要ダイアログに、各評価の説明が表示されるようになりました。
 
 ## バグ修正 {#bug-fixes}
 
-* Some users could not view an execution details when it was waiting for approval.
-* On Overview page, the right margin was not consistent.****
-* The build container could run out of memory in large projects.
-* Under certain circumstances, the BannedPaths OakPAL rule did not identify installed content under /libs.
-* When a quality gate was rejected, the dialog heading still showed Partially Passed.**
+* 一部のユーザーは、承認待ちの場合に、実行の詳細を表示できないことがありました。
+* **概要**&#x200B;ページでは、右マージンが一貫していませんでした。
+* 大きなプロジェクトで、ビルドコンテナがメモリを使い果たす可能性がありました。
+* 特定の状況で、BannedPaths OakPAL ルールが /libs にインストールされたコンテンツを識別しませんでした。
+* 品質ゲートが拒否された場合でも、ダイアログの見出しに&#x200B;*「部分的に合格」*&#x200B;と表示されていました。
 
 ## 既知の問題 {#known-issues}
 
-* 監視グラフのダウンロードはSafariでは利用できません。
+* 監視グラフのダウンロードは Safari では利用できません。
