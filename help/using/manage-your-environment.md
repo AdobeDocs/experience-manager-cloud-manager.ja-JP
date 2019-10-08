@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: 2b71bb61e00d462a43519ec0a2dcfe9231fe53ff
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -21,6 +21,13 @@ Cloud Manager の&#x200B;**概要**&#x200B;ページには、管理対象のす�
 一覧される各環境には、関連するステータスが表示されます。
 
 ![](assets/Manage_Environments1.png)
+
+## 環境に関するビデオの概要 {#environments-video}
+
+次のビデオでは、AEM Author、AEM Publishおよびディスパッチャーの各インスタンスで構成されるCloud Manager環境の概要を説明します。
+詳しくは、以下のビデオを参照してください。
+
+>[!VIDEO](https://video.tv.adobe.com/v/26318/?captions=jpn)
 
 ## Cloud Manager での環境へのアクセス {#accessing-environments-in-cloud-manager}
 
