@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: ec35af20dceeb50610bc365c8e00d5ee0374ea34
+source-git-commit: eea425b9bfa178720cbea0653cf8c8f17702281b
 
 ---
 
@@ -22,12 +22,9 @@ source-git-commit: ec35af20dceeb50610bc365c8e00d5ee0374ea34
 >
 >[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。
 
-## An Overview to Programs {#programs-video}
+## プログラムの概要 {#programs-video}
 
-The following video provides an overview to Cloud Manager Programs that represent sets of AEM environments supporting logical sets of business initiatives, typically corresponding to a purchased Service Level Agreement (SLA).
-
-
-[!VIDEO](https://video.tv.adobe.com/v/26313/?quality=12&captions=jpn)
+次のビデオでは、ビジネスイニシアチブの論理的なセット(通常、購入したサービスレベルアグリーメント(SLA)に対応)をサポートするAEM環境のセットを表すCloud Managerプログラムの概要を説明します。
 
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
@@ -48,4 +45,4 @@ The following video provides an overview to Cloud Manager Programs that represen
 
    >[!NOTE]
    >
-   >Please see Setup your Program to complete the next steps.[](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html)
+   >次の手順を完了す [るには、「プログラムのセットアップ](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) 」を参照してください。
