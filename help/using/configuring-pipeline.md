@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
+translation-type: tm+mt
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -167,6 +167,13 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 ## 非実稼動パイプラインとコード品質専用パイプライン
 
 ステージングおよび実稼動環境にデプロイするメインパイプラインに加えて、顧客は、**非実稼動パイプライン**&#x200B;と呼ばれる追加のパイプラインを設定できます。このパイプラインでは、常にビルドステップとコード品質ステップを実行します。また、オプションで Adobe Managed Services 環境にデプロイすることもできます。
+
+### 非実稼働およびコード品質専用パイプラインに関するビデオ
+
+CI/CD非実稼働用パイプラインは、コード品質パイプラインと展開パイプラインの2つのカテゴリに分類されます。 コード品質は、Gitブランチのすべてのコードをパイプライン化し、Cloud Managerのコード品質スキャンに対して構築および評価されます。
+詳しくは、以下のビデオを参照してください。
+
+>[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=jpn)
 
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
