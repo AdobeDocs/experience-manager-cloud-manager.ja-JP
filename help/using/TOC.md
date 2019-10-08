@@ -4,7 +4,7 @@ sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Adobe Experience Manager Cloud Manager ヘルプ
 translation-type: tm+mt
-source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -39,6 +39,9 @@ source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
    + [通知](notifications.md)
    + [カスタムコード品質ルール](custom-code-quality-rules.md)
++ コードの管理 {#managing-code}
+   + [Mavenプロファイルのアクティブ化](activating-maven-project.md)
+   + [Gitとの統合](setup-cloud-manager-git-integration.md)
 + 製品アップデートウィザード {#product-update-wizard}
    + [概要](overview-productupdate-wizard.md)
    + [評価](evaluation.md)
@@ -58,4 +61,3 @@ source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
    + [リリースノート（2018.7.0）](release-notes-2018-7-0.md)
    + [リリースノート（2018.6.0）](release-notes-2018-6-0.md)
    + [リリースノート（2018.5.0）](release-notes-2018-5-0.md)
-
