@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -186,7 +186,9 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
         </profile>
 ```
 
-## カスタム環境変数
+## Environment Variables {#environment-variables}
+
+### 標準環境変数 {#standard-environ-variables}
 
 場合によっては、顧客のビルドプロセスが、Git リポジトリに格納するのに適さない特定の設定変数に依存していることがあります。Cloud Manager では、カスタマーサクセスエンジニア（CSE）がこれらの変数を顧客別に設定できます。これらの変数は、安全な格納先に保存され、特定の顧客のビルドコンテナにのみ表示されます。この機能を使用する顧客は、担当の CSE に連絡して変数を設定してもらう必要があります。
 
