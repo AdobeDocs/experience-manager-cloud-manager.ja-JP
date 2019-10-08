@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: eea425b9bfa178720cbea0653cf8c8f17702281b
+source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
 
 ---
 
@@ -26,6 +26,7 @@ source-git-commit: eea425b9bfa178720cbea0653cf8c8f17702281b
 
 次のビデオでは、ビジネスイニシアチブの論理的なセット(通常、購入したサービスレベルアグリーメント(SLA)に対応)をサポートするAEM環境のセットを表すCloud Managerプログラムの概要を説明します。
 
+>[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=jpn)
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
@@ -45,4 +46,4 @@ source-git-commit: eea425b9bfa178720cbea0653cf8c8f17702281b
 
    >[!NOTE]
    >
-   >次の手順を完了す [るには、「プログラムのセットアップ](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) 」を参照してください。
+   >次の手順を完了す [るには、「プログラムのセットアップ](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) 」を参照して
