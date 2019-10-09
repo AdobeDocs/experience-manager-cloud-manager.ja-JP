@@ -2,13 +2,13 @@
 title: Dispatcher 設定の管理
 seo-title: Dispatcher 設定の管理
 description: 'null'
-seo-description: このページでは、ディスパッチャーの設定について説明します。
+seo-description: このページでは、Dispatcher 設定について説明します。
 uuid: 3ecd8ca3-5241-4811-87fd-3284a8012eda
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e0a280efddb1e31f5aef65f0f52fc5b4e71de3da
 
 ---
@@ -18,13 +18,13 @@ source-git-commit: e0a280efddb1e31f5aef65f0f52fc5b4e71de3da
 
 ## Cloud Manager を使用した Dispatcher 設定ファイルのデプロイ {#using-cloud-manager-to-deploy-dispatcher-configuration-files}
 
-Cloud Manager では、Web サーバーとディスパッチャーの設定ファイルが、通常の AEM コンテンツパッケージに加え、**Git リポジトリ**&#x200B;に格納されていると仮定して、それらの設定ファイルをデプロイできます。
+Cloud Manager では、Web サーバーと Dispatcher 設定ファイルが、通常の AEM コンテンツパッケージに加え、**Git リポジトリ**&#x200B;に格納されていると仮定して、それらの設定ファイルをデプロイできます。
 
-この機能を活用するために、Maven ビルドでは、少なくとも 2 つのディレクトリ（***conf*** および ***conf.d***）を含む zip ファイルを作成する必要があります。この zip ファイルは、maven-assembly-plugin を使用して作成できます。組み込みの[ウィザード](create-an-application-project.md)を使用して Cloud Manager で生成されたプロジェクトでは、プロジェクト作成の一環として正しい Maven プロジェクト構造が作成されています。これは、新しいManaged Servicesのお客様に推奨されるパスです。
+この機能を活用するために、Maven ビルドでは、少なくとも 2 つのディレクトリ（***conf*** および ***conf.d***）を含む zip ファイルを作成する必要があります。この zip ファイルは、maven-assembly-plugin を使用して作成できます。組み込みの[ウィザード](create-an-application-project.md)を使用して Cloud Manager で生成されたプロジェクトでは、プロジェクト作成の一環として正しい Maven プロジェクト構造が作成されています。これは、新しい Managed Services のお客様に対して推奨されるパスです。
 
-ディスパッチャー&#x200B;**インスタンス**&#x200B;にデプロイすると、ディスパッチャーインスタンス上の既存のディレクトリの内容は、これらのディレクトリの内容で上書きされます。Since web server and Dispatcher configuration files frequently require environment-specific information, in order for this capability to be used correctly, you will first need to work with your Customer Success Engineers (CSE) to set these environment variables in ***/etc/sysconfig/httpd***.
+Dispatcher **インスタンス**&#x200B;にデプロイすると、Dispatcher インスタンス上の既存のディレクトリの内容は、これらのディレクトリの内容で上書きされます。Web サーバーおよび Dispatcher 設定ファイルは頻繁に環境特有の情報を必要とするので、この機能を正しく使用するには、最初にカスタマーサクセスエンジニア（CSE）に依頼して、これらの環境変数を ***/etc/sysconfig/httpd*** に設定する必要があります。
 
-### 既存のManaged Servicesのお客様向けにディスパッチャーを設定する手順 {#steps-for-configuring-dispatcher}
+### 既存の Managed Services のお客様向けの Dispatcher の設定手順 {#steps-for-configuring-dispatcher}
 
 以下の手順に従って、Dispatcher 設定の最初のプロセスを完了します。
 
@@ -191,7 +191,7 @@ Cloud Manager では、Web サーバーとディスパッチャーの設定フ�
            └── 02-dispatcher.conf
    ```
 
-1. 最後に、プロジェクトのルートにある pom.xml ファイルで、`<module>` 要素を追加してディスパッチャーモジュールを含めます。
+1. 最後に、プロジェクトのルートにある pom.xml ファイルで、`<module>` 要素を追加して Dispatcher モジュールを含めます。
 
    例えば、既存のモジュールリストが以下の場合、
 
