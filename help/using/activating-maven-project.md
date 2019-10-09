@@ -4,7 +4,7 @@ seo-title: Mavenプロジェクトバージョンの処理
 description: Maven Project Version Handlingの詳細を表示します。
 seo-description: Mavenプロジェクトバージョンの処理の詳細については、このページを参照してください
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: f5ff89820eb843b35b617d300dbbc07f19ca2c17
 
 ---
 
@@ -29,4 +29,4 @@ source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 >[!NOTE]
 >
->元のバージョンがCloud Managerの初期化バージョンに組み込まれたかどうかに関係なく、元のバージョンはMavenプロパティとして、cloudManagerOriginalVersionという名前で使用で *きます*。
+>元のバージョンがCloud Managerの初期化バージョンに組み込まれたかどうかに関係なく、元のバージョンはMavenプロパティとして、cloudManagerOriginalVersionという名前で使用で *きます。*
