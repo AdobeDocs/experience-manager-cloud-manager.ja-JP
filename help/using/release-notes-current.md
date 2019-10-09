@@ -4,14 +4,14 @@ seo-title: AEM Cloud Manager リリースノート（2019.10.0）
 description: このページでは、Cloud Manager リリース 2019.10.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2019.10.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 1e927076e6bc84e8e1761e33a86cff61a3be0d2f
+source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
 
 ---
 
 # リリースノート（2019.10.0） {#release-notes-for}
 
-次の節では、  Cloud Managerリリース2018.10.0の一般的なリリースノートの概要と、デプロイ手順とプロジェクトバージョン管理の更新を説明します。
-詳しくは、次のページに従ってください。
+次の節では、  Cloud Managerリリース2019.10.0の一般的なリリースノートの概要と、デプロイ手順とプロジェクトバージョン管理の更新を説明します。
+詳しくは、以下の節を参照してください。
 
 ## リリース日 {#release-date}
 
@@ -22,7 +22,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.10.0 is October 12,
 * 導入手順の重要な部分が、よりパフォーマンスに優れています。
 * 必要に応じて、ビルドMavenプロジェクトのバージョンにプロジェクトのバージョンがgitに組み込まれるようになります。
 * ビルド時に、新しい環境変数を使用できます。
-* 非実稼働用パイプラインは、概要ページのカードおよびAPIから削除できます。
+* 非実稼働パイプラインは、概要ページのカードとAPI **から** 削除できます。
 * ステージのデプロイ手順の直後、セキュリティテスト手順の前に、新しいオプションの承認手順があります。
 * CI/CDパイプラインを設定する場合、開発環境およびステージ環境で、ディスパッチャーインスタンスのロードバランサーからのデタッチとアタッチをスキップできます。
 詳細は、『 **[Deployment Process](deploying-code.md#deployment-process)** 』を参照してください。
