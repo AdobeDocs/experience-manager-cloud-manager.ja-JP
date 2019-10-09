@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: f5ff89820eb843b35b617d300dbbc07f19ca2c17
 
 ---
 
@@ -126,6 +126,11 @@ Dispatcher の無効化を設定するには、次の手順に従います。
    「**保存**」をクリックして、この設定を保持します。
 
    ![](assets/image2018-8-7_15-4-30.png)
+
+   **ステージのデプロイ後に**&#x200B;承認ステージのデプロイ後に **承認を行うオプションの手順は** 、実稼働パイプラインで設定できます。
+   >[!NOTE]
+   >
+   >**Approve after Stage Deploymentは** 、実稼働環境のデプロイメント前の承認と同様に機能しますが、ステージのデプロイメント手順の直後、つまり、テストが完了する前の承認と比較して、実稼働環境のデプロイメント前の承認とは異なります。
 
 1. 「**テスト**」タブにアクセスして、プログラムのテスト条件を定義します。
 
