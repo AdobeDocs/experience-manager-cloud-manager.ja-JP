@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
 
 ---
 
@@ -22,7 +22,9 @@ source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 >
 >[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。
 
-## ビデオからプログラムの概要 {#programs-video}
+## ビデオチュートリアル {#video-tutorial-one}
+
+### Cloud Managerプログラム {#programs-video}
 
 次のビデオでは、ビジネスイニシアチブの論理的なセット(通常、購入したサービスレベルアグリーメント(SLA)に対応)をサポートするAEM環境のセットを表すCloud Managerプログラムの概要を説明します。
 
@@ -48,7 +50,9 @@ source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
    >
    >次の手順を完了す [るには、「プログラムのセットアップ](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) 」を参照してください。
 
-## 「アクティビティ」タブ {#activity-video}
+## ビデオチュートリアル {#video-tutorial-two}
+
+### 「Cloud Managerアクティビティ」タブ {#activity-video}
 
 Cloud Managerは、すべてのCI/CDパイプライン実行を含むプログラムのアクティビティを統合し、過去と現在のアクティビティを表示し、アクティビティの詳細を確認できます。
 
