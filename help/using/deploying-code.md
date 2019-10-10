@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 ---
 
@@ -95,6 +95,8 @@ Cloud Manager が実稼動以外のトポロジにデプロイされる場合、
 1. Cloud Manager は、デプロイメント中に環境を分離するために、ロードバランサーからすべてのディスパッチャーを削除します。
 
    特に設定がない限り、開発およびステージデプロイメントでのロードバランサーの変更、つまり、開発環境用、および実稼働パイプライン用の両方の非実稼働パイプラインでのステップのデタッチとアタッチが可能です。
+
+   ![](assets/load_balancer.png)
 
    >[!NOTE]
    >
