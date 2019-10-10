@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
+source-git-commit: 581e78ef4163e8e9b2b26613512b82223c214071
 
 ---
 
@@ -192,8 +192,6 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 ## 非実稼動パイプラインとコード品質専用パイプライン
 
 ステージングおよび実稼動環境にデプロイするメインパイプラインに加えて、顧客は、**非実稼動パイプライン**&#x200B;と呼ばれる追加のパイプラインを設定できます。このパイプラインでは、常にビルドステップとコード品質ステップを実行します。また、オプションで Adobe Managed Services 環境にデプロイすることもできます。
-
-## 非実稼働およびコード品質専用パイプラインに関するビデオ
 
 ## ビデオチュートリアル {#video-tutorial-two}
 
