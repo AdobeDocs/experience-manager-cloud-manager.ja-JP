@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 ---
 
@@ -22,10 +22,11 @@ Cloud Manager の&#x200B;**概要**&#x200B;ページには、管理対象のす�
 
 ![](assets/Manage_Environments1.png)
 
-## 環境に関するビデオの概要 {#environments-video}
+## ビデオチュートリアル {#video-tutorial}
+
+### Cloud Manager環境の概要 {#environ-video}
 
 次のビデオでは、AEM Author、AEM Publishおよびディスパッチャーの各インスタンスで構成されるCloud Manager環境の概要を説明します。
-詳しくは、以下のビデオを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/?captions=jpn)
 
