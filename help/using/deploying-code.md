@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
 
 ---
 
@@ -125,7 +125,7 @@ Cloud Manager が実稼動以外のトポロジにデプロイされる場合、
 
    >[!NOTE]
    >
-   >開発およびステージデプロイメントでのランサーの変更をスキップできます。つまり、非実稼働用パイプライン（開発環境用）と実稼働用パイプライン（ステージ環境用）の両方で、ステップの切り離しとアタッチを行うことができます。 この機能は、主に1-1-1のお客様が使用すると想定されています。
+   >開発およびステージデプロイメントでのランサーの変更をスキップできます。つまり、非実稼働用パイプライン（開発環境用）と実稼働用パイプライン（ステージ環境用）の両方で、ステップの切り離しとアタッチを行うことができます。
 
 ### 実稼動フェーズへのデプロイメント {#deployment-production-phase}
 
