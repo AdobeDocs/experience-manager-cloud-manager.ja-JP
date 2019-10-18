@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
+source-git-commit: 8daee34e6cfaddb31fc447f64de9ce5ca7ed54ba
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
 
 ユーザーが Cloud Manager にオンボーディングされると、空の Git リポジトリが提供されます。現在の Adobe Managed Services（AMS）ユーザー（または AMS に移行中のオンプレミス AEM ユーザー）は、通常、プロジェクトコードを既に Git（または別のバージョン管理システム）に格納してあり、プロジェクトを Cloud Manager の Git リポジトリにインポートすることになります。ただし、新規ユーザーは既存のプロジェクトを持っていません。
 
-新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。This process is based on the [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
 
 <!-- 
 
@@ -76,7 +76,7 @@ Cloud Manager で正常にビルドおよびデプロイされるために、既
 
 * デプロイ可能な Dispatcher アーティファクトは、*conf* および *conf.d* というディレクトリを持つ *zip* ファイル（これも *target* という名前のディレクトリに含まれる）をスキャンすることで検出されます
 
-* 複数のコンテンツパッケージがある場合、パッケージデプロイメントの順序は保証されません。特定の順序が必要な場合は、コンテンツパッケージの依存関係を使用して順序を定義できます。
+* 複数のコンテンツパッケージがある場合、パッケージデプロイメントの順序は保証されません。特定の順序が必要な場合は、コンテンツパッケージの依存関係を使用して順序を定義できます。パッケージは展開から [スキップでき](#skipping-content-packages) ます。
 
 <!-- 
 
@@ -106,10 +106,10 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 * [後述されている通り](#installing-additional-system-packages)、これ以外にも、ビルド時にパッケージがインストールされる場合があります。
 * すべてのビルドは、Pristine 環境で実行されます。ビルドコンテナは実行から次回の実行までの間、状態を保持しません。
 * Maven は常に *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package* というコマンドで実行されます。
-* Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています(Refer to [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
+* Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo.adobe.com/)を参照してください）。
 
 
-## Environment Variables {#environment-variables}
+## 環境変数 {#environment-variables}
 
 ### 標準環境変数 {#standard-environ-variables}
 
@@ -234,7 +234,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 
 ## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
 
-すべての機能を実装するにあたり、一部のビルドでは追加のシステムパッケージをインストールする必要があります。例えば、Python や Ruby のスクリプトが呼び出されるビルドでは、当然、適切な言語インタープリターをインストールすることが必要となります。This can be done by calling the [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) to invoke APT. この実行は通常、Cloud Manager 専用の Maven プロファイルにラップされます。例えば、Python は次のようにインストールします：
+すべての機能を実装するにあたり、一部のビルドでは追加のシステムパッケージをインストールする必要があります。例えば、Python や Ruby のスクリプトが呼び出されるビルドでは、当然、適切な言語インタープリターをインストールすることが必要となります。これをおこなうには、[exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) を呼び出して、APT を起動します。この実行は通常、Cloud Manager 専用の Maven プロファイルにラップされます。例えば、Python は次のようにインストールします：
 
 ```xml
         <profile>
@@ -331,4 +331,4 @@ content-package-maven-plugin では、同じようになります。
 
 ## ベストプラクティスに基づくコードの開発 {#develop-your-code-based-on-best-practices}
 
-Adobe Engineering and Consulting teams have developed a [comprehensive set of best practices for AEM developers](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html).
+アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
