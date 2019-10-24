@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 581e78ef4163e8e9b2b26613512b82223c214071
+source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
 
 ---
 
@@ -108,9 +108,9 @@ CI/CD実稼働パイプラインの設定は、パイプラインを開始する
 >
 >「**CSE Oversight を使用**」オプションは、すべての顧客に使用できるわけではありません。
 
-**Approve after Stage Deployment**
+**ステージデプロイメント後に承認**
 
-実稼働パイプラインで設定で **きる、ステージのデプロイ後に** 「承認」(Approve)のオプションの手順があります。
+There is an optional step **Approve after Stage Deployment** which can be configured in the Production Pipeline.
 これは、パイプライン編集画面の新しいオプションで **有効になります** 。
 
 ![](assets/post_deployment1.png)
@@ -121,7 +121,7 @@ CI/CD実稼働パイプラインの設定は、パイプラインを開始する
 
 >[!NOTE]
 >
->**Approve after Stage Deploymentは** 、実稼働環境のデプロイメント前の承認と同様に機能しますが、ステージのデプロイメント手順の直後、つまり、テストが完了する前の承認と比較して、実稼働環境のデプロイメント前の承認とは異なります。
+>**ステージのデプロイ後に承認**&#x200B;機能は、実稼働環境のデプロイメント前の承認と同様に機能しますが、ステージのデプロイメント手順の直後に発生します。つまり、テストの実行前に発生します。一方、実稼働環境のデプロイメント前の承認は、すべてのテストが完了した後におこなわれます。
 
 **Dispatcher の無効化**
 
@@ -197,13 +197,14 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
 ### Cloud Manager非実稼働およびコード品質専用パイプライン {#non-prod-video}
 
-CI/CD非実稼働用パイプラインは、コード品質パイプラインと展開パイプラインの2つのカテゴリに分類されます。 コード品質は、Gitブランチのすべてのコードをパイプライン化し、Cloud Managerのコード品質スキャンに対して構築および評価されます。
+CI／CD 非実稼働パイプラインは、コード品質パイプラインとデプロイパイプラインの 2 つのカテゴリに分類されます。コード品質は、Git ブランチのすべてのコードをパイプライン化し、Cloud Manager のコード品質スキャンに対して構築および評価されます。
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=jpn)
 
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
-1. Cloud Manager のホーム画面から「**非実稼動パイプライン**」タイルにアクセスします。
+1. Access the **Non-Production Pipelines** tile from the Cloud Manager home screen.
 
    ![](assets/Configuring_Pipeline_Add-Production.png)
 
