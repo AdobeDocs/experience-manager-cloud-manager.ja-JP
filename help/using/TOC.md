@@ -3,7 +3,7 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Adobe Experience Manager Cloud Manager ヘルプ
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d458e0735b558940a3da3a7f3129dbec49cc1688
 
 ---
@@ -30,7 +30,7 @@ source-git-commit: d458e0735b558940a3da3a7f3129dbec49cc1688
    + [リリースブランチの設定](configure-your-release-branches.md)
    + [Dispatcher 設定の管理](dispatcher-configurations.md)
 + 使用方法 {#how-to-use}
-   + [CI/CD パイプラインの設定](configuring-pipeline.md)
+   + [CI／CD パイプラインの設定](configuring-pipeline.md)
    + [コードのデプロイ](deploying-code.md)
    + [テスト結果の理解](understand-your-test-results.md)
    + [環境の管理](manage-your-environment.md)
@@ -40,8 +40,8 @@ source-git-commit: d458e0735b558940a3da3a7f3129dbec49cc1688
    + [通知](notifications.md)
    + [カスタムコード品質ルール](custom-code-quality-rules.md)
 + コードの管理 {#managing-code}
-   + [Mavenプロジェクトバージョンの処理](activating-maven-project.md)
-   + [Gitとの統合](setup-cloud-manager-git-integration.md)
+   + [Maven プロジェクトバージョンの処理](activating-maven-project.md)
+   + [Git との統合](setup-cloud-manager-git-integration.md)
 + 製品アップデートウィザード {#product-update-wizard}
    + [概要](overview-productupdate-wizard.md)
    + [評価](evaluation.md)
