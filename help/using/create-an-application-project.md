@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8daee34e6cfaddb31fc447f64de9ce5ca7ed54ba
 
 ---
@@ -76,7 +76,7 @@ Cloud Manager で正常にビルドおよびデプロイされるために、既
 
 * デプロイ可能な Dispatcher アーティファクトは、*conf* および *conf.d* というディレクトリを持つ *zip* ファイル（これも *target* という名前のディレクトリに含まれる）をスキャンすることで検出されます
 
-* 複数のコンテンツパッケージがある場合、パッケージデプロイメントの順序は保証されません。特定の順序が必要な場合は、コンテンツパッケージの依存関係を使用して順序を定義できます。パッケージは展開から [スキップでき](#skipping-content-packages) ます。
+* 複数のコンテンツパッケージがある場合、パッケージデプロイメントの順序は保証されません。特定の順序が必要な場合は、コンテンツパッケージの依存関係を使用して順序を定義できます。パッケージはデプロイメントから[スキップ](#skipping-content-packages)できます。
 
 <!-- 
 
@@ -115,9 +115,9 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 場合によっては、プログラムやパイプラインに関する情報に基づいてビルドプロセスを変更する必要があります。
 
-例えば、ビルド時のJavaScriptの縮小がgulpのようなツールを使用して行われている場合、ステージと実稼働用の構築とは異なる開発環境用の構築時の縮小レベルを使用する必要があります。
+例えば、gulp のようなツールを使用して、ビルド時の JavaScript の縮小がおこなわれている場合、ステージと実稼働用とは異なる、開発環境用のビルド時の縮小レベルを使用したくなる場合があります。
 
-これをサポートするために、Cloud Managerは、これらの標準的な環境変数を各実行のビルドコンテナに追加します。
+これをサポートするために、Cloud Manager は、これらの標準環境変数を各実行のビルドコンテナに追加します。
 
 | **変数名** | **定義** |
 |---|---|
@@ -127,7 +127,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 | CM_PIPELINE_NAME | パイプライン名 |
 | CM_PROGRAM_ID | 数値プログラム識別子 |
 | CM_PROGRAM_NAME | プログラム名 |
-| ARTIFACTS_VERSION | ステージまたは実稼働パイプラインの場合、Cloud Managerで生成された合成バージョン |
+| ARTIFACTS_VERSION | ステージまたは実稼働パイプラインの場合、Cloud Manager で生成された合成バージョン |
 
 ### カスタム環境変数 {#custom-environ-variables}
 
@@ -157,7 +157,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 ごく一部のケースでは、開発用ワークステーションで実行する場合とは異なり、Cloud Manager 内で実行する場合にはビルドプロセスを少し変える必要が出ることもあります。この場合は、[Maven プロファイル](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)を使用して、Cloud Manager を含む環境ごとのビルドの違いを定義できます。
 
-Cloud Managerビルド環境内でのMavenプロファイルのアクティブ化は、前述のCM_BUILD環境変数を探して行う必要があります。 逆に、Cloud Manager ビルド環境以外でのみ使用するためのプロファイルは、この変数がないかどうかを調べることでアクティブ化する必要があります。
+Cloud Manager ビルド環境内での Maven プロファイルのアクティブ化は、前述の CM_BUILD という名前の環境変数があるかどうかを調べておこなう必要があります。逆に、Cloud Manager ビルド環境以外でのみ使用するためのプロファイルは、この変数がないかどうかを調べることでアクティブ化する必要があります。
 
 例えば、Cloud Manager 内でビルドが実行されたときにのみ簡単なメッセージを出力する場合は、次のようにします。
 
@@ -331,4 +331,4 @@ content-package-maven-plugin では、同じようになります。
 
 ## ベストプラクティスに基づくコードの開発 {#develop-your-code-based-on-best-practices}
 
-アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
+アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/ja-JP/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
