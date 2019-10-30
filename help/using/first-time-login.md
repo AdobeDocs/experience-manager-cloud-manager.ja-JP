@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
 
 ---
@@ -24,9 +24,9 @@ source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
 
 ## ビデオチュートリアル {#video-tutorial-one}
 
-### Cloud Managerプログラム {#programs-video}
+### Cloud Manager プログラム {#programs-video}
 
-次のビデオでは、ビジネスイニシアチブの論理的なセット(通常、購入したサービスレベルアグリーメント(SLA)に対応)をサポートするAEM環境のセットを表すCloud Managerプログラムの概要を説明します。
+次のビデオでは、Cloud Manager プログラムの概要について説明します。このプログラムは、通常は購入したサービスレベルアグリーメント（SLA）に対応する、ビジネスイニシアチブの論理的なセットをサポートする一連の AEM 環境を表します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=jpn)
 
@@ -48,12 +48,12 @@ source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
 
    >[!NOTE]
    >
-   >次の手順を完了す [るには、「プログラムのセットアップ](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) 」を参照してください。
+   >次の手順を完了するには、「[プログラムのセットアップ](https://helpx.adobe.com/ja-JP/experience-manager/cloud-manager/using/setting-up-program.html)」を参照してください。
 
 ## ビデオチュートリアル {#video-tutorial-two}
 
-### 「Cloud Managerアクティビティ」タブ {#activity-video}
+### 「Cloud Manager アクティビティ」タブ {#activity-video}
 
-Cloud Managerは、すべてのCI/CDパイプライン実行を含むプログラムのアクティビティを統合し、過去と現在のアクティビティを表示し、アクティビティの詳細を確認できます。
+Cloud Manager を使用すれば、すべての CI／CD パイプライン実行を表示委するプログラムのアクティビティをまとめて表示し、過去と現在のアクティビティや、アクティビティの詳細を確認できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=jpn)
