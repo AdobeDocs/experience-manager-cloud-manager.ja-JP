@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-translation-type: ht
-source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
+translation-type: tm+mt
+source-git-commit: f9df9c05fb708aed3f9ea91780f7a92c24e04673
 
 ---
 
@@ -43,15 +43,16 @@ source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
 
    **ステージのデプロイメント**&#x200B;には、以下の手順が含まれます。
 
-   * ビルドおよび単体テスト
-   * コードスキャン
+   * 検証：この手順により、パイプラインが現在使用可能なリソース（設定済みのブランチが存在する場合など）を使用するように設定され、環境が使用可能になります。
+   * ビルドとユニットのテスト：この手順では、コンテナ化されたビルドプロセスを実行します。 ビルド環 [境について詳しくは、「AEMアプリケーションプロジェクトの作成](create-an-application-project.md) 」を参照してください。
+   * コードスキャン：この手順は、アプリケーションコードの品質を評価します。 テスト [プロセスの詳細については](understand-your-test-results.md) 、「テスト結果を理解する」を参照してください。
    * ステージへのデプロイ
    ![](assets/Stage_Deployment1.png)
 
    **ステージテスト**&#x200B;には、以下の手順が含まれます。
 
-   * セキュリティテスト
-   * パフォーマンステスト
+   * セキュリティテスト — この手順では、アプリケーションコードがAEM環境に与えるセキュリティ上の影響を評価します。 テスト [プロセスの詳細については](understand-your-test-results.md) 、「テスト結果を理解する」を参照してください。
+   * パフォーマンステスト — この手順は、アプリケーションコードのパフォーマンスを評価します。 テスト [プロセスの詳細については](understand-your-test-results.md) 、「テスト結果を理解する」を参照してください。
    ![](assets/Stage_Testing1.png)
 
    **実稼動のデプロイメント**&#x200B;には、以下の手順が含まれます。
