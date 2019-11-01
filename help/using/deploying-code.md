@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: f9df9c05fb708aed3f9ea91780f7a92c24e04673
+source-git-commit: bc9454120c92181503efbf8270ce621af26801d9
 
 ---
 
@@ -51,8 +51,8 @@ source-git-commit: f9df9c05fb708aed3f9ea91780f7a92c24e04673
 
    **ステージテスト**&#x200B;には、以下の手順が含まれます。
 
-   * セキュリティテスト — この手順では、アプリケーションコードがAEM環境に与えるセキュリティ上の影響を評価します。 テスト [プロセスの詳細については](understand-your-test-results.md) 、「テスト結果を理解する」を参照してください。
-   * パフォーマンステスト — この手順は、アプリケーションコードのパフォーマンスを評価します。 テスト [プロセスの詳細については](understand-your-test-results.md) 、「テスト結果を理解する」を参照してください。
+   * セキュリティテスト：この手順では、アプリケーションコードがAEM環境に与えるセキュリティインパクトを評価します。 テスト [プロセスの詳細については](understand-your-test-results.md) 、「テスト結果を理解する」を参照してください。
+   * パフォーマンステスト：この手順は、アプリケーションコードのパフォーマンスを評価します。 テスト [プロセスの詳細については](understand-your-test-results.md) 、「テスト結果を理解する」を参照してください。
    ![](assets/Stage_Testing1.png)
 
    **実稼動のデプロイメント**&#x200B;には、以下の手順が含まれます。
