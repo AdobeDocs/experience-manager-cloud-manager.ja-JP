@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
 
 ---
@@ -21,9 +21,9 @@ source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
 
 ## ビデオチュートリアル {#video-tutorial-one}
 
-### Cloud Managerでのパイプラインの設定 {#config-pipeline-video}
+### Cloud Manager でのパイプラインの設定 {#config-pipeline-video}
 
-CI/CD実稼働パイプラインの設定は、パイプラインを開始するトリガー、実稼働環境の展開とパフォーマンステストのパラメーターを制御するパラメーターを定義します。
+CI／CD 実稼働パイプラインの設定は、パイプラインを開始するトリガー、実稼働環境のデプロイメントを制御するパラメーター、およびテストパラメーターのパフォーマンスを定義します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=jpn)
 
@@ -110,8 +110,8 @@ CI/CD実稼働パイプラインの設定は、パイプラインを開始する
 
 **ステージデプロイメント後に承認**
 
-There is an optional step **Approve after Stage Deployment** which can be configured in the Production Pipeline.
-これは、パイプライン編集画面の新しいオプションで **有効になります** 。
+**ステージのデプロイ後に承認**をおこなうオプションの手順は、実稼働パイプラインで設定できます。
+これは、**パイプライン編集**&#x200B;画面の新しいオプションで有効になります。
 
 ![](assets/post_deployment1.png)
 
@@ -195,7 +195,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
 ## ビデオチュートリアル {#video-tutorial-two}
 
-### Cloud Manager非実稼働およびコード品質専用パイプライン {#non-prod-video}
+### Cloud Manager 非実稼働とコード品質専用パイプライン {#non-prod-video}
 
 CI／CD 非実稼働パイプラインは、コード品質パイプラインとデプロイパイプラインの 2 つのカテゴリに分類されます。コード品質は、Git ブランチのすべてのコードをパイプライン化し、Cloud Manager のコード品質スキャンに対して構築および評価されます。
 
@@ -204,7 +204,7 @@ CI／CD 非実稼働パイプラインは、コード品質パイプラインと
 
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
-1. Access the **Non-Production Pipelines** tile from the Cloud Manager home screen.
+1. Cloud Manager のホーム画面から「**非実稼動パイプライン**」タイルにアクセスします。
 
    ![](assets/Configuring_Pipeline_Add-Production.png)
 
