@@ -3,8 +3,8 @@ title: 環境の監視
 seo-title: 環境の監視
 description: 'null'
 seo-description: このページでは、環境内の個々のインスタンスを監視し、各インスタンスの様々な指標を追跡することでおこなわれる Cloud Manager のシステム監視について説明します。
-translation-type: ht
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+translation-type: tm+mt
+source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
 ---
 
@@ -43,7 +43,7 @@ source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 各カテゴリのステータスは、個々の指標を要約したものです。カテゴリ内のいずれかの指標が重大な状態にある場合、概要ページ上、カテゴリ全体が重大な状態になります。同じ要約が環境レベルとインスタンスレベルでもおこなわれます。
 
-![](assets/Reports.png)
+![](assets/System-Monitoring-Reports.png)
 
 >[!NOTE]
 >
@@ -105,11 +105,11 @@ Cloud Manager のレポートでは、各 AEM インスタンスの様々な指�
 
 お客様は、契約されたサービスレベル契約（SLA）に対する AEM の実稼動環境のパフォーマンスを確認できます。これは、レポート画面のサブメニューから利用できます。例えば、以下のグラフは、2018 年の毎月の SLA 達成度を示しています。
 
-![](assets/sla-reporting1.png)
+![](assets/SLA-Reports-one.png)
 
 システムの監視グラフと同様、データポイントをロールオーバーすると、その月の特定の値が表示されます。
 
-![](assets/sla-reporting2.png)
+![](assets/SLA-Reports-two.png)
 
 このグラフの「イベント分析」セクションには、現在選択されている年の中でプログラムに発生した一連のインシデントが表示されます。インシデントごとに、時間範囲、原因および一連のコメントが記載されています。
 
