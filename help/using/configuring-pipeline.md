@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
+translation-type: tm+mt
+source-git-commit: 06154ad565168d25e18de49c10e5944f39a293c2
 
 ---
 
@@ -58,7 +58,7 @@ CI／CD 実稼働パイプラインの設定は、パイプラインを開始す
 
 1. 「**パイプラインを設定**」をクリックして、パイプラインを設定します。
 
-   ![](assets/Configure_ci-cd-1.png)
+   ![](assets/Setup-Pipeline.png)
 
 1. **パイプラインを設定**&#x200B;画面が表示されます。
 
@@ -187,7 +187,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
    >
    >さらに、パイプラインを設定した後でも、[!UICONTROL Cloud Manager] UI の「**パイプライン設定**」タイルを使用して、同じ設定を編集できます。
 
-   ![](assets/Prod-Pipeline-Settings-Dialog.png)
+   ![](assets/Production-Pipeline.png)
 
 ## 非実稼動パイプラインとコード品質専用パイプライン
 
@@ -206,7 +206,7 @@ CI／CD 非実稼働パイプラインは、コード品質パイプラインと
 
 1. Cloud Manager のホーム画面から「**非実稼動パイプライン**」タイルにアクセスします。
 
-   ![](assets/Configuring_Pipeline_Add-Production.png)
+   ![](assets/Non-Production-Pipeline.png)
 
 1. 「追加」ボタンをクリックして、「パイプライン名」、「パイプラインタイプ」および「Git ブランチ」を指定します。
 
