@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
-translation-type: ht
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+translation-type: tm+mt
+source-git-commit: 72daabd54cd6216743dfbf4d843f685b3b12b3aa
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager の&#x200B;**概要**&#x200B;ページには、管理対象のす�
 
 一覧される各環境には、関連するステータスが表示されます。
 
-![](assets/Manage_Environments1.png)
+![](assets/Manage-Environments1.png)
 
 ## ビデオチュートリアル {#video-tutorial}
 
@@ -36,7 +36,7 @@ Cloud Manager の&#x200B;**概要**&#x200B;ページには、管理対象のす�
 
 ステータスは、環境内のノード全体の総合的な稼動状態です。すべてのノードが実行中であれば緑、停止しているノードが 1 つでもあれば赤、準備中のノードが 1 つでもあれば青、稼動状態が使用不可のノードが 1 つでもあれば黄色になります。
 
-![](assets/manage_environments-screen2.png)
+![](assets/Environments-card-new.png)
 
 ### 環境 {#environments}
 
@@ -48,4 +48,4 @@ Cloud Manager の&#x200B;**概要**&#x200B;ページには、管理対象のす�
 >
 >ノードの&#x200B;**ステータス**&#x200B;は、VM の稼動状態を表し、サーバー上の AEM のステータスは表しません。ステータスは&#x200B;**実行中**（緑の円）、**停止**（赤の円）、**準備中**（青の円）、**使用不可**（黄色の円）のいずれかです。
 
-![](assets/Manage_Environments2.png)
+![](assets/Environments-tab.png)
