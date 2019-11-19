@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
 
 ---
