@@ -5,11 +5,11 @@ description: 'null'
 seo-description: このページでは、パイプライン実行中の 3 層ゲート、Cloud Manager でプログラムを検証するコードスキャンテスト、パフォーマンステストおよびセキュリティテストについて説明します。
 uuid: 93caa01f-0df2-4a6f-81dc-23dfee24dc93
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-translation-type: ht
-source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
+translation-type: tm+mt
+source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
 
 ---
 
@@ -55,7 +55,7 @@ source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 >[!NOTE]
 >
->詳しくは、[指標の定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions)を参照してください。
+>Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
 
 ここでルールの一覧 [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx) をダウンロードできます。
 
@@ -113,7 +113,6 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | AuthorizableNodeName 実装において、認証可能な ID がノード名／パスで公開されていない | 認証可能なノード名生成 | 重大 |
 | デフォルトのパスワードが変更されている | デフォルトのログインアカウント | 重大 |
 | Sling のデフォルトの GET サーブレットが DOS 攻撃から保護されている | Sling GET サーブレット | 重大 |
-| Dispatcher がリクエストを適切にフィルタリングしている | CQ Dispatcher 設定 | 重大 |
 | Sling Java Script Handler が適切に設定されている | Sling Java Script Handler | 重大 |
 | Sling JSP Script Handler が適切に設定されている | Sling JSP Script Handler | 重大 |
 | SSL が正しく設定されている | SSL 設定 | 重大 |
