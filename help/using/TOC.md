@@ -2,9 +2,9 @@
 product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
-user-guide-title: Adobe Experience Manager Cloud Manager ヘルプ
-translation-type: ht
-source-git-commit: 52c54568d8ab7b5091c25b3b65b4baa126bf61f5
+user-guide-title: Experience Manager Cloud Manager Help
+translation-type: tm+mt
+source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
 
 ---
 
@@ -46,7 +46,8 @@ source-git-commit: 52c54568d8ab7b5091c25b3b65b4baa126bf61f5
    + [概要](overview-productupdate-wizard.md)
    + [評価](evaluation.md)
 + リリースノート {#release-notes}
-   + [最新のリリースノート（2019.11.0）](release-notes-current.md)
+   + [最新のリリースノート（2019.12.0）](release-notes-current.md)
+   + [リリースノート（2019.11.0）](release-notes-2019-11-0.md)
    + [リリースノート（2019.10.0）](release-notes-2019-10-0.md)
    + [リリースノート（2019.9.0）](release-notes-2019-9-0.md)
    + [リリースノート（2019.8.0）](release-notes-2019-8-0.md)
