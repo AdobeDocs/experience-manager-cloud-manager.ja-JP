@@ -5,16 +5,16 @@ description: 'null'
 seo-description: Admin Console でユーザーを Cloud Manager 製品プロファイルに追加することで、特定のロールメンバーシップを割り当てることができます。この節では、この機能について詳しく見ていきます。
 uuid: fa204c28-83df-48bb-8360-e158f080dee7
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
 translation-type: tm+mt
-source-git-commit: 73203dca7b20570103af429cf933610941b787be
+source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
 
 ---
 
 
-# ユーザーとロールの追加{#add-users-and-roles}
+# ユーザーとロールの追加 {#add-users-and-roles}
 
 [!UICONTROL Cloud Manager] の多くの機能には、使用するための特定の権限が必要です。例えば、プログラムの主要業績評価指標（KPI）を設定できるのは、特定のユーザーだけです。これらの権限は、論理的にグループ化されてロールになります。
 
@@ -41,16 +41,10 @@ source-git-commit: 73203dca7b20570103af429cf933610941b787be
 |--- |--- |
 | ビジネスオーナー | KPI の定義、実稼動デプロイメントの承認、重大な 3 層エラーのオーバーライドを担当します。 |
 | プログラムマネージャー | [!UICONTROL Cloud Manager] を使用して、チームの設定、ステータスのレビュー、KPI の確認をおこないます。重大な 3 層エラーを承認することができます。 |
-| デプロイメントマネージャー | デプロイメント作業を管理します。[!UICONTROL Cloud Manager] を使用して、ステージング環境または実稼動環境へのデプロイメントを実行します。CI／CD パイプラインを編集できます。重大な 3 層エラーを承認することができます。Git リポジトリにアクセスできます。Git リポジトリへのアクセス権を要求するには、CSE／AMS 担当者にお問い合わせください。 |
-| デベロッパー | カスタムアプリケーションコードを開発およびテストします。主に [!UICONTROL Cloud Manager] を使用してステータスを確認します。コードをコミットするには、Git リポジトリにアクセスできる必要があります。このロールのユーザーを追加する際に CSE／AMS 担当者に連絡して、Git リポジトリへのアクセス権を付与してください。 |
+| デプロイメントマネージャー | デプロイメント作業を管理します。[!UICONTROL Cloud Manager] を使用して、ステージング環境または実稼動環境へのデプロイメントを実行します。CI／CD パイプラインを編集できます。重大な 3 層エラーを承認することができます。Git リポジトリにアクセスできます。 |
+| デベロッパー | カスタムアプリケーションコードを開発およびテストします。主に [!UICONTROL Cloud Manager] を使用してステータスを確認します。コードコミット用にGitリポジトリにアクセスできます。 |
 | カスタマーサクセスエンジニア | AMS のお客様のカスタマーサクセスを全般的にサポートします。CSE 管理が必要なデプロイメントを実行するために、[!UICONTROL Cloud Manager] を操作します。 |
 | コンテンツ作成者 | 通常は、[!UICONTROL Cloud Manager] を操作しません。（[!UICONTROL Experience Cloud] からナビゲートした）[!UICONTROL Cloud Manager] プログラムスイッチャーを使用して、AEM にアクセスできます。 |
-
->[!NOTE]
->
->[!UICONTROL Cloud Manager] Git リポジトリへのアクセスは、担当の CSE によって管理されます。ユーザーの追加や削除については、CSE に連絡してください。
->
->新しく追加したユーザーが Git リポジトリへのアクセス権を必要とする場合は、CSE／AMS 担当者に連絡してアクセス権を付与してもらう必要があります。これらのロールでは、Git リポジトリに自動的にアクセスできるようになるわけではありません。Git リポジトリにアクセスできるユーザーは最大 3 人までです。
 
 ## Admin Console を使用したプロファイルの作成 {#using-admin-console-to-create-a-profile}
 
