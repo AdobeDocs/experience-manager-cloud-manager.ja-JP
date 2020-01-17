@@ -4,9 +4,10 @@ seo-title: AEM Cloud Manager リリースノート（2019.12.0）
 description: このページでは、Cloud Manager リリース 2019.12.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2019.12.0 について説明します。
 translation-type: tm+mt
-source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
+source-git-commit: 0fa1fedccb013e82c8df5838a612ce26a1efb7e8
 
 ---
+
 
 # リリースノート（2019.12.0） {#release-notes-for}
 
@@ -21,7 +22,6 @@ source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
 * パイプライン実行のステップに、各ステップの完了タイムスタンプが表示されるようになりました。
 * Java コードを含まないプロジェクトのコード品質スキャンで、コードカバレッジ率 100％がレポートされるようになりました。
 * CQ Dispatcher 設定のヘルスチェックが削除されました。
-
 
 ## バグ修正 {#bug-fixes}
 
