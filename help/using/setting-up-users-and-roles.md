@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
 
 ---
@@ -41,8 +41,8 @@ source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
 |--- |--- |
 | ビジネスオーナー | KPI の定義、実稼動デプロイメントの承認、重大な 3 層エラーのオーバーライドを担当します。 |
 | プログラムマネージャー | [!UICONTROL Cloud Manager] を使用して、チームの設定、ステータスのレビュー、KPI の確認をおこないます。重大な 3 層エラーを承認することができます。 |
-| デプロイメントマネージャー | デプロイメント作業を管理します。[!UICONTROL Cloud Manager] を使用して、ステージング環境または実稼動環境へのデプロイメントを実行します。CI／CD パイプラインを編集できます。重大な 3 層エラーを承認することができます。Git リポジトリにアクセスできます。 |
-| デベロッパー | カスタムアプリケーションコードを開発およびテストします。主に [!UICONTROL Cloud Manager] を使用してステータスを確認します。コードコミット用にGitリポジトリにアクセスできます。 |
+| デプロイメントマネージャー | デプロイメント作業を管理します。[!UICONTROL Cloud Manager] を使用して、ステージング環境または実稼動環境へのデプロイメントを実行します。CI/CD パイプラインを編集できます。重大な 3 層エラーを承認することができます。Git リポジトリにアクセスできます。 |
+| デベロッパー | カスタムアプリケーションコードを開発およびテストします。主に [!UICONTROL Cloud Manager] を使用してステータスを確認します。Git リポジトリにアクセスして、コードをコミットできます。 |
 | カスタマーサクセスエンジニア | AMS のお客様のカスタマーサクセスを全般的にサポートします。CSE 管理が必要なデプロイメントを実行するために、[!UICONTROL Cloud Manager] を操作します。 |
 | コンテンツ作成者 | 通常は、[!UICONTROL Cloud Manager] を操作しません。（[!UICONTROL Experience Cloud] からナビゲートした）[!UICONTROL Cloud Manager] プログラムスイッチャーを使用して、AEM にアクセスできます。 |
 
@@ -50,7 +50,7 @@ source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
 
 [!UICONTROL Cloud Manager] のロールは Adobe Admin Console で管理されます。特定のロールメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
 
-Adobe Admin Console でユーザーを [!UICONTROL Cloud Manager] **製品プロファイル**&#x200B;に追加することで、特定のロールメンバーシップを割り当てることができます。Admin Console では、組織全体にわたるアドビ製品の使用権限を一元的に管理できます。To learn more about the Adobe Admin Console, see the documentation for [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
+Adobe Admin Console でユーザーを [!UICONTROL Cloud Manager] **製品プロファイル**&#x200B;に追加することで、特定のロールメンバーシップを割り当てることができます。Admin Console では、組織全体にわたるアドビ製品の使用権限を一元的に管理できます。Adobe Admin Console について詳しくは、[Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) のドキュメントを参照してください。
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Adobe Admin Console でユーザーを [!UICONTROL Cloud Manager] **製品プロ
 * デベロッパー
 * プログラムマネージャー
 
-You can create, or add, users/groups to these Product Profiles with the [Admin Console](https://adminconsole.adobe.com/) for [!UICONTROL Cloud Manager], as shown in the figure below:
+以下の図に示すように、[!UICONTROL Cloud Manager] の [Admin Console](https://adminconsole.adobe.com/) で、これらの製品プロファイルにユーザーやグループを作成または追加できます。
 
 1. Admin Console にログインし、「**新規プロファイル**」をクリックして新しいプロファイルを追加します。
 
