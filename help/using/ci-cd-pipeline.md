@@ -7,11 +7,11 @@ uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 translation-type: tm+mt
-source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
+source-git-commit: 2d7b18ea55e2bd5879cf8bd896cafed4d46c0011
 
 ---
 
-
+SHANKARI_TEST_CHANGE
 # CI／CD パイプライン {#ci-cd-pipeline}
 
 ## パイプラインの概要 {#pipeline-overview}
@@ -65,4 +65,4 @@ CI／CD パイプラインは、品質ゲートつまり受け入れ条件を提
 
 ### ゲートの設定方法 {#how-to-setup-gates}
 
-コード、品質およびパフォーマンスに関するゲートの設定について詳しくは、**[ゲートの設定](configuring-pipeline.md)**&#x200B;を参照してください。
+コード、品質およびパフォーマンスに関するゲートの設定について詳しくは、**[ゲートの設定](configuring-pipeline.md)**を参照してください。
