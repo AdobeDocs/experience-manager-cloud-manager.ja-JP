@@ -5,11 +5,11 @@ description: 'null'
 seo-description: Cloud Manager の使用を開始する際の AEM プロジェクトの設定について説明します。
 uuid: 7b976ebf-5358-49d8-a58d-0bae026303fa
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: ht
-source-git-commit: 8daee34e6cfaddb31fc447f64de9ce5ca7ed54ba
+translation-type: tm+mt
+source-git-commit: dd892ddb2ac2d003229f5a9e2c8e0013b0f11e1b
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 8daee34e6cfaddb31fc447f64de9ce5ca7ed54ba
 
 ユーザーが Cloud Manager にオンボーディングされると、空の Git リポジトリが提供されます。現在の Adobe Managed Services（AMS）ユーザー（または AMS に移行中のオンプレミス AEM ユーザー）は、通常、プロジェクトコードを既に Git（または別のバージョン管理システム）に格納してあり、プロジェクトを Cloud Manager の Git リポジトリにインポートすることになります。ただし、新規ユーザーは既存のプロジェクトを持っていません。
 
-新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
+新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
 
 <!-- 
 
@@ -38,6 +38,7 @@ Cloud Manager で AEM アプリケーションプロジェクトを作成する�
 
    ![](assets/image2018-10-3_14-29-44.png)
 
+[後述の] 2段目のシャンカリは誤りである。 削除してください。
 1. 「**作成**」をクリックして、**パイプライン設定**&#x200B;画面に移動します。
 
    ![](assets/image2018-10-3_14-30-22.png)
@@ -331,4 +332,4 @@ content-package-maven-plugin では、同じようになります。
 
 ## ベストプラクティスに基づくコードの開発 {#develop-your-code-based-on-best-practices}
 
-アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/ja-JP/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
+アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
