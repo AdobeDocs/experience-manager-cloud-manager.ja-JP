@@ -5,12 +5,12 @@ description: このページでは、Cloud Manager からのパイプライン�
 seo-description: 'コードのデプロイを開始する前に、AEM Cloud Manager からパイプライン設定を指定する必要があります。 '
 uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
+translation-type: tm+mt
+source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
 
 ---
 
@@ -25,12 +25,12 @@ source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
 
 CI／CD 実稼働パイプラインの設定は、パイプラインを開始するトリガー、実稼働環境のデプロイメントを制御するパラメーター、およびテストパラメーターのパフォーマンスを定義します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## フローについて {#understanding-the-flow}
 
-[!UICONTROL Cloud Manager] UI の&#x200B;**パイプライン設定**&#x200B;タイルからパイプラインを設定することができます。
+**UI の**&#x200B;パイプライン設定[!UICONTROL Cloud Manager]タイルからパイプラインを設定することができます。
 
 パイプラインの設定はデプロイメントマネージャーが担当します。その際は、まず **Git リポジトリ**&#x200B;からブランチを選択します。パイプライン設定は以下で構成されます。
 
@@ -50,7 +50,7 @@ CI／CD 実稼働パイプラインの設定は、パイプラインを開始す
 >
 >初期設定後にパイプライン設定を変更できます。
 
-### [!UICONTROL Cloud Manager] からパイプライン設定を指定する{#configuring-the-pipeline-settings-from-cloud-manager}
+### Configuring the Pipeline Settings from [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
 
 [!UICONTROL Cloud Manager] UI を使用してプログラムを設定したら、パイプラインを設定する準備ができました。
 
@@ -77,7 +77,6 @@ CI／CD 実稼働パイプラインの設定は、パイプラインを開始す
 
    * **Git の変更時** - 設定された Git ブランチにコミットが追加されるたびに CI／CD パイプラインを開始します。このオプションを選択しても、常にパイプラインを手動で開始できます。
    * **手動** - UI を使用して、パイプラインを手動で開始します。
-   * **スケジュール設定** - このオプションは、今後のリリースで提供される予定です。
    パイプラインの設定または編集中に、デプロイメントマネージャーは、コード品質、セキュリティテスト、パフォーマンステストなどの品質ゲートのいずれかで重要なエラーが検出された場合のパイプラインの動作を定義できます。
 
    これは、より自動化されたプロセスを求めるお客様に役に立ちます。使用できるオプションは以下のとおりです。
@@ -100,7 +99,7 @@ CI／CD 実稼働パイプラインの設定は、パイプラインを開始す
 >
 >「**スケジュール設定**」オプションが選択されている場合は、パイプラインでステージングデプロイメント（および、「**GoLive の承認を使用**」が有効な場合はその承認）の&#x200B;**後**&#x200B;に実稼動デプロイメントをスケジュールして、スケジュールが設定されるのを待つことができます。ユーザーは、実稼動デプロイメントをすぐに実行することもできます。
 >
->デプロイメントのスケジュールを設定する、または実稼動デプロイメントをすぐに実行する場合は、[**コードのデプロイ**](deploying-code.md)を参照してください。
+>デプロイメントのスケジュールを設定する、または実稼動デプロイメントをすぐに実行する場合は、[**コードのデプロイ&#x200B;**](deploying-code.md)を参照してください。
 
 ![](assets/Configure_ci-cd-3.png)
 
@@ -185,7 +184,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
    >[!NOTE]
    >
-   >さらに、パイプラインを設定した後でも、[!UICONTROL Cloud Manager] UI の「**パイプライン設定**」タイルを使用して、同じ設定を編集できます。
+   >さらに、パイプラインを設定した後でも、**UI の「**&#x200B;パイプライン設定[!UICONTROL Cloud Manager]」タイルを使用して、同じ設定を編集できます。
 
    ![](assets/Production-Pipeline.png)
 
@@ -200,7 +199,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 CI／CD 非実稼働パイプラインは、コード品質パイプラインとデプロイパイプラインの 2 つのカテゴリに分類されます。コード品質は、Git ブランチのすべてのコードをパイプライン化し、Cloud Manager のコード品質スキャンに対して構築および評価されます。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
