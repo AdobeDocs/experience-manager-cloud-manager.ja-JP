@@ -7,11 +7,11 @@ uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 translation-type: tm+mt
-source-git-commit: 2d7b18ea55e2bd5879cf8bd896cafed4d46c0011
+source-git-commit: 8580cec50ac5dafb4e2525371a39d58c82f1cbc9
 
 ---
 
-SHANKARI_TEST_CHANGE
+
 # CI／CD パイプライン {#ci-cd-pipeline}
 
 ## パイプラインの概要 {#pipeline-overview}
@@ -32,13 +32,13 @@ SHANKARI_TEST_CHANGE
 |---|---|
 | 1. リリースの開始 | デプロイメントマネージャーが、Git コミットを使用して手動で、または定期的な実行スケジュールに基づいて、リリースをトリガーします。 |
 | 2. リリースタグの作成 | [!UICONTROL Cloud Manager] が Git タグを作成し、自動生成したバージョン番号を使用してリリースをマークします。例： 2018.531.245527.0000001222 |
-| 3. 自動生成したバージョンのリリースとしてビルド |  が、新しく割り当てたバージョン番号を使用してアプリケーションをビルドします。 |
+| 3. 自動生成したバージョンのリリースとしてビルド | [!UICONTROL Cloud Manager] 新しく割り当てられたバージョン番号でアプリケーションを構築します。 |
 | 4. コード品質の評価 | コードをステージング環境にデプロイする前に、[!UICONTROL Cloud Manager] がソースコードをスキャンし概要の情報を提供します。 |
 | 5. バージョン管理されたアーティファクトの保存 | リリースアーティファクトが、デプロイメントステップで後で使用するために保存されます。 |
 | 6. AMS AEM ステージへのアーティファクトの自動デプロイメント | リリースアーティファクトがステージング環境にデプロイされます。 |
 | 7. 自動テストのトリガー | [!UICONTROL Cloud Manager] が、アーティファクトに対してパフォーマンステストとセキュリティテストを実行します。 |
-| 8. 実稼動トリガーのデプロイメント | 自動テストの完了後、 が実稼動環境へのデプロイメントを開始します。 |
-| 9. [!UICONTROL Cloud Manager] によるデプロイ対象アーティファクトの取得 | 保存したリリースアーティファクトを [!UICONTROL Cloud Manager] が取り込みます。 |
+| 8. 実稼動トリガーのデプロイメント | After automated tests are complete [!UICONTROL Cloud Manager] starts the deployment to production. |
+| 9. [!UICONTROL Cloud Manager] gets Artifacts(s) to Deploy | [!UICONTROL Cloud Manager] 保存されているリリースアーティファクトを取り込みます。 |
 | 10. 実稼動環境へのアーティファクトのデプロイメント | リリースアーティファクトが実稼動環境にデプロイされます。 |
 
 ### CI／CD パイプラインの設定方法 {#how-to-setup-a-ci-cd-pipeline}
