@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: f9c8c1d7b63749e6994481324392aee7330046fb
+source-git-commit: fb84c2d41c76c64fc0be1e9f86356ee0cb5bcf9c
 
 ---
 
@@ -211,7 +211,7 @@ CI／CD 非実稼働パイプラインは、コード品質パイプラインと
 
    さらに、パイプラインオプションから「デプロイメントトリガー」と「重要なエラー時の動作」も設定できます。
 
-   ![](assets/Configuring_Pipeline_Add-Production2.png)
+   ![](assets/non-prod-pipe.png)
 
 1. 「**保存**」をクリックすると、パイプラインが次の 3 つのアクションと共にホーム画面上のカードに表示されます。
 
