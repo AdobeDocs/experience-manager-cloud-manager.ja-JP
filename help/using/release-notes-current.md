@@ -4,13 +4,13 @@ seo-title: AEM Cloud Manager リリースノート（2020.2.0）
 description: このページでは、Cloud Manager リリース 2020.2.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2020.2.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
+source-git-commit: f9c8c1d7b63749e6994481324392aee7330046fb
 
 ---
 
 # リリースノート（2020.1.0） {#release-notes-for}
 
-次の節では、[!UICONTROL Cloud Manager] リリース 2020.2.0 のリリースノートの概要、および Git の資格情報へのアクセスとログイン操作の更新について説明しています。
+以下の節では [!UICONTROL Cloud Manager] リリース 2020.2.0 の一般リリースノートの概要を説明します。
 
 ## リリース日 {#release-date}
 
@@ -19,7 +19,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.2.0 is February 13,
 ## 最新情報 {#whats-new}
 
 * Adobe Experience Managerのアーキタイプのバージョンがバージョン22に更新されました。
-* ステージ展開ログへのアクティブなインスタンスの追加
+* ステージ展開ログにアクティブなインスタンスを追加しました
 * Experience cloud通知で使用されるURLは、余分なリダイレクトを避けるために最適化されました。
 * 現在タイムアウトしたパイプラインの実行ステップで、この状態が明示的に示されます。
 * コードスキャン手順に、ダウンロード可能なログが追加されました。
