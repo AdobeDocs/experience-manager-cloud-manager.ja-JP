@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fb84c2d41c76c64fc0be1e9f86356ee0cb5bcf9c
 
 ---
@@ -25,12 +25,12 @@ source-git-commit: fb84c2d41c76c64fc0be1e9f86356ee0cb5bcf9c
 
 CI／CD 実稼働パイプラインの設定は、パイプラインを開始するトリガー、実稼働環境のデプロイメントを制御するパラメーター、およびテストパラメーターのパフォーマンスを定義します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=jpn)
 
 
 ## フローについて {#understanding-the-flow}
 
-**UI の**&#x200B;パイプライン設定[!UICONTROL Cloud Manager]タイルからパイプラインを設定することができます。
+[!UICONTROL Cloud Manager] UI の&#x200B;**パイプライン設定**&#x200B;タイルからパイプラインを設定することができます。
 
 パイプラインの設定はデプロイメントマネージャーが担当します。その際は、まず **Git リポジトリ**&#x200B;からブランチを選択します。パイプライン設定は以下で構成されます。
 
@@ -50,7 +50,7 @@ CI／CD 実稼働パイプラインの設定は、パイプラインを開始す
 >
 >初期設定後にパイプライン設定を変更できます。
 
-### Configuring the Pipeline Settings from [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
+### [!UICONTROL Cloud Manager] からパイプライン設定を指定する{#configuring-the-pipeline-settings-from-cloud-manager}
 
 [!UICONTROL Cloud Manager] UI を使用してプログラムを設定したら、パイプラインを設定する準備ができました。
 
@@ -184,7 +184,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
    >[!NOTE]
    >
-   >さらに、パイプラインを設定した後でも、**UI の「**&#x200B;パイプライン設定[!UICONTROL Cloud Manager]」タイルを使用して、同じ設定を編集できます。
+   >さらに、パイプラインを設定した後でも、[!UICONTROL Cloud Manager] UI の「**パイプライン設定**」タイルを使用して、同じ設定を編集できます。
 
    ![](assets/Production-Pipeline.png)
 
@@ -199,7 +199,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 CI／CD 非実稼働パイプラインは、コード品質パイプラインとデプロイパイプラインの 2 つのカテゴリに分類されます。コード品質は、Git ブランチのすべてのコードをパイプライン化し、Cloud Manager のコード品質スキャンに対して構築および評価されます。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=jpn)
 
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
