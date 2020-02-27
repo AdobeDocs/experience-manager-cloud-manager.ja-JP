@@ -35,4 +35,4 @@ Code in [!UICONTROL Cloud Manager] is encrypted in transit. Cod Manager でビ�
 
 [!UICONTROL Cloud Manager] アドビが定義するプライバシー原則に従います。 デベロッパーは、HTTPS でコードを **Git リポジトリ**&#x200B;に安全にプッシュします。
 
-[!UICONTROL Cloud Manager] のユーザーインターフェイス（UI）は、アドビが規定した共通のコントロールフレームワークに準拠するサービスに基づいて構築されています。[!UICONTROL Cloud Manager] のユーザーインターフェイス（UI）では、複数のクラウドプロバイダーから提供されるセキュアなサービスを使用しています。
+The User Interface (UI) for [!UICONTROL Cloud Manager]  is built on top of services that comply to a common control framework that is defined by Adobe. User Interface for [!UICONTROL Cloud Manager] uses secure services from several cloud providers.
