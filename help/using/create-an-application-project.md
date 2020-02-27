@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dd892ddb2ac2d003229f5a9e2c8e0013b0f11e1b
 
 ---
@@ -38,7 +38,7 @@ Cloud Manager で AEM アプリケーションプロジェクトを作成する�
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-[後述の] 2段目のシャンカリは誤りである。 削除してください。
+2 番目の手順の [Shankari] は間違いです。削除してください。
 1. 「**作成**」をクリックして、**パイプライン設定**&#x200B;画面に移動します。
 
    ![](assets/image2018-10-3_14-30-22.png)
@@ -332,4 +332,4 @@ content-package-maven-plugin では、同じようになります。
 
 ## ベストプラクティスに基づくコードの開発 {#develop-your-code-based-on-best-practices}
 
-アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
+アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/ja-JP/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
