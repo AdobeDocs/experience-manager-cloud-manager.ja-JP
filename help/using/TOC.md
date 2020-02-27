@@ -21,8 +21,8 @@ source-git-commit: 6b6fa995e156fe928c88f55e89a9202c22ec18bc
 + 要件 {#requirements}
    + [アクセス権の付与](access-rights-granted.md)
    + [ソースコードリポジトリ](source-code-repository.md)
-   + [役割に基づく権限](role-based-permissions.md)
    + [ユーザーとロールの追加](setting-up-users-and-roles.md)
+   + [役割に基づく権限](role-based-permissions.md)
    + [プロビジョニング済み環境](environments-provisioned.md)
 + はじめに{#getting-started}
    + [初回ログイン](first-time-login.md)
