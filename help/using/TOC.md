@@ -3,8 +3,8 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager Help
-translation-type: ht
-source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
+translation-type: tm+mt
+source-git-commit: 6b6fa995e156fe928c88f55e89a9202c22ec18bc
 
 ---
 
@@ -21,6 +21,7 @@ source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
 + 要件 {#requirements}
    + [アクセス権の付与](access-rights-granted.md)
    + [ソースコードリポジトリ](source-code-repository.md)
+   + [役割に基づく権限](role-based-permissions.md)
    + [ユーザーとロールの追加](setting-up-users-and-roles.md)
    + [プロビジョニング済み環境](environments-provisioned.md)
 + はじめに{#getting-started}
