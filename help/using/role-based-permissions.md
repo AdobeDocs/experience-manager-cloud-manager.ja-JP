@@ -6,14 +6,14 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 translation-type: tm+mt
-source-git-commit: 45548c965b57d53ce931a3c740b0b72ff0496815
+source-git-commit: 157370b193c104915be063d1a4375f81839b88a2
 
 ---
 
 
 # ロールに基づく権限 {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが含まれています。 例えば、デベロッパーには、開発したコードを **Git リポジトリ**&#x200B;にプッシュする権限があります。また、ビジネスオーナーには、主要業績評価指標（KPI）を定義しデプロイメントを承認できる様々な権限があります。
+[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが含まれます。 例えば、デベロッパーには、開発したコードを **Git リポジトリ**&#x200B;にプッシュする権限があります。また、ビジネスオーナーには、主要業績評価指標（KPI）を定義しデプロイメントを承認できる様々な権限があります。
 
 ## ユーザーのロール {#user-roles}
 
@@ -58,3 +58,5 @@ Admin Console で割り当てることができるロールの一覧を次の表
 | パイプラインにおける承認変更 | 「ビジネスオーナー」オプションの編集を許可します。 |  | x |  |  |  |
 | パイプラインにおける管理対象デプロイメントの変更 | 「CSE 管理」オプションの編集を許可します。 |  | x |  |  |  |
 | ステップの読み取り | ステップの品質指標の結果を参照します。 | x | x | x | x | x |
+| 個人アクセストークンの生成 | Git にアクセス. |  | x |  | x |  |
+
