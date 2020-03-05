@@ -3,7 +3,7 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager Help
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6b6fa995e156fe928c88f55e89a9202c22ec18bc
 
 ---
@@ -15,13 +15,13 @@ source-git-commit: 6b6fa995e156fe928c88f55e89a9202c22ec18bc
 + 概要 {#overview}
    + [主要な概念](key-concepts.md)
    + [カスタマージャーニー](customer-journey.md)
-   + [CI／CD パイプライン](ci-cd-pipeline.md)
+   + [CI/CD パイプライン](ci-cd-pipeline.md)
    + [セキュリティとプライバシー](security-and-privacy.md)
    + [ヘルプリソース](help-resources.md)
 + 要件 {#requirements}
    + [アクセス権の付与](access-rights-granted.md)
    + [ソースコードリポジトリ](source-code-repository.md)
-   + [役割に基づく権限](role-based-permissions.md)
+   + [ロールに基づく権限](role-based-permissions.md)
    + [ユーザーとロールの追加](setting-up-users-and-roles.md)
    + [プロビジョニング済み環境](environments-provisioned.md)
 + はじめに{#getting-started}
@@ -31,7 +31,7 @@ source-git-commit: 6b6fa995e156fe928c88f55e89a9202c22ec18bc
    + [リリースブランチの設定](configure-your-release-branches.md)
    + [Dispatcher 設定の管理](dispatcher-configurations.md)
 + 使用方法 {#how-to-use}
-   + [CI／CD パイプラインの設定](configuring-pipeline.md)
+   + [CI/CD パイプラインの設定](configuring-pipeline.md)
    + [コードのデプロイ](deploying-code.md)
    + [テスト結果の理解](understand-your-test-results.md)
    + [環境の管理](manage-your-environment.md)
