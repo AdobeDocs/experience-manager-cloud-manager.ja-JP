@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7cbc42108a6ccc8f7303eb76fd8ca2e9027f49e0
 
 ---
@@ -16,9 +16,9 @@ source-git-commit: 7cbc42108a6ccc8f7303eb76fd8ca2e9027f49e0
 
 # セキュリティとプライバシー {#security-and-privacy}
 
-[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが含まれています。 この節では、AEM Cloud Managerを使用したアセット（コード/アーティファクト）のセキュリティとプライバシーについて説明します。 Additionally, [!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions.
+[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが用意されています。この節では、AEM Cloud Manager を使用したアセット（コード／アーティファクト）のセキュリティとプライバシーについて説明します。さらに、[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが用意されています。
 
-管理コンソールで割り当てることができる役割とユーザの役割の権限については、「役割に基づく権限」を参 [照してください](/help/using/role-based-permissions.md)。
+Admin Console で割り当てることができるロールおよび各ユーザーロールの権限については、[ロールに基づく権限](/help/using/role-based-permissions.md)を参照してください。
 
 
 ## リソースの分離 {#resource-isolation}
@@ -27,12 +27,12 @@ source-git-commit: 7cbc42108a6ccc8f7303eb76fd8ca2e9027f49e0
 
 ## データのセキュリティ {#data-security}
 
-Code in [!UICONTROL Cloud Manager] is encrypted in transit. Cod Manager でビルドされるバイナリは送信時および保存時に暗号化されます。
+[!UICONTROL Cloud Manager] では、コードは送信時に暗号化されます。Cod Manager でビルドされるバイナリは送信時および保存時に暗号化されます。
 
 顧客ごとに専用の **Git** リポジトリを取得します。顧客のコードはセキュリティで保護され、他の&#x200B;**組織**&#x200B;とは共有されません。
 
 ## データのプライバシー {#data-privacy}
 
-[!UICONTROL Cloud Manager] アドビが定義するプライバシー原則に従います。 デベロッパーは、HTTPS でコードを **Git リポジトリ**&#x200B;に安全にプッシュします。
+[!UICONTROL Cloud Manager] は、アドビが規定したプライバシー原則に従っています。デベロッパーは、HTTPS でコードを **Git リポジトリ**&#x200B;に安全にプッシュします。
 
-The User Interface (UI) for [!UICONTROL Cloud Manager]  is built on top of services that comply to a common control framework that is defined by Adobe. User Interface for [!UICONTROL Cloud Manager] uses secure services from several cloud providers.
+[!UICONTROL Cloud Manager] のユーザーインターフェイス（UI）は、アドビが規定した共通のコントロールフレームワークに準拠するサービスに基づいて構築されています。[!UICONTROL Cloud Manager] のユーザーインターフェイスでは、複数のクラウドプロバイダーから提供されるセキュアなサービスを使用しています。
