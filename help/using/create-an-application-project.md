@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: ht
-source-git-commit: dd892ddb2ac2d003229f5a9e2c8e0013b0f11e1b
+translation-type: tm+mt
+source-git-commit: b093f1712d9ca9e91b87e925a43e2992a4f11cc0
 
 ---
 
@@ -22,15 +22,6 @@ source-git-commit: dd892ddb2ac2d003229f5a9e2c8e0013b0f11e1b
 
 新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
 
-<!-- 
-
-Comment Type: annotation
-Last Modified By: jsyal
-Last Modified Date: 2018-10-08T12:52:50.071-0400
-
-2018.8.0: Added this new section
-
- -->
 
 Cloud Manager で AEM アプリケーションプロジェクトを作成するには、次の手順に従います。
 
@@ -38,7 +29,6 @@ Cloud Manager で AEM アプリケーションプロジェクトを作成する�
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-2 番目の手順の [Shankari] は間違いです。削除してください。
 1. 「**作成**」をクリックして、**パイプライン設定**&#x200B;画面に移動します。
 
    ![](assets/image2018-10-3_14-30-22.png)
@@ -332,4 +322,4 @@ content-package-maven-plugin では、同じようになります。
 
 ## ベストプラクティスに基づくコードの開発 {#develop-your-code-based-on-best-practices}
 
-アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/ja-JP/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
+アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
