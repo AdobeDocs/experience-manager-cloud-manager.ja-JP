@@ -1,6 +1,6 @@
 ---
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
-translation-type: ht
+source-git-commit: a80615b7ed7dcf8c1743f7f12ecf0fd8c76d4cc5
+translation-type: tm+mt
 
 ---
 # アドビの行動規範
@@ -39,10 +39,10 @@ translation-type: ht
 
 ## 執行
 
-暴言、嫌がらせまたはその他の許容できない行為は、プロジェクトチーム（Grp-opensourceoffice@adobe.com）に連絡することで報告される可能性があります。すべての苦情は、審査および調査され、状況に対して必要かつ適切と判断された対応が取られます。プロジェクトチームは、事象の報告者に関する守秘義務があります。具体的な執行ポリシーの詳細が別途投稿される可能性があります。
+虐待や嫌がらせなどの受け入れがたい行動が見つかったら、Grp-opensourceoffice@adobe.com 宛でプロジェクトチームに連絡して、報告することができます。すべての苦情は、審査および調査され、状況に対して必要かつ適切と判断された対応が取られます。プロジェクトチームは、事象の報告者に関する守秘義務があります。具体的な執行ポリシーの詳細が別途投稿される可能性があります。
 
 この行動規範に誠意を持って遵守または執行しないプロジェクトのメンテナーは、プロジェクトをリードしている他のメンバーの判断により、一時的または恒久的な影響を受ける場合があります。
 
 ## 帰属
 
-この行動規範は、[https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/) にある [Contributor Covenant](https://contributor-covenant.org) バージョン 1.4 を基に作成されています。
+この行動規範は、[/version/](https://contributor-covenant.org)/1/4/ にある [Contributor Covenant](https://contributor-covenant.org/version/1/4/)https://contributor-covenant.org バージョン 1.4 を基に作成されています。
