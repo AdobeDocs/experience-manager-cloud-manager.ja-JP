@@ -5,11 +5,11 @@ description: 一般設定をセットアップし、Cloud Manager を初めて�
 seo-description: 一般設定をセットアップし、Adobe AEM Cloud Manager を初めて使用する準備が整っている場合は、このページの手順に従ってください。
 uuid: 7c8458a6-6de8-4946-ac0c-fb10bce17a15
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
-translation-type: ht
-source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
+translation-type: tm+mt
+source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ---
 
@@ -28,19 +28,19 @@ source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
 
 次のビデオでは、Cloud Manager プログラムの概要について説明します。このプログラムは、通常は購入したサービスレベルアグリーメント（SLA）に対応する、ビジネスイニシアチブの論理的なセットをサポートする一連の AEM 環境を表します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
-1. **Adobe[!UICONTROL Experience Cloud]** にログインすると、**プログラム**&#x200B;のリストが表示されます。
+1. **Adobe[!UICONTROL Experience Cloud]**にログインすると、**&#x200B;プログラム&#x200B;**のリストが表示されます。
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
 1. プログラム（例えば、**We.Retail Global**）を選択し、左上のアイコンをクリックして [!UICONTROL Cloud Manager] を開きます。
 
-   ![](assets/screen_shot_2018-06-04at12611pm.png)
+   ![](assets/first-timea1.png)
 
-1. [!UICONTROL Cloud Manager] 用のダッシュボードが表示されます。
+1. The dashboard for [!UICONTROL Cloud Manager] displays.
 
    ![](assets/FirstLogin1.png)
 
@@ -56,4 +56,4 @@ source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
 
 Cloud Manager を使用すれば、すべての CI／CD パイプライン実行を表示委するプログラムのアクティビティをまとめて表示し、過去と現在のアクティビティや、アクティビティの詳細を確認できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
