@@ -5,11 +5,11 @@ description: オンボーディング後、ビジネスオーナーはプログ�
 seo-description: 'オンボーディング後、ビジネスオーナーは Adobe AEM Cloud Manager の初期設定をおこなう必要があります。これには、プログラムの説明の設定や、パフォーマンステストに使用する KPI の定義が含まれます。 '
 uuid: 9ecf8743-1f5a-4744-86af-e2256567642f
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
 translation-type: tm+mt
-source-git-commit: 2c05eb4610e35d5126c6c67e44f4b71f3026c887
+source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ---
 
@@ -28,13 +28,19 @@ source-git-commit: 2c05eb4610e35d5126c6c67e44f4b71f3026c887
 >
 >また、多くのユーザーには、実稼動環境の前に Akamai や CloudFront などのコンテンツ配信ネットワーク（CDN）があります。[!UICONTROL Cloud Manager] はステージング環境に対して直接テストするので、KPI は、CDN を経由すると予想されるトラフィック（つまり、キャッシュミス）のみを反映している必要があります。通常、これは実稼動トラフィック全体の比較的小さいサブセットになります。
 
-## [!UICONTROL Cloud Manager] を使用したプログラムの設定 {#using-cloud-manager-to-setup-your-program}
+## Using [!UICONTROL Cloud Manager] to Setup your Program {#using-cloud-manager-to-setup-your-program}
 
 プログラムを設定し KPI を定義するには、以下の手順に従います。
 
-1. [!UICONTROL Cloud Manager] で、「**プログラムを設定**」をクリックして設定プロセスを開始します。
+1. **で、「**&#x200B;プログラムを設定[!UICONTROL Cloud Manager]」をクリックして設定プロセスを開始します。
 
-   ![](assets/SetUpProgram1.png)
+   ![image1](assets/set-up-program/setup1.png)
+
+   >[!NOTE]
+   > 次の図に示すように、アクションバーから新しいプログラムをいつでも切り替え、編集、または追加できます。
+
+   ![image1](assets/set-up-program/setup2.png)
+
 
 1. **プログラムを設定**&#x200B;画面に「プログラム情報を編集」セクションが表示されます。
 
@@ -97,4 +103,4 @@ source-git-commit: 2c05eb4610e35d5126c6c67e44f4b71f3026c887
 
 **パイプライン**&#x200B;を設定済みの場合、更新された設定は次回の実行で考慮されます。まだパイプラインを設定していない場合は、まず手順に従ってパイプラインを設定します。
 
-Please see [Configure your CI/CD Pipeline](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html) for setting up the pipeline.
+パイプライン [の設定については、「CI/CDパイプラインの設定](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html) 」を参照してください。
