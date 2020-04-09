@@ -3,8 +3,8 @@ title: 環境の監視
 seo-title: 環境の監視
 description: 'null'
 seo-description: このページでは、環境内の個々のインスタンスを監視し、各インスタンスの様々な指標を追跡することでおこなわれる Cloud Manager のシステム監視について説明します。
-translation-type: ht
-source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
+translation-type: tm+mt
+source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ---
 
@@ -23,13 +23,13 @@ source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
    ![](assets/ProgramLanding.png)
 
-1. プログラムカードの 3 番目のアイコンをクリックします。
+1. プログラムカードの4番目のアイコンをクリックします。
 
-   ![](assets/program-card.png)
+   ![](assets/first-timea1.png)
 
    *または*、
 
-* [!UICONTROL Cloud Manager] 内の&#x200B;**レポート**&#x200B;グローバルナビゲーションメニュー項目を使用して、**システムの監視**&#x200B;ランディングページに移動します。
+* **内の**&#x200B;レポート&#x200B;**グローバルナビゲーションメニュー項目を使用して、**&#x200B;システムの監視[!UICONTROL Cloud Manager]ランディングページに移動します。
 
 
 ## システム監視の概要ページ {#system-monitoring-overview-page}
@@ -55,7 +55,7 @@ source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
 Cloud Manager のレポートでは、各 AEM インスタンスの様々な指標をレポートおよび追跡する一連のグラフを通じて、プログラムの環境と AEM インスタンスを確認できます。詳しくは、ビデオを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26315/)
 
 ## システム監視の詳細 {#system-monitoring-detail}
 
