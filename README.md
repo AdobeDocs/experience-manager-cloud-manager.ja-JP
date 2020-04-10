@@ -1,11 +1,11 @@
 ---
 source-git-commit: a80615b7ed7dcf8c1743f7f12ecf0fd8c76d4cc5
-translation-type: tm+mt
+translation-type: ht
 
 ---
-# Adobe Experience Manager Cloud Managerドキュメント
+# Adobe Experience Manager Cloud Manager ドキュメント
 
-これは、Adobe Experience Manager Cloud Managerドキュメントのリポジトリです。
+Adobe Experience Manager Cloud Manager ドキュメントのリポジトリです。
 
 ドキュメントに対する貢献を歓迎します。次のリソースを参照してください。
 
