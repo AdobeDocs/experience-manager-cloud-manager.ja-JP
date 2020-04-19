@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ---
@@ -28,11 +28,11 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 >
 >また、多くのユーザーには、実稼動環境の前に Akamai や CloudFront などのコンテンツ配信ネットワーク（CDN）があります。[!UICONTROL Cloud Manager] はステージング環境に対して直接テストするので、KPI は、CDN を経由すると予想されるトラフィック（つまり、キャッシュミス）のみを反映している必要があります。通常、これは実稼動トラフィック全体の比較的小さいサブセットになります。
 
-## Using [!UICONTROL Cloud Manager] to Setup your Program {#using-cloud-manager-to-setup-your-program}
+## [!UICONTROL Cloud Manager] を使用したプログラムの設定 {#using-cloud-manager-to-setup-your-program}
 
 プログラムを設定し KPI を定義するには、以下の手順に従います。
 
-1. **で、「**&#x200B;プログラムを設定[!UICONTROL Cloud Manager]」をクリックして設定プロセスを開始します。
+1. [!UICONTROL Cloud Manager] で、「**プログラムを設定**」をクリックして設定プロセスを開始します。
 
    ![image1](assets/set-up-program/setup1.png)
 
@@ -103,4 +103,4 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 **パイプライン**&#x200B;を設定済みの場合、更新された設定は次回の実行で考慮されます。まだパイプラインを設定していない場合は、まず手順に従ってパイプラインを設定します。
 
-パイプライン [の設定については、「CI/CDパイプラインの設定](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html) 」を参照してください。
+パイプラインの設定については、「[CI／CD パイプラインの設定](https://helpx.adobe.com/jp/experience-manager/cloud-manager/using/configuring-pipeline.html)」を参照してください。
