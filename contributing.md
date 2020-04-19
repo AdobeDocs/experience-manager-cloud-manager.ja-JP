@@ -1,6 +1,6 @@
 ---
 source-git-commit: a70b04bd5bb6ac6465a5da4b276e9faf1dc470ae
-translation-type: tm+mt
+translation-type: ht
 
 ---
 # Adobe Experience Manager Cloud Service ドキュメントへの貢献
@@ -46,7 +46,7 @@ AEM ドキュメントを改善するためのあらゆる投稿を歓迎しま�
 
 以下のビデオで、イシューとプル要求の作成方法についての概要を簡単に確認できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/27069)
+>[!VIDEO](https://video.tv.adobe.com/v/27069?captions=jpn)
 
 ### アドビ従業員による投稿
 
