@@ -5,15 +5,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-translation-type: ht
-source-git-commit: 157370b193c104915be063d1a4375f81839b88a2
+translation-type: tm+mt
+source-git-commit: 9cbe8f58cf04001ba9851ba321f03c7687e58014
 
 ---
 
 
 # ロールに基づく権限 {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが用意されています。例えば、デベロッパーには、開発したコードを **Git リポジトリ**&#x200B;にプッシュする権限があります。また、ビジネスオーナーには、主要業績評価指標（KPI）を定義しデプロイメントを承認できる様々な権限があります。
+[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールがあります。 例えば、デベロッパーには、開発したコードを **Git リポジトリ**&#x200B;にプッシュする権限があります。また、ビジネスオーナーには、主要業績評価指標（KPI）を定義しデプロイメントを承認できる様々な権限があります。
 
 ## ユーザーのロール {#user-roles}
 
@@ -23,14 +23,14 @@ source-git-commit: 157370b193c104915be063d1a4375f81839b88a2
 
 Admin Console で割り当てることができるロールの一覧を次の表に示します。
 
-| **[!UICONTROL Cloud Manager]のロール&#x200B;** | **説明** |
+| **[!UICONTROL Cloud Manager]ロール&#x200B;** | **説明** |
 |---|---|
-| ビジネスオーナー | [!UICONTROL Cloud Manager] の初期設定を完了するプライマリユーザー。KPI の定義、実稼動デプロイメントの承認、重大な 3 層エラーのオーバーライドを担当します。 |
+| ビジネスオーナー | Primary user who completes the initial [!UICONTROL Cloud Manager] setup. KPI の定義、実稼動デプロイメントの承認、重大な 3 層エラーのオーバーライドを担当します。 |
 | プログラムマネージャー | [!UICONTROL Cloud Manager] を使用して、チームの設定、ステータスのレビュー、KPI の確認をおこないます。重大な 3 層エラーを承認することができます。 |
-| デプロイメントマネージャー | デプロイメント作業を管理します。[!UICONTROL Cloud Manager] を使用して、ステージング環境および実稼動環境へのデプロイメントを実行します。重大な 3 層エラーを承認することができます。Git リポジトリにアクセスできます。 |
-| デベロッパー | カスタムアプリケーションコードを開発およびテストします。主に [!UICONTROL Cloud Manager] を使用してステータスを確認します。Git リポジトリにコミットする権限があります。 |
+| デプロイメントマネージャー | デプロイメント作業を管理します。Uses [!UICONTROL Cloud Manager] to execute stage and production deployments. 重大な 3 層エラーを承認することができます。Git リポジトリにアクセスできます。 |
+| デベロッパー | カスタムアプリケーションコードを開発およびテストします。Primarily uses [!UICONTROL Cloud Manager] to view status. Git リポジトリにコミットする権限があります。 |
 | カスタマーサクセスエンジニア | AMS のお客様のカスタマーサクセスを全般的にサポートします。カスタマーサクセスエンジニア（CSE）管理が必要なデプロイメントを実行するために、[!UICONTROL Cloud Manager] を操作します。 |
-| コンテンツ作成者 | 通常は、[!UICONTROL Cloud Manager] を操作しません。このユーザーは、（[!UICONTROL Experience Cloud] からナビゲートした）[!UICONTROL Cloud Manager] プログラムスイッチャーを使用して、Adobe Experience Manager（AEM）にアクセスできます。 |
+| コンテンツ作成者 | Generally does not interact with [!UICONTROL Cloud Manager]. This user may use the [!UICONTROL Cloud Manager] Program Switcher (having navigated from [!UICONTROL Experience Cloud]) to access Adobe Experience Manager (AEM). |
 
 ## ユーザーの権限 {#user-permissions}
 
@@ -50,13 +50,14 @@ Admin Console で割り当てることができるロールの一覧を次の表
 | 実行における実稼動環境へのデプロイメントの承認 | GoLive 承認を提供します。 | x | x | x |  |  |
 | 実行における実稼動環境へのデプロイメントのスケジュール設定 | 実稼動環境へのデプロイメントのスケジュールを設定します。 | x | x | x |  | x |
 | 実行における実稼動環境へのデプロイメント | CSE 管理のために一時停止したときにアプリケーションを実稼動環境にデプロイします。 |  |  |  |  | x |
-| 実行のキャンセル | 現在の実行をキャンセルします。 | x | x | x |  |  |
+| 実行のキャンセル | 現在の実行をキャンセルします。 |  |  | x |  |  |
 | 実行における品質ゲートエラーのオーバーライド | 重大な品質ゲートエラーを承認します。 | x | x | x |  |  |
 | パイプラインの作成 | パイプラインを設定または編集します。 |  | x |  |  |  |
 | パイプラインの読み取り | パイプラインの詳細を参照します。 | x | x | x | x | x |
 | パイプラインへの書き込み | パイプラインを設定または編集します。 |  | x |  |  |  |
 | パイプラインにおける承認変更 | 「ビジネスオーナー」オプションの編集を許可します。 |  | x |  |  |  |
 | パイプラインにおける管理対象デプロイメントの変更 | 「CSE 管理」オプションの編集を許可します。 |  | x |  |  |  |
+| パイプラインの削除 | パイプラインの削除を許可します。 |  | x |  |  |  |
 | ステップの読み取り | ステップの品質指標の結果を参照します。 | x | x | x | x | x |
 | 個人用アクセストークンの生成 | Git にアクセスします。 |  | x |  | x |  |
 
