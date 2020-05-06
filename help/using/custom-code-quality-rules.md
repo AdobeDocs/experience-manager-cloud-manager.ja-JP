@@ -5,11 +5,14 @@ description: このページでは、Cloud Manager で実行されるカスタ�
 seo-description: このページでは、Adobe Experience Manager の Cloud Manager で実行されるカスタムコード品質ルールについて説明します。
 uuid: a7feb465-1982-46be-9e57-e67b59849579
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 4881ff8be97451aa90c3430259ce13faef182e4f
+source-git-commit: 278858465592482449080fedc3c0165805db223d
+workflow-type: tm+mt
+source-wordcount: '2289'
+ht-degree: 78%
 
 ---
 
@@ -95,7 +98,7 @@ public class DoThis implements Runnable {
 
 **最初の対象バージョン**：バージョン 2018.4.0
 
-外部ソース（リクエストパラメーターやユーザー生成コンテンツなど）の書式指定文字列を使用すると、アプリケーションがサービス拒否攻撃にさらされる可能性があります。書式指定文字列は外部で制御できる場合がありますが、信頼できるソースからのみ許可されます。
+外部ソース（リクエストパラメーターやユーザー生成コンテンツなど）の書式指定文字列を使用すると、アプリケーションが DoS 攻撃にさらされる可能性があります。書式指定文字列は外部で制御できる場合がありますが、信頼できるソースからのみ許可されます。
 
 #### 準拠していないコード {#non-compliant-code-1}
 
@@ -197,7 +200,7 @@ public void orDoThis() {
 
 AEM API には、カスタムコードによる使用のみ（ただし実装はしない）を意図した Java インターフェイスおよびクラスが含まれています。例えば、インターフェイス *com.day.cq.wcm.api.Page* は、***AEM のみ***&#x200B;によって実装されるように設計されています。
 
-これらのインターフェイスに新しいメソッドが追加される場合、それらの追加メソッドは、これらのインターフェイスを使用する既存のコードには影響しません。その結果、これらのインターフェイスへの新しいメソッドの追加は、下位互換性があると見なされます。ただし、カスタムコードがこれらのインターフェイスのいずれかを&#x200B;***実装***&#x200B;する場合、そのカスタムコードによってお客様に下位互換性のリスクがもたらされます。
+これらのインターフェイスに新しいメソッドが追加される場合、それらの追加メソッドは、これらのインターフェイスを使用する既存のコードには影響しません。その結果、これらのインターフェイスへの新しいメソッドの追加は、後方互換性があると見なされます。ただし、カスタムコードがこれらのインターフェイスのいずれかを&#x200B;***実装***&#x200B;する場合、そのカスタムコードによってお客様に後方互換性のリスクがもたらされます。
 
 AEM によってのみ実装されることを意図されたインターフェイス（およびクラス）は、*org.osgi.annotation.versioning.ProviderType*（場合によっては、従来の類似の注釈の *aQute.bnd.annotation.ProviderType*）で注釈が付けられます。このルールは、カスタムコードによってこのようなインターフェイスが実装されている（またはクラスが拡張されている）場合を特定します。
 
@@ -221,7 +224,7 @@ public class DontDoThis implements Page {
 
 **最初の対象バージョン**：バージョン 2018.4.0
 
-ResourceResolverFactory から取得された ResourceResolver オブジェクトは、システムリソースを使用します。ResourceResolver が使用されなくなった場合に、これらのリソースを再利用する指標がありますが、close() メソッドを呼び出すことで開いている ResourceResolver オブジェクトを明示的に閉じる方が効率的です。
+ResourceResolverFactory から取得された ResourceResolver オブジェクトは、システムリソースを使用します。ResourceResolver が使用されなくなった場合に、これらのリソースを再利用する指標がありますが、close() メソッドを呼び出すことで開いている ResourceResolver オブジェクトを明示的に閉じるほうが効率的です。
 
 比較的一般的な誤解として、既存の JCR セッションを使用して作成された ResourceResolver オブジェクトは、明示的に閉じると、基になる JCR セッションを閉じてしまうというものがあります。これは間違いで、ResourceResolver を開く方法に関係なく、使用されなくなったら閉じる必要があります。ResourceResolver は閉じることのできるインターフェイスを実装するので、close() を明示的に呼び出す代わりに、try-with-resources 構文を使用することもできます。
 
@@ -266,7 +269,7 @@ public void orDoThis(Session session) throws Exception {
 
 **最初の対象バージョン**：バージョン 2018.4.0
 
-As described in the [Sling documentation](http://sling.apache.org/documentation/the-sling-engine/servlets.html), bindings servlets by paths is discouraged. パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
+[Sling ドキュメント](http://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明されているように、パスによってサーブレットをバインドすることは推奨されません。パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
 
 #### 準拠していないコード {#non-compliant-code-5}
 
@@ -537,7 +540,7 @@ public void doThis() {
 
 **最初の対象バージョン**：バージョン 2018.4.0
 
-一般に、/libs および /apps で始まるパスは、参照先としてハードコーディングせず、Sling 検索パス（デフォルトで /libs、/apps に設定されている）に対する相対パスで格納する必要があります。絶対パスを使用すると、プロジェクトライフサイクルの後になって初めて現れるわかりにくい不具合が生じる可能性があります。
+一般に、/libs および /apps で始まるパスは、参照元としてハードコーディングせず、Sling 検索パス（デフォルトで /libs、/apps に設定されている）に対する相対パスで格納する必要があります。絶対パスを使用すると、プロジェクトライフサイクルの後になって初めて現れるわかりにくい不具合が生じる可能性があります。
 
 #### 準拠していないコード {#non-compliant-code-13}
 
@@ -561,7 +564,7 @@ public void doThis(Resource resource) {
 Cloud Manager で実行される OakPAL 関連チェックについて、以下に説明します。
 
 >[!NOTE]
->OakPAL は AEM パートナー（2019 年の AEM Rockstar North America の優勝者）により開発されたフレームワークで、スタンドアロン の Oak リポジトリを使用してコンテンツパッケージを検証します。
+>OakPAL は AEM パートナー（2019 年の AEM Rockstar North America の優勝者）により開発されたフレームワークで、スタンドアロンの Oak リポジトリを使用してコンテンツパッケージを検証します。
 
 ### 顧客パッケージでは /libs 下のノードを作成／変更しない {#oakpal-customer-package}
 
@@ -639,7 +642,7 @@ AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み
       + rtePlugins [nt:unstructured]
 ```
 
-### パッケージは重複しない {#oakpal-no-overlap}
+#### パッケージは重複しない {#oakpal-no-overlap}
 
 **キー**：PackageOverlaps
 
@@ -650,3 +653,94 @@ AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み
 **最初の対象バージョン**：バージョン 2019.6.0
 
 *パッケージには重複する OSGi 設定を含めない*&#x200B;と同様に、これも複雑なプロジェクトでよく発生する問題です。複数の異なるコンテンツパッケージに同じノードパスが書き込まれるケースです。コンテンツパッケージの依存関係を使用すると、一貫性のある結果を得ることができますが、その際には、パッケージがまったく重複しないようにすることをお勧めします。
+
+#### OakPAL — デフォルトのオーサリングモードをクラシックUIにしない {#oakpal-default-authoring}
+
+**キー**: ClassicUIAuthoringMode
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+OSGi設定は、AEM内でデフォルトのオーサリングモードを `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 定義します。 AEM 6.4以降、Classic UIは非推奨となったので、デフォルトのオーサリングモードがクラシックUIに設定されている場合に問題が発生するようになりました。
+
+#### OakPal — ダイアログを持つコンポーネントにタッチUIダイアログが必要 {#oakpal-components-dialogs}
+
+**キー**: ComponentWithOnlyClassicUIDalog
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+最適なオーサリングエクスペリエンスを提供し、クラシックUIがサポートされないクラウドサービスデプロイメントモデルとの互換性を維持するために、クラシックUIダイアログを含むAEMコンポーネントには、常にタッチUIダイアログが必要です。 このルールは、次のシナリオを検証します。
+
+* クラシックUIダイアログ（ダイアログの子ノード）を持つコンポーネントには、対応するタッチUIダイアログ（子ノード）が必要です。 `cq:dialog`
+* クラシックUIデザインダイアログ（design_dialogノード）を含むコンポーネントには、対応するタッチUIデザインダイアログ( `cq:design_dialog` 子ノード)が必要です。
+* クラシックUIダイアログとクラシックUIデザインダイアログの両方を持つコンポーネントには、対応するタッチUIダイアログと対応するタッチUIデザインダイアログの両方が必要です。
+
+AEM最新化ツールのドキュメントには、コンポーネントをクラシックUIからタッチUIに変換する方法に関するドキュメントとツールが記載されています。 詳しくは、「AEM最新化ツ [ール](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) 」を参照してください。
+
+#### OakPal — 可変コンテンツと不変コンテンツがパッケージに混在してはならない {#oakpal-packages-immutable}
+
+**キー**: ImmutableMutableMixedPackage
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+クラウドサービスの展開モデルとの互換性を維持するために、個々のコンテンツパッケージには、リポジトリの不変領域のコンテンツ（つまり、顧客コードで変更しないで別の違反を引き起こす）または可変領域（その他すべて）のいずれかを含める必要があります。 `/apps and /libs, although /libs` 例えば、両方を含むパッケージ `/apps/myco/components/text and /etc/clientlibs/myco` はクラウドサービスと互換性がなく、問題が報告されます。
+
+詳しくは、 [AEMプロジェクト構造](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) （英語）を参照してください。
+
+### OakPal — 逆複製エージェントは使用しない {#oakpal-reverse-replication}
+
+**キー**: 逆複製
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+リリースノートで説明されているように、逆複製のサポートはクラウドサービスのデプロイメントでは利用できません [。 レプリケーションエージェントの削除](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)。
+
+逆複製を使用するお客様は、アドビに問い合わせて、代替ソリューションをご利用ください。
+
+### SonarQube - Slingスケジューラーは使用しないでください {#sonarqube-sling-scheduler}
+
+**キー**: CQRules:AMSCORE-554
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+Slingスケジューラーは、確実な実行を必要とするタスクには使用しないでください。 Slingスケジュールジョブは実行を保証し、クラスター化ジョブと非クラスター化環境の両方に適しています。
+
+Slingジョブがクラスター環境で処理される方法について詳しくは、 [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) を参照してください。
+
+### SonarQube - SonarQube - AEM非推奨APIは使用しないでください。 {#sonarqube-aem-deprecated}
+
+**キー**: AMSCORE-553
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+AEM APIの表面は絶え間ないリビジョンの下にあり、使用がお勧めされず、非推奨と見なされるAPIを識別します。
+
+多くの場合、これらのAPIは、標準のJava *@Deprecated* 注釈を使用して非推奨になります。この注釈は、で識別されるように使用されま `squid:CallToDeprecatedMethod`す。
+
+ただし、APIがAEMのコンテキストで非推奨となるが、他のコンテキストでは非推奨とならない場合があります。 このルールは、この2番目のクラスを識別します。
+
+
+
