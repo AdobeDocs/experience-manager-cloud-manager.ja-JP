@@ -9,8 +9,11 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: fb84c2d41c76c64fc0be1e9f86356ee0cb5bcf9c
+translation-type: tm+mt
+source-git-commit: 18b539951e286cb14d5c10404b42ba80682bbef0
+workflow-type: tm+mt
+source-wordcount: '1575'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: fb84c2d41c76c64fc0be1e9f86356ee0cb5bcf9c
 
 CI／CD 実稼働パイプラインの設定は、パイプラインを開始するトリガー、実稼働環境のデプロイメントを制御するパラメーター、およびテストパラメーターのパフォーマンスを定義します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## フローについて {#understanding-the-flow}
@@ -124,7 +127,7 @@ CI／CD 実稼働パイプラインの設定は、パイプラインを開始す
 
 **Dispatcher の無効化**
 
-デプロイメントマネージャーは、AEM Dispatcher キャッシュから&#x200B;**無効化**&#x200B;または&#x200B;**フラッシュ**&#x200B;する一連のパスを、パイプラインの設定または編集中に設定できます。
+As a Deployment Manager, you have the opportunity to configure a set of content paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache, while setting up or editing pipeline.
 
 ステージングデプロイメントと実稼動デプロイメントに別々に一連のパスを設定できます。設定した場合、これらのキャッシュアクションは、コンテンツパッケージがデプロイされた直後にデプロイメントパイプラインステップの一部として実行されます。これらの設定では、標準の AEM Dispatcher 動作を使用します。無効化は、コンテンツがオーサーからパブリッシュにアクティブ化された場合と同様に、キャッシュを無効化します。フラッシュはキャッシュを削除します。
 
@@ -199,7 +202,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 CI／CD 非実稼働パイプラインは、コード品質パイプラインとデプロイパイプラインの 2 つのカテゴリに分類されます。コード品質は、Git ブランチのすべてのコードをパイプライン化し、Cloud Manager のコード品質スキャンに対して構築および評価されます。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
