@@ -8,8 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-translation-type: ht
-source-git-commit: 7cbc42108a6ccc8f7303eb76fd8ca2e9027f49e0
+translation-type: tm+mt
+source-git-commit: e2187565e7f06d64841eb2af9b4b1a56feb5ebe4
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 94%
 
 ---
 
@@ -27,7 +30,7 @@ Admin Console で割り当てることができるロールおよび各ユーザ
 
 ## データのセキュリティ {#data-security}
 
-[!UICONTROL Cloud Manager] では、コードは送信時に暗号化されます。Cod Manager でビルドされるバイナリは送信時および保存時に暗号化されます。
+[!UICONTROL Cloud Manager] では、コードは送信時に暗号化されます。Cloud Managerで構築されたバイナリは、転送中に暗号化され、保存時に暗号化されます。
 
 顧客ごとに専用の **Git** リポジトリを取得します。顧客のコードはセキュリティで保護され、他の&#x200B;**組織**&#x200B;とは共有されません。
 
