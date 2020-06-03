@@ -4,9 +4,9 @@ sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Adobe Experience Manager Cloud Manager ヘルプ
 translation-type: tm+mt
-source-git-commit: 278858465592482449080fedc3c0165805db223d
+source-git-commit: 0652436ec0c1c95d270a06a600424dbfd0140b27
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '201'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 100%
    + [リリースブランチの設定](configure-your-release-branches.md)
    + [Dispatcher 設定の管理](dispatcher-configurations.md)
 + 使用方法 {#how-to-use}
-   + [CI/CD パイプラインの設定](configuring-pipeline.md)
+   + [CI／CD パイプラインの設定](configuring-pipeline.md)
    + [コードのデプロイ](deploying-code.md)
    + [テスト結果の理解](understand-your-test-results.md)
    + [環境の管理](manage-your-environment.md)
@@ -51,7 +51,8 @@ ht-degree: 100%
    + [概要](overview-productupdate-wizard.md)
    + [評価](evaluation.md)
 + リリースノート {#release-notes}
-   + [最新のリリースノート（2020.5.0）](release-notes-current.md)
+   + [最新のリリースノート（2020.6.0）](release-notes-current.md)
+   + [リリースノート（2020.5.0）](release-notes-2020-5-0.md)
    + [リリースノート（2020.4.0）](release-notes-2020-4-0.md)
    + [リリースノート（2020.3.0）](release-notes-2020-3-0.md)
    + [リリースノート（2020.2.0）](release-notes-2020-2-0.md)
