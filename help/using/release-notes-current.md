@@ -3,9 +3,9 @@ title: リリースノート（2020.6.0）
 seo-title: AEM Cloud Manager リリースノート（2020.6.0）
 description: このページでは、Cloud Manager リリース 2020.6.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2020.6.0 について説明します。
-translation-type: ht
-source-git-commit: 0652436ec0c1c95d270a06a600424dbfd0140b27
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: fddfc8cef28bc07fb32d7f8ca6a815e888beefef
+workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # リリースノート（2020.6.0） {#release-notes-for}
 
-以下の節では [!UICONTROL Cloud Manager] リリース 2020.5.0 の一般リリースノートの概要を説明します。
+以下の節では [!UICONTROL Cloud Manager] リリース 2020.6.0 の一般リリースノートの概要を説明します。
 
 ## リリース日 {#release-date}
 
@@ -33,9 +33,6 @@ ht-degree: 100%
 
 ## バグ修正 {#bug-fixes}
 
-
 * 実稼働パイプラインを設定する際に、一部の顧客に対して、スケジュール済みデプロイメントオプションが表示されない問題を修正しました。
 
 * 一部のデプロイメントメッセージが切り捨てられました。
-
-
