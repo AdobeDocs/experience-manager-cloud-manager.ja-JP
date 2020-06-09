@@ -3,9 +3,9 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Adobe Experience Manager Cloud Manager ヘルプ
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0652436ec0c1c95d270a06a600424dbfd0140b27
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
 ht-degree: 100%
 
