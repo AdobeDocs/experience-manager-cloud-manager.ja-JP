@@ -5,11 +5,14 @@ description: このページでは、Cloud Manager を使い始めるための�
 seo-description: このページでは、Adobe AEM Cloud Manager を使い始めるためのカスタマージャーニーについて説明します。
 uuid: d4468eb6-5bde-48dd-b96e-0cc61e046f96
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: bc9a0d63-ae6b-4fe9-81e5-bf9844f04e54
 translation-type: tm+mt
-source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
+source-git-commit: 77b7e2fc81880a7f1878fa9553ce2ae8078d1b78
+workflow-type: tm+mt
+source-wordcount: '586'
+ht-degree: 86%
 
 ---
 
@@ -44,11 +47,11 @@ Adobe Identity Management 資格情報を使用して [!UICONTROL Experience Clo
 
 [!UICONTROL Cloud Manager] に初めてログインした後、[!UICONTROL Cloud Manager] UI から直接 AEM 環境にアクセスできます。最初のコードブランチをステージおよび実稼動環境にデプロイすると、この時点で、[!UICONTROL Cloud Manager] のすべての機能を確認する準備が整います。
 
-[!UICONTROL Cloud Manager] を確認して使用を開始するには、[初回ログイン](first-time-login.md)を参照してください。AEMについて詳しくは、「AEM 6.4 [はじめに」を参照してください](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html)。 詳しくは、 [AEMのリソース](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) を参照してください。
+[!UICONTROL Cloud Manager] を確認して使用を開始するには、[初回ログイン](first-time-login.md)を参照してください。AEMについて詳しくは、「AEM 6.4 [使用の手引き」を参照してください](https://helpx.adobe.com/ja/experience-manager/6-4/sites/deploying/using/deploy.html)。 詳しくは、 [AEMのリソース](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&amp;mv=other) （英語）も参照してください。
 
-## [!UICONTROL Cloud Manager] の概要 {#getting-started-with-cloud-manager}
+## [!UICONTROL Cloud Manager] の概要{#getting-started-with-cloud-manager}
 
-[!UICONTROL Cloud Manager] にログインすると、まずコードリポジトリ環境を設定し、チームと役割を設定することになります。具体的には、Admin Console UI を使用してユーザーを [!UICONTROL Cloud Manager] プロファイルに追加することで、役割のメンバーシップが割り当てられます。
+Once you are logged in to [!UICONTROL Cloud Manager], the first thing to do will be to set up your code repository environment, then your team and roles. 具体的には、Admin Console UI を使用してユーザーを [!UICONTROL Cloud Manager] プロファイルに追加することで、役割のメンバーシップが割り当てられます。
 
 次に、**Git リポジトリ**&#x200B;にソースコードのブランチを設定する必要があります。これにより、ロードおよびパフォーマンス KPI に関して目標を定義し、すべての品質チェックに正常に合格したら、ステージおよび実稼動環境にコードを適切にデプロイするためのテストシナリオを定義します。
 
