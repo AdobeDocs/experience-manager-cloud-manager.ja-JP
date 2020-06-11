@@ -4,11 +4,14 @@ seo-title: AEM Cloud Manager でのアクセス権の付与
 description: Adobe ID および Experience Cloud リソースについて詳しく説明します。
 seo-description: このページでは、Adobe ID および AEM Experience Cloud リソースの詳細について説明します。
 uuid: 9aa90a99-f049-422e-9e06-b00b843ed98b
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 072dbc1b-e608-4b1f-b0e8-0e4f88c8ad12
 translation-type: tm+mt
-source-git-commit: 0f29b3f9cf4bd53d0e57c7793fe05cd3afeea5e1
+source-git-commit: e8484052124c23d4849c59f6c76262a3284ef2ac
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +26,6 @@ Adobe ID の使用を開始するには、[Adobe ID タイプの管理](https://
 
 ### ユーザーとロール {#users-and-roles}
 
-会社の組織 ID が作成されたら、指定した管理者がこの組織の最初のメンバーとして追加されます。この管理者には、デフォルトで管理者権限が付与され、[!UICONTROL AEM Managed Services] **製品**&#x200B;および 1 つ以上の [!UICONTROL Cloud Manager]**製品プロファイル**&#x200B;が割り当てられます。Admin Console を使用してチームユーザーを設定および管理する方法について詳しくは、[ユーザーとロールの追加](setting-up-users-and-roles.md)を参照してください。
+会社の組織 ID が作成されたら、指定した管理者がこの組織の最初のメンバーとして追加されます。管理者には、デフォルトで管理者権限が付与され、[!UICONTROL AEM Managed Services] **Product** および 1 つ以上の [!UICONTROL Cloud Manager] **製品プロパティ**&#x200B;が割り当てられます。Admin Console を使用してチームユーザーを設定および管理する方法について詳しくは、[ユーザーとロールの追加](setting-up-users-and-roles.md)を参照してください。
 
 これらの権限を付与されると、管理者は、シングルサインオン（Adobe ID を使用）で [!UICONTROL Experience Cloud] サービスへのアクセス、AEM クラウド環境へのログイン、[!UICONTROL Cloud Manager] の使用をおこなえるように設定されます。
