@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6851884b08c0c0a971242a958f72a7673a1a1196
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '695'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,6 @@ ht-degree: 97%
    1. ピーク負荷時のページビュー数/分はどれくらいか
 
       * 推奨値 - 1 分あたり 200 ページビュー
-
    **AEM Assets**
 
    初期のリリースから、Cloud Manager では AEM Sites プログラムのパフォーマンステストを実行できていました。本リリースでは、AEM Assets プログラムのパフォーマンステストも実行できるようになりました。Assets のパフォーマンステストでは、30 分間のテスト期間中にアセットを繰り返しアップロードし、各アセットの処理時間および様々なシステムレベルの指標を測定します。
@@ -71,10 +70,9 @@ ht-degree: 97%
 
    * 第 95 百分位処理時間
    * アップロードされたアセット（1 分あたり）
-
    ![](assets/Setup_Program-KPIs.png)
 
-1. Under **Provisioning**, you can view or edit the provisioning configuration for production and non-production environments in your program. プログラムの自動スケーリングが有効になっている場合は 「**自動スケーリングがオン**」が表示されます。
+1. 「**プロビジョニング**」では、プログラムの実稼動環境および非実稼動環境用のプロビジョニング設定を表示または編集できます。プログラムの自動スケーリングが有効になっている場合は 「**自動スケーリングがオン**」が表示されます。
 
    >[!NOTE]
    >
