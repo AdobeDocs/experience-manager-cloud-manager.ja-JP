@@ -7,11 +7,11 @@ uuid: 9aa90a99-f049-422e-9e06-b00b843ed98b
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 072dbc1b-e608-4b1f-b0e8-0e4f88c8ad12
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e48f9121423f46f4cf858c4951ad412582020bdb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '242'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 アドビでは、オンボーディングプロセスの一部として、アドビの ID 管理システム（IMS）に会社の&#x200B;**組織** ID を作成します。このシステムで、すべてのユーザーとその権限を管理できます。各ユーザーがこの組織のメンバーになる必要があり、任意の [!UICONTROL Experience Cloud] サービスへのアクセス権を付与される場合、ユーザーには専用の **Adobe ID** が必要になります。
 
-Adobe ID の使用を開始するには、[Adobe ID タイプの管理](https://helpx.adobe.com/enterprise/using/identity.html)を参照して、使用可能ないずれかの ID タイプを使用して Adobe ID を取得する方法の詳細を確認してください。
+Adobe ID の使用を開始するには、[Adobe ID タイプの管理](https://helpx.adobe.com/jp/enterprise/using/identity.html)を参照して、使用可能ないずれかの ID タイプを使用して Adobe ID を取得する方法の詳細を確認してください。
 
 ### ユーザーとロール {#users-and-roles}
 
