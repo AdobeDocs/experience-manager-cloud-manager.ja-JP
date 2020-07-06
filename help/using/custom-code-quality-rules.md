@@ -8,9 +8,9 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-translation-type: ht
-source-git-commit: 3663bd773c0043282359d690621de5023fa2974c
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 8c651bcb187d911448475f6031c93bf956277e9f
+workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 100%
 
@@ -621,7 +621,8 @@ AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み
 
 #### 準拠していないコード {#non-compliant-code-osgi}
 
-```+ apps
+```
++ apps
   + projectA
     + config
       + com.day.cq.commons.impl.ExternalizerImpl
@@ -632,7 +633,8 @@ AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み
 
 #### 準拠しているコード {#compliant-code-osgi}
 
-```+ apps
+```
++ apps
   + shared-config
     + config
       + com.day.cq.commons.impl.ExternalizerImpl
