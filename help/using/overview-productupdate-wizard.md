@@ -5,10 +5,13 @@ description: 'このページは、製品アップデートウィザードを理
 seo-description: 'このページは、製品アップデートウィザードを理解するための出発点となります。 '
 uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
+source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 100%
 
 ---
 
@@ -29,6 +32,7 @@ source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
 ## 製品アップデートウィザードの使用 {#using-product-update-wizard}
 
 >[!NOTE]
+>
 >Cloud Manager にオンボードされおり AEM 6.5 にアップグレードする資格がある場合は、製品アップデートウィザードを利用できます。詳しくは、カスタマーサクセスエンジニア（CSE）にお問い合わせください。
 
 1. AEM 6.5 がプログラムで使用可能なことを知らせるパルス通知が、Cloud Manager を通じて送られます。
@@ -37,4 +41,4 @@ source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
 
    ![](assets/Start-Update.png)
 
-   これで、[評価段階](evaluation.md)で説明したように、**[!UICONTROL AEM 6.5 アップデート]**&#x200B;プロセスの第 1 段階がこのウィザードに表示されます。
+   これで、**[!UICONTROL 評価段階]**&#x200B;で説明したように、[AEM 6.5 アップデート](evaluation.md)プロセスの第 1 段階がこのウィザードに表示されます。
