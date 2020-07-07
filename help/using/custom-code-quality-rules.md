@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 8c651bcb187d911448475f6031c93bf956277e9f
+source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 100%
@@ -593,6 +593,7 @@ AEM API の表面は、使用が推奨されず非推奨と見なされる API �
 Cloud Manager で実行される OakPAL 関連チェックについて、以下に説明します。
 
 >[!NOTE]
+>
 >OakPAL は AEM パートナー（2019 年の AEM Rockstar North America の優勝者）により開発されたフレームワークで、スタンドアロンの Oak リポジトリを使用してコンテンツパッケージを検証します。
 
 ### 顧客パッケージでは /libs 下のノードを作成／変更しない {#oakpal-customer-package}
