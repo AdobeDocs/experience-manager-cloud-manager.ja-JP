@@ -3,8 +3,11 @@ title: Git へのアクセス
 seo-title: Git へのアクセス
 description: このページでは、Git リポジトリにアクセスして管理する方法について説明します。
 seo-description: Git リポジトリにアクセスして管理する方法については、このページに従ってください。
-translation-type: ht
-source-git-commit: 027408326960153963d2e8604dc0ed33d921df66
+translation-type: tm+mt
+source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +31,8 @@ Cloud Manager UI から利用できる「**Git を管理**」ボタンを使用�
    ![](assets/manage-git-new2.png)
 
 >[!NOTE]
->「**Git を管理**」オプションは、デベロッパーまたはデプロイメントマネージャーのロールを持つユーザーに表示されます。このボタンをクリックすると、Cloud Manager Git リポジトリへの URL およびユーザー名とパスワードを確認できるダイアログが開きます。
+>
+>「**Git を管理**」オプションは、デベロッパーまたはデプロイメントマネージャーの役割を持つユーザーに表示されます。このボタンをクリックすると、Cloud Manager Git リポジトリへの URL およびユーザー名とパスワードを確認できるダイアログが開きます。
 
 ![](assets/manage-git3.png)
 
