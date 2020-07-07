@@ -5,10 +5,13 @@ description: 'このページは、製品アップデートウィザードの評
 seo-description: このページは、製品アップデートウィザードの評価段階を理解するための出発点となります。
 uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
+source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 92%
 
 ---
 
@@ -27,6 +30,7 @@ source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
 これにより、Adobe Experience Manager（AEM）6.5 へのアップグレードに必要な開発作業量を評価できます。
 
 >[!NOTE]
+>
 >To learn more about pattern detector, refer to [Assessing the Upgrade Complexity with the Pattern Detector](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
 
 ## エバリュエーターの実行 {#running-evaluator}
@@ -47,5 +51,6 @@ source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
    ![](assets/Evaluation-1.png)
 
 
->[!NOTE]
->Cloud Manager における製品アップデートウィザードの現在のリリースでは、**評価**&#x200B;段階のみサポートされています。**修正**、**実行**、**検証**、**完了**&#x200B;の 4 段階は、現在準備中です。
+   >[!NOTE]
+   >
+   >Cloud Manager における製品アップデートウィザードの現在のリリースでは、**評価**&#x200B;段階のみサポートされています。**修正**、**実行**、**検証**、**完了**&#x200B;の 4 段階は、現在準備中です。
