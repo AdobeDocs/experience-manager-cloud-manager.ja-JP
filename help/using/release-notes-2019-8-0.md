@@ -4,7 +4,10 @@ seo-title: AEM Cloud Manager リリースノート（2019.8.0）
 description: このページでは、Cloud Manager リリース 2019.8.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2019.8.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
+source-git-commit: c07e88564dc1419bd0305c9d25173a8e0e1f47cf
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 ## 最新情報 {#whats-new}
 
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager) による、Cloud Manager API に対する新しいコマンドラインインターフェイス。
-* ビルドによって作成された特定のコンテンツパッケージがスキップ可能として宣言され、デプロイされなくなることがあります。詳しくは、[AEM アプリケーションプロジェクトの作成](create-an-application-project.md)の&#x200B;***コンテンツパッケージのスキップ***&#x200B;の節を参照してください。
+* ビルドによって作成された特定のコンテンツパッケージがスキップ可能として宣言され、デプロイされなくなることがあります。詳しくは、***AEM アプリケーションプロジェクトの作成***&#x200B;の[コンテンツパッケージのスキップ](/help/using/create-an-application-project.md)の節を参照してください。
 * ビルドコンテナのプリロードされた依存関係のセットは、一部の不要なネットワーク要求を避けるように修正されています。
 * 間違って設定された特定のプログラムの概要ページのメッセージが改善されました。
 
@@ -30,4 +33,4 @@ source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 * Sling Rewriter コンポーネントが使用されると、***ConfigAndInstallShouldOnlyContainOsgiNodes*** コード品質ルールが偽陽性を生成していました。
 * 特定の一般的でないパス構造で、***ConfigAndInstallShouldOnlyContainOsgiNodes*** コード品質ルールが偽陽性を生成していました。
 * アセットのみのお客様の場合、AEM 環境に一貫性のあるナビゲートができないことがありました。
-* [!UICONTROL ブランチおよびプロジェクトを作成]ダイアログが異なるブラウザーで異なってレンダリングされていました。
+* [ブランチとプロジェクトを作成]ダイアログが、異なるブラウザで異なる方法で表示される問題を修正しました。
