@@ -5,11 +5,14 @@ description: このページでは、Cloud Manager リリース 2018.8.0 につ�
 seo-description: このページでは、AEM Cloud Manager リリース 2018.8.0 について説明します。
 uuid: e8aaba32-89b4-4bc5-b295-09b753252612
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
 translation-type: tm+mt
-source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
+source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
 
 ## 最新情報 {#what-s-new}
 
-* **プログラム設定** - AEM プロジェクトアーキタイプを使用して Git にアプリケーションプロジェクトを作成するための新しいウィザードが導入されました。詳しくは、[AEM アプリケーションプロジェクトの作成](create-an-application-project.md)を参照してください。
+* **プログラム設定** - AEM プロジェクトアーキタイプを使用して Git にアプリケーションプロジェクトを作成するための新しいウィザードが導入されました。詳しくは、[AEM アプリケーションプロジェクトの作成](/help/using/create-an-application-project.md)を参照してください。
 
 * **CI／CD パイプライン** - CI／CD パイプラインに次の変更が追加されました。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。
 
