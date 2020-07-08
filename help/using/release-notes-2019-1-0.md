@@ -5,11 +5,14 @@ description: このページでは、Cloud Manager リリース 2019.1.0 につ�
 seo-description: このページでは、AEM Cloud Manager リリース 2019.1.0 について説明します。
 uuid: 3af5808f-828f-4846-bee4-1e62194b48ad
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
 translation-type: tm+mt
-source-git-commit: 12d787ef2f9b2dd229b8ed0f8c602fbf5c06aa80
+source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: 12d787ef2f9b2dd229b8ed0f8c602fbf5c06aa80
 
 * AEM Assets のパフォーマンステストをサポートするようになりました。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。
 * ビルドステップおよびコード品質ステップのみを実行するパイプラインと、実稼動以外の環境にデプロイするパイプラインをサポートするようになりました。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)の&#x200B;**非実稼動環境パイプラインとコード品質専用パイプライン**&#x200B;の節を参照してください。
-* ビルド環境でカスタム環境変数をサポートするようになりました。詳しくは、[AEM アプリケーションプロジェクトの作成](create-an-application-project.md)を参照してください。
+* ビルド環境でカスタム環境変数をサポートするようになりました。Refer to [Create an AEM Application Project](/help/using/create-an-application-project.md) for more details.
 * 複数のステージング環境または実稼動環境をお持ちのお客様の場合は、実稼動パイプラインの一部としてデプロイ先の環境を [CI／CD パイプラインの設定](configuring-pipeline.md)ページで選択することができます。
 * httxt2dbm がビルドコンテナに追加されました。
 * どのヘルプメニュー項目を選択しても新しいタブが開きます。
