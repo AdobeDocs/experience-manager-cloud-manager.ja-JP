@@ -5,11 +5,14 @@ description: 'null'
 seo-description: このページでは、Dispatcher 設定について説明します。
 uuid: 3ecd8ca3-5241-4811-87fd-3284a8012eda
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
-translation-type: ht
-source-git-commit: e0a280efddb1e31f5aef65f0f52fc5b4e71de3da
+translation-type: tm+mt
+source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
+workflow-type: tm+mt
+source-wordcount: '603'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: e0a280efddb1e31f5aef65f0f52fc5b4e71de3da
 
 Cloud Manager では、Web サーバーと Dispatcher 設定ファイルが、通常の AEM コンテンツパッケージに加え、**Git リポジトリ**&#x200B;に格納されていると仮定して、それらの設定ファイルをデプロイできます。
 
-この機能を活用するために、Maven ビルドでは、少なくとも 2 つのディレクトリ（***conf*** および ***conf.d***）を含む zip ファイルを作成する必要があります。この zip ファイルは、maven-assembly-plugin を使用して作成できます。組み込みの[ウィザード](create-an-application-project.md)を使用して Cloud Manager で生成されたプロジェクトでは、プロジェクト作成の一環として正しい Maven プロジェクト構造が作成されています。これは、新しい Managed Services のお客様に対して推奨されるパスです。
+この機能を活用するために、Maven ビルドでは、少なくとも 2 つのディレクトリ（***conf*** および ***conf.d***）を含む zip ファイルを作成する必要があります。この zip ファイルは、maven-assembly-plugin を使用して作成できます。組み込みの[ウィザード](/help/using/create-an-application-project.md)を使用して Cloud Manager で生成されたプロジェクトでは、プロジェクト作成の一環として正しい Maven プロジェクト構造が作成されています。これは、新しい Managed Services のお客様に対して推奨されるパスです。
 
 Dispatcher **インスタンス**&#x200B;にデプロイすると、Dispatcher インスタンス上の既存のディレクトリの内容は、これらのディレクトリの内容で上書きされます。Web サーバーおよび Dispatcher 設定ファイルは頻繁に環境特有の情報を必要とするので、この機能を正しく使用するには、最初にカスタマーサクセスエンジニア（CSE）に依頼して、これらの環境変数を ***/etc/sysconfig/httpd*** に設定する必要があります。
 
