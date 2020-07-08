@@ -8,8 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: ht
-source-git-commit: 25edab26146d7d98ef5a38a45b4fe67b0d5e564e
+translation-type: tm+mt
+source-git-commit: c07e88564dc1419bd0305c9d25173a8e0e1f47cf
+workflow-type: tm+mt
+source-wordcount: '1514'
+ht-degree: 85%
 
 ---
 
@@ -34,6 +37,7 @@ Cloud Manager で AEM アプリケーションプロジェクトを作成する�
    * **タイトル** - デフォルトでは&#x200B;*プログラム名*&#x200B;に設定されています。
 
    * **新しいブランチ名** - デフォルトでは *master* になっています。
+
    ![](assets/screen_shot_2018-10-08at55825am.png)
 
    ダイアログボックスには、ダイアログの下部近くにあるハンドルをクリックして開くことができるドロワーがあります。これを展開すると、そのアーキタイプの設定パラメーターがすべてダイアログに表示されます。これらのパラメーターの多くは、**タイトル**&#x200B;に基づいて生成されるデフォルト値を持っています。
@@ -81,7 +85,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 * ビルド環境は Linux ベースで、Ubuntu 18.04 から派生しています。
 * Apache Maven 3.6.0 がインストールされています。
-* インストールされている Java のバージョンは Oracle JDK 8u202 です。
+* インストールされるJavaバージョンはOracle JDK 8u202および11.0.2です。
 * 必要な追加のシステムパッケージが、次のようにいくつかインストールされています。
 
    * bzip2
@@ -95,6 +99,37 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 * Maven は常に *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package* というコマンドで実行されます。
 * Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo.adobe.com/)を参照してください）。
 
+### Using Java 11 {#using-java-11}
+
+Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロジェクトの作成がサポートされるようになりました。 デフォルトでは、プロジェクトはJava 8を使用して構築されます。 プロジェクトでJava 11を使用するお客様は、 [Apache Maven Toolchainsプラグインを使用して使用できます](https://maven.apache.org/plugins/maven-toolchains-plugin/)。
+
+これを行うには、pom.xmlファイルに次のような `<plugin>` エントリを追加します。
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
+```
+
+>[!NOTE]
+>サポートされるベンダーはOracleおよびSun Microsystemsで、サポートされるバージョンは1.8、1.11および11です。
 
 ## 環境変数 {#environment-variables}
 
@@ -116,29 +151,35 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 | CM_PROGRAM_NAME | プログラム名 |
 | ARTIFACTS_VERSION | ステージまたは実稼働パイプラインの場合、Cloud Manager で生成された合成バージョン |
 
-### カスタム環境変数 {#custom-environ-variables}
+### パイプライン変数 {#pipeline-variables}
 
-場合によっては、顧客のビルドプロセスが、Git リポジトリに格納するのに適さない特定の設定変数に依存していることがあります。Cloud Manager では、カスタマーサクセスエンジニア（CSE）がこれらの変数を顧客別に設定できます。これらの変数は、安全な格納先に保存され、特定の顧客のビルドコンテナにのみ表示されます。この機能を使用する顧客は、担当の CSE に連絡して変数を設定してもらう必要があります。
+場合によっては、顧客のビルドプロセスが、Git リポジトリに格納するのに適さない特定の設定変数に依存していることがあります。Cloud Managerでは、これらの変数をCloud Manager APIまたはCloud Manager CLIを介してパイプライン単位で設定できます。 変数は、プレーンテキストとして保存することも、保存時に暗号化することもできます。 どちらの場合も、変数は環境変数としてbuild環境内で使用可能になり、pom.xmlファイル内または他のビルドスクリプト内から参照できます。
 
-設定が完了すると、これらの変数は環境変数として使用可能になります。これらの変数を Maven プロパティとして使用するには、pom.xml ファイルを参照します（変数は、前述のようにプロファイル内にあるはずです）。
+CLIを使用して変数を設定するには、次のようなコマンドを実行します。
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
+
+現在の変数は次のとおりです。
+
+`$ aio cloudmanager:list-pipeline-variables PIPELINEID`
+
+変数名には、英数字とアンダースコアのみを使用できます。 慣例では、名前はすべて大文字である必要があります。パイプラインあたり200個の変数に制限があります。各名前は100文字未満にし、各値は2048文字未満にする必要があります。
+
+Maven pom.xmlファイル内で使用する場合、次のような構文を使用して、これらの変数をMavenプロパティにマッピングすると便利です。
 
 ```xml
         <profile>
             <id>cmBuild</id>
             <activation>
-                  <property>
-                        <name>env.CM_BUILD</name>
-                  </property>
+            <property>
+                <name>env.CM_BUILD</name>
+            </property>
             </activation>
-            <properties>
-                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
-            </properties>
+                <properties>
+                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
+                </properties>
         </profile>
 ```
-
->[!NOTE]
->
->環境変数名に使用できるのは、英数字と下線（_）のみです。慣例では、名前はすべて大文字である必要があります。
 
 ## Cloud Manager での Maven プロファイルのアクティブ化 {#activating-maven-profiles-in-cloud-manager}
 
@@ -217,7 +258,6 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
             </build>
         </profile>
 ```
-
 
 ## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
 
