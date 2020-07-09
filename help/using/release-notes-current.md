@@ -4,10 +4,10 @@ seo-title: AEM Cloud Manager リリースノート（2020.7.0）
 description: このページでは、Cloud Manager リリース 2020.7.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2020.7.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 02515ac6e3ac54909e23a276a78f571ea5c249c4
+source-git-commit: 33aeba59c149e5ba3300b9d798356ec5e9bcd4b8
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 35%
+source-wordcount: '161'
+ht-degree: 38%
 
 ---
 
@@ -25,7 +25,6 @@ ht-degree: 35%
 
 * Cloud Managerビルドコンテナで、Java 8とJava 11の両方がサポートされるようになりました。
 
-* Cloud Managerのパイプラインで、カスタマーセットの変数とシークレットがサポートされるようになりました。 詳細は、「 [パイプライン変数](/help/using/create-an-application-project.md#pipeline-variables) 」を参照してください。
 
 ## バグ修正 {#bug-fixes}
 
