@@ -4,7 +4,7 @@ seo-title: AEM Cloud Manager リリースノート（2020.7.0）
 description: このページでは、Cloud Manager リリース 2020.7.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2020.7.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 33aeba59c149e5ba3300b9d798356ec5e9bcd4b8
+source-git-commit: a0917f5cecbe552807d9147cd20316e02c2dd1a0
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 38%
@@ -24,7 +24,6 @@ ht-degree: 38%
 * 実稼働環境でのデプロイメント中に、ディスパッチャーインスタンスをロードバランサーからデタッチおよびアタッチする際に、動作がより一貫した方法になりました。
 
 * Cloud Managerビルドコンテナで、Java 8とJava 11の両方がサポートされるようになりました。
-
 
 ## バグ修正 {#bug-fixes}
 
