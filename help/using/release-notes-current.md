@@ -4,10 +4,10 @@ seo-title: AEM Cloud Manager リリースノート（2020.7.0）
 description: このページでは、Cloud Manager リリース 2020.7.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2020.7.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 26492dc02371d21670778f3cd60d26146439548e
+source-git-commit: 02515ac6e3ac54909e23a276a78f571ea5c249c4
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 36%
+source-wordcount: '177'
+ht-degree: 35%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 36%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2020.6.0 のリリース日は 2020 年 7 月 09 日です。
+[!UICONTROL Cloud Manager] バージョン 2020.7.0 のリリース日は 2020 年 7 月 09 日です。
 
 ## 新機能 {#whats-new}
 
@@ -25,7 +25,7 @@ ht-degree: 36%
 
 * Cloud Managerビルドコンテナで、Java 8とJava 11の両方がサポートされるようになりました。
 
-* Cloud Managerのパイプラインで、カスタマーセットの変数とシークレットがサポートされるようになりました。
+* Cloud Managerのパイプラインで、カスタマーセットの変数とシークレットがサポートされるようになりました。 詳細は、「 [パイプライン変数](/help/using/create-an-application-project.md#pipeline-variables) 」を参照してください。
 
 ## バグ修正 {#bug-fixes}
 
