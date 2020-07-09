@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: dd223d678450565c1c9e8f35503eda7e5444c674
+source-git-commit: ae22e0641111096c19d5413f3e78f339010bf512
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 92%
@@ -129,7 +129,7 @@ Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロ
 ```
 
 >[!NOTE]
->「Supported」 `vendor` の値は `oracle` とで、「Supported」の `sun` 値は、 `version` 、 `1.8`および `1.11``11`です。
+>サポートされている `vendor` 値はと `oracle` で、サポートされている `sun` 値は `version` 、、 `1.8`および `1.11``11`です。
 
 ## 環境変数 {#environment-variables}
 
