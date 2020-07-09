@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: c07e88564dc1419bd0305c9d25173a8e0e1f47cf
+source-git-commit: 02515ac6e3ac54909e23a276a78f571ea5c249c4
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 85%
+source-wordcount: '1518'
+ht-degree: 83%
 
 ---
 
@@ -153,13 +153,15 @@ Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロ
 
 ### パイプライン変数 {#pipeline-variables}
 
-場合によっては、顧客のビルドプロセスが、Git リポジトリに格納するのに適さない特定の設定変数に依存していることがあります。Cloud Managerでは、これらの変数をCloud Manager APIまたはCloud Manager CLIを介してパイプライン単位で設定できます。 変数は、プレーンテキストとして保存することも、保存時に暗号化することもできます。 どちらの場合も、変数は環境変数としてbuild環境内で使用可能になり、pom.xmlファイル内または他のビルドスクリプト内から参照できます。
+場合によっては、顧客のビルドプロセスが、Gitリポジトリに配置するのに適切でない特定の設定変数に依存することがあります。 Cloud Managerでは、これらの変数をCloud Manager APIまたはCloud Manager CLIを介してパイプライン単位で設定できます。
 
-CLIを使用して変数を設定するには、次のようなコマンドを実行します。
+変数は、プレーンテキストとして保存することも、保存時に暗号化することもできます。 どちらの場合も、変数は環境変数としてbuild環境内で使用可能になり、pom.xmlファイル内または他のビルドスクリプト内から参照できます。
+
+次のコマンドを使用して、CLIを使用して変数を設定します。
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
 
-現在の変数は次のとおりです。
+次に示すように、現在の変数をリストできます。
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
