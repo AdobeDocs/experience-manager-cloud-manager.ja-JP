@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 02515ac6e3ac54909e23a276a78f571ea5c249c4
+source-git-commit: 33aeba59c149e5ba3300b9d798356ec5e9bcd4b8
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 83%
+source-wordcount: '1479'
+ht-degree: 91%
 
 ---
 
@@ -137,7 +137,7 @@ Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロ
 
 場合によっては、プログラムやパイプラインに関する情報に基づいてビルドプロセスを変更する必要があります。
 
-例えば、gulp のようなツールを使用して、ビルド時の JavaScript の縮小がおこなわれている場合、ステージと実稼働用とは異なる、開発環境用のビルド時の縮小レベルを使用したくなる場合があります。
+例えば、ビルド時のJavaScriptの縮小がgulpのようなツールを使用して行われている場合、開発環境用に構築する場合は、ステージ用および実稼働用の構築とは異なる縮小レベルを使用する必要があります。
 
 これをサポートするために、Cloud Manager は、これらの標準環境変数を各実行のビルドコンテナに追加します。
 
@@ -151,37 +151,29 @@ Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロ
 | CM_PROGRAM_NAME | プログラム名 |
 | ARTIFACTS_VERSION | ステージまたは実稼働パイプラインの場合、Cloud Manager で生成された合成バージョン |
 
-### パイプライン変数 {#pipeline-variables}
+### カスタム環境変数 {#custom-variables}
 
-場合によっては、顧客のビルドプロセスが、Gitリポジトリに配置するのに適切でない特定の設定変数に依存することがあります。 Cloud Managerでは、これらの変数をCloud Manager APIまたはCloud Manager CLIを介してパイプライン単位で設定できます。
+場合によっては、顧客のビルドプロセスが、Git リポジトリに格納するのに適さない特定の設定変数に依存していることがあります。Cloud Manager では、カスタマーサクセスエンジニア（CSE）がこれらの変数を顧客別に設定できます。
 
-変数は、プレーンテキストとして保存することも、保存時に暗号化することもできます。 どちらの場合も、変数は環境変数としてbuild環境内で使用可能になり、pom.xmlファイル内または他のビルドスクリプト内から参照できます。
+これらの変数は、安全な格納先に保存され、特定の顧客のビルドコンテナにのみ表示されます。この機能を使用する顧客は、担当の CSE に連絡して変数を設定してもらう必要があります。設定が完了すると、これらの変数は環境変数として使用可能になります。これらの変数を Maven プロパティとして使用するには、pom.xml ファイルを参照します（変数は、前述のようにプロファイル内にあるはずです）。
 
-次のコマンドを使用して、CLIを使用して変数を設定します。
-
-`$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
-
-次に示すように、現在の変数をリストできます。
-
-`$ aio cloudmanager:list-pipeline-variables PIPELINEID`
-
-変数名には、英数字とアンダースコアのみを使用できます。 慣例では、名前はすべて大文字である必要があります。パイプラインあたり200個の変数に制限があります。各名前は100文字未満にし、各値は2048文字未満にする必要があります。
-
-Maven pom.xmlファイル内で使用する場合、次のような構文を使用して、これらの変数をMavenプロパティにマッピングすると便利です。
 
 ```xml
         <profile>
             <id>cmBuild</id>
             <activation>
-            <property>
-                <name>env.CM_BUILD</name>
-            </property>
+                  <property>
+                        <name>env.CM_BUILD</name>
+                  </property>
             </activation>
-                <properties>
-                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
-                </properties>
+            <properties>
+                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
+            </properties>
         </profile>
 ```
+
+>[!NOTE]
+>環境変数名に使用できるのは、英数字と下線（_）のみです。慣例では、名前はすべて大文字である必要があります。
 
 ## Cloud Manager での Maven プロファイルのアクティブ化 {#activating-maven-profiles-in-cloud-manager}
 
