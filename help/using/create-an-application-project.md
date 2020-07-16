@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: ae22e0641111096c19d5413f3e78f339010bf512
+source-git-commit: a4ea83c0b64515915871956c1cd3e53606f1c26b
 workflow-type: tm+mt
-source-wordcount: '1476'
-ht-degree: 92%
+source-wordcount: '1494'
+ht-degree: 98%
 
 ---
 
@@ -85,7 +85,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 * ビルド環境は Linux ベースで、Ubuntu 18.04 から派生しています。
 * Apache Maven 3.6.0 がインストールされています。
-* インストールされるJavaバージョンはOracle JDK 8u202および11.0.2です。
+* インストールされる Java バージョンは Oracle JDK 8u202 および 11.0.2 です。
 * 必要な追加のシステムパッケージが、次のようにいくつかインストールされています。
 
    * bzip2
@@ -99,11 +99,14 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 * Maven は常に *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package* というコマンドで実行されます。
 * Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo.adobe.com/)を参照してください）。
 
-### Using Java 11 {#using-java-11}
+>[!NOTE]
+>Cloud Managerでは、の特定のバージョンは定義されませんが、少なくとも `jacoco-maven-plugin`使用するバージョンが必要で `0.7.5.201505241946`す。
 
-Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロジェクトの作成がサポートされるようになりました。 デフォルトでは、プロジェクトはJava 8を使用して構築されます。 プロジェクトでJava 11を使用するお客様は、 [Apache Maven Toolchainsプラグインを使用して使用できます](https://maven.apache.org/plugins/maven-toolchains-plugin/)。
+### Java の使用 {#using-java-11}
 
-これを行うには、pom.xmlファイルに次のような `<plugin>` エントリを追加します。
+Cloud Manager で、Java 8 と Java 11 の両方を使用したカスタマープロジェクトの作成がサポートされるようになりました。デフォルトでは、プロジェクトは Java 8 を使用して構築されます。プロジェクトで Java 11 を使用するお客様は、[Apache Maven Toolchains プラグイン](https://maven.apache.org/plugins/maven-toolchains-plugin/)を使用して使用できます。
+
+これをおこなうには、pom.xml ファイルに次のような `<plugin>` エントリを追加します。
 
 ```xml
         <plugin>
@@ -129,7 +132,7 @@ Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロ
 ```
 
 >[!NOTE]
->サポートされている `vendor` 値はと `oracle` で、サポートされている `sun` 値は `version` 、、 `1.8`および `1.11``11`です。
+>サポートされている `vendor` 値は `oracle`と `sun` で、サポートされている `version` 値は `1.8`、`1.11` および `11` です。
 
 ## 環境変数 {#environment-variables}
 
@@ -137,7 +140,7 @@ Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロ
 
 場合によっては、プログラムやパイプラインに関する情報に基づいてビルドプロセスを変更する必要があります。
 
-例えば、ビルド時のJavaScriptの縮小がgulpのようなツールを使用して行われている場合、開発環境用に構築する場合は、ステージ用および実稼働用の構築とは異なる縮小レベルを使用する必要があります。
+例えば、glup などのツールを使用してビルド時の JavaScript 縮小を実行する場合、開発環境でビルドする際には、ステージ用と実稼動用でビルドする際とは異なる、別の縮小レベルを使用することが望ましい可能性があります。
 
 これをサポートするために、Cloud Manager は、これらの標準環境変数を各実行のビルドコンテナに追加します。
 
@@ -179,7 +182,7 @@ Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロ
 
 ごく一部のケースでは、開発用ワークステーションで実行する場合とは異なり、Cloud Manager 内で実行する場合にはビルドプロセスを少し変える必要が出ることもあります。この場合は、[Maven プロファイル](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)を使用して、Cloud Manager を含む環境ごとのビルドの違いを定義できます。
 
-Cloud Manager ビルド環境内での Maven プロファイルのアクティブ化は、前述の CM_BUILD という名前の環境変数があるかどうかを調べておこなう必要があります。逆に、Cloud Manager ビルド環境以外でのみ使用するためのプロファイルは、この変数がないかどうかを調べることでアクティブ化する必要があります。
+Cloud Manager ビルド環境内での Maven プロファイルのアクティベーションは、前述の CM_BUILD という名前の環境変数があるかどうかを調べておこなう必要があります。逆に、Cloud Manager ビルド環境以外でのみ使用するためのプロファイルは、この変数がないかどうかを調べることでアクティブ化する必要があります。
 
 例えば、Cloud Manager 内でビルドが実行されたときにのみ簡単なメッセージを出力する場合は、次のようにします。
 
