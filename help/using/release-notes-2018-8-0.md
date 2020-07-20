@@ -8,9 +8,9 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '352'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 [!UICONTROL Cloud Manager] バージョン 2018.8.0 のリリース日は 2018 年 10 月 4 日です。
 
-## 最新情報 {#what-s-new}
+## 新機能 {#what-s-new}
 
 * **プログラム設定** - AEM プロジェクトアーキタイプを使用して Git にアプリケーションプロジェクトを作成するための新しいウィザードが導入されました。詳しくは、[AEM アプリケーションプロジェクトの作成](/help/using/create-an-application-project.md)を参照してください。
 
