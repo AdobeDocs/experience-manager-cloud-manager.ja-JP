@@ -3,9 +3,9 @@ title: リリースノート（2020.6.0）
 seo-title: AEM Cloud Manager リリースノート（2020.6.0）
 description: このページでは、Cloud Manager リリース 2020.6.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2020.6.0 について説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f673a7c6e0d8e0814101beab1ad529ea69350a2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '181'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 [!UICONTROL Cloud Manager] バージョン 2020.6.0 のリリース日は 2020 年 6 月 04 日です。
 
-## 最新情報 {#whats-new}
+## 新機能 {#whats-new}
 
 * ランディングページにコーチマークを付け、基本的なナビゲーションについてユーザーに通知し、指示します。
 
