@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 0d46abc386460ccbaf7ba10b93286bc8e4af2395
 workflow-type: tm+mt
 source-wordcount: '1537'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -100,7 +100,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 * Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo.adobe.com/)を参照してください）。
 
 >[!NOTE]
->Cloud Managerでは、の特定のバージョンは定義されませんが、少なくとも `jacoco-maven-plugin`使用するバージョンが必要で `0.7.5.201505241946`す。
+>Cloud Manager では、`jacoco-maven-plugin` の特定のバージョンは定義されませんが、`0.7.5.201505241946` 異常のバージョンを使用する必要があります。
 
 ### Java の使用 {#using-java-11}
 
