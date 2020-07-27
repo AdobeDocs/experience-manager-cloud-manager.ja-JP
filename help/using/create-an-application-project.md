@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 0d46abc386460ccbaf7ba10b93286bc8e4af2395
+source-git-commit: 0fda91c2fe319fb58b3a6dd09f75eac7a60d9038
 workflow-type: tm+mt
-source-wordcount: '1537'
-ht-degree: 89%
+source-wordcount: '1705'
+ht-degree: 79%
 
 ---
 
@@ -62,7 +62,7 @@ Cloud Manager で正常にビルドおよびデプロイされるために、既
 * プロジェクトは Apache Maven を使用してビルドする必要があります。
 * Git リポジトリのルートには *pom.xml* ファイルが必要です。この *pom.xml* ファイルでは、必要な数のサブモジュールを参照できます（それらのサブモジュールでさらに他のサブモジュールなどを参照している場合もあります）。
 
-* 追加の Maven アーティファクトリポジトリへの参照を *pom.xml* ファイルに追加できます。ただし、パスワードで保護またはネットワークで保護されたアーティファクトリポジトリへのアクセスはサポートされていません。
+* 追加の Maven アーティファクトリポジトリへの参照を *pom.xml* ファイルに追加できます。設定時には、 [パスワードで保護されたアーティファクトリポジトリへのアクセスがサポートされます](#password-protected-maven-repositories) 。 ただし、ネットワークで保護されたアーティファクトリポジトリへのアクセスはサポートされていません。
 * デプロイ可能なコンテンツパッケージは、*target* という名前のディレクトリに含まれているコンテンツパッケージ *zip* ファイルをスキャンすることで検出されます。任意の数のサブモジュールでコンテンツパッケージを作成することもできます。
 
 * デプロイ可能な Dispatcher アーティファクトは、*conf* および *conf.d* というディレクトリを持つ *zip* ファイル（これも *target* という名前のディレクトリに含まれる）をスキャンすることで検出されます
@@ -262,6 +262,75 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
                 </plugins>
             </build>
         </profile>
+```
+
+## パスワードで保護されたMavenリポジトリのサポート {#password-protected-maven-repositories}
+
+パスワードで保護されたMavenリポジトリをCloud Managerから使用するには、パスワード（およびユーザー名）を秘密の [パイプライン変数として指定し](#pipeline-variables) 、gitリポジトリにあるという名前のファイル内 `.cloudmanager/maven/settings.xml` でそのシークレットを参照します。 このファイルは、 [Maven Settings File](https://maven.apache.org/settings.html) スキーマに従います。 Cloud Managerのビルドプロセス開始時に、このファイル内の `<servers>` 要素が、Cloud Managerが提供するデフォルトの `settings.xml` ファイルに結合されます。 このファイルを配置すると、サーバーIDはファイル内の `<repository>` 要素や `<pluginRepository>` 要素から参照され `pom.xml` ます。 一般に、これらの要素 `<repository>` や `<pluginRepository>` 要素は、 [Cloud Manager固有のプロファイルに含まれますが]{#activating-maven-profiles-in-cloud-manager}、厳密に必要とは限りません。
+
+例えば、リポジトリがhttps://repository.myco.com/maven2にあり、Cloud Managerで使用するユーザー名はがで、パスワードはがであるとし `cloudmanager` ま `secretword`す。
+
+まず、パスワードをパイプライン上のシークレットとして設定します。
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+
+次に、 `.cloudmanager/maven/settings.xml` ファイルからこれを参照します。
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <id>myco-repository</id>
+            <username>cloudmanager</username>
+            <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+        </server>
+    </servers>
+</settings>
+```
+
+最後に、 `pom.xml` ファイル内のサーバーIDを参照します。
+
+```xml
+<profiles>
+    <profile>
+        <id>cmBuild</id>
+        <activation>
+                <property>
+                    <name>env.CM_BUILD</name>
+                </property>
+        </activation>
+        <build>
+            <repositories>
+                <repository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+        </build>
+    </profile>
+</profiles>
 ```
 
 ## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
