@@ -4,10 +4,10 @@ seo-title: AEM Cloud Manager リリースノート（2020.8.0）
 description: このページでは、Cloud Manager リリース 2020.8.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2020.8.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 68330a3a6d9e1f95782418dbd72cbc0e6ee7362c
+source-git-commit: c0881ccf602a14b00b7cc68c3d1fc60e7b6954ed
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 47%
+source-wordcount: '195'
+ht-degree: 30%
 
 ---
 
@@ -43,8 +43,3 @@ ht-degree: 47%
 
 * 概要ページで色が一致していません。
 
-## 既知の問題 {#known-issues}
-
-* AMS 環境にスタンバイインスタンスが含まれる場合、ログに記録されるメッセージには、そのインスタンスがスタンバイモードになっておらず、ダウンしていることが示されます。
-
-* コードカバレッジの計算方法が変更されたことで、Jacoco プラグインの _最小_&#x200B;バージョンが 0.7.5.201505241946（2015 年 5 月リリース）になりました。古いバージョンを明示的に参照するお客様は、コード品質プロセスでエラーメッセージを受け取ります。
