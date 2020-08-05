@@ -1,40 +1,47 @@
 ---
-title: リリースノート（2020.7.0）
-seo-title: AEM Cloud Manager リリースノート（2020.7.0）
-description: このページでは、Cloud Manager リリース 2020.7.0 について説明します。
-seo-description: このページでは、AEM Cloud Manager リリース 2020.7.0 について説明します。
-translation-type: ht
-source-git-commit: 0d46abc386460ccbaf7ba10b93286bc8e4af2395
-workflow-type: ht
-source-wordcount: '214'
-ht-degree: 100%
+title: リリースノート（2020.8.0）
+seo-title: AEM Cloud Manager リリースノート（2020.8.0）
+description: このページでは、Cloud Manager リリース 2020.8.0 について説明します。
+seo-description: このページでは、AEM Cloud Manager リリース 2020.8.0 について説明します。
+translation-type: tm+mt
+source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 49%
 
 ---
 
-# リリースノート（2020.7.0） {#release-notes-for}
+# リリースノート（2020.8.0） {#release-notes-for}
 
-以下の節では [!UICONTROL Cloud Manager] リリース 2020.7.0 の一般リリースノートの概要を説明します。
+以下の節では [!UICONTROL Cloud Manager] リリース 2020.8.0 の一般リリースノートの概要を説明します。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2020.7.0 のリリース日は 2020 年 7 月 09 日です。
+[!UICONTROL Cloud Manager] バージョン 2020.8.0 のリリース日は 2020 年 8 月 06 日です。
 
 ## 新機能 {#whats-new}
 
-* 実稼動環境でのデプロイメント中に、ロードバランサーからディスパッチャーインスタンスをデタッチおよびアタッチする際、より一貫した方法で動作するようになりました。
+* サイトパフォーマンステストで、認証のオプションの使用がサポートされるようになりました。
 
-* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。
+   詳細については、を参照してください。
 
-* Cloud Manager のパイプラインで、カスタマーセットの変数とシークレットがサポートされるようになりました。
-詳細は、「 [パイプライン変数](/help/using/create-an-application-project.md#pipeline-variables)」を参照してください。
+* 認証バウンドのプライベートMavenリポジトリがサポートされるようになりました。
 
 ## バグ修正 {#bug-fixes}
 
-* 非実稼動パイプライン編集ページの「**キャンセル**」および「**保存**」のオプションが常に表示されていませんでした。
+* 不要で望ましくない一部のSonarQubeプラグインが、コード品質スキャンの一部として実行されていました。
 
-* コード品質プロセスで特定のエラーが発生すると、ログファイルが正しく生成されない場合があります。
+* パイプラインの実行ページで、ブランチ名の形式が正しくありませんでした。
 
-* 一部の大規模なパイプラインステップログは、ユーザーインターフェイスから一貫性のある方法でダウンロードできませんでした。
+* 単一の発行、単一のディスパッチャーとコールドスタンバイの作成者を含むトポロジにデプロイすると、ディスパッチャーが誤ってロードバランサーから削除されていました。
+
+* 完了したパイプライン実行が正常に完了したと記録されなかったため、パイプラインの新しい実行が行われない場合がありました。
+
+* 内部通信の問題が原因で、パイプライン実行が *停止することがある* 。
+
+* プログラムカードのツールチップが、一貫して正しくなかった。
+
+* 概要ページで色が一致していません。
 
 ## 既知の問題 {#known-issues}
 
