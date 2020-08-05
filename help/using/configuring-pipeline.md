@@ -9,11 +9,11 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: afbb9a9f9f227309946f0d1891172a89d15de7a7
-workflow-type: ht
-source-wordcount: '1646'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
+workflow-type: tm+mt
+source-wordcount: '1767'
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 CI／CD 実稼働パイプラインの設定は、パイプラインを開始するトリガー、実稼働環境のデプロイメントを制御するパラメーター、およびテストパラメーターのパフォーマンスを定義します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## フローについて {#understanding-the-flow}
@@ -163,7 +163,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
    **AEM Sites：**
 
-   Cloud Manager では、30 分のテスト期間でステージ公開サーバー上のページ（未認証ユーザーとして）をリクエストし、各ページの応答時間と様々なシステムレベルの指標を測定することで、AEM Sites プログラムのパフォーマンステストを実行します。
+   Cloud Managerは、ステージ公開サーバー上のページ（デフォルトでは未認証ユーザー）に30分のテスト期間をリクエストし、各ページの応答時間と様々なシステムレベルの指標を測定することで、AEM Sitesプログラムのパフォーマンステストを実行します。
 
    30 分のテスト期間が開始される前に、Cloud Manager は、カスタマーサクセスエンジニアが設定した 1 つ以上の&#x200B;*シード* URL セットを使用してステージング環境をクロールします。これらの URL から、各ページの HTML を調べ、幅優先方式でリンクが探索されます。このクロール処理は、最大 5000 ページに制限されています。クローラーからのリクエストのタイムアウトは 10 秒に固定されています。
 
@@ -176,6 +176,9 @@ Dispatcher の無効化を設定するには、次の手順に従います。
    * 「新規ページ」セットの 3000 ページが各 1 回ヒットします - ((200 * 0.5) / 3000) * 30 = 1
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
+
+
+   AEM Sitesのパフォーマンステストを認証する方法については、 [認証済みサイトのパフォーマンステスト](configuring-pipeline.md#authenticated-sites-performance) （英語）を参照してください。
 
    **AEM Assets：**
 
@@ -197,6 +200,22 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
    ![](assets/Production-Pipeline.png)
 
+### 認証済みサイトのパフォーマンステスト {#authenticated-sites-performance}
+
+認証済みサイトを持つAdobe Managed Services(AMS)のお客様は、Cloud ManagerがWebサイトのパフォーマンステスト中にWebサイトにアクセスするために使用するユーザー名とパスワードを指定できます。
+
+ユーザー名とパスワードは、「パイプライン変数」(Pipeline Variables)に名前 `CM_PERF_TEST_BASIC_USERNAME` とパスワードを付けて指定 `CM_PERF_TEST_BASIC_PASSWORD` します。
+
+>[!NOTE]
+> 厳密に必須ではありませんが、usernameにはstring変数型を、passwordにはsecretString変数型を使用することをお勧めします。 これらの両方を指定した場合、パフォーマンステストクローラーとテスト仮想ユーザーからのすべての要求に、HTTP基本認証としての資格情報が含まれます。
+
+Cloud Manager CLIを使用してこれらの変数を設定するには、次のコマンドを実行します。
+
+`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
+
+
+
+
 ## 非実稼動パイプラインとコード品質専用パイプライン
 
 ステージングおよび実稼動環境にデプロイするメインパイプラインに加えて、顧客は、**非実稼動パイプライン**&#x200B;と呼ばれる追加のパイプラインを設定できます。このパイプラインでは、常にビルドステップとコード品質ステップを実行します。また、オプションで Adobe Managed Services 環境にデプロイすることもできます。
@@ -208,7 +227,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 CI／CD 非実稼働パイプラインは、コード品質パイプラインとデプロイパイプラインの 2 つのカテゴリに分類されます。コード品質は、Git ブランチのすべてのコードをパイプライン化し、Cloud Manager のコード品質スキャンに対して構築および評価されます。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
