@@ -10,9 +10,9 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
+source-git-commit: 68330a3a6d9e1f95782418dbd72cbc0e6ee7362c
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1771'
 ht-degree: 90%
 
 ---
@@ -204,17 +204,14 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
 認証済みサイトを持つAdobe Managed Services(AMS)のお客様は、Cloud ManagerがWebサイトのパフォーマンステスト中にWebサイトにアクセスするために使用するユーザー名とパスワードを指定できます。
 
-ユーザー名とパスワードは、「パイプライン変数」(Pipeline Variables)に名前 `CM_PERF_TEST_BASIC_USERNAME` とパスワードを付けて指定 `CM_PERF_TEST_BASIC_PASSWORD` します。
+ユーザー名とパスワードは、 [パイプライン変数](create-an-application-project.md#pipeline-variables) （と）の名前 `CM_PERF_TEST_BASIC_USERNAME``CM_PERF_TEST_BASIC_PASSWORD` で指定します。
 
 >[!NOTE]
 > 厳密に必須ではありませんが、usernameにはstring変数型を、passwordにはsecretString変数型を使用することをお勧めします。 これらの両方を指定した場合、パフォーマンステストクローラーとテスト仮想ユーザーからのすべての要求に、HTTP基本認証としての資格情報が含まれます。
 
-Cloud Manager CLIを使用してこれらの変数を設定するには、次のコマンドを実行します。
+Cloud Manager CLIを使用してこれらの変数を設定するには、次のコマンドを実行し [ます](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
 
 `$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
-
-
-
 
 ## 非実稼動パイプラインとコード品質専用パイプライン
 
