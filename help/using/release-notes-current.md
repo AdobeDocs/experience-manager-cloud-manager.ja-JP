@@ -4,10 +4,10 @@ seo-title: AEM Cloud Manager リリースノート（2020.8.0）
 description: このページでは、Cloud Manager リリース 2020.8.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2020.8.0 について説明します。
 translation-type: tm+mt
-source-git-commit: c0881ccf602a14b00b7cc68c3d1fc60e7b6954ed
+source-git-commit: cff6f23a674fda2f57ea481d89644de9be3f5722
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 30%
+source-wordcount: '170'
+ht-degree: 35%
 
 ---
 
@@ -21,11 +21,7 @@ ht-degree: 30%
 
 ## 新機能 {#whats-new}
 
-* サイトパフォーマンステストで、認証のオプションの使用がサポートされるようになりました。
-
-   AEM Sitesのパフォーマンステストを認証する方法については、 [認証済みサイトのパフォーマンステスト](configuring-pipeline.md#authenticated-sites-performance) （英語）を参照してください。
-
-* 認証バウンドのプライベートMavenリポジトリがサポートされるようになりました。
+認証バウンドのプライベートMavenリポジトリがサポートされるようになりました。
 
 ## バグ修正 {#bug-fixes}
 
