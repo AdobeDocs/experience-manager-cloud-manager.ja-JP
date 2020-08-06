@@ -10,10 +10,10 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 68330a3a6d9e1f95782418dbd72cbc0e6ee7362c
+source-git-commit: cff6f23a674fda2f57ea481d89644de9be3f5722
 workflow-type: tm+mt
-source-wordcount: '1771'
-ht-degree: 90%
+source-wordcount: '1648'
+ht-degree: 97%
 
 ---
 
@@ -177,9 +177,6 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
-
-   AEM Sitesのパフォーマンステストを認証する方法については、 [認証済みサイトのパフォーマンステスト](configuring-pipeline.md#authenticated-sites-performance) （英語）を参照してください。
-
    **AEM Assets：**
 
    Cloud Manager で AEM Assets のパフォーマンステストが実行される場合は、30 分のテスト時間中にアセットを繰り返しアップロードし、各アセットの処理時間および様々なシステムレベルの指標を測定します。この機能では、画像と PDF ドキュメントの両方をアップロードできます。1 分ごとにアップロードされる各タイプのアセット数の配分は、パイプライン設定または編集画面で設定します。
@@ -200,18 +197,6 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
    ![](assets/Production-Pipeline.png)
 
-### 認証済みサイトのパフォーマンステスト {#authenticated-sites-performance}
-
-認証済みサイトを持つAdobe Managed Services(AMS)のお客様は、Cloud ManagerがWebサイトのパフォーマンステスト中にWebサイトにアクセスするために使用するユーザー名とパスワードを指定できます。
-
-ユーザー名とパスワードは、 [パイプライン変数](create-an-application-project.md#pipeline-variables) （と）の名前 `CM_PERF_TEST_BASIC_USERNAME``CM_PERF_TEST_BASIC_PASSWORD` で指定します。
-
->[!NOTE]
-> 厳密に必須ではありませんが、usernameにはstring変数型を、passwordにはsecretString変数型を使用することをお勧めします。 これらの両方を指定した場合、パフォーマンステストクローラーとテスト仮想ユーザーからのすべての要求に、HTTP基本認証としての資格情報が含まれます。
-
-Cloud Manager CLIを使用してこれらの変数を設定するには、次のコマンドを実行し [ます](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
-
-`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
 ## 非実稼動パイプラインとコード品質専用パイプライン
 
