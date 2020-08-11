@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: e026c7232c2a848bb60ddbd7112a4a2755527921
+source-git-commit: ea9c4836caba1221cae75c600f77fd542a71d52c
 workflow-type: tm+mt
-source-wordcount: '1721'
-ht-degree: 99%
+source-wordcount: '1741'
+ht-degree: 96%
 
 ---
 
@@ -266,7 +266,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 
 ## パスワードで保護された Maven リポジトリのサポート {#password-protected-maven-repositories}
 
-パスワードで保護された Maven リポジトリを Cloud Manager から使用するには、パスワード（および任意でユーザー名）を秘密の[パイプライン変数](#pipeline-variables)として指定し、git リポジトリの `.cloudmanager/maven/settings.xml` という名前のファイル内でその秘密を参照します。このファイルは、[Maven Settings File](https://maven.apache.org/settings.html) スキーマに従います。Cloud Manager のビルドプロセス開始時に、このファイル内の `<servers>` 要素が、Cloud Manager が提供するデフォルトの `settings.xml` ファイルに結合されます。とで始まるサーバーIDは予約済み `adobe``cloud-manager` と見なされ、カスタムサーバーでは使用しないでください。 このファイルを配置すると、サーバー ID は `<repository>` 内や `pom.xml` ファイル内の `<pluginRepository>` 要素から参照されます。一般に、これらの `<repository>` や `<pluginRepository>` 要素は、[Cloud Manager 固有のプロファイル](/help/using/create-an-application-project.md#activating-maven-profiles-in-cloud-manager)に含まれますが、厳密に必要とは限りません。
+パスワードで保護された Maven リポジトリを Cloud Manager から使用するには、パスワード（および任意でユーザー名）を秘密の[パイプライン変数](#pipeline-variables)として指定し、git リポジトリの `.cloudmanager/maven/settings.xml` という名前のファイル内でその秘密を参照します。このファイルは、[Maven Settings File](https://maven.apache.org/settings.html) スキーマに従います。Cloud Manager のビルドプロセス開始時に、このファイル内の `<servers>` 要素が、Cloud Manager が提供するデフォルトの `settings.xml` ファイルに結合されます。とで始まるサーバーIDは予約済み `adobe``cloud-manager` と見なされ、カスタムサーバーでは使用しないでください。 サーバーID **がこれらのプレフィックスのいずれかに一致し** ない `central` 、またはデフォルトのIDがCloud Managerでミラーリングされない。 このファイルを配置すると、サーバー ID は `<repository>` 内や `pom.xml` ファイル内の `<pluginRepository>` 要素から参照されます。Generally, these `<repository>` and/or `<pluginRepository>` elements would be contained inside a [Cloud Manager-specific profile](/help/using/create-an-application-project.md#activating-maven-profiles-in-cloud-manager), although that is not strictly necessary.
 
 例えば、リポジトリが https://repository.myco.com/maven2 にあり、Cloud Manager が使用するユーザー名が `cloudmanager` で、パスワードが `secretword` だとします。
 
