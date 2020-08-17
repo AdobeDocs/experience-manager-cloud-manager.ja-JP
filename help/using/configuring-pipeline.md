@@ -10,10 +10,10 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: cff6f23a674fda2f57ea481d89644de9be3f5722
+source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 100%
+source-wordcount: '1763'
+ht-degree: 94%
 
 ---
 
@@ -103,7 +103,7 @@ CI／CD 実稼働パイプラインの設定は、パイプラインを開始す
 >
 >「**スケジュール設定**」オプションが選択されている場合は、パイプラインでステージングデプロイメント（および、「**GoLive の承認を使用**」が有効な場合はその承認）の&#x200B;**後**&#x200B;に実稼動デプロイメントをスケジュールして、スケジュールが設定されるのを待つことができます。ユーザーは、実稼動デプロイメントをすぐに実行することもできます。
 >
->デプロイメントのスケジュールを設定する、または実稼動デプロイメントをすぐに実行する場合は、[**コードのデプロイ&#x200B;**](deploying-code.md)を参照してください。
+>デプロイメントのスケジュールを設定する、または実稼動デプロイメントをすぐに実行する場合は、[**コードのデプロイ**](deploying-code.md)&#x200B;を参照してください。
 
 ![](assets/configure-pipeline3.png)
 
@@ -128,7 +128,7 @@ CI／CD 実稼働パイプラインの設定は、パイプラインを開始す
 
 **Dispatcher の無効化**
 
-デプロイメントマネージャーは、AEM Dispatcher キャッシュから&#x200B;**無効化**&#x200B;または&#x200B;**フラッシュ**&#x200B;する一連のコンテンツパスを、パイプラインの設定または編集中に設定できます。
+As a Deployment Manager, you have the opportunity to configure a set of content paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache for publish instances, while setting up or editing pipeline.
 
 ステージングデプロイメントと実稼動デプロイメントに別々に一連のパスを設定できます。設定した場合、これらのキャッシュアクションは、コンテンツパッケージがデプロイされた直後にデプロイメントパイプラインステップの一部として実行されます。これらの設定では、標準の AEM Dispatcher 動作を使用します。無効化は、コンテンツがオーサーからパブリッシュにアクティブ化された場合と同様に、キャッシュを無効化します。フラッシュはキャッシュを削除します。
 
@@ -177,6 +177,8 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
+   詳細は、 [認証済みパフォーマンステスト](#authenticated-performance-testing) を参照してください。
+
    **AEM Assets：**
 
    Cloud Manager で AEM Assets のパフォーマンステストが実行される場合は、30 分のテスト時間中にアセットを繰り返しアップロードし、各アセットの処理時間および様々なシステムレベルの指標を測定します。この機能では、画像と PDF ドキュメントの両方をアップロードできます。1 分ごとにアップロードされる各タイプのアセット数の配分は、パイプライン設定または編集画面で設定します。
@@ -197,6 +199,17 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
    ![](assets/Production-Pipeline.png)
 
+### Authenticated Performance Testing {#authenticated-performance-testing}
+
+認証済みサイトを持つAMSのお客様は、Cloud Managerがサイトのパフォーマンステスト中にWebサイトにアクセスする際に使用するユーザー名とパスワードを指定できます。
+
+The username and password are specified as [Pipeline Variables](/help/using/create-an-application-project.md#pipeline-variables) with the names `CM_PERF_TEST_BASIC_USERNAME` and `CM_PERF_TEST_BASIC_PASSWORD`.
+
+厳密に必須ではありませんが、ユーザー名には string 型変数を、パスワードには secretString 型変数を使用することをお勧めします。これらの両方を指定した場合、パフォーマンステストクローラーとテスト仮想ユーザーからのリクエストすべてに、HTTP 基本認証としての資格情報が含まれます。
+
+To set these variables using the [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager), run:
+
+`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
 ## 非実稼動パイプラインとコード品質専用パイプライン
 
