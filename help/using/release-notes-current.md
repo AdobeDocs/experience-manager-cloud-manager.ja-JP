@@ -4,10 +4,10 @@ seo-title: AEM Cloud Manager リリースノート（2020.8.0）
 description: このページでは、Cloud Manager リリース 2020.8.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2020.8.0 について説明します。
 translation-type: tm+mt
-source-git-commit: cff6f23a674fda2f57ea481d89644de9be3f5722
+source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 100%
+source-wordcount: '196'
+ht-degree: 87%
 
 ---
 
@@ -37,5 +37,9 @@ ht-degree: 100%
 
 * プログラムカードのツールチップの一貫性が適切に保てていませんでした。
 
-* 概要ページで色が一致していませんでした。
+* There was a color mismatch on the **Overview** page.
+
+* サイトパフォーマンステストで、認証のオプション使用がサポートされるようになりました。
+
+* 作成者インスタンスのディスパッチャーキャッシュは、Cloud Managerを使用してディスパッチャー設定がデプロイされると、自動的にフラッシュされます。
 
