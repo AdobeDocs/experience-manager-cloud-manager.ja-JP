@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-translation-type: ht
-source-git-commit: 509a74b2e85d5880bafa56cd0ab3bae9c57b0683
-workflow-type: ht
-source-wordcount: '952'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 1143e58d4c3a02d85676f94fc1a30cc1c2856222
+workflow-type: tm+mt
+source-wordcount: '953'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## Cloud Manager でのコードのデプロイ {#deploying-code-with-cloud-manager}
 
-**パイプライン**（リポジトリ、環境、テスト環境）を設定したら、コードをデプロイする準備が整います。
+Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
 
 1. Cloud Manager で「**デプロイ**」をクリックして、デプロイメントプロセスを開始します。
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
    **ステージのデプロイメント**&#x200B;には、以下の手順が含まれます。
 
-   * 検証：この手順では、現在使用できるリソース（設定済みのブランチが存在する場合など）を使用するようにパイプラインが設定され、環境が使用できることを確認します。
+   * 検証：この手順では、現在使用できるリソース（設定済みの分岐が存在する場合など）を使用するようにパイプラインが設定され、環境が使用できることを確認します。
    * ビルドおよび単体テスト：この手順では、コンテナ化されたビルドプロセスを実行します。ビルド環境について詳しくは、[AEM アプリケーションプロジェクトの作成](create-an-application-project.md)を参照してください。
    * コードスキャン：この手順では、アプリケーションコードの品質を評価します。テストプロセスについて詳しくは、[テスト結果の理解](understand-your-test-results.md)を参照してください。
    * ステージへのデプロイ
