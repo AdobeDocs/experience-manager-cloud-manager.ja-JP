@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-translation-type: ht
-source-git-commit: f062ee126ad12d164c36b2e1535ee709f43b6900
-workflow-type: ht
-source-wordcount: '1469'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 1143e58d4c3a02d85676f94fc1a30cc1c2856222
+workflow-type: tm+mt
+source-wordcount: '1552'
+ht-degree: 92%
 
 ---
 
@@ -43,7 +43,15 @@ ht-degree: 100%
 
 ## コード品質テスト {#code-quality-testing}
 
-パイプラインの一環として、ソースコードをスキャンし、デプロイメントが特定の品質条件を満たしているかどうかを確認します。現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。テスト条件の評価の概要を次の表に示します。
+この手順では、アプリケーションコードの質を評価します。 これは、コード品質のみのパイプラインの中核となる目的で、実稼働環境と実稼働環境以外のすべてのパイプラインのビルド手順の直後に実行されます。 さまざまなタイプのパイプラインの詳細については、 [『CI-CDパイプラインの](/help/using/configuring-pipeline.md) 設定』を参照してください。
+
+### Understanding Code Quality Testing {#understanding-code-quality-testing}
+
+コード品質テストでは、ソースコードがスキャンされ、デプロイメントが特定の品質基準を満たしていることが確認されます。 現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM固有のルールの一部は、AEM Engineeringのベストプラクティスに基づいて作成され、「 [カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)」と呼ばれます。
+
+You can download the list of rules [here](/help/using/assets/CodeQuality-rules-latest.xlsx).
+
+この手順の結果は、 *評価として提供されます*。 次の表に、様々なテスト条件の評価の概要を示します。
 
 | 名前 | 定義 | カテゴリ | 不合格のしきい値 |
 |--- |--- |--- |--- |
@@ -60,8 +68,6 @@ ht-degree: 100%
 >[!NOTE]
 >
 >詳しくは、[指標の定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions)を参照してください。
-
-ここでルールのリスト [code-quality-rules.xlsx](/help/using/assets/CodeQuality-rules-latest.xlsx) をダウンロードできます。
 
 >[!NOTE]
 >
