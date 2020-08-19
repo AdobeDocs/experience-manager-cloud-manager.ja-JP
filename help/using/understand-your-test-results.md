@@ -9,17 +9,17 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 1143e58d4c3a02d85676f94fc1a30cc1c2856222
+source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
 
 # テスト結果の理解 {#understand-your-test-results}
 
-**パイプライン**&#x200B;プロセス中は、多数の指標が取得され、ビジネスオーナーによって定義された主要業績評価指標（KPI）または Adobe Managed Services で設定された標準と比較されます。
+パイプラインの実行中に、多数の指標が取り込まれ、ビジネス所有者が定義した主要業績評価指標(KPI)、またはAdobe Managed Servicesが設定した標準と比較されます。
 
 これらは、この節で定義する 3 層ゲートシステムを使用して報告されます。
 
@@ -47,9 +47,10 @@ ht-degree: 92%
 
 ### Understanding Code Quality Testing {#understanding-code-quality-testing}
 
-コード品質テストでは、ソースコードがスキャンされ、デプロイメントが特定の品質基準を満たしていることが確認されます。 現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM固有のルールの一部は、AEM Engineeringのベストプラクティスに基づいて作成され、「 [カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)」と呼ばれます。
+コード品質テストでは、ソースコードが特定の品質基準を満たしていることを確認するためにスキャンされます。 現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM固有のルールの一部は、AEM Engineeringのベストプラクティスに基づいて作成され、「 [カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)」と呼ばれます。
 
-You can download the list of rules [here](/help/using/assets/CodeQuality-rules-latest.xlsx).
+>[!NOTE]
+>You can download the complete list of rules [here](/help/using/assets/CodeQuality-rules-latest.xlsx).
 
 この手順の結果は、 *評価として提供されます*。 次の表に、様々なテスト条件の評価の概要を示します。
 
