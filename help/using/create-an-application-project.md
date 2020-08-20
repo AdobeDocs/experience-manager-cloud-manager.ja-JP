@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ea9c4836caba1221cae75c600f77fd542a71d52c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1741'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 96%
 
 ユーザーが Cloud Manager にオンボーディングされると、空の Git リポジトリが提供されます。現在の Adobe Managed Services（AMS）ユーザー（または AMS に移行中のオンプレミス AEM ユーザー）は、通常、プロジェクトコードを既に Git（または別のバージョン管理システム）に格納してあり、プロジェクトを Cloud Manager の Git リポジトリにインポートすることになります。ただし、新規ユーザーは既存のプロジェクトを持っていません。
 
-新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
+新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
 
 
 Cloud Manager で AEM アプリケーションプロジェクトを作成するには、次の手順に従います。
@@ -266,7 +266,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 
 ## パスワードで保護された Maven リポジトリのサポート {#password-protected-maven-repositories}
 
-パスワードで保護された Maven リポジトリを Cloud Manager から使用するには、パスワード（および任意でユーザー名）を秘密の[パイプライン変数](#pipeline-variables)として指定し、git リポジトリの `.cloudmanager/maven/settings.xml` という名前のファイル内でその秘密を参照します。このファイルは、[Maven Settings File](https://maven.apache.org/settings.html) スキーマに従います。Cloud Manager のビルドプロセス開始時に、このファイル内の `<servers>` 要素が、Cloud Manager が提供するデフォルトの `settings.xml` ファイルに結合されます。とで始まるサーバーIDは予約済み `adobe``cloud-manager` と見なされ、カスタムサーバーでは使用しないでください。 サーバーID **がこれらのプレフィックスのいずれかに一致し** ない `central` 、またはデフォルトのIDがCloud Managerでミラーリングされない。 このファイルを配置すると、サーバー ID は `<repository>` 内や `pom.xml` ファイル内の `<pluginRepository>` 要素から参照されます。Generally, these `<repository>` and/or `<pluginRepository>` elements would be contained inside a [Cloud Manager-specific profile](/help/using/create-an-application-project.md#activating-maven-profiles-in-cloud-manager), although that is not strictly necessary.
+パスワードで保護された Maven リポジトリを Cloud Manager から使用するには、パスワード（および任意でユーザー名）を秘密の[パイプライン変数](#pipeline-variables)として指定し、git リポジトリの `.cloudmanager/maven/settings.xml` という名前のファイル内でその秘密を参照します。このファイルは、[Maven Settings File](https://maven.apache.org/settings.html) スキーマに従います。Cloud Manager のビルドプロセス開始時に、このファイル内の `<servers>` 要素が、Cloud Manager が提供するデフォルトの `settings.xml` ファイルに結合されます。`adobe` と `cloud-manager` で始まるサーバー ID は予約済みと見なされるため、カスタムサーバーでは使用しないでください。サーバー ID がこれらのプレフィックスのいずれかに&#x200B;**一致しない**&#x200B;場合、デフォルトの ID `central` は Cloud Manager でミラーリングされません。このファイルを配置すると、サーバー ID は `<repository>` 内や `pom.xml` ファイル内の `<pluginRepository>` 要素から参照されます。一般に、これらの `<repository>` や `<pluginRepository>` 要素は、[Cloud Manager 固有のプロファイル](/help/using/create-an-application-project.md#activating-maven-profiles-in-cloud-manager)に含まれますが、厳密に必要とは限りません。
 
 例えば、リポジトリが https://repository.myco.com/maven2 にあり、Cloud Manager が使用するユーザー名が `cloudmanager` で、パスワードが `secretword` だとします。
 
