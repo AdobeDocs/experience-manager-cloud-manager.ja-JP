@@ -9,11 +9,11 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1763'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 
 CI／CD 実稼働パイプラインの設定は、パイプラインを開始するトリガー、実稼働環境のデプロイメントを制御するパラメーター、およびテストパラメーターのパフォーマンスを定義します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=jpn)
 
 
 ## フローについて {#understanding-the-flow}
@@ -128,7 +128,7 @@ CI／CD 実稼働パイプラインの設定は、パイプラインを開始す
 
 **Dispatcher の無効化**
 
-As a Deployment Manager, you have the opportunity to configure a set of content paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache for publish instances, while setting up or editing pipeline.
+デプロイメントマネージャーは、パイプラインの設定または編集中に、AEM Dispatcher キャッシュからパブリッシュインスタンス向けに&#x200B;**無効化**&#x200B;または&#x200B;**フラッシュ**&#x200B;する一連のコンテンツパスを設定できます。
 
 ステージングデプロイメントと実稼動デプロイメントに別々に一連のパスを設定できます。設定した場合、これらのキャッシュアクションは、コンテンツパッケージがデプロイされた直後にデプロイメントパイプラインステップの一部として実行されます。これらの設定では、標準の AEM Dispatcher 動作を使用します。無効化は、コンテンツがオーサーからパブリッシュにアクティブ化された場合と同様に、キャッシュを無効化します。フラッシュはキャッシュを削除します。
 
@@ -177,7 +177,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
-   詳細は、 [認証済みパフォーマンステスト](#authenticated-performance-testing) を参照してください。
+   詳しくは、[認証済みパフォーマンステスト](#authenticated-performance-testing)を参照してください。
 
    **AEM Assets：**
 
@@ -199,15 +199,15 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
    ![](assets/Production-Pipeline.png)
 
-### Authenticated Performance Testing {#authenticated-performance-testing}
+### 認証済みパフォーマンステスト {#authenticated-performance-testing}
 
-認証済みサイトを持つAMSのお客様は、Cloud Managerがサイトのパフォーマンステスト中にWebサイトにアクセスする際に使用するユーザー名とパスワードを指定できます。
+認証済みサイトを持つ AMS の顧客は、Cloud Manager が Web サイトのパフォーマンステスト中に Web サイトにアクセスするために使用するユーザー名とパスワードを指定できます。
 
-The username and password are specified as [Pipeline Variables](/help/using/create-an-application-project.md#pipeline-variables) with the names `CM_PERF_TEST_BASIC_USERNAME` and `CM_PERF_TEST_BASIC_PASSWORD`.
+ユーザー名とパスワードは、`CM_PERF_TEST_BASIC_USERNAME` と `CM_PERF_TEST_BASIC_PASSWORD` という名前で、[パイプライン変数](/help/using/create-an-application-project.md#pipeline-variables)に指定します。
 
 厳密に必須ではありませんが、ユーザー名には string 型変数を、パスワードには secretString 型変数を使用することをお勧めします。これらの両方を指定した場合、パフォーマンステストクローラーとテスト仮想ユーザーからのリクエストすべてに、HTTP 基本認証としての資格情報が含まれます。
 
-To set these variables using the [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager), run:
+[Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager) を使用してこれらの変数を設定するには次のコマンドを実行します。
 
 `$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
@@ -222,7 +222,7 @@ To set these variables using the [Cloud Manager CLI](https://github.com/adobe/ai
 CI／CD 非実稼働パイプラインは、コード品質パイプラインとデプロイパイプラインの 2 つのカテゴリに分類されます。コード品質は、Git ブランチのすべてのコードをパイプライン化し、Cloud Manager のコード品質スキャンに対して構築および評価されます。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=jpn)
 
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
