@@ -8,18 +8,18 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1552'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # テスト結果の理解 {#understand-your-test-results}
 
-パイプラインの実行中に、多数の指標が取り込まれ、ビジネス所有者が定義した主要業績評価指標(KPI)、またはAdobe Managed Servicesが設定した標準と比較されます。
+パイプライン実行中は、多数の指標が取得され、ビジネスオーナーによって定義された主要業績評価指標（KPI）または Adobe Managed Services で設定された標準と比較されます。
 
 これらは、この節で定義する 3 層ゲートシステムを使用して報告されます。
 
@@ -43,16 +43,16 @@ ht-degree: 90%
 
 ## コード品質テスト {#code-quality-testing}
 
-この手順では、アプリケーションコードの質を評価します。 これは、コード品質のみのパイプラインの中核となる目的で、実稼働環境と実稼働環境以外のすべてのパイプラインのビルド手順の直後に実行されます。 さまざまなタイプのパイプラインの詳細については、 [『CI-CDパイプラインの](/help/using/configuring-pipeline.md) 設定』を参照してください。
+この手順では、アプリケーションコードの品質を評価します。これは、コード品質のみのパイプラインの中核となる目的で、非実稼働および実稼働のすべてのパイプラインのビルド手順の直後に実行されます。様々なタイプのパイプラインの詳細については、[CI/CD パイプラインの設定](/help/using/configuring-pipeline.md)を参照してください。
 
-### Understanding Code Quality Testing {#understanding-code-quality-testing}
+### コード品質テストの理解 {#understanding-code-quality-testing}
 
-コード品質テストでは、ソースコードが特定の品質基準を満たしていることを確認するためにスキャンされます。 現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM固有のルールの一部は、AEM Engineeringのベストプラクティスに基づいて作成され、「 [カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)」と呼ばれます。
+コード品質テストでは、ソースコードが一定の品質基準を満たしていることを確認するためにスキャンされます。現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)と呼ばれます。
 
 >[!NOTE]
->You can download the complete list of rules [here](/help/using/assets/CodeQuality-rules-latest.xlsx).
+>[ここ](/help/using/assets/CodeQuality-rules-latest.xlsx)からルールの完全なリストをダウンロードできます。
 
-この手順の結果は、 *評価として提供されます*。 次の表に、様々なテスト条件の評価の概要を示します。
+この手順の結果は、*評価*&#x200B;として提供されます。次の表に、様々なテスト条件の評価の概要を示します。
 
 | 名前 | 定義 | カテゴリ | 不合格のしきい値 |
 |--- |--- |--- |--- |
