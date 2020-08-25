@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '953'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 ## Cloud Manager でのコードのデプロイ {#deploying-code-with-cloud-manager}
 
-実稼働パイプライン(リポジトリ、環境、テスト環境)を設定したら、コードを導入する準備が整います。
+実稼働パイプライン（リポジトリ、環境、テスト環境）を設定したら、コードをデプロイする準備が整います。
 
 1. Cloud Manager で「**デプロイ**」をクリックして、デプロイメントプロセスを開始します。
 
