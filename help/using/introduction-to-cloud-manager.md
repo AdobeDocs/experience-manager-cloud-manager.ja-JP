@@ -14,7 +14,7 @@ source-git-commit: d7c9ab3795fb3df02ab7dffd1328760ccd914a18
 ---
 
 
-# [!UICONTROL Cloud Manager]{#introduction-to-cloud-manager} の概要
+# [!UICONTROL Cloud Manager] の概要{#introduction-to-cloud-manager}
 
 ## 概要 {#introduction}
 
