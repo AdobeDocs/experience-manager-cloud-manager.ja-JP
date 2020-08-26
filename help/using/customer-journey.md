@@ -41,7 +41,7 @@ ht-degree: 100%
 
    AEM 6.4 へのアップグレードの利点について詳しくは、[AEM 6.4 へのアップグレード](https://helpx.adobe.com/jp/experience-manager/6-4/sites/deploying/using/upgrade.html)を参照してください。
 
-## [!UICONTROL Cloud Manager] {#accessing-cloud-manager} へのアクセス
+## [!UICONTROL Cloud Manager] へのアクセス{#accessing-cloud-manager}
 
 Adobe Identity Management 資格情報を使用して [!UICONTROL Experience Cloud] ランディングページにログインし、ソリューション切り替えインターフェイスから AEM を選択するだけで、[!UICONTROL Cloud Manager] および AEM 環境にアクセスできます。
 
