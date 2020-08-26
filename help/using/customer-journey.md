@@ -25,7 +25,7 @@ ht-degree: 100%
 >
 >[!UICONTROL Cloud Manager] は、AEM 6.4 以上を使用している Adobe Managed Services ユーザーのみが利用できます。
 
-## [!UICONTROL Cloud Manager]{#on-boarding-to-cloud-manager} のオンボーディング
+## [!UICONTROL Cloud Manager] のオンボーディング{#on-boarding-to-cloud-manager}
 
 1. **Adobe Managed Services の新しい AEM ユーザー**
 
