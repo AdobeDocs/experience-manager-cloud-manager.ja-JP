@@ -5,11 +5,14 @@ description: このページでは、Cloud Manager リリース 2018.9.0 につ�
 seo-description: このページでは、AEM Cloud Manager リリース 2018.9.0 について説明します。
 uuid: 3af5808f-828f-4846-bee4-1e62194b48ad
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
 translation-type: tm+mt
-source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
 
 * **CI／CD パイプライン** - Cloud [!UICONTROL Manager] の CI／CD パイプラインを他のシステムと統合するための新しい API およびイベントシステムが導入されました。詳しくは、[!UICONTROL Cloud Manager] API ドキュメント（https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html）を参照してください。
 
-* **UI** - 応答性とパフォーマンスが向上した新しい UI レイヤーが導入されました。
+* **UI** — レスポンシブな新しいUIレイヤーの紹介。
 
 ## バグ修正 {#bug-fixes}
 
