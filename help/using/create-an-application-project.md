@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: ht
-source-git-commit: ea9c4836caba1221cae75c600f77fd542a71d52c
-workflow-type: ht
-source-wordcount: '1741'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: f281b919b0ffaf4ca20a241d056c132e08e95206
+workflow-type: tm+mt
+source-wordcount: '1867'
+ht-degree: 93%
 
 ---
 
@@ -266,6 +266,9 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 
 ## パスワードで保護された Maven リポジトリのサポート {#password-protected-maven-repositories}
 
+>[!NOTE]
+>パスワードで保護されたMavenリポジトリのアーティファクトは、現在、このメカニズムを通じてデプロイされるコードがCloud Managerのクォリティゲートを通じて実行されないので、非常に注意深く使用する必要があります。 したがって、AEMに結び付けられていないコードに対しては、まれなケースでのみ使用する必要があります。 バイナリと共にプロジェクトのソースコード全体に加え、Javaソースもデプロイすることをお勧めします。
+
 パスワードで保護された Maven リポジトリを Cloud Manager から使用するには、パスワード（および任意でユーザー名）を秘密の[パイプライン変数](#pipeline-variables)として指定し、git リポジトリの `.cloudmanager/maven/settings.xml` という名前のファイル内でその秘密を参照します。このファイルは、[Maven Settings File](https://maven.apache.org/settings.html) スキーマに従います。Cloud Manager のビルドプロセス開始時に、このファイル内の `<servers>` 要素が、Cloud Manager が提供するデフォルトの `settings.xml` ファイルに結合されます。`adobe` と `cloud-manager` で始まるサーバー ID は予約済みと見なされるため、カスタムサーバーでは使用しないでください。サーバー ID がこれらのプレフィックスのいずれかに&#x200B;**一致しない**&#x200B;場合、デフォルトの ID `central` は Cloud Manager でミラーリングされません。このファイルを配置すると、サーバー ID は `<repository>` 内や `pom.xml` ファイル内の `<pluginRepository>` 要素から参照されます。一般に、これらの `<repository>` や `<pluginRepository>` 要素は、[Cloud Manager 固有のプロファイル](/help/using/create-an-application-project.md#activating-maven-profiles-in-cloud-manager)に含まれますが、厳密に必要とは限りません。
 
 例えば、リポジトリが https://repository.myco.com/maven2 にあり、Cloud Manager が使用するユーザー名が `cloudmanager` で、パスワードが `secretword` だとします。
@@ -331,6 +334,54 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
         </build>
     </profile>
 </profiles>
+```
+
+### ソースのデプロイ {#deploying-sources}
+
+バイナリと共にJavaソースをMavenリポジトリにデプロイすることをお勧めします。
+
+プロジェクトでmaven-source-pluginを設定します。
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>attach-sources</id>
+                    <goals>
+                        <goal>jar-no-fork</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+```
+
+### プロジェクトソースの配置 {#deploying-project-sources}
+
+バイナリと一緒にプロジェクトソース全体をMavenリポジトリにデプロイすることをお勧めします。これにより、正確なアーティファクトを再構築できます。
+
+プロジェクトにmaven-assembly-pluginを設定します。
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>project-assembly</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                    <configuration>
+                        <descriptorRefs>
+                            <descriptorRef>project</descriptorRef>
+                        </descriptorRefs>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
 ```
 
 ## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
