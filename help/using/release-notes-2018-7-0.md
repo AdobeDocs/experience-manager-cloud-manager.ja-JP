@@ -6,10 +6,13 @@ seo-description: このページでは、Cloud Manager リリース 2018.7.0 に
 uuid: d7b49e32-01dc-48ce-b744-e6a806fbdd8a
 contentOwner: jsyal
 topic-tags: release-notes
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
 translation-type: tm+mt
-source-git-commit: b78c29520414726ad2bbf86e5b7f8e65710c7f75
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 93%
 
 ---
 
@@ -32,9 +35,9 @@ source-git-commit: b78c29520414726ad2bbf86e5b7f8e65710c7f75
 
 * **コード品質分析** - API の誤った使用を識別するための新しいルールが導入されました。詳しくは、[カスタムコード品質ルール](custom-code-quality-rules.md)を参照してください。
 
-* **パフォーマンステスト** - パフォーマンステスト結果の表示中は、CPU 使用率、ディスク I/O 待機時間、ページエラー率、ディスク帯域幅使用量、ネットワーク帯域幅使用量、ピーク時のページ応答時間、第 95 百分位ページ応答時間のグラフを使用できます。詳しくは、[テスト結果の理解](understand-your-test-results.md)ページの「パフォーマンステスト」の節を参照してください。
+* **パフォーマンステスト** - パフォーマンステスト結果の表示中は、CPU 使用率、ディスク I/O 待機時間、ページエラー率、ディスク帯域幅使用量、ネットワーク帯域幅使用量、ピーク時のページ応答時間、第 95 百分位ページ応答時間のグラフを使用できます。Please refer to *Performance Testing* section on [Understand your Test Results](understand-your-test-results.md) page.
 
-* **パフォーマンステスト** - パフォーマンステスト結果の表示中に、ページエラーと処理の遅いリクエストの一覧をダウンロードできます。詳しくは、[テスト結果の理解](understand-your-test-results.md)ページの「パフォーマンステスト」の節を参照してください。
+* **パフォーマンステスト** - パフォーマンステスト結果の表示中に、ページエラーと処理の遅いリクエストの一覧をダウンロードできます。Please refer to *Performance Testing* section on [Understand your Test Results](understand-your-test-results.md) page.
 
 ## バグ修正 {#bug-fixes}
 
