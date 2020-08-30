@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-translation-type: ht
-source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
 source-wordcount: '953'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 100%
    >「**実稼動のデプロイメントをスケジュール**」は、パイプラインの設定時に有効になります。
    >
    >
-   >このオプションを使用すると、実稼動のデプロイメントをスケジュールしたり、「**今すぐ**」をクリックして即座に実稼動のデプロイメントを実行したりできます。
+   >Using this option, you can either schedule your production deployment or click **Now** to execute the production deployment immediately.
    >
    >
    >スケジュールされた日時は、ユーザーのタイムゾーンで指定されます。
@@ -127,13 +127,11 @@ Cloud Manager が実稼動以外のトポロジにデプロイされる場合、
    1. パイプライン設定で指定された各パスは、無効化または Dispatcher キャッシュからフラッシュされます。
 
    >[!NOTE]
-   >
    >Cloud Manager では、Dispatcher アーティファクトに完全なファイルセットが含まれていることが想定されています。すべての Dispatcher 設定ファイルが、Git リポジトリに存在する必要があります。ファイルやフォルダーが見つからない場合、デプロイメントに失敗します。
 
 1. すべての AEM および Dispatcher パッケージのすべてのノードへのデプロイメントが正常に完了すると、Dispatcher がロードバランサーに再追加され、デプロイメントが完了します。
 
    >[!NOTE]
-   >
    >開発およびステージデプロイメントでのロードバランサーの変更、つまり、非実稼動パイプライン（開発環境用）と実稼動パイプライン（ステージ環境用）の両方のデタッチとアタッチの手順をスキップできます。
 
 ### 実稼動フェーズへのデプロイメント {#deployment-production-phase}
