@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
-translation-type: ht
-source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
-workflow-type: ht
-source-wordcount: '603'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '597'
+ht-degree: 90%
 
 ---
 
@@ -25,7 +25,7 @@ Cloud Manager では、Web サーバーと Dispatcher 設定ファイルが、�
 
 この機能を活用するために、Maven ビルドでは、少なくとも 2 つのディレクトリ（***conf*** および ***conf.d***）を含む zip ファイルを作成する必要があります。この zip ファイルは、maven-assembly-plugin を使用して作成できます。組み込みの[ウィザード](/help/using/create-an-application-project.md)を使用して Cloud Manager で生成されたプロジェクトでは、プロジェクト作成の一環として正しい Maven プロジェクト構造が作成されています。これは、新しい Managed Services のお客様に対して推奨されるパスです。
 
-Dispatcher **インスタンス**&#x200B;にデプロイすると、Dispatcher インスタンス上の既存のディレクトリの内容は、これらのディレクトリの内容で上書きされます。Web サーバーおよび Dispatcher 設定ファイルは頻繁に環境特有の情報を必要とするので、この機能を正しく使用するには、最初にカスタマーサクセスエンジニア（CSE）に依頼して、これらの環境変数を ***/etc/sysconfig/httpd*** に設定する必要があります。
+Dispatcher **インスタンス**&#x200B;にデプロイすると、Dispatcher インスタンス上の既存のディレクトリの内容は、これらのディレクトリの内容で上書きされます。Since web server and Dispatcher configuration files frequently require environment-specific information, in order for this capability to be used correctly, you will first need to work with your Customer Success Engineers (CSE) to set these environment variables in `/etc/sysconfig/httpd`.
 
 ### 既存の Managed Services のお客様向けの Dispatcher の設定手順 {#steps-for-configuring-dispatcher}
 
@@ -33,7 +33,7 @@ Dispatcher **インスタンス**&#x200B;にデプロイすると、Dispatcher �
 
 1. 現在の実稼動設定ファイルを CSE から入手します。
 1. ハードコーディングされた環境特有のデータ（例えば、公開レンダラー IP）を削除し、変数に置き換えます。
-1. 各ターゲット Dispatcher に対して必要な変数をキーと値のペアで定義し、CSE に依頼して各インスタンスの ***/etc/sysconfig/httpd*** に追加します。
+1. Define required variables in key-value pairs for each target Dispatcher and request your CSE to add to `/etc/sysconfig/httpd` on each instance.
 1. ステージ環境で更新された設定をテストし、CSE に依頼して実稼動にデプロイします。
 1. ファイルを **Git リポジトリ**&#x200B;にコミットします。
 
