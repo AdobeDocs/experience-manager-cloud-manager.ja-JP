@@ -5,11 +5,14 @@ description: このページには、Cloud Manager に関連付けられてい�
 seo-description: このページでは、Cloud Manager に関連する重要な用語について説明しています。
 uuid: 2a37810b-98f8-4f01-90de-1e52c754ad16
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: b702dfc0-3534-4d90-af19-8559d8baf6a6
 translation-type: tm+mt
-source-git-commit: aa4ff4eb2f3292fe4cb0baf8087b4d0213443cf4
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: aa4ff4eb2f3292fe4cb0baf8087b4d0213443cf4
 
 このページでは、Cloud Manager で使用される基本的な用語について説明します。Cloud Manager の他のドキュメントを確認する前に、このページをお読みください。
 
-**アプリケーション** 基本的なソリューションを特定の用途やニーズに適応させるために顧客（または顧客のカスタマイズ担当者）が作成したカスタマイズと設定のセット。アプリケーションは、複数のアーティファクトで構成される論理単位です。
+**アプリケーション** ：お客様が基盤となるソリューションを特定の使用事例やニーズに合わせるために作成したカスタマイズと設定のセット。 アプリケーションは、複数のアーティファクトで構成される論理単位です。
 
 例えば、*We.Retail* などがあります。
 
@@ -36,7 +39,7 @@ source-git-commit: aa4ff4eb2f3292fe4cb0baf8087b4d0213443cf4
 
 **パイプライン** 順に実行される一連のデプロイメントステップ。
 
-**製品** 組織でライセンスされたソリューションに含まれる機能の特定のセット。1 つの組織内の異なるプログラムが、異なる製品セットに含まれる場合があります。例えば、サイト、フォームのアセットなどです。
+**製品** 組織でライセンスされたソリューションに含まれる機能の特定のセット。組織内の異なるプログラムには、異なる製品のセットへの権利が付与される場合があります。 例えば、サイト、フォームのアセットなどです。
 
 **プログラム** 通常、購入したサービス契約（SLA）に対応する顧客の構想の論理的なグループをサポートする環境のセット。各プログラムには 1 つの実稼動環境があり、場合によっては、実稼動環境以外の環境も多数あります。
 
