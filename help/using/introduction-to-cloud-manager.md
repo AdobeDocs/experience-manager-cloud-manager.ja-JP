@@ -5,20 +5,23 @@ description: 'このページは、Cloud Manager の学習の基礎となりま�
 seo-description: 'このページは、Adobe AEM Cloud Manager の学習の基礎となります。メリットと主な機能を説明します。 '
 uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: ht
-source-git-commit: d7c9ab3795fb3df02ab7dffd1328760ccd914a18
+translation-type: tm+mt
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 100%
 
 ---
 
 
-# [!UICONTROL Cloud Manager] の概要{#introduction-to-cloud-manager}
+# [!UICONTROL Cloud Manager の概要]{#introduction-to-cloud-manager}
 
 ## 概要 {#introduction}
 
-Adobe Managed Cloud サービスの 1 つである [!UICONTROL Cloud Manager] を使用すると、組織は自らクラウド上で Experience Manager を管理できるようになります。このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
+Adobe Managed サービスの 1 つである [!UICONTROL Cloud Manager] を使用すると、組織は自らクラウド上で Experience Manager を管理できるようになります。このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
 
 [!UICONTROL Cloud Manager] のセルフサービスのカスタマーポータルを使用すると、**組織**&#x200B;は以下のことを実行および活用できます。
 
