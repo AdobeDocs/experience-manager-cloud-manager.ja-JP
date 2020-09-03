@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: f281b919b0ffaf4ca20a241d056c132e08e95206
+source-git-commit: c1d07c95088a279376ef495001a5165c7e459642
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 93%
+source-wordcount: '1861'
+ht-degree: 92%
 
 ---
 
@@ -96,7 +96,12 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 * [後述されている通り](#installing-additional-system-packages)、これ以外にも、ビルド時にパッケージがインストールされる場合があります。
 * すべてのビルドは、Pristine 環境で実行されます。ビルドコンテナは実行から次回の実行までの間、状態を保持しません。
-* Maven は常に *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package* というコマンドで実行されます。
+* Mavenは常に次の3つのコマンドで実行します。
+
+   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+
 * Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo.adobe.com/)を参照してください）。
 
 >[!NOTE]
