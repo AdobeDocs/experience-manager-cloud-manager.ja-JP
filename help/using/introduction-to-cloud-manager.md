@@ -17,7 +17,7 @@ ht-degree: 100%
 ---
 
 
-# [!UICONTROL Cloud Manager]{#introduction-to-cloud-manager} の概要
+# [!UICONTROL Cloud Manager] の概要 {#introduction-to-cloud-manager}
 
 ## 概要 {#introduction}
 
