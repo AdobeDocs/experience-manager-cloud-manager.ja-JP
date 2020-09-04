@@ -25,7 +25,7 @@ ht-degree: 100%
 >
 >[!UICONTROL Cloud Manager] は、AEM 6.4 以上を使用している Adobe Managed Services ユーザーのみが利用できます。
 
-## [!UICONTROL Cloud Manager]{#on-boarding-to-cloud-manager} のオンボーディング
+## [!UICONTROL Cloud Manager] のオンボーディング {#on-boarding-to-cloud-manager}
 
 1. **Adobe Managed Services の新しい AEM ユーザー**
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
    AEM 6.4 へのアップグレードの利点について詳しくは、[AEM 6.4 へのアップグレード](https://helpx.adobe.com/jp/experience-manager/6-4/sites/deploying/using/upgrade.html)を参照してください。
 
-## [!UICONTROL Cloud Manager] {#accessing-cloud-manager} へのアクセス
+## [!UICONTROL Cloud Manager] へのアクセス {#accessing-cloud-manager}
 
 Adobe Identity Management 資格情報を使用して [!UICONTROL Experience Cloud] ランディングページにログインし、ソリューション切り替えインターフェイスから AEM を選択するだけで、[!UICONTROL Cloud Manager] および AEM 環境にアクセスできます。
 
