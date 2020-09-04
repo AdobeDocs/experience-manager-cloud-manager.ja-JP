@@ -19,7 +19,7 @@ ht-degree: 96%
 + 概要 {#overview}
    + [主要な概念](key-concepts.md)
    + [カスタマージャーニー](customer-journey.md)
-   + [CI/CD パイプライン](ci-cd-pipeline.md)
+   + [CI／CD パイプライン](ci-cd-pipeline.md)
    + [セキュリティとプライバシー](security-and-privacy.md)
    + [ヘルプリソース](help-resources.md)
 + 要件 {#requirements}
