@@ -3,11 +3,11 @@ title: リリースノート（2019.8.0）
 seo-title: AEM Cloud Manager リリースノート（2019.8.0）
 description: このページでは、Cloud Manager リリース 2019.8.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2019.8.0 について説明します。
-translation-type: ht
-source-git-commit: c07e88564dc1419bd0305c9d25173a8e0e1f47cf
-workflow-type: ht
-source-wordcount: '234'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
+workflow-type: tm+mt
+source-wordcount: '227'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 ## 新機能 {#whats-new}
 
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager) による、Cloud Manager API に対する新しいコマンドラインインターフェイス。
-* ビルドによって作成された特定のコンテンツパッケージがスキップ可能として宣言され、デプロイされなくなることがあります。詳しくは、***AEM アプリケーションプロジェクトの作成***&#x200B;の[コンテンツパッケージのスキップ](/help/using/create-an-application-project.md)の節を参照してください。
+* ビルドによって生成された特定のコンテンツパッケージは、スキップとして宣言され、展開されません。 詳細は、「コンテンツパッケージの [スキップ](/help/using/setting-up-project.md#skipping-content-packages) 」を参照してください。
 * ビルドコンテナのプリロードされた依存関係のセットは、一部の不要なネットワーク要求を避けるように修正されています。
 * 間違って設定された特定のプログラムの概要ページのメッセージが改善されました。
 
