@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 96%
 
 * **CI／CD パイプライン** - Cloud [!UICONTROL Manager] の CI／CD パイプラインを他のシステムと統合するための新しい API およびイベントシステムが導入されました。詳しくは、[!UICONTROL Cloud Manager] API ドキュメント（https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html）を参照してください。
 
-* **UI** — レスポンシブな新しいUIレイヤーの紹介。
+* **UI** - 応答性が向上した新しい UI レイヤーが導入されました。
 
 ## バグ修正 {#bug-fixes}
 
@@ -45,5 +45,5 @@ ht-degree: 96%
 ## 既知の問題 {#known-issues}
 
 * アプリケーションプロジェクトウィザードを使用して作成したブランチにダッシュを含めることができません。
-* [!UICONTROL Experience Cloud] の通知サイドバーでは、通知の読み込みに一貫性がない場合があります。ただし、通知は Adobe [!UICONTROL Experience Cloud] には表示され、設定に応じて電子メールでも送信されます。
+* Adobe [!UICONTROL Experience Cloud] の通知サイドバーでは、通知の読み込みに一貫性がない場合があります。ただし、通知は Adobe [!UICONTROL Experience Cloud] には表示され、設定に応じて電子メールでも送信されます。
 
