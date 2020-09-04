@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 7d32ba78-4ded-4656-aac2-c3e7cc0518de
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '322'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,6 +29,6 @@ ht-degree: 93%
 
 ## 次の手順 {#next-steps}
 
-お知らせメールが届くと、Adobe IMS 資格情報を使用して管理者として [!UICONTROL Cloud Manager] にログインする準備が整います。ログインすると、AEMクラウドの実稼働環境と実稼働以外の環境が使用可能で、正常に実行されていることを確認できます。
+お知らせメールが届くと、Adobe IMS 資格情報を使用して管理者として [!UICONTROL Cloud Manager] にログインする準備が整います。ログインすれば、AEM クラウドの実稼動環境および非実稼動環境が使用可能で正常に動作していることを確認できます。
 
 これらの AEM クラウド環境は、[!UICONTROL Cloud Manager] の Git リポジトリからステージング&#x200B;**環境**&#x200B;を通じて AEM 実稼動環境までコードをデプロイする際に、[!UICONTROL Cloud Manager] で CI／CD パイプラインを実行するために使用されます。また、Web プロパティのデジタルエクスペリエンスの作成を開始する準備ができたら、[!UICONTROL Cloud Manager] から直接 AEM クラウド環境にアクセスできます。
