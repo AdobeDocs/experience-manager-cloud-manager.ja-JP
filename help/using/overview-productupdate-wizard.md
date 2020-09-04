@@ -7,11 +7,11 @@ uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->Cloud Managerに登録済みで、AEM 6.5にアップグレードする資格のあるお客様は、製品アップデートウィザードを利用できます。 詳しくは、カスタマーサクセスエンジニア（CSE）にお問い合わせください。
+>Cloud Manager にオンボードされおり AEM 6.5 にアップグレードする資格がある場合は、製品アップデートウィザードを利用できます。詳しくは、カスタマーサクセスエンジニア（CSE）にお問い合わせください。
 
 1. AEM 6.5 がプログラムで使用可能なことを知らせるパルス通知が、Cloud Manager を通じて送られます。
 
