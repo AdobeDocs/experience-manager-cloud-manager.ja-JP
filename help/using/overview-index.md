@@ -6,11 +6,11 @@ seo-description: Adobe AEM Cloud Manager ヘルプの概要
 uuid: d4a23a6e-347e-41c3-9e3b-b7b7469c4754
 contentOwner: jsyal
 discoiquuid: 5ca5a413-639e-43fb-93dd-16ce8935a3fd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '126'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 73%
 
 ここでは、[!UICONTROL Cloud Manager] の使用を開始する際に参考になるリソースの一覧を大まかに説明します。
 
-Follow the resources below to begin your journey for using [!UICONTROL Cloud Manager], from understanding the key concepts and terminologies to setting up configurations (pre-requisites), that finally lets you get started with [!UICONTROL Cloud Manager].
+以下のリソースは、[!UICONTROL Cloud Manager] の主要な概念や用語の理解から設定（前提条件）に至るまで、[!UICONTROL Cloud Manager] の使用を開始するうえで参照になります。
 
 以下の図は、[!UICONTROL Cloud Manager] の習得の道筋を示しています。
 
