@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '952'
 ht-degree: 98%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 98%
    **ステージのデプロイメント**&#x200B;には、以下の手順が含まれます。
 
    * 検証：この手順では、現在使用できるリソース（設定済みの分岐が存在する場合など）を使用するようにパイプラインが設定され、環境が使用できることを確認します。
-   * ビルドおよび単体テスト：この手順では、コンテナ化されたビルドプロセスを実行します。ビルド環境について詳しくは、[AEM アプリケーションプロジェクトの作成](create-an-application-project.md)を参照してください。
+   * ビルドおよび単体テスト：この手順では、コンテナ化されたビルドプロセスを実行します。ビルド環境の詳細については、 [「ビルド環境について](/help/using/build-environment-details.md) 」を参照してください。
    * コードスキャン：この手順では、アプリケーションコードの品質を評価します。テストプロセスについて詳しくは、[テスト結果の理解](understand-your-test-results.md)を参照してください。
    * ステージへのデプロイ
 
@@ -75,7 +75,7 @@ ht-degree: 98%
    >「**実稼動のデプロイメントをスケジュール**」は、パイプラインの設定時に有効になります。
    >
    >
-   >Using this option, you can either schedule your production deployment or click **Now** to execute the production deployment immediately.
+   >このオプションを使用すると、実稼動のデプロイメントをスケジュールしたり、「**今すぐ**」をクリックして即座に実稼動のデプロイメントを実行したりできます。
    >
    >
    >スケジュールされた日時は、ユーザーのタイムゾーンで指定されます。
