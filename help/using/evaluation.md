@@ -7,11 +7,11 @@ uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 製品アップデートウィザードの第 1 段階は&#x200B;**[!UICONTROL 評価]**段階です。
 ここでは、ウィザードから直接アクセスできるパターン検出を使用して、アップグレードの複雑さを評価できます。このステップの終わりに、評価レポートにアクセスできます。
 
-生成されたレポートでは、次のパターンを検出することで、作成者インスタンスのアップグレードを確認できます。
+生成されたレポートでは、次のパターンを検出することで、オーサーインスタンスのアップグレードをチェックできます。
 
 * 特定のルールに違反しており、アップグレードで影響を受けるか上書きされる領域で実行されている。
 
