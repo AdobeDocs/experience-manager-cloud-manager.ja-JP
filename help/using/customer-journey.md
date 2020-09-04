@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: bc9a0d63-ae6b-4fe9-81e5-bf9844f04e54
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '585'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ ht-degree: 74%
 
 1. **Adobe Managed Services の新しい AEM ユーザー**
 
-   As a new customer, you will be on-boarded to [!UICONTROL Cloud Manager] as part of the on-boarding process to the Adobe Managed Services.
+   新しいお客様は、Adobe Managed Services のオンボーディングプロセスの一環として [!UICONTROL Cloud Manager] にオンボーディングされます。
 
-   [!UICONTROL Cloud Manager] へのアクセスURLは、ご案内の電子メールに記載されています。 [!UICONTROL Experience Cloud]にログインする手順、および Cloud Managerにアクセスする必要があるユーザー向けに、ユーザーとそれぞれの権限の管理にAdobe Admin Consoleを使用する手順が記載されています。
+   [!UICONTROL Cloud Manager] にアクセスするための URL は、[!UICONTROL Experience Cloud] にログインする手順と共にお知らせメールに記載されています。また、[!UICONTROL Cloud Manager] にアクセスする必要のあるユーザーとその権限を管理するために、Adobe Admin Console を使用します。
 
 1. **Adobe Managed Services の既存の AEM ユーザー**
 
-   既存のお客様は、最初に既存の実稼動環境および実稼動以外の環境を AEM 6.4 リリースにアップグレードする必要があります。アップグレードを実行すると同時に、オンボーディングされ、[!UICONTROL Cloud Manager] にアクセスするための URL が提供されます。Additionally, you will need to start using the Adobe Admin Console for managing your users and their respective permissions, for those users who need to access [!UICONTROL Cloud Manager].
+   既存のお客様は、最初に既存の実稼動環境および実稼動以外の環境を AEM 6.4 リリースにアップグレードする必要があります。アップグレードを実行すると同時に、オンボーディングされ、[!UICONTROL Cloud Manager] にアクセスするための URL が提供されます。さらに、[!UICONTROL Cloud Manager] にアクセスする必要のあるユーザーとその権限を管理するために、Adobe Admin Console を使用し始める必要があります。
 
    また、AEM 環境に新しいコードの変更をデプロイするために、[!UICONTROL Cloud Manager] の使用を開始する際には、既存の AEM プロジェクトを、推奨されるベストプラクティスに従う必要があります。
 
@@ -43,7 +43,7 @@ ht-degree: 74%
 
 ## [!UICONTROL Cloud Manager] {#accessing-cloud-manager} へのアクセス
 
-You will get access to [!UICONTROL Cloud Manager] and your AEM environments by simply logging in to the [!UICONTROL Experience Cloud] landing page, using your Adobe Identity Management credentials, and selecting AEM from the solution switcher interface.
+Adobe Identity Management 資格情報を使用して [!UICONTROL Experience Cloud] ランディングページにログインし、ソリューション切り替えインターフェイスから AEM を選択するだけで、[!UICONTROL Cloud Manager] および AEM 環境にアクセスできます。
 
 [!UICONTROL Cloud Manager] に初めてログインした後、[!UICONTROL Cloud Manager] UI から直接 AEM 環境にアクセスできます。最初のコードブランチをステージおよび実稼動環境にデプロイすると、この時点で、[!UICONTROL Cloud Manager] のすべての機能を確認する準備が整います。
 
@@ -51,7 +51,7 @@ You will get access to [!UICONTROL Cloud Manager] and your AEM environments by s
 
 ## [!UICONTROL Cloud Manager] の概要{#getting-started-with-cloud-manager}
 
-[!UICONTROL Cloud Manager] にログインすると、まずコードリポジトリ環境を設定した後、チームと役割を設定することになります。Specifically, the role memberships are assigned by adding the user to a [!UICONTROL Cloud Manager] profile using the Admin Console UI.
+[!UICONTROL Cloud Manager] にログインすると、まずコードリポジトリ環境を設定した後、チームと役割を設定することになります。具体的には、Admin Console UI を使用してユーザーを [!UICONTROL Cloud Manager] プロファイルに追加することで、役割のメンバーシップが割り当てられます。
 
 次に、**Git リポジトリ**&#x200B;にソースコードのブランチを設定する必要があります。これにより、ロードおよびパフォーマンス KPI に関して目標を定義し、すべての品質チェックに正常に合格したら、ステージおよび実稼動環境にコードを適切にデプロイするためのテストシナリオを定義します。
 
