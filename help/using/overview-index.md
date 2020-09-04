@@ -15,7 +15,7 @@ ht-degree: 100%
 ---
 
 
-# AEM [!UICONTROL Cloud Manager]{#overview-index} の概要
+# AEM [!UICONTROL Cloud Manager] の概要{#overview-index}
 
 [!UICONTROL Cloud Manager] は、Adobe Managed Services のすべての顧客が利用できるツールおよびテクノロジーのフレームワークです。
 
