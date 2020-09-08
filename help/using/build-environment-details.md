@@ -1,11 +1,11 @@
 ---
 title: ビルド環境について
-description: 環境の詳細については、このページを参照してください
-translation-type: tm+mt
+description: このページでは、環境について説明します
+translation-type: ht
 source-git-commit: f73ea3db4bc50891518bebbe5da2d69dd2890a81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 * [後述されている通り](#installing-additional-system-packages)、これ以外にも、ビルド時にパッケージがインストールされる場合があります。
 * すべてのビルドは、Pristine 環境で実行されます。ビルドコンテナは実行から次回の実行までの間、状態を保持しません。
-* Mavenは常に次の3つのコマンドで実行します。
+* Maven は常に次の 3 つのコマンドで実行します。
 
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
