@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 95%
 
 ## 新機能 {#what-s-new}
 
-* **プログラムの設定** - AEMプロジェクトアーキタイプを使用してアプリケーションプロジェクトをgitで作成する新しいウィザード
+* **プログラムの設定** - AEM　プロジェクトアーキタイプを使用して　git　でアプリケーションプロジェクトを作成する新しいウィザード
 
 * **CI／CD パイプライン** - CI／CD パイプラインに次の変更が追加されました。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。
 
