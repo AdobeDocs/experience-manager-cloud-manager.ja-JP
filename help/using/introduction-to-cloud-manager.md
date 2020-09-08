@@ -8,16 +8,16 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 100%
 
 ---
 
 
-# [!UICONTROL Cloud Manager] の概要 {#introduction-to-cloud-manager}
+# [!UICONTROL Cloud Manager]{#introduction-to-cloud-manager} の概要
 
 ## 概要 {#introduction}
 
