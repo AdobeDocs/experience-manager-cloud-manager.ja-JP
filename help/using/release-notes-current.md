@@ -3,11 +3,11 @@ title: リリースノート（2020.9.0）
 seo-title: AEM Cloud Manager リリースノート（2020.9.0）
 description: このページでは、Cloud Manager リリース 2020.9.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2020.9.0 について説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 92249cbb7134082fcc66455c90dda8bdcb9dbf1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '103'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 56%
 
 ## 新機能 {#whats-new}
 
-* ビルドプロセスは、3つのMavenコマンドに分けられています。
-* gitリポジトリを複製できない場合は、最大3回再試行されます。
+* ビルドプロセスは、3つの Maven コマンドに分けられています。
+* git リポジトリを複製できない場合は、最大 3 回再試行されます。
 * パフォーマンステスト中に認証を使用した場合に、パイプライン実行の詳細ページにインジケータが表示されるようになりました。
 
 
