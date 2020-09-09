@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1763'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 CI／CD 実稼働パイプラインの設定は、パイプラインを開始するトリガー、実稼働環境のデプロイメントを制御するパラメーター、およびテストパラメーターのパフォーマンスを定義します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=jpn)
 
 
 ## フローについて {#understanding-the-flow}
@@ -222,7 +222,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 CI／CD 非実稼働パイプラインは、コード品質パイプラインとデプロイパイプラインの 2 つのカテゴリに分類されます。コード品質は、Git ブランチのすべてのコードをパイプライン化し、Cloud Manager のコード品質スキャンに対して構築および評価されます。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=jpn)
 
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
