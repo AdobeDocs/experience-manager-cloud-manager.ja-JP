@@ -1,28 +1,28 @@
 ---
-title: リリースノート（2020.9.0）
-seo-title: AEM Cloud Manager リリースノート（2020.9.0）
-description: このページでは、Cloud Manager リリース 2020.9.0 について説明します。
-seo-description: このページでは、AEM Cloud Manager リリース 2020.9.0 について説明します。
-translation-type: ht
-source-git-commit: 92249cbb7134082fcc66455c90dda8bdcb9dbf1d
-workflow-type: ht
-source-wordcount: '103'
-ht-degree: 100%
+title: リリースノート（2020.10.0）
+seo-title: AEM Cloud Manager リリースノート（2020.10.0）
+description: このページでは、Cloud Manager リリース 2020.10.0 について説明します。
+seo-description: このページでは、AEM Cloud Manager リリース 2020.10.0 について説明します。
+translation-type: tm+mt
+source-git-commit: aad2da58e5934999884553619dd97d42cc725d88
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 54%
 
 ---
 
-# リリースノート（2020.9.0） {#release-notes-for}
+# リリースノート（2020.10.0） {#release-notes-for}
 
-以下の節では [!UICONTROL Cloud Manager] リリース 2020.9.0 の一般リリースノートの概要を説明します。
+以下の節では [!UICONTROL Cloud Manager] リリース 2020.10.0 の一般リリースノートの概要を説明します。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2020.9.0 のリリース日は 2020 年 9 月 03 日です。
+[!UICONTROL Cloud Manager] バージョン 2020.10.0 のリリース日は 2020 年 01 月 10 日です。
 
-## 新機能 {#whats-new}
+## バグ修正 {#bug-fixes}
 
-* ビルドプロセスは、3つの Maven コマンドに分けられています。
-* git リポジトリを複製できない場合は、最大 3 回再試行されます。
-* パフォーマンステスト中に認証を使用した場合に、パイプライン実行の詳細ページにインジケータが表示されるようになりました。
+* パフォーマンステストに使用されるクローラーで、特定のリソースタイプが有効なWebリンクとして誤って考慮されていました。
 
+* 場合によっては、パフォーマンステストの完了手順が正しく処理されず、長時間の手順が実行されることがありました。
 
+* 実稼働環境でのデプロイメント用にディスパッチャーキャッシュの無効化が設定されている場合、無効化が2回実行されることがありました。
