@@ -7,9 +7,9 @@ uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: ht
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 8d1a100420129d234fe21911f165621405a04a9b
+workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 100%
 
@@ -40,6 +40,7 @@ ht-degree: 100%
 1. 「**[!UICONTROL 評価を実行]**」をクリックします。
 
    >[!NOTE]
+   >
    >パターン検出はどのような環境でも実行できます。ただし、検出率を向上させ、ビジネスクリティカルなインスタンスの速度低下を避けるために、Cloud Manager ではオーサーインスタンス上のステージング環境でパターン検出を実行します。
 
    ![](assets/Run-Evaluation.png)
