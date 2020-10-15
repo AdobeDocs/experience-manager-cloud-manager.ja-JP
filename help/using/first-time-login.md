@@ -8,8 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
-translation-type: ht
-source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
+translation-type: tm+mt
+source-git-commit: 2005b7e7689d3bc0656f92ecdbe368519f0d52a9
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +22,6 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 [!UICONTROL Cloud Manager] の一般設定をセットアップしたら、[!UICONTROL Cloud Manager] でユーザーインターフェイス（UI）を使用する準備が整います。
 
 >[!NOTE]
->
 >[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。
 
 ## ビデオチュートリアル {#video-tutorial-one}
@@ -28,11 +30,11 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 次のビデオでは、Cloud Manager プログラムの概要について説明します。このプログラムは、通常は購入したサービスレベルアグリーメント（SLA）に対応する、ビジネスイニシアチブの論理的なセットをサポートする一連の AEM 環境を表します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
-1. **Adobe[!UICONTROL Experience Cloud ]**にログインすると、**プログラム&#x200B;**のリストが表示されます。
+1. **Adobe [!UICONTROL Experience Cloud]** にログインすると、**プログラム**&#x200B;のリストが表示されます。
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
@@ -56,4 +58,4 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 Cloud Manager を使用すれば、すべての CI／CD パイプライン実行を表示委するプログラムのアクティビティをまとめて表示し、過去と現在のアクティビティや、アクティビティの詳細を確認できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
