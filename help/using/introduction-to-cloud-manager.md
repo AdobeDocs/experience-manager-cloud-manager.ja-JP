@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 2005b7e7689d3bc0656f92ecdbe368519f0d52a9
+source-git-commit: d3f17b1fd4fcc1c75836c9dd67d54e22422db120
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 97%
@@ -73,4 +73,4 @@ Adobe Managed Services の 1 つである [!UICONTROL Cloud Manager] を使用�
 自動スケーリング機能は、Dispatcher／パブリッシュ層にのみ適用され、Dispatcher とパブリッシュのペアの 1 個以上の追加セグメント、最大で 10 個のセグメントで、常に水平スケール手法を使用して実行されます。プロビジョニングされた追加容量は、CSE（カスタマーサクセスエンジニア）が指定した 10 営業日以内に、手動でスケーリングされます。
 
 >[!NOTE]
->Autoscalingがアプリケーションに適しているかどうかを調べる必要があるお客様は、CSEまたはAdobeの担当者にお問い合わせください。
+>AutoScalingがアプリケーションに適しているかどうかを調べる必要があるお客様は、CSEまたはAdobeの担当者にお問い合わせください。
