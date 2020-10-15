@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: 4838de3d6c78884333d8088eb38f388fbcd0e707
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 100%
+source-wordcount: '708'
+ht-degree: 97%
 
 ---
 
 
-# [!UICONTROL Cloud Manager] の概要{#introduction-to-cloud-manager}
+# [!UICONTROL Cloud Manager の概要]{#introduction-to-cloud-manager}
 
 ## 概要 {#introduction}
 
@@ -70,4 +70,4 @@ Adobe Managed Services の 1 つである [!UICONTROL Cloud Manager] を使用�
 
 自動スケーリングイベント中、[!UICONTROL Cloud Manager] は自動スケーリングプロビジョニング処理を自動的にトリガーし、自動スケーリングイベントを送信し、数分以内に追加容量を利用できるようにします。追加容量は実稼動環境の、実行中の Dispatcher／パブリッシュノードと同じシステム仕様に一致する同じリージョンでプロビジョニングされます。
 
-自動スケーリング機能は、Dispatcher／パブリッシュ層にのみ適用され、Dispatcher とパブリッシュのペアの 1 個以上の追加セグメント、最大で 10 個のセグメントで、常に水平スケール手法を使用して実行されます。プロビジョニングされた追加容量は、CSE（カスタマーサクセスエンジニア）が指定した 10 営業日以内に、手動でスケーリングされます。
+自動スケーリング機能は、Dispatcher／パブリッシュ層にのみ適用され、Dispatcher とパブリッシュのペアの 1 個以上の追加セグメント、最大で 10 個のセグメントで、常に水平スケール手法を使用して実行されます。プロビジョニングされた追加容量は、CSE（カスタマーサクセスエンジニア）が指定した 10 営業日以内に、手動でスケーリングされます。Autoscalingがアプリケーションに適しているかどうかを調べる必要があるお客様は、CSEまたはAdobeの担当者にお問い合わせください。
