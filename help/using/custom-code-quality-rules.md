@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+source-git-commit: a8cd1ac2448b9f875c1d925c62e7fe42c8ceec2a
 workflow-type: tm+mt
-source-wordcount: '2282'
-ht-degree: 100%
+source-wordcount: '2296'
+ht-degree: 99%
 
 ---
 
@@ -22,8 +22,7 @@ ht-degree: 100%
 このページでは、AEM エンジニアリングチームのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて説明します。
 
 >[!NOTE]
->
->ここで提供されるコードサンプルは、例としてのみ使用されています。
+>ここで提供されるコードサンプルは、例としてのみ使用されています。SonarQuebeの概念と品質ルールについて詳しくは [、「概念](https://docs.sonarqube.org/7.4/user-guide/concepts/) 」を参照してください。
 
 ## SonarQube ルール {#sonarqube-rules}
 
