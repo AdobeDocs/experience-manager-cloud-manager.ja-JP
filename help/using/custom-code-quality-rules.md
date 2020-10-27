@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: a8cd1ac2448b9f875c1d925c62e7fe42c8ceec2a
+source-git-commit: 71a760997ec2a0873a7f39d206086a8b4fd6854e
 workflow-type: tm+mt
-source-wordcount: '2296'
-ht-degree: 99%
+source-wordcount: '2314'
+ht-degree: 97%
 
 ---
 
@@ -561,7 +561,7 @@ public void doThis(Resource resource) {
 
 **キー**：CQRules:AMSCORE-554
 
-**タイプ**：コードスメル
+**タイプ**:コードの匂い/Cloud Serviceの互換性
 
 **深刻度**：軽度
 
@@ -575,7 +575,7 @@ Sling ジョブがクラスター環境で処理される方法について詳�
 
 **キー**：AMSCORE-553
 
-**タイプ**：コードスメル
+**タイプ**:コードの匂い/Cloud Serviceの互換性
 
 **深刻度**：軽度
 
@@ -689,7 +689,7 @@ AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み
 
 **キー**：ClassicUIAuthoringMode
 
-**タイプ**：コードスメル
+**タイプ**:コードの匂い/Cloud Serviceの互換性
 
 **深刻度**：軽度
 
@@ -701,7 +701,7 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内�
 
 **キー**：ComponentWithOnlyClassicUIDalog
 
-**タイプ**：コードスメル
+**タイプ**:コードの匂い/Cloud Serviceの互換性
 
 **深刻度**：軽度
 
@@ -719,7 +719,7 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 
 **キー**：ImmutableMutableMixedPackage
 
-**タイプ**：コードスメル
+**タイプ**:コードの匂い/Cloud Serviceの互換性
 
 **深刻度**：軽度
 
@@ -733,7 +733,7 @@ Cloud Service のデプロイメントモデルとの互換性を維持するた
 
 **キー**：リバースレプリケーション
 
-**タイプ**：コードスメル
+**タイプ**:コードの匂い/Cloud Serviceの互換性
 
 **深刻度**：軽度
 
