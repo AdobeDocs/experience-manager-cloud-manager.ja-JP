@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d3f17b1fd4fcc1c75836c9dd67d54e22422db120
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '708'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Adobe Managed Services の 1 つである [!UICONTROL Cloud Manager] を使用�
 
 ![](assets/screen_shot_2018-05-12at73843pm.png)
 
-## [!UICONTROL Cloud Manager] の主な機能{#key-features-in-cloud-manager}
+## [!UICONTROL Cloud Manager] の主な機能 {#key-features-in-cloud-manager}
 
 組織は、[!UICONTROL Cloud Manager] を使用して以下の機能を利用できます。
 
@@ -44,7 +44,7 @@ Adobe Managed Services の 1 つである [!UICONTROL Cloud Manager] を使用�
 
 お客様は、アプリケーション特有の主要業績評価指標（KPI）（1 分あたりのピークページビュー数とページ読み込みに対する予想応答時間）を定義します。これが、最終的にデプロイメントが成功したかどうかを測定するための基礎となります。様々なチームメンバーの役割と権限を簡単に定義できます。新しいセルフサービスインターフェイスでは制御は自分でできますが、必要に応じて必要なアドバイスを提供できるアドビ内の専門家にアクセスできます。
 
-[!UICONTROL Cloud Manager] の UI を確認して使用を開始するには、[初回ログイン](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html)を参照してください。
+[!UICONTROL Cloud Manager] の UI を確認して使用を開始するには、[初回ログイン](https://helpx.adobe.com/jp/experience-manager/cloud-manager/using/first-time-login.html)を参照してください。
 
 ### CI／CD パイプライン {#ci-cd-pipeline}
 
@@ -52,7 +52,7 @@ Adobe Managed Services の 1 つである [!UICONTROL Cloud Manager] を使用�
 
 [!UICONTROL Cloud Manager] UI を使用して、CI／CD パイプラインを設定および開始できます。このパイプラインの間、徹底したコードスキャンが実行され、高品質なアプリケーションのみが実稼動環境に渡されます。
 
-[!UICONTROL Cloud Manager] の UI からパイプラインを設定する方法について詳しくは、[CI／CD パイプラインの設定](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html)を参照してください。
+[!UICONTROL Cloud Manager] の UI からパイプラインを設定する方法について詳しくは、[CI／CD パイプラインの設定](https://helpx.adobe.com/jp/experience-manager/cloud-manager/using/configuring-pipeline.html)を参照してください。
 
 ### 柔軟なデプロイメントモード {#flexible-deployment-modes}
 
@@ -73,4 +73,4 @@ Adobe Managed Services の 1 つである [!UICONTROL Cloud Manager] を使用�
 自動スケーリング機能は、Dispatcher／パブリッシュ層にのみ適用され、Dispatcher とパブリッシュのペアの 1 個以上の追加セグメント、最大で 10 個のセグメントで、常に水平スケール手法を使用して実行されます。プロビジョニングされた追加容量は、CSE（カスタマーサクセスエンジニア）が指定した 10 営業日以内に、手動でスケーリングされます。
 
 >[!NOTE]
->AutoScalingがアプリケーションに適しているかどうかを調べる必要があるお客様は、CSEまたはAdobeの担当者にお問い合わせください。
+>オートスケーリングがアプリケーションに適しているかどうかを確認したいお客様は、CSE またはAdobe 担当者にお問い合わせください。
