@@ -1,16 +1,16 @@
 ---
 source-git-commit: 4979307a5e7e9223775b25584e17cde68b76a711
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
+translation-type: ht
 source-wordcount: '157'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 # Adobe Experience Manager Cloud Manager ドキュメント
 
 | EXL-PR | EXL | プレビュー | アクティベート | 公開済み | ヘルプ |
 |--- |--- |--- |--- |--- |--- |
-| [![ビルドの状態](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-manager.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-manager.en_pr-exl/lastBuild/) | [![ビルドの状態](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-manager.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-manager.en_exl/lastBuild/lastBuild) | [プレビュー URL](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [ライブURL](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en) | [オーサリングガイド](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
+| [![ビルドのステータス](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-manager.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-manager.en_pr-exl/lastBuild/) | [![ビルドのステータス](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-manager.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-manager.en_exl/lastBuild/lastBuild) | [プレビュー URL](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [ライブ URL](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) | [オーサリングガイド](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=ja) |
 
 Adobe Experience Manager Cloud Manager ドキュメントのリポジトリです。
 
