@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 71a760997ec2a0873a7f39d206086a8b4fd6854e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2314'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 このページでは、AEM エンジニアリングチームのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて説明します。
 
 >[!NOTE]
->ここで提供されるコードサンプルは、例としてのみ使用されています。SonarQuebeの概念と品質ルールについて詳しくは [、「概念](https://docs.sonarqube.org/7.4/user-guide/concepts/) 」を参照してください。
+>ここで提供されるコードサンプルは、例としてのみ使用されています。SonarQube の概念と品質ルールについて詳しくは、[概念](https://docs.sonarqube.org/7.4/user-guide/concepts/)（英語のみ）を参照してください。
 
 ## SonarQube ルール {#sonarqube-rules}
 
@@ -431,7 +431,7 @@ public void doThis() {
 
 **最初の対象バージョン**：バージョン 2018.4.0
 
-名前が示すように、Java の例外は常に&#x200B;**&#x200B;例外的な状況で使用する必要があります。結果として、例外がキャッチされる際に、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。これにより、これらのメッセージがログに正しく表示されます。
+名前が示すように、Java の例外は常に&#x200B;*例外的な*&#x200B;状況で使用する必要があります。結果として、例外がキャッチされる際に、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。これにより、これらのメッセージがログに正しく表示されます。
 
 #### 準拠していないコード {#non-compliant-code-10}
 
@@ -561,7 +561,7 @@ public void doThis(Resource resource) {
 
 **キー**：CQRules:AMSCORE-554
 
-**タイプ**:コードの匂い/Cloud Serviceの互換性
+**タイプ**：コードスメル／Cloud Service との互換性
 
 **深刻度**：軽度
 
@@ -575,7 +575,7 @@ Sling ジョブがクラスター環境で処理される方法について詳�
 
 **キー**：AMSCORE-553
 
-**タイプ**:コードの匂い/Cloud Serviceの互換性
+**タイプ**：コードスメル／Cloud Service との互換性
 
 **深刻度**：軽度
 
@@ -689,7 +689,7 @@ AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み
 
 **キー**：ClassicUIAuthoringMode
 
-**タイプ**:コードの匂い/Cloud Serviceの互換性
+**タイプ**：コードスメル／Cloud Service との互換性
 
 **深刻度**：軽度
 
@@ -699,9 +699,9 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内�
 
 ### タッチ UI ダイアログが必要なダイアログを持つコンポーネント {#oakpal-components-dialogs}
 
-**キー**：ComponentWithOnlyClassicUIDalog
+**キー**：ComponentWithOnlyClassicUIDialog
 
-**タイプ**:コードの匂い/Cloud Serviceの互換性
+**タイプ**：コードスメル／Cloud Service との互換性
 
 **深刻度**：軽度
 
@@ -719,7 +719,7 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 
 **キー**：ImmutableMutableMixedPackage
 
-**タイプ**:コードの匂い/Cloud Serviceの互換性
+**タイプ**：コードスメル／Cloud Service との互換性
 
 **深刻度**：軽度
 
@@ -731,9 +731,9 @@ Cloud Service のデプロイメントモデルとの互換性を維持するた
 
 ### リバースレプリケーションエージェントは使用しない {#oakpal-reverse-replication}
 
-**キー**：リバースレプリケーション
+**キー**：ReverseReplication
 
-**タイプ**:コードの匂い/Cloud Serviceの互換性
+**タイプ**：コードスメル／Cloud Service との互換性
 
 **深刻度**：軽度
 
