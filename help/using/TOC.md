@@ -6,10 +6,10 @@ user-guide-title: Adobe Experience Manager Cloud Manager ガイド
 breadcrumb-title: Cloud Manager ガイド
 user-guide-description: Adobe Managed Services を使用して、クラウド内の Experience Manager を自己管理する方法について学習します。
 translation-type: tm+mt
-source-git-commit: 928b430dde75070178fac323eb7bc959d35a2ae7
+source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,8 @@ ht-degree: 100%
    + [概要](overview-productupdate-wizard.md)
    + [評価](evaluation.md)
 + リリースノート {#release-notes}
-   + [最新のリリースノート（2020.10.0）](release-notes-current.md)
+   + [最新のリリースノート（2020.11.0）](release-notes-current.md)
+   + [リリースノート（2020.10.0）](release-notes-2020-10-0.md)
    + [リリースノート（2020.9.0）](release-notes-2020-9-0.md)
    + [リリースノート（2020.8.0）](release-notes-2020-8-0.md)
    + [リリースノート（2020.7.0）](release-notes-2020-7-0.md)
