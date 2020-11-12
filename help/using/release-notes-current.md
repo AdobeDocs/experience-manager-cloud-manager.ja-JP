@@ -1,28 +1,36 @@
 ---
-title: リリースノート（2020.10.0）
-seo-title: AEM Cloud Manager リリースノート（2020.10.0）
-description: このページでは、Cloud Manager リリース 2020.10.0 について説明します。
-seo-description: このページでは、AEM Cloud Manager リリース 2020.10.0 について説明します。
-translation-type: ht
-source-git-commit: aad2da58e5934999884553619dd97d42cc725d88
-workflow-type: ht
-source-wordcount: '106'
-ht-degree: 100%
+title: リリースノート（2020.11.0）
+seo-title: AEM Cloud Manager リリースノート（2020.11.0）
+description: このページでは、Cloud Manager リリース 2020.11.0 について説明します。
+seo-description: このページでは、AEM Cloud Manager リリース 2020.11.0 について説明します。
+translation-type: tm+mt
+source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# リリースノート（2020.10.0） {#release-notes-for}
+# リリースノート（2020.11.0） {#release-notes-for}
 
-以下の節では [!UICONTROL Cloud Manager] リリース 2020.10.0 の一般リリースノートの概要を説明します。
+以下の節では [!UICONTROL Cloud Manager] リリース 2020.11.0 の一般リリースノートの概要を説明します。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2020.10.0 のリリース日は 2020 年 10 月 2 日です。
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.11.0 is November 12, 2020.
+
+## 新機能 {#whats-new}
+
+* Cloud Managerの「 **Learn** 」タブが更新され、UIの新しい画像が表示されます。
 
 ## バグ修正 {#bug-fixes}
 
-* パフォーマンステストに使用されるクローラーで、特定のリソースタイプが誤って有効な Web リンクと見なされていました。
+* お客様が原因で発生した展開エラーが、展開ログで明示的に見つかるようになりました。
 
-* 場合によっては、パフォーマンステストの完了手順が正しく処理されず、手順が長時間実行されることがありました。
+* ビルドの実行前に行われた依存関係の読み込みには、Mavenプラグインのダウンロードが必要です。
 
-* 実稼動デプロイメント用に Dispatcher キャッシュの無効化が設定された場合、無効化 が 2 回実行されることがありました。
+* Cloud Managerのフッターから言語を選択するリンクが、正しい場所に移動するようになりました。
+
+* コードのスキャン中に、SonarQubeプロセスが開始しないことがあります。 これは自動検出され、再起動が試行されます。
+
+* パフォーマンステストで使用されるサイトのクロール処理中に、深さトラバーサルの最初の3つのレベルでタイムアウトした要求は、自動的に再試行されます。
