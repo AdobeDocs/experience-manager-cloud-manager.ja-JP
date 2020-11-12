@@ -9,11 +9,11 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
-workflow-type: ht
-source-wordcount: '1763'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 CI／CD 実稼働パイプラインの設定は、パイプラインを開始するトリガー、実稼働環境のデプロイメントを制御するパラメーター、およびテストパラメーターのパフォーマンスを定義します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## フローについて {#understanding-the-flow}
@@ -163,7 +163,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
    **AEM Sites：**
 
-   Cloud Manager では、30 分のテスト期間でステージ公開サーバー上のページ（デフォルトで未認証ユーザーとして）をリクエストし、各ページの応答時間と様々なシステムレベルの指標を測定することで、AEM Sites プログラムのパフォーマンステストを実行します。
+   Cloud Manager では、30 分のテスト期間でステージ公開サーバー上のページ（デフォルトで未認証ユーザーとして）をリクエストし、各ページの応答時間と様々なシステムレベルの指標を測定することで、AEM Sites プログラムのパフォーマンステストを実行します。これらの要求は、既知の専用アドレスのセットから行われます。 アドレスの範囲は、カスタマーサクセスエンジニアまたはAdobeの担当者から取得できます。
 
    30 分のテスト期間が開始される前に、Cloud Manager は、カスタマーサクセスエンジニアが設定した 1 つ以上の&#x200B;*シード* URL セットを使用してステージング環境をクロールします。これらの URL から、各ページの HTML を調べ、幅優先方式でリンクが探索されます。このクロール処理は、最大 5000 ページに制限されています。クローラーからのリクエストのタイムアウトは 10 秒に固定されています。
 
@@ -222,7 +222,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 CI／CD 非実稼働パイプラインは、コード品質パイプラインとデプロイパイプラインの 2 つのカテゴリに分類されます。コード品質は、Git ブランチのすべてのコードをパイプライン化し、Cloud Manager のコード品質スキャンに対して構築および評価されます。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
