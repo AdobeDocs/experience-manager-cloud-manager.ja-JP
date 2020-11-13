@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: ht
-source-git-commit: d3f17b1fd4fcc1c75836c9dd67d54e22422db120
-workflow-type: ht
-source-wordcount: '708'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 213d1b2ee52496cc8cf6bc699488d9da9f7b9946
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## 概要 {#introduction}
 
-Adobe Managed Services の 1 つである [!UICONTROL Cloud Manager] を使用すると、組織は自らクラウド上で Experience Manager を管理できるようになります。このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
+[!UICONTROL Cloud Manager](CloudのAdobe Experience Manager(AEM)に属するCloud Manager)を使用すると、組織はクラウド内のExperience Managerを自己管理できます。 このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
 
 [!UICONTROL Cloud Manager] のセルフサービスのカスタマーポータルを使用すると、**組織**&#x200B;は以下のことを実行および活用できます。
 
