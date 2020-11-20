@@ -5,16 +5,16 @@ archetype: administrator
 user-guide-title: Adobe Experience Manager Cloud Manager ガイド
 breadcrumb-title: Cloud Manager ガイド
 user-guide-description: Adobe Managed Services を使用して、クラウド内の Experience Manager を自己管理する方法について学習します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '243'
+ht-degree: 100%
 
 ---
 
 
-# Cloud Manager ガイド{#using}
+# Cloud Manager ガイド {#using}
 
 + [Cloud Manager の概要](introduction-to-cloud-manager.md)
 + 概要 {#overview}
@@ -29,7 +29,7 @@ ht-degree: 0%
    + [ロールに基づく権限](role-based-permissions.md)
    + [ユーザーとロールの追加](setting-up-users-and-roles.md)
    + [プロビジョニング済み環境](environments-provisioned.md)
-+ はじめに{#getting-started}
++ はじめに {#getting-started}
    + [初回ログイン](first-time-login.md)
    + [プログラムの設定](setting-up-program.md)
    + AEM アプリケーションプロジェクトの作成 {#create-application-project}
