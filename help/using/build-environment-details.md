@@ -1,9 +1,9 @@
 ---
 title: ビルド環境について
 description: このページでは、環境について説明します
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 000843f902a180181981de2b1307fd2777d32994
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 100%
 
@@ -183,4 +183,4 @@ CLI を使用して変数を設定するには、次のようなコマンドを�
 同じ方法を、RubyGems の `gem` や Python パッケージの `pip` など、特定の言語用のパッケージのインストールにも使用できます。
 
 >[!NOTE]
->この方法でシステムパッケージをインストールしても、Adobe Experience Manager の実行に使用されているランタイム環境にはインストール&#x200B;**されません**。AEM 環境にシステムパッケージをインストールする必要がある場合は、Adobe 担当者にお問い合わせください。
+>この方法でシステムパッケージをインストールしても、Adobe Experience Manager の実行に使用されているランタイム環境にはインストール&#x200B;**されません**。AEM 環境にシステムパッケージをインストールする必要がある場合は、アドビ担当者にお問い合わせください。
