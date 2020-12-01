@@ -5,11 +5,14 @@ description: このページでは、Cloud Manager で管理するプログラ�
 seo-description: このページでは、Adobe AEM Cloud Manager で管理するプログラムごとにプロビジョニングされる Git リポジトリについて説明します。
 uuid: 2c42775f-8703-43f7-bad2-7dc086ea9dd7
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: f90f0f4c-c1ff-47f6-8d97-ff5018561bf2
 translation-type: tm+mt
 source-git-commit: 697311cd00ef96568f6befd2fe76febafc27961e
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 96%
 
 ---
 
@@ -32,5 +35,5 @@ Cloud Manager の **Git リポジトリ**&#x200B;を CI／CD パイプライン�
 
 >[!NOTE]
 >
->To view the common Git commands, see the [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf).
+>共通のGitコマンドを表示するには、[Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)を参照してください。
 
