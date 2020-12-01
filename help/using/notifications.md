@@ -8,8 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: be0350b98c19b3b84519947c04a7e362b46bba21
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: be0350b98c19b3b84519947c04a7e362b46bba21
 
 >[!NOTE]
 >
->承認およびスケジュール済みの通知は、ビジネスオーナー、プログラムマネージャー、デプロイメントマネージャーのロールのユーザーにのみ送信されます。
+>承認およびスケジュール済みの通知は、ビジネスオーナー、プログラムマネージャー、デプロイメントマネージャーの役割のユーザーにのみ送信されます。
 
 通知は、[!UICONTROL Cloud Manager] UI（ユーザーインターフェイス）のサイドバーおよび Adobe [!UICONTROL Experience Cloud] 全体に表示されます。
 
