@@ -8,9 +8,9 @@ contentOwner: jsyal
 topic-tags: release-notes
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 100%
 
