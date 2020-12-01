@@ -8,9 +8,9 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e2187565e7f06d64841eb2af9b4b1a56feb5ebe4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 100%
 
