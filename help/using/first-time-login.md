@@ -8,9 +8,9 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 2005b7e7689d3bc0656f92ecdbe368519f0d52a9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 次のビデオでは、Cloud Manager プログラムの概要について説明します。このプログラムは、通常は購入したサービスレベルアグリーメント（SLA）に対応する、ビジネスイニシアチブの論理的なセットをサポートする一連の AEM 環境を表します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
@@ -58,4 +58,4 @@ ht-degree: 100%
 
 Cloud Manager を使用すれば、すべての CI／CD パイプライン実行を表示委するプログラムのアクティビティをまとめて表示し、過去と現在のアクティビティや、アクティビティの詳細を確認できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
