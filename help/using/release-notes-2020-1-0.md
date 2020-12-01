@@ -3,8 +3,11 @@ title: リリースノート（2020.1.0）
 seo-title: AEM Cloud Manager リリースノート（2020.1.0）
 description: このページでは、Cloud Manager リリース 2020.1.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2020.1.0 について説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
+workflow-type: tm+mt
+source-wordcount: '155'
+ht-degree: 100%
 
 ---
 
