@@ -5,11 +5,14 @@ description: Git での AEM Cloud Manager 用リリースブランチの設定
 seo-description: このページでは、Git でリリースブランチを設定する方法について説明します。
 uuid: d12a8b85-b7fd-4b55-a05a-a0f874ce598c
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
 translation-type: tm+mt
 source-git-commit: 9c0df236c1e800802d62dea09996bb8e1e7033f7
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 94%
 
 ---
 
@@ -80,4 +83,4 @@ To <url>
 
 >[!NOTE]
 >
->To view the common git commands, see the [Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
+>共通gitコマンドを表示するには、[Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet)を参照してください。
