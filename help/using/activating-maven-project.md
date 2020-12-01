@@ -3,9 +3,9 @@ title: Maven プロジェクトバージョンの処理
 seo-title: Maven プロジェクトバージョンの処理
 description: Maven プロジェクトバージョンの処理について説明します。
 seo-description: Maven プロジェクトバージョンの処理の詳細については、このページを参照してください。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e2187565e7f06d64841eb2af9b4b1a56feb5ebe4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 100%
 
