@@ -8,9 +8,9 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 71a760997ec2a0873a7f39d206086a8b4fd6854e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2314'
 ht-degree: 100%
 
@@ -727,7 +727,7 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 
 Cloud Service のデプロイメントモデルとの互換性を維持するために、個々のコンテンツパッケージには、リポジトリの不変領域のコンテンツ（つまり、`/apps and /libs, although /libs` を顧客コードで変更すると、別の違反を引き起こします）または可変領域（その他すべて）のいずれかを含める必要があります。例えば、`/apps/myco/components/text and /etc/clientlibs/myco` の両方を含むパッケージは Cloud Service と互換性がなく、問題が報告されます。
 
-詳しくは、[AEM プロジェクト構造](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html)を参照してください。
+詳しくは、[AEM プロジェクト構造](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)を参照してください。
 
 ### リバースレプリケーションエージェントは使用しない {#oakpal-reverse-replication}
 
