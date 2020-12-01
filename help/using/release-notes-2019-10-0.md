@@ -3,8 +3,11 @@ title: リリースノート（2019.10.0）
 seo-title: AEM Cloud Manager リリースノート（2019.10.0）
 description: このページでは、Cloud Manager リリース 2019.10.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2019.10.0 について説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 52c54568d8ab7b5091c25b3b65b4baa126bf61f5
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 100%
 
 ---
 
@@ -31,4 +34,4 @@ source-git-commit: 52c54568d8ab7b5091c25b3b65b4baa126bf61f5
 ## バグ修正 {#bug-fixes}
 
 * **概要**&#x200B;ページの一部のカードで、垂直方向の位置揃えが適切におこなわれていませんでした。
-* 一部の失敗状態では、パイプライン実行が正しくマークされず、その後の実行が妨げられて
+* 一部の失敗状態では、パイプライン実行が正しくマークされず、その後の実行が妨げられていました。
