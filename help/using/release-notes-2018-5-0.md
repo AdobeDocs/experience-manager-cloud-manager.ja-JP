@@ -5,11 +5,14 @@ description: このページでは、Cloud Manager リリース 2018.5.0 につ�
 seo-description: このページでは、AEM Cloud Manager リリース 2018.5.0 について説明します。
 uuid: 37f8b155-6984-454d-83a8-3f5fb081be97
 contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER／CLOUDMANAGER
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 6d1e7098-b56e-4172-8373-486f186f3d53
 translation-type: tm+mt
 source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 100%
 
 ---
 
