@@ -3,8 +3,11 @@ title: 環境の監視
 seo-title: 環境の監視
 description: 'null'
 seo-description: このページでは、環境内の個々のインスタンスを監視し、各インスタンスの様々な指標を追跡することでおこなわれる Cloud Manager のシステム監視について説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
+workflow-type: tm+mt
+source-wordcount: '964'
+ht-degree: 100%
 
 ---
 
@@ -55,7 +58,7 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 Cloud Manager のレポートでは、各 AEM インスタンスの様々な指標をレポートおよび追跡する一連のグラフを通じて、プログラムの環境と AEM インスタンスを確認できます。詳しくは、ビデオを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26315/)
 
 ## システム監視の詳細 {#system-monitoring-detail}
 
