@@ -5,8 +5,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 9cbe8f58cf04001ba9851ba321f03c7687e58014
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 9cbe8f58cf04001ba9851ba321f03c7687e58014
 
 Admin Console で割り当てることができるロールの一覧を次の表に示します。
 
-| **[!UICONTROL Cloud Manager]のロール&#x200B;** | **説明** |
+| **[!UICONTROL Cloud Manager] のロール** | **説明** |
 |---|---|
 | ビジネスオーナー | [!UICONTROL Cloud Manager] の初期設定を完了するプライマリユーザー。KPI の定義、実稼動デプロイメントの承認、重大な 3 層エラーのオーバーライドを担当します。 |
 | プログラムマネージャー | [!UICONTROL Cloud Manager] を使用して、チームの設定、ステータスのレビュー、KPI の確認をおこないます。重大な 3 層エラーを承認することができます。 |
