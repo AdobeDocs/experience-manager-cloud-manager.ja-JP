@@ -5,6 +5,9 @@ description: このページでは、Cloud Manager リリース 2019.6.0 につ�
 seo-description: このページでは、AEM Cloud Manager リリース 2019.6.0 について説明します。
 translation-type: tm+mt
 source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 100%
 
 ---
 
