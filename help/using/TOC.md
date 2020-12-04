@@ -6,10 +6,10 @@ user-guide-title: Adobe Experience Manager Cloud Manager ガイド
 breadcrumb-title: Cloud Manager ガイド
 user-guide-description: Adobe Managed Services を使用して、クラウド内の Experience Manager を自己管理する方法について学習します。
 translation-type: tm+mt
-source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
+source-git-commit: f5359dee907b32cefa2db2c4ad2baf8e337f6060
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 100%
+source-wordcount: '249'
+ht-degree: 97%
 
 ---
 
@@ -52,6 +52,7 @@ ht-degree: 100%
    + [Maven プロジェクトバージョンの処理](activating-maven-project.md)
    + [Git へのアクセス](accessing-git.md)
    + [Git との統合](setup-cloud-manager-git-integration.md)
+   + [複数のソースGitリポジトリの操作](/help/using/working-with-multiple-source-git-repos.md)
 + 製品アップデートウィザード {#product-update-wizard}
    + [概要](overview-productupdate-wizard.md)
    + [評価](evaluation.md)
