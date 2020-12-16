@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 5688e956c4c21968ce691b560a6ce519496f7563
 workflow-type: tm+mt
 source-wordcount: '252'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 97%
 + 概要 {#overview}
    + [主要な概念](key-concepts.md)
    + [カスタマージャーニー](customer-journey.md)
-   + [CI／CD パイプライン](ci-cd-pipeline.md)
+   + [CI/CD Pipeline](ci-cd-pipeline.md)
    + [セキュリティとプライバシー](security-and-privacy.md)
    + [ヘルプリソース](help-resources.md)
 + 要件 {#requirements}
    + [アクセス権の付与](access-rights-granted.md)
-   + [ソースコードリポジトリ](source-code-repository.md)
+   + [ソースコードリポジトリー](source-code-repository.md)
    + [ロールに基づく権限](role-based-permissions.md)
    + [ユーザーとロールの追加](setting-up-users-and-roles.md)
    + [プロビジョニング済み環境](environments-provisioned.md)
@@ -39,7 +39,7 @@ ht-degree: 97%
    + [リリースブランチの設定](configure-your-release-branches.md)
    + [Dispatcher 設定の管理](dispatcher-configurations.md)
 + 使用方法 {#how-to-use}
-   + [CI／CD パイプラインの設定](configuring-pipeline.md)
+   + [CI/CD Pipeline の設定](configuring-pipeline.md)
    + [コードのデプロイ](deploying-code.md)
    + [テスト結果の理解](understand-your-test-results.md)
    + [環境の管理](manage-your-environment.md)
@@ -52,7 +52,7 @@ ht-degree: 97%
    + [Maven プロジェクトバージョンの処理](activating-maven-project.md)
    + [Git へのアクセス](accessing-git.md)
    + [Git との統合](setup-cloud-manager-git-integration.md)
-   + [複数のソースGitリポジトリの操作](/help/using/working-with-multiple-source-git-repos.md)
+   + [複数のソース Git リポジトリーの操作](/help/using/working-with-multiple-source-git-repos.md)
 + 製品アップデートウィザード {#product-update-wizard}
    + [概要](overview-productupdate-wizard.md)
    + [評価](evaluation.md)
