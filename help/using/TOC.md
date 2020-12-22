@@ -5,9 +5,9 @@ archetype: administrator
 user-guide-title: Adobe Experience Manager Cloud Manager ガイド
 breadcrumb-title: Cloud Manager ガイド
 user-guide-description: Adobe Managed Services を使用して、クラウド内の Experience Manager を自己管理する方法について学習します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5688e956c4c21968ce691b560a6ce519496f7563
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '252'
 ht-degree: 100%
 
