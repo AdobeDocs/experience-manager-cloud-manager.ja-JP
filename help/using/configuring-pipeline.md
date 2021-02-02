@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: d02292e4f6369e0e0bf8fcf60cb8fe299854b3cc
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: bbcd5e59a9f9e8cb83cefb8af79d3ce7987bf388
+workflow-type: tm+mt
 source-wordcount: '1788'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 CI／CD 実稼動パイプラインの設定は、パイプラインを開始するトリガー、実稼動環境のデプロイメントを制御するパラメーター、およびテストパラメーターのパフォーマンスを定義します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## フローについて {#understanding-the-flow}
@@ -169,7 +169,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 
    例えば、「頻度の高いライブページ」と「新規ページ」セットで 50% ずつ配分し（この例では、「その他のライブページ」は使用されていません）、「新規ページ」セットには 3,000 ページが含まれるとします。「1 分あたりのページビュー数」KPI は 200 に設定されます。30 分間のテストの結果は次のようになります。
 
-   * 「頻度の高いライブページ」セットの 25 ページが各 240 回ヒットします - ((200 * 0.5) / 25) * 30 = 120
+   * 「頻度の高いライブページ」セットの 25 ページが各 120 回ヒットします - ((200 * 0.5) / 25) * 30 = 120
 
    * 「新規ページ」セットの 3000 ページが各 1 回ヒットします - ((200 * 0.5) / 3000) * 30 = 1
 
@@ -220,7 +220,7 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 CI／CD 非実稼動パイプラインは、コード品質パイプラインとデプロイパイプラインの 2 つのカテゴリに分類されます。コード品質は、Git ブランチのすべてのコードをパイプライン化し、Cloud Manager のコード品質スキャンに対して構築および評価されます。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
