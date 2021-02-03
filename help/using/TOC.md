@@ -5,11 +5,11 @@ archetype: administrator
 user-guide-title: Adobe Experience Manager Cloud Manager ガイド
 breadcrumb-title: Cloud Manager ガイド
 user-guide-description: Adobe Managed Services を使用して、クラウド内の Experience Manager を自己管理する方法について学習します。
-translation-type: ht
-source-git-commit: 5688e956c4c21968ce691b560a6ce519496f7563
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: f3e5e4be7ac4ba7eef158cea3c1c19ea83ec4d75
+workflow-type: tm+mt
 source-wordcount: '252'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 100%
    + [環境の管理](manage-your-environment.md)
    + [環境の監視](monitor-your-environments.md)
    + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
+   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [通知](notifications.md)
    + [カスタムコード品質ルール](custom-code-quality-rules.md)
 + コードの管理 {#managing-code}
