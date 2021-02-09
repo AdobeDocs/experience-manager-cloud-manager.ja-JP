@@ -2,10 +2,10 @@
 title: ビルド環境について
 description: このページでは、環境について説明します
 translation-type: tm+mt
-source-git-commit: 000843f902a180181981de2b1307fd2777d32994
+source-git-commit: 60270a7adb612355ff6d6928adcff8e94cabe092
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 100%
+source-wordcount: '768'
+ht-degree: 95%
 
 ---
 
@@ -37,6 +37,14 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 >[!NOTE]
 >Cloud Manager では、`jacoco-maven-plugin` の特定のバージョンは定義されませんが、`0.7.5.201505241946` 異常のバージョンを使用する必要があります。
+
+
+>[!NOTE]
+>Cloud Manager APIの使用方法については、次の追加リソースを参照してください。
+> * [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+>* [API統合の作成](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)
+>* [API権限](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)
+
 
 ## Java 11 の使用 {#using-java-11}
 
@@ -124,6 +132,7 @@ CLI を使用して変数を設定するには、次のようなコマンドを�
             </properties>
         </profile>
 ```
+
 
 ## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
 
