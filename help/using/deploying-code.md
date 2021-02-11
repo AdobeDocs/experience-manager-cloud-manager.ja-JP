@@ -1,18 +1,18 @@
 ---
 title: コードのデプロイ
 seo-title: コードのデプロイ
-description: 'null'
-seo-description: パイプライン（リポジトリ、環境、テスト環境）を設定したら、コードをデプロイする準備が整います。このページでは、この機能について詳しく見ていきます。
+description: Cloud Managerでの展開プロセスの概要を説明します
+seo-description: パイプライン(リポジトリ、環境、テスト環境)を設定したら、コードを導入する方法を学びます。
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 100%
+source-wordcount: '957'
+ht-degree: 93%
 
 ---
 
@@ -142,10 +142,10 @@ AEM サイト訪問者への影響を最小限に抑えるために、実稼動�
 
 1. オーサーに AEM パッケージをデプロイします。
 1. dispatcher1 をロードバランサーから分離します。
-1. AEM パッケージを publish1 にデプロイし、Dispatcher を dispatcher1 にデプロイして、Dispatcher キャッシュをフラッシュします。
+1. publish1にAEMパッケージを、dispatcherパッケージをdispatcher1にデプロイし、ディスパッチャーキャッシュを並行してフラッシュします。
 1. dispatcher1 をロードバランサーに戻します。
 1. dispatcher1 がサービスを再開したら、dispatcher2 をロードバランサーから分離します。
-1. AEM パッケージを publish2 にデプロイし、Dispatcher パッケージを dispatcher2 にデプロイして、Dispatcher キャッシュをフラッシュします。
+1. AEMパッケージをpublish2にデプロイし、ディスパッチャーパッケージをdispatcher2に並列にデプロイして、ディスパッチャーキャッシュをフラッシュします。
 1. dispatcher2 をロードバランサーに戻します。
 このプロセスは、デプロイメントがトポロジのすべてのパブリッシャーおよび Dispatcher に到達するまで続行されます。
 
