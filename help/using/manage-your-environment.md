@@ -1,7 +1,7 @@
 ---
 title: 環境の管理
 seo-title: 環境の管理
-description: 'null'
+description: Cloud Managerの環境について説明します。
 seo-description: このページでは、Cloud Manager での CI／CD パイプラインの設定および実行に使用される実稼動環境および非実稼動環境の一覧を示します。
 uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
 contentOwner: jsyal
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 100%
+source-wordcount: '269'
+ht-degree: 98%
 
 ---
 
