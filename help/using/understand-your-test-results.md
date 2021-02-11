@@ -1,7 +1,7 @@
 ---
 title: テスト結果の理解
 seo-title: テスト結果の理解
-description: 'null'
+description: Cloud Managerでパイプラインを実行中の3層ゲートの詳細
 seo-description: このページでは、パイプライン実行中の 3 層ゲート、Cloud Manager でプログラムを検証するコードスキャンテスト、パフォーマンステストおよびセキュリティテストについて説明します。
 uuid: 93caa01f-0df2-4a6f-81dc-23dfee24dc93
 contentOwner: jsyal
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 39e6af753cdd43da96746c7609a8f502b3ac9e77
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 100%
+source-wordcount: '1564'
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 100%
 コード品質テストでは、ソースコードが一定の品質基準を満たしていることを確認するためにスキャンされます。現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)と呼ばれます。
 
 >[!NOTE]
->[ここ](/help/using/assets/CodeQuality-rules-latest.xlsx)からルールの完全なリストをダウンロードできます。
+>[ここ](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx)からルールの完全なリストをダウンロードできます。
 
 この手順の結果は、*評価*&#x200B;として提供されます。次の表に、様々なテスト条件の評価の概要を示します。
 
