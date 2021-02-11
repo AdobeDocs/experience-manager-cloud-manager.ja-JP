@@ -1,24 +1,42 @@
 ---
-title: リリースノート（2020.12.0）
-seo-title: AEM Cloud Manager リリースノート（2020.12.0）
-description: このページでは、Cloud Manager リリース 2020.12.0 について説明します。
-seo-description: このページでは、AEM Cloud Manager リリース 2020.12.0 について説明します。
-translation-type: ht
-source-git-commit: 4767e782019998564f4fd238ef2555ab0a4f6d62
-workflow-type: ht
-source-wordcount: '70'
-ht-degree: 100%
+title: リリースノート（2021.2.0）
+seo-title: AEM Cloud Manager リリースノート（2021.2.0）
+description: このページでは、Cloud Manager リリース 2021.2.0 について説明します。
+seo-description: このページでは、AEM Cloud Manager リリース 2021.2.0 について説明します。
+translation-type: tm+mt
+source-git-commit: 88b17f05a577b5c46b5b352d7340228353b49a38
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 25%
 
 ---
 
 # リリースノート（2020.12.0）{#release-notes-for}
 
-以下の節では、[!UICONTROL Cloud Manager] リリース 2020.12.0 の一般リリースノートの概要を説明します。
+以下の節では、[!UICONTROL Cloud Manager] リリース 2021.2.0 の一般リリースノートの概要を説明します。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2020.12.0 のリリース日は 2020 年 10 月 12 日です。
+[!UICONTROL Cloud Manager] バージョン 2021.2.0 のリリース日は 2021 年 2 月 11 日です。
+
+## 新機能 {#whats-new}
+
+* プロジェクトとサンドボックスの作成で使用されるAEMプロジェクトアーキタイプがバージョン25に更新されました。
+
+* コードスキャン中に識別された非推奨のAPIのリストが絞り込まれ、最新Cloud ServiceのSDKリリースで非推奨となった追加のクラスとメソッドが含まれるようになりました。
+
+* 実稼働環境のデプロイメントは、パブリッシュインスタンスとディスパッチャーインスタンスのペアに並行してデプロイされます。
+
+* SonarQubeプロファイル（Cloud Manager用）が更新され、squid:S2142というSonarルールが削除されました。 これは、スレッド割り込みチェックと競合しなくなります
+
+* sonarというプリフィックスが付いたcustomer pom.xmlファイルに設定されたプロパティは、ビルドおよび品質スキャンの失敗を回避するために、動的に削除されるようになりました。
 
 ## バグ修正 {#bug-fixes}
 
-* コードスキャンステージで、解決された結果が提供されず、エラーが発生する場合があります。
+* ロードテストを実行中にエラーが発生したコンテナが原因で、パフォーマンステストステップ中にCI/CD （デプロイメント）パイプラインが失敗する場合があります。
+
+* 場合によっては、ロードテストコンテナは、1つの例外しか発生しない場合でも、実行に失敗したと報告することがあります。 失敗は、テストプロセスを復元できない場合にのみ報告されます。
+
+* 環境名の格納方法の間で、文字の大文字と小文字の不一致があると、パフォーマンステストの失敗につながります。
+
+* 一部のパイプラインエラーは、誤ってパイプラインエラーとして報告されました。
