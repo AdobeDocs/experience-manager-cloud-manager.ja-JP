@@ -4,7 +4,7 @@ seo-title: AEM Cloud Manager リリースノート（2021.2.0）
 description: このページでは、Cloud Manager リリース 2021.2.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2021.2.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 67cdd39cb511763a42391c7896924a1433e4e58f
+source-git-commit: 02d2f91d97847a1ca512c2e0f4e02274e79951de
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 25%
@@ -29,7 +29,7 @@ ht-degree: 25%
 
 * SonarQuebeプロファイル（Cloud Manager用）が更新され、Sonarルール`squid:S2142`が削除されました。 これは、スレッド割り込みチェックと競合しなくなります。
 
-* ビルドおよび品質スキャンの失敗を回避するため、先頭にSonarが付いた顧客`pom.xml`ファイルに設定されたプロパティは、動的に削除されるようになりました。
+* sonarのプリフィックスが付いた顧客`pom.xml`ファイルに設定されたプロパティは、ビルドおよび品質スキャンの失敗を回避するために、動的に削除されるようになりました。
 
 ## バグ修正 {#bug-fixes}
 
