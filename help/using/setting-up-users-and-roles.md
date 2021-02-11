@@ -1,7 +1,7 @@
 ---
 title: ユーザーとロールの追加
 seo-title: ユーザーとロールの追加
-description: 'null'
+description: ユーザーと役割、およびAdmin Consoleを使用してプロファイルを作成する方法について説明します。
 seo-description: Admin Console でユーザーを Cloud Manager 製品プロファイルに追加することで、特定のロールメンバーシップを割り当てることができます。この節では、この機能について詳しく見ていきます。
 uuid: fa204c28-83df-48bb-8360-e158f080dee7
 contentOwner: jsyal
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
 translation-type: tm+mt
-source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 100%
+source-wordcount: '686'
+ht-degree: 97%
 
 ---
 
