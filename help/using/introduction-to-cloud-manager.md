@@ -9,15 +9,22 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 213d1b2ee52496cc8cf6bc699488d9da9f7b9946
+source-git-commit: 6ff4b6e950e153c98b6981ec09dfa0648809c693
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 100%
+source-wordcount: '777'
+ht-degree: 95%
 
 ---
 
 
 # [!UICONTROL Cloud Manager の概要]{#introduction-to-cloud-manager}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cloudmanager_introduction"
+>title="Cloud Manager の概要"
+>abstract="組織がクラウド内のExperience Managerを自己管理できるようにします。 このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en#cloud-manager" text="プログラムの作成"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager" text="環境の作成"
 
 ## 概要 {#introduction}
 
