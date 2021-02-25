@@ -4,9 +4,9 @@ seo-title: Cloud Manager FAQ
 description: トラブルシューティングのヒントについては、Cloud Manager FAQを参照してください
 seo-description: Cloud ManagerのFAQに関する回答を得るには、このページに従ってください
 translation-type: tm+mt
-source-git-commit: d901fd27626640e71d367d3f138d7ba2e907fa9a
+source-git-commit: 31627bf11a46b2e6f1d0aa196bc4a9cf9648e775
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '882'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Cloud Manager FAQ {#cloud-manager-faqs}
 
-次の節では、Cloud Managerに関してよくある質問(FAQ)とその回答を示します。
+次の節では、Cloud Managerに関するよくある質問と、その回答を示します。
 
 ## Java 11をCloud Managerビルドと共に使用することは可能ですか？{#java-11-cloud-manager}
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 * [追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started)に記載されているように、maven-toolchains-pluginをJava 11用に正しい設定にして記述します。  例えば、[wkndサンプルプロジェクトコード](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)を参照してください。
 
-* 以下のエラーが発生した場合は、maven-scr-pluginの使用を削除し、すべてのOSGi注釈をOSGi R6注釈に変換する必要があります。 手順については、[ここ](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)を参照してください。
+* 以下のエラーが発生した場合は、`maven-scr-plugin`の使用を削除し、すべてのOSGi注釈をOSGi R6注釈に変換する必要があります。 手順については、[ここ](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)を参照してください。
 
    `[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]`
 
@@ -47,11 +47,11 @@ ht-degree: 2%
 
 ## MavenプロジェクトのバージョンでSNAPSHOTを使用できますか。 パッケージとバンドルjarファイルのバージョン管理は、ステージ展開と実稼働展開でどのように機能しますか？{#snapshot-version}
 
-1. 開発展開の場合、Gitブランチ`pom.xml`ファイルの`<version>`値の末尾に —SNAPSHOTを含める必要があります。 これにより、バージョンが変更されない場合でも、以降のデプロイメントは引き続きインストールされます。 開発環境のデプロイメントでは、Mevenビルドの自動バージョンの追加や生成は行われません。
+1. 開発デプロイの場合、Gitブランチ`pom.xml`ファイルの`<version>`値の末尾に`-SNAPSHOT`を含める必要があります。 これにより、バージョンが変更されない場合でも、以降のデプロイメントは引き続きインストールされます。 開発環境のデプロイメントでは、Mavenビルドの自動バージョンの追加や生成は行われません。
 
 1. ステージおよび実稼働環境でのデプロイメントでは、[ここ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code)に記載されているように、自動バージョンが生成されます。
 
-1. ステージでのカスタムバージョン管理と実稼働でのデプロイの場合は、`1.0.0`のように、3つの部分で適切なMavenバージョンを設定します。 実稼働環境に別のデプロイを実行するたびに、バージョンを増やします。
+1. ステージでのカスタムバージョン管理と実稼働環境でのデプロイの場合は、`1.0.0`のように3つのパートの適切なmavenバージョンを設定します。 実稼働環境に別のデプロイを実行するたびに、バージョンを増やします。
 
 1. Cloud Managerは、自動的にStageビルドとProductionビルドにバージョンを追加し、Gitブランチを作成します。 特別な設定は必要ありません。 上記の手順3をスキップした場合、デプロイメントは引き続き問題なく動作し、バージョンが自動的に設定されます。
 
