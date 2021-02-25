@@ -4,7 +4,7 @@ seo-title: Cloud Manager FAQ
 description: トラブルシューティングのヒントについては、Cloud Manager FAQを参照してください
 seo-description: Cloud ManagerのFAQに関する回答を得るには、このページに従ってください
 translation-type: tm+mt
-source-git-commit: fbf91ad0d200a9f1cbde4e87cf6b78a8479d0614
+source-git-commit: 0db6a6a4e430cd2619db1739fd322224e4e129e7
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 2%
@@ -47,11 +47,11 @@ ht-degree: 2%
 
 ## MavenプロジェクトのバージョンでSNAPSHOTを使用できますか。 パッケージとバンドルjarファイルのバージョン管理は、ステージ展開と実稼働展開でどのように機能しますか？{#snapshot-version}
 
-1. 開発デプロイの場合、Gitブランチ`pom.xml`ファイルの`<version>`値の末尾に`-SNAPSHOT`を含める必要があります。 これにより、バージョンが変更されない場合でも、以降のデプロイメントは引き続きインストールされます。 開発環境のデプロイメントでは、Mavenビルドの自動バージョンの追加や生成は行われません。
+1. 開発者のデプロイメントでは、Gitブランチ`pom.xml`ファイルの`<version>`値の末尾に`-SNAPSHOT`を含める必要があります。 これにより、バージョンが変更されない場合でも、以降のデプロイメントは引き続きインストールされます。 開発者デプロイメントでは、Mavenビルドの自動バージョンは追加または生成されません。
 
 1. ステージおよび実稼働環境でのデプロイメントでは、[ここ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code)に記載されているように、自動バージョンが生成されます。
 
-1. ステージでのカスタムバージョン管理と実稼働環境でのデプロイの場合は、`1.0.0`のように3つのパートの適切なmavenバージョンを設定します。 実稼働環境に別のデプロイを実行するたびに、バージョンを増やします。
+1. ステージおよび実稼働環境でのカスタムバージョン設定の場合は、`1.0.0`のように、適切なmavenバージョンを3つのパーツに設定します。 実稼働環境に別のデプロイを実行するたびに、バージョンを増やします。
 
 1. Cloud Managerは、自動的にStageビルドとProductionビルドにバージョンを追加し、Gitブランチを作成します。 特別な設定は必要ありません。 上記の手順3をスキップした場合、デプロイメントは引き続き問題なく動作し、バージョンが自動的に設定されます。
 
@@ -82,8 +82,8 @@ ht-degree: 2%
 
 `$ aio cloudmanager:list-pipeline-variables 222`
 
-エラー: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
+*エラー*: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
 
 `$ aio cloudmanager:set-pipeline-variables 222 --variable TEST 1`
 
-エラー: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
+*エラー*: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
