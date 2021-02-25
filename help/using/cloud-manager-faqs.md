@@ -4,9 +4,9 @@ seo-title: Cloud Manager FAQ
 description: トラブルシューティングのヒントについては、Cloud Manager FAQを参照してください
 seo-description: Cloud ManagerのFAQに関する回答を得るには、このページに従ってください
 translation-type: tm+mt
-source-git-commit: 31627bf11a46b2e6f1d0aa196bc4a9cf9648e775
+source-git-commit: fbf91ad0d200a9f1cbde4e87cf6b78a8479d0614
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 2%
 * *パフォーマンスステップ*&#x200B;は、Webパフォーマンスステップ、つまり、Webブラウザーを使用してページを読み込む時間です。
 * 結果&#x200B;*CSV*&#x200B;ファイルに示されているURLは、テスト中にCloud ManagerインフラストラクチャのChromeブラウザーに読み込まれます。
 * 失敗する一般的な指標は、*エラー率*&#x200B;です。 URLを渡すには、メインURLが`200`ステータスで`20`秒未満で読み込まれる必要があります。 `20`秒を超えるページ読み込みは`504`エラーとしてマークされます。
-* サイトでユーザー認証が必要な場合は、サイトに対して認証するテストを設定する方法について、[認証済みパフォーマンステスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)を参照してください。
+* サイトでユーザー認証が必要な場合は、[認証済みパフォーマンステスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)で、サイトに対して認証を行うようにテストを設定します。
 
 ## MavenプロジェクトのバージョンでSNAPSHOTを使用できますか。 パッケージとバンドルjarファイルのバージョン管理は、ステージ展開と実稼働展開でどのように機能しますか？{#snapshot-version}
 
