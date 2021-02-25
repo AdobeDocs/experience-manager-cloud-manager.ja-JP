@@ -4,9 +4,9 @@ seo-title: Cloud Manager FAQ
 description: トラブルシューティングのヒントについては、Cloud Manager FAQを参照してください
 seo-description: Cloud ManagerのFAQに関する回答を得るには、このページに従ってください
 translation-type: tm+mt
-source-git-commit: cb63a8bbe30b28668313dc851f17aa34fc166474
+source-git-commit: 1d4f07ba0aa4630585ccbb35f2d48f0c7e1f3df2
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 2%
 
 # Cloud Manager FAQ {#cloud-manager-faqs}
 
-次の節では、Cloud Managerに関してよくある質問に対する回答を示します。
+次の節では、Cloud Managerに関してよくある質問(FAQ)とその回答を示します。
 
 ## 1. Java 11をCloud Managerビルドと共に使用することは可能ですか？{#java-11-cloud-manager}
 
-ビルドをJava 8からJava 11に切り替えようとすると、AEM Cloud Managerのビルドに失敗する。 この問題には多くの原因があり、ほとんどの一般的な原因は以下に記載されています。
+ビルドをJava 8から11に切り替えようとすると、AEM Cloud Managerのビルドに失敗する。 この問題には多くの原因があり、ほとんどの一般的な原因は以下に記載されています。
 
 * [追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started)に記載されているように、maven-toolchains-pluginをJava 11用に正しい設定にして記述します。  例えば、[wkndサンプルプロジェクトコード](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)を参照してください。
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 * *パフォーマンスステップ*&#x200B;は、Webパフォーマンスステップです。つまり、Webブラウザーを使用してページを読み込むタイミングです。
 * 結果のCSVファイルに一覧表示されるURLは、テスト中にCloud ManagerインフラストラクチャのChromeブラウザーに読み込まれます。
 * 失敗する一般的な指標は、*エラー率*&#x200B;です。 URLを渡すには、メインURLが200ステータスで20秒未満で読み込まれる必要があります。 20秒を超えるページ読み込みは504エラーとしてマークされます。
-* サイトでユーザー認証が必要な場合は、このドキュメントを参照して、サイトに対して認証するテストを設定します。
+* サイトでユーザー認証が必要な場合は、サイトに対して認証するテストを設定する方法について、[認証済みパフォーマンステスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)を参照してください。
 
 ## 4. MavenプロジェクトのバージョンでSNAPSHOTを使用できますか？ パッケージとバンドルjarファイルのバージョン管理は、ステージ展開と実稼働展開でどのように機能しますか？{#snapshot-version}
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 
 ## 6. aio cloud managerでパイプライン変数を設定できません。 これらの問題のデバッグ方法{#set-variable}
 
-以下に示すようなコマンドを使用してパイプライン変数をリストまたは設定しようとすると403エラーが発生する場合は、管理コンソールで&#x200B;*Deployment Manager* Cloud Manager製品ロールとして追加する必要があります。\
+以下に示すようなコマンドを使用してパイプライン変数をリストまたは設定しようとすると403エラーが発生する場合は、Admin Consoleに&#x200B;*Deployment Manager* Cloud Manager製品ロールとして追加する必要があります。\
 詳しくは、[API権限](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)を参照してください。
 
 関連するコマンドとエラー：
