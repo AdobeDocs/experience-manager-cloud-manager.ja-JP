@@ -4,9 +4,9 @@ seo-title: Cloud Manager FAQ
 description: トラブルシューティングのヒントについては、Cloud Manager FAQを参照してください
 seo-description: Cloud ManagerのFAQに関する回答を得るには、このページに従ってください
 translation-type: tm+mt
-source-git-commit: da3346852df4e421a69321830d7efee81d58e20c
+source-git-commit: cf5c02c8c594015b6baa00e1a8aaa2d898aa60a9
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '901'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,9 @@ ht-degree: 2%
 * 失敗する一般的な指標は、*エラー率*&#x200B;です。 URLを渡すには、メインURLが`200`ステータスで`20`秒未満で読み込まれる必要があります。 `20`秒を超えるページ読み込みは`504`エラーとしてマークされます。
 * サイトでユーザー認証が必要な場合は、[認証済みパフォーマンステスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)で、サイトに対して認証を行うようにテストを設定します。
 
-## MavenプロジェクトのバージョンでSNAPSHOTを使用できますか。 パッケージとバンドルjarファイルのバージョン管理は、ステージ展開と実稼働展開でどのように機能しますか？{#snapshot-version}
+## MavenプロジェクトのバージョンでSNAPSHOTを使用できますか。 パッケージとバンドルjarファイルのバージョン付けは、ステージおよび実稼働環境ではどのように機能しますか。{#snapshot-version}
+
+ステージおよび実稼働環境での展開用のパッケージおよびバンドルjarファイルのバージョンの設定については、次のシナリオを参照してください。
 
 1. 開発者のデプロイメントでは、Gitブランチ`pom.xml`ファイルの`<version>`値の末尾に`-SNAPSHOT`を含める必要があります。 これにより、バージョンが変更されない場合でも、以降のデプロイメントは引き続きインストールされます。 開発者デプロイメントでは、Mavenビルドの自動バージョンは追加または生成されません。
 
