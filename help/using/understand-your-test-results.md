@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
+source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 99%
+source-wordcount: '1571'
+ht-degree: 97%
 
 ---
 
@@ -47,10 +47,10 @@ ht-degree: 99%
 
 ### コード品質テストの理解 {#understanding-code-quality-testing}
 
-コード品質テストでは、ソースコードが一定の品質基準を満たしていることを確認するためにスキャンされます。現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)と呼ばれます。
+コード品質テストでは、ソースコードが一定の品質基準を満たしていることを確認するためにスキャンされます。現在、これは、SonarQuebe、OakPALを使用したコンテンツパッケージレベルの調査、およびディスパッチャー最適化ツールを使用したディスパッチャー検証の組み合わせによって実装されます。 汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)と呼ばれます。
 
 >[!NOTE]
->[ここ](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx)からルールの完全なリストをダウンロードできます。
+>[ここ](/help/using/assets/CodeQuality-rules-AMS.xlsx)からルールの完全なリストをダウンロードできます。
 
 この手順の結果は、*評価*&#x200B;として提供されます。次の表に、様々なテスト条件の評価の概要を示します。
 
