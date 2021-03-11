@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 7cfa7826f851cb55be72211f8e8a980451846f3b
+source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
 workflow-type: tm+mt
-source-wordcount: '3251'
-ht-degree: 75%
+source-wordcount: '3622'
+ht-degree: 67%
 
 ---
 
@@ -921,6 +921,43 @@ AEMCloud Serviceでは、カスタム検索インデックス定義（タイプ`
 
 AEMCloud Serviceでは、カスタム検索インデックス定義（タイプ`oak:QueryIndexDefinition`のノード）にreindexという名前のプロパティを含めることを禁止しています。 AEMCloud Serviceに移行する前に、このプロパティを使用するインデックス作成を更新する必要があります。 詳しくは、[コンテンツの検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
 
+## ディスパッチャー最適化ツール{#dispatcher-optimization-tool-rules}
 
+次の節では、Cloud Managerが実行するDOTチェックについて説明します。
 
+* [DOT — 解析違反 — ディスパッチャーの設定の予期しないトークン](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unexpected-tokens)
+
+* [DOT — 解析違反 — ディスパッチャー設定の引用符が一致しません](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unmatched-quote)
+
+* [DOT — 解析違反 — ディスパッチャー設定に括弧が足りません](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-brace)
+
+* [DOT — 解析違反 — ディスパッチャー設定の追加括弧](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-extra-brace)
+
+* [DOT — 解析違反 — ディスパッチャーの設定に必須プロパティがありません](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-mandatory-property)
+
+* [DOT — 解析違反 — ディスパッチャー設定の非推奨プロパティ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-deprecated-property)
+
+* [DOT — 解析違反 — ディスパッチャーの設定が見つかりません](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-not-found)
+
+* [DOT — 解析違反 — HTTPD構成インクルードファイルが見つかりません](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---httpd-configuration-include-file-not-found)
+
+* [DOT — 解析違反 — ディスパッチャー設定一般](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
+
+* [DOT — ディスパッチャー発行ファームキャッシュでは、serveStaleOnErrorが有効になっている必要があります](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
+
+* [DOT — ディスパッチャー発行ファームのフィルターには、AEMアーキタイプの6.x.xバージョンのデフォルトの拒否ルールが含まれている必要があります。](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
+
+* [DOT — ディスパッチャー発行ファームキャッシュのstatfilelevelプロパティは>= 2である必要があります](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
+
+* [DOT — ディスパッチャー発行ファームのgracePeriodプロパティは>= 2である必要があります。](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
+
+* [DOT — 各ディスパッチャーファームには、一意の名前が必要です](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
+
+* [DOT — ディスパッチャー発行ファームキャッシュには、ignoreUrlParams規則を許可リスト方法で設定する必要があります](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+
+* [DOT — ディスパッチャー発行ファームのフィルターは、許可されたSlingセレクターを許可リスト方法で指定する必要があります](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+
+* [DOT — ディスパッチャー発行ファームフィルターは、許可されているSlingサフィックスパターンを許可リスト方法で指定する必要があります](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+
+* [DOT - 「すべての許可が必要」ディレクティブは、ルートディレクトリパスを持つVirtualHostディレクトリセクションでは使用できません](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
 
