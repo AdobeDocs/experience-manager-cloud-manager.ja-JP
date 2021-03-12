@@ -4,10 +4,10 @@ seo-title: AEM Cloud Manager リリースノート（2021.3.0）
 description: このページでは、Cloud Manager リリース 2021.3.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2021.3.0 について説明します。
 translation-type: tm+mt
-source-git-commit: e12adf3549af6ecd5e7487ef27f25abc44eaa794
+source-git-commit: 5542942da33efc2926e62cce00ea39e3c65b3e16
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 21%
+source-wordcount: '293'
+ht-degree: 20%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 21%
    * サイトとアセットの両方を含む既存のプログラムからサイト（またはアセット）を削除します。
    * ソリューションの追加（戻す）は、既存のプログラムに対して行うことも、新しいプログラムとして行うこともできます。
 
-* 顧客ディスパッチャーの設定を検証するための新しいコード品質ツールが導入されました（ディスパッチャー最適化ツール）。
+* お客様のディスパッチャー設定を検証するために、新しいコード品質ツール[ディスパッチャー最適化ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=en#dispatcher-optimization-tool-rules)が導入されました。
 
 * 統合シェルのユーザープロファイルアイコン（右上）に移動した後、**表示Cloud Managerの役割**&#x200B;を選択すると、Cloud Managerの役割を表示できるようになりました。
 
@@ -35,7 +35,7 @@ ht-degree: 21%
 
 * **バージョン**&#x200B;ラベルが、実稼動パイプライン実行画面の&#x200B;**Gitタグ**&#x200B;に再ラベル付けされました。
 
-* 重要な指標が定義されたしきい値を満たさない場合の動作を定義するラベルのラベルが、その真の動作（*すぐにキャンセル*、*即座に承認*）を反映するように再ラベル付けされました。
+* 重要な指標が定義されたしきい値を満たさない場合の動作を定義するラベルのラベルが、その真の動作（**すぐにキャンセル**、**直ちに承認**）を反映するように再ラベル付けされました。
 
 * AEMCloud ServiceSDKのバージョン`2021.3.4997.20210303T022849Z-210225`に基づいて、クラスとメソッドの非推奨リストが更新されました。
 
