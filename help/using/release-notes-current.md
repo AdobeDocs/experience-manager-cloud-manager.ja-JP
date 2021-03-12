@@ -4,9 +4,9 @@ seo-title: AEM Cloud Manager リリースノート（2021.3.0）
 description: このページでは、Cloud Manager リリース 2021.3.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2021.3.0 について説明します。
 translation-type: tm+mt
-source-git-commit: 090505e737b8cb224d87f117a9b5e786a4f99851
+source-git-commit: 47424ea0e087f1f69db0aef8ca2122de2352a6e0
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '312'
 ht-degree: 19%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 19%
 
 * **バージョン**&#x200B;ラベルが、実稼動パイプライン実行画面の&#x200B;**Gitタグ**&#x200B;に再ラベル付けされました。
 
-* 重要な指標が定義されたしきい値を満たさない場合の動作を定義するラベルのラベルが、その真の動作（**すぐにキャンセル**、**直ちに承認**）を反映するように再ラベル付けされました。 詳しくは、[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#configuring-the-pipeline-settings-from-cloud-manager)からのパイプライン設定の設定を参照してください。
+* 重要な指標が定義されたしきい値を満たさない場合の動作を定義するラベルのラベルが、その真の動作（**すぐにキャンセル**、**直ちに承認**）を反映するように再ラベル付けされました。 詳細は、[パイプライン設定の構成](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#configuring-the-pipeline-settings-from-cloud-manager)を参照してください。
 
 * AEMCloud ServiceSDKのバージョン`2021.3.4997.20210303T022849Z-210225`に基づいて、クラスとメソッドの非推奨リストが更新されました。
 
