@@ -4,7 +4,7 @@ seo-title: AEM Cloud Manager リリースノート（2021.3.0）
 description: このページでは、Cloud Manager リリース 2021.3.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2021.3.0 について説明します。
 translation-type: tm+mt
-source-git-commit: b0c29ed6712abd556458aea6d49f6382f183cdae
+source-git-commit: e12adf3549af6ecd5e7487ef27f25abc44eaa794
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 21%
@@ -23,7 +23,7 @@ ht-degree: 21%
 
 * 必要な権限を持つユーザーは、プログラムを編集でき、セルフサービスの方法で次の操作を実行できます。
 
-   *ア追加セットを持つ既存のプログラムに対するサイトソリューション（またはその逆）。
+   * アセットを追加持つ既存のプログラム（またはその逆）に対するサイトソリューション
    * サイトとアセットの両方を含む既存のプログラムからサイト（またはアセット）を削除します。
    * ソリューションの追加（戻す）は、既存のプログラムに対して行うことも、新しいプログラムとして行うこともできます。
 
