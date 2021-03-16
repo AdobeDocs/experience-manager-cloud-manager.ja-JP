@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
+source-git-commit: c15421daf81561a2407776d69741006bee3c3d6c
 workflow-type: tm+mt
 source-wordcount: '3622'
 ht-degree: 67%
@@ -783,7 +783,7 @@ AEMクライアントライブラリには、画像やフォントなどの静�
 
 **タイプ**：コードスメル
 
-**深刻度**：軽度
+**重大度**：ブロッカー
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
