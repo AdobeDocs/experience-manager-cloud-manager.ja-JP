@@ -4,10 +4,10 @@ seo-title: AEM Cloud Manager リリースノート（2021.3.0）
 description: このページでは、Cloud Manager リリース 2021.3.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2021.3.0 について説明します。
 translation-type: tm+mt
-source-git-commit: fde8cbd22ff36e0d30409f68e8a0523c814ccf90
+source-git-commit: 8c057ca2d3dfe8c8575300084b7bc83c95556d67
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 18%
+source-wordcount: '261'
+ht-degree: 22%
 
 ---
 
@@ -20,12 +20,6 @@ ht-degree: 18%
 [!UICONTROL Cloud Manager] バージョン 2021.3.0 のリリース日は 2021 年 3 月 11 日です。次回のリリースは2021年4月8日に予定されています。
 
 ## 新機能 {#whats-new}
-
-* 必要な権限を持つユーザーは、プログラムを編集でき、セルフサービスの方法で次の操作を行うことができます。
-
-   * アセットを追加持つ既存のプログラム（またはその逆）に対するサイトソリューション
-   * サイトとアセットの両方を含む既存のプログラムからサイト（またはアセット）を削除します。
-   * ソリューションの追加（戻す）は、既存のプログラムに対して行うことも、新しいプログラムとして行うこともできます。
 
 * お客様のディスパッチャー設定を検証するために、新しいコード品質ツール[ディスパッチャー最適化ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=en#dispatcher-optimization-tool-rules)が導入されました。
 
