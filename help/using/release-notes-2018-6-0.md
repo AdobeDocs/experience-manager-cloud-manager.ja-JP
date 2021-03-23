@@ -1,18 +1,19 @@
 ---
 title: リリースノート（2018.6.0）
 seo-title: AEM Cloud Manager リリースノート（2018.6.0）
-description: このページでは、Cloud Manager リリース 2018.6.0 について説明します。
+description: Cloud Managerリリース2018.6.0の情報を入手するには、このページに従ってください。
 seo-description: このページでは、AEM Cloud Manager リリース 2018.6.0 について説明します。
 uuid: 211b6e1b-10fb-46b0-b591-44d5e44abd77
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 8584f467-3e61-41ea-98e4-f79e68c86469
+feature: リリース情報
 translation-type: tm+mt
-source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 100%
+source-wordcount: '340'
+ht-degree: 97%
 
 ---
 
