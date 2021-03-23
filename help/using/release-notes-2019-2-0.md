@@ -3,10 +3,11 @@ title: リリースノート（2019.2.0）
 seo-title: AEM Cloud Manager リリースノート（2019.2.0）
 description: このページでは、Cloud Manager リリース 2019.2.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2019.2.0 について説明します。
+feature: リリース情報
 translation-type: tm+mt
-source-git-commit: 98395c4413b1b6bfbb3a565388ffa32dc3880dff
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '405'
 ht-degree: 96%
 
 ---
