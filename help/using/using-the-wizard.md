@@ -1,10 +1,11 @@
 ---
 title: ウィザードの使用
 description: このページでは、ウィザードを使用して AEM アプリケーションプロジェクトを作成する方法を説明します
+feature: 開始
 translation-type: tm+mt
-source-git-commit: 7146a41d64365c9de03d32f4fc4c33f9e366c244
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '334'
 ht-degree: 100%
 
 ---
