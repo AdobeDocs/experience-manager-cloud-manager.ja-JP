@@ -3,10 +3,11 @@ title: 環境の監視
 seo-title: 環境の監視
 description: Cloud Managerで環境を監視する方法を説明します。
 seo-description: このページでは、環境内の個々のインスタンスを監視し、各インスタンスの様々な指標を追跡することでおこなわれる Cloud Manager のシステム監視について説明します。
+feature: 環境
 translation-type: tm+mt
-source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '973'
 ht-degree: 99%
 
 ---
