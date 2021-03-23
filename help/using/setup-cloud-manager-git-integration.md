@@ -3,11 +3,12 @@ title: Adobe Cloud Manager と Git の統合
 description: 顧客管理（オンプレミス）の Git リポジトリと Adobe Cloud Manager の設定および統合に関する手順について説明するビデオシリーズです。
 seo-title: Adobe Cloud Manager と Git の統合
 seo-description: 顧客管理（オンプレミス）の Git リポジトリと Adobe Cloud Manager の設定および統合に関する手順について説明するビデオシリーズです。
+feature: Gitリポジトリ
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 100%
+source-wordcount: '405'
+ht-degree: 99%
 
 ---
 
