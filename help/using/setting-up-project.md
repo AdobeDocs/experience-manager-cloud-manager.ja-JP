@@ -1,11 +1,12 @@
 ---
 title: プロジェクトのセットアップ
 description: このページｊでは、プロジェクトの設定方法について説明します
+feature: はじめに、実稼動
 translation-type: tm+mt
-source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 100%
+source-wordcount: '876'
+ht-degree: 99%
 
 ---
 
