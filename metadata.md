@@ -1,29 +1,27 @@
 ---
+solution: Experience Manager
+type: ドキュメント
 cloud: experience-cloud
-solution-title: ラーニングとサポート
-solution-hub-url: https://helpx.adobe.com/jp/support/experience-manager/6-4.html
-solution-image: null
-getting-started-title: 概要
-getting-started-url: https://helpx.adobe.com/jp/experience-manager/get-started.html
-tutorials-title: チュートリアル
-tutorials-url: https://helpx.adobe.com/jp/experience-manager/kt/index/aem-6-4-videos.html
-git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.en
-translation-type: ht
-source-git-commit: 36ca23648c18762e7104b3b0470e99f6178a9294
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-manager.ja-JP
+translation-type: tm+mt
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 100%
 
 ---
 
 
 # 内部使用のメタデータ
 
-metadata.md ファイルには、リポジトリ内にあるユーザーガイドの TOC.md ファイルにパススルーされるリポジトリレベルのメタデータが含まれています。任意のユーザーガイドの metadata.md コンテンツを変更するには、任意の TOC.md ファイル内でそのように処理してください。
+metadata.md ファイルには、リポジトリー内にあるユーザーガイドの TOC.md ファイルにパススルーされるリポジトリーレベルのメタデータが含まれています。任意のユーザーガイドの metadata.md コンテンツを変更するには、任意の TOC.md ファイル内でそのように処理してください。
 
 | メタデータ | 動作 |
 |--- |--- |
 | solution-title | 記事ヘッダーでリンクとして使用されます。 |
 | solution-hub-url | helpx ハブページを開きます。 |
 | solution-icon | ソリューションタイトルの横にソリューションアイコンを表示します。まだ実装されていません。 |
-| getting-started-url | helpx のはじめにページへのリンク |
+| getting-started-url | helpx の「はじめに」のページへのリンク |
 | tutorials-url | ビデオチュートリアル（helpx チュートリアルまたは KT チュートリアル）へのリンク |
 | mini-toc-levels | 右側のレールに表示される見出しレベルの数を決定します。デフォルトは 2 です。 |
-| git-repo | 内部使用のマスターリポジトリの場所を指定します。 |
+| git-repo | 内部使用のマスターリポジトリーの場所を指定します。 |
