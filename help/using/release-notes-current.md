@@ -4,7 +4,7 @@ description: このページでは、Cloud Manager リリース 2021.4.0 につ�
 feature: リリース情報
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 translation-type: tm+mt
-source-git-commit: 0c33fd9f1af4c98564c9fd14a468fc3bf27744ee
+source-git-commit: 1f7f87a4b944d1fadc708958a96a1bda7d41da5d
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 22%
@@ -31,11 +31,11 @@ ht-degree: 22%
 
 * 環境が削除されたときにパイプラインを開始したときのエラーメッセージが明確になりました。
 
-* Eclipseプロジェクトで提供されるOSGiバンドルは、ルールから除外されるようになりました。
+* Eclipseプロジェクトで提供されるOSGiバンドルは、ルール`CQBP-84--dependencies`から除外されるようになりました。
 
 ## バグ修正 {#bug-fixes}
 
-* 実稼働パイプラインのアセットテスト手順で発生する可能性のある、まれな一時的なエラー。
+* まれに、一時的なエラーで、実稼働パイプラインの&#x200B;*アセットテスト*&#x200B;の手順で発生する可能性があります。
 
 * 実稼働パイプラインのロードテストの末尾のスラッシュが原因で404エラーが発生していました。
 
