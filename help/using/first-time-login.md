@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 feature: 開始
+exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+source-git-commit: 9be78d21b455095c1b1bd49cdb267a8aa5624927
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '227'
 ht-degree: 100%
 
 ---
-
 
 # 初回ログイン {#first-time-login}
 
@@ -24,14 +24,6 @@ ht-degree: 100%
 
 >[!NOTE]
 >[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。
-
-## ビデオチュートリアル {#video-tutorial-one}
-
-### Cloud Manager プログラム {#programs-video}
-
-次のビデオでは、Cloud Manager プログラムの概要について説明します。このプログラムは、通常は購入したサービスレベルアグリーメント（SLA）に対応する、ビジネスイニシアチブの論理的なセットをサポートする一連の AEM 環境を表します。
-
->[!VIDEO](https://video.tv.adobe.com/v/26313/)
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
