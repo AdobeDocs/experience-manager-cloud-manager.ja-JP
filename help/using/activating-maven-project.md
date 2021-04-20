@@ -3,7 +3,7 @@ title: Maven プロジェクトバージョンの処理
 seo-title: Maven プロジェクトバージョンの処理
 description: Maven プロジェクトバージョンの処理について説明します。
 seo-description: Maven プロジェクトバージョンの処理の詳細については、このページを参照してください。
-feature: 開始
+feature: Getting Started
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

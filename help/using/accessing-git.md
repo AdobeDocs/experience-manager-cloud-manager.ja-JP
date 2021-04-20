@@ -3,7 +3,7 @@ title: Git へのアクセス
 seo-title: Git へのアクセス
 description: このページでは、Git リポジトリにアクセスして管理する方法について説明します。
 seo-description: Git リポジトリにアクセスして管理する方法については、このページに従ってください。
-feature: Gitリポジトリ
+feature: Git Repositories
 translation-type: tm+mt
 source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt

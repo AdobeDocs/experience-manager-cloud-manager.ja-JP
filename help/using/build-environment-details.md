@@ -1,7 +1,7 @@
 ---
 title: ビルド環境について
 description: このページでは、環境について説明します
-feature: 環境
+feature: Environments
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ title: Cloud Manager FAQ
 seo-title: Cloud Manager FAQ
 description: トラブルシューティングのヒントについては、Cloud Manager FAQを参照してください
 seo-description: Cloud ManagerのFAQに関する回答を得るには、このページに従ってください
-feature: 開始
+feature: Getting Started
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

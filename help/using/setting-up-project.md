@@ -1,7 +1,7 @@
 ---
 title: プロジェクトのセットアップ
 description: このページｊでは、プロジェクトの設定方法について説明します
-feature: はじめに、実稼動
+feature: Getting Started, Production
 translation-type: tm+mt
 source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
