@@ -3,10 +3,10 @@ title: リリースノート（2021.5.0）
 description: このページでは、Cloud Manager リリース 2021.5.0 について説明します。
 feature: リリース情報
 translation-type: tm+mt
-source-git-commit: 3d6f9a760a1e5bafdae6ece5627358524467a0d2
+source-git-commit: 849a2df2f272973740c1dd8580daaa518f2c9ec4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '185'
+ht-degree: 24%
 
 ---
 
@@ -31,8 +31,6 @@ ht-degree: 0%
 * プログラムの編集エクスペリエンスが更新されました。
 
 ## バグ修正 {#bug-fixes}
-
-* 場合によっては、IP許可リストの横に緑色の&#x200B;*アクティブ*&#x200B;ステータスが表示される場合があります。このステータスが表示されない場合もあります。
 
 * パイプライン変数APIは、「削除済み」変数を削除する代わりに、ステータスが「削除済み」の変数のみをマークします。
 
