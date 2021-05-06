@@ -8,15 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-feature: Code Deployment
+feature: コードの導入
+exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+source-git-commit: 9e7c6f7241900432155a1a32abfb440fb3f93172
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 93%
+source-wordcount: '994'
+ht-degree: 92%
 
 ---
-
 
 # コードのデプロイ {#deploy-your-code}
 
@@ -92,6 +92,19 @@ ht-degree: 93%
 
    ![](assets/Production_Deployment2.png)
 
+## タイムアウト{#timeouts}
+
+次の手順は、ユーザーのフィードバックを待ったままにするとタイムアウトします。
+
+| ステップ | タイムアウト |
+|--- |--- |
+| コード品質テスト | 7 日 |
+| セキュリティテスト | 7 日 |
+| パフォーマンステスト | 7 日 |
+| アプリケーションの承認 | 7 日 |
+| 実稼働デプロイメントをスケジュール | 7 日 |
+| CSE サポート | 7 日 |
+
 ## デプロイメントプロセス {#deployment-process}
 
 以下の節では、ステージフェーズおよび実稼動フェーズでの AEM および Dispatcher パッケージのデプロイ方法について説明します。
@@ -149,5 +162,3 @@ AEM サイト訪問者への影響を最小限に抑えるために、実稼動�
 1. AEMパッケージをpublish2にデプロイし、ディスパッチャーパッケージをdispatcher2に並列にデプロイして、ディスパッチャーキャッシュをフラッシュします。
 1. dispatcher2 をロードバランサーに戻します。
 このプロセスは、デプロイメントがトポロジのすべてのパブリッシャーおよび Dispatcher に到達するまで続行されます。
-
-
