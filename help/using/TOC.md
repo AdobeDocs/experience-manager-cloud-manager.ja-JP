@@ -3,16 +3,15 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Adobe Experience Manager Cloud Manager ガイド
-breadcrumb-title: Cloud Manager ガイド
+breadcrumb-title: Cloud Manager ガイド AEM 6.xの場合
 user-guide-description: Adobe Managed Services を使用して、クラウド内の Experience Manager を自己管理する方法について学習します。
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Administrator
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: 5f81fdb86b1dfa6c748bb7784ef00dc062c9f8ef
+source-git-commit: 9cca6fd7d4ef3351fa024bac0f95f5592105dbae
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 97%
+source-wordcount: '270'
+ht-degree: 96%
 
 ---
 
@@ -23,13 +22,13 @@ ht-degree: 97%
 + 概要 {#overview}
    + [主要な概念](key-concepts.md)
    + [カスタマージャーニー](customer-journey.md)
-   + [CI/CD Pipeline](ci-cd-pipeline.md)
+   + [CI／CD パイプライン](ci-cd-pipeline.md)
    + [セキュリティとプライバシー](security-and-privacy.md)
    + [ヘルプリソース](help-resources.md)
    + [Cloud Manager FAQ](cloud-manager-faqs.md)
 + 要件 {#requirements}
    + [アクセス権の付与](access-rights-granted.md)
-   + [ソースコードリポジトリー](source-code-repository.md)
+   + [ソースコードリポジトリ](source-code-repository.md)
    + [ロールに基づく権限](role-based-permissions.md)
    + [ユーザーとロールの追加](setting-up-users-and-roles.md)
    + [プロビジョニング済み環境](environments-provisioned.md)
@@ -43,7 +42,7 @@ ht-degree: 97%
    + [リリースブランチの設定](configure-your-release-branches.md)
    + [Dispatcher 設定の管理](dispatcher-configurations.md)
 + 使用方法 {#how-to-use}
-   + [CI/CD Pipeline の設定](configuring-pipeline.md)
+   + [CI／CD パイプラインの設定](configuring-pipeline.md)
    + [コードのデプロイ](deploying-code.md)
    + [テスト結果の理解](understand-your-test-results.md)
    + [環境の管理](manage-your-environment.md)
@@ -56,7 +55,7 @@ ht-degree: 97%
    + [Maven プロジェクトバージョンの処理](activating-maven-project.md)
    + [Git へのアクセス](accessing-git.md)
    + [Git との統合](setup-cloud-manager-git-integration.md)
-   + [複数のソース Git リポジトリーの操作](/help/using/working-with-multiple-source-git-repos.md)
+   + [複数ソース Git リポジトリーの操作](/help/using/working-with-multiple-source-git-repos.md)
 + 製品アップデートウィザード {#product-update-wizard}
    + [概要](overview-productupdate-wizard.md)
    + [評価](evaluation.md)
