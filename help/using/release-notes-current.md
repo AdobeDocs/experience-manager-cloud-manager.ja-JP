@@ -2,11 +2,10 @@
 title: リリースノート（2021.5.0）
 description: このページでは、Cloud Manager リリース 2021.5.0 について説明します。
 feature: リリース情報
-translation-type: tm+mt
-source-git-commit: 849a2df2f272973740c1dd8580daaa518f2c9ec4
+source-git-commit: b9adcc700edb7ba54a92037e86e86df812c93c83
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 24%
+source-wordcount: '208'
+ht-degree: 21%
 
 ---
 
@@ -37,3 +36,5 @@ ht-degree: 24%
 * コードのにおいタイプの品質の問題が、信頼性の評価に誤って影響していました。
 
 * パイプラインの実行が午前0時から午前1時のUTCの間に開始された場合、Cloud Managerで生成されるアーティファクトのバージョンが、前日に作成されたバージョンより大きいことは保証されませんでした。
+
+* 一部のAdobe Managed Services(AMS)のお客様は、Cloud Manager APIを使用して、Adobe I/Oデベロッパーコンソールで新しいプロジェクトを作成できませんでした。
