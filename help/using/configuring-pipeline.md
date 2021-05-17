@@ -9,17 +9,19 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-feature: CI-CD Pipeline
-translation-type: tm+mt
-source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
+feature: CI-CDパイプライン
+exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
+source-git-commit: 83fcc49c7e3e3742930a7179b27f899bff3c4ae1
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 96%
+source-wordcount: '1292'
+ht-degree: 95%
 
 ---
 
-
 # CI／CD パイプラインの設定 {#configure-your-ci-cd-pipeline}
+
+>[!NOTE]
+>AEMのCloud Manager用のCI/CDパイプラインをCloud Serviceとして設定する方法については、[ここ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja#using-cloud-manager)を参照してください。
 
 以下のページでは、**パイプライン**&#x200B;の設定方法について説明します。パイプラインの動作の仕組みについて詳しくは、[CI／CD パイプラインの概要](ci-cd-pipeline.md)を参照してください。
 
@@ -173,7 +175,6 @@ Dispatcher の無効化を設定するには、次の手順に従います。
 ### Cloud Manager の非実稼動およびコード品質専用パイプライン {#non-prod-video}
 
 CI／CD 非実稼動パイプラインは、コード品質パイプラインとデプロイパイプラインの 2 つのカテゴリに分類されます。コード品質は、Git ブランチのすべてのコードをパイプライン化し、Cloud Manager のコード品質スキャンに対して構築および評価されます。
-
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
