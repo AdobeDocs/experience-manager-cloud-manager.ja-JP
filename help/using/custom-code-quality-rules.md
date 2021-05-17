@@ -8,17 +8,19 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-feature: Code Quality Rules
-translation-type: tm+mt
-source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
+feature: コード品質ルール
+exl-id: 7d118225-5826-434e-8869-01ee186e0754
+source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
-source-wordcount: '3625'
+source-wordcount: '3654'
 ht-degree: 67%
 
 ---
 
-
 # カスタムコード品質ルール {#custom-code-quality-rules}
+
+>[!NOTE]
+>AEMのCloud Managerでのカスタムコード品質ルールをCloud Serviceとして参照する方法については、[ここ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=en#using-cloud-manager)を参照してください。
 
 このページでは、AEM エンジニアリングチームのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて説明します。
 
@@ -961,4 +963,3 @@ AEMCloud Serviceでは、カスタム検索インデックス定義（タイプ`
 * [DOT — ディスパッチャー発行ファームフィルターは、許可されているSlingサフィックスパターンを許可リスト方法で指定する必要があります](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
 * [DOT - 「すべての許可が必要」ディレクティブは、ルートディレクトリパスを持つVirtualHostディレクトリセクションでは使用できません](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
-
