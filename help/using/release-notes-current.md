@@ -2,16 +2,19 @@
 title: リリースノート（2021.5.0）
 description: このページでは、Cloud Manager リリース 2021.5.0 について説明します。
 feature: リリース情報
-source-git-commit: b9adcc700edb7ba54a92037e86e86df812c93c83
+source-git-commit: 83fcc49c7e3e3742930a7179b27f899bff3c4ae1
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 21%
+source-wordcount: '239'
+ht-degree: 18%
 
 ---
 
 # リリースノート（2021.5.0） {#release-notes-for}
 
 以下の節では、[!UICONTROL Cloud Manager] リリース 2021.5.0 の一般リリースノートの概要を説明します。
+
+>[!NOTE]
+>AEMのCloud Managerの最新のリリースノートをCloud Serviceとして表示するには、[現在のリリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access)を参照してください。
 
 ## リリース日 {#release-date}
 
