@@ -8,15 +8,14 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 7d32ba78-4ded-4656-aac2-c3e7cc0518de
-feature: Environments, Provisioning
-translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+feature: 環境、プロビジョニング
+exl-id: eade4255-89b5-4c65-a498-1c6d4e8c73ff
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 99%
 
 ---
-
 
 # プロビジョニング済み環境 {#environments-provisioned}
 
