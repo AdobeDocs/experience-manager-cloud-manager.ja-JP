@@ -8,15 +8,14 @@ contentOwner: jsyal
 topic-tags: release-notes
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+feature: リリース情報
+exl-id: fc0214b4-d138-470a-9b04-191224927f7b
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 98%
 
 ---
-
 
 # リリースノート（2018.7.0） {#release-notes-for}
 
@@ -50,4 +49,3 @@ ht-degree: 98%
 
 * 顧客はコミットトリガーを選択できますが、パイプラインは実際には新しいコミットに基づいて開始されない可能性があります。
 * [!UICONTROL Experience Cloud] の通知サイドバーでは、通知の読み込みに一貫性がない場合があります。ただし、通知は [!UICONTROL Experience Cloud] には表示され、設定に応じて電子メールでも送信されます。
-
