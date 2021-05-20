@@ -3,15 +3,14 @@ title: Adobe Cloud Manager と Git の統合
 description: 顧客管理（オンプレミス）の Git リポジトリと Adobe Cloud Manager の設定および統合に関する手順について説明するビデオシリーズです。
 seo-title: Adobe Cloud Manager と Git の統合
 seo-description: 顧客管理（オンプレミス）の Git リポジトリと Adobe Cloud Manager の設定および統合に関する手順について説明するビデオシリーズです。
-feature: Git Repositories
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+feature: Gitリポジトリ
+exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 99%
 
 ---
-
 
 # Adobe Cloud Manager と Git の統合
 
@@ -24,7 +23,7 @@ Adobe Cloud Manager には、Cloud Manager の CI／CD パイプラインを使�
 このビデオシリーズでは、顧客が管理する Git リポジトリと Cloud Manager の統合に関する使用例をいくつか紹介します。
 
 * [初期同期](#initial-sync)
-* [基本分岐戦略 ](#branching-strategy)
+* [基本分岐戦略](#branching-strategy)
 * [機能ブランチの開発](#feature-development)
 * [実稼動のデプロイメント](#production-deployment)
 * [リリースタグの同期](#sync-tags)
