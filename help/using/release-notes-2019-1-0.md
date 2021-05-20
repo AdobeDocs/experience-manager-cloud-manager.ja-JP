@@ -8,15 +8,14 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+feature: リリース情報
+exl-id: 383ca5a0-4b0b-48e9-aa48-1d1388875329
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 100%
 
 ---
-
 
 # リリースノート（2019.1.0） {#release-notes-for}
 
