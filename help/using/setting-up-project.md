@@ -1,9 +1,8 @@
 ---
 title: プロジェクトのセットアップ
 description: このページｊでは、プロジェクトの設定方法について説明します
-feature: はじめに、実稼働プログラム
+feature: はじめに、実稼動プログラム
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-translation-type: tm+mt
 source-git-commit: cf19c7dfd593810779c03c51e08081954f8fc11e
 workflow-type: tm+mt
 source-wordcount: '877'
