@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-feature: CI-CDパイプライン
+feature: CI/CDパイプライン
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 83fcc49c7e3e3742930a7179b27f899bff3c4ae1
 workflow-type: tm+mt
@@ -21,7 +21,7 @@ ht-degree: 95%
 # CI／CD パイプラインの設定 {#configure-your-ci-cd-pipeline}
 
 >[!NOTE]
->AEMのCloud Manager用のCI/CDパイプラインをCloud Serviceとして設定する方法については、[ここ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja#using-cloud-manager)を参照してください。
+>AEM as aCloud ServiceでCloud Manager用のCI/CDパイプラインを設定する方法については、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja#using-cloud-manager)を参照してください。
 
 以下のページでは、**パイプライン**&#x200B;の設定方法について説明します。パイプラインの動作の仕組みについて詳しくは、[CI／CD パイプラインの概要](ci-cd-pipeline.md)を参照してください。
 
@@ -87,8 +87,8 @@ CI／CD 実稼動パイプラインの設定は、パイプラインを開始す
    これは、より自動化されたプロセスを求めるお客様に役に立ちます。使用できるオプションは以下のとおりです。
 
 * **毎回確認する** - デフォルトの設定。重要なエラーが検出されたときに手動で介入する必要があります。
-* **「直ちにキャンセル** 」(Cancel Immediately) — 選択した場合、重要なエラーが発生するたびにパイプラインがキャンセルされます。このオプションでは、基本的に、各エラーをユーザーが手動で拒否する状況をエミュレートします。
-* **Approve Immediately**  — 選択した場合、重要なエラーが発生すると、パイプラインが自動的に続行します。このオプションでは、基本的に、各エラーをユーザーが手動で承認する状況をエミュレートします。
+* **直ちにキャンセル**  — 重要なエラーが発生すると、常にパイプラインはキャンセルされます。このオプションでは、基本的に、各エラーをユーザーが手動で拒否する状況をエミュレートします。
+* **即時承認**  — 重要なエラーが発生した場合は常に、パイプラインが自動的に続行されます。このオプションでは、基本的に、各エラーをユーザーが手動で承認する状況をエミュレートします。
 
    ここで、実稼動デプロイメントを制御するパラメーターを定義します。次の 3 つのオプションが使用可能です。
 
