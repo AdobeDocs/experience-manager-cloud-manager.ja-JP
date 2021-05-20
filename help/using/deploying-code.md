@@ -1,14 +1,14 @@
 ---
 title: コードのデプロイ
 seo-title: コードのデプロイ
-description: Cloud Managerでの展開プロセスの概要を説明します
-seo-description: パイプライン(リポジトリ、環境、テスト環境)を設定したら、コードを導入する方法を学びます。
+description: Cloud Managerでのデプロイメントプロセスの概要を説明します。
+seo-description: パイプラインの設定後にコードをデプロイする方法（リポジトリ、環境、テスト環境）を説明します
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-feature: コードの導入
+feature: コードのデプロイメント
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
@@ -22,7 +22,7 @@ ht-degree: 91%
 ## Cloud Manager でのコードのデプロイ {#deploying-code-with-cloud-manager}
 
 >[!NOTE]
->AEMでのCloud Manager用のコードのCloud Serviceとしてのデプロイについて詳しくは、[ここ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#using-cloud-manager)を参照してください。
+>AEM as aCloud ServiceでのCloud Manager用のコードのデプロイについては、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#using-cloud-manager)を参照してください。
 
 実稼働パイプライン（リポジトリ、環境、テスト環境）を設定したら、コードをデプロイする準備が整います。
 
@@ -96,7 +96,7 @@ ht-degree: 91%
 
 ## タイムアウト {#timeouts}
 
-次の手順は、ユーザーのフィードバックを待ったままにするとタイムアウトします。
+次の手順は、ユーザーのフィードバックを待ったままにした場合にタイムアウトします。
 
 | ステップ | タイムアウト |
 |--- |--- |
@@ -158,9 +158,9 @@ AEM サイト訪問者への影響を最小限に抑えるために、実稼動�
 
 1. オーサーに AEM パッケージをデプロイします。
 1. dispatcher1 をロードバランサーから分離します。
-1. publish1にAEMパッケージを、dispatcherパッケージをdispatcher1にデプロイし、ディスパッチャーキャッシュを並行してフラッシュします。
+1. AEMパッケージをpublish1にデプロイし、Dispatcherパッケージをdispatcher1に並行してデプロイして、Dispatcherキャッシュをフラッシュします。
 1. dispatcher1 をロードバランサーに戻します。
 1. dispatcher1 がサービスを再開したら、dispatcher2 をロードバランサーから分離します。
-1. AEMパッケージをpublish2にデプロイし、ディスパッチャーパッケージをdispatcher2に並列にデプロイして、ディスパッチャーキャッシュをフラッシュします。
+1. AEMパッケージをpublish2にデプロイし、Dispatcherパッケージをdispatcher2に並行してデプロイして、Dispatcherキャッシュをフラッシュします。
 1. dispatcher2 をロードバランサーに戻します。
 このプロセスは、デプロイメントがトポロジのすべてのパブリッシャーおよび Dispatcher に到達するまで続行されます。
