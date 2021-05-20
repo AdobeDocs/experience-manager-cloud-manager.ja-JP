@@ -3,7 +3,7 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Adobe Experience Manager Cloud Manager ガイド
-breadcrumb-title: Cloud Manager ガイド AEM 6.xの場合
+breadcrumb-title: Cloud Manager ガイド (AEM 6.x用)
 user-guide-description: Adobe Managed Services を使用して、クラウド内の Experience Manager を自己管理する方法について学習します。
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Administrator
@@ -25,7 +25,7 @@ ht-degree: 96%
    + [CI／CD パイプライン](ci-cd-pipeline.md)
    + [セキュリティとプライバシー](security-and-privacy.md)
    + [ヘルプリソース](help-resources.md)
-   + [Cloud Manager FAQ](cloud-manager-faqs.md)
+   + [Cloud Managerに関するFAQ](cloud-manager-faqs.md)
 + 要件 {#requirements}
    + [アクセス権の付与](access-rights-granted.md)
    + [ソースコードリポジトリ](source-code-repository.md)
