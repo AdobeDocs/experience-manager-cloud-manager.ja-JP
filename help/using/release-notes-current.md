@@ -14,7 +14,7 @@ ht-degree: 18%
 以下の節では、[!UICONTROL Cloud Manager] リリース 2021.5.0 の一般リリースノートの概要を説明します。
 
 >[!NOTE]
->AEMのCloud Managerの最新のリリースノートをCloud Serviceとして表示するには、[現在のリリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access)を参照してください。
+>AEM as aCloud Service版のCloud Managerの最新のリリースノートについては、[最新のリリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access)を参照してください。
 
 ## リリース日 {#release-date}
 
@@ -22,22 +22,22 @@ ht-degree: 18%
 
 ## 新機能 {#whats-new}
 
-* PackageOverlaps品質ルールは、同じパッケージが複数回（同じ展開済みパッケージセット内の複数の埋め込み場所など）展開された場合を検出するようになりました。
+* PackageOverlaps品質ルールで、同じパッケージが複数回（同じデプロイ済みパッケージセット内の複数の埋め込み場所など）デプロイされた場合を検出するようになりました。
 
-* Public APIのリポジトリエンドポイントにGit URLが含まれるようになりました。
+* パブリックAPIのリポジトリエンドポイントにGitのURLが含まれるようになりました。
 
-* プログラムの編集ワークフローでは、ユーザーは10進数以外のKPI値の設定のみが許可されます。
+* プログラムを編集ワークフローでは、ユーザーは10進数以外のKPI値のみ設定できます。
 
-* コードをAdobeGitにプッシュ中に発生した断続的なエラーが解決されました。
+* コードをAdobeGitにプッシュ中に発生する断続的なエラーが解決されました。
 
 * プログラムの編集エクスペリエンスが更新されました。
 
 ## バグ修正 {#bug-fixes}
 
-* パイプライン変数APIは、「削除済み」変数を削除する代わりに、ステータスが「削除済み」の変数のみをマークします。
+* パイプライン変数APIは、「削除済み」変数を削除する代わりに、ステータス「削除済み」のみをマークします。
 
-* コードのにおいタイプの品質の問題が、信頼性の評価に誤って影響していました。
+* コードスメルタイプの品質の問題の一部が、信頼性評価に誤って影響していました。
 
-* パイプラインの実行が午前0時から午前1時のUTCの間に開始された場合、Cloud Managerで生成されるアーティファクトのバージョンが、前日に作成されたバージョンより大きいことは保証されませんでした。
+* UTCの午前0時から午前1時の間にパイプラインの実行が開始された場合、Cloud Managerで生成されるアーティファクトのバージョンが前日に作成されたバージョンより大きくなることは保証されていませんでした。
 
-* 一部のAdobe Managed Services(AMS)のお客様は、Cloud Manager APIを使用して、Adobe I/Oデベロッパーコンソールで新しいプロジェクトを作成できませんでした。
+* 一部のAdobe Managed Services(AMS)のお客様は、Cloud Manager APIを使用して、Adobe I/O開発者コンソールで新しいプロジェクトを作成できませんでした。
