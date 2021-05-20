@@ -8,15 +8,14 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+feature: リリース情報
+exl-id: bf611743-ded2-4503-97c8-12b12454c7b7
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 100%
 
 ---
-
 
 # リリースノート（2018.9.0） {#release-notes-for}
 
@@ -47,4 +46,3 @@ ht-degree: 100%
 
 * アプリケーションプロジェクトウィザードを使用して作成したブランチにダッシュを含めることができません。
 * Adobe [!UICONTROL Experience Cloud] の通知サイドバーでは、通知の読み込みに一貫性がない場合があります。ただし、通知は Adobe [!UICONTROL Experience Cloud] には表示され、設定に応じて電子メールでも送信されます。
-
