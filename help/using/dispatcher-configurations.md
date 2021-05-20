@@ -1,7 +1,7 @@
 ---
 title: Dispatcher 設定の管理
 seo-title: Dispatcher 設定の管理
-description: Cloud Managerを使用してディスパッチャー設定ファイルをデプロイする方法を説明します
+description: Cloud Managerを使用したDispatcher設定ファイルのデプロイ方法について説明します。
 seo-description: このページでは、Dispatcher 設定について説明します。
 uuid: 3ecd8ca3-5241-4811-87fd-3284a8012eda
 contentOwner: jsyal
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 feature: Dispatcher
-translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 98%
 
 ---
-
 
 # Dispatcher 設定の管理 {#manage-your-dispatcher-configurations}
 
@@ -305,4 +304,3 @@ Dispatcher **インスタンス**&#x200B;にデプロイすると、Dispatcher �
    ---------                     -------
        69017                     66 files
    ```
-
