@@ -8,15 +8,14 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: f90f0f4c-c1ff-47f6-8d97-ff5018561bf2
-feature: Provisioning
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+feature: プロビジョニング
+exl-id: af551e33-3623-4fcd-8d25-4362d8871411
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 96%
 
 ---
-
 
 # ソースコードリポジトリ {#source-code-repository}
 
@@ -36,5 +35,4 @@ Cloud Manager の **Git リポジトリ**&#x200B;を CI／CD パイプライン�
 
 >[!NOTE]
 >
->共通のGitコマンドを表示するには、[Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)を参照してください。
-
+>よく使用されるGitコマンドについては、[Gitチートシート](https://education.github.com/git-cheat-sheet-education.pdf)を参照してください。
