@@ -8,15 +8,14 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
-feature: Git Repositories
-translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+feature: Gitリポジトリ
+exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 94%
 
 ---
-
 
 # リリースブランチの設定 {#configure-your-release-branches}
 
@@ -84,4 +83,4 @@ To <url>
 
 >[!NOTE]
 >
->共通gitコマンドを表示するには、[Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet)を参照してください。
+>よく使用されるGitコマンドについては、[Gitチートシート](https://github.github.com/training-kit/downloads/github-git-cheat-sheet)を参照してください。
