@@ -3,9 +3,9 @@ title: リリースノート（2020.5.0）
 seo-title: AEM Cloud Manager リリースノート（2020.5.0）
 description: このページでは、Cloud Manager リリース 2020.5.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2020.5.0 について説明します。
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+feature: リリース情報
+exl-id: f8a80419-e480-450a-8768-6d9ab690a425
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 100%
@@ -41,4 +41,3 @@ ht-degree: 100%
 * 概要ページの一部のカードで、エンティティ名が正しく表示されませんでした。
 
 * トポロジの設定によっては、レポートが見つからない指標ではなく、パフォーマンステスト手順でエラーが発生する場合があります。
-
