@@ -8,16 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: b702dfc0-3534-4d90-af19-8559d8baf6a6
-feature: Getting Started
+feature: 開始
 level: Beginner
-translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 99%
+source-wordcount: '349'
+ht-degree: 100%
 
 ---
-
 
 # 主要な概念{#key-concepts}
 
