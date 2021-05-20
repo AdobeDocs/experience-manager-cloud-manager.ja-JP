@@ -8,16 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-feature: Getting Started
+feature: 開始
 level: Beginner
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '779'
 ht-degree: 95%
 
 ---
-
 
 # [!UICONTROL Cloud Manager の概要]{#introduction-to-cloud-manager}
 
@@ -28,7 +27,7 @@ ht-degree: 95%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en#cloud-manager" text="プログラムの作成"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager" text="環境の作成"
 
-## 概要 {#introduction}
+## はじめに {#introduction}
 
 クラウドの Adobe Experience Manager（AEM）に属する [!UICONTROL Cloud Manager]（クラウドの Adobe Experience Manager を使用すると、組織はクラウドで Experience Manager を自己管理できます。このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
 
