@@ -8,15 +8,14 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 6d1e7098-b56e-4172-8373-486f186f3d53
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+feature: リリース情報
+exl-id: 0034bcaf-00d3-410d-b2f6-a2a232888a2b
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 100%
 
 ---
-
 
 # リリースノート（2018.5.0） {#release-notes-for}
 
@@ -46,4 +45,3 @@ ht-degree: 100%
 ## 既知の問題 {#known-issues}
 
 * プログラムリスト画面で **AEM** および&#x200B;**監視**&#x200B;へのリンクを使用すると、現在のブラウザータブが置き換えられ、新しいタブが開きます。
-
