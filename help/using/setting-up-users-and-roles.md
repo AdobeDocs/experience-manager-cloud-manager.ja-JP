@@ -1,22 +1,21 @@
 ---
 title: ユーザーとロールの追加
 seo-title: ユーザーとロールの追加
-description: ユーザーと役割、およびAdmin Consoleを使用してプロファイルを作成する方法について説明します。
+description: ユーザーと役割、およびプロファイルを作成するためのAdmin Consoleの使用方法について説明します
 seo-description: Admin Console でユーザーを Cloud Manager 製品プロファイルに追加することで、特定のロールメンバーシップを割り当てることができます。この節では、この機能について詳しく見ていきます。
 uuid: fa204c28-83df-48bb-8360-e158f080dee7
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
-feature: User Roles
-translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+feature: ユーザーのロール
+exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 97%
 
 ---
-
 
 # ユーザーとロールの追加 {#add-users-and-roles}
 
@@ -99,4 +98,3 @@ Adobe Admin Console でユーザーを [!UICONTROL Cloud Manager] **製品プロ
    ![](assets/image2018-4-9_15-19-26.png)
 
    ![](assets/image2018-4-9_15-16-47.png)
-
