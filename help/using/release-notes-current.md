@@ -2,7 +2,7 @@
 title: リリースノート（2021.5.0）
 description: このページでは、Cloud Manager リリース 2021.5.0 について説明します。
 feature: リリース情報
-source-git-commit: 83fcc49c7e3e3742930a7179b27f899bff3c4ae1
+source-git-commit: 3f17f252d89a1753c9cb121461b048f619d28415
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 18%
@@ -18,7 +18,7 @@ ht-degree: 18%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2021.5.0 のリリース日は 2021 年 5 月 06 日です。次回のリリースは2021年6月3日に予定されています。
+[!UICONTROL Cloud Manager] バージョン 2021.5.0 のリリース日は 2021 年 5 月 06 日です。次回のリリースは2021年6月11日に予定されています。
 
 ## 新機能 {#whats-new}
 
