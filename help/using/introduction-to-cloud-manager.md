@@ -11,10 +11,10 @@ discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 feature: 開始
 level: Beginner
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 81c14382821de6b2d249000a79799747a6d9cb19
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 95%
+source-wordcount: '833'
+ht-degree: 89%
 
 ---
 
@@ -30,6 +30,8 @@ ht-degree: 95%
 ## はじめに {#introduction}
 
 クラウドの Adobe Experience Manager（AEM）に属する [!UICONTROL Cloud Manager]（クラウドの Adobe Experience Manager を使用すると、組織はクラウドで Experience Manager を自己管理できます。このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
+
+このドキュメントサイトでは、Adobe Managed Services(AMS)のお客様が使用できるCloud Managerの機能について特に説明します。 AEM as a Cloud Serviceのお客様向けのCloud Manager機能に関するドキュメントは、[AEM as a Applications as a Application](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=en)を参照してください。
 
 [!UICONTROL Cloud Manager] のセルフサービスのカスタマーポータルを使用すると、**組織**&#x200B;は以下のことを実行および活用できます。
 
