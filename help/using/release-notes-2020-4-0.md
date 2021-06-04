@@ -18,9 +18,9 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2020.4.0 のリリース日は 2020 年 4 月 09 日です。
+[!UICONTROL Cloud Manager] バージョン 2020.4.0 のリリース日は 2020 年 4 月 9 日（PT）です。
 
-## 最新情報 {#whats-new}
+## 新機能 {#whats-new}
 
 * ナビゲーションの Cloud Manager の概要ページを変更し、ユーザーがプログラムを編集または切り替えできるようになりました。
 * ユーザーが Cloud Manager ランディングページのプログラムカードからプログラムを編集できるように変更しました。
