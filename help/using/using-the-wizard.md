@@ -1,7 +1,7 @@
 ---
 title: ウィザードの使用
 description: このページでは、ウィザードを使用して AEM アプリケーションプロジェクトを作成する方法を説明します
-feature: 開始
+feature: はじめに
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
@@ -12,14 +12,14 @@ ht-degree: 100%
 
 # ウィザードの使用 {#using-wizard-to-create-an-aem-application-project}
 
-ユーザーが Cloud Manager にオンボーディングされると、空の Git リポジトリが提供されます。現在の Adobe Managed Services（AMS）ユーザー（または AMS に移行中のオンプレミス AEM ユーザー）は、通常、プロジェクトコードを既に Git（または別のバージョン管理システム）に格納してあり、プロジェクトを Cloud Manager の Git リポジトリにインポートすることになります。ただし、新規ユーザーは既存のプロジェクトを持っていません。
+ユーザーが Cloud Manager にオンボーディングされると、空の Git リポジトリーが提供されます。現在の Adobe Managed Services（AMS）ユーザー（または AMS に移行中のオンプレミス AEM ユーザー）は、通常、プロジェクトコードを既に Git（または別のバージョン管理システム）に格納してあり、プロジェクトを Cloud Manager の Git リポジトリーにインポートすることになります。ただし、新規ユーザーは既存のプロジェクトを持っていません。
 
 新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
 
 
 Cloud Manager で AEM アプリケーションプロジェクトを作成するには、次の手順に従います。
 
-1. Cloud Manager にログインし、基本的なプログラム設定が完了すると、リポジトリが空の場合、**概要**&#x200B;画面に特別なコールトゥアクションカードが表示されます。
+1. Cloud Manager にログインし、基本的なプログラム設定が完了すると、リポジトリーが空の場合、**概要**&#x200B;画面に特別なコールトゥアクションカードが表示されます。
 
    ![](assets/image2018-10-3_14-29-44.png)
 
