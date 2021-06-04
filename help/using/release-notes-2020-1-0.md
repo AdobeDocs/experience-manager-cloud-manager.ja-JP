@@ -18,9 +18,9 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2020.1.0 のリリース日は 2020 年 1 月 16 日です。
+[!UICONTROL Cloud Manager] バージョン 2020.1.0 のリリース日は 2020 年 1 月 16 日（PT）です。
 
-## 最新情報 {#whats-new}
+## 新機能 {#whats-new}
 
 * Git の資格情報は、Cloud Manager UI 内から取得できるようになりました。詳しくは、[Git へのアクセス](/help/using/accessing-git.md)を参照してください。
 * ログイン操作と URL 構造は、アドビ全体の取り組みの一環として変更されました。古いブックマークは新しい URL にリダイレクトされます。
