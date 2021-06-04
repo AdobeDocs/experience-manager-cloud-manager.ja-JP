@@ -12,13 +12,13 @@ ht-degree: 100%
 
 ---
 
-# リリースノート（2020.12.0）{#release-notes-for}
+# リリースノート（2020.12.0） {#release-notes-for}
 
 以下の節では、[!UICONTROL Cloud Manager] リリース 2020.12.0 の一般リリースノートの概要を説明します。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2020.12.0 のリリース日は 2020 年 10 月 12 日です。
+[!UICONTROL Cloud Manager] バージョン 2020.12.0 のリリース日は 2020 年 12 月 10 日（PT）です。
 
 ## バグ修正 {#bug-fixes}
 
