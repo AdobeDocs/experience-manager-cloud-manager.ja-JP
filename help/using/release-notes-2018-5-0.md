@@ -23,9 +23,9 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2018.5.0 のリリース日は 2018 年 7 月 12 日です。
+[!UICONTROL Cloud Manager] バージョン 2018.5.0 のリリース日は 2018 年 7 月 12 日（PT）です。
 
-## 最新情報 {#what-s-new}
+## 新機能 {#what-s-new}
 
 * **CI／CD パイプライン通知** - パイプラインイベントの [!UICONTROL Experience Cloud] 通知が表示されるようになります。詳しくは、[通知](notifications.md)を参照してください。
 
