@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-feature: 開始
+feature: はじめに
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
@@ -19,9 +19,9 @@ ht-degree: 100%
 
 # セキュリティとプライバシー {#security-and-privacy}
 
-[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが用意されています。この節では、AEM Cloud Manager を使用したアセット（コード／アーティファクト）のセキュリティとプライバシーについて説明します。さらに、[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが用意されています。
+[!UICONTROL Cloud Manager] には、適切な権限を持つ役割が事前に設定されています。この節では、AEM Cloud Manager を使用したアセット（コード／アーティファクト）のセキュリティとプライバシーについて説明します。さらに、[!UICONTROL Cloud Manager] には、適切な権限を持つ役割が事前に設定されています。
 
-Admin Console で割り当てることができるロールおよび各ユーザーロールの権限については、[ロールに基づく権限](/help/using/role-based-permissions.md)を参照してください。
+Admin Console で割り当てることができる役割および各ユーザーの役割の権限については、[役割に基づく権限](/help/using/role-based-permissions.md)を参照してください。
 
 
 ## リソースの分離 {#resource-isolation}
@@ -32,10 +32,10 @@ Admin Console で割り当てることができるロールおよび各ユーザ
 
 [!UICONTROL Cloud Manager] では、コードは送信時に暗号化されます。Cod Manager でビルドされるバイナリは送信時および保存時に暗号化されます。
 
-顧客ごとに専用の **Git** リポジトリを取得します。顧客のコードはセキュリティで保護され、他の&#x200B;**組織**&#x200B;とは共有されません。
+顧客ごとに専用の **Git** リポジトリーを取得します。顧客のコードはセキュリティで保護され、他の&#x200B;**組織**&#x200B;とは共有されません。
 
 ## データのプライバシー {#data-privacy}
 
-[!UICONTROL Cloud Manager] は、アドビが規定したプライバシー原則に従っています。デベロッパーは、HTTPS でコードを **Git リポジトリ**&#x200B;に安全にプッシュします。
+[!UICONTROL Cloud Manager] は、アドビが規定したプライバシー原則に従っています。デベロッパーは、HTTPS でコードを **Git リポジトリー**&#x200B;に安全にプッシュします。
 
 [!UICONTROL Cloud Manager] のユーザーインターフェイス（UI）は、アドビが規定した共通のコントロールフレームワークに準拠するサービスに基づいて構築されています。[!UICONTROL Cloud Manager] のユーザーインターフェイスでは、複数のクラウドプロバイダーから提供されるセキュアなサービスを使用しています。
