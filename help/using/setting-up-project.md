@@ -1,12 +1,12 @@
 ---
 title: プロジェクトのセットアップ
-description: このページｊでは、プロジェクトの設定方法について説明します
+description: このページでは、プロジェクトの設定方法について説明します
 feature: はじめに、実稼動プログラム
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 source-git-commit: cf19c7dfd593810779c03c51e08081954f8fc11e
 workflow-type: tm+mt
 source-wordcount: '877'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 99%
 Cloud Manager で正常にビルドおよびデプロイされるために、既存の AEM プロジェクトはいくつかの基本ルールに従う必要があります。
 
 * プロジェクトは Apache Maven を使用してビルドする必要があります。
-* Git リポジトリのルートには *pom.xml* ファイルが必要です。この *pom.xml* ファイルでは、必要な数のサブモジュールを参照できます（それらのサブモジュールでさらに他のサブモジュールなどを参照している場合もあります）。
+* Git リポジトリーのルートには *pom.xml* ファイルが必要です。この *pom.xml* ファイルでは、必要な数のサブモジュールを参照できます（それらのサブモジュールでさらに他のサブモジュールなどを参照している場合もあります）。
 
-* 追加の Maven アーティファクトリポジトリへの参照を *pom.xml* ファイルに追加できます。設定時には、[パスワードで保護されたアーティファクトリポジトリ](#password-protected-maven-repositories)へのアクセスがサポートされます。ただし、ネットワークで保護されたアーティファクトリポジトリへのアクセスはサポートされていません。
+* 追加の Maven アーティファクトリポジトリへの参照を *pom.xml* ファイルに追加できます。設定時には、[パスワードで保護されたアーティファクトリポジトリー](#password-protected-maven-repositories)へのアクセスがサポートされます。ただし、ネットワークで保護されたアーティファクトリポジトリーへのアクセスはサポートされていません。
 * デプロイ可能なコンテンツパッケージは、*target* という名前のディレクトリに含まれているコンテンツパッケージ *zip* ファイルをスキャンすることで検出されます。任意の数のサブモジュールでコンテンツパッケージを作成することもできます。
 
 * デプロイ可能な Dispatcher アーティファクトは、*conf* および *conf.d* というディレクトリを持つ *zip* ファイル（これも *target* という名前のディレクトリに含まれる）をスキャンすることで検出されます
@@ -105,14 +105,14 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
         </profile>
 ```
 
-## パスワードで保護された Maven リポジトリのサポート {#password-protected-maven-repositories}
+## パスワードで保護された Maven リポジトリーのサポート {#password-protected-maven-repositories}
 
 >[!NOTE]
->パスワードで保護された Maven リポジトリのアーティファクトは、慎重に使用する必要があります。これは、現在、このメカニズムを通じてデプロイされるコードは Cloud Manager の品質ゲートを通じて実行されないためです。したがって、まれなケースで、AEM に結び付けられていないコードに対してのみ使用する必要があります。Java ソース、およびプロジェクトのソースコード全体もバイナリとともにデプロイすることをお勧めします。
+>パスワードで保護された Maven リポジトリーのアーティファクトは、慎重に使用する必要があります。これは、現在、このメカニズムを通じてデプロイされるコードは Cloud Manager の品質ゲートを通じて実行されないためです。したがって、まれなケースで、AEM に結び付けられていないコードに対してのみ使用する必要があります。Java ソース、およびプロジェクトのソースコード全体もバイナリとともにデプロイすることをお勧めします。
 
-パスワードで保護された Maven リポジトリを Cloud Manager から使用するには、パスワード（および任意でユーザー名）を秘密の[パイプライン変数](/help/using/build-environment-details.md#pipeline-variables)として指定し、git リポジトリの `.cloudmanager/maven/settings.xml` という名前のファイル内でその秘密を参照します。このファイルは、[Maven Settings File](https://maven.apache.org/settings.html) スキーマに従います。Cloud Manager のビルドプロセス開始時に、このファイル内の `<servers>` 要素が、Cloud Manager が提供するデフォルトの `settings.xml` ファイルに結合されます。`adobe` と `cloud-manager` で始まるサーバー ID は予約済みと見なされるため、カスタムサーバーでは使用しないでください。サーバー ID がこれらのプレフィックスのいずれかに&#x200B;**一致しない**&#x200B;場合、デフォルトの ID `central` は Cloud Manager でミラーリングされません。このファイルを配置すると、サーバー ID は `<repository>` 内や `pom.xml` ファイル内の `<pluginRepository>` 要素から参照されます。一般に、これらの `<repository>` や `<pluginRepository>` 要素は、[Cloud Manager 固有のプロファイル](#activating-maven-profiles-in-cloud-manager)に含まれますが、厳密に必要とは限りません。
+パスワードで保護された Maven リポジトリーを Cloud Manager から使用するには、パスワード（および任意でユーザー名）を秘密の[パイプライン変数](/help/using/build-environment-details.md#pipeline-variables)として指定し、git リポジトリーの `.cloudmanager/maven/settings.xml` という名前のファイル内でその秘密を参照します。このファイルは、[Maven Settings File](https://maven.apache.org/settings.html) スキーマに従います。Cloud Manager のビルドプロセス開始時に、このファイル内の `<servers>` 要素が、Cloud Manager が提供するデフォルトの `settings.xml` ファイルに結合されます。`adobe` と `cloud-manager` で始まるサーバー ID は予約済みと見なされるため、カスタムサーバーでは使用しないでください。サーバー ID がこれらのプレフィックスのいずれかに&#x200B;**一致しない**&#x200B;場合、デフォルトの ID `central` は Cloud Manager でミラーリングされません。このファイルを配置すると、サーバー ID は `<repository>` 内や `pom.xml` ファイル内の `<pluginRepository>` 要素から参照されます。一般に、これらの `<repository>` や `<pluginRepository>` 要素は、[Cloud Manager 固有のプロファイル](#activating-maven-profiles-in-cloud-manager)に含まれますが、厳密に必要とは限りません。
 
-例えば、リポジトリが https://repository.myco.com/maven2 にあり、Cloud Manager が使用するユーザー名が `cloudmanager` で、パスワードが `secretword` だとします。
+例えば、リポジトリーが https://repository.myco.com/maven2 にあり、Cloud Manager が使用するユーザー名が `cloudmanager` で、パスワードが `secretword` だとします。
 
 まず、パスワードをパイプライン上の秘密として設定します。
 
@@ -179,7 +179,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 
 ### ソースのデプロイ {#deploying-sources}
 
-バイナリと共に Java ソースを Maven リポジトリにデプロイすることをお勧めします。
+バイナリと共に Java ソースを Maven リポジトリーにデプロイすることをお勧めします。
 
 プロジェクトで maven-source-plugin を設定します。
 
@@ -200,7 +200,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 
 ### プロジェクトソースのデプロイ {#deploying-project-sources}
 
-バイナリと一緒にプロジェクトソース全体を Maven リポジトリにデプロイすることをお勧めします。これにより、正確なアーティファクトを再構築できます。
+バイナリと一緒にプロジェクトソース全体を Maven リポジトリーにデプロイすることをお勧めします。これにより、正確なアーティファクトを再構築できます。
 
 プロジェクトで maven-assembly-plugin を設定します。
 
@@ -227,7 +227,8 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 
 ## コンテンツパッケージのスキップ {#skipping-content-packages}
 
-Cloud Manager では、ビルドは、任意の数のコンテンツパッケージを作成できます。様々な理由により、コンテンツパッケージを作成してもデプロイしないことが望ましい場合があります。例えば、テストのみに使用するコンテンツパッケージを作成する場合や、ビルドプロセスの別のステップで（つまり、別のパッケージのサブパッケージとして）再パッケージ化される場合に便利です。
+Cloud Manager では、ビルドは、任意の数のコンテンツパッケージを作成できます。
+様々な理由により、コンテンツパッケージを作成してもデプロイしないことが望ましい場合があります。例えば、テストのみに使用するコンテンツパッケージを作成する場合や、ビルドプロセスの別のステップで（つまり、別のパッケージのサブパッケージとして）再パッケージ化される場合に便利です。
 
 これらのシナリオに対応するために、Cloud Manager は、ビルドコンテンツパッケージのプロパティで、***cloudManagerTarget*** という名前のプロパティを探します。このプロパティが none に設定されている場合、パッケージはスキップされ、デプロイされません。このプロパティを設定する仕組みは、ビルドがコンテンツパッケージを作成する方法によって異なります。例えば、以下のように filevault-maven-plugin でプラグインを設定する場合、
 
@@ -263,4 +264,4 @@ content-package-maven-plugin では、同じようになります。
 
 ## ベストプラクティスに基づくコードの開発 {#develop-your-code-based-on-best-practices}
 
-アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/ja-JP/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
+アドビのエンジニアリングチームとコンサルティングチームは、[AEM 開発者向けの包括的なベストプラクティス](https://helpx.adobe.com/jp/experience-manager/6-4/sites/developing/using/best-practices.html)を策定しました。
