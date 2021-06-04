@@ -1,7 +1,7 @@
 ---
 title: リリースノート（2018.7.0）
 seo-title: リリースノート（2018.7.0）
-description: Cloud Managerリリース2018.7.0について説明します。
+description: Cloud Manager リリース 2018.7.0 について学
 seo-description: このページでは、Cloud Manager リリース 2018.7.0 について説明します。
 uuid: d7b49e32-01dc-48ce-b744-e6a806fbdd8a
 contentOwner: jsyal
@@ -13,21 +13,21 @@ exl-id: fc0214b4-d138-470a-9b04-191224927f7b
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # リリースノート（2018.7.0） {#release-notes-for}
 
-次の節では、**&#x200B;自動スケーリング機能を提供する [!UICONTROL Cloud Manager] 2018.7.0 リリースの概要を説明します。
+次の節では&#x200B;*、*&#x200B;自動スケーリング機能を提供する [!UICONTROL Cloud Manager] 2018.7.0 リリースの概要を説明します。
 
 **自動スケーリング**&#x200B;は、実稼動環境での`Dispatcher/Publish`セグメントの水平方向スケールアウトによって有効になり、負荷、ボリューム、アクセスなどの定義済み監視対象指標の増加に対応できます。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2018.7.0 のリリース日は 2018 年 9 月 10 日です。
+[!UICONTROL Cloud Manager] バージョン 2018.7.0 のリリース日は 2018 年 9 月 10 日（PT）です。
 
-## 最新情報 {#what-s-new}
+## 新機能 {#what-s-new}
 
 * **プロビジョニング** - [!UICONTROL Cloud Manager] では、ディスパッチャー／パブリッシュセグメントを対象とする水平方向スケールアウトによって顧客プログラムの実稼動環境を自動スケーリングできるようになりました。UI の新機能は、顧客プログラムで自動スケーリングが有効になっている場合にプログラム設定に表示される「プロビジョニング」セクションです。詳しくは、[プログラムの設定](setting-up-program.md)を参照してください。
 
