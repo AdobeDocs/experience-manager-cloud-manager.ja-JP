@@ -1,7 +1,7 @@
 ---
 title: 環境の管理
 seo-title: 環境の管理
-description: Cloud Manager環境について説明します。
+description: Cloud Manager 環境について学ぶ
 seo-description: このページでは、Cloud Manager での CI／CD パイプラインの設定および実行に使用される実稼動環境および非実稼動環境の一覧を示します。
 uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
 contentOwner: jsyal
@@ -13,14 +13,14 @@ exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # 環境の管理 {#manage-your-environments}
 
 >[!NOTE]
->AEM as aCloud ServiceとしてのCloud Managerの環境の管理については、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#using-cloud-manager)を参照してください。
+>AEM as a Cloud Servic での Cloud Manager の管理については、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#using-cloud-manager)を参照してください。
 
 Cloud Manager の&#x200B;**概要**&#x200B;ページには、管理対象のすべての AEM 環境を一覧表示する&#x200B;**環境**&#x200B;タイルが含まれています。
 
