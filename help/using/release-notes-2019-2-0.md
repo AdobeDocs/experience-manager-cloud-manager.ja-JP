@@ -8,7 +8,7 @@ exl-id: e7198efa-4a73-42e5-bb17-8dea255e056e
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '405'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 96%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2019.2.0 のリリース日は 2019 年 2 月 21 日です。
+[!UICONTROL Cloud Manager] バージョン 2019.2.0 のリリース日は 2019 年 2 月 21 日（PT）です。
 
-## 最新情報 {#whats-new}
+## 新機能 {#whats-new}
 
 * 新しいシステム監視機能が導入されました。詳しくは、[環境の監視](monitor-your-environments.md)を参照してください。
 * ウィザードで生成されたプロジェクトのディスパッチャーモジュールに README ファイルが含まれるようになりました。
 * コードスキャンの問題の順序が改善され、問題の優先順位と一致するようになりました。
 * デプロイメントの失敗時でも、ステージングインスタンスがロードバランサーに常に復元されるようになりました。
-* Admin Console で新しい「API デベロッパー」ロールが利用可能になりました。これを使用すると、Adobe I/O コンソールで統合を作成する権限を特定のユーザーに付与できます。詳しくは、[開発者の管理](https://www.adobe.com/go/aac_api_prod_learn)を参照してください。
+* Admin Console で新しい「API デベロッパー」の役割が利用可能になりました。これを使用すると、Adobe I/O コンソールで統合を作成する権限を特定のユーザーに付与できます。詳細は、[デベロッパーの管理](https://www.adobe.com/go/aac_api_prod_learn_ja)_jpを参照してください。
 * Maven アーキタイプのバージョンがバージョン 16 に更新されました。
 * Maven のバージョンがバージョン 3.6.0 に更新されました。
 
