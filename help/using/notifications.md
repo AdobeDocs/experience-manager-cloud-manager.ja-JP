@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
-feature: 開始
+feature: はじめに
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # 通知 {#notifications}
 
-[!UICONTROL Cloud Manager] では、実稼働パイプラインの開始時および正常終了または失敗時、実稼働デプロイメントの開始時、また **GoLive 承認**&#x200B;ステップおよび&#x200B;**スケジュール済み**&#x200B;ステップに達したときに、ユーザーは通知を受け取ることができます。これらの通知は、Adobe [!UICONTROL Experience Cloud] の通知システムを通じて送信されます。
+[!UICONTROL Cloud Manager] では、実稼動パイプラインの開始時および正常終了または失敗時、実稼動デプロイメントの開始時、また **GoLive 承認**&#x200B;ステップおよび&#x200B;**スケジュール済み**&#x200B;ステップに達したときに、ユーザーは通知を受け取ることができます。これらの通知は、Adobe [!UICONTROL Experience Cloud] の通知システムを通じて送信されます。
 
 >[!NOTE]
 >
