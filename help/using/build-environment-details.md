@@ -6,7 +6,7 @@ exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 0a5556729e64c9e8736d13b357db001dd57bc03a
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -33,18 +33,18 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 
-* Mavenは、settings.xmlファイルを使用してシステムレベルで設定されます。このファイルには、`adobe-public`という名前のプロファイルを使用して、パブリックAdobe **Artifact**リポジトリが自動的に含まれます。
-詳しくは、[AdobeのパブリックMavenリポジトリ](https://repo.adobe.com/)を参照してください。
+* Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、`adobe-public` という名前のプロファイルを使用する、アドビの公開&#x200B;**アーティファクト**リポジトリーが自動的に含まれています。
+詳しくは、[アドビの公開 Maven リポジトリー](https://repo.adobe.com/)を参照してください。
 
 >[!NOTE]
 >Cloud Manager では、`jacoco-maven-plugin` の特定のバージョンは定義されませんが、`0.7.5.201505241946` 異常のバージョンを使用する必要があります。
 
 
 >[!NOTE]
->Cloud Manager APIの使用方法については、次の追加リソースを参照してください。
+>Cloud Manager API の使用方法については、次の追加リソースを参照してください。
 > * [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
->* [API統合の作成](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)
->* [API権限](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)
+>* [API 統合の作成](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)
+>* [API の権限](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)
 
 
 ## Java 11 の使用 {#using-java-11}
@@ -104,7 +104,7 @@ Cloud Manager で、Java 8 と Java 11 の両方を使用したカスタマー�
 
 ### パイプライン変数 {#pipeline-variables}
 
-場合によっては、顧客のビルドプロセスが、特定の設定変数に依存している可能性があります。これらの変数は Git リポジトリに配置するのに適していない場合や、同じブランチを使用するパイプライン実行間で変える必要が出る場合があります。
+場合によっては、顧客のビルドプロセスが、特定の設定変数に依存している可能性があります。これらの変数は Git リポジトリーに配置するのに適していない場合や、同じブランチを使用するパイプライン実行間で変える必要が出る場合があります。
 
 Cloud Manager では、これらの変数を Cloud Manager API または Cloud Manager CLI を介してパイプラインごとに設定できます。変数は、プレーンテキストとして保存することも、保存時に暗号化することもできます。どちらの場合も、変数はビルド環境内で環境変数として使用可能になり、変数は `pom.xml` ファイル内または他のビルドスクリプト内から参照できます。
 
