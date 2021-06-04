@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2020.7.0 のリリース日は 2020 年 7 月 09 日です。
+[!UICONTROL Cloud Manager] バージョン 2020.7.0 のリリース日は 2020 年 7 月 9 日（PT）です。
 
 ## 新機能 {#whats-new}
 
