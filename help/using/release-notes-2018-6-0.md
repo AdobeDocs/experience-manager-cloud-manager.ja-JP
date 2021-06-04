@@ -1,7 +1,7 @@
 ---
 title: リリースノート（2018.6.0）
 seo-title: AEM Cloud Manager リリースノート（2018.6.0）
-description: このページでは、Cloud Managerリリース2018.6.0について説明します。
+description: このページでは、Cloud Manager リリース 2018.6.0 について説明します。
 seo-description: このページでは、AEM Cloud Manager リリース 2018.6.0 について説明します。
 uuid: 211b6e1b-10fb-46b0-b591-44d5e44abd77
 contentOwner: jsyal
@@ -13,7 +13,7 @@ exl-id: 456f7892-c64c-4b3f-b845-15682d034aaa
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '340'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 97%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2018.6.0 のリリース日は 2018 年 8 月 9 日です。
+[!UICONTROL Cloud Manager] バージョン 2018.6.0 のリリース日は 2018 年 8 月 9 日（PT）です。
 
-## 最新情報 {#what-s-new}
+## 新機能 {#what-s-new}
 
 * **CI／CD パイプライン** - CI／CD パイプラインの実行中にステージング環境と実稼動環境の両方で Dispatcher の無効化とキャッシュのフラッシュを設定可能。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。
 
