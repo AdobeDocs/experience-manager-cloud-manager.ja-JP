@@ -18,9 +18,9 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2019.6.0 のリリース日は 2019 年 6 月 20 日です。
+[!UICONTROL Cloud Manager] バージョン 2019.6.0 のリリース日は 2019 年 6 月 20 日（PT）です。
 
-## 最新情報 {#whats-new}
+## 新機能 {#whats-new}
 
 * AEM アップデートを正常に実行できるように支援する新しい製品アップデートウィザード。詳しくは、[製品アップデートウィザード](overview-productupdate-wizard.md)を参照してください。
 * コンテンツ構造を調べるコード品質ルール。詳しくは、[カスタムコード品質ルール](custom-code-quality-rules.md)を参照してください。
