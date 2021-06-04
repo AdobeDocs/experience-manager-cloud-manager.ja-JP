@@ -1,16 +1,16 @@
 ---
 title: 複数のソース Git リポジトリーの操作
 description: 複数のソース Git リポジトリーの操作 - Cloud Manager
-feature: Gitリポジトリ
+feature: Git リポジトリー
 exl-id: 53bf78bb-489a-4a83-8459-c361f532d54a
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '749'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# 複数ソース Git リポジトリーの操作 {#working-with-multiple-source-git-repos}
+# 複数のソース Git リポジトリーの操作 {#working-with-multiple-source-git-repos}
 
 
 ## 顧客が管理する Git リポジトリーの同期 {#syncing-customer-managed-git-repositories}
