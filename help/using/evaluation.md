@@ -7,7 +7,7 @@ uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-feature: 開始
+feature: はじめに
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->パターン検出について詳しくは、[パターン検出を使用したアップグレードの複雑性の評価](https://docs.adobe.com/content/help/ja-JP/experience-manager-64/deploying/upgrading/pattern-detector.translate.html)を参照してください。
+>パターン検出について詳しくは、[パターン検出を使用したアップグレードの複雑性の評価](https://helpx.adobe.com/jp/experience-manager/6-4/sites/deploying/using/pattern-detector.html)を参照してください。
 
 ## エバリュエーターの実行 {#running-evaluator}
 
