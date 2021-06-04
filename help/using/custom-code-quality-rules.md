@@ -13,14 +13,14 @@ exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
 source-wordcount: '3654'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 # カスタムコード品質ルール {#custom-code-quality-rules}
 
 >[!NOTE]
->AEM as aCloud ServiceのCloud Managerのカスタムコード品質ルールについては、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=en#using-cloud-manager)を参照してください。
+>AEM as a Cloud Servic での Cloud Manager 用カスタムコード品質ルールについては、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=ja#using-cloud-manager)を参照してください。
 
 このページでは、AEM エンジニアリングチームのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて説明します。
 
@@ -271,7 +271,7 @@ public void orDoThis(Session session) throws Exception {
 
 **最初の対象バージョン**：バージョン 2018.4.0
 
-[Sling ドキュメント](http://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明されているように、パスによってサーブレットをバインドすることは推奨されません。パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
+[Sling ドキュメント](http://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明されているように、パスによってサーブレットをバインドすることは推奨されません。パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリーにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
 
 #### 準拠していないコード {#non-compliant-code-5}
 
@@ -284,7 +284,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### キャッチされた例外は、ログまたはスローする必要があるが、両方はおこなわない {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### キャッチされた例外は、ログまたはスローする必要があるが、両方は行わない {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 **キー**：CQRules:CQBP-44---CatchAndEitherLogOrThrow
 
@@ -366,7 +366,7 @@ public void doThis() throws Exception {
 
 **深刻度**：軽度
 
-一般的に、INFO ログレベルは重要なアクションを区切るために使用し、デフォルトでは、AEM は INFO レベル以上をログに記録するように設定されています。GET および HEAD メソッドは読み取り専用操作に過ぎず、重要なアクションを構成しません。GET または HEAD 要求に応答して INFO レベルでログに記録すると、大量のログノイズが作成されるので、ログファイル内の有用な情報を特定するのが難しくなります。GET または HEAD 要求処理時のログへの記録は、WARN または ERROR レベル（問題が発生した場合）、または、DEBUG または TRACE レベル（詳細なトラブルシューティング情報が役立つ可能性がある場合）でおこないます。
+一般的に、INFO ログレベルは重要なアクションを区切るために使用し、デフォルトでは、AEM は INFO レベル以上をログに記録するように設定されています。GET および HEAD メソッドは読み取り専用操作に過ぎず、重要なアクションを構成しません。GET または HEAD 要求に応答して INFO レベルでログに記録すると、大量のログノイズが作成されるので、ログファイル内の有用な情報を特定するのが難しくなります。GET または HEAD 要求処理時のログへの記録は、WARN または ERROR レベル（問題が発生した場合）、または、DEBUG または TRACE レベル（詳細なトラブルシューティング情報が役立つ可能性がある場合）で行います。
 
 >[!CAUTION]
 >
@@ -596,7 +596,7 @@ Cloud Manager で実行される OakPAL 関連チェックについて、以下�
 
 >[!NOTE]
 >
->OakPAL は AEM パートナー（2019 年の AEM Rockstar North America の優勝者）により開発されたフレームワークで、スタンドアロンの Oak リポジトリを使用してコンテンツパッケージを検証します。
+>OakPAL は AEM パートナー（2019 年の AEM Rockstar North America の優勝者）により開発されたフレームワークで、スタンドアロンの Oak リポジトリーを使用してコンテンツパッケージを検証します。
 
 ### 顧客パッケージでは /libs 下のノードを作成／変更しない {#oakpal-customer-package}
 
@@ -608,7 +608,7 @@ Cloud Manager で実行される OakPAL 関連チェックについて、以下�
 
 **最初の対象バージョン**：バージョン 2019.6.0
 
-AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み取り専用と見なすことは長年のベストプラクティスとなっています。*/libs* 下のノードやプロパティを変更すると、メジャーアップデートおよびマイナーアップデートの際に重大な問題が発生する可能性があります。*/libs* への変更は、アドビの公式チャネルを通じてのみおこなうことができます。
+AEM コンテンツリポジトリー内の /libs コンテンツツリーを読み取り専用と見なすことは長年のベストプラクティスとなっています。*/libs* 下のノードやプロパティを変更すると、メジャーアップデートおよびマイナーアップデートの際に重大な問題が発生する可能性があります。*/libs* への変更は、アドビの公式チャネルを通じてのみ行うことができます。
 
 ### パッケージには重複する OSGi 設定を含めない {#oakpal-package-osgi}
 
@@ -728,7 +728,7 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 
 **最初の対象バージョン**：バージョン 2020.5.0
 
-Cloud Service のデプロイメントモデルとの互換性を維持するために、個々のコンテンツパッケージには、リポジトリの不変領域のコンテンツ（つまり、`/apps and /libs, although /libs` を顧客コードで変更すると、別の違反を引き起こします）または可変領域（その他すべて）のいずれかを含める必要があります。例えば、`/apps/myco/components/text and /etc/clientlibs/myco` の両方を含むパッケージは Cloud Service と互換性がなく、問題が報告されます。
+Cloud Service のデプロイメントモデルとの互換性を維持するために、個々のコンテンツパッケージには、リポジトリーの不変領域のコンテンツ（つまり、`/apps and /libs, although /libs` を顧客コードで変更すると、別の違反を引き起こします）または可変領域（その他すべて）のいずれかを含める必要があります。例えば、`/apps/myco/components/text and /etc/clientlibs/myco` の両方を含むパッケージは Cloud Service と互換性がなく、問題が報告されます。
 
 詳しくは、[AEM プロジェクト構造](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)を参照してください。
 
@@ -746,9 +746,9 @@ Cloud Service のデプロイメントモデルとの互換性を維持するた
 
 リバースレプリケーションを使用するお客様は、アドビに問い合わせて、代替ソリューションをご利用ください。
 
-### OakPAL — プロキシ対応クライアントライブラリに含まれるリソースは、resources {#oakpal-resources-proxy}という名前のフォルダーに格納する必要があります。
+### OakPAL - プロキシ対応のクライアントライブラリに含まれるリソースは、「resources」という名前のフォルダー内に存在する必要がある {#oakpal-resources-proxy}
 
-**キー**:ClientlibProxyResource
+**キー**：ClientlibProxyResource
 
 **タイプ**：バグ
 
@@ -756,7 +756,7 @@ Cloud Service のデプロイメントモデルとの互換性を維持するた
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMクライアントライブラリには、画像やフォントなどの静的リソースが含まれる場合があります。 [Preprocessors](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors)の使用で説明されているように、プロキシ化されたクライアントライブラリを使用する場合、パブリッシュインスタンスで効果的に参照するには、これらの静的リソースをresourcesという名前の子フォルダーに格納する必要があります。
+AEM クライアントライブラリには、画像やフォントなどの静的なリソースが含まれる場合があります。[プリプロセッサーの使用](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=ja#using-preprocessors)で説明しているように、プロキシ化されたクライアントライブラリを使用する場合、パブリッシュインスタンスで効果的に参照するために、これらの静的リソースを resources という名前の子フォルダーに格納する必要があります。
 
 #### 準拠していないコード {#non-compliant-proxy-enabled}
 
@@ -780,9 +780,9 @@ AEMクライアントライブラリには、画像やフォントなどの静�
         + myimage.jpg
 ```
 
-### OakPAL — 互換性のないCloud Serviceプロセスの使用{#oakpal-usage-cloud-service}
+### OakPAL - Cloud Service と互換性のないワークフロープロセスの使用 {#oakpal-usage-cloud-service}
 
-**キー**:CloudServiceIncompatibleWorkflowProcess
+**キー**：CloudServiceIncompatibleWorkflowProcess
 
 **タイプ**：コードスメル
 
@@ -790,23 +790,11 @@ AEMクライアントライブラリには、画像やフォントなどの静�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMCloud Serviceでのアセット処理のためにアセットマイクロサービスに移行すると、オンプレミスおよびAMSバージョンのAEMで使用されていたいくつかのワークフロープロセスが、サポート対象外または不要になります。 [aem-cloud-migration](https://github.com/adobe/aem-cloud-migration)の移行ツールを使用して、AEMCloud Serviceの移行中にワークフローモデルを更新できます。
+AEM Cloud Service 上でアセット処理をおこなうためにアセットマイクロサービスに移行すると、AEM のオンプレミスバージョンと AMS バージョンで使用されていたワークフロープロセスが、サポートされなくなる、または不要になります。[aem-cloud-migration](https://github.com/adobe/aem-cloud-migration) にある移行ツールを使用して、AEM Cloud Service の移行中にワークフローモデルを更新できます。
 
-### OakPAL — 静的テンプレートの使用は、編集可能なテンプレートを優先する場合は推奨されません{#oakpal-static-template}
+### OakPAL - 静的なテンプレートより編集可能なテンプレートを使用する {#oakpal-static-template}
 
-**キー**:StaticTemplateUsage
-
-**タイプ**：コードスメル
-
-**深刻度**：軽度
-
-**最初の対象バージョン**：バージョン 2021.2.0
-
-静的テンプレートの使用は、AEMプロジェクトでは従来から非常に一般的でしたが、編集可能なテンプレートは、静的テンプレートにはない追加機能を最も柔軟に提供し、サポートするので、強くお勧めします。 詳しくは、[ページテンプレート — 編集可能](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en)を参照してください。 静的テンプレートから編集可能テンプレートへの移行は、[AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/)を使用して、大幅に自動化できます。
-
-### OakPAL — レガシー基盤コンポーネントの使用は推奨されません{#oakpal-usage-legacy}
-
-**キー**:LegacyFoundationComponentUsage
+**キー**：StaticTemplateUsage
 
 **タイプ**：コードスメル
 
@@ -814,23 +802,11 @@ AEMCloud Serviceでのアセット処理のためにアセットマイクロサ�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-WCMコアコンポーネントを優先して、いくつかのAEMリリースでは、従来の基盤コンポーネント（`/libs/foundation`の下のコンポーネント）が非推奨（廃止予定）になりました。 オーバーレイまたは継承によるカスタムコンポーネントの基礎としての従来の基盤コンポーネントの使用は推奨されないので、対応するコアコンポーネントに変換する必要があります。 この変換は、[AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/)で容易におこなえます。
+従来、AEM プロジェクトは静的テンプレートを使用することが一般的でしたが、編集可能なテンプレートは最も柔軟性が高く、静的なテンプレートにはない追加機能をサポートしているため、このテンプレートの使用を強くお勧めします。詳しくは、[ページテンプレート - 編集可能](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=ja)を参照してください。静的なテンプレートから編集可能なテンプレートへの移行は、[AEM 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)を使用して、大幅に自動化できます。
 
-### OakPAL — サポートされている実行モード名と順序のみを使用する{#oakpal-supported-runmodes}
+### OakPAL - 従来の基盤コンポーネントの使用は推奨されない {#oakpal-usage-legacy}
 
-**キー**:SupportedRunmode
-
-**タイプ**：コードスメル
-
-**深刻度**：軽度
-
-**最初の対象バージョン**：バージョン 2021.2.0
-
-AEMCloud Serviceでは、実行モード名に対して厳密な命名ポリシーを適用し、それらの実行モードに対して厳密な順序を適用します。 サポートされている実行モードのリストは[実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes)に記載されており、これからの逸脱は問題と見なされます。
-
-### OakPAL — カスタム検索インデックス定義ノードは、/oak:index {#oakpal-custom-search}の直接の子である必要があります。
-
-**キー**:OakIndexLocation
+**キー**：LegacyFoundationComponentUsage
 
 **タイプ**：コードスメル
 
@@ -838,23 +814,11 @@ AEMCloud Serviceでは、実行モード名に対して厳密な命名ポリシ�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMCloud Serviceでは、カスタム検索インデックス定義（例：oak:QueryIndexDefinitionタイプのノード）が`/oak:index`の直接の子ノードである必要があります。 他の場所のインデックスは、AEMCloud Serviceと互換性を持たせるために移動する必要があります。 検索インデックスについて詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja)を参照してください。
+一部の AEM リリースでは、従来の基盤コンポーネント（`/libs/foundation` 配下のコンポーネントなど）は廃止され、WCM コアコンポーネントに置き換わりました。カスタムコンポーネントの基盤として従来の基盤コンポーネントを使用することは（オーバーレイか継承かに関わらず）お勧めしません。対応するコアコンポーネントに変換する必要があります。この変換は、[AEM 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)で容易におこなうことができます。
 
-### OakPAL — カスタム検索インデックス定義ノードにはcompatVersion 2 {#oakpal-custom-search-compatVersion}が必要
+### OakPAL - サポートされている実行モード名および順序のみを使用する {#oakpal-supported-runmodes}
 
-**キー**:IndexCompatVersion
-
-**タイプ**：コードスメル
-
-**深刻度**：軽度
-
-**最初の対象バージョン**：バージョン 2021.2.0
-
-AEMCloud Serviceでは、カスタム検索インデックス定義（つまり、タイプoak:QueryIndexDefinitionのノード）でcompatVersionプロパティを2に設定する必要があります。 その他の値は、AEMCloud Serviceではサポートされません。 検索インデックスについて詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)を参照してください。
-
-### OakPAL — カスタム検索インデックス定義ノードの子孫ノードは、nt:unstructured {#oakpal-descendent-nodes}型である必要があります。
-
-**キー**:IndexDescendantNodeType
+**キー**：SupportedRunmode
 
 **タイプ**：コードスメル
 
@@ -862,23 +826,11 @@ AEMCloud Serviceでは、カスタム検索インデックス定義（つまり�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-カスタム検索インデックス定義ノードに順序がない子ノードがある場合、問題のトラブルシューティングが困難になる可能性があります。 これを避けるために、`oak:QueryIndexDefinition`ノードの子ノードはすべてnt:unstructured型にすることをお勧めします。
+AEM Cloud Service では、実行モード名には厳密な命名ポリシーと実行モードな厳密な順序が適用されます。サポートされている実行モードのリストは[実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes)で確認でき、これから逸脱した場合は問題と見なされます。
 
-### OakPAL — カスタム検索インデックス定義ノードには、子{#oakpal-custom-search-index}を持つindexRulesという子ノードが必要です。
+### OakPAL - カスタム検索インデックス定義ノードは、/oak:index の直接の子にする {#oakpal-custom-search}
 
-**キー**:IndexRulesNode
-
-**タイプ**：コードスメル
-
-**深刻度**：軽度
-
-**最初の対象バージョン**：バージョン 2021.2.0
-
-適切に定義されたカスタム検索インデックス定義ノードには、indexRulesという名前の子ノードが必要です。このノードには、少なくとも1つの子が必要です。 詳しくは、[Oakドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html)を参照してください。
-
-### OakPAL — カスタム検索インデックス定義ノードは、命名規則{#oakpal-custom-search-definitions}に従う必要があります。
-
-**キー**:IndexName
+**キー**：OakIndexLocation
 
 **タイプ**：コードスメル
 
@@ -886,23 +838,11 @@ AEMCloud Serviceでは、カスタム検索インデックス定義（つまり�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMCloud Serviceでは、カスタム検索インデックス定義（タイプ`oak:QueryIndexDefinition`のノード）を、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)で説明されている特定のパターンに従って名前を付ける必要があります。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが oak:QueryIndexDefinition など）が `/oak:index` の直接の子ノードである必要があります。AEM Cloud Service と互換性を持たせるため、他の場所にあるインデックスは移動する必要があります。検索インデックスの詳細については、[コンテンツ検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja)を参照してください。
 
-### OakPAL — カスタム検索インデックス定義ノードは、インデックスタイプlucene {#oakpal-index-type-lucene}を使用する必要があります。
+### OakPAL - カスタム検索インデックス定義ノードの compatVersion は 2 にする {#oakpal-custom-search-compatVersion}
 
-**キー**:IndexType
-
-**タイプ**：コードスメル
-
-**深刻度**：軽度
-
-**最初の対象バージョン**：バージョン 2021.2.0
-
-AEMCloud Serviceでは、カスタム検索インデックス定義（つまり、タイプoak:QueryIndexDefinitionのノード）に、値が&#x200B;**lucene**&#x200B;に設定されたtypeプロパティが必要です。 従来のインデックスタイプを使用するインデックス作成は、AEM Indexに移行する前に更新する必要があります。Cloud Service 詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
-
-### OakPAL — カスタム検索インデックス定義ノードにシード{#oakpal-property-name-seed}という名前のプロパティを含めない
-
-**キー**:IndexSeedProperty
+**キー**：IndexCompatVersion
 
 **タイプ**：コードスメル
 
@@ -910,11 +850,11 @@ AEMCloud Serviceでは、カスタム検索インデックス定義（つまり�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMCloud Serviceは、カスタム検索インデックス定義（タイプ`oak:QueryIndexDefinition`のノード）がseedという名前のプロパティを含まないように禁止します。 このプロパティを使用するインデックス作成は、AEMCloud Serviceに移行する前に更新する必要があります。 詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが oak:QueryIndexDefinition など）の compatVersion プロパティを 2 に設定する必要があります。その他の値は、AEM Cloud Service ではサポートされていません。検索インデックスの詳細については、[コンテンツ検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)を参照してください。
 
-### OakPAL — カスタム検索インデックス定義ノードにreindex {#oakpal-reindex-property}という名前のプロパティを含めない
+### OakPAL - カスタム検索インデックス定義ノードの子孫ノードのタイプは、nt:unstructured にする {#oakpal-descendent-nodes}
 
-**キー**:IndexReindexProperty
+**キー**：IndexDescendantNodeType
 
 **タイプ**：コードスメル
 
@@ -922,44 +862,104 @@ AEMCloud Serviceは、カスタム検索インデックス定義（タイプ`oak
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMCloud Serviceは、カスタム検索インデックス定義（タイプ`oak:QueryIndexDefinition`のノード）がreindexという名前のプロパティを含まないように禁止します。 このプロパティを使用するインデックス作成は、AEMCloud Serviceに移行する前に更新する必要があります。 詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
+カスタムの検索インデックス定義ノードに、順序が指定されていない子ノードがある場合、問題のトラブルシューティングが難しくなる可能性があります。これを避けるために、`oak:QueryIndexDefinition` ノードのすべての子孫ノードは、タイプを nt:unstructured にすることをお勧めします。
 
-## Dispatcher最適化ツール{#dispatcher-optimization-tool-rules}
+### OakPAL - カスタム検索インデックス定義ノードには、子を持つ indexRules という名前の子ノードを含める {#oakpal-custom-search-index}
 
-以下の節では、Cloud Managerで実行されるDOTチェックについて説明します。
+**キー**：IndexRulesNode
 
-* [DOT — 解析違反 — Dispatcher設定の予期しないトークン](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unexpected-tokens)
+**タイプ**：コードスメル
 
-* [DOT — 解析違反 — Dispatcher設定の一致しない引用](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unmatched-quote)
+**深刻度**：軽度
 
-* [DOT — 解析違反 — Dispatcher設定に括弧が足りない](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-brace)
+**最初の対象バージョン**：バージョン 2021.2.0
 
-* [DOT — 解析違反 — Dispatcher設定の追加括弧](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-extra-brace)
+適切に定義されたカスタム検索インデックス定義ノードには、indexRules という名前の子ノードが含まれている必要があります。このノードには、少なくとも 1 つの子が必要です。詳細については、[Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html)を参照してください。
 
-* [DOT — 解析違反 — Dispatcher設定に必須プロパティが見つからない](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-mandatory-property)
+### OakPAL - カスタム検索インデックス定義ノードは命名規則に従う {#oakpal-custom-search-definitions}
 
-* [DOT — 解析違反 — Dispatcher設定の非推奨プロパティ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-deprecated-property)
+**キー**：IndexName
 
-* [DOT — 解析違反 — Dispatcher設定が見つかりません](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-not-found)
+**タイプ**：コードスメル
 
-* [DOT — 解析違反 — Httpd構成インクルードファイルが見つかりません](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---httpd-configuration-include-file-not-found)
+**深刻度**：軽度
 
-* [DOT — 解析違反 — Dispatcher設定一般](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
+**最初の対象バージョン**：バージョン 2021.2.0
 
-* [DOT - DispatcherパブリッシュファームキャッシュでserveStaleOnErrorを有効にする必要がある](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に、[コンテンツ検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja#how-to-use)に記載されているパターンに従った名前を付ける必要があります。
 
-* [DOT - Dispatcherパブリッシュファームフィルターには、AEMアーキタイプの6.x.xバージョンのデフォルトの拒否ルールを含める必要があります](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
+### OakPAL - カスタム検索インデックス定義ノードはインデックスタイプ lucene を使用する {#oakpal-index-type-lucene}
 
-* [DOT - Dispatcherパブリッシュファームキャッシュのstatfileslevelプロパティは>= 2である必要があります。](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
+**キー**：IndexType
 
-* [DOT - DispatcherパブリッシュファームのgracePeriodプロパティは>= 2である必要があります。](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
+**タイプ**：コードスメル
 
-* [DOT — 各Dispatcherファームは、一意の名前を持つ必要があります](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
+**深刻度**：軽度
 
-* [DOT - Dispatcherパブリッシュファームキャッシュには、ignoreUrlParamsルールを許可リスト方法で設定する必要があります](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+**最初の対象バージョン**：バージョン 2021.2.0
 
-* [DOT - Dispatcherパブリッシュファームフィルターは、許可されているSlingセレクターを許可リスト方法で指定する必要がある](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが oak:QueryIndexDefinition など）に、値が **lucene** に設定された type プロパティが必要です。AEM Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
 
-* [DOT - Dispatcherパブリッシュファームフィルターは、許可されるSlingサフィックスパターンを許可リスト方法で指定する必要がある](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+### OakPAL - カスタム検索インデックス定義ノードに seed という名前のプロパティを含めない {#oakpal-property-name-seed}
 
-* [DOT - 「Require all granted」ディレクティブは、ルートディレクトリパスを持つVirtualHostディレクトリセクションで使用しないでください](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
+**キー**：IndexSeedProperty
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2021.2.0
+
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に seed という名前のプロパティを含めるこが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
+
+### OakPAL - カスタム検索インデックス定義ノードに reindex という名前のプロパティを含めない {#oakpal-reindex-property}
+
+**キー**：IndexReindexProperty
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2021.2.0
+
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に reindex という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
+
+## Dispatcher 最適化ツール {#dispatcher-optimization-tool-rules}
+
+以下の節では、Cloud Manager が実行する DOT チェックについて説明します。
+
+* [DOT - 解析違反 - Dispatcher 設定に予期しないトークンがある](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unexpected-tokens)
+
+* [DOT - 解析違反 - Dispatcher 設定の引用符が一致しない](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unmatched-quote)
+
+* [DOT - 解析違反 - Dispatcher 設定に括弧がない](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-brace)
+
+* [DOT - 解析違反 - Dispatcher 設定に余分な括弧がある](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-extra-brace)
+
+* [DOT - 解析違反 - Dispatcher 設定の必須プロパティが欠落している](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-mandatory-property)
+
+* [DOT - 解析違反 - Dispatcher 設定に非推奨のプロパティがある](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-deprecated-property)
+
+* [DOT - 解析違反 - Dispatcher 設定が見つからない](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-not-found)
+
+* [DOT - 解析違反 - Httpd 構成インクルードファイルが見つからない](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---httpd-configuration-include-file-not-found)
+
+* [DOT - 解析違反 - Dispatcher の一般設定](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
+
+* [DOT - Dispatcher 公開ファームキャッシュでは、serveStaleOnError が有効になっている必要がある](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
+
+* [DOT - Dispatcher 公開ファームのフィルターには、AEM アーキタイプの 6.x.x バージョンのデフォルトの拒否ルールが含まれている必要がある](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
+
+* [DOT - Dispatcher 公開ファームキャッシュの statfilelevel プロパティは 2 以上にする必要がある](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
+
+* [DOT - Dispatcher 公開ファームの gracePeriod プロパティは 2 以上にする必要がある](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
+
+* [DOT - 各 Dispatcher ファームには、一意の名前が必要である](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
+
+* [DOT - Dispatcher 公開ファームキャッシュには、ignoreUrlParams 規則を許可リスト方法で設定する必要がある](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+
+* [DOT - Dispatcher 公開ファームのフィルターは、許可された Sling セレクターを許可リストで指定する必要がある](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+
+* [DOT - Dispatcher 公開ファームフィルターは、許可されている Sling サフィックスパターンを許可リストで指定する必要がある](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+
+* [DOT - 「すべての許可が必要」ディレクティブは、ルートディレクトリパスを持つ VirtualHost ディレクトリセクションでは使用できない](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
