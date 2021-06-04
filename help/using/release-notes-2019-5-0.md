@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2019.5.0 のリリース日は 2019 年 5 月 23 日です。
+[!UICONTROL Cloud Manager] バージョン 2019.5.0 のリリース日は 2019 年 5 月 23 日（PT）です。
 
 
 ## バグ修正 {#bug-fixes}
