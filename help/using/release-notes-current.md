@@ -5,7 +5,7 @@ feature: リリース情報
 source-git-commit: 3f17f252d89a1753c9cb121461b048f619d28415
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 18%
+ht-degree: 97%
 
 ---
 
@@ -14,30 +14,31 @@ ht-degree: 18%
 以下の節では、[!UICONTROL Cloud Manager] リリース 2021.5.0 の一般リリースノートの概要を説明します。
 
 >[!NOTE]
->AEM as aCloud Service版のCloud Managerの最新のリリースノートについては、[最新のリリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access)を参照してください。
+>AEM as a Cloud Service での Cloud Manager の最新のリリースノートについては、[現在のリリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=ja#getting-access)を参照してください。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2021.5.0 のリリース日は 2021 年 5 月 06 日です。次回のリリースは2021年6月11日に予定されています。
+[!UICONTROL Cloud Manager] バージョン 2021.5.0 のリリース日は 2021 年 5 月 6 日（PT）です。
+次回のリリースは2021年6月11日に予定されています。
 
 ## 新機能 {#whats-new}
 
-* PackageOverlaps品質ルールで、同じパッケージが複数回（同じデプロイ済みパッケージセット内の複数の埋め込み場所など）デプロイされた場合を検出するようになりました。
+* PackageOverlaps 品質ルールは、デプロイされたパッケージセットに同じパッケージが複数回（複数の埋め込み場所に）デプロイされた場合に検出するようになりました。
 
-* パブリックAPIのリポジトリエンドポイントにGitのURLが含まれるようになりました。
+* Public API のリポジトリーエンドポイントに、Git URL が含まれるようになりました。
 
-* プログラムを編集ワークフローでは、ユーザーは10進数以外のKPI値のみ設定できます。
+* プログラムの編集ワークフローでは、ユーザーは非 10 進型の KPI 値の設定のみが許可されます。
 
-* コードをAdobeGitにプッシュ中に発生する断続的なエラーが解決されました。
+* コードを Adobe Git にプッシュ中に発生していた断続的なエラーが解決されました。
 
-* プログラムの編集エクスペリエンスが更新されました。
+* プログラムの編集エクスペリエンスが新しくなりました。
 
 ## バグ修正 {#bug-fixes}
 
-* パイプライン変数APIは、「削除済み」変数を削除する代わりに、ステータス「削除済み」のみをマークします。
+* パイプライン変数 API は、「削除済み」変数を削除するのではなく、ステータスを「削除済み」にするだけです。
 
-* コードスメルタイプの品質の問題の一部が、信頼性評価に誤って影響していました。
+* コードの臭いのタイプの品質問題が、誤って信頼性の評価に影響していました。
 
-* UTCの午前0時から午前1時の間にパイプラインの実行が開始された場合、Cloud Managerで生成されるアーティファクトのバージョンが前日に作成されたバージョンより大きくなることは保証されていませんでした。
+* パイプラインの実行が午前 0 時から午前 1 時（UTC）の間に開始された場合、Cloud Manager で生成されるアーティファクトのバージョンが、前日に作成されたバージョンより大きいことが保証されませんでした。
 
-* 一部のAdobe Managed Services(AMS)のお客様は、Cloud Manager APIを使用して、Adobe I/O開発者コンソールで新しいプロジェクトを作成できませんでした。
+* Adobe Managed Services（AMS）の一部のユーザーが、Cloud Manager API を使用して、Adobe I/O デベロッパーコンソールで新しいプロジェクトを作成することができませんでした。
