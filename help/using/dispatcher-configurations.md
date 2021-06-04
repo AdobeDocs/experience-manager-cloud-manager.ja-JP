@@ -1,7 +1,7 @@
 ---
 title: Dispatcher 設定の管理
 seo-title: Dispatcher 設定の管理
-description: Cloud Managerを使用したDispatcher設定ファイルのデプロイ方法について説明します。
+description: Cloud Manager を使用して Dispatcher 設定ファイルをデプロイする方法について説明します
 seo-description: このページでは、Dispatcher 設定について説明します。
 uuid: 3ecd8ca3-5241-4811-87fd-3284a8012eda
 contentOwner: jsyal
@@ -13,7 +13,7 @@ exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '607'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 ## Cloud Manager を使用した Dispatcher 設定ファイルのデプロイ {#using-cloud-manager-to-deploy-dispatcher-configuration-files}
 
-Cloud Manager では、Web サーバーと Dispatcher 設定ファイルが、通常の AEM コンテンツパッケージに加え、**Git リポジトリ**&#x200B;に格納されていると仮定して、それらの設定ファイルをデプロイできます。
+Cloud Manager では、Web サーバーと Dispatcher 設定ファイルが、通常の AEM コンテンツパッケージに加え、**Git リポジトリー**&#x200B;に格納されていると仮定して、それらの設定ファイルをデプロイできます。
 
 この機能を活用するために、Maven ビルドでは、少なくとも 2 つのディレクトリ（***conf*** および ***conf.d***）を含む zip ファイルを作成する必要があります。この zip ファイルは、maven-assembly-plugin を使用して作成できます。組み込みの[ウィザード](/help/using/using-the-wizard.md)を使用して Cloud Manager で生成されたプロジェクトでは、プロジェクト作成の一環として正しい Maven プロジェクト構造が作成されています。これは、新しい Managed Services のお客様に対して推奨されるパスです。
 
@@ -35,13 +35,13 @@ Dispatcher **インスタンス**&#x200B;にデプロイすると、Dispatcher �
 1. ハードコーディングされた環境特有のデータ（例えば、公開レンダラー IP）を削除し、変数に置き換えます。
 1. 各ターゲット Dispatcher に対して必要な変数をキーと値のペアで定義し、CSE に依頼して各インスタンスの `/etc/sysconfig/httpd` に追加します。
 1. ステージ環境で更新された設定をテストし、CSE に依頼して実稼動にデプロイします。
-1. ファイルを **Git リポジトリ**&#x200B;にコミットします。
+1. ファイルを **Git リポジトリー**&#x200B;にコミットします。
 
 1. Cloud Manager を使用してデプロイします。
 
 >[!NOTE]
 >
->Dispatcher と Web サーバーの設定の **Git リポジトリ**&#x200B;への移行は、Cloud Manager のオンボーディング時におこなうことができますが、後でおこなうこともできます。
+>Dispatcher と Web サーバーの設定の **Git リポジトリー**&#x200B;への移行は、Cloud Manager のオンボーディング時におこなうことができますが、後でおこなうこともできます。
 
 ### 例 {#example}
 
