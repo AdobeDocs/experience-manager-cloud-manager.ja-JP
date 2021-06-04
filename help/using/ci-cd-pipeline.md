@@ -1,17 +1,17 @@
 ---
 title: CI／CD パイプライン
 seo-title: CI／CD パイプライン
-description: Cloud Managerでのステージングおよび実稼動環境へのデプロイメントを処理するCI/CDパイプラインの概要
-seo-description: この節では、Cloud Managerでステージングおよび実稼動環境へのデプロイメントを処理するCI/CDパイプラインについて説明します
+description: Cloud Manager でステージングおよび実稼動環境へのデプロイメントを処理する CI／CD パイプラインの概要
+seo-description: この節では、Cloud Manager でステージングおよび実稼動環境へのデプロイメントを処理する CI／CD パイプラインについて説明します
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
-feature: CI/CDパイプライン
+feature: CI／CD パイプライン
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '566'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
