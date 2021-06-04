@@ -18,9 +18,9 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2019.3.0 のリリース日は 2019 年 3 月 21 日です。
+[!UICONTROL Cloud Manager] バージョン 2019.3.0 のリリース日は 2019 年 3 月 21 日（PT）です。
 
-## 最新情報 {#whats-new}
+## 新機能 {#whats-new}
 
 * SLA レポートが Cloud Manager 内で表示されるようになりました。詳しくは、[環境の監視](monitor-your-environments.md)を参照してください。
 * 概要のページとパイプライン実行のページが再構成され、上下のスペースがより有効に利用されるようになりました。
