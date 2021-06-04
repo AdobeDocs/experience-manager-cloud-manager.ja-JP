@@ -1,11 +1,11 @@
 ---
-title: ロールに基づく権限
-description: このページでは、ロールに基づく権限について説明します。
+title: 役割に基づく権限
+description: このページでは、役割に基づく権限について説明します。
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-feature: ユーザーのロール
+feature: ユーザーの役割
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
@@ -14,32 +14,32 @@ ht-degree: 100%
 
 ---
 
-# ロールに基づく権限 {#role-based-permissions}
+# 役割に基づく権限 {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが用意されています。例えば、デベロッパーには、開発したコードを **Git リポジトリ**&#x200B;にプッシュする権限があります。また、ビジネスオーナーには、主要業績評価指標（KPI）を定義しデプロイメントを承認できる様々な権限があります。
+[!UICONTROL Cloud Manager] には、適切な権限を持つ役割が事前に設定されています。例えば、デベロッパーには、開発したコードを **Git リポジトリー**&#x200B;にプッシュする権限があります。また、ビジネスオーナーには、主要業績評価指標（KPI）を定義しデプロイメントを承認できる様々な権限があります。
 
-## ユーザーのロール {#user-roles}
+## ユーザーの役割 {#user-roles}
 
-[!UICONTROL Cloud Manager] のロール管理は、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) 内でおこないます。[!UICONTROL Cloud Manager] のユーザーは、顧客の IMS 組織のメンバーであり、Adobe Managed Services 製品コンテキストを持っている必要があります。特定のロールメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
+[!UICONTROL Cloud Manager] の役割管理は、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) 内でおこないます。[!UICONTROL Cloud Manager] のユーザーは、顧客の IMS 組織のメンバーであり、Adobe Managed Services 製品コンテキストを持っている必要があります。特定の役割のメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
 
-ロールの設定方法について詳しくは、[ユーザーとロールの設定](setting-up-users-and-roles.md)を参照してください。
+役割の設定方法について詳しくは、[ユーザーと役割の設定](setting-up-users-and-roles.md)を参照してください。
 
-Admin Console で割り当てることができるロールの一覧を次の表に示します。
+Admin Console で割り当てることができる役割の一覧を次の表に示します。
 
-| **[!UICONTROL Cloud Manager] のロール** | **説明** |
+| **[!UICONTROL Cloud Manager] の役割** | **説明** |
 |---|---|
 | ビジネスオーナー | [!UICONTROL Cloud Manager] の初期設定を完了するプライマリユーザー。KPI の定義、実稼動デプロイメントの承認、重大な 3 層エラーのオーバーライドを担当します。 |
 | プログラムマネージャー | [!UICONTROL Cloud Manager] を使用して、チームの設定、ステータスのレビュー、KPI の確認をおこないます。重大な 3 層エラーを承認することができます。 |
-| デプロイメントマネージャー | デプロイメント作業を管理します。[!UICONTROL Cloud Manager] を使用して、ステージング環境および実稼動環境へのデプロイメントを実行します。重大な 3 層エラーを承認することができます。Git リポジトリにアクセスできます。 |
-| デベロッパー | カスタムアプリケーションコードを開発およびテストします。主に [!UICONTROL Cloud Manager] を使用してステータスを確認します。Git リポジトリにコミットする権限があります。 |
+| デプロイメントマネージャー | デプロイメント作業を管理します。[!UICONTROL Cloud Manager] を使用して、ステージング環境および実稼動環境へのデプロイメントを実行します。重大な 3 層エラーを承認することができます。Git リポジトリーにアクセスできます。 |
+| デベロッパー | カスタムアプリケーションコードを開発およびテストします。主に [!UICONTROL Cloud Manager] を使用してステータスを確認します。Git リポジトリーにコミットする権限があります。 |
 | カスタマーサクセスエンジニア | AMS のお客様のカスタマーサクセスを全般的にサポートします。カスタマーサクセスエンジニア（CSE）管理が必要なデプロイメントを実行するために、[!UICONTROL Cloud Manager] を操作します。 |
 | コンテンツ作成者 | 通常は、[!UICONTROL Cloud Manager] を操作しません。このユーザーは、（[!UICONTROL Experience Cloud] からナビゲートした）[!UICONTROL Cloud Manager] プログラムスイッチャーを使用して、Adobe Experience Manager（AEM）にアクセスできます。 |
 
 ## ユーザーの権限 {#user-permissions}
 
-各ロールには、特定の権限、事前設定済みのタスクまたは権限が関連付けられています。使用可能な機能とその機能を実行できるロールの一覧を次の表に示します。
+各役割には、特定の権限、事前設定済みのタスクまたは権限が関連付けられています。使用可能な機能とその機能を実行できる役割の一覧を次の表に示します。
 
-ユーザーの設定方法について詳しくは、[ユーザーとロールの設定](setting-up-users-and-roles.md)を参照してください。
+ユーザーの設定方法について詳しくは、[ユーザーと役割の設定](setting-up-users-and-roles.md)を参照してください。
 
 | 権限 | 説明 | ビジネスオーナー | デプロイメントマネージャー | プログラムマネージャー | デベロッパー | CSE |
 |--- |--- |--- |--- |--- |--- |--- |
