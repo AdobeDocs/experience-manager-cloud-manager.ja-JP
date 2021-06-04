@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: bc9a0d63-ae6b-4fe9-81e5-bf9844f04e54
-feature: 開始
+feature: はじめに
 level: Beginner
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
@@ -42,7 +42,7 @@ ht-degree: 100%
 
    AEM 6.4 へのアップグレードの利点について詳しくは、[AEM 6.4 へのアップグレード](https://helpx.adobe.com/jp/experience-manager/6-4/sites/deploying/using/upgrade.html)を参照してください。
 
-## [!UICONTROL Cloud Manager]  へのアクセス{#accessing-cloud-manager}
+## [!UICONTROL Cloud Manager] へのアクセス {#accessing-cloud-manager}
 
 Adobe Identity Management 資格情報を使用して [!UICONTROL Experience Cloud] ランディングページにログインし、ソリューション切り替えインターフェイスから AEM を選択するだけで、[!UICONTROL Cloud Manager] および AEM 環境にアクセスできます。
 
@@ -50,11 +50,11 @@ Adobe Identity Management 資格情報を使用して [!UICONTROL Experience Clo
 
 [!UICONTROL Cloud Manager] を確認して使用を開始するには、[初回ログイン](first-time-login.md)を参照してください。AEM について詳しくは、[AEM 6.4 の概要](https://helpx.adobe.com/ja/experience-manager/6-4/sites/deploying/using/deploy.html)を参照してください。さらに、[AEM の関連資料](https://www.adobe.com/jp/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&amp;mv=other)も参照してください。
 
-## [!UICONTROL Cloud Manager] の概要{#getting-started-with-cloud-manager}
+## [!UICONTROL Cloud Manager] の概要 {#getting-started-with-cloud-manager}
 
-[!UICONTROL Cloud Manager] にログインすると、まずコードリポジトリ環境を設定した後、チームと役割を設定することになります。具体的には、Admin Console UI を使用してユーザーを [!UICONTROL Cloud Manager] プロファイルに追加することで、役割のメンバーシップが割り当てられます。
+[!UICONTROL Cloud Manager] にログインすると、まずコードリポジトリー環境を設定した後、チームと役割を設定することになります。具体的には、Admin Console UI を使用してユーザーを [!UICONTROL Cloud Manager] プロファイルに追加することで、役割のメンバーシップが割り当てられます。
 
-次に、**Git リポジトリ**&#x200B;にソースコードのブランチを設定する必要があります。これにより、ロードおよびパフォーマンス KPI に関して目標を定義し、すべての品質チェックに正常に合格したら、ステージおよび実稼動環境にコードを適切にデプロイするためのテストシナリオを定義します。
+次に、**Git リポジトリー**&#x200B;にソースコードのブランチを設定する必要があります。これにより、ロードおよびパフォーマンス KPI に関して目標を定義し、すべての品質チェックに正常に合格したら、ステージおよび実稼動環境にコードを適切にデプロイするためのテストシナリオを定義します。
 
 ## エンドツーエンドのプロセス {#end-to-end-journey}
 
