@@ -3,7 +3,7 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Adobe Experience Manager Cloud Manager ガイド
-breadcrumb-title: Cloud Manager ガイド (AEM 6.x用)
+breadcrumb-title: Cloud Manager ガイド AEM 6.x の場合
 user-guide-description: Adobe Managed Services を使用して、クラウド内の Experience Manager を自己管理する方法について学習します。
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Administrator
@@ -11,7 +11,7 @@ level: Intermediate
 source-git-commit: 9cca6fd7d4ef3351fa024bac0f95f5592105dbae
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 96%
    + [CI／CD パイプライン](ci-cd-pipeline.md)
    + [セキュリティとプライバシー](security-and-privacy.md)
    + [ヘルプリソース](help-resources.md)
-   + [Cloud Managerに関するFAQ](cloud-manager-faqs.md)
+   + [Cloud Manager に関する FAQ](cloud-manager-faqs.md)
 + 要件 {#requirements}
    + [アクセス権の付与](access-rights-granted.md)
-   + [ソースコードリポジトリ](source-code-repository.md)
-   + [ロールに基づく権限](role-based-permissions.md)
-   + [ユーザーとロールの追加](setting-up-users-and-roles.md)
+   + [ソースコードリポジトリー](source-code-repository.md)
+   + [役割に基づく権限](role-based-permissions.md)
+   + [ユーザーと役割の追加](setting-up-users-and-roles.md)
    + [プロビジョニング済み環境](environments-provisioned.md)
 + はじめに {#getting-started}
    + [初回ログイン](first-time-login.md)
@@ -55,7 +55,7 @@ ht-degree: 96%
    + [Maven プロジェクトバージョンの処理](activating-maven-project.md)
    + [Git へのアクセス](accessing-git.md)
    + [Git との統合](setup-cloud-manager-git-integration.md)
-   + [複数ソース Git リポジトリーの操作](/help/using/working-with-multiple-source-git-repos.md)
+   + [複数のソース Git リポジトリーの操作](/help/using/working-with-multiple-source-git-repos.md)
 + 製品アップデートウィザード {#product-update-wizard}
    + [概要](overview-productupdate-wizard.md)
    + [評価](evaluation.md)
