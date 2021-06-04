@@ -18,9 +18,9 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2020.2.0 のリリース日は 2020 年 2 月 13 日です。
+[!UICONTROL Cloud Manager] バージョン 2020.2.0 のリリース日は 2020 年 2 月 13 日（PT）です。
 
-## 最新情報 {#whats-new}
+## 新機能 {#whats-new}
 
 * Adobe Experience Manager のアーキタイプのバージョンがバージョン 22 に更新されました。
 * ステージデプロイメントログにアクティブなインスタンスを追加しました
