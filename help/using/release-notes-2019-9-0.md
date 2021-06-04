@@ -18,9 +18,9 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2019.9.0 のリリース日は 2019 年 9 月 12 日です。
+[!UICONTROL Cloud Manager] バージョン 2019.9.0 のリリース日は 2019 年 9 月 12 日（PT）です。
 
-## 最新情報 {#whats-new}
+## 新機能 {#whats-new}
 
 * Sling Referrer Filter ヘルスチェックの分類が、Critical から Important に変更されました。
 * HTML Library Manager 設定ヘルスチェックの分類が、Critical から Important に変更されました。
