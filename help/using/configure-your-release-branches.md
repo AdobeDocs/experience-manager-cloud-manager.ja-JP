@@ -8,12 +8,12 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
-feature: Gitリポジトリ
+feature: Git リポジトリー
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 ## Git での最初のブランチの設定 {#setting-up-your-first-branch-in-git}
 
-Cloud Manager でオンボーディングされるプログラムごとに、最初は空の **Git リポジトリ**&#x200B;が 1 つプロビジョニングされます。このリポジトリには、開発プロセスで対象とする数のブランチを格納できますが、アプリケーションコードをステージングおよび実稼動環境にデプロイするために CI／CD パイプラインで使用されるブランチが少なくとも 1 つ必要です。このブランチの名前として`master`を使用することをお勧めします。好都合なことに、これは、新規プロジェクトを設定する際の Git クライアントのデフォルト動作になっています。
+Cloud Manager でオンボーディングされるプログラムごとに、最初は空の **Git リポジトリー**&#x200B;が 1 つプロビジョニングされます。このリポジトリーには、開発プロセスで対象とする数のブランチを格納できますが、アプリケーションコードをステージングおよび実稼動環境にデプロイするために CI／CD パイプラインで使用されるブランチが少なくとも 1 つ必要です。このブランチの名前として`master`を使用することをお勧めします。好都合なことに、これは、新規プロジェクトを設定する際の Git クライアントのデフォルト動作になっています。
 
 例えば、新規プロジェクトを設定する場合、次のような一連のコマンドを実行します。
 
@@ -59,7 +59,7 @@ $ git commit -m "initial commit"
 
 ## 最初のブランチのプッシュ {#pushing-your-first-branch}
 
-少なくとも 1 つのリビジョンをコミットしたら、[!UICONTROL Cloud Manager] リポジトリを&#x200B;**リモート**&#x200B;リポジトリとして追加した後、そこにコミットを次のようにプッシュできます。
+少なくとも 1 つのリビジョンをコミットしたら、[!UICONTROL Cloud Manager] リポジトリーを&#x200B;**リモート**&#x200B;リポジトリーとして追加した後、そこにコミットを次のようにプッシュできます。
 
 ```shell
 $ git remote add adobe <url>
@@ -83,4 +83,4 @@ To <url>
 
 >[!NOTE]
 >
->よく使用されるGitコマンドについては、[Gitチートシート](https://github.github.com/training-kit/downloads/github-git-cheat-sheet)を参照してください。
+>よく使用される Git コマンドについては、[Git チートシート](https://github.github.com/training-kit/downloads/github-git-cheat-sheet)を参照してください。
