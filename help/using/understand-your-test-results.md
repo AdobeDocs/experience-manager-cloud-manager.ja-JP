@@ -1,26 +1,26 @@
 ---
 title: テスト結果の理解
 seo-title: テスト結果の理解
-description: Cloud Managerでパイプラインを実行する際の3層ゲートについて詳しく説明します
+description: Cloud Manager でパイプラインを実行中の 3 層ゲートの詳細
 seo-description: このページでは、パイプライン実行中の 3 層ゲート、Cloud Manager でプログラムを検証するコードスキャンテスト、パフォーマンステストおよびセキュリティテストについて説明します。
 uuid: 93caa01f-0df2-4a6f-81dc-23dfee24dc93
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-feature: CI/CDパイプライン、テスト結果
+feature: CI／CD パイプライン、テスト結果
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
 source-wordcount: '2728'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 # テスト結果の理解 {#understand-your-test-results}
 
 >[!NOTE]
->Cloud ManagerでCloud Servicesパイプライン用にサポートされているテスト結果およびテストについては、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=ja#using-cloud-manager)を参照してください。
+>Cloud Services パイプライン用 Cloud Manager でサポートするテスト結果およびテストについて詳しくは、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=ja#using-cloud-manager)を参照してください。
 
 パイプライン実行中は、多数の指標が取得され、ビジネスオーナーによって定義された主要業績評価指標（KPI）または Adobe Managed Services で設定された標準と比較されます。
 
@@ -37,7 +37,7 @@ ht-degree: 67%
 これらの各ゲートで特定された問題には、3 段階の構造があります。
 
 * **重大** - ゲートで特定される問題のうち、パイプラインの即時失敗につながるもの。
-* **重要** - ゲートで特定される問題のうち、パイプラインの一時停止につながるもの。デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドできます。この場合、パイプラインは続行されます。または、問題を承認できます。この場合、パイプラインはエラーで停止します。重要なエラーの上書きは、[タイムアウト](deploying-code.md#timeouts)の影響を受けます。
+* **重要** - ゲートで特定される問題のうち、パイプラインの一時停止につながるもの。デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドできます。この場合、パイプラインは続行されます。または、問題を承認できます。この場合、パイプラインはエラーで停止します。重要なエラーのオーバーライドは、[タイムアウト](deploying-code.md#timeouts)の影響を受けます。
 * **情報** - ゲートで特定される問題のうち、情報提供だけを目的とするもの。パイプラインの実行には影響しません。
 
 >[!NOTE]
@@ -46,11 +46,11 @@ ht-degree: 67%
 
 ## コード品質テスト {#code-quality-testing}
 
-この手順では、アプリケーションコードの品質を評価します。これは、コード品質のみのパイプラインの中核となる目的で、非実稼働および実稼働のすべてのパイプラインのビルド手順の直後に実行されます。様々なタイプのパイプラインの詳細については、[CI/CD パイプラインの設定](/help/using/configuring-pipeline.md)を参照してください。
+この手順では、アプリケーションコードの品質を評価します。これはコード品質のみのパイプラインの主な目的であり、非実稼動および実稼動のすべてのパイプラインで、ビルド手順の直後に実行されます。様々なタイプのパイプラインの詳細については、[CI/CD パイプラインの設定](/help/using/configuring-pipeline.md)を参照してください。
 
 ### コード品質テストの理解 {#understanding-code-quality-testing}
 
-コード品質テストでは、ソースコードが一定の品質基準を満たしていることを確認するためにスキャンされます。現在、これは、SonarQubeと、OakPALを使用したコンテンツパッケージレベルの調査、およびDispatcher最適化ツールを使用したDispatcher検証の組み合わせによって実装されています。 汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)と呼ばれます。
+コード品質テストでは、ソースコードが一定の品質基準を満たしていることを確認するためにスキャンされます。現在、これは、SonarQube、OakPAL を使用したコンテンツパッケージレベルの調査、および Dispatcher 最適化ツールを使用したディスパッチャー検証の組み合わせによって実装されます。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)と呼ばれます。
 
 >[!NOTE]
 >[ここ](/help/using/assets/CodeQuality-rules-AMS.xlsx)からルールの完全なリストをダウンロードできます。
@@ -62,7 +62,7 @@ ht-degree: 67%
 | セキュリティ評価 | A = 脆弱性なし <br/>B = 軽度の脆弱性が 1 つ以上 <br/>C = 重要な脆弱性が 1 つ以上 <br/>C = の重大な脆弱性が 1 つ以上 <br/>E = 致命的な脆弱性が 1 つ以上 | 重大 | &lt; B |
 | 信頼性評価 | A = バグなし <br/>B = 軽度のバグが 1 つ以上 <br/>C = 重要なバグが 1 つ以上 <br/>D = 重大なバグが 1 つ以上 E = 致命的なバグが 1 つ以上<br/> | 重要 | &lt; C |
 | 保守性評価 | コードスメルに対する未処理の修正コスト：<br/><ul><li>アプリケーションに既に投入された時間の 5％以下であれば、評価は A </li><li>上記時間の 6～10％であれば、評価は B </li><li>上記時間の 11～20％であれば、評価は C </li><li>上記時間の 21～50％であれば、評価は D</li><li>上記時間の 50％を超えれば、評価は E</li></ul> | 重要 | &lt; A |
-| カバレッジ | ユニットテストのラインカバレッジと条件カバレッジを次の式で計算した結果：<br/>`Coverage = (CT + CF + LC)/(2*B + EL)`<br/> CT = ユニットテスト実行中に 1 回以上「真」と評価された条件の数 <br/>CF = ユニットテスト実行中に 1 回以上「偽」と評価された条件の数 <br/>LC = 実行された行の数 = lines_to_cover - uncovered_lines <br/><br/> B = 条件の合計数 <br/>EL = 実効行の合計数（lines_to_cover） | 重要 | &lt; 50％ |
+| カバレッジ | ユニットテストのラインカバレッジと条件カバレッジを次の式で計算した結果：<br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>CT = ユニットテスト実行中に 1 回以上「真」と評価された条件の数 <br/>CF = ユニットテスト実行中に 1 回以上「偽」と評価された条件の数 <br/>LC = 実行された行の数 = lines_to_cover - uncovered_lines <br/><br/> B = 条件の合計数 <br/>EL = 実効行の合計数（lines_to_cover） | 重要 | &lt; 50％ |
 | スキップした単体テスト | スキップした単体テストの数。 | 情報 | > 1 |
 | 未解決の問題 | 問題の全体的なタイプ - 脆弱性、バグ、コードスメル | 情報 | > 0 |
 | 重複行 | 重複しているブロックに含まれている行の数。<br/>コードブロックが重複していると見なされるための条件：<br/><ul><li>**Java 以外のプロジェクトの場合：**</li><li>100 個以上の連続した重複トークンが必要です。</li><li>これらのトークンは、少なくとも次の場所に分散している必要があります。 </li><li>30 行の COBOL コード </li><li>20 行の ABAP コード </li><li>10 行の他言語コード</li><li>**Java プロジェクトの場合：**</li><li> トークンと行の数にかかわらず、10 個以上の連続した重複ステートメントが必要です。</li></ul> <br/>重複を検出する際は、インデントの違いと文字列リテラルの違いは無視されます。 | 情報 | > 1％ |
@@ -115,7 +115,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 [!UICONTROL Cloud Manager] では、デプロイメント後に既存の ***AEM セキュリティヘルスチェック***&#x200B;を実行し、UI を通じてそのステータスを報告します。結果は、環境内のすべての AEM インスタンスから集計されます。
 
-これらのヘルスチェックは、Webコンソールまたは操作ダッシュボードを通じて、いつでも実行できます。
+同じヘルスチェックは、Web コンソールまたはオペレーションダッシュボードを使用して、いつでも実行できます。
 
 いずれかの&#x200B;**インスタンス**&#x200B;が特定のヘルスチェックに対して不合格を報告した場合、**環境**&#x200B;全体がそのヘルスチェックに対して不合格となります。コード品質テストやパフォーマンステストと同様に、これらのヘルスチェックもいくつかのカテゴリにまとめられ、3 層ゲートシステムを使用して報告されます。セキュリティテストの場合にはしきい値がない点だけが異なります。すべてのヘルスチェックでは、単純に合格または不合格のみの結果になります。
 
@@ -123,22 +123,22 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 | **名前** | **ヘルスチェックの実装** | **カテゴリ** |
 |---|---|---|
-| デシリアライゼーションファイアウォール添付 API レディネスが、受け入れ可能な状態である | [デシリアライゼーションファイアウォール添付 API レディネス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | 重大 |
+| デシリアライゼーションファイアウォール添付 API レディネスが、受け入れ可能な状態である | [デシリアライゼーションファイアウォール添付 API レディネス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=ja#security) | 重大 |
 | デシリアライゼーションファイアウォールが機能している | [デシリアライゼーションファイアウォール機能](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | 重大 |
 | デシリアライゼーションファイアウォールが読み込まれている | [デシリアライゼーションファイアウォール読み込み](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | 重大 |
-| AuthorizableNodeName 実装において、認証可能な ID がノード名／パスで公開されていない | [認証可能なノード名生成](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security-checklist.html?lang=en#security) | 重大 |
-| デフォルトのパスワードが変更されている | [デフォルトのログインアカウント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=en#users-and-groups-in-aem) | 重大 |
+| AuthorizableNodeName 実装において、認証可能な ID がノード名／パスで公開されていない | [認証可能なノード名生成](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security-checklist.html?lang=ja#security) | 重大 |
+| デフォルトのパスワードが変更されている | [デフォルトのログインアカウント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ja#users-and-groups-in-aem) | 重大 |
 | Sling のデフォルトの GET サーブレットが DOS 攻撃から保護されている | Sling Get Servlet | 重大 |
 | Sling Java Script Handler が適切に設定されている | Sling Java Script Handler | 重大 |
 | Sling JSP Script Handler が適切に設定されている | Sling JSP Script Handler | 重大 |
 | SSL が正しく設定されている | SSL 設定 | 重大 |
 | 安全でないことが明確なユーザープロファイルポリシーが存在しない | ユーザープロファイルへのデフォルトアクセス | 重大 |
-| Sling Referrer Filter が CSRF 攻撃を防止するように設定されている | [Sling Referrer Filter](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en#security) | 重要 |
+| Sling Referrer Filter が CSRF 攻撃を防止するように設定されている | [Sling Referrer Filter](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=ja#security) | 重要 |
 | Adobe Granite HTML Library Manager が適切に設定されている | CQ HTML Library Manager 設定 | 重要 |
 | CRXDE サポートバンドルが無効である | CRXDE サポート | 重要 |
 | Sling DavEx のバンドルおよびサーブレットが無効である | DavEx ヘルスチェック | 重要 |
 | サンプルコンテンツがインストールされていない | サンプルコンテンツパッケージ | 重要 |
-| WCM Request Filter と WCM Debug Filter が両方とも無効になっている | [WCM フィルター設定](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=en#configuring) | 重要 |
+| WCM Request Filter と WCM Debug Filter が両方とも無効になっている | [WCM フィルター設定](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=ja#configuring) | 重要 |
 | Sling WebDAV のバンドルおよびサーブレットが適切に設定されている | WebDAV ヘルスチェック | 重要 |
 | Web サーバーが、クリックジャッキングを防止するように設定されている | Web サーバー設定 | 重要 |
 | レプリケーションが「管理者」ユーザーを使用していない | レプリケーションとトランスポートユーザー | 情報 |
@@ -147,40 +147,40 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ### AEM Sites {#aem-sites}
 
-Cloud Managerは、AEM Sitesプログラムのパフォーマンステストを実行します。 パフォーマンステストは、実際のユーザーをシミュレートする仮想ユーザー（コンテナ）をスピンアップしてステージ環境のページにアクセスし、トラフィックをシミュレートすることで、約30分間実行されます。 これらのページは、クローラーを使用して見つかります。
+Cloud Manager は、AEM Sites プログラムのパフォーマンステストを実行します。このパフォーマンステストは、実際のユーザーをシミュレーションする仮想ユーザー（コンテナ）を起動してステージング環境にアクセスし、トラフィックをシミュレーションすることで、最大 30 分間実行されます。これらのページは、クローラーを使用して検出されます。
 
 1. **仮想ユーザー**
 
-   Cloud Managerがスパンアップした仮想ユーザーまたはコンテナの数は、[プログラム](setting-up-program.md)の作成または編集中に、ビジネスオーナーロールのユーザーが定義したKPI（応答時間とページビュー/分）によって決まります。 定義したKPIに基づいて、実際のユーザーをシミュレートする最大10個のコンテナがスパンアップされます。 テスト用に選択されたページが分割され、各仮想ページに割り当てられます。
+   Cloud Manager で実行される仮想ユーザーまたはコンテナの数は、[プログラム](setting-up-program.md)の作成または編集中に、ビジネスオーナーの役割でユーザーが定義した KPI（応答時間とページビュー数/分）によって決まります。定義済みの KPI に基づき、実際のユーザーをシミュレートする最大 10 個のコンテナが実行されます。テスト用に選択したページは分割され、各仮想ユーザーまたはコンテナに割り当てられます。
 
-1. **クローラー**
+1. **クローラ**
 
    30 分のテスト期間が開始される前に、Cloud Manager は、カスタマーサクセスエンジニアが設定した 1 つ以上のシード URL セットを使用してステージング環境をクロールします。これらの URL から、各ページの HTML を調べ、幅優先方式でリンクが探索されます。このクロール処理は、最大 5000 ページに制限されています。クローラーからのリクエストのタイムアウトは 10 秒に固定されています。
 
-1. **テスト用のページセット**
+1. **テスト用ページセット**
 
-   ページは3つのページセットで選択されます。 Cloud Managerは、実稼動環境とステージ環境のAEMインスタンスからのアクセスログを使用して、次の3つのバケットを決定します。
+   ページは 3 つのページセットで選択されます。Cloud Manager は、実稼動環境とステージング環境全体で AEM インスタンスのアクセスログを使用して、次の 3 つのバケットを決定します。
 
-   * *人気のあるライブページ*:このオプションは、実際の顧客が最も頻繁にアクセスするページをテストするために選択されます。Cloud Managerはアクセスログを読み取り、ライブ顧客が最もアクセスした上位25のページを特定して、上位`Popular Live Pages`のリストを生成します。 次に、Stageにも存在するこれらの交差が、Stage環境でクロールされます。
+   * *最頻訪問ライブページ*：このオプションは、実際の顧客が最も頻繁にアクセスした訪問ページをテストするときに選択します。Cloud Manager はアクセスログを読み取り、ライブユーザーによるアクセスが最も多かったページの上位 25 個を特定し、上位 `Popular Live Pages` のリストを生成します。これらの積集合はステージング環境内にも存在するため、そこでもクロールされます。
 
-   * *その他のライブページ*:このオプションは、人気のある上位25ページ（人気がないがテストに重要）の外にあるページを確実にテストするために選択されます。人気のあるライブページと同様に、これらはアクセスログから抽出され、ステージにも存在する必要があります。
+   * *その他のライブページ*：このオプションは、最頻訪問ライブページの上位 25 ページに含まれないページのうち、頻度は低くても、テストに重要なページをテストするために選択します。最頻訪問ライブページと同様、ライブページはアクセスログから抽出され、ステージング環境にも存在する必要があります。
 
-   * *新しいページ*:このオプションは、ステージにのみデプロイされ、まだ実稼動環境にはデプロイされていないが、テストする必要がある新しいページをテストする場合に選択します。
+   * *新規ページ*：このオプションは、ステージング環境にのみデプロイ済みで、まだ実稼動環境にはデプロイされていないが、テストが必要な新しいページをテストする場合に選択します。
 
-      **選択したページセット間のトラフィックの配分**
+      **選択したページセットをまたいだトラフィックの配分**
 
-      パイプライン設定の「テスト」タブで、1セットから3セットまでの任意のセットを選択できます（リンクを挿入）。 トラフィックの配分は、選択したセットの数によって決まります。つまり、3 つのセットがすべて選択されている場合、合計ページビューの 33% が各セットに送られます。2 つのセットが選択されている場合は、各セットに 50% ずつ送られます。1 つのセットが選択された場合は、トラフィックの 100% がそのセットに送られます。
+      パイプライン設定（挿入リンク）の「テスト」タブで、1 セットから全 3 セットまでのいずれかを選択できます。トラフィックの配分は、選択したセットの数によって決まります。つまり、全 3 セットが選択されている場合、合計ページビューの 33%が各セットに送られます。2 つのセットが選択されている場合は、各セットに 50%ずつ送られます。1 つのセットが選択された場合は、トラフィックの 100%がそのセットに送られます。
 
-      例えば、「頻度の高いライブページ」と「新規ページ」セットで50～50%の分割（この例では、「その他のライブページ」は使用されていません）があり、「新規ページ」セットには3,000ページが含まれるとします。 「1 分あたりのページビュー数」KPI は 200 に設定されます。30 分間のテストの結果は次のようになります。
+      例えば、「最頻訪問ライブページ」と「新規ページ」セットで 50%ずつ配分し（この例では、「その他のライブページ」は使用されていません）、「新規ページ」セットには 3,000 ページが含まれるとします。「1 分あたりのページビュー数」KPI は 200 に設定されます。30 分間のテストの結果は次のようになります。
 
       * 「頻度の高いライブページ」セットの 25 ページが各 120 回ヒットします - ((200 * 0.5) / 25) * 30 = 120
 
       * 「新規ページ」セットの 3000 ページが各 1 回ヒットします - ((200 * 0.5) / 3000) * 30 = 1
 
-#### テストとレポート{#testing-reporting}
+#### テストとレポート {#testing-reporting}
 
-Cloud Managerは、ステージパブリッシュサーバー上の（デフォルトでは未認証ユーザーとして）ページに30分のテスト期間を要求し、（仮想的な）ユーザー生成指標（応答時間、エラー率、1分あたりの表示数など）を測定することで、AEM Sitesプログラムのパフォーマンステストを実行します。 各ページに加えて、すべてのインスタンスに関する様々なシステムレベルの指標（CPU、メモリ、ネットワークデータ）を表示します。\
-次の表に、3層ゲートシステムを使用した場合のパフォーマンステスト指標の概要を示します。
+Cloud Manager は、ステージ公開サーバー上で 30 分間のテスト期間（デフォルトでは未認証ユーザー）にページをリクエストし、各ページに対して（仮想）ユーザー生成指標（応答時間、エラー率、1 分あたりの表示数など）と、すべてのインスタンスに対して様々なシステムレベルの指標（CPU、メモリ、ネットワークデータ）を測定することで、AEM Sites プログラムのパフォーマンステストを実行します。\
+3 層ゲートシステムを使用したパフォーマンステスト指標の概要を次の表に示します。
 
 3 層ゲートシステムを使用したパフォーマンステストマトリックスの概要を次の表に示します。
 
@@ -196,15 +196,17 @@ Cloud Managerは、ステージパブリッシュサーバー上の（デフォ�
 | ネットワーク帯域幅使用量 | 重要 | >= 90% |
 | 1 分あたりのリクエスト数 | 情報 | >= 6000 |
 
-SitesおよびAssetsのパフォーマンステストに基本認証を使用する方法について詳しくは、以下の節&#x200B;**認証済みパフォーマンステスト**&#x200B;を参照してください。
+Sites と Assets のパフォーマンステストで基本的な認証を使用する方法の詳細については、次の&#x200B;**認証済みパフォーマンステスト**&#x200B;の節を参照してください。
 
 >[!NOTE]
->各インスタンスは、テスト期間中、パブリッシュとオーサーの両方で監視されます。 1つのインスタンスに関する指標が取得されない場合、その指標は不明としてレポートされ、対応する手順が失敗します。
+>各インスタンスは、テスト期間中、パブリッシュとオーサーの両方について監視されます。もし 1 つのインスタンスでも指標が取得されない場合、その指標は不明として報告され、対応する手順は失敗します。
 
 #### 認証済みパフォーマンステスト {#authenticated-performance-testing}
 
-この機能はSitesオプションです。
-認証済みサイトを持つ AMS の顧客は、Cloud Manager が Web サイトのパフォーマンステスト中に Web サイトにアクセスするために使用するユーザー名とパスワードを指定できます。ユーザー名とパスワードは、`CM_PERF_TEST_BASIC_USERNAME` と `CM_PERF_TEST_BASIC_PASSWORD` という名前で、パイプライン変数に指定します。厳密に必須ではありませんが、ユーザー名には string 型変数を、パスワードには secretString 型変数を使用することをお勧めします。これらの両方を指定した場合、パフォーマンステストクローラーとテスト仮想ユーザーからのリクエストすべてに、HTTP 基本認証としての資格情報が含まれます。
+この機能は Sites のオプションです。
+認証済みサイトを持つ AMS の顧客は、Cloud Manager が Web サイトのパフォーマンステスト中に Web サイトにアクセスするために使用するユーザー名とパスワードを指定できます。
+ユーザー名とパスワードは、`CM_PERF_TEST_BASIC_USERNAME` と `CM_PERF_TEST_BASIC_PASSWORD` という名前で、パイプライン変数に指定します。
+厳密に必須ではありませんが、ユーザー名には string 型変数を、パスワードには secretString 型変数を使用することをお勧めします。これらの両方を指定した場合、パフォーマンステストクローラーとテスト仮想ユーザーからのリクエストすべてに、HTTP 基本認証としての資格情報が含まれます。
 
 Cloud Manager CLI を使用してこれらの変数を設定するには、次のコマンドを実行します。
 
@@ -212,30 +214,31 @@ Cloud Manager CLI を使用してこれらの変数を設定するには、次�
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-APIの使用方法については、[変数](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchPipelineVariables)を参照してください。
+API の使用方法については、[変数](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchPipelineVariables)を参照してください。
 
 ### AEM Assets {#aem-assets}
 
-Cloud Managerでは、30分間のテスト期間中にアセットを繰り返しアップロードすることで、AEM Assetsプログラムのパフォーマンステストを実行します。
+Cloud Manager では、30 分間のテスト期間にわたってアセットを繰り返しアップロードすることで、AEM Assets プログラムのパフォーマンステストを実行します。
 
 1. **オンボーディング要件**
 
-   Assetsのパフォーマンステストの場合、カスタマーサクセスエンジニアは、オーサー環境からステージ環境へのオンボーディング中に`cloudmanager`ユーザー（およびパスワード）を作成します。 パフォーマンステスト手順には、`cloudmanager`というユーザーと、CSEによって設定された関連パスワードが必要です。 作成者から削除したり、権限に変更したりしないでください。 これをおこなうと、Assetsのパフォーマンステストに失敗する可能性があります。
+   Assets のパフォーマンステストの場合、お客様のサクセスエンジニアは、オーサーからステージング環境へのオンボーディング中に、`cloudmanager` ユーザー（およびパスワード）を作成します。パフォーマンステストの手順では、`cloudmanager` というユーザーと、CSE によって設定される関連付けられたパスワードが必要です。オーサーから削除したり、wrt 権限を変更したりしないでください。Assets のパフォーマンステストが失敗する可能性があります。
 
 1. **テスト用の画像とアセット**
 
-   お客様は、テスト用に独自のアセットをアップロードできます。 この操作は、パイプライン設定または編集画面でおこなうことができます。JPEG、PNG、GIF、BMP などの一般的な画像形式のほか、Photoshop ファイル、Illustrator ファイル、Postscript ファイルがサポートされています。ただし、アップロードされた画像がない場合、Cloud Managerはデフォルトの画像とPDFドキュメントをテストに使用します。
+   顧客は、独自のアセットをアップロードしてテストできます。この操作は、パイプライン設定または編集画面でおこなうことができます。JPEG、PNG、GIF、BMP などの一般的な画像形式のほか、Photoshop ファイル、Illustrator ファイル、Postscript ファイルがサポートされています。ただし、画像がアップロードされない場合、Cloud Manager では、デフォルトの画像と PDF ドキュメントがテストに使用されます。
 
-1. **テスト用資産の配布**
+1. **テスト用アセットの配分**
 
-   1 分ごとにアップロードされる各タイプのアセット数の配分は、パイプライン設定または編集画面で設定します。例えば、次の図のように 70% と 30% に配分した場合は、1 分あたり 10 個のアセットがアップロードされ、うち 7 個が画像、3 個がドキュメントになります。
+   1 分ごとにアップロードされる各タイプのアセット数の配分は、パイプライン設定または編集画面で設定します。
+例えば、次の図のように 70% と 30% に配分した場合は、1 分あたり 10 個のアセットがアップロードされ、うち 7 個が画像、3 個がドキュメントになります。
 
 1. **テストとレポート**
 
-   Cloud Managerは、前述の手順#1（オンボーディング要件）のCSEによって設定されたユーザー名とパスワードを使用してオーサーインスタンス上にフォルダーを作成し、オープンソースのライブラリを使用してフォルダー内のアセットをアップロードします。 Assetsのテスト手順で実行されるテストは、この[オープンソースライブラリ](https://github.com/adobe/toughday2)を使用して記述されます。 各アセットの処理時間と様々なシステムレベルの指標は、両方とも、30分間のテスト期間にわたって測定されます。 この機能では、画像と PDF ドキュメントの両方をアップロードできます。
+   Cloud Manager は、前述の手順 1（オンボーディング要件）で CSE が設定したユーザー名とパスワードを使用してオーサーインスタンスにフォルダーを作成し、オープンソースのライブラリを使用してフォルダー内のアセットをアップロードします。Assets のテスト手順で実行されるテストは、この[オープンソースライブラリ](https://github.com/adobe/toughday2)を使用して記述されます。30 分のテスト期間にわたって、各アセットの処理時間と、様々なシステムレベルの指標の両方が測定されます。この機能では、画像と PDF ドキュメントの両方をアップロードできます。
 
    >[!NOTE]
-   >パフォーマンステストの設定について詳しくは、[CI/CDパイプラインの設定](configuring-pipeline.md)を参照してください。 プログラムの設定方法とKPIの定義方法については、[プログラムの設定](setting-up-program.md)を参照してください。
+   >パフォーマンステストについて詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。プログラムの設定方法と KPI の定義方法については、[プログラムの設定](setting-up-program.md)を参照してください。
 
 ### パフォーマンステスト結果のグラフ {#performance-testing-results-graphs}
 
