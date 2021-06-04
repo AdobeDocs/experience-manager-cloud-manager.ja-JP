@@ -18,9 +18,9 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2020.5.0 のリリース日は 2020 年 5 月 07 日です。
+[!UICONTROL Cloud Manager] バージョン 2020.5.0 のリリース日は 2020 年 5 月 7 日（PT）です。
 
-## 最新情報 {#whats-new}
+## 新機能 {#whats-new}
 
 * Cloud Service への移行を計画する際に発生する可能性のある問題を特定できるように、6 つのコード品質ルールが追加されました。
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ## バグ修正 {#bug-fixes}
 
-* 実稼働パイプラインの実行中に、誤解を招くカードが概要ページに表示されていました。
+* 実稼動パイプラインの実行中に、誤解を招くカードが概要ページに表示されていました。
 
 * *DontImplementOrExtendProviderTypesPomCheck* コード品質ルールでヌルポインター例外が発生する場合がありました。
 
