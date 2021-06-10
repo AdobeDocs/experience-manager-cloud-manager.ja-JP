@@ -2,10 +2,10 @@
 title: リリースノート（2021.6.0）
 description: このページでは、Cloud Manager リリース 2021.6.0 について説明します。
 feature: リリース情報
-source-git-commit: 5111a918b8063ab576ef587dc3c8d66ad976fc1a
+source-git-commit: c39390f34cf4ab6c9b2d5957b169c3c2cb43e6d3
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 27%
+source-wordcount: '289'
+ht-degree: 26%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 27%
 
 * プロジェクトの作成時と、Gitワークフローを管理するデフォルトのプッシュコマンドで使用されるデフォルトのブランチ名が`main`に変更されました。
 
-* UIでのプログラムの編集エクスペリエンスが更新されました。
+* UIでのプログラムの編集エクスペリエンスが更新されました。 詳しくは、[プログラムの編集](/help/using/setting-up-program.md#editing-program)を参照してください。
 
 * 品質ルール`ImmutableMutableMixCheck`が更新され、`/oak:index`ノードが不変として分類されるようになりました。
 
