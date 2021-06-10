@@ -5,7 +5,7 @@ description: オンボーディング後、ビジネスオーナーはプログ�
 seo-description: 'オンボーディング後、ビジネスオーナーはAdobe AEM Cloud Managerの初期設定をおこなう必要があります。 これには、プログラムの説明の設定や、パフォーマンステストに使用する KPI の定義が含まれます。 '
 feature: はじめに
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: f14725f87d5c4c3afe63d4bfc924962a92705c7c
+source-git-commit: c39390f34cf4ab6c9b2d5957b169c3c2cb43e6d3
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 82%
@@ -78,7 +78,7 @@ ht-degree: 82%
    >[!NOTE]
    >プログラムの初期設定が完了したら、いつでもプログラムを編集できます。詳しくは、以下の手順に従ってください。
 
-## プログラムの編集
+## プログラムの編集  {#editing-program}
 
 1. **Cloud Manager**&#x200B;のホーム画面からプログラムに移動します。
 
