@@ -10,7 +10,7 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI／CD パイプライン、テスト結果
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 5111a918b8063ab576ef587dc3c8d66ad976fc1a
 workflow-type: tm+mt
 source-wordcount: '2728'
 ht-degree: 100%
@@ -53,7 +53,7 @@ ht-degree: 100%
 コード品質テストでは、ソースコードが一定の品質基準を満たしていることを確認するためにスキャンされます。現在、これは、SonarQube、OakPAL を使用したコンテンツパッケージレベルの調査、および Dispatcher 最適化ツールを使用したディスパッチャー検証の組み合わせによって実装されます。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)と呼ばれます。
 
 >[!NOTE]
->[ここ](/help/using/assets/CodeQuality-rules-AMS.xlsx)からルールの完全なリストをダウンロードできます。
+>[ここ](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx)からルールの完全なリストをダウンロードできます。
 
 この手順の結果は、*評価*&#x200B;として提供されます。次の表に、様々なテスト条件の評価の概要を示します。
 
