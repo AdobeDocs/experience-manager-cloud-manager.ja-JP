@@ -5,9 +5,9 @@ description: オンボーディング後、ビジネスオーナーはプログ�
 seo-description: 'オンボーディング後、ビジネスオーナーはAdobe AEM Cloud Managerの初期設定をおこなう必要があります。 これには、プログラムの説明の設定や、パフォーマンステストに使用する KPI の定義が含まれます。 '
 feature: はじめに
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: c39390f34cf4ab6c9b2d5957b169c3c2cb43e6d3
+source-git-commit: 71a6f2709efb9c4c3831deaa1ce89d93e30b775c
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '733'
 ht-degree: 82%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 82%
 
 1. **プログラムを編集**&#x200B;画面が表示され、プログラムを更新または変更できます。
 
-   プログラム名と説明は、**「一般**」タブで更新できます。
+   **「一般**」タブで、プログラムの説明を更新できます。
 
    ![](assets/set-up-program/edit-program-general.png)
 
