@@ -2,10 +2,10 @@
 title: リリースノート（2021.6.0）
 description: このページでは、Cloud Manager リリース 2021.6.0 について説明します。
 feature: リリース情報
-source-git-commit: c39390f34cf4ab6c9b2d5957b169c3c2cb43e6d3
+source-git-commit: 5ddbf718ad01b11dcba5dc2c5d1ab5d3cff2e9a9
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 26%
+source-wordcount: '314'
+ht-degree: 24%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 26%
 
 * 品質ルール`ImmutableMutableMixCheck`が更新され、`/oak:index`ノードが不変として分類されるようになりました。
 
-* 品質ルール`CQBP-84`と`CQBP-84--dependencies`は、1つのルールに統合されました。
+* 品質ルール`CQBP-84`と`CQBP-84--dependencies`は、1つのルールに統合されました。 この統合の一環として、依存関係のスキャンにより、AEM Runtimeにデプロイされるサードパーティの依存関係の問題をより正確に特定できます。
 
 * 状況によっては、「スキップされたテスト」指標の計算に失敗すると、パイプライン実行が失敗することがあります。
 
