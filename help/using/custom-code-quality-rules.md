@@ -11,9 +11,9 @@ discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 feature: コード品質ルール
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 5111a918b8063ab576ef587dc3c8d66ad976fc1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3652'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -574,7 +574,7 @@ Cloud Manager で実行される OakPAL 関連チェックについて、以下�
 
 ### @ProviderType の注釈が付いた製品 API は、お客様による実装または拡張はできない {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
-**キー**:CQBP-84
+**キー**：CQBP-84
 
 **タイプ**：バグ
 
@@ -850,7 +850,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが oak:QueryIndexDefinition など）の compatVersion プロパティを 2 に設定する必要があります。その他の値は、AEM Cloud Service ではサポートされていません。検索インデックスの詳細については、[コンテンツ検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが oak:QueryIndexDefinition など）の compatVersion プロパティを 2 に設定する必要があります。その他の値は、AEM Cloud Service ではサポートされていません。検索インデックスの詳細については、[コンテンツ検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja)を参照してください。
 
 ### OakPAL - カスタム検索インデックス定義ノードの子孫ノードのタイプは、nt:unstructured にする {#oakpal-descendent-nodes}
 
@@ -898,7 +898,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが oak:QueryIndexDefinition など）に、値が **lucene** に設定された type プロパティが必要です。AEM Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが oak:QueryIndexDefinition など）に、値が **lucene** に設定された type プロパティが必要です。AEM Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja#how-to-use)を参照してください。
 
 ### OakPAL - カスタム検索インデックス定義ノードに seed という名前のプロパティを含めない {#oakpal-property-name-seed}
 
@@ -910,7 +910,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に seed という名前のプロパティを含めるこが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に seed という名前のプロパティを含めるこが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja#how-to-use)を参照してください。
 
 ### OakPAL - カスタム検索インデックス定義ノードに reindex という名前のプロパティを含めない {#oakpal-reindex-property}
 
@@ -922,7 +922,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に reindex という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に reindex という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja#how-to-use)を参照してください。
 
 ## Dispatcher 最適化ツール {#dispatcher-optimization-tool-rules}
 
