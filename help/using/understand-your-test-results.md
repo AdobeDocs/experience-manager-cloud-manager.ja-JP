@@ -11,7 +11,7 @@ discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI／CD パイプライン、テスト結果
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 5111a918b8063ab576ef587dc3c8d66ad976fc1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2728'
 ht-degree: 100%
 
@@ -124,8 +124,8 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | **名前** | **ヘルスチェックの実装** | **カテゴリ** |
 |---|---|---|
 | デシリアライゼーションファイアウォール添付 API レディネスが、受け入れ可能な状態である | [デシリアライゼーションファイアウォール添付 API レディネス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=ja#security) | 重大 |
-| デシリアライゼーションファイアウォールが機能している | [デシリアライゼーションファイアウォール機能](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | 重大 |
-| デシリアライゼーションファイアウォールが読み込まれている | [デシリアライゼーションファイアウォール読み込み](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | 重大 |
+| デシリアライゼーションファイアウォールが機能している | [デシリアライゼーションファイアウォール機能](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=ja#security) | 重大 |
+| デシリアライゼーションファイアウォールが読み込まれている | [デシリアライゼーションファイアウォール読み込み](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=ja#security) | 重大 |
 | AuthorizableNodeName 実装において、認証可能な ID がノード名／パスで公開されていない | [認証可能なノード名生成](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security-checklist.html?lang=ja#security) | 重大 |
 | デフォルトのパスワードが変更されている | [デフォルトのログインアカウント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ja#users-and-groups-in-aem) | 重大 |
 | Sling のデフォルトの GET サーブレットが DOS 攻撃から保護されている | Sling Get Servlet | 重大 |
