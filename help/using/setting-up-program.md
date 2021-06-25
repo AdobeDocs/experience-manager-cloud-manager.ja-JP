@@ -2,13 +2,13 @@
 title: プログラムの設定
 seo-title: プログラムの設定
 description: オンボーディング後、ビジネスオーナーはプログラムの初期設定をおこなう必要があります。
-seo-description: 'オンボーディング後、ビジネスオーナーはAdobe AEM Cloud Managerの初期設定をおこなう必要があります。 これには、プログラムの説明の設定や、パフォーマンステストに使用する KPI の定義が含まれます。 '
+seo-description: 'オンボーディング後、ビジネスオーナーは Adobe AEM Cloud Manager の初期設定をおこなう必要があります。これには、プログラムの説明の設定や、パフォーマンステストに使用する KPI の定義が含まれます。 '
 feature: はじめに
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 71a6f2709efb9c4c3831deaa1ce89d93e30b775c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '733'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -78,9 +78,9 @@ ht-degree: 82%
    >[!NOTE]
    >プログラムの初期設定が完了したら、いつでもプログラムを編集できます。詳しくは、以下の手順に従ってください。
 
-## プログラムの編集  {#editing-program}
+## プログラムの編集 {#editing-program}
 
-1. **Cloud Manager**&#x200B;のホーム画面からプログラムに移動します。
+1. **Cloud Manager** のホーム画面でソリューションに移動します。
 
 1. 「**プログラムを編集**」をクリックして、**概要**&#x200B;ページのプログラムを更新または変更します（下図を参照）。
 
@@ -88,11 +88,11 @@ ht-degree: 82%
 
 1. **プログラムを編集**&#x200B;画面が表示され、プログラムを更新または変更できます。
 
-   **「一般**」タブで、プログラムの説明を更新できます。
+   「**一般**」タブで、プログラムの説明を更新できます。
 
    ![](assets/set-up-program/edit-program-general.png)
 
-   「**KPI**」タブに移動して、AEM SitesとAssetsの情報を更新します。
+   「**KPI**」タブに移動して、AEM Sites と Assets の情報を更新します。
 
    ![](assets/set-up-program/edit-program-kpi.png)
 
@@ -104,6 +104,6 @@ ht-degree: 82%
 
 ## 次の手順 {#the-next-steps}
 
-パイプラインを既に設定している場合は、更新された設定が次回の実行で考慮されます。 まだパイプラインを設定していない場合は、まず手順に従ってパイプラインを設定します。
+パイプラインを設定済みの場合、更新された設定は次回の実行で考慮されます。まだパイプラインを設定していない場合は、まず手順に従ってパイプラインを設定します。
 
 パイプラインの設定については、「[CI／CD パイプラインの設定](https://helpx.adobe.com/jp/experience-manager/cloud-manager/using/configuring-pipeline.html)」を参照してください。
