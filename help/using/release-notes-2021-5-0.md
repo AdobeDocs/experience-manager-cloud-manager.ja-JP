@@ -3,7 +3,7 @@ title: リリースノート（2021.5.0）
 description: このページでは、Cloud Manager リリース 2021.5.0 について説明します。
 feature: リリース情報
 source-git-commit: 196e9947b732b8cd70a8a0f7fc72ef9900561125
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
 ht-degree: 100%
 
