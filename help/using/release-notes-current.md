@@ -2,10 +2,10 @@
 title: リリースノート（2021.7.0）
 description: このページでは、Cloud Manager リリース 2021.7.0 について説明します。
 feature: リリース情報
-source-git-commit: 1da4ceef0d89223580800d9018c46aaec51f8927
+source-git-commit: fec742eb023e9811ee80951bd25fc2023df52d66
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 29%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 29%
 
 * 送信エグレスIPがビルドステップログファイルに記録されます。
 
-* **「Gitを管理」**&#x200B;ボタンのタイトルが&#x200B;**「Git情報にアクセス**」に変更され、ダイアログが視覚的に更新されました。
+* **「Gitを管理」**&#x200B;ボタンのタイトルが&#x200B;**「Git情報にアクセス」**&#x200B;に変更され、ダイアログが視覚的に更新されました。
 
 * Cloud Managerで使用されるAEMプロジェクトアーキタイプのバージョンがバージョン28に更新されました。
 
