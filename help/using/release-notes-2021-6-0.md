@@ -3,7 +3,7 @@ title: リリースノート（2021.6.0）
 description: このページでは、Cloud Manager リリース 2021.6.0 について説明します。
 feature: リリース情報
 source-git-commit: ee701dd2d0c3921455a0960cbb6ca9a3ec4793e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '314'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 * ルート要素名の後に改行を含む JCR ノード定義が正しく解析されなかった問題を修正しました。
 
-* リストリポジトリー API は、削除されたリポジトリをフィルタリングしません。
+* リストリポジトリー API は、削除されたリポジトリーをフィルタリングしません。
 
 * スケジュール手順に無効な値が指定された場合、誤ったエラーメッセージが表示されていました。
 
