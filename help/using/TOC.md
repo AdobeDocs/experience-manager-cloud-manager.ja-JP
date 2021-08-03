@@ -60,7 +60,7 @@ ht-degree: 100%
    + [概要](overview-productupdate-wizard.md)
    + [評価](evaluation.md)
 + リリースノート {#release-notes}
-   + [最新のリリースノート (2021.7.0)](release-notes-current.md)
+   + [最新のリリースノート（2021.7.0）](release-notes-current.md)
    + [リリースノート（2021.6.0）](release-notes-2021-6-0.md)
    + [リリースノート（2021.5.0）](release-notes-2021-5-0.md)
    + [リリースノート（2021.4.0）](release-notes-2021-4-0.md)
