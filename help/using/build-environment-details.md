@@ -4,9 +4,9 @@ description: このページでは、環境について説明します
 feature: 環境
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: ee701dd2d0c3921455a0960cbb6ca9a3ec4793e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '999'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 * ビルド環境は Linux ベースで、Ubuntu 18.04 から派生しています。
 * Apache Maven 3.6.0 がインストールされています。
-* インストールされるJavaのバージョンは、OracleJDK 8u202、Azul Zulu 8u292、OracleJDK 11.0.2、およびAzul Zulu 11.0.11です。
+* インストールされる Java のバージョンは、Oracle JDK 8u202、Azul Zulu 8u292、Oracle JDK 11.0.2 および Azul Zulu 11.0.11 です。
 * 必要な追加のシステムパッケージが、次のようにいくつかインストールされています。
 
    * bzip2
@@ -47,13 +47,13 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 >* [API の権限](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)
 
 
-## 特定のJavaバージョンの使用 {#using-java-version}
+## 特定の Java バージョンの使用 {#using-java-version}
 
-デフォルトでは、プロジェクトはCloud ManagerビルドプロセスによってOracle8 JDKを使用して構築されます。 代替JDKを使用する場合は、次の2つの方法があります。Maven Toolchainsを使用し、Maven実行プロセス全体で代替JDKバージョンを選択します。
+デフォルトでは、プロジェクトは、Oracle 8 JDK を使用して Cloud Manager ビルドプロセスでビルドされます。代替 JDK を使用する場合は、2 つの選択肢があります。Maven ツールチェーンを使用する方法と、Maven 実行プロセス全体で代替 JDK バージョンを選択する方法です。
 
-### Maven Toolchains {#maven-toolchains}
+### Maven ツールチェーン {#maven-toolchains}
 
-[Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/)を使用すると、ツールチェーン対応のMavenプラグインのコンテキストで使用する特定のJDK（または&#x200B;*toolchain*）をプロジェクトで選択できます。 これは、ベンダーとバージョンの値を指定することで、プロジェクトの`pom.xml`ファイルで行われます。 `pom.xml`ファイルのサンプルセクションは次のとおりです。
+[Maven ツールチェーンプラグイン](https://maven.apache.org/plugins/maven-toolchains-plugin/)では、ツールチェーン対応の Maven プラグインのコンテキストで使用する特定の JDK（または&#x200B;*ツールチェーン*）をプロジェクトで選択できます。それには、プロジェクトの `pom.xml` ファイルでベンダーとバージョン値を指定します。`pom.xml` ファイルのサンプルセクションは次のとおりです。
 
 ```xml
         <plugin>
@@ -78,30 +78,30 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 </plugin>
 ```
 
-これにより、すべてのツールチェーン対応MavenプラグインでOracleJDK（バージョン11）が使用されます。
+これにより、すべてのツールチェーン対応 Maven プラグインで Oracle JDK バージョン 11 が使用されるようになります。
 
-この方法を使用する場合、Maven自体は引き続きデフォルトJDK(Oracle8)を使用して実行されます。 したがって、[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/)などのプラグインを使用してJavaバージョンを確認または強制することは機能せず、そのようなプラグインは使用しないでください。
+この方法を使用する場合、Maven 自体は引き続きデフォルトの JDK（Oracle 8）を使用して実行されます。したがって、[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) などのプラグインによる Java バージョンの確認や強制は機能しないので、そのようなプラグインは使用しないでください。
 
-現在利用可能なベンダー/バージョンの組み合わせは次のとおりです。
+現在利用可能なベンダー／バージョンの組み合わせは次のとおりです。
 
-* oracle1.8
-* oracle1.11
-* oracle11
+* oracle 1.8
+* oracle 1.11
+* oracle 11
 * sun 1.8
 * sun 1.11
-* 日11
+* sun 11
 * azul 1.8
 * azul 1.11
-* アズル8
+* azul 8
 
-### 代替Maven実行JDKバージョン {#alternate-maven}
+### Maven 実行の代替 JDK バージョン {#alternate-maven}
 
-また、Mavenの実行全体のJDKとしてAzul 8またはAzul 11を選択することもできます。 toolchainsオプションとは異なり、toolchains設定も設定されている場合を除き、すべてのプラグインで使用されるJDKが変更されます。この場合、toolchains設定はtoolchains対応のMavenプラグインに対してまだ適用されます。 その結果、[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/)を使用してJavaバージョンを確認および強制することができます。
+また、Maven 実行全体の JDK として Azul 8 または Azul 11 を選択することもできます。この場合は、ツールチェーンオプションとは異なり、ツールチェーン設定も指定される場合を除き、すべてのプラグインに使用される JDK が変更されます。ツールチェーン設定が指定される場合は、そのツールチェーン設定が引き続きツールチェーン対応 Maven プラグインに適用されます。その結果、[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) を使用して Java バージョンを確認および強制することができます。
 
-これをおこなうには、パイプラインで使用されるGitリポジトリブランチに`.cloudmanager/java-version`という名前のファイルを作成します。 このファイルは、コンテンツ11または8を含むことができます。 その他の値は無視されます。11を指定した場合は、Azul 11が使用されます。 8を指定した場合は、Azul 8が使用されます。
+それには、パイプラインで使用される Git リポジトリーブランチに `.cloudmanager/java-version` というファイルを作成します。このファイルの内容は 11 か 8 のどちらかにすることができます。その他の値は無視されます。11 を指定した場合は、Azul 11 が使用されます。8 を指定した場合は、Azul 8 が使用されます。
 
 >[!NOTE]
->現在2021年10月と推定されるCloud Managerの今後のリリースで、デフォルトのJDKが変更され、デフォルトはAzul 11になります。 Java 11と互換性のないプロジェクトでは、この切り替えの影響を受けないように、可能な限り早くコンテンツ8を含むファイルを作成する必要があります。
+>Cloud Manager の今後のリリース（現時点では 2021 年 10 月の見込み）で、デフォルトの JDK が Azul 11 に変更されます。Java 11 と互換性のないプロジェクトでは、この切り替えの影響を受けないように、できるだけ早く、このファイルの内容を 8 にしてください。
 
 
 ## 環境変数 {#environment-variables}
