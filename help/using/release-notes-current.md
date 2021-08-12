@@ -2,10 +2,10 @@
 title: リリースノート（2021.8.0）
 description: このページでは、Cloud Manager リリース 2021.8.0 について説明します。
 feature: リリース情報
-source-git-commit: 460964e8882a30d9289a25ec7c4162221031b0da
+source-git-commit: 510c523423a8d7cf9ad4c5ba2af11ff12df2b1cc
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 48%
+source-wordcount: '173'
+ht-degree: 53%
 
 ---
 
@@ -31,7 +31,5 @@ ht-degree: 48%
 * Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 28 に更新されました。
 
 ## バグ修正 {#bug-fixes}
-
-* *最新の* リリースが現在のリリースより前の場合は、更新可能ステータスが表示されない。
 
 * 何らかの理由でパイプラインが2回トリガーされた場合、*はパイプライン実行ステータス*&#x200B;を更新できませんでしたが、実行の1つが失敗することがあります。
