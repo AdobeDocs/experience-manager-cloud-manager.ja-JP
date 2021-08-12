@@ -1,43 +1,37 @@
 ---
-title: リリースノート（2021.7.0）
-description: このページでは、Cloud Manager リリース 2021.7.0 について説明します。
+title: リリースノート（2021.8.0）
+description: このページでは、Cloud Manager リリース 2021.8.0 について説明します。
 feature: リリース情報
-source-git-commit: fec742eb023e9811ee80951bd25fc2023df52d66
-workflow-type: ht
-source-wordcount: '264'
-ht-degree: 100%
+source-git-commit: 460964e8882a30d9289a25ec7c4162221031b0da
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 48%
 
 ---
 
-# リリースノート（2021.7.0） {#release-notes-for}
+# リリースノート（2021.8.0） {#release-notes-for}
 
-以下の節では、[!UICONTROL Cloud Manager] リリース 2021.7.0 の一般リリースノートの概要を説明します。
+以下の節では、[!UICONTROL Cloud Manager] リリース 2021.8.0 の一般リリースノートの概要を説明します。
 
 >[!NOTE]
 >AEM as a Cloud Service での Cloud Manager の最新のリリースノートについては、[現在のリリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=ja#getting-access)を参照してください。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2021.7.0 のリリース日は 2021 年 7 月 15 日（PT）です。次回のリリースは 2021 年 8 月 12 日（PT）に予定されています。
+[!UICONTROL Cloud Manager] バージョン 2021.8.0 のリリース日は 2021 年 8 月 12 日（PT）です。次回のリリースは2021年9月9日に予定されています。
 
 ## 新機能 {#whats-new}
 
-* お客様は、Cloud Manager のビルドプロセスに Azul 8 および 11 JDK を使用できるようになりました。ツールチェーン対応の Maven プラグイン&#x200B;*または* Maven プロセスの実行全体に対して、これらの JDK のいずれかを使用するように選択できます。
+* ユーザーがCloud Manager UIを使用して複数のリポジトリを作成および管理できるセルフサービス機能。
 
-* 送信エグレス IP がビルドステップログファイルに記録されるようになりました。
+* SonarQubeはGit履歴データを不必要に読み取っていました。 大規模なコードベースでは、これにより、不要なビルドパフォーマンスの低下が生じる可能性があります。
 
-* 「**Git を管理**」ボタンのタイトルが「**Git 情報にアクセス**」に変更され、ダイアログが視覚的に更新されました。
+* パイプラインごとにMaven依存関係キャッシュを無効にするAPIが追加されました。
 
 * Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 28 に更新されました。
 
-* 予期しないトポロジ再設定の結果、詳細なテストレポートがパイプライン実行の詳細ページから使用できなくなる場合がありました。
-
 ## バグ修正 {#bug-fixes}
 
-* 存在しない実行の実行詳細ページに手動で移動しても、エラーが表示されず、読み込みが無限に繰り返される画面が表示されるだけでした。
+* *最新の* リリースが現在のリリースより前の場合は、更新可能ステータスが表示されない。
 
-* 場合によっては、Sites のパフォーマンスで使用されたコンテナが失敗しても自動再試行が 2 時間にわたって有効にならず、最終的にテストが失敗することがありました。
-
-## 既知の問題 {#known-issues}
-
-Azul JDK の使用に切り替えるお客様は、すべての既存アプリケーションが Azul JDK でエラーなしにコンパイルされるとは限らないことに注意してください。切り替える前に、ローカルでテストすることを強くお勧めします。
+* 何らかの理由でパイプラインが2回トリガーされた場合、*はパイプライン実行ステータス*&#x200B;を更新できませんでしたが、実行の1つが失敗することがあります。
