@@ -5,7 +5,7 @@ description: このページでは、Cloud Manager リリース 2020.1.0 につ�
 seo-description: このページでは、AEM Cloud Manager リリース 2020.1.0 について説明します。
 feature: リリース情報
 exl-id: 105e526f-b3c6-49d2-bb4d-d19a5afad6cc
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: f4b0957ce2dda55ad9b0d7a736263bece54d2139
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 100%
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 新機能 {#whats-new}
 
-* Git の資格情報は、Cloud Manager UI 内から取得できるようになりました。詳しくは、[Git へのアクセス](/help/using/accessing-git.md)を参照してください。
+* Git の資格情報は、Cloud Manager UI 内から取得できるようになりました。詳しくは、[Git へのアクセス](accessing-repos.md)を参照してください。
 * ログイン操作と URL 構造は、アドビ全体の取り組みの一環として変更されました。古いブックマークは新しい URL にリダイレクトされます。
 
 
