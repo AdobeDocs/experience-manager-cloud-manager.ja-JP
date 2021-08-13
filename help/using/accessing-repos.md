@@ -1,14 +1,14 @@
 ---
-title: Git へのアクセス
+title: リポジトリへのアクセス
 seo-title: リポジトリへのアクセス
 description: このページでは、Git リポジトリーにアクセスして管理する方法について説明します。
 seo-description: Git リポジトリーにアクセスして管理する方法については、このページに従ってください。
 feature: Git リポジトリー
 exl-id: 403fc93d-60fc-4439-8c9d-0a512ca34458
-source-git-commit: c4deb06615652736ff7584566507a2b42a88bfb1
+source-git-commit: 1d278a47e74ddb50e70dc9d5d29e738a1616768b
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
