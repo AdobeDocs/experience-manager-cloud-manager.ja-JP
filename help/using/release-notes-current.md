@@ -2,7 +2,7 @@
 title: リリースノート（2021.8.0）
 description: このページでは、Cloud Manager リリース 2021.8.0 について説明します。
 feature: リリース情報
-source-git-commit: 510c523423a8d7cf9ad4c5ba2af11ff12df2b1cc
+source-git-commit: c4deb06615652736ff7584566507a2b42a88bfb1
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 53%
@@ -28,7 +28,7 @@ ht-degree: 53%
 
 * パイプラインごとにMaven依存関係キャッシュを無効にするAPIが追加されました。
 
-* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 28 に更新されました。
+* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 29 に更新されました。
 
 ## バグ修正 {#bug-fixes}
 
