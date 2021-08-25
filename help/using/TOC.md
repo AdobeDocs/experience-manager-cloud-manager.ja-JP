@@ -3,14 +3,14 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Adobe Experience Manager Cloud Manager ガイド
-breadcrumb-title: Cloud Manager ガイド AEM 6.x の場合
+breadcrumb-title: Cloud Manager ガイドAEM 6.x の場合
 user-guide-description: Adobe Managed Services を使用して、クラウド内の Experience Manager を自己管理する方法について学習します。
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
 source-git-commit: c4deb06615652736ff7584566507a2b42a88bfb1
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '280'
 ht-degree: 97%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 97%
    + [概要](overview-productupdate-wizard.md)
    + [評価](evaluation.md)
 + リリースノート {#release-notes}
-   + [最新のリリースノート (2021.8.0)](release-notes-current.md)
+   + [最新のリリースノート(2021.8.0)](release-notes-current.md)
    + [リリースノート（2021.7.0）](release-notes-2021-7-0.md)
    + [リリースノート（2021.6.0）](release-notes-2021-6-0.md)
    + [リリースノート（2021.5.0）](release-notes-2021-5-0.md)
