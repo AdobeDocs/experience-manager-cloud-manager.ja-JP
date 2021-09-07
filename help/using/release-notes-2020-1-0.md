@@ -1,13 +1,13 @@
 ---
 title: リリースノート（2020.1.0）
-seo-title: AEM Cloud Manager リリースノート（2020.1.0）
+seo-title: AEM Cloud Manager Release Notes for 2020.1.0
 description: このページでは、Cloud Manager リリース 2020.1.0 について説明します。
-seo-description: このページでは、AEM Cloud Manager リリース 2020.1.0 について説明します。
-feature: リリース情報
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.1.0
+feature: Release Information
 exl-id: 105e526f-b3c6-49d2-bb4d-d19a5afad6cc
 source-git-commit: f4b0957ce2dda55ad9b0d7a736263bece54d2139
-workflow-type: tm+mt
-source-wordcount: '157'
+workflow-type: ht
+source-wordcount: '138'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2020.1.0 のリリース日は 2020 年 1 月 16 日（PT）です。
+[!UICONTROL Cloud Manager] バージョン 2020.1.0 のリリース日は2020年1月16日（PT）です。
 
 ## 新機能 {#whats-new}
 
