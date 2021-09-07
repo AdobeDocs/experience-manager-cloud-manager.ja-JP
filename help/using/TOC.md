@@ -9,9 +9,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
 source-git-commit: c4deb06615652736ff7584566507a2b42a88bfb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -53,8 +53,8 @@ ht-degree: 97%
    + [カスタムコード品質ルール](custom-code-quality-rules.md)
 + コードの管理 {#managing-code}
    + [Maven プロジェクトバージョンの処理](activating-maven-project.md)
-   + [Cloud Managerのリポジトリ](cloud-manager-repositories.md)
-   + [リポジトリへのアクセス](accessing-repos.md)
+   + [Cloud Manager のリポジトリー](cloud-manager-repositories.md)
+   + [リポジトリーへのアクセス](accessing-repos.md)
    + [Git との統合](setup-cloud-manager-git-integration.md)
    + [複数のソース Git リポジトリーの操作](/help/using/working-with-multiple-source-git-repos.md)
 + 製品アップデートウィザード {#product-update-wizard}
