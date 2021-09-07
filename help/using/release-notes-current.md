@@ -3,7 +3,7 @@ title: リリースノート（2021.8.0）
 description: このページでは、Cloud Manager リリース 2021.8.0 について説明します。
 feature: Release Information
 source-git-commit: c4deb06615652736ff7584566507a2b42a88bfb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '171'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2021.8.0 のリリース日は 2021 年 8 月 12 日（PT）です。次回のリリースは 2021 年 9 月 9 日（PT）に予定されています。
+[!UICONTROL Cloud Manager] バージョン 2021.8.0 のリリース日は2021年8月12日（PT）です。次回のリリースは2021年9月9日（PT）に予定されています。
 
 ## 新機能 {#whats-new}
 
@@ -32,4 +32,4 @@ ht-degree: 100%
 
 ## バグ修正 {#bug-fixes}
 
-* 何らかの理由でパイプラインが 2 回トリガーされた場合、*パイプライン実行ステータスを更新できませんでした*&#x200B;エラーで、いずれかの実行が失敗します。
+* 何らかの理由でパイプラインが 2 回トリガーされた場合、「*パイプライン実行ステータスを更新できませんでした*」エラーで、いずれかの実行が失敗します。
