@@ -3,7 +3,7 @@ title: リリースノート（2021.9.0）
 description: このページでは、Cloud Manager リリース 2021.9.0 について説明します。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: ec180b60b24676bf1affe6369b6af66a10d9e8a0
+source-git-commit: 9e9836ad8793540a57048a6e43e4d158abf91579
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 49%
@@ -31,7 +31,7 @@ ht-degree: 49%
 
 * アクティビティページのメニューオプションに、完了したコードジェネレーターの実行に対して「ログをダウンロード」するオプションが含まれるようになりました。 これを選択すると、ビルド手順のログがダウンロードされます。
 
-* 「プログラム」カードを直接クリックして、 Cloud Managerの概要ページに移動するようになりました。
+* プログラムカードを直接クリックすると、Cloud Managerの&#x200B;**概要**&#x200B;ページに移動するようになりました。
 
 ## バグ修正 {#bug-fixes}
 
