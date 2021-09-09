@@ -3,10 +3,10 @@ title: リリースノート（2021.9.0）
 description: このページでは、Cloud Manager リリース 2021.9.0 について説明します。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 4bfd31875a2c1ac29ae93872406308ee1c1328c8
+source-git-commit: ec180b60b24676bf1affe6369b6af66a10d9e8a0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '183'
+ht-degree: 49%
 
 ---
 
@@ -23,6 +23,8 @@ ht-degree: 0%
 
 ## 新機能 {#whats-new}
 
+* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 30 に更新されました。
+
 * Cloud Managerランディングページのプログラムカードと関連するエクスペリエンスが更新されました。
 
 * コード品質ステップログに、OakPalスキャンプロセスの詳細なログ情報が含まれるようになりました。
@@ -30,8 +32,6 @@ ht-degree: 0%
 * アクティビティページのメニューオプションに、完了したコードジェネレーターの実行に対して「ログをダウンロード」するオプションが含まれるようになりました。 これを選択すると、ビルド手順のログがダウンロードされます。
 
 * 「プログラム」カードを直接クリックして、 Cloud Managerの概要ページに移動するようになりました。
-
-* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 30 に更新されました。
 
 ## バグ修正 {#bug-fixes}
 
