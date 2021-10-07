@@ -1,10 +1,11 @@
 ---
 title: Cloud Manager リポジトリー
 description: Cloud Manager リポジトリー
-source-git-commit: 7bda34be143d2d7587e61c09dab642f3419dfad9
-workflow-type: ht
-source-wordcount: '420'
-ht-degree: 100%
+exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
+source-git-commit: 2a1f471f2e4148a424688ab9858c534935c3fe69
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 89%
 
 ---
 
@@ -12,7 +13,7 @@ ht-degree: 100%
 
 Cloud Manager で作成されて使用可能なリポジトリーは、リポジトリーページで表示および管理できます。
 
-## リポジトリーの追加と管理 {#add-manage-repos}
+## リポジトリの追加と管理 {#add-manage-repos}
 
 Cloud Manager でリポジトリーを表示および管理するには、次の手順に従います。
 
@@ -51,7 +52,7 @@ Git サブモジュールを使用すると、ビルド時に Git リポジト�
 $ git submodule update --init
 ```
 
-これにより、各サブモジュールが適切なディレクトリにチェックアウトされます。この手法は、Git サブモジュールの使用に慣れており、外部マージプロセスの管理を希望しない組織にとって、https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html?lang=ja の代わりに使用できる可能性があります。
+これにより、各サブモジュールが適切なディレクトリにチェックアウトされます。この方法は、git サブモジュールの使用に慣れていて、外部マージプロセスを管理したくない組織で、複数のソース Git リポジトリ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html) を使用する場合の [ の代わりに使用できる可能性があります。
 
 例えば、3 つのリポジトリーがあり、それぞれに main という名前のブランチが 1 つあるとします。「プライマリ」リポジトリー（パイプラインで設定されたもの）の main ブランチには、他の 2 つのリポジトリーに含まれるプロジェクトを宣言する pom.xml ファイルが含まれます。
 
@@ -101,4 +102,3 @@ Git サブモジュールを使用する場合は、次の点に注意してく�
 * Git の URL は、上記の構文に正確に記述する必要があります。セキュリティ上の理由から、これらの URL に資格情報を埋め込まないでください。
 * ブランチのルートにあるサブモジュールのみがサポートされます。
 * Git サブモジュール参照は、特定の Git コミットに保存されます。その結果、サブモジュールリポジトリーに対して変更を加える場合、`git submodule update --remote` などを使用して、参照されるコミットを更新する必要があります。
-
