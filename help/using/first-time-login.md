@@ -11,9 +11,9 @@ discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 feature: Getting Started
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: d582f3681cc1b14fddee8decc9229adb5f75a6d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '211'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 79%
 
 1. **Adobe [!UICONTROL Experience Cloud]** にログインすると、**プログラム**&#x200B;のリストが表示されます。
 
-1. プログラムを選択します（例：**We.Retail Global**）。 ランディングページにプログラムカードが表示されたら、「**...」を選択します。**&#x200B;をクリックして、使用可能なメニューオプションを確認します。   **Cloud Manager**&#x200B;を選択して、Cloud Managerの&#x200B;**概要**&#x200B;ページに移動します。
+1. プログラムを選択します（例：**We.Retail Global**）。ランディングページにプログラムカードが表示されたら、「**...**」を選択して、使用可能なメニューオプションを確認します。   **Cloud Manager** を選択して、Cloud Manager の&#x200B;**概要**&#x200B;ページに移動します。
 
    ![](assets/navigate-cm1.png)
 
-1. Cloud Managerの&#x200B;**概要**&#x200B;ページが表示されます。
+1. Cloud Manager の&#x200B;**概要**&#x200B;ページが表示されます。
 
    ![](assets/FirstLogin1.png)
 
