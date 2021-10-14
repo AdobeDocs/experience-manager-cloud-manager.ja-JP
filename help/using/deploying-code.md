@@ -1,19 +1,19 @@
 ---
 title: コードのデプロイ
-seo-title: コードのデプロイ
+seo-title: Deploy your Code
 description: Cloud Manager でのデプロイメントプロセスの概要を説明します
-seo-description: パイプライン（リポジトリー、環境、テスト環境）を設定したら、コードのデプロイ方法を学びます
+seo-description: Learn how to deploy your code once you have configured your pipeline (repository, environment, and testing environment)
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-feature: コードのデプロイメント
+feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 2fcefda1e30871d44e3a1353470a4728904d7598
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 100%
+source-wordcount: '1220'
+ht-degree: 81%
 
 ---
 
@@ -164,3 +164,32 @@ AEM サイト訪問者への影響を最小限に抑えるために、実稼動�
 1. AEM パッケージを publish2 にデプロイし、並行して Dispatcher パッケージを dispatcher2 にデプロイして、Dispatcher キャッシュをフラッシュします。
 1. dispatcher2 をロードバランサーに戻します。
 このプロセスは、デプロイメントがトポロジのすべてのパブリッシャーおよび Dispatcher に到達するまで続行されます。
+
+## 緊急パイプライン実行モード {#emergency-pipeline}
+
+重要な状況では、Adobe Managed Services のお客様は、Cloud Manager のテストサイクル全体が実行されるのを待たずに、ステージ環境および実稼動環境にコード変更をデプロイする必要が生じる場合があります。
+
+これらの状況に対処するために、Cloud Manager 実稼動パイプラインは *緊急* モードで実行できます。 このモードを使用すると、セキュリティとパフォーマンスのテスト手順は実行されません。設定済みの承認ステップを含むその他すべてのステップは、通常のパイプライン実行モードと同様に実行されます。
+
+>[!NOTE]
+>緊急パイプライン実行モード機能は、カスタマーサクセスエンジニアがプログラム単位で有効化します。
+
+### 緊急パイプライン実行モードの使用 {#using-emergency-pipeline}
+
+実稼動パイプラインの実行を開始する際に、この機能がアクティブ化されている場合は、次の図に示すように、ダイアログボックスから通常モードまたは緊急モードで実行を開始できます。
+
+![](assets/execution-emergency1.png)
+
+また、緊急モードでの実行のパイプライン実行の詳細ページを表示すると、画面の上部のパンくずリストに、この特定の実行に緊急モードが使用されたことを示すインジケーターが表示されます。
+
+![](assets/execution-emergency2.png)
+
+
+この緊急モードでのパイプライン実行の作成は、Cloud Manager API または CLI を使用しておこなうこともできます。 緊急モードでPUTを開始するには、クエリパラメータ `?pipelineExecutionMode=EMERGENCY` を使用して、または CLI を使用して、パイプラインの実行エンドポイントに実行リクエストを送信します。
+
+```
+$ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
+```
+
+>[!IMPORTANT]
+>`--emergency` フラグを使用する場合、最新の `aio-cli-plugin-cloudmanager` バージョンに更新する必要が生じる場合があります。
