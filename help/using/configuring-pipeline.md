@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: dde991d2dbd02f4b4145f79d67b6d2f1244e5648
+source-git-commit: e748383fb627ac6ecf69f1b6e313bb5710fbf444
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1391'
 ht-degree: 85%
 
 ---
@@ -215,13 +215,14 @@ CI／CD 実稼動以外のパイプラインは、コード品質パイプライ
 
 1. 非実稼動パイプラインを選択し、「**...」をクリックします。**. 下の図に示すように、「**編集**」をクリックします。
 
+   ![](/help/using/assets/configure-pipelines/non-prod-pipeline-edit1.png)
 
-1. **実稼動パイプラインを編集** ダイアログボックスが表示されます。
+1. **実稼動パイプラインを編集** ダイアログボックスが表示され、**パイプライン名**、**リポジトリ**、**Git ブランチ**、**デプロイメントトリガー** および **重要な失敗指標を更新できます動作**。
 
-   1. 「**設定**」タブを使用すると、**パイプライン名**、**デプロイメントトリガー**、**重要な指標の失敗動作** を更新できます。
+   ![](/help/using/assets/configure-pipelines/non-prod-pipeline-edit2.png)
 
-      >[!NOTE]
-      >Cloud Manager でリポジトリを追加および管理する方法については、[ リポジトリの追加と管理 ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) を参照してください。
+   >[!NOTE]
+   >Cloud Manager でリポジトリを追加および管理する方法については、[ リポジトリの追加と管理 ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) を参照してください。
 
 
 1. 非実稼動パイプラインの編集が完了したら、「**更新**」をクリックします。
