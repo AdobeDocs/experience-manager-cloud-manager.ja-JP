@@ -1,20 +1,20 @@
 ---
 title: CI／CD パイプラインの設定
-seo-title: CI／CD パイプラインの設定
+seo-title: Configure your CI/CD Pipeline
 description: このページでは、Cloud Manager からのパイプライン設定について説明します。
-seo-description: 'コードのデプロイを開始する前に、AEM Cloud Manager からパイプライン設定を指定する必要があります。 '
+seo-description: Before you start to deploy your code, you must configure your pipeline settings from the AEM Cloud Manager.
 uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-feature: CI／CD パイプライン
+feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 1c103b1c43a1e5fe7a6fa27110fc692bba6fb8b2
-workflow-type: ht
-source-wordcount: '1320'
-ht-degree: 100%
+source-git-commit: dde991d2dbd02f4b4145f79d67b6d2f1244e5648
+workflow-type: tm+mt
+source-wordcount: '1390'
+ht-degree: 85%
 
 ---
 
@@ -179,30 +179,53 @@ CI／CD 実稼動以外のパイプラインは、コード品質パイプライ
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
+### 実稼動以外のパイプラインの追加 {#add-non-production-pipeline}
+
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
-1. Cloud Manager のホーム画面から「**実稼動以外のパイプライン**」タイルにアクセスします。
+1. Cloud Manager のホーム画面から **パイプライン** カードにアクセスします。 「**+追加**」をクリックし、「**非実稼動パイプラインを追加**」を選択します。
 
-   ![](/help/using/assets/non-prod-add.png)
+   ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
-1. 「**追加**」ボタンをクリックして、「パイプライン名」、「パイプラインタイプ」、「Git ブランチ」を指定します。
+1. **非実稼動パイプラインを追加ダ**  イアログボックスが表示されます。作成するパイプラインのタイプを、**コード品質パイプライン** または **デプロイメントパイプライン** のいずれかから選択します。
 
-   さらに、パイプラインオプションから「デプロイメントトリガー」と「重要なエラー時の動作」も設定できます。
+   さらに、**デプロイメントトリガー** から、**デプロイメントオプション** と **重要な失敗動作** を設定することもできます。 「**続行**」をクリックします。
 
-   ![](assets/non-prod-pipe.png)
+   ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add2.png)
 
-1. 「**保存**」をクリックすると、次の 5 つのアクションと共にパイプラインがホーム画面上のカードに表示されます。
 
-   * **編集** - パイプライン設定を編集できます
-   * **詳細** - 直近のパイプライン実行を表示します（存在する場合）
-   * **ビルド** - 実行ページに移動し、そこからパイプラインを実行できるようになります
-   * **リポジトリー情報へアクセス** - Cloud Manager Git リポジトリーへのアクセスに必要な情報をユーザーが取得できるようにします
+1. 新しく作成した非実稼動パイプラインが **パイプライン** カードに表示されるようになりました。
+
+   ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add4.png)
+
+
+   パイプラインは、次に示すように、3 つのアクションと共にホーム画面のカードに表示されます。
+
+   * **** を追加 — 新しいパイプラインを追加できます。
+   * **リポジトリー情報へアクセス** - Cloud Manager Git リポジトリーへのアクセスに必要な情報をユーザーが取得できるようにします.
    * **詳細情報** - CI／CD パイプラインのドキュメントリソースの概要に移動します。
 
-      ![](assets/prod-one.png)
-   >[!NOTE]
-   >
-   >パイプラインの実行中は、現在のステップが表示され、**詳細**&#x200B;アクションのみ使用可能です。
+### 実稼動以外のパイプラインの編集 {#editing-nonprod-pipeline}
+
+**プログラムの概要** ページから、**パイプラインカード** からパイプライン設定を編集できます。
+
+次の手順に従って、設定済みの非実稼動パイプラインを編集します。
+
+1. **プログラムの概要** ページから **パイプライン** カードに移動します。
+
+1. 非実稼動パイプラインを選択し、「**...」をクリックします。**. 下の図に示すように、「**編集**」をクリックします。
+
+
+1. **実稼動パイプラインを編集** ダイアログボックスが表示されます。
+
+   1. 「**設定**」タブを使用すると、**パイプライン名**、**デプロイメントトリガー**、**重要な指標の失敗動作** を更新できます。
+
+      >[!NOTE]
+      >Cloud Manager でリポジトリを追加および管理する方法については、[ リポジトリの追加と管理 ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) を参照してください。
+
+
+1. 非実稼動パイプラインの編集が完了したら、「**更新**」をクリックします。
+
 
 ## 次の手順 {#the-next-steps}
 
