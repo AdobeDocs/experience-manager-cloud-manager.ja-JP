@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 1e3dc17d28ab69dcd6b2337280bb38ba07352beb
+source-git-commit: 9509f83f3cecbeaa81543e3c1f8ec33028009e6a
 workflow-type: tm+mt
 source-wordcount: '1842'
 ht-degree: 56%
@@ -25,14 +25,6 @@ ht-degree: 56%
 
 以下のページでは、**パイプライン**&#x200B;の設定方法について説明します。パイプラインの動作の仕組みについて詳しくは、[CI／CD パイプラインの概要](ci-cd-pipeline.md)を参照してください。
 
-## ビデオチュートリアル {#video-tutorial-one}
-
-### Cloud Manager でのパイプラインの設定 {#config-pipeline-video}
-
-CI／CD 実稼動パイプラインの設定は、パイプラインを開始するトリガー、実稼動環境のデプロイメントを制御するパラメーター、およびテストパラメーターのパフォーマンスを定義します。
-
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
-
 
 ## フローについて {#understanding-the-flow}
 
@@ -43,6 +35,14 @@ CI／CD 実稼動パイプラインの設定は、パイプラインを開始す
 * パイプラインを開始するトリガーの定義
 * 実稼動デプロイメントを制御するパラメーターの定義
 * パフォーマンステストパラメーターの設定
+
+## ビデオチュートリアル {#video-tutorial-one}
+
+### Cloud Manager でのパイプラインの設定 {#config-pipeline-video}
+
+CI／CD 実稼動パイプラインの設定は、パイプラインを開始するトリガー、実稼動環境のデプロイメントを制御するパラメーター、およびテストパラメーターのパフォーマンスを定義します。
+
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 ## パイプラインの設定 {#setting-up-the-pipeline}
 
@@ -56,7 +56,7 @@ CI／CD 実稼動パイプラインの設定は、パイプラインを開始す
 >
 >初期設定後にパイプライン設定を変更できます。
 
-## パイプラインカードからの新しい実稼動パイプラインの追加 {#adding-production-pipeline}
+### パイプラインカードからの新しい実稼動パイプラインの追加 {#adding-production-pipeline}
 
 [!UICONTROL Cloud Manager] UI を使用してプログラムを設定し、少なくとも 1 つの環境を設定したら、実稼動パイプラインを追加する準備が整います。
 
