@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 78a6c939cdb7c4335891e27209b221fc3e6efec2
+source-git-commit: 1e3dc17d28ab69dcd6b2337280bb38ba07352beb
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 59%
+source-wordcount: '1842'
+ht-degree: 56%
 
 ---
 
@@ -199,6 +199,9 @@ CI／CD 実稼動パイプラインの設定は、パイプラインを開始す
 
    ![](/help/using/assets/configure-pipelines/prod-delete.png)
 
+   >[!NOTE]
+   >デプロイメントマネージャーの役割を持つユーザーは、パイプラインカードの **削除** オプションを使用して、セルフサービス方式で実稼動パイプラインを削除できるようになりました。
+
 ## 非実稼動パイプラインとコード品質専用パイプライン
 
 ステージングおよび実稼動環境にデプロイするメインパイプラインに加えて、顧客は、**実稼動以外のパイプライン**&#x200B;と呼ばれる追加のパイプラインを設定できます。このパイプラインでは、常にビルドステップとコード品質ステップを実行します。また、オプションで Adobe Managed Services 環境にデプロイすることもできます。
@@ -269,6 +272,28 @@ CI／CD 実稼動以外のパイプラインは、コード品質パイプライ
 
 
 1. 非実稼動パイプラインの編集が完了したら、「**更新**」をクリックします。
+
+### その他の非実稼動パイプラインアクション {#additional-nonprod-actions}
+
+#### 実稼動以外のパイプラインの実行 {#run-nonprod}
+
+パイプラインカードから実稼動パイプラインを実行できます。
+
+1. **プログラムの概要** ページから **パイプライン** カードに移動します。
+
+1. **をクリックします…** パイプライン **カードから** を開き、**「** を実行」をクリックします（下図を参照）。
+
+   ![](/help/using/assets/configure-pipelines/nonprod-run1.png)
+
+#### 実稼動以外のパイプラインの削除 {#delete-nonprod}
+
+パイプラインカードから実稼動パイプラインを削除できます。
+
+1. **プログラムの概要** ページから **パイプライン** カードに移動します。
+
+1. **をクリックします…** パイプライン **カードから** を開き、**削除** をクリックします（下図を参照）。
+
+   ![](/help/using/assets/configure-pipelines/nonprod-delete.png)
 
 
 ## 次の手順 {#the-next-steps}
