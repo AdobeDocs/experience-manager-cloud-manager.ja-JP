@@ -5,7 +5,7 @@ exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 17f79fdc7278cae532485570a6e2b8700683ef0d
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 86%
+ht-degree: 95%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 86%
 
 Cloud Manager で作成されて使用可能なリポジトリーは、リポジトリーページで表示および管理できます。
 
-## リポジトリの追加と管理 {#add-manage-repos}
+## リポジトリーの追加と管理 {#add-manage-repos}
 
 Cloud Manager でリポジトリーを表示および管理するには、次の手順に従います。
 
@@ -52,7 +52,7 @@ Git サブモジュールを使用すると、ビルド時に Git リポジト�
 $ git submodule update --init
 ```
 
-これにより、各サブモジュールが適切なディレクトリにチェックアウトされます。この方法は、git サブモジュールの使用に慣れていて、外部マージプロセスを管理したくない組織で、複数のソース Git リポジトリ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html) を使用する場合の [ の代わりに使用できる可能性があります。
+これにより、各サブモジュールが適切なディレクトリにチェックアウトされます。この手法は、Git サブモジュールの使用に慣れており、外部マージプロセスの管理を希望しない組織にとって、[複数のソース Git リポジトリーでの操作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html?lang=ja)の代わりに使用できる可能性があります。
 
 例えば、3 つのリポジトリーがあり、それぞれに main という名前のブランチが 1 つあるとします。「プライマリ」リポジトリー（パイプラインで設定されたもの）の main ブランチには、他の 2 つのリポジトリーに含まれるプロジェクトを宣言する pom.xml ファイルが含まれます。
 
@@ -102,4 +102,4 @@ Git サブモジュールを使用する場合は、次の点に注意してく�
 * Git の URL は、上記の構文に正確に記述する必要があります。セキュリティ上の理由から、これらの URL に資格情報を埋め込まないでください。
 * ブランチのルートにあるサブモジュールのみがサポートされます。
 * Git サブモジュール参照は、特定の Git コミットに保存されます。その結果、サブモジュールリポジトリーに対して変更を加える場合、`git submodule update --remote` などを使用して、参照されるコミットを更新する必要があります。
-* 特に必要がない限り、「シャロー」サブモジュールを使用することを強くお勧めします。 これを行うには、各サブモジュールに対して `git config -f .gitmodules submodule.<submodule path>.shallow true` を実行します。
+* 特に必要がない限り、「シャロー」サブモジュールを使用することを強くお勧めします。 これをおこなうには、を実行します。 `git config -f .gitmodules submodule.<submodule path>.shallow true` 各サブモジュールに対して
