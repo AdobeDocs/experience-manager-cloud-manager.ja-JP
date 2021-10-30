@@ -1,20 +1,20 @@
 ---
 title: Cloud Manager の概要
-seo-title: Cloud Manager の概要
+seo-title: Introduction to Cloud Manager
 description: 'このページは、Cloud Manager の学習の基礎となります。 '
-seo-description: 'このページは、Adobe AEM Cloud Manager の学習の基礎となります。メリットと主な機能を説明します。 '
+seo-description: This page serves as a starting point for learning about Adobe AEM Cloud Manager and highlights the benefits and key features.
 uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-feature: はじめに
+feature: Getting Started
 level: Beginner
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 81c14382821de6b2d249000a79799747a6d9cb19
+source-git-commit: 08d831c560510d58062ed81fab809c12169810cb
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 100%
+source-wordcount: '840'
+ht-degree: 79%
 
 ---
 
@@ -29,16 +29,19 @@ ht-degree: 100%
 
 ## はじめに {#introduction}
 
-クラウドの Adobe Experience Manager（AEM）に属する [!UICONTROL Cloud Manager]（クラウドの Adobe Experience Manager を使用すると、組織はクラウドで Experience Manager を自己管理できます。このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
+[!UICONTROL Cloud Manager] Adobe Experience Managerの場合は、Adobe Experience Managerのベストプラクティスに基づいて構築された、合理化されたワークフローを通じて、開発者が効果的な顧客エクスペリエンスを作成できます。 Adobe Experience Manager向けに最適化された CI/CD パイプラインを使用すると、コードをチェックインし、実稼動に向けてあらゆる手段を講じるだけで、開発ワークフローを簡単に結合できます。 構築フェーズでは、実証済みおよび学習済みのベストプラクティスを使用してカスタムコードの更新を十分にテストし、効果的なデジタルエクスペリエンスを顧客に提供します。 Cloud Manager は、オープン API アプローチを使用し、既存のプロセスやツールを中断することなく、お客様のシステムとの統合を可能にします。
 
-このドキュメントサイトでは特に、Adobe Managed Services（AMS）のお客様が使用できる Cloud Manager の機能について説明します。AEM as a Cloud Service のお客様向けの Cloud Manager の機能と関数に関するドキュメントは、[AEM as a Cloud Service 向けアプリケーションの実装](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=ja)を参照してください。
+このドキュメントサイトでは、Adobe Managed Services(AMS) のお客様向けの Cloud Manager の機能について具体的に説明します。 AEMのas a Cloud Serviceのお客様向けの同等のドキュメントについては、 [AEM as a Cloud Serviceのアプリケーションの実装](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=ja).
 
-[!UICONTROL Cloud Manager] のセルフサービスのカスタマーポータルを使用すると、**組織**&#x200B;は以下のことを実行および活用できます。
+Cloud Manager を使用すると、開発チームは以下を活用できます。
 
-* コードの&#x200B;**継続的統合／継続的配信**&#x200B;により、数か月／数週間かかっていた市場投入時間を数日／数時間へと短縮します。
-* 実稼動の中断を最小限に抑えるために、実稼動にプッシュする前のベストプラクティスに基づいた&#x200B;**コード調査、パフォーマンステストおよびセキュリティの検証**。
-* 最大限の柔軟性とコントロールを実現するための、業務時間以外の&#x200B;**自動、スケジュールまたは手動デプロイメント**。
-* **自動スケーリング**&#x200B;機能により、容量増加の必要性がインテリジェントに検出され、追加の Dispatcher／パブリッシュセグメントが自動的にオンラインになります。
+* コードの継続的統合／継続的配信により、数か月／数週間かかっていた市場投入時間を数日／数時間へと短縮します。
+
+* 実稼動の中断を最小限に抑えるために、実稼動にプッシュする前のベストプラクティスに基づくコード検査、パフォーマンステスト、セキュリティ検証。
+
+* 既存の DevOps プロセスを補完する API 接続。
+
+* 自動スケーリング機能により、容量増加の必要性がインテリジェントに検出され、追加の Dispatcher／パブリッシュセグメントが自動的にオンラインになります。
 
 以下の画像に、[!UICONTROL Cloud Manager] で使用される CI／CD プロセスフローを示します。
 
