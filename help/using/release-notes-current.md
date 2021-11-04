@@ -3,10 +3,10 @@ title: リリースノート（2021.11.0）
 description: このページでは、Cloud Manager リリース 2021.11.0 について説明します。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 0395fd4263ae37bce49c698e8e72ad7b08af046a
+source-git-commit: e6e5a17c16c42e0b0ed5aedd2f9a6360fd81d8cd
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 22%
+source-wordcount: '372'
+ht-degree: 19%
 
 ---
 
@@ -28,6 +28,8 @@ ht-degree: 22%
 * この `x-request-id` 応答ヘッダーが、API Playground の [www.adobe.io](https://www.adobe.io/). このヘッダーは、トラブルシューティングのためにカスタマーケアの問題を送信する際に役立ちます。
 
 * ユーザーとして、パイプラインがゼロのパイプラインカードから適切なガイダンスが提供されるのを確認します。
+
+* 新しいアクティビティページが使用できるようになりました。このページでは、パイプラインやコード実行などのアクティビティに関連する詳細を表示できます。 時間が経つと、このページに示すアクティビティの範囲は、提供された詳細と共に拡大します。
 
 * 詳細の概要を簡単に表示できる新しいパイプラインページと、オンホバー時のステータスポップオーバーが追加されました。 パイプラインの実行に関連する詳細と共に表示できます。
 
