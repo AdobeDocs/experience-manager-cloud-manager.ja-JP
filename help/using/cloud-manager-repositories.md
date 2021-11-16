@@ -3,9 +3,9 @@ title: Cloud Manager リポジトリー
 description: Cloud Manager リポジトリー
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 17f79fdc7278cae532485570a6e2b8700683ef0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '443'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Cloud Manager でリポジトリーを表示および管理するには、次の
    >[!NOTE]
    >Cloud Manager で作成したリポジトリーは、パイプラインの追加または編集手順でも選択できます。
 
-1. リポジトリーを選択し、表の右端にあるメニューオプションをクリックして、**リポジトリーの URL をコピー**、**表示と更新**、**削除**&#x200B;のいずれかを選択できます（下図を参照）。
+1. リポジトリーを選択し、表の右端にあるメニューオプションをクリックして、**リポジトリー URL を作成**、**表示と更新**、**削除**&#x200B;のいずれかを選択できます（下図を参照）。
 
    ![](assets/create-repo3.png)
 
@@ -102,4 +102,4 @@ Git サブモジュールを使用する場合は、次の点に注意してく�
 * Git の URL は、上記の構文に正確に記述する必要があります。セキュリティ上の理由から、これらの URL に資格情報を埋め込まないでください。
 * ブランチのルートにあるサブモジュールのみがサポートされます。
 * Git サブモジュール参照は、特定の Git コミットに保存されます。その結果、サブモジュールリポジトリーに対して変更を加える場合、`git submodule update --remote` などを使用して、参照されるコミットを更新する必要があります。
-* 特に必要がない限り、「シャロー」サブモジュールを使用することを強くお勧めします。 これをおこなうには、を実行します。 `git config -f .gitmodules submodule.<submodule path>.shallow true` 各サブモジュールに対して
+* 特に必要がない限り、「シャロー（shallow）」サブモジュールを使用することを強くお勧めします。それには、サブモジュールごとに `git config -f .gitmodules submodule.<submodule path>.shallow true` を実行します。
