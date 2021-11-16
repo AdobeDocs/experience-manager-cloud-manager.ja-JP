@@ -4,7 +4,7 @@ description: このページでは、Cloud Manager リリース 2021.9.0 につ�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 17f79fdc7278cae532485570a6e2b8700683ef0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '176'
 ht-degree: 100%
 
@@ -35,4 +35,4 @@ ht-degree: 100%
 
 ## バグ修正 {#bug-fixes}
 
-* リポジトリ画面で　URL　コピーメニューオプションを選択すると、間違った　URL　がコピーされていました。
+* リポジトリー画面で　URL　コピーメニューオプションを選択すると、間違った　URL　がコピーされていました。
