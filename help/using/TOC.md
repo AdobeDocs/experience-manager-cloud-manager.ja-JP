@@ -9,7 +9,7 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
 source-git-commit: 0ba21a1223c5cee5d8a46e08f38fc59b5188fd40
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '289'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ ht-degree: 100%
    + [概要](overview-productupdate-wizard.md)
    + [評価](evaluation.md)
 + リリースノート {#release-notes}
-   + [最新のリリースノート (2021.11.0)](release-notes-current.md)
+   + [最新のリリースノート(2021.11.0)](release-notes-current.md)
    + [リリースノート（2021.10.0）](release-notes-2021-10-0.md)
    + [リリースノート（2021.9.0）](release-notes-2021-9-0.md)
    + [リリースノート（2021.8.0）](release-notes-2021-8-0.md)
