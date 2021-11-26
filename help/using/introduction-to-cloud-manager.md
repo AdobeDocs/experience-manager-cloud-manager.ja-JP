@@ -12,13 +12,13 @@ feature: Getting Started
 level: Beginner
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 08d831c560510d58062ed81fab809c12169810cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
-# [!UICONTROL Cloud Manager の概要]{#introduction-to-cloud-manager}
+# [!UICONTROL Cloud Manager の概要] {#introduction-to-cloud-manager}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cloudmanager_introduction"
@@ -29,15 +29,15 @@ ht-degree: 79%
 
 ## はじめに {#introduction}
 
-[!UICONTROL Cloud Manager] Adobe Experience Managerの場合は、Adobe Experience Managerのベストプラクティスに基づいて構築された、合理化されたワークフローを通じて、開発者が効果的な顧客エクスペリエンスを作成できます。 Adobe Experience Manager向けに最適化された CI/CD パイプラインを使用すると、コードをチェックインし、実稼動に向けてあらゆる手段を講じるだけで、開発ワークフローを簡単に結合できます。 構築フェーズでは、実証済みおよび学習済みのベストプラクティスを使用してカスタムコードの更新を十分にテストし、効果的なデジタルエクスペリエンスを顧客に提供します。 Cloud Manager は、オープン API アプローチを使用し、既存のプロセスやツールを中断することなく、お客様のシステムとの統合を可能にします。
+Adobe Experience Manager の [!UICONTROL Cloud Manager] を使用すると、開発者は、Adobe Experience Manager のベストプラクティスに基づいて構築された、合理化されたワークフローを通じて、効果的な顧客エクスペリエンスを作成できます。Adobe Experience Manager に最適化された CI／CD パイプラインを使用すると、コードをチェックインするだけで開発ワークフローを簡単に統合し、本番環境に移行することができます。構築フェーズでは、実証済みおよび学習済みのベストプラクティスを使用してカスタムコードの更新が十分にテストされ、効果的なデジタルエクスペリエンスが顧客に提供されます。Cloud Manager は、オープン API アプローチを使用し、既存のプロセスやツールを中断することなくシステムとの統合を可能にします。
 
-このドキュメントサイトでは、Adobe Managed Services(AMS) のお客様向けの Cloud Manager の機能について具体的に説明します。 AEMのas a Cloud Serviceのお客様向けの同等のドキュメントについては、 [AEM as a Cloud Serviceのアプリケーションの実装](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=ja).
+このドキュメントサイトでは特に、Adobe Managed Services（AMS）のお客様に向けの Cloud Manager の機能について説明します。AEM as a Cloud Service のお客様向けの同等のドキュメントについては、[AEM as a Cloud Service のアプリケーションの実装](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=ja)を参照してください。
 
-Cloud Manager を使用すると、開発チームは以下を活用できます。
+Cloud Manager を使用すると、開発チームは以下のことができるようになります。
 
 * コードの継続的統合／継続的配信により、数か月／数週間かかっていた市場投入時間を数日／数時間へと短縮します。
 
-* 実稼動の中断を最小限に抑えるために、実稼動にプッシュする前のベストプラクティスに基づくコード検査、パフォーマンステスト、セキュリティ検証。
+* 実稼動にプッシュする前に、ベストプラクティスに基づいたコード調査、パフォーマンステストおよびセキュリティの検証を行い、実稼動の中断を最小限に抑えることができます。
 
 * 既存の DevOps プロセスを補完する API 接続。
 
@@ -86,4 +86,4 @@ Cloud Manager を使用すると、開発チームは以下を活用できます
 自動スケーリング機能は、Dispatcher／パブリッシュ層にのみ適用され、Dispatcher とパブリッシュのペアの 1 個以上の追加セグメント、最大で 10 個のセグメントで、常に水平スケール手法を使用して実行されます。プロビジョニングされた追加容量は、CSE（カスタマーサクセスエンジニア）が指定した 10 営業日以内に、手動でスケーリングされます。
 
 >[!NOTE]
->オートスケーリングがアプリケーションに適しているかどうかを確認したいお客様は、CSE またはAdobe 担当者にお問い合わせください。
+>オートスケーリングがご使用中のアプリケーションに適しているかどうかを確認したいお客様は、CSE またはアドビ担当者にお問い合わせください。
