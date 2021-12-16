@@ -1,14 +1,14 @@
 ---
 title: Adobe Cloud Manager と Git の統合
 description: 顧客管理（オンプレミス）の Git リポジトリーと Adobe Cloud Manager の設定および統合に関する手順について説明するビデオシリーズです。
-seo-title: Adobe Cloud Manager と Git の統合
-seo-description: 顧客管理（オンプレミス）の Git リポジトリーと Adobe Cloud Manager の設定および統合に関する手順について説明するビデオシリーズです。
-feature: Git リポジトリー
+seo-title: Git Integration with Adobe Cloud Manager
+seo-description: A video series that walks through the set up and integration of a customer-managed (on-premise) git repository with Adobe Cloud Manager.
+feature: Git Repositories
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 0bc3e775ef2432cdb8d3bd5470953c07c6628148
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 100%
+source-wordcount: '370'
+ht-degree: 95%
 
 ---
 
@@ -23,12 +23,12 @@ Adobe Cloud Manager には、Cloud Manager の CI／CD パイプラインを使�
 このビデオシリーズでは、顧客が管理する Git リポジトリーと Cloud Manager の統合に関する使用例をいくつか紹介します。
 
 * [初期同期](#initial-sync)
-* [基本ブランチ戦略](#branching-strategy)
+* [基本分岐戦略](#branching-strategy)
 * [機能ブランチの開発](#feature-development)
 * [実稼動のデプロイメント](#production-deployment)
 * [リリースタグの同期](#sync-tags)
 
-概要については、[Cloud Manager ユーザーガイド](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)を参照してください。このビデオシリーズは、Git とソース管理に関する基本的な知識を前提としています。Git について詳しくは、以下の[その他のリソース](#additional-resources)を参照してください。
+概要については、[Cloud Manager ユーザーガイドを参照してください。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja)このビデオシリーズは、Git とソース管理に関する基本的な知識を前提としています。Git について詳しくは、以下の[その他のリソース](#additional-resources)を参照してください。
 
 >[!NOTE]
 >
@@ -40,9 +40,9 @@ Adobe Cloud Manager には、Cloud Manager の CI／CD パイプラインを使�
 
 >[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
 
-## 基本ブランチ戦略 {#branching-strategy}
+## 基本分岐戦略 {#branching-strategy}
 
-Cloud Manager の[実稼動用パイプラインと非実稼動用パイプライン](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html)を活用するために、基本ブランチ戦略を設定します。
+Cloud Manager の [実稼動パイプラインと非実稼動パイプライン。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=ja)
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
@@ -66,7 +66,7 @@ Cloud Manager の Git リポジトリーのリリースタグを、顧客管理 
 
 ## その他のリソース {#additional-resources}
 
-* [Cloud Manager ドキュメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GitHub リソース](https://try.github.io)
 * [Atlassian Git チュートリアル](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)

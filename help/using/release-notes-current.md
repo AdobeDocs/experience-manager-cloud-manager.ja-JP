@@ -1,56 +1,36 @@
 ---
-title: リリースノート（2021.11.0）
-description: このページでは、Cloud Manager リリース 2021.11.0 について説明します。
+title: リリースノート（2021.12.0）
+description: Cloud Manager リリース2021.12.0のリリースノートです。
 feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 096468d28d70b84286841dd9818c7aab54662b2b
-workflow-type: ht
-source-wordcount: '372'
-ht-degree: 100%
+source-git-commit: 910def6d82c09e0220a50a3cb34a61f2c7284cb9
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 3%
 
 ---
 
-# リリースノート（2021.11.0） {#release-notes-for}
+# Cloud Manager リリース2021.12.0のリリースノート {#release-notes}
 
-以下の節では、[!UICONTROL Cloud Manager] リリース 2021.11.0 の一般リリースノートの概要を説明します。
+以下の節では、 [!UICONTROL Cloud Manager] リリース2021.12.0。
 
 >[!NOTE]
->AEM as a Cloud Service での Cloud Manager の最新のリリースノートについては、[現在のリリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=ja#getting-access)を参照してください。
+>
+>AEM as a Cloud Serviceの Cloud Manager の最新のリリースノートについては、 [AEM as a Cloud Serviceの最新のリリースノートの Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html)
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2021.11.0 のリリース日は 2021 年 11 月 04 日（PT）です。次回のリリースは 2021 年 12 月 16 日（PT）に予定されています。
+のリリース日 [!UICONTROL Cloud Manager] リリース2021.12.0は 2021 年 12 月 16 日です。 次回のリリースは 2022 年 1 月に予定されています。
 
 ## 新機能 {#whats-new}
 
-* パイプライン実行の詳細に Git Commit ID が表示されるようになり、ビルドされたコードの追跡が容易になりました。
-
-* この `x-request-id` 応答ヘッダーが、[www.adobe.io](https://www.adobe.io/) の API Playground に表示されるようになりました。このヘッダーは、トラブルシューティングのためにカスタマーケアに関する問題を送信する際に役立ちます。
-
-* ユーザーには、パイプラインがゼロのパイプラインカードから適切なガイダンスが提供されます。
-
-* 新しいアクティビティページが使用できるようになりました。このページでは、パイプラインやコード実行などのアクティビティに関連する詳細を表示できます。時間が経つと、このページに表示されるアクティビティの範囲は拡大し、詳細も表示されるようになります。
-
-* カーソルを合わせたときにステータスのポップオーバーが表示され、詳細の概要を簡単に確認できる新しいパイプラインページが追加されました。パイプラインの実行状況が、関連する詳細と共に表示されます。
-
-* パイプラインの編集 API で、Dispatcher の無効化とフラッシュパスの設定がサポートされるようになりました。
-
-* パイプラインの編集 API で、デプロイフェーズで使用する環境の変更がサポートされるようになりました。
-
-* OakPal スキャンプロセスの最適化が、大規模パッケージに導入されました。
-
-* 品質問題の CSV ファイルに、品質問題ごとのタイムスタンプが含まれるようになりました。
-
-* 環境ページの「管理」ボタンは UI に表示されなくなりました。
+* UI に既に表示されているコミットハッシュも API で提供されるようになりました。
+* アクティビティページに、パイプラインの詳細の概要を一目で確認できる、実行中のパイプラインのポップオーバーが含まれるようになりました。
+* アクティビティページに表示される追加の詳細を含めるための更新が追加されました。
+* Cloud Manager の「学習」タブで、API ガイドと関連リソースにすばやくアクセスできるようになりました。
+* デプロイメントマネージャーの役割を持つユーザーは、リポジトリページのアクションメニューから、ブランチのないリポジトリのプロジェクト/ブランチ作成ウィザードを開始できるようになりました。
+* パイプラインの追加または編集ワークフローに属するデプロイメントマネージャーが、選択したリポジトリにブランチがない場合のブランチまたはプロジェクトの作成方法に関する情報を受け取るようになりました。
+* 実稼動パイプラインを編集ウィンドウで、実稼動用の複数のステージ環境がある場合は、環境選択用のドロップダウンを使用できます。
 
 ## バグ修正 {#bug-fixes}
 
-* 正常でないビルド設定があると、パイプラインの Maven アーティファクトキャッシュに不要なファイルが保存され、ビルドコンテナの開始と停止時に不要なネットワーク I/O が発生していました。
-
-* デプロイフェーズが存在しない場合、パイプライン PATCH API は失敗します。
-
-* 共通の基本パスを持つクライアントライブラリがある場合、`ClientlibProxyResourceCheck` 品質ルールで偽陽性の問題が発生していました。
-
-* リポジトリーの最大数に達したエラーメッセージで、エラーの理由が明記されていませんでした。
-
-* まれに、特定の応答コードの不適切な再試行処理が原因でパイプラインが失敗することがありました。
+* ユーザーが名前フィールドに別の名前を入力した場合でも、完全なスタック実稼動パイプラインの名前は「実稼動パイプライン」のままです。

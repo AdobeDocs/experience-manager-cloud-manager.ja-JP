@@ -1,11 +1,10 @@
 ---
 title: リリースノート（2021.3.0）
 description: このページでは、Cloud Manager リリース 2021.3.0 について説明します。
-feature: リリース情報
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 503d9b25855633737c49e3e278a3a76052ed84d1
+feature: Release Information
+source-git-commit: 09dd8fe608d95cd9dbc95129cf86b9693c2839b5
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 100%
 
 ---
