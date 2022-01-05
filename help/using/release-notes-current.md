@@ -1,36 +1,36 @@
 ---
 title: リリースノート（2021.12.0）
-description: Cloud Manager リリース2021.12.0のリリースノートです。
+description: Cloud Manager リリース 2021.12.0 のリリースノートです。
 feature: Release Information
 source-git-commit: 910def6d82c09e0220a50a3cb34a61f2c7284cb9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '253'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Cloud Manager リリース2021.12.0のリリースノート {#release-notes}
+# Cloud Manager リリース 2021.12.0 のリリースノート {#release-notes}
 
-以下の節では、 [!UICONTROL Cloud Manager] リリース2021.12.0。
+次のセクションでは、[!UICONTROL Cloud Manager] リリース 2021.12.0 のリリースノートの概要を説明します。
 
 >[!NOTE]
 >
->AEM as a Cloud Serviceの Cloud Manager の最新のリリースノートについては、 [AEM as a Cloud Serviceの最新のリリースノートの Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html)
+>AEM as a Cloud Service の Cloud Manager の最新のリリースノートについては、「[AEM as a Cloud Service の Cloud Manager の最新のリリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html?lang=ja)」を参照してください。
 
 ## リリース日 {#release-date}
 
-のリリース日 [!UICONTROL Cloud Manager] リリース2021.12.0は 2021 年 12 月 16 日です。 次回のリリースは 2022 年 1 月に予定されています。
+[!UICONTROL Cloud Manager] リリース 2021.12.0 のリリース日は 2021 年 12 月 16 日です。次回のリリースは 2022 年 1 月（PT）の予定です。
 
 ## 新機能 {#whats-new}
 
-* UI に既に表示されているコミットハッシュも API で提供されるようになりました。
-* アクティビティページに、パイプラインの詳細の概要を一目で確認できる、実行中のパイプラインのポップオーバーが含まれるようになりました。
-* アクティビティページに表示される追加の詳細を含めるための更新が追加されました。
-* Cloud Manager の「学習」タブで、API ガイドと関連リソースにすばやくアクセスできるようになりました。
-* デプロイメントマネージャーの役割を持つユーザーは、リポジトリページのアクションメニューから、ブランチのないリポジトリのプロジェクト/ブランチ作成ウィザードを開始できるようになりました。
-* パイプラインの追加または編集ワークフローに属するデプロイメントマネージャーが、選択したリポジトリにブランチがない場合のブランチまたはプロジェクトの作成方法に関する情報を受け取るようになりました。
-* 実稼動パイプラインを編集ウィンドウで、実稼動用の複数のステージ環境がある場合は、環境選択用のドロップダウンを使用できます。
+* UI ではすでに表示されているコミットハッシュも、API で提供されるようになりました。
+* アクティビティページにパイプラインを実行中のポップオーバーが追加され、パイプラインの詳細が一目でわかるようになりました。
+* アクティビティページに表示される追加の詳細を含める更新を行いました。
+* Cloud Manager の「学習」タブに、API ガイドと関連リソースへのクイックアクセスが追加されました。
+* Deployment Manager のロールを持つユーザーは、リポジトリページのアクションメニューから、ブランチのないリポジトリに対してプロジェクト/ブランチ作成ウィザードを開始できるようになりました。
+* パイプラインの追加または編集ワークフローにいる Deployment Manager は、選択したリポジトリにブランチがない場合、ブランチまたはプロジェクトを作成する方法を通知されるようになりました。
+* 実稼動パイプラインの編集ウィンドウで、実稼動用のステージ環境が複数ある場合、環境選択用のドロップダウンを使用できるようになりました。
 
 ## バグ修正 {#bug-fixes}
 
-* ユーザーが名前フィールドに別の名前を入力した場合でも、完全なスタック実稼動パイプラインの名前は「実稼動パイプライン」のままです。
+* 完全なスタック実稼動パイプラインの名前は、ユーザーが名前フィールドに別の名前を入力した場合でも、「実稼動パイプライン」のままです。
