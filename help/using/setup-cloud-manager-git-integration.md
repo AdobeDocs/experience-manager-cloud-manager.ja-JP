@@ -6,9 +6,9 @@ seo-description: A video series that walks through the set up and integration of
 feature: Git Repositories
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 source-git-commit: 0bc3e775ef2432cdb8d3bd5470953c07c6628148
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '370'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Adobe Cloud Manager には、Cloud Manager の CI／CD パイプラインを使�
 
 ## 基本分岐戦略 {#branching-strategy}
 
-Cloud Manager の [実稼動パイプラインと非実稼動パイプライン。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=ja)
+Cloud Manager の[実稼動用パイプラインと非実稼動用パイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=ja)を活用するために、基本的なブランチ戦略を設定します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
@@ -66,7 +66,7 @@ Cloud Manager の Git リポジトリーのリリースタグを、顧客管理 
 
 ## その他のリソース {#additional-resources}
 
-* [Cloud Manager ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja)
 * [GitHub リソース](https://try.github.io)
 * [Atlassian Git チュートリアル](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
