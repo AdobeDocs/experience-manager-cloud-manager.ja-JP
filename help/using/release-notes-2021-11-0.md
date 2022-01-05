@@ -4,7 +4,7 @@ description: このページでは、Cloud Manager リリース 2021.11.0 につ
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 6852df51d4b9b4947f1d5ce0b5a284bef94d0589
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
 ht-degree: 100%
 
