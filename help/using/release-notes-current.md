@@ -2,9 +2,10 @@
 title: リリースノート（2021.12.0）
 description: Cloud Manager リリース 2021.12.0 のリリースノートです。
 feature: Release Information
-source-git-commit: 910def6d82c09e0220a50a3cb34a61f2c7284cb9
-workflow-type: ht
-source-wordcount: '253'
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+source-git-commit: 61f2d1e0882b752d1a1d5e62f9c028aa71941efe
+workflow-type: tm+mt
+source-wordcount: '269'
 ht-degree: 100%
 
 ---
@@ -30,6 +31,7 @@ ht-degree: 100%
 * Deployment Manager のロールを持つユーザーは、リポジトリページのアクションメニューから、ブランチのないリポジトリに対してプロジェクト/ブランチ作成ウィザードを開始できるようになりました。
 * パイプラインの追加または編集ワークフローにいる Deployment Manager は、選択したリポジトリにブランチがない場合、ブランチまたはプロジェクトを作成する方法を通知されるようになりました。
 * 実稼動パイプラインの編集ウィンドウで、実稼動用のステージ環境が複数ある場合、環境選択用のドロップダウンを使用できるようになりました。
+* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 32 に更新されました。
 
 ## バグ修正 {#bug-fixes}
 
