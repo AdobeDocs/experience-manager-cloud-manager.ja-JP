@@ -4,7 +4,7 @@ description: Cloud Manager リリース 2021.12.0 のリリースノートです
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 5796f30c311f2f25421b53d40e0d4429c4458ff6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '269'
 ht-degree: 100%
 
