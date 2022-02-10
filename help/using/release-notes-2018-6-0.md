@@ -1,19 +1,19 @@
 ---
 title: リリースノート（2018.6.0）
-seo-title: AEM Cloud Manager リリースノート（2018.6.0）
+seo-title: AEM Cloud Manager Release Notes for 2018.6.0
 description: このページでは、Cloud Manager リリース 2018.6.0 について説明します。
-seo-description: このページでは、AEM Cloud Manager リリース 2018.6.0 について説明します。
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2018.6.0.
 uuid: 211b6e1b-10fb-46b0-b591-44d5e44abd77
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 8584f467-3e61-41ea-98e4-f79e68c86469
-feature: リリース情報
+feature: Release Information
 exl-id: 456f7892-c64c-4b3f-b845-15682d034aaa
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 100%
+source-wordcount: '321'
+ht-degree: 89%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 100%
 
 ## 新機能 {#what-s-new}
 
-* **CI／CD パイプライン** - CI／CD パイプラインの実行中にステージング環境と実稼動環境の両方で Dispatcher の無効化とキャッシュのフラッシュを設定可能。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。
+* **CI／CD パイプライン** - CI／CD パイプラインの実行中にステージング環境と実稼動環境の両方で Dispatcher の無効化とキャッシュのフラッシュを設定可能。ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
 
-* **CI／CD パイプライン** - 品質ゲートの 1 つで重大なエラーが発生した場合のパイプラインの動作を、パイプラインの設定時に定義できるようになりました。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。
+* **CI／CD パイプライン** - 品質ゲートの 1 つで重大なエラーが発生した場合のパイプラインの動作を、パイプラインの設定時に定義できるようになりました。ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
 
-* **CI／CD パイプライン** - 担当の CSE または対応可能な CSE に CSE 管理を実行してもらうかどうかを、パイプラインの設定時に選択できるようになりました。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。
+* **CI／CD パイプライン** - 担当の CSE または対応可能な CSE に CSE 管理を実行してもらうかどうかを、パイプラインの設定時に選択できるようになりました。ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
 
 * **CI／CD パイプライン** - CI／CD パイプラインがビジネス承認ステップに到達すると、デプロイメントを承認する権限を持っているユーザーに通知が送信されます。詳しくは、[通知](notifications.md)を参照してください。
 

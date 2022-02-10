@@ -1,17 +1,17 @@
 ---
 title: CI／CD パイプライン
-seo-title: CI／CD パイプライン
+seo-title: CI/CD Pipeline
 description: Cloud Manager でステージングおよび実稼動環境へのデプロイメントを処理する CI／CD パイプラインの概要
-seo-description: この節では、Cloud Manager でステージングおよび実稼動環境へのデプロイメントを処理する CI／CD パイプラインについて説明します
+seo-description: Follow this section to learn about the CI/CD pipeline, which handles deployments to stage and production in Cloud Manager
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
-feature: CI／CD パイプライン
+feature: CI-CD Pipeline
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 100%
+source-wordcount: '551'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 100%
 
 ### CI／CD パイプラインの設定方法 {#how-to-setup-a-ci-cd-pipeline}
 
-パイプラインの設定について詳しくは、[パイプラインの設定](configuring-pipeline.md)を参照してください。
+パイプラインの設定について詳しくは、ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) および [実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md)
 
 ## 品質ゲート {#quality-gates}
 
@@ -68,4 +68,4 @@ CI／CD パイプラインは、品質ゲートつまり受け入れ条件を提
 
 ### ゲートの設定方法 {#how-to-setup-gates}
 
-コード、品質およびパフォーマンスに関するゲートの設定について詳しくは、**[ゲートの設定](configuring-pipeline.md)**&#x200B;を参照してください。
+ドキュメントを参照 [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。

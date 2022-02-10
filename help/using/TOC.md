@@ -8,10 +8,10 @@ user-guide-description: Adobe Managed Services を使用して、クラウド内
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
-source-git-commit: e3f0759437707f73dfc6851608e06e30064c0f16
-workflow-type: ht
-source-wordcount: '294'
-ht-degree: 100%
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,10 @@ ht-degree: 100%
    + [リリースブランチの設定](configure-your-release-branches.md)
    + [Dispatcher 設定の管理](dispatcher-configurations.md)
 + 使用方法 {#how-to-use}
-   + [CI／CD パイプラインの設定](configuring-pipeline.md)
+   + CI/CD パイプライン {#pipelines}
+      + [実稼動パイプラインの設定](configuring-production-pipelines.md)
+      + [実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md)
+      + [パイプラインの管理](managing-pipelines.md)
    + [コードのデプロイ](deploying-code.md)
    + [テスト結果の理解](understand-your-test-results.md)
    + [環境の管理](manage-your-environment.md)
@@ -62,6 +65,7 @@ ht-degree: 100%
    + [評価](evaluation.md)
 + リリースノート {#release-notes}
    + [最新のリリースノート](release-notes-current.md)
+   + [リリースノート（2022.1.0）](release-notes-2022-1-0.md)
    + [リリースノート（2021.12.0）](release-notes-2021-12-0.md)
    + [リリースノート（2021.11.0）](release-notes-2021-11-0.md)
    + [リリースノート（2021.10.0）](release-notes-2021-10-0.md)

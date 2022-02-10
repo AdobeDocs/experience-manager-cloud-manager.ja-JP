@@ -1,19 +1,19 @@
 ---
 title: リリースノート（2019.1.0）
-seo-title: AEM Cloud Manager リリースノート（2019.1.0）
+seo-title: AEM Cloud Manager Release Notes for 2019.1.0
 description: このページでは、Cloud Manager リリース 2019.1.0 について説明します。
-seo-description: このページでは、AEM Cloud Manager リリース 2019.1.0 について説明します。
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.1.0.
 uuid: 3af5808f-828f-4846-bee4-1e62194b48ad
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-feature: リリース情報
+feature: Release Information
 exl-id: 383ca5a0-4b0b-48e9-aa48-1d1388875329
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 100%
+source-wordcount: '319'
+ht-degree: 82%
 
 ---
 
@@ -27,10 +27,10 @@ ht-degree: 100%
 
 ## 新機能 {#whats-new}
 
-* AEM Assets のパフォーマンステストをサポートするようになりました。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。
-* ビルドステップおよびコード品質ステップのみを実行するパイプラインと、実稼動以外の環境にデプロイするパイプラインをサポートするようになりました。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)の&#x200B;**非実稼動環境パイプラインとコード品質専用パイプライン**&#x200B;の節を参照してください。
+* AEM Assets のパフォーマンステストをサポートするようになりました。ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
+* ビルドステップおよびコード品質ステップのみを実行するパイプラインと、実稼動以外の環境にデプロイするパイプラインをサポートするようになりました。ドキュメントを参照してください [実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md) を参照してください。
 * ビルド環境でカスタム環境変数をサポートするようになりました。
-* 複数のステージング環境または実稼動環境をお持ちのお客様の場合は、実稼動パイプラインの一部としてデプロイ先の環境を [CI／CD パイプラインの設定](configuring-pipeline.md)ページで選択することができます。
+* 複数のステージ環境または実稼動環境を持つお客様の場合は、実稼動パイプラインの一部としてデプロイ先の環境を選択できます。 ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
 * httxt2dbm がビルドコンテナに追加されました。
 * どのヘルプメニュー項目を選択しても新しいタブが開きます。
 

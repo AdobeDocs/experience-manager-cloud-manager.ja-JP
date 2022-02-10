@@ -1,18 +1,18 @@
 ---
-title: リリースノート（2022.01.0）
-description: Cloud Manager リリース 2022.01.0 のリリースノートです。
+title: リリースノート（2022.2.0）
+description: Cloud Manager リリース 2022.2.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: ebbbbdca2bfd834bc3dc0ff06ffb318df42713ee
-workflow-type: ht
-source-wordcount: '149'
-ht-degree: 100%
+source-git-commit: ae4cc3e8056e6ac317628e997271b4b01c7251c3
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 53%
 
 ---
 
-# Cloud Manager リリース 2021.12.0 のリリースノート {#release-notes}
+# Cloud Manager リリース 2022.2.0 のリリースノート {#release-notes}
 
-次の節では、[!UICONTROL Cloud Manager] リリース 2022.01.0 のリリースノートの概要を説明します。
+次の節では、[!UICONTROL Cloud Manager] リリース 2022.2.0 のリリースノートの概要を説明します。
 
 >[!NOTE]
 >
@@ -20,14 +20,13 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] リリース 2022.01.0 のリリース日は 2022年1月20日（PT）です。次回のリリースは 2022年2月10日（PT）の予定です。
+のリリース日 [!UICONTROL Cloud Manager] リリース 2022.2.0 は 2022 年 2 月 10 日です。 次回のリリースは 2022 年 3 月 10 日に予定されています。
 
 ## 新機能 {#whats-new}
 
-* Cloud Manager は、複数のフルスタックパイプライン実行で[同じ Git コミットが使用されていることを検出した場合、コードベースの再ビルドを避けます](/help/using/setting-up-project.md#build-artifact-reuse)。
-* Git パスワードの生成時に、有効期限が表示されます。
+* 更新された Cloud Manager ランディングページエクスペリエンスにより、ナビゲーションの改善、グリッド/タイル表示の切り替えの容易化、プログラムの概要をすばやく表示するためのポップオーバーが提供されます。
 
 ## バグ修正 {#bug-fixes}
 
-* 偽陽性のパイプラインエラーがまれに発生する問題を対処しました。
-* リポジトリーが 1 つだけのプログラムの場合、パイプライン実行画面にリポジトリー名が表示されるようになりました。
+* ロールバックの実行を、完全なスタックパイプラインの実行と正しく区別できるようになりました。
+* 古い Git リポジトリのパスワードが、新しいパスワードの生成時に常に無効化されるようになりました。

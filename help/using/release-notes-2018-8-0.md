@@ -1,19 +1,19 @@
 ---
 title: リリースノート（2018.8.0）
-seo-title: AEM Cloud Manager リリースノート（2018.8.0）
+seo-title: AEM Cloud Manager Release Notes for 2018.8.0
 description: このページでは、Cloud Manager リリース 2018.8.0 について説明します。
-seo-description: このページでは、AEM Cloud Manager リリース 2018.8.0 について説明します。
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2018.8.0.
 uuid: e8aaba32-89b4-4bc5-b295-09b753252612
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
-feature: リリース情報
+feature: Release Information
 exl-id: 20f87048-30f7-4869-aad0-13ca383a404b
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 100%
+source-wordcount: '324'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 * **プログラムの設定** - AEM プロジェクトアーキタイプを使用して git でアプリケーションプロジェクトを作成する新しいウィザード
 
-* **CI／CD パイプライン** - CI／CD パイプラインに次の変更が追加されました。詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。
+* **CI／CD パイプライン** - CI／CD パイプラインに次の変更が追加されました。ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
 
    * 設定された Git ブランチにコミットが追加されるたびに CI／CD パイプラインを開始する「Git の変更時」トリガーが導入されました。
    * ホーム画面のカードが、パイプライン実行ページの特定のセクションにディープリンクされるようになりました。

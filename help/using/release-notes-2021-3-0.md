@@ -2,10 +2,11 @@
 title: リリースノート（2021.3.0）
 description: このページでは、Cloud Manager リリース 2021.3.0 について説明します。
 feature: Release Information
-source-git-commit: 09dd8fe608d95cd9dbc95129cf86b9693c2839b5
-workflow-type: ht
-source-wordcount: '244'
-ht-degree: 100%
+exl-id: e05b22fe-f071-4b69-9db1-e3d7ee4cfbcc
+source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 100%
 
 * 「**バージョン**」ラベルが、実稼動パイプライン実行画面の&#x200B;**Git タグ**&#x200B;に変更されました。
 
-* 重要な指標が定義済みのしきい値を満たさない場合の動作を定義するラベルが、その真の動作（**直ちにキャンセル**、**直ちに承認**）を反映するように変更されました。詳しくは、[パイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=ja#configuring-the-pipeline-settings-from-cloud-manager)を参照してください。
+* 重要な指標が定義済みのしきい値を満たさない場合の動作を定義するラベルが、その真の動作（**直ちにキャンセル**、**直ちに承認**）を反映するように変更されました。ドキュメントを参照します。 [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
 
 * AEM Cloud Service SDK のバージョン `2021.3.4997.20210303T022849Z-210225` に基づいて、クラスとメソッドの非推奨リストが更新されました。
 

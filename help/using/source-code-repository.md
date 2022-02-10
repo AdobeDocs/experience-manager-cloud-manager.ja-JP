@@ -1,19 +1,19 @@
 ---
 title: ソースコードリポジトリー
-seo-title: Adobe AEM Cloud Manager のソースコードリポジトリー
+seo-title: Source Code Repository for Adobe AEM Cloud Manager
 description: このページでは、Cloud Manager で管理するプログラムごとにプロビジョニングされる Git リポジトリーについて説明します。
-seo-description: このページでは、Adobe AEM Cloud Manager で管理するプログラムごとにプロビジョニングされる Git リポジトリーについて説明します。
+seo-description: Follow this page to learn about the git repository that is provisioned for each program you have in Adobe AEM Cloud Manager.
 uuid: 2c42775f-8703-43f7-bad2-7dc086ea9dd7
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: f90f0f4c-c1ff-47f6-8d97-ff5018561bf2
-feature: プロビジョニング
+feature: Provisioning
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 Git でブランチを設定する方法について詳しくは、[リリースブランチの設定](configure-your-release-branches.md)を参照してください。
 
-Cloud Manager の **Git リポジトリー**&#x200B;を CI／CD パイプラインで使用する方法について詳しくは、[CI／CD パイプラインの設定](configuring-pipeline.md)を参照してください。
+Cloud Manager の **Git リポジトリ** CI/CD Pipeline を使用する場合は、ドキュメントを参照してください。 [実稼動パイプラインの設定](configuring-production-pipelines.md) および [実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md) を参照してください。
 
 ## オンプレミスリポジトリー {#on-premise-repository}
 
