@@ -9,9 +9,9 @@ discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 feature: CI-CD Pipeline
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '551'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 94%
 
 ### CI／CD パイプラインの設定方法 {#how-to-setup-a-ci-cd-pipeline}
 
-パイプラインの設定について詳しくは、ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) および [実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md)
+パイプラインの設定について詳しくは、[実稼動パイプラインの設定](configuring-production-pipelines.md)および[実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md)のドキュメントを参照してください。 
 
 ## 品質ゲート {#quality-gates}
 
@@ -68,4 +68,4 @@ CI／CD パイプラインは、品質ゲートつまり受け入れ条件を提
 
 ### ゲートの設定方法 {#how-to-setup-gates}
 
-ドキュメントを参照 [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
+コード、品質およびパフォーマンスに関するゲートの設定について詳しくは、[実稼動パイプラインの設定](configuring-production-pipelines.md)のドキュメントを参照してください。
