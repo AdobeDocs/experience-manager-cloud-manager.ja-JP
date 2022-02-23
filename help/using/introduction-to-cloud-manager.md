@@ -12,9 +12,9 @@ feature: Getting Started
 level: Beginner
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Cloud Manager を使用すると、開発チームは以下のことができる
 
 [!UICONTROL Cloud Manager] UI を使用して、CI／CD パイプラインを設定および開始できます。このパイプラインの間、徹底したコードスキャンが実行され、高品質なアプリケーションのみが実稼動環境に渡されます。
 
-からのパイプラインの設定に関する詳細は、以下を参照してください。 [!UICONTROL Cloud Manager]の UI（ドキュメントを参照） [実稼動パイプラインの設定](configuring-production-pipelines.md) および [実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md)
+[!UICONTROL Cloud Manager] の UI からのパイプラインの設定について詳しくは、[実稼動パイプラインの設定](configuring-production-pipelines.md)および[実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md)を参照してください。
 
 ### 柔軟なデプロイメントモード {#flexible-deployment-modes}
 
