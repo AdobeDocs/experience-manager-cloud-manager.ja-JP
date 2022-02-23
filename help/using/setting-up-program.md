@@ -1,14 +1,14 @@
 ---
 title: プログラムの設定
 seo-title: Set Up Your Program
-description: オンボーディング後、ビジネスオーナーはプログラムの初期設定をおこなう必要があります。
+description: オンボーディング後、ビジネスオーナーはプログラムの初期設定を行う必要があります。
 seo-description: After onboarding, the business owner will need to do some initial setup of Adobe AEM Cloud Manager. This involves setting the program description and defining the KPIs which will be used for performance testing.
 feature: Getting Started
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '693'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -106,4 +106,4 @@ ht-degree: 97%
 
 パイプラインを設定済みの場合、更新された設定は次回の実行で考慮されます。まだパイプラインを設定していない場合は、まず手順に従ってパイプラインを設定します。
 
-書類を見て下さい [実稼動パイプラインの設定](configuring-production-pipelines.md) および [実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md) を参照してください。
+パイプラインの設定については、[実稼動パイプラインの設定](configuring-production-pipelines.md)および[実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md)のドキュメントを参照してください。
