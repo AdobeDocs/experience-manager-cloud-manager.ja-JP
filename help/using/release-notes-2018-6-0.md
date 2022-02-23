@@ -11,27 +11,27 @@ discoiquuid: 8584f467-3e61-41ea-98e4-f79e68c86469
 feature: Release Information
 exl-id: 456f7892-c64c-4b3f-b845-15682d034aaa
 source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # リリースノート（2018.6.0） {#release-notes-for}
 
-以下の節では、[!UICONTROL Cloud Manager] リリース 2018.6.0 の一般リリースノートの概要を説明し、デプロイメント中のディスパッチャーの無効化、追加の通知およびユーザビリティの改善についても説明します。
+以下の節では、[!UICONTROL Cloud Manager] リリース 2018.6.0 の一般リリースノートの概要を説明し、デプロイメント中の Dispatcher の無効化、追加の通知およびユーザビリティの改善についても説明します。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2018.6.0 のリリース日は 2018 年 8 月 9 日（PT）です。
+[!UICONTROL Cloud Manager] バージョン 2018.6.0 のリリース日は 2018年8月9日（PT）です。
 
 ## 新機能 {#what-s-new}
 
-* **CI／CD パイプライン** - CI／CD パイプラインの実行中にステージング環境と実稼動環境の両方で Dispatcher の無効化とキャッシュのフラッシュを設定可能。ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
+* **CI／CD パイプライン** - CI／CD パイプラインの実行中にステージング環境と実稼動環境の両方で Dispatcher の無効化とキャッシュのフラッシュを設定可能。詳しくは、[実稼動パイプラインの設定](configuring-production-pipelines.md)のドキュメントを参照してください。
 
-* **CI／CD パイプライン** - 品質ゲートの 1 つで重大なエラーが発生した場合のパイプラインの動作を、パイプラインの設定時に定義できるようになりました。ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
+* **CI／CD パイプライン** - 品質ゲートの 1 つで重大なエラーが発生した場合のパイプラインの動作を、パイプラインの設定時に定義できるようになりました。詳しくは、[実稼動パイプラインの設定](configuring-production-pipelines.md)のドキュメントを参照してください。
 
-* **CI／CD パイプライン** - 担当の CSE または対応可能な CSE に CSE 管理を実行してもらうかどうかを、パイプラインの設定時に選択できるようになりました。ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
+* **CI／CD パイプライン** - 担当の CSE または対応可能な CSE に CSE 管理を実行してもらうかどうかを、パイプラインの設定時に選択できるようになりました。詳しくは、[実稼動パイプラインの設定](configuring-production-pipelines.md)のドキュメントを参照してください。
 
 * **CI／CD パイプライン** - CI／CD パイプラインがビジネス承認ステップに到達すると、デプロイメントを承認する権限を持っているユーザーに通知が送信されます。詳しくは、[通知](notifications.md)を参照してください。
 
