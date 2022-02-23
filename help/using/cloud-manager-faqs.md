@@ -6,9 +6,9 @@ seo-description: Follow this page to get answers on Cloud Manager FAQs
 feature: Getting Started
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '881'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 以下の節では、Cloud Manager に関するよくある質問と、その回答を示します。
 
-## Cloud Manager ビルドで Java 11 を使用することは可能ですか？  {#java-11-cloud-manager}
+## Cloud Manager ビルドで Java 11 を使用することは可能ですか？ {#java-11-cloud-manager}
 
 ビルドを Java 8 から 11 に切り替えようとすると、AEM Cloud Manager のビルドに失敗します。この問題には多くの原因があり、ほとんどの一般的な原因は以下のとおりです。
 
@@ -28,24 +28,24 @@ ht-degree: 97%
 
 * Cloud Manager ビルドの場合、Maven Enforcer プラグインはエラー `"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion"` で失敗します。これは既知の問題です。Cloud Manager では、maven コマンドの実行に、コードをコンパイルした際と異なるバージョンの Java を使用しているためです。ひとまず、maven-enforcer-plugin 設定から `requireJavaVersion` を省略します。
 
-## コード品質のチェックの失敗が原因で、デプロイメントが停止します。このチェックを回避する方法はありますか  {#deployment-stuck}
+## コード品質のチェックの失敗が原因で、デプロイメントが停止します。このチェックを回避する方法はありますか？ {#deployment-stuck}
 
 *セキュリティ評価*&#x200B;以外のコード品質エラー指標は重要ではありません。結果として生成される UI の項目を展開すると、これらのエラーを回避できます。
 
 [デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナー](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja#requirements)は、問題をオーバーライドできます。この場合、パイプラインは続行されます。または、問題を承認できます。この場合、パイプラインはエラーで停止します。詳細は、[パイプラインの実行中の 3 層ゲート](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=ja#how-to-use)を参照してください。
 
-## Cloud Manager のデプロイメントが、Adobe Managed Services 環境のパフォーマンステストの手順で失敗します。重要な指標を渡すには、どのようにデバッグすればよいでしょうか  {#debug-critical-metrics}
+## Cloud Manager のデプロイメントが、Adobe Managed Services 環境のパフォーマンステストの手順で失敗します。重要な指標を渡すには、どのようにデバッグすればよいでしょうか？ {#debug-critical-metrics}
 
-結果を理解するには、[テスト結果の理解](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use)を参照してください。
+結果を理解するには、[テスト結果の理解](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=ja#how-to-use)を参照してください。
 
 パフォーマンステストの手順に関する注意事項
 
 * *パフォーマンスステップ*&#x200B;は、Web パフォーマンスステップ（Web ブラウザーを使用してページを読み込むのにかかる時間）です。
 * 結果として出力される *CSV* ファイルにリストされる URL は、テスト中に Cloud Manager インフラストラクチャの Chrome ブラウザーに読み込まれます。
 * 一般的な失敗指標は、*エラー率*&#x200B;です。URL を渡すには、メイン URL が `200` ステータスかつ `20` 秒未満で読み込まれる必要があります。`20` 秒を超えるページ読み込みは `504` エラーとなります。
-* サイトでユーザー認証が必要な場合は、 [テスト結果の理解](understand-your-test-results.md#authenticated-performance-testing) サイトに対する認証を行うためのテストを設定する場合。
+* サイトでユーザー認証が必要な場合は、サイトに対する認証のテストに関する[テスト結果の理解](understand-your-test-results.md#authenticated-performance-testing)のドキュメントを参照してください。
 
-## Maven プロジェクトのバージョンでは SNAPSHOT を使用できますか。パッケージとバンドル jar ファイルのバージョン管理は、ステージング環境および実稼動環境でのデプロイメントでどのように機能しますか  {#snapshot-version}
+## Maven プロジェクトのバージョンでは SNAPSHOT を使用できますか？パッケージとバンドル jar ファイルのバージョン管理は、ステージング環境および実稼動環境でのデプロイメントでどのように機能しますか？ {#snapshot-version}
 
 ステージング環境および実稼動環境でのデプロイメント向けパッケージおよびバンドル jar ファイルのバージョン管理については、次のシナリオを参照してください。
 
@@ -71,11 +71,11 @@ ht-degree: 97%
 
    `git push origin --delete testbranch1`
 
-## Cloud Manager での maven のビルド失敗はデプロイされますが、ローカルではビルドされ、エラーは発生しません。デバッグの方法? {#maven-build-fail}
+## Cloud Manager での maven のビルド失敗はデプロイされますが、ローカルではビルドされ、エラーは発生しません。デバッグの方法？ {#maven-build-fail}
 
 詳しくは、[Git リソース](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md)を参照してください。
 
-## aio cloud manager set pipeline variablesで変数を設定できません。これらの問題をデバッグするにはどうすればよいですか  {#set-variable}
+## aio cloud manager set pipeline variablesで変数を設定できません。これらの問題をデバッグするにはどうすればよいですか？ {#set-variable}
 
 以下に示すようなコマンドでパイプライン変数をリストまたは設定しようとして `403` エラーが発生した場合は、Admin Console で、Cloud Manager 製品の役割の 1 つである&#x200B;*デプロイメントマネージャー*&#x200B;として自分自身を追加する必要があります。\
 詳しくは、[API の権限](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)を参照してください。
