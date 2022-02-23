@@ -4,9 +4,9 @@ description: このページでは、Cloud Manager リリース 2021.3.0 につ�
 feature: Release Information
 exl-id: e05b22fe-f071-4b69-9db1-e3d7ee4cfbcc
 source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 95%
 
 * 「**承認用アプリケーション**」ラベルが「**実稼動の承認**」に変更され、分かりやすくなりした。
 
-* 「**バージョン**」ラベルが、実稼動パイプライン実行画面の&#x200B;**Git タグ**&#x200B;に変更されました。
+* 「**バージョン**」ラベルが、実稼動パイプライン実行画面の **Git タグ**&#x200B;に変更されました。
 
-* 重要な指標が定義済みのしきい値を満たさない場合の動作を定義するラベルが、その真の動作（**直ちにキャンセル**、**直ちに承認**）を反映するように変更されました。ドキュメントを参照します。 [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
+* 重要な指標が定義済みのしきい値を満たさない場合の動作を定義するラベルが、その真の動作（**直ちにキャンセル**、**直ちに承認**）を反映するように変更されました。詳しくは、[実稼動パイプラインの設定](configuring-production-pipelines.md)のドキュメントを参照してください。
 
 * AEM Cloud Service SDK のバージョン `2021.3.4997.20210303T022849Z-210225` に基づいて、クラスとメソッドの非推奨リストが更新されました。
 
