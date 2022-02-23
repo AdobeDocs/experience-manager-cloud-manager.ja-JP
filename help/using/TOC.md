@@ -9,9 +9,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
 source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '303'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 96%
    + [リリースブランチの設定](configure-your-release-branches.md)
    + [Dispatcher 設定の管理](dispatcher-configurations.md)
 + 使用方法 {#how-to-use}
-   + CI/CD パイプライン {#pipelines}
+   + CI／CD パイプライン {#pipelines}
       + [実稼動パイプラインの設定](configuring-production-pipelines.md)
       + [実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md)
       + [パイプラインの管理](managing-pipelines.md)
