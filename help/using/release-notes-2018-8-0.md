@@ -11,9 +11,9 @@ discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
 feature: Release Information
 exl-id: 20f87048-30f7-4869-aad0-13ca383a404b
 source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 96%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2018.8.0 のリリース日は 2018 年 10 月 4 日（PT）です。
+[!UICONTROL Cloud Manager] バージョン 2018.8.0 のリリース日は 2018年10月4日（PT）です。
 
 ## 新機能 {#what-s-new}
 
 * **プログラムの設定** - AEM プロジェクトアーキタイプを使用して git でアプリケーションプロジェクトを作成する新しいウィザード
 
-* **CI／CD パイプライン** - CI／CD パイプラインに次の変更が追加されました。ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
+* **CI／CD パイプライン** - CI／CD パイプラインに次の変更が追加されました。詳しくは、[実稼動パイプラインの設定](configuring-production-pipelines.md)のドキュメントを参照してください。
 
    * 設定された Git ブランチにコミットが追加されるたびに CI／CD パイプラインを開始する「Git の変更時」トリガーが導入されました。
    * ホーム画面のカードが、パイプライン実行ページの特定のセクションにディープリンクされるようになりました。
