@@ -11,9 +11,9 @@ discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
 feature: Release Information
 exl-id: 383ca5a0-4b0b-48e9-aa48-1d1388875329
 source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '319'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 82%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] バージョン 2019.1.0 のリリース日は 2019 年 1 月 17 日（PT）です。
+[!UICONTROL Cloud Manager] バージョン 2019.1.0 のリリース日は 2019年1月17日（PT）です。
 
 ## 新機能 {#whats-new}
 
-* AEM Assets のパフォーマンステストをサポートするようになりました。ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
-* ビルドステップおよびコード品質ステップのみを実行するパイプラインと、実稼動以外の環境にデプロイするパイプラインをサポートするようになりました。ドキュメントを参照してください [実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md) を参照してください。
+* AEM Assets のパフォーマンステストをサポートするようになりました。詳しくは、[実稼動パイプラインの設定](configuring-production-pipelines.md)のドキュメントを参照してください。
+* ビルドステップおよびコード品質ステップのみを実行するパイプラインと、実稼動以外の環境にデプロイするパイプラインをサポートするようになりました。詳しくは、[実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md)のドキュメントを参照してください。
 * ビルド環境でカスタム環境変数をサポートするようになりました。
-* 複数のステージ環境または実稼動環境を持つお客様の場合は、実稼動パイプラインの一部としてデプロイ先の環境を選択できます。 ドキュメントを参照してください [実稼動パイプラインの設定](configuring-production-pipelines.md) を参照してください。
+* 複数のステージング環境または実稼動環境を使用しているお客様の場合は、実稼動パイプラインの一部としてデプロイ先の環境を選択できます。詳しくは、[実稼動パイプラインの設定](configuring-production-pipelines.md)のドキュメントを参照してください。
 * httxt2dbm がビルドコンテナに追加されました。
 * どのヘルプメニュー項目を選択しても新しいタブが開きます。
 
