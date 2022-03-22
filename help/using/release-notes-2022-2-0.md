@@ -4,15 +4,15 @@ description: Cloud Manager リリース 2022.2.0 のリリースノートです�
 feature: Release Information
 exl-id: c13ee200-197e-4855-a08c-99d36b471bb6
 source-git-commit: d074bc1af7e681377ec5b961db23f0bde5d1aaca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '143'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 # Cloud Manager リリース 2022.2.0 のリリースノート {#release-notes}
 
-このページでは、 [!UICONTROL Cloud Manager] リリース 2022.2.0。
+このページは、[!UICONTROL Cloud Manager] リリース 2022.2.0 の一般的なリリースノートです。
 
 >[!NOTE]
 >
@@ -24,10 +24,10 @@ ht-degree: 70%
 
 ## 新機能 {#whats-new}
 
-2 月リリースの新機能を次に示します。
+2月リリースの新機能は次のとおりです。
 
-* (Cloud Serviceのみ )AEM環境ログへのアクセスは、開発者の役割を使用しておこなうことができます。
-* これで、reliability_rating 重大な指標を無効にできます。
+* （Cloud Service のみ）AEM 環境ログには、開発者の役割を使用してアクセスできます。
+* 重要指標 reliability_rating を無効にできるようになりました。
 
 ## バグ修正 {#bug-fixes}
 
