@@ -3,7 +3,7 @@ title: リリースノート（2022.3.0）
 description: Cloud Manager リリース 2022.3.0 のリリースノートです。
 feature: Release Information
 source-git-commit: f1d359921a11ab8a6117a15cd5eb72362bbb8360
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
 ht-degree: 100%
 
