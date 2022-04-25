@@ -10,8 +10,8 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 2fcefda1e30871d44e3a1353470a4728904d7598
-workflow-type: ht
+source-git-commit: 0ba7c49b3550666030249562219b2d0dc51f4ae1
+workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 100%
 
@@ -100,12 +100,12 @@ ht-degree: 100%
 
 | ステップ | タイムアウト |
 |--- |--- |
-| コード品質テスト | 7 日 |
-| セキュリティテスト | 7 日 |
-| パフォーマンステスト | 7 日 |
-| アプリケーションの承認 | 7 日 |
-| 実稼動デプロイメントをスケジュール | 7 日 |
-| CSE サポート | 7 日 |
+| コード品質テスト | 14 日 |
+| セキュリティテスト | 14 日 |
+| パフォーマンステスト | 14 日 |
+| アプリケーションの承認 | 14 日 |
+| 実稼動デプロイメントをスケジュール | 14 日 |
+| CSE サポート | 14 日 |
 
 ## デプロイメントプロセス {#deployment-process}
 

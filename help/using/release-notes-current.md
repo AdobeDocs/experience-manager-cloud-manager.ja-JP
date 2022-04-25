@@ -1,19 +1,19 @@
 ---
-title: リリースノート（2022.4.0）
-description: Cloud Manager リリース 2022.4.0 のリリースノートです。
+title: リリースノート（2022.5.0）
+description: Cloud Manager リリース 2022.5.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 3d4eea13c0f2e9c4030bbfd3b7c5c25336548498
-workflow-type: ht
-source-wordcount: '281'
-ht-degree: 100%
+source-git-commit: 5dd9471e1044ce0dcc6a03099256d182b1776f02
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 81%
 
 ---
 
 
-# Cloud Manager リリース 2022.4.0 のリリースノート {#release-notes}
+# Cloud Manager リリース 2022.5.0 のリリースノート {#release-notes}
 
-このページは、[!UICONTROL Cloud Manager] リリース 2022.4.0 のリリースノートです。
+このページは、[!UICONTROL Cloud Manager] リリース 2022.5.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,15 +21,8 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] リリース 2022.4.0 のリリース日は 2022年4月7日（PT）です。次回のリリースは 2022年5月5日（PT）に予定されています。
+のリリース日 [!UICONTROL Cloud Manager] リリース 2022.5.0 は 2022 年 5 月 6 日です。 次回のリリースは 2022 年 6 月 9 日に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* パイプラインビルド手順の期間と成功率を向上しました。4月を通してすべてのお客様へと段階的に展開される予定です。
-* パイプラインの追加と編集ウィザードの入力フィールドに名前の最初の数文字を入力し、提案された一致から選択することで、Git ブランチを簡単に見つけられるようになりました。
-* この&#x200B;**パイプライン**&#x200B;ページに、多数のパイプラインを持つプログラムのユーザビリティを向上させるページネーションが追加されました。
-   * テーブルには 1 ページにつき 50 行が表示されます。
-* Cloud Manager で使用される [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)のバージョンが 36 に更新されました。
-* Oracle JDK は、AEM アプリケーションの開発と操作用のデフォルトの JDK になりました。Maven ツールチェーンで代替オプションが明示的に選択されている場合でも、Cloud Manager のビルドプロセスは Oracle JDK を使用して自動的に切り替わります。
-   * Oracle JDK への切り替え方法の詳細については、[ビルド環境に関するドキュメント](/help/using/build-environment-details.md#using-java-support)を参照してください。
-   * 詳しくは、[Adobe Experience Manager の Java サポートポリシーに関する FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/Java_Policy_for_Adobe_Experience_Manager.pdf) を使用して、この変更に関するよくある質問に対する回答を確認してください。
+## バグの修正 {#bug-fixes}
