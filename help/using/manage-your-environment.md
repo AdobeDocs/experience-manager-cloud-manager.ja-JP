@@ -1,19 +1,19 @@
 ---
 title: 環境の管理
-seo-title: 環境の管理
+seo-title: Manage your Environments
 description: Cloud Manager 環境について学ぶ
-seo-description: このページでは、Cloud Manager での CI／CD パイプラインの設定および実行に使用される実稼動環境および非実稼動環境の一覧を示します。
+seo-description: Follow this page to view the list of production and non-production environments that are used for setting up and running the CI/CD pipeline in Cloud Manager.
 uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
-feature: 環境
+feature: Environments
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 6ff704ec11dd4a5f73d5b5df5721c4fee649527b
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 100%
+source-wordcount: '280'
+ht-degree: 94%
 
 ---
 
@@ -55,3 +55,7 @@ Cloud Manager の&#x200B;**概要**&#x200B;ページには、管理対象のす�
 >ノードの&#x200B;**ステータス**&#x200B;は、VM の稼動状態を表し、サーバー上の AEM のステータスは表しません。ステータスは&#x200B;**実行中**（緑の円）、**停止**（赤の円）、**準備中**（青の円）、**使用不可**（黄色の円）のいずれかです。
 
 ![](assets/Environments-tab.png)
+
+>[!NOTE]
+>
+>環境ログが必要な場合は、カスタマーサクセスエンジニアからリクエストできます。
