@@ -3,10 +3,10 @@ title: リリースノート（2022.2.0）
 description: Cloud Manager リリース 2022.2.0 のリリースノートです。
 feature: Release Information
 exl-id: c13ee200-197e-4855-a08c-99d36b471bb6
-source-git-commit: d074bc1af7e681377ec5b961db23f0bde5d1aaca
-workflow-type: ht
-source-wordcount: '143'
-ht-degree: 100%
+source-git-commit: 0ddfd152cb15731882d198d043dd8897b5073ab4
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 2月リリースの新機能は次のとおりです。
 
-* （Cloud Service のみ）AEM 環境ログには、開発者の役割を使用してアクセスできます。
+* AEM環境ログへのアクセスは、開発者ロールを使用しておこなうことができます。
 * 重要指標 reliability_rating を無効にできるようになりました。
 
 ## バグ修正 {#bug-fixes}
