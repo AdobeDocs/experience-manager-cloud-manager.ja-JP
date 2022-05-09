@@ -10,10 +10,10 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 0ba7c49b3550666030249562219b2d0dc51f4ae1
+source-git-commit: 9a9d7067a1369e80ccf9b2925369a466b3da2901
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 100%
+source-wordcount: '1615'
+ht-degree: 75%
 
 ---
 
@@ -184,7 +184,6 @@ AEM サイト訪問者への影響を最小限に抑えるために、実稼動�
 
 ![](assets/execution-emergency2.png)
 
-
 このような緊急モードでのパイプライン実行は、Cloud Manager API または CLI を使用して作成することもできます。緊急モードで実行を開始するには、クエリパラメーター `?pipelineExecutionMode=EMERGENCY` を使用して、パイプラインの実行エンドポイントに PUT リクエストを送信します。また、CLI を使用する場合は、次のようにします。
 
 ```
@@ -193,3 +192,73 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 >[!IMPORTANT]
 >`--emergency` フラグを使用するには、場合によっては、`aio-cli-plugin-cloudmanager` の最新バージョンに更新する必要があります。
+
+## 実稼動デプロイメントの再実行 {#Reexecute-Deployment}
+
+実稼動デプロイメント手順の再実行は、実稼動デプロイ手順が完了した実行に対してサポートされます。 完了のタイプは重要ではありません。デプロイメントが成功した場合（AMS プログラムの場合のみ）、キャンセルされた場合、または失敗した場合があります。 ただし、主な使用例は、一時的な理由で実稼動のデプロイメント手順が失敗した場合です。 再実行は、同じパイプラインを使用して新しい実行を作成します。 この新しい実行は、次の 3 つの手順で構成されます。
+
+1. 検証ステップ — 基本的に、パイプラインの通常の実行中に発生する検証と同じです。
+1. ビルドステップ — 再実行のコンテキストでは、ビルドステップは、新しいビルドプロセスを実際に実行するのではなく、アーティファクトをコピーします。
+1. 実稼動のデプロイメント手順 — 通常のパイプライン実行での実稼動のデプロイメント手順と同じ設定およびオプションを使用します。
+
+ビルド手順のラベルが UI で若干異なる場合があります。これは、アーティファクトをコピーし、再構築しないことを示しています。
+
+![](assets/Re-deploy.png)
+
+制限事項：
+
+* 実稼動デプロイメント手順の再実行は、最後の実行時にのみ使用できます。
+* ロールバックの実行には、再実行は使用できません。
+* 最後の実行がロールバック実行の場合、再実行はできません。
+* 最後の実行がプッシュ更新の実行の場合、再実行はできません。
+* 実稼動デプロイメント手順の前の任意の時点で最後の実行が失敗した場合、再実行はできません。
+
+### API を再実行 {#Reexecute-API}
+
+### 再実行の識別
+
+実行が再実行であるかどうかを識別するために、「トリガー」フィールドを調べることができます。 値は次のようになります。 *RE_EXECUTE*.
+
+### 新しい実行のトリガー
+
+再実行をトリガーするには、HAL リンクにPUTリクエストを送信する必要があります &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> 実稼動デプロイステップの状態。 このリンクが存在する場合は、そのステップから実行を再開できます。 存在しない場合は、そのステップから実行を再開することはできません。 最初のリリースでは、このリンクは実稼動デプロイステップにのみ存在しますが、今後のリリースでは他のステップからのパイプラインの開始がサポートされる場合があります。 例：
+
+```Javascript
+ {
+  "_links": {
+    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+      "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
+      "templated": false
+    },
+    "self": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530",
+      "templated": false
+    }
+  },
+  "id": "6187842",
+  "stepId": "2983530",
+  "phaseId": "1575676",
+  "action": "deploy",
+  "environment": "weretail-global-b75-prod",
+  "environmentType": "prod",
+  "environmentId": "59254",
+  "startedAt": "2022-01-20T14:47:41.247+0000",
+  "finishedAt": "2022-01-20T15:06:19.885+0000",
+  "updatedAt": "2022-01-20T15:06:20.803+0000",
+  "details": {
+  },
+  "status": "FINISHED"
+```
+
+
+HAL リンクの構文 *href*  上記の値は、参照点として使用されません。 実際の値は、常に HAL リンクから読み取られ、生成されない必要があります。
+
+の送信 *PUT* このエンドポイントへのリクエストは、 *201* 成功した場合はレスポンスの本文に、新しい実行が表示されます。 これは、API を使用して通常の実行を開始する場合と似ています。
