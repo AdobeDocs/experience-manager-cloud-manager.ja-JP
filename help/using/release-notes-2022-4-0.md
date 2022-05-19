@@ -2,13 +2,13 @@
 title: リリースノート（2022.4.0）
 description: Cloud Manager リリース 2022.4.0 のリリースノートです。
 feature: Release Information
-source-git-commit: dd7f22e378cdb0b0e2d1c7d318a970e1f719f47b
-workflow-type: tm+mt
+exl-id: 9ce4f21c-e2b3-4e74-afb0-9522fec5fb56
+source-git-commit: 883958823b0cc1cb1f507e63ecd977d7a00c9638
+workflow-type: ht
 source-wordcount: '281'
 ht-degree: 100%
 
 ---
-
 
 # Cloud Manager リリース 2022.4.0 のリリースノート {#release-notes}
 
