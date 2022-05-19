@@ -3,9 +3,9 @@ title: Cloud Manager リポジトリー
 description: Cloud Manager リポジトリー
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 280d760766cf445e609b865f827c01b4ab1db69c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '443'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Git サブモジュールを使用すると、ビルド時に Git リポジト�
 $ git submodule update --init
 ```
 
-これにより、各サブモジュールが適切なディレクトリにチェックアウトされます。この手法は、Git サブモジュールの使用に慣れており、外部マージプロセスの管理を希望しない組織にとって、[複数のソース Git リポジトリーでの操作](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html)の代わりに使用できる可能性があります。
+これにより、各サブモジュールが適切なディレクトリにチェックアウトされます。この手法は、Git サブモジュールの使用に慣れており、外部マージプロセスの管理を希望しない組織にとって、[複数のソース Git リポジトリーでの操作](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=ja)の代わりに使用できる可能性があります。
 
 例えば、3 つのリポジトリーがあり、それぞれに main という名前のブランチが 1 つあるとします。「プライマリ」リポジトリー（パイプラインで設定されたもの）の main ブランチには、他の 2 つのリポジトリーに含まれるプロジェクトを宣言する pom.xml ファイルが含まれます。
 
