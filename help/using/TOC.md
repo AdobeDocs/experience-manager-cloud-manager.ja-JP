@@ -8,9 +8,9 @@ user-guide-description: Adobe Managed Services を使用して、クラウド内
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
-source-git-commit: 5dd9471e1044ce0dcc6a03099256d182b1776f02
-workflow-type: ht
-source-wordcount: '312'
+source-git-commit: a0261c3bb9b931c743655d7d05138131a740db33
+workflow-type: tm+mt
+source-wordcount: '315'
 ht-degree: 100%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 100%
    + [カスタムコード品質ルール](custom-code-quality-rules.md)
 + コードの管理 {#managing-code}
    + [Maven プロジェクトバージョンの処理](activating-maven-project.md)
-   + [Cloud Manager のリポジトリー](cloud-manager-repositories.md)
+   + [Cloud Manager のリポジトリ](cloud-manager-repositories.md)
    + [リポジトリーへのアクセス](accessing-repos.md)
    + [Git との統合](setup-cloud-manager-git-integration.md)
    + [複数のソース Git リポジトリーの操作](/help/using/working-with-multiple-source-git-repos.md)
@@ -65,6 +65,7 @@ ht-degree: 100%
    + [評価](evaluation.md)
 + リリースノート {#release-notes}
    + [最新のリリースノート](release-notes-current.md)
+   + [リリースノート（2022.5.0）](release-notes-2022-5-0.md)
    + [リリースノート（2022.4.0）](release-notes-2022-4-0.md)
    + [リリースノート（2022.3.0）](release-notes-2022-3-0.md)
    + [リリースノート（2022.2.0）](release-notes-2022-2-0.md)
