@@ -3,10 +3,10 @@ title: リリースノート（2022.6.0）
 description: Cloud Manager リリース 2022.6.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 844aa7c697c793af05766048ef4263a1bba87c94
+source-git-commit: 6dce1f48b66c6970c3ba025031f0adcbd01195dd
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 56%
+source-wordcount: '183'
+ht-degree: 42%
 
 ---
 
@@ -29,4 +29,8 @@ ht-degree: 56%
    * この機能は、2022.06.0リリース以降の週にわたって段階的なアプローチで展開されます。
 * [ビルドアーティファクトを再利用できるようになりました](/help/using/setting-up-project.md#build-artifact-reuse) git ミラーリングを使用する場合。
 
-## バグ修正 {#bug-fixes}
+## API の変更点 {#api-changes}
+
+* この [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API は廃止され、 [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) 代わりにを使用する必要があります。
+   * `List Programs` は引き続き機能しますが、この機能を使用すると、ログに警告メッセージが表示されます。
+   * 3 ヶ月後はサポートされなくなります。
