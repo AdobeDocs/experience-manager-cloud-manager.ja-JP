@@ -2,13 +2,13 @@
 title: リリースノート（2022.5.0）
 description: Cloud Manager リリース 2022.5.0 のリリースノートです。
 feature: Release Information
-source-git-commit: a0261c3bb9b931c743655d7d05138131a740db33
-workflow-type: tm+mt
+exl-id: c8759f81-4a7c-4f3e-aac6-b1bde8dd46a3
+source-git-commit: 4aba86d40977e57dc714d08836af1f6a9e49404e
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
-
 
 # Cloud Manager リリース 2022.5.0 のリリースノート {#release-notes}
 
@@ -20,15 +20,15 @@ ht-degree: 55%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!UICONTROL Cloud Manager] リリース 2022.5.0 は 2022 年 5 月 6 日です。 次回のリリースは 2022 年 6 月 9 日（PT）に予定されています。
+[!UICONTROL Cloud Manager] リリース 2022.5.0 のリリース日は 2022年5月5日です。次回のリリースは 2022年6月9日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* パイプラインの実行で、UI の最上位エラーが実行画面に表示されるようになりました。
-* デフォルトの設定が更新され、B/G 設定に対する一時停止が含まれるようになりました。
-* Cloud Manager UI を使用して、実稼動デプロイ手順を再実行します。
+* パイプラインの実行で、UI のトップレベルエラーが実行画面に表示されるようになりました。
+* デフォルト設定が更新されて、B/G 設定に対する一時停止が含まれるようになりました。
+* Cloud Manager UI から実稼動環境デプロイ手順を再実行します。
 
 ## バグ修正 {#bug-fixes}
 
-* 504 タイムアウトエラーで誤解を招くパフォーマンステスト結果。
-* 一部の実行は、コミットの承認とキャンセルの承認ステップのトリガーで停止していました。
+* 504 タイムアウトエラーを含んだパフォーマンステスト結果が誤解を招く可能性がありました。
+* コミットのトリガーと承認ステップキャンセルのコンテキストで一部の実行が停止していました。
