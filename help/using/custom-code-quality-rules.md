@@ -1,16 +1,16 @@
 ---
 title: カスタムコード品質ルール
-description: このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。 これらは、AEM Engineering のベストプラクティスに基づいています。
+description: このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、AEM Engineering のベストプラクティスに基づいています。
 uuid: a7feb465-1982-46be-9e57-e67b59849579
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 feature: Code Quality Rules
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 834508109e34eb1e052abac482e981735c72d43d
-workflow-type: ht
-source-wordcount: '3611'
-ht-degree: 100%
+source-git-commit: d4c92a36ca3af123730d68fedf1dbf7ee819c66b
+workflow-type: tm+mt
+source-wordcount: '3609'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->AEM as a Cloud Service での Cloud Manager 用カスタムコード品質ルールについては、[こちらのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=ja#using-cloud-manager)を参照してください。
+>AEM as a Cloud Serviceの Cloud Manager のカスタムコード品質ルールについては、 [このドキュメントへ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=ja#using-cloud-manager).
 
 >[!NOTE]
 >
@@ -230,7 +230,7 @@ public void orDoThis(Session session) throws Exception {
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-[Sling ドキュメント](http://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明されているように、パスによってサーブレットをバインドすることは推奨されません。パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリーにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
+[Sling ドキュメント](http://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明されているように、パスによってサーブレットをバインドすることは推奨されません。パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
 
 #### 準拠していないコード {#non-compliant-code-5}
 
@@ -321,7 +321,7 @@ public void doThis() throws Exception {
 
 >[!NOTE]
 >
->これは、各要求の access.log-type ログには適用されません。
+>これは、各要求の access.log-type ログには当てはまりません。
 
 #### 準拠していないコード {#non-compliant-code-8}
 
@@ -526,7 +526,7 @@ AEM API の表面は、使用が推奨されず非推奨と見なされる API �
 
 >[!NOTE]
 >
->OakPAL は、スタンドアロンの Oak リポジトリを使用してコンテンツパッケージを検証するフレームワークです。 2019 AEM Rockstar North America 賞を受賞したAEM Partner が開発しました。
+>OakPAL は、スタンドアロンの Oak リポジトリを使用してコンテンツパッケージを検証するフレームワークです。2019 AEM Rockstar North America 賞を受賞したAEM Partner が開発しました。
 
 ### @ProviderType の注釈が付いた Product API は、お客様による実装または拡張はできない  {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -651,7 +651,7 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内�
 * クラシック UI デザインダイアログ（`design_dialog` ノード）を使用しているコンポーネントには、対応するタッチ UI デザインダイアログ（`cq:design_dialog` 子ノード）が必要です。
 * クラシック UI ダイアログとクラシック UI デザインダイアログの両方を持つコンポーネントには、対応するタッチ UI ダイアログと対応するタッチ UI デザインダイアログの両方が必要です。
 
-AEM 最新化ツールのドキュメントには、コンポーネントをクラシック UI からタッチ UI に変換する方法に関する詳細とツールが記載されています。詳しくは、[AEM 最新化ツールのドキュメント](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html)を参照してください。
+AEM 最新化ツールのドキュメントには、コンポーネントをクラシック UI からタッチ UI に変換する方法に関する詳細とツールが記載されています。詳しくは、[AEM 最新化ツールのドキュメント](https://opensource.adobe.com/aem-modernize-tools/)を参照してください。
 
 ### 可変コンテンツと不変コンテンツをパッケージに混在させない {#oakpal-packages-immutable}
 
@@ -768,7 +768,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）の `compatVersion` プロパティを `2` に設定する必要があります。その他の値は、AEM Cloud Service ではサポートされていません。検索インデックスの詳細については、[コンテンツ検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）の `compatVersion` プロパティを `2` に設定する必要があります。その他の値は、AEM Cloud Service ではサポートされていません。検索インデックスの詳細については、[コンテンツ検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)を参照してください。
 
 ### カスタム検索インデックス定義ノードの子孫ノードのタイプは、nt:unstructured にする {#oakpal-descendent-nodes}
 
@@ -804,7 +804,7 @@ AEM Cloud Service では、[コンテンツの検索とインデックス作成]
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）に、値が `lucene` に設定された `type` プロパティが必要です。AEM Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja#how-to-use)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）に、値が `lucene` に設定された `type` プロパティが必要です。AEM Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use)を参照してください。
 
 ### カスタム検索インデックス定義ノードに seed という名前のプロパティを含めない {#oakpal-property-name-seed}
 
@@ -813,7 +813,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（`oak:Que
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `seed` という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja#how-to-use)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `seed` という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use)を参照してください。
 
 ### カスタム検索インデックス定義ノードに reindex という名前のプロパティを含めない {#oakpal-reindex-property}
 
@@ -822,7 +822,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `reindex` という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja#how-to-use)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `reindex` という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use)を参照してください。
 
 ## Dispatcher 最適化ツール {#dispatcher-optimization-tool-rules}
 

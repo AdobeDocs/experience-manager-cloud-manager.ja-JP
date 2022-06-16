@@ -7,10 +7,10 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI-CD Pipeline, Test Results
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 2179314120911cac8a0dd99a8b57974751959871
-workflow-type: ht
-source-wordcount: '2901'
-ht-degree: 100%
+source-git-commit: bfcb0fb5b9cf8317eb75e3b7b46455b14cd9d7b7
+workflow-type: tm+mt
+source-wordcount: '2900'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->AEM as a Cloud Service 用の Cloud Manager でサポートされているテストについて詳しくは、[AEM as a Cloud Service ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=ja)を参照してください。
+>AEM as a Cloud Service向け Cloud Manager でサポートされているテストについて詳しくは、 [AEMas a Cloud Serviceドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=ja).
 
 
 ## 3 層評価  {#three-tier-gates-while-running-a-pipeline}
@@ -61,7 +61,7 @@ ht-degree: 100%
 >
 >[このリンクを使用して](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx)、ルールの完全なリストをダウンロードできます。
 
-コード品質テストの結果は、**評価**&#x200B;として提供されます。次の表に、様々なテスト条件の評価の概要を示します。
+コード品質テストの結果は、 **評価**. 次の表に、様々なテスト条件の評価の概要を示します。
 
 | 名前 | 定義 | カテゴリ | 不合格のしきい値 |
 |--- |--- |--- |--- |
@@ -71,12 +71,12 @@ ht-degree: 100%
 | カバレッジ | 次の式を使用して、単体テストラインのカバレッジと条件のカバレッジを組み合わせて定義します。<br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` = 単体テストの実行中に少なくとも 1 回は `true` と評価された条件</li><li>`CF` = 単体テストの実行中に少なくとも 1 回は `false` と評価された条件</li><li>`LC` = 被覆線 = lines_to_cover - uncovered_lines</li><li>`B` = 条件の合計数</li><li>`EL` = 実行可能な行の総数 (lines_to_cover)</li></ul> | 重要 | &lt; 50％ |
 | スキップした単体テスト | スキップした単体テストの数 | 情報 | > 1 |
 | 未解決の問題 | 問題の全体的なタイプ - 脆弱性、バグ、コードスメル | 情報 | > 0 |
-| 重複行 | 重複したブロックに含まれる行の数として定義されます。 コードブロックは、次の条件下で重複していると見なされます。<br>Java 以外のプロジェクト：<ul><li>100 個以上の連続した重複トークンが必要です。</li><li>これらのトークンは、少なくとも次の場所に分散している必要があります。 </li><li>30 行の COBOL コード </li><li>20 行の ABAP コード </li><li>10 行の他言語コード</li></ul>Java プロジェクト：<ul></li><li> トークンと行の数にかかわらず、10 個以上の連続した重複ステートメントが必要です。</li></ul>重複を検出する際は、インデントの違いと文字列リテラルの違いは無視されます。 | 情報 | > 1％ |
+| 重複行 | 重複したブロックに含まれる行の数として定義されます。コードブロックは、次の条件下で重複していると見なされます。<br>Java 以外のプロジェクト：<ul><li>100 個以上の連続した重複トークンが必要です。</li><li>これらのトークンは、少なくとも次の場所に分散している必要があります。 </li><li>30 行の COBOL コード </li><li>20 行の ABAP コード </li><li>10 行の他言語コード</li></ul>Java プロジェクト：<ul></li><li> トークンと行の数にかかわらず、10 個以上の連続した重複ステートメントが必要です。</li></ul>重複を検出する際は、インデントの違いと文字列リテラルの違いは無視されます。 | 情報 | > 1％ |
 | Cloud Service の互換性 | 特定された Cloud Service の互換性に関する問題の数 | 情報 | > 0 |
 
 >[!NOTE]
 >
->詳しくは、[SonarQube の指標の定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions)を参照してください。
+>詳しくは、[SonarQube の指標の定義](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)を参照してください。
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ ht-degree: 100%
 
 この場合、ルール ID を注釈属性として指定した標準の Java `@SuppressWarnings` 注釈を使用して、ソースコードに注釈を付けることができます。例えば、よくある問題の 1 つとして、ハードコードされたパスワードを検出する SonarQube ルールにおいて、ハードコードされたパスワードの識別方法が強引な場合があります。
 
-次のコードは、AEMプロジェクトではかなり一般的です。AEM プロジェクトには、一部の外部サービスに接続するコードが含まれています。
+次のコードは、AEM プロジェクトではかなり一般的です。AEM プロジェクトには、一部の外部サービスに接続するコードが含まれています。
 
 ```java
 @Property(label = "Service Password")
@@ -129,8 +129,8 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | 名前 | ヘルスチェックの実装 | カテゴリ |
 |---|---|---|
 | Deserialization firewall Attach API の準備状態が、受け入れ可能な状態である。 | [デシリアライゼーションファイアウォール添付 API レディネス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=ja#security) | 重大 |
-| デシリアライゼーションファイアウォールが機能している。 | [デシリアライゼーションファイアウォール機能](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=ja#security) | 重大 |
-| デシリアライゼーションファイアウォールが読み込まれている。 | [デシリアライゼーションファイアウォール読み込み](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=ja#security) | 重大 |
+| デシリアライゼーションファイアウォールが機能している。 | [デシリアライゼーションファイアウォール機能](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | 重大 |
+| デシリアライゼーションファイアウォールが読み込まれている。 | [デシリアライゼーションファイアウォール読み込み](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | 重大 |
 | `AuthorizableNodeName` 実装において、認証可能な ID がノード名／パスで公開されていない。 | [認証可能なノード名生成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=ja#security) | 重大 |
 | デフォルトのパスワードが変更されている。 | [デフォルトのログインアカウント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ja#users-and-groups-in-aem) | 重大 |
 | Sling のデフォルトの GET サーブレットが DOS 攻撃から保護されている | Sling Get Servlet | 重大 |
@@ -138,7 +138,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | Sling JSP Script Handler が適切に設定されている。 | Sling JSP Script Handler | 重大 |
 | SSL が正しく設定されている。 | SSL 設定 | 重大 |
 | 明らかに安全ではないユーザープロファイルポリシーが見つからない。 | ユーザープロファイルへのデフォルトアクセス | 重大 |
-| Sling Referrer Filter が CSRF 攻撃を防止するように設定されている。 | [Sling Referrer Filter](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=ja#security) | 重要 |
+| Sling Referrer Filter が CSRF 攻撃を防止するように設定されている。 | [Sling Referrer Filter](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#security) | 重要 |
 | Adobe Granite HTML Library Manager が適切に設定されている。 | CQ HTML Library Manager 設定 | 重要 |
 | CRXDE サポートバンドルが無効である。 | CRXDE サポート | 重要 |
 | Sling DavEx のバンドルおよびサーブレットが無効である。 | DavEx ヘルスチェック | 重要 |
@@ -293,7 +293,7 @@ Cloud Manager は、CSE が「[オンボーディング要件](#onboaring-requir
 
 ## コンテンツパッケージスキャンの最適化 {#content-package-scanning-optimization}
 
-Cloud Manager は、品質分析プロセスの一環として、Maven ビルドで生成されたコンテンツパッケージの分析を実行します。Cloud Manager は、このプロセスを高速化するための最適化を提供します。この最適化は、特定のパッケージ化の制約が観察された場合に有効です。 最も重要なのは、単一のコンテンツパッケージ（一般的に「すべて」のパッケージと呼ばれます）を出力するプロジェクトで実行される最適化です。このパッケージには、ビルドで作成された他の多数のコンテンツパッケージが含まれ、スキップ済みとしてマークされます。Cloud Manager がこのシナリオを検出すると、「すべて」のパッケージを展開するのではなく、個々のコンテンツパッケージを直接スキャンし、依存関係に基づいて並べ替えます。例えば、次のビルド出力について考えてみましょう。
+Cloud Manager は、品質分析プロセスの一環として、Maven ビルドで生成されたコンテンツパッケージの分析を実行します。Cloud Manager は、このプロセスを高速化するための最適化を提供します。この最適化は、特定のパッケージ化の制約が観察された場合に有効です。最も重要なのは、単一のコンテンツパッケージ（一般的に「すべて」のパッケージと呼ばれます）を出力するプロジェクトで実行される最適化です。このパッケージには、ビルドで作成された他の多数のコンテンツパッケージが含まれ、スキップ済みとしてマークされます。Cloud Manager がこのシナリオを検出すると、「すべて」のパッケージを展開するのではなく、個々のコンテンツパッケージを直接スキャンし、依存関係に基づいて並べ替えます。例えば、次のビルド出力について考えてみましょう。
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip`（コンテンツパッケージ）
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip`（スキップされたコンテンツパッケージ）
@@ -303,9 +303,10 @@ Cloud Manager は、品質分析プロセスの一環として、Maven ビルド
 
 数十の埋め込みパッケージを生成するプロジェクトの場合、この最適化により、パイプライン実行あたり 10 分以上の時間を節約できることが示されています。
 
-「すべて」のコンテンツパッケージに、スキップされたコンテンツパッケージと OSGi バンドルの組み合わせが含まれている場合は、特殊なケースが発生する場合があります。 例えば、`myco-all-1.0.0-SNAPSHOT.zip` に前述の 2 つの埋め込みパッケージと 1 つ以上の OSGi バンドルが含まれている場合、新しい最小限のコンテンツパッケージは OSGi バンドルのみで構築されます。このパッケージは常に `cloudmanager-synthetic-jar-package` という名前で、含まれているバンドルは `/apps/cloudmanager-synthetic-installer/install` に配置されます。
+「すべて」のコンテンツパッケージに、スキップされたコンテンツパッケージと OSGi バンドルの組み合わせが含まれている場合は、特殊なケースが発生する場合があります。例えば、`myco-all-1.0.0-SNAPSHOT.zip` に前述の 2 つの埋め込みパッケージと 1 つ以上の OSGi バンドルが含まれている場合、新しい最小限のコンテンツパッケージは OSGi バンドルのみで構築されます。このパッケージは常に `cloudmanager-synthetic-jar-package` という名前で、含まれているバンドルは `/apps/cloudmanager-synthetic-installer/install` に配置されます。
 
 >[!NOTE]
 >
 >* この最適化は、AEM にデプロイされるパッケージには影響しません。
 >* 埋め込みコンテンツパッケージとスキップされたコンテンツパッケージの照合はファイル名に基づくので、複数のスキップされたコンテンツパッケージのファイル名が完全に同じである場合や、埋め込み中にファイル名が変更された場合は、この最適化を実行できません。
+

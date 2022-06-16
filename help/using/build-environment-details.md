@@ -3,9 +3,9 @@ title: ビルド環境について
 description: このページでは、環境について説明します
 feature: Environments
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 17f79fdc7278cae532485570a6e2b8700683ef0d
-workflow-type: ht
-source-wordcount: '996'
+source-git-commit: 9959f649e553d0ff6d41a70a468bec3e2e854d75
+workflow-type: tm+mt
+source-wordcount: '997'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 
 * Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、`adobe-public` という名前のプロファイルを使用する、アドビの公開&#x200B;**アーティファクト**リポジトリーが自動的に含まれています。
-詳しくは、[アドビの公開 Maven リポジトリー](https://repo.adobe.com/)を参照してください。
+詳しくは、[アドビの公開 Maven リポジトリー](https://repo1.maven.org/)を参照してください。
 
 >[!NOTE]
 >Cloud Manager では、`jacoco-maven-plugin` の特定のバージョンは定義されませんが、`0.7.5.201505241946` 異常のバージョンを使用する必要があります。
