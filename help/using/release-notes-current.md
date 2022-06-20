@@ -4,7 +4,7 @@ description: Cloud Manager リリース 2022.6.0 のリリースノートです�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: dab08a2499b521b7026ab2bd17b82cb241f26fb6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
 
