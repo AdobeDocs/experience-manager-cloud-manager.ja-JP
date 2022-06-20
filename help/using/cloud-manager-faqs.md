@@ -6,9 +6,9 @@ seo-description: Follow this page to get answers on Cloud Manager FAQs
 feature: Getting Started
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 source-git-commit: 6dce1f48b66c6970c3ba025031f0adcbd01195dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '874'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -28,15 +28,15 @@ ht-degree: 93%
 
 * Cloud Manager ビルドの場合、Maven Enforcer プラグインはエラー `"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion"` で失敗します。これは既知の問題です。Cloud Manager では、maven コマンドの実行に、コードをコンパイルした際と異なるバージョンの Java を使用しているためです。ひとまず、maven-enforcer-plugin 設定から `requireJavaVersion` を省略します。
 
-## コード品質の確認に失敗したので、デプロイメントが停止しています。 このチェックを回避する方法はありますか？ {#deployment-stuck}
+## コード品質チェックが失敗したので、デプロイメントが停止しています。このチェックを回避する方法はありますか？ {#deployment-stuck}
 
-はい。を除くすべてのコード品質エラー *セキュリティ評価* は重要でない指標なので、結果 UI の項目を展開することで、デプロイメントパイプラインの一部としてバイパスできます。
+はい。*セキュリティ評価*&#x200B;以外のコード品質エラーはすべて重要指標ではないので、結果の UI で項目を展開することで、デプロイメントパイプラインの一部として回避できます。
 
-[デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナー](/help/using/setting-up-users-and-roles.md#role-definitions)は、問題をオーバーライドできます。この場合、パイプラインは続行されます。または、問題を承認できます。この場合、パイプラインはエラーで停止します。
+[デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナー](/help/using/setting-up-users-and-roles.md#role-definitions)の役割を持つユーザーは、問題をオーバーライドでき、その場合、パイプラインは続行されます。または、問題を受け入れることもでき、その場合、パイプラインはエラーで停止します。
 
-ドキュメントを参照 [パイプライン実行中の 3 層ゲート](/help/using/understand-your-test-results.md#three-tier-gates-while-running-a-pipeline) および [実稼動以外のパイプラインの設定](/help/using/configuring-non-production-pipelines.md#understanding-the-flow) を参照してください。
+詳しくは、[パイプライン実行中の 3 層ゲート](/help/using/understand-your-test-results.md#three-tier-gates-while-running-a-pipeline)および[実稼動以外のパイプラインの設定](/help/using/configuring-non-production-pipelines.md#understanding-the-flow)を参照してください。
 
-## Cloud Manager のデプロイメントが、Adobe Managed Services 環境のパフォーマンステストの手順で失敗します。重要な指標を渡すには、どのようにデバッグすればよいでしょうか？ {#debug-critical-metrics}
+## Cloud Manager のデプロイメントが、Adobe Managed Services 環境のパフォーマンステストステップで失敗します。重要な指標を渡すには、どのようにデバッグすればよいでしょうか？ {#debug-critical-metrics}
 
 結果を理解するには、[テスト結果の理解](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=ja#how-to-use)を参照してください。
 
