@@ -4,7 +4,7 @@ description: このページでは、環境について説明します
 feature: Environments
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 9959f649e553d0ff6d41a70a468bec3e2e854d75
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '997'
 ht-degree: 100%
 
