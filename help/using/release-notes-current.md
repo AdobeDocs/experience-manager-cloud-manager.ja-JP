@@ -1,19 +1,19 @@
 ---
-title: リリースノート（2022.6.0）
-description: Cloud Manager リリース 2022.6.0 のリリースノートです。
+title: リリースノート（2022.7.0）
+description: Cloud Manager リリース 2022.7.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: dab08a2499b521b7026ab2bd17b82cb241f26fb6
+source-git-commit: 1b5510af0cdb0ccb3267723836910f6c5711122e
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 100%
+source-wordcount: '144'
+ht-degree: 54%
 
 ---
 
 
-# Cloud Manager リリース 2022.6.0 のリリースノート {#release-notes}
+# Cloud Manager リリース 2022.7.0 のリリースノート {#release-notes}
 
-このページは、[!UICONTROL Cloud Manager] リリース 2022.6.0 のリリースノートです。
+このページは、[!UICONTROL Cloud Manager] リリース 2022.7.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,16 +21,13 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] リリース 2022.6.0 のリリース日は 2022年6月9日（PT）です。次回のリリースは 2022年6月30日（PT）に予定されています。
+[!UICONTROL Cloud Manager] リリース 2022.7.0 のリリース日は 2022年6月30日（PT）です。次回のリリースは 2022 年 8 月 11 日に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* Cloud Manager ランディングページの新しいウェルカムカードでは、テナントに関連するオンボーディングチュートリアルや進行状況指標にすばやくアクセスできます。
-   * この機能は、2022.06.0 リリースの後、1 週間にわたって段階的アプローチで展開されます。
-* Git ミラーリングの使用時に、[ビルドアーティファクトを再利用できるようになりました](/help/using/setting-up-project.md#build-artifact-reuse)。
+* Cloud Manager ユーザーは、ランディングページから便利なビデオチュートリアルにアクセスできるようになりました **ようこそ** カードをいつでも使用できます。
+* テストするページの最大数 [環境変数MAX_PAGES を設定して上書きできるようになりました。](understand-your-test-results.md#crawler)
 
-## API の変更点 {#api-changes}
+## バグ修正 {#bug-fixes}
 
-* [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API は非推奨（廃止予定）となりましたので、代わりに [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) を使用してください。
-   * `List Programs` は引き続き機能しますが、この機能を使用すると、ログに警告メッセージが表示されます。
-   * 3 か月後にはサポートされなくなります。
+* フロントエンドパイプラインの承認後、デプロイメントステップを実行する呼び出しがおこなわれない問題が修正されました。
