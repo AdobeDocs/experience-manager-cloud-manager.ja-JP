@@ -8,9 +8,9 @@ discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI-CD Pipeline, Test Results
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: bfcb0fb5b9cf8317eb75e3b7b46455b14cd9d7b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2900'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->AEM as a Cloud Service向け Cloud Manager でサポートされているテストについて詳しくは、 [AEMas a Cloud Serviceドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=ja).
+>AEM as a Cloud Service 用の Cloud Manager でサポートされているテストについて詳しくは、[AEM as a Cloud Service ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=ja)を参照してください。
 
 
 ## 3 層評価  {#three-tier-gates-while-running-a-pipeline}
@@ -61,7 +61,7 @@ ht-degree: 98%
 >
 >[このリンクを使用して](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx)、ルールの完全なリストをダウンロードできます。
 
-コード品質テストの結果は、 **評価**. 次の表に、様々なテスト条件の評価の概要を示します。
+コード品質テストの結果は、**評価**&#x200B;として提供されます。次の表に、様々なテスト条件の評価の概要を示します。
 
 | 名前 | 定義 | カテゴリ | 不合格のしきい値 |
 |--- |--- |--- |--- |
@@ -129,8 +129,8 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | 名前 | ヘルスチェックの実装 | カテゴリ |
 |---|---|---|
 | Deserialization firewall Attach API の準備状態が、受け入れ可能な状態である。 | [デシリアライゼーションファイアウォール添付 API レディネス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=ja#security) | 重大 |
-| デシリアライゼーションファイアウォールが機能している。 | [デシリアライゼーションファイアウォール機能](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | 重大 |
-| デシリアライゼーションファイアウォールが読み込まれている。 | [デシリアライゼーションファイアウォール読み込み](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | 重大 |
+| デシリアライゼーションファイアウォールが機能している。 | [デシリアライゼーションファイアウォール機能](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=ja#security) | 重大 |
+| デシリアライゼーションファイアウォールが読み込まれている。 | [デシリアライゼーションファイアウォール読み込み](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=ja#security) | 重大 |
 | `AuthorizableNodeName` 実装において、認証可能な ID がノード名／パスで公開されていない。 | [認証可能なノード名生成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=ja#security) | 重大 |
 | デフォルトのパスワードが変更されている。 | [デフォルトのログインアカウント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ja#users-and-groups-in-aem) | 重大 |
 | Sling のデフォルトの GET サーブレットが DOS 攻撃から保護されている | Sling Get Servlet | 重大 |
@@ -138,7 +138,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | Sling JSP Script Handler が適切に設定されている。 | Sling JSP Script Handler | 重大 |
 | SSL が正しく設定されている。 | SSL 設定 | 重大 |
 | 明らかに安全ではないユーザープロファイルポリシーが見つからない。 | ユーザープロファイルへのデフォルトアクセス | 重大 |
-| Sling Referrer Filter が CSRF 攻撃を防止するように設定されている。 | [Sling Referrer Filter](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#security) | 重要 |
+| Sling Referrer Filter が CSRF 攻撃を防止するように設定されている。 | [Sling Referrer Filter](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=ja#security) | 重要 |
 | Adobe Granite HTML Library Manager が適切に設定されている。 | CQ HTML Library Manager 設定 | 重要 |
 | CRXDE サポートバンドルが無効である。 | CRXDE サポート | 重要 |
 | Sling DavEx のバンドルおよびサーブレットが無効である。 | DavEx ヘルスチェック | 重要 |
