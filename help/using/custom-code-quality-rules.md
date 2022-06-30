@@ -8,9 +8,9 @@ discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 feature: Code Quality Rules
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: d4c92a36ca3af123730d68fedf1dbf7ee819c66b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3609'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->AEM as a Cloud Serviceの Cloud Manager のカスタムコード品質ルールについては、 [このドキュメントへ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=ja#using-cloud-manager).
+>AEM as a Cloud Service での Cloud Manager 用カスタムコード品質ルールについては、[こちらのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=ja#using-cloud-manager)を参照してください。
 
 >[!NOTE]
 >
@@ -321,7 +321,7 @@ public void doThis() throws Exception {
 
 >[!NOTE]
 >
->これは、各要求の access.log-type ログには当てはまりません。
+>これは、各リクエストの access.log-type ログには適用されません。
 
 #### 準拠していないコード {#non-compliant-code-8}
 
@@ -768,7 +768,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）の `compatVersion` プロパティを `2` に設定する必要があります。その他の値は、AEM Cloud Service ではサポートされていません。検索インデックスの詳細については、[コンテンツ検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）の `compatVersion` プロパティを `2` に設定する必要があります。その他の値は、AEM Cloud Service ではサポートされていません。検索インデックスの詳細については、[コンテンツ検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja)を参照してください。
 
 ### カスタム検索インデックス定義ノードの子孫ノードのタイプは、nt:unstructured にする {#oakpal-descendent-nodes}
 
@@ -804,7 +804,7 @@ AEM Cloud Service では、[コンテンツの検索とインデックス作成]
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）に、値が `lucene` に設定された `type` プロパティが必要です。AEM Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）に、値が `lucene` に設定された `type` プロパティが必要です。AEM Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja#how-to-use)を参照してください。
 
 ### カスタム検索インデックス定義ノードに seed という名前のプロパティを含めない {#oakpal-property-name-seed}
 
@@ -813,7 +813,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（`oak:Que
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `seed` という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `seed` という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja#how-to-use)を参照してください。
 
 ### カスタム検索インデックス定義ノードに reindex という名前のプロパティを含めない {#oakpal-reindex-property}
 
@@ -822,7 +822,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `reindex` という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `reindex` という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja#how-to-use)を参照してください。
 
 ## Dispatcher 最適化ツール {#dispatcher-optimization-tool-rules}
 
