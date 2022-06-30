@@ -11,9 +11,9 @@ discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 4c86446127c8cd66f964b192f3602f02fd2ddf8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1615'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -221,7 +221,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ### 新しい実行のトリガー
 
-再実行をトリガーするには、HAL リンクにPUTリクエストを送信する必要があります ```http://ns.adobe.com/adobecloud/rel/pipeline/reExecute``` 実稼動デプロイステップの状態。 このリンクが存在する場合は、そのステップから実行を再開できます。 存在しない場合は、そのステップから実行を再開することはできません。 最初のリリースでは、このリンクは実稼動デプロイメントステップにのみ存在しますが、今後のリリースでは、他のステップからのパイプラインの開始がサポートされる可能性があります。 例：
+再実行をトリガーするには、実稼働デプロイメントステップの状態で HAL リンク（```http://ns.adobe.com/adobecloud/rel/pipeline/reExecute```）に対して PUT リクエストを行う必要があります。 このリンクが存在する場合は、そのステップから実行を再開できます。 存在しない場合は、そのステップから実行を再開することはできません。 最初のリリースでは、このリンクは実稼動デプロイメントステップにのみ存在しますが、今後のリリースでは、他のステップからのパイプラインの開始がサポートされる可能性があります。 例：
 
 ```Javascript
  {
