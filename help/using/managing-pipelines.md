@@ -1,11 +1,11 @@
 ---
 title: パイプラインの管理
 description: 既存のパイプラインの管理方法（編集、実行、削除を含む）を説明します。
-index: true
-source-git-commit: 099a4490e3a8578b9f3485fd1514d1e97db977ab
-workflow-type: ht
-source-wordcount: '518'
-ht-degree: 100%
+exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
+source-git-commit: 99325c28c379103db2ba4c19bb6d206849c6e126
+workflow-type: tm+mt
+source-wordcount: '517'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&#x200B;**パイプライン**&#x200B;カードには、すべてのパイプラインとその現在のステータスの概要が表示されます。
 
-![Cloud Manager のパイプラインカード](/help/using/assets/configure-pipelines/pipelines-card.png)
+![Cloud Manager のパイプラインカード](/help/assets/configure-pipelines/pipelines-card.png)
 
 各パイプラインの横にある省略記号ボタンをクリックすると、次の操作を実行できます。
 
@@ -29,8 +29,8 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 パイプラインのリストの下部には、一般的なオプションがあります。
 
-* **追加** - [新しい実稼動パイプラインを追加](configuring-production-pipelines.md)するか、[新しい実稼動以外のパイプラインを追加](configuring-non-production-pipelines.md)します。
-* **すべて表示** - ユーザーを&#x200B;**パイプライン**&#x200B;画面に移動して、すべてのパイプラインをより詳細なテーブルに表示します
+* **追加** - [新しい実稼動パイプラインを追加](/help/using/production-pipelines.md)するか、[新しい実稼動以外のパイプラインを追加](/help/using/non-production-pipelines.md)します。
+* **すべて表示**  — ユーザーを **パイプライン** 画面を開いて、より詳細なテーブルのすべてのパイプラインを表示
 * **リポジトリ情報にアクセス** - Cloud Manager の Git リポジトリへのアクセスに必要な情報を表示します
 * **詳細情報** - CI／CD パイプラインのドキュメントリソースに移動します。
 
@@ -55,8 +55,8 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 1. **実稼動パイプラインを編集**&#x200B;または&#x200B;**実稼動以外のパイプラインを編集**&#x200B;ダイアログボックスが表示され、パイプラインの作成時に入力したのと同じ詳細を編集できます。
 
    * パイプラインで使用できるすべてのフィールドと設定オプションについて詳しくは、次のページを参照してください。
-      * [実稼動パイプラインの設定](configuring-production-pipelines.md)
-      * [実稼動以外のパイプラインの設定](configuring-non-production-pipelines.md)
+      * [実稼動パイプラインの設定](/help/using/production-pipelines.md)
+      * [実稼動以外のパイプラインの設定](/help/using/non-production-pipelines.md)
 
 1. パイプラインの編集が完了したら、「**更新**」をクリックします。
 
@@ -82,9 +82,9 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. 実行中のパイプラインの詳細ページに移動します。
 
-![パイプラインの詳細](/help/using/assets/configure-pipelines/pipeline-running-details.png)
+![パイプラインの詳細](/help/assets/configure-pipelines/pipeline-running-details.png)
 
-ここから、診断の目的で、パイプラインの様々なステップのステータスを確認し、ビルドログを取得できます。詳しくは、[コードのデプロイ](deploying-code.md)のドキュメントを参照してください。
+ここから、診断の目的で、パイプラインの様々なステップのステータスを確認し、ビルドログを取得できます。ドキュメントを参照 [コードのデプロイメント](/help/using/code-deployment.md) を参照してください。
 
 >[!NOTE]
 >

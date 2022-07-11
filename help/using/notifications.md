@@ -1,58 +1,51 @@
 ---
 title: 通知
-seo-title: 通知
-description: AEM Cloud Manager でユーザーが通知を受け取る方法
-seo-description: このページでは、AEM Cloud Manager でパイプラインの開始時および正常終了または失敗時にユーザーが通知を受け取る方法について説明します。
-uuid: 73e4bb80-36c1-4408-bdbd-1ac5328359d1
-contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: using
-discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
-feature: はじめに
+description: Cloud Manager が重要なイベントを通知する方法を説明します。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 22efb00c7e3ffee8829073dbb498f05a9114807d
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 18%
 
 ---
 
+
 # 通知 {#notifications}
 
-[!UICONTROL Cloud Manager] では、実稼動パイプラインの開始時および正常終了または失敗時、実稼動デプロイメントの開始時、また **GoLive 承認**&#x200B;ステップおよび&#x200B;**スケジュール済み**&#x200B;ステップに達したときに、ユーザーは通知を受け取ることができます。これらの通知は、Adobe [!UICONTROL Experience Cloud] の通知システムを通じて送信されます。
+Cloud Manager が重要なイベントを通知する方法を説明します。
+
+## Cloud Manager での通知 {#cloud-manager-notifications}
+
+[!UICONTROL Cloud Manager] 実稼動パイプラインの開始時、正常終了または失敗時、実稼動デプロイメントの開始時、および **運用開始の承認** および **予定** ステップに達しました。 これらの通知は、 [!UICONTROL Experience Cloud] 通知システム。
 
 >[!NOTE]
 >
->承認およびスケジュール済みの通知は、ビジネスオーナー、プログラムマネージャー、デプロイメントマネージャーの役割のユーザーにのみ送信されます。
+>承認およびスケジュールされた通知は、 **ビジネスオーナー**, **プログラムマネージャ**、および **デプロイメントマネージャー** 役割。
 
-通知は、[!UICONTROL Cloud Manager] UI（ユーザーインターフェイス）のサイドバーおよび Adobe [!UICONTROL Experience Cloud] 全体に表示されます。
+通知は、 [!UICONTROL Cloud Manager] そしてAdobe中 [!UICONTROL Experience Cloud].
 
-下の図に示すように、ヘッダーのベルアイコンをクリックしてサイドバーを開き、通知を表示します。
+新しい通知がある場合、ヘッダーのベルアイコンにバッジが付きます。
 
-![](assets/image2018-7-12_11-52-40.png)
+![通知アイコン](/help/assets/image2018-7-12_11-52-40.png)
 
-サイドバーには、最新の通知が一覧表示されます。
+ベルアイコンをクリックしてサイドバーを開き、通知を表示します。 サイドバーには、最新の通知が一覧表示されます。
 
-![](assets/screen_shot_2018-07-20at91406pm.png)
+![通知サイドバー](/help/assets/screen_shot_2018-07-20at91406pm.png)
 
-さらに、これらの通知の 1 つをクリックした後、「**詳細を表示**」をクリックすると、パイプライン実行の詳細ページにアクセスできます。
+通知をクリックし、 **詳細を表示** をクリックして、パイプライン実行の詳細ページにアクセスします。
 
-![](assets/screen_shot_2018-08-14at43503pm.png)
+![詳細を表示](/help/assets/screen_shot_2018-08-14at43503pm.png)
 
-## 電子メール通知 {#email-notifications}
+## メール通知 {#email-notifications}
 
-デフォルトでは、Adobe [!UICONTROL Experience Cloud] ソリューションの Web ユーザーインターフェイスで通知を確認できます。個々のユーザーは、これらの通知を電子メールで即時またはダイジェストベースで受け取ることもできます｡
+デフォルトでは、Adobe [!UICONTROL Experience Cloud] ソリューションの Web ユーザーインターフェイスで通知を確認できます。個々のユーザーは、これらの通知を電子メールで送信することをオプトできます。
 
-次の図に示すように、通知サイドバーの下部にある歯車アイコンをクリックします。
+通知サイドバーの下部にある歯車アイコンをクリックします。
 
-![](assets/image2018-7-12_12-8-19.png)
+![通知設定アイコン](/help/assets/image2018-7-12_12-8-19.png)
 
-これにより、Adobe [!UICONTROL Experience Cloud] の通知環境設定画面に移動します。
+これにより、ユーザーは **通知環境設定** 画面Adobe [!UICONTROL Experience Cloud].
 
-ユーザーは電子メール通知をオンにしたり、電子メールで受信する通知のタイプを（オプションで）選択したりできます。
+ユーザーは電子メール通知をオンにしたり、電子メールで受信する通知のタイプを（オプションで）選択したりできます。通知を 1 日ごとまたは 1 週間ごとのダイジェストとしてAdobeから受け取るように指定することもできます [!UICONTROL Experience Cloud]、以下に示すように。
 
->[!NOTE]
->
->以下に示すように、Adobe [!UICONTROL Experience Cloud] からのダイジェスト作成を有効にすることもできます。
-
-![](assets/image2018-7-12_12-10-51.png)
+![通知設定](/help/assets/image2018-7-12_12-10-51.png)
