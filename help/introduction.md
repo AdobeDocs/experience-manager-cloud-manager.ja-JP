@@ -2,10 +2,10 @@
 title: AMS 用 Cloud Manager の概要
 description: ここから始めて、Adobe Managed Services(AMS) の Cloud Manager について理解し、組織がクラウド内のAdobe Experience Managerを自己管理できるようにする方法を学びます。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
+source-git-commit: 22d40a1f07f56ee7a7dddb4897e4079f1e346674
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 23%
+source-wordcount: '1316'
+ht-degree: 15%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager の [!UICONTROL Cloud Manager] を使用すると、開
 >
 >このドキュメントでは、Adobe Managed Services(AMS) 用 Cloud Manager の機能について特に説明します。
 >
->AEM as a Cloud Serviceの同等のドキュメントについては、 [AEMas a Cloud Serviceドキュメント。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=ja)
+>AEM as a Cloud Serviceの同等のドキュメントについては、 [AEMas a Cloud Serviceドキュメント。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html)
 
 Cloud Manager を使用すると、開発チームは次の機能を利用できます。
 
@@ -39,7 +39,7 @@ Cloud Manager を使用すると、開発チームは次の機能を利用でき
 
 * 既存の DevOps プロセスを補完する API 接続
 
-* 容量増加の必要性をインテリジェントに検出し、追加の Dispatcher/パブリッシュセグメントを自動的にオンラインにする自動スケーリング
+* 容量の増加の必要性をインテリジェントに検出し、追加の Dispatcher/パブリッシュセグメントを自動的にオンラインにする自動スケーリング
 
 この図は、 [!UICONTROL Cloud Manager]:
 
@@ -75,9 +75,13 @@ Cloud Manager を使用すると、開発チームは次の機能を利用でき
 
 コードと品質チェックのデプロイについて詳しくは、 [コードのデプロイ。](/help/using/code-deployment.md)
 
+## Cloud Manager のオプション機能 {#optional-features-in-cloud-manager}
+
+Cloud Manager には、特定の環境の設定やニーズに応じて、プロジェクトに役立つ追加の高度な機能が用意されています。 これらの機能が役立つ場合は、カスタマーサクセスエンジニア (CSE) またはAdobe担当者に問い合わせて、詳細をお問い合わせください。
+
 ### 自動スケーリング {#autoscaling}
 
-実稼動環境の負荷が異常に高くなる可能性がある場合に、 [!UICONTROL Cloud Manager] 追加容量の必要性を検出し、自動スケーリング機能を使用して追加容量を自動的にオンラインにします。
+実稼動環境の負荷が異常に高くなる可能性がある場合、 [!UICONTROL Cloud Manager] 追加容量の必要性を検出し、自動スケーリング機能を使用して追加容量を自動的にオンラインにします。
 
 このような場合、 [!UICONTROL Cloud Manager] 自動スケーリングプロビジョニングプロセスを自動的にトリガーし、自動スケーリングイベントの通知を送信し、数分以内に追加容量をオンラインにします。 追加容量は実稼動環境の、実行中の Dispatcher/パブリッシュノードと同じシステム仕様に一致する同じリージョンでプロビジョニングされます。
 
@@ -85,4 +89,45 @@ Cloud Manager を使用すると、開発チームは次の機能を利用でき
 
 >[!NOTE]
 >
->自動スケーリングがアプリケーションに適しているかどうかを確認したいお客様は、CSE またはAdobe担当者にお問い合わせください。
+>自動スケーリングがアプリケーションに適しているかどうかを確認したい場合は、CSE またはAdobe担当者にお問い合わせください。
+
+### Blue/Green デプロイメント {#blue-green}
+
+Blue/Green デプロイメントは、Blue/Green と呼ばれる 2 つの同一の実稼動環境を実行することで、ダウンタイムとリスクを低減する手法です。
+
+いつでも、1 つの環境のみがライブになり、ライブ環境がすべての実稼動トラフィックを処理します。 一般に、青は現在稼働中の環境、緑はアイドル状態です。
+
+* 青/緑のデプロイメントは、Cloud Manager CI/CD パイプラインのアドオンです。このパイプラインでは、パブリッシュインスタンスと Dispatcher インスタンスの 2 つ目のセット（緑）が作成され、デプロイメントに使用されます。 その後、緑のインスタンスが実稼動用ロードバランサーに接続され、古いインスタンス（青）が削除されて終了します。
+* この blue/green 実装はインスタンスを一時的なものとして扱い、blue/green パイプラインのすべての反復で、新しいパブリッシュサーバーと Dispatcher サーバーのセットが作成されます。
+* 緑のロードバランサーが設定の一部として作成されます。 このロードバランサーは変更されず、緑または「テスト」URL を示す必要があります。
+* 青/緑のデプロイメント中に、既存のパブリッシュ層/Dispatcher 層の正確なレプリカが作成されます（TDL から読み取られます）。
+
+#### Blue/Green デプロイメントフロー {#flow}
+
+Blue/Green デプロイメントが有効な場合、デプロイメントフローは標準のCloud Serviceデプロイメントフローとは異なります。
+
+| 手順 | Blue/Green デプロイメント | 標準デプロイメント |
+|---|---|---|
+| 1 | 作成者へのデプロイメント | 作成者へのデプロイメント |
+| 2 | テスト用に一時停止 | - |
+| 3 | 緑のインフラストラクチャが作成されます | - |
+| 4 | 緑のパブリッシュ層/Dispatcher 層へのデプロイメント | パブリッシャーへのデプロイメント |
+| 5 | テスト用に一時停止（最大 24 時間） | - |
+| 6 | 緑のインフラストラクチャが実稼動用ロードバランサーに追加されます。 | - |
+| 7 | 青いインフラストラクチャが実稼働用ロードバランサーから削除されます。 |
+| 8 | ブルーインフラストラクチャは自動的に終了します | - |
+
+#### Blue/Green の実装 {#implementing}
+
+実稼動デプロイメントに Cloud Manager を使用しているすべての AMS ユーザーは、青/緑のデプロイメントを使用する資格があります。 ただし、Blue/Green デプロイメントを使用する場合は、環境の追加検証と、AdobeCSE による設定が必要です。
+
+青/緑のデプロイメントに興味がある場合は、次の要件と制限事項を考慮し、担当の CSE にお問い合わせください。
+
+#### 要件と制限 {#limitations}
+
+* 青/緑は、パブリッシュと Dispatcher のペアでのみ使用できます。
+* プレビュー Dispatcher とパブリッシュのペアは、青/緑のデプロイメントには含まれていません。
+* すべての Dispatcher と公開のペアは、他のすべての Dispatcher と公開のペアと同じです。
+* Blue/Green は、実稼動環境でのみ使用できます。
+* Azure だけでなく、AWSでも青/緑が利用できます。
+* Assets のみのお客様は、Blue/Green を利用できません。
