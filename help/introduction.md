@@ -2,10 +2,10 @@
 title: AMS 用 Cloud Manager の概要
 description: ここから始めて、Adobe Managed Services(AMS) の Cloud Manager について理解し、組織がクラウド内のAdobe Experience Managerを自己管理できるようにする方法を学びます。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 22d40a1f07f56ee7a7dddb4897e4079f1e346674
+source-git-commit: 14e35882765783b234ca35da14257279af5130a0
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -100,7 +100,7 @@ Blue/Green デプロイメントは、Blue/Green と呼ばれる 2 つの同一�
 * 青/緑のデプロイメントは、Cloud Manager CI/CD パイプラインのアドオンです。このパイプラインでは、パブリッシュインスタンスと Dispatcher インスタンスの 2 つ目のセット（緑）が作成され、デプロイメントに使用されます。 その後、緑のインスタンスが実稼動用ロードバランサーに接続され、古いインスタンス（青）が削除されて終了します。
 * この blue/green 実装はインスタンスを一時的なものとして扱い、blue/green パイプラインのすべての反復で、新しいパブリッシュサーバーと Dispatcher サーバーのセットが作成されます。
 * 緑のロードバランサーが設定の一部として作成されます。 このロードバランサーは変更されず、緑または「テスト」URL を示す必要があります。
-* 青/緑のデプロイメント中に、既存のパブリッシュ層/Dispatcher 層の正確なレプリカが作成されます（TDL から読み取られます）。
+* 青/緑のデプロイメント中に、既存のパブリッシュ層/Dispatcher 層の正確なレプリカが作成されます。
 
 #### Blue/Green デプロイメントフロー {#flow}
 
