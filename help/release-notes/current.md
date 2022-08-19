@@ -28,7 +28,7 @@ ht-degree: 50%
 * 特定のシナリオでは、無音の再試行メカニズムが、デプロイメントパイプラインでエラー状態が発生しないようにするのに役立ちます。
 * [AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) Cloud Manager に含まれるは、バージョン 37 に更新されました。
 
-## バグの修正 {#bug-fixes}
+## バグ修正 {#bug-fixes}
 
 * まれにリポジトリ作成の失敗が発生する場合もあり、回復性が向上しています。
 * VSTS 組織の設定エラーが発生することがあるのは、再試行が発生したためです。

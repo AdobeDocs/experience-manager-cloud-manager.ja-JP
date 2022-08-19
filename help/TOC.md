@@ -2,21 +2,21 @@
 product: Adobe Experience Manager
 sub-product: Cloud Manager
 user-guide-title: Cloud Manager のドキュメント
-breadcrumb-title: Cloud Manager ドキュメント（AEM 6.x 向け）
-user-guide-description: Cloud Manager を使用してクラウド内の AMS 用 Adobe Experience Manager を自己管理する方法について説明します。
+breadcrumb-title: Cloud Manager のドキュメント（AEM 6.x 用）
+user-guide-description: Cloud Manager を使用して、クラウド内の AMS 用の Adobe Experience Manager を自己管理する方法について説明します。
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 source-git-commit: 42f445465ff9dbfe773a0aee8bdc263f50376a4a
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
 # Cloud Manager のドキュメント {#content}
 
-+ [AMS 用 Cloud Manager](introduction.md)
++ [AMS 用の Cloud Manager](introduction.md)
 + 概要 {#overview}
    + [主要な概念](overview/key-concepts.md)
    + [ユーザージャーニー](overview/user-journey.md)
@@ -28,12 +28,12 @@ ht-degree: 84%
    + [アクセス権限](requirements/access-rights.md)
    + [ソースコードリポジトリ](requirements/source-code-repository.md)
    + [役割ベースの権限](requirements/role-based-permissions.md)
-   + [ユーザーとロールの設定](requirements/users-and-roles.md)
+   + [ユーザーと役割のセットアップ](requirements/users-and-roles.md)
    + [環境のプロビジョニング](requirements/environment-provisioning.md)
 + はじめに {#getting-started}
    + [初回ログイン](getting-started/first-time-login.md)
    + [プログラム設定](getting-started/program-setup.md)
-   + AEM Project Creation {#project-creation}
+   + AEM プロジェクトの作成 {#project-creation}
       + [ウィザードの使用](getting-started/using-the-wizard.md)
       + [プロジェクトのセットアップ](getting-started/project-setup.md)
       + [ビルド環境](getting-started/build-environment.md)
@@ -53,10 +53,10 @@ ht-degree: 84%
    + [通知](using/notifications.md)
    + [カスタムコード品質ルール](using/custom-code-quality-rules.md)
 + コードの管理 {#managing-code}
-   + [Maven プロジェクトバージョンの処理](managing-code/maven-project-version.md)
-   + [リポジトリー](managing-code/repositories.md)
+   + [Maven プロジェクトのバージョン処理](managing-code/maven-project-version.md)
+   + [リポジトリ](managing-code/repositories.md)
    + [Git との統合](managing-code/git-integration.md)
-   + [複数の Git リポジトリーの操作](managing-code/multiple-git-repos.md)
+   + [複数 Git リポジトリの操作](managing-code/multiple-git-repos.md)
 + 製品アップデートウィザード {#product-update-wizard}
    + [概要](product-update-wizard/overview.md)
    + [評価](product-update-wizard/evaluation.md)
@@ -95,7 +95,7 @@ ht-degree: 84%
       + [リリースノート（2020.3.0）](release-notes/2020/2020-3-0.md)
       + [リリースノート（2020.2.0）](release-notes/2020/2020-2-0.md)
       + [リリースノート（2020.1.0）](release-notes/2020/2020-1-0.md)
-   + 2019 年 {#2019}
+   + 2019 {#2019}
       + [リリースノート（2019.12.0）](release-notes/2019/2019-12-0.md)
       + [リリースノート（2019.11.0）](release-notes/2019/2019-11-0.md)
       + [リリースノート（2019.10.0）](release-notes/2019/2019-10-0.md)
@@ -108,7 +108,7 @@ ht-degree: 84%
       + [リリースノート（2019.3.0）](release-notes/2019/2019-3-0.md)
       + [リリースノート（2019.2.0）](release-notes/2019/2019-2-0.md)
       + [リリースノート（2019.1.0）](release-notes/2019/2019-1-0.md)
-   + 2018 年 {#2018}
+   + 2018 {#2018}
       + [リリースノート（2018.9.0）](release-notes/2018/2018-9-0.md)
       + [リリースノート（2018.8.0）](release-notes/2018/2018-8-0.md)
       + [リリースノート（2018.7.0）](release-notes/2018/2018-7-0.md)
