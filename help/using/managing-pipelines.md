@@ -3,9 +3,9 @@ title: パイプラインの管理
 description: 既存のパイプラインの管理方法（編集、実行、削除を含む）を説明します。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 source-git-commit: 99325c28c379103db2ba4c19bb6d206849c6e126
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 パイプラインのリストの下部には、一般的なオプションがあります。
 
 * **追加** - [新しい実稼動パイプラインを追加](/help/using/production-pipelines.md)するか、[新しい実稼動以外のパイプラインを追加](/help/using/non-production-pipelines.md)します。
-* **すべて表示**  — ユーザーを **パイプライン** 画面を開いて、より詳細なテーブルのすべてのパイプラインを表示
+* **すべて表示** - ユーザーを&#x200B;**パイプライン**&#x200B;画面に移動して、すべてのパイプラインをより詳細なテーブルに表示します
 * **リポジトリ情報にアクセス** - Cloud Manager の Git リポジトリへのアクセスに必要な情報を表示します
 * **詳細情報** - CI／CD パイプラインのドキュメントリソースに移動します。
 
@@ -84,7 +84,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 ![パイプラインの詳細](/help/assets/configure-pipelines/pipeline-running-details.png)
 
-ここから、診断の目的で、パイプラインの様々なステップのステータスを確認し、ビルドログを取得できます。ドキュメントを参照 [コードのデプロイメント](/help/using/code-deployment.md) を参照してください。
+ここから、診断の目的で、パイプラインの様々なステップのステータスを確認し、ビルドログを取得できます。詳しくは、[コードのデプロイメント](/help/using/code-deployment.md)のドキュメントを参照してください。
 
 >[!NOTE]
 >
