@@ -3,9 +3,9 @@ title: コード品質テスト
 description: パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2867'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->コード品質のみのパイプラインでは、コード品質テストステップがパイプラインの最後のステップなので、コード品質ゲートでの重要なエラーは上書きできません。
+>コード品質専用パイプラインでは、コード品質テストステップがパイプラインの最終ステップなので、コード品質テストゲートでの重大なエラーはオーバーライドできません。
 
 ## コード品質テスト {#code-quality-testing-step}
 
@@ -103,7 +103,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 >[!NOTE]
 >
->これは、 `@SuppressWarnings` 注釈をできるだけ具体的にする（例：問題の原因となっている特定のステートメントまたはブロックにのみ注釈を付ける）場合は、クラスレベルで注釈を付けることができます。
+>`@SuppressWarnings` 注釈をできるだけ具体的なものにすることをお勧めします（問題の原因となっている特定のステートメントやブロックにのみ注釈を付けます）が、クラスレベルで注釈を付けることもできます。
 
 ## セキュリティテスト {#security-testing}
 
@@ -118,8 +118,8 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | 名前 | ヘルスチェックの実装 | カテゴリ |
 |---|---|---|
 | Deserialization firewall Attach API の準備状態が、受け入れ可能な状態である。 | [デシリアライゼーションファイアウォール添付 API レディネス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=ja#security) | 重大 |
-| デシリアライゼーションファイアウォールが機能している。 | [デシリアライゼーションファイアウォール機能](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | 重大 |
-| デシリアライゼーションファイアウォールが読み込まれている。 | [デシリアライゼーションファイアウォール読み込み](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | 重大 |
+| デシリアライゼーションファイアウォールが機能している。 | [デシリアライゼーションファイアウォール機能](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=ja#security) | 重大 |
+| デシリアライゼーションファイアウォールが読み込まれている。 | [デシリアライゼーションファイアウォール読み込み](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=ja#security) | 重大 |
 | `AuthorizableNodeName` 実装において、認証可能な ID がノード名／パスで公開されていない。 | [認証可能なノード名生成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=ja#security) | 重大 |
 | デフォルトのパスワードが変更されている。 | [デフォルトのログインアカウント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ja#users-and-groups-in-aem) | 重大 |
 | Sling のデフォルトの GET サーブレットが DOS 攻撃から保護されている | Sling Get Servlet | 重大 |
@@ -127,7 +127,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | Sling JSP Script Handler が適切に設定されている。 | Sling JSP Script Handler | 重大 |
 | SSL が正しく設定されている。 | SSL 設定 | 重大 |
 | 明らかに安全ではないユーザープロファイルポリシーが見つからない。 | ユーザープロファイルへのデフォルトアクセス | 重大 |
-| Sling Referrer Filter が CSRF 攻撃を防止するように設定されている。 | [Sling Referrer Filter](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#security) | 重要 |
+| Sling Referrer Filter が CSRF 攻撃を防止するように設定されている。 | [Sling Referrer Filter](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=ja#security) | 重要 |
 | Adobe Granite HTML Library Manager が適切に設定されている。 | CQ HTML Library Manager 設定 | 重要 |
 | CRXDE サポートバンドルが無効である。 | CRXDE サポート | 重要 |
 | Sling DavEx のバンドルおよびサーブレットが無効である。 | DavEx ヘルスチェック | 重要 |
@@ -149,11 +149,11 @@ Cloud Manager で実行される仮想ユーザーまたはコンテナの数は
 
 #### クローラ {#crawler}
 
-30 分のテスト期間が開始される前に、Cloud Manager は、カスタマーサクセスエンジニアが設定した 1 つ以上のシード URL セットを使用してステージング環境をクロールします。これらの URL から、各ページの HTML を調べ、幅優先方式でリンクが探索されます。
+30 分のテスト期間が開始される前に、Cloud Manager は、カスタマーサクセスエンジニアが設定した 1 つ以上のシード URL セットを使用してステージング環境をクロールします。これらの URL から、各ページの HTML を調べ、幅優先方式でリンクが走査されます。
 
-* このクロール処理は、デフォルトで、最大 5,000 ページに制限されています。
-* テストする最大ページ数は、 [環境変数](/help/getting-started/build-environment.md#environment-variables) `MAX_PAGES`.
-   * 使用できる値は次のとおりです。 `2000` - `7000`.
+* このクロール処理は、デフォルトで最大 5000 ページに制限されています。
+* テストされるページの最大数は、[環境変数](/help/getting-started/build-environment.md#environment-variables) `MAX_PAGES` を設定して上書きできます。
+   * 使用できる値は `2000`～`7000` です。
 * クローラーからのリクエストのタイムアウトは 10 秒に固定されています。
 
 #### テスト用ページセット {#page-sets}
@@ -162,9 +162,9 @@ Cloud Manager で実行される仮想ユーザーまたはコンテナの数は
 
 * **最頻訪問ライブページ** - このオプションは、実際の顧客が最も頻繁にアクセスした訪問ページをテストするときに選択します。Cloud Manager はアクセスログを読み取り、ライブユーザーによるアクセスが最も多かったページの上位 25 個を特定し、上位 `Popular Live Pages` のリストを生成します。その後、ステージング環境にも存在するこれらの積集合が、ステージング環境でクロールされます。
 
-* **その他のライブページ**  — このオプションは、人気のない上位 25 ページ（テストに重要）の外にあるページをテストするために選択されます。 最頻訪問ライブページと同様、ライブページはアクセスログから抽出され、ステージング環境にも存在する必要があります。
+* **その他のライブページ** - このオプションを選択すると、最頻訪問ライブページの上位 25 ページに含まれないページのうち、頻度は低くてもテストに重要なページが確実にテストされるようになります。最頻訪問ライブページと同様、ライブページはアクセスログから抽出され、ステージング環境にも存在する必要があります。
 
-* **新規ページ**  — このオプションは、ステージング環境にのみデプロイされ、まだ実稼動環境にはデプロイされていないが、テストが必要な新しいページをテストする場合に選択します。
+* **新規ページ** - このオプションを選択すると、ステージング環境にのみデプロイ済みで、まだ実稼動環境にはデプロイされておらずテストが必要な新しいページがテストされるようになります。
 
 ##### 選択したページセットをまたいだトラフィックの配分 {#distribution-of-traffic}
 
@@ -220,7 +220,7 @@ Cloud Manager CLI を使用してこれらの変数を設定するには、次�
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-詳しくは、 [ユーザーパイプライン変数のパッチ適用](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API の使用方法を説明する API ドキュメントです。
+API の使用方法については、[Patch User Pipeline Variables](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables)（ユーザーパイプライン変数へのパッチ適用）の API ドキュメントを参照してください。
 
 ### AEM Assets {#aem-assets}
 
@@ -244,11 +244,11 @@ Assets のパフォーマンステストの場合、お客様のカスタマー�
 
 #### テストとレポート {#testing-and-reporting}
 
-Cloud Manager は、CSE が設定したユーザー名とパスワードを使用して、オーサーインスタンス上にフォルダーを作成します。 その後、オープンソースライブラリを使用してアセットがフォルダーにアップロードされます。アセットのテスト手順で実行されるテストは、この[オープンソースライブラリを使用して記述されます。](https://github.com/adobe/toughday2) 30 分のテスト期間にわたって、各アセットの処理時間と、様々なシステムレベルの指標の両方が測定されます。この機能では、画像と PDF ドキュメントの両方をアップロードできます。
+Cloud Manager は、CSE にセットアップされたユーザー名とパスワードを使用して、オーサーインスタンス上にフォルダーを作成します。その後、オープンソースライブラリを使用してアセットがフォルダーにアップロードされます。アセットのテスト手順で実行されるテストは、この[オープンソースライブラリを使用して記述されます。](https://github.com/adobe/toughday2) 30 分のテスト期間にわたって、各アセットの処理時間と、様々なシステムレベルの指標の両方が測定されます。この機能では、画像と PDF ドキュメントの両方をアップロードできます。
 
 >[!TIP]
 >
->詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)のドキュメントを参照してください。ドキュメントを参照します。 [プログラム設定](/help/getting-started/program-setup.md) を参照してください。
+>詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)のドキュメントを参照してください。プログラムのセットアップ方法と KPI の定義方法については、[プログラムのセットアップ](/help/getting-started/program-setup.md)のドキュメントを参照してください。
 
 ### パフォーマンステスト結果のグラフ {#performance-testing-results-graphs}
 
@@ -264,18 +264,18 @@ Cloud Manager は、CSE が設定したユーザー名とパスワードを使�
 
 * **CPU 使用率** - テスト期間中の CPU 使用率のグラフ
 
-* **ディスク I/O 待機時間**  — テスト期間中のディスク I/O 待機時間のグラフ
+* **ディスク I/O 待機時間** - テスト期間中のディスク I/O 待機時間のグラフ
 
-* **ページエラー率**  — テスト期間中の 1 分あたりのページエラー数のグラフ
+* **ページエラー率** - テスト期間中の 1 分あたりのページエラー数のグラフ
    * テスト中にエラーが発生したページの一覧を示す CSV ファイル
 
-* **ディスク帯域幅使用量** - テスト期間中のディスク帯域幅使用量のグラフ
+* **ディスク帯域幅使用量** - テスト期間中のディスク帯域幅使用率のグラフ
 
-* **ネットワーク帯域幅使用量**  — テスト期間中のネットワーク帯域幅使用量のグラフ
+* **ネットワーク帯域幅使用率** - テスト期間中のネットワーク帯域幅使用率のグラフ
 
-* **ピーク応答時間**  — テスト期間中の 1 分あたりのピーク応答時間のグラフ
+* **ピーク応答時間** - テスト期間中の 1 分あたりのピーク応答時間のグラフ
 
-* **第 95 百分位応答時間**  — テスト期間中の 1 分あたりの第 95 百分位応答時間のグラフ
+* **第 95 百分位応答時間** - テスト期間中の 1 分あたりの第 95 百分位応答時間のグラフ
    * 第 95 百分位応答時間が定義済みの KPI を超えたページの一覧を示す CSV ファイル。
 
 ## コンテンツパッケージスキャンの最適化 {#content-package-scanning-optimization}
