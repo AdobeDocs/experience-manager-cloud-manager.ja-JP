@@ -1,20 +1,20 @@
 ---
 title: 製品アップデートウィザード
-description: 製品アップデートウィザードを使用して、Cloud Manager 内でのエンドツーエンドのAEMアップデートプロセスを合理化する方法を説明します。
+description: 製品アップデートウィザードを使用して、Cloud Manager 内でのエンドツーエンドの AEM アップデートプロセスを合理化する方法について説明します。
 exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
 source-git-commit: bbee49987e2f80825f5f7f5caf29c841e2b00dfb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '205'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
 
 # 製品アップデートウィザード {#product-update-wizard}
 
-製品アップデートウィザードは、Cloud Manager を使用して、Adobe Experience Manager 6.5 の最新バージョンに対する段階的なアップグレードを行う際のガイド付きです。 Cloud Manager の CI/CD フレームワークと組み込みの自動テストを使用して、エンドツーエンドのプロセスを合理化し、AEMのベストプラクティスに準拠します。
+製品アップデートウィザードでは、Cloud Manager を使用して、最新バージョンの Adobe Experience Manager 6.5 へとガイドに従って段階的にアップグレードできます。エンドツーエンドのプロセスを合理化し、Cloud Manager の CI／CD フレームワークと組み込みの自動テストを使用して、AEM のベストプラクティスに準拠していることを確認します。
 
-このウィザードには、AEM製品のアップデート時にユーザーを導く次の 5 つのフェーズが含まれています。
+このウィザードには、AEM 製品のアップデート時にユーザーをガイドする次の 5 つの段階が含まれています。
 
 * 評価
 * 修正
@@ -24,16 +24,16 @@ ht-degree: 34%
 
 ## ウィザードの使用 {#using}
 
-Cloud Manager にオンボーディングされ、AEM 6.5 にアップグレードする資格がある場合は、製品アップデートウィザードを利用できます。 詳しくは、カスタマーサクセスエンジニア（CSE）にお問い合わせください。
+Cloud Manager にオンボーディングしており、AEM 6.5 へのアップグレード対象となっている顧客は、製品アップデートウィザードを利用できます。詳しくは、カスタマーサクセスエンジニア（CSE）にお問い合わせください。
 
-1. AEM 6.5 がプログラムで使用できることを知らせるプッシュ通知が Cloud Manager を通じて届きます。
+1. AEM 6.5 がプログラムで使用可能なことを知らせるプッシュ通知が Cloud Manager を通じて送られます。
 
 1. **[!UICONTROL AEM 6.5 アップデート]**&#x200B;カードが [!UICONTROL Cloud Manager] の概要画面に表示されます。このカードは、アップデートプロセスの現在の段階を追跡するのに役立ち、次に実行するステップについて知らせます。
 
-   ![更新ウィザードカード](/help/assets/Start-Update.png)
+   ![アップデートウィザードカード](/help/assets/Start-Update.png)
 
 1. 「**[!UICONTROL アップデートを開始]**」を選択して、ウィザードを起動します。
 
-1. ウィザードには、 **[!UICONTROL AEM 6.5 の更新]** プロセス。
+1. ウィザードには、**[!UICONTROL AEM 6.5 アップデート]**&#x200B;プロセスの第 1 段階が表示されます。
 
-ウィザードの第 1 段階の詳細については、「 [評価段階。](/help/product-update-wizard/evaluation.md)
+ウィザードの第 1 段階について詳しくは、[評価段階](/help/product-update-wizard/evaluation.md)のドキュメントを参照してください。
