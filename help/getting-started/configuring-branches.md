@@ -1,24 +1,24 @@
 ---
 title: ブランチの設定
-description: Git で最初のブランチを設定する方法と、CI/CD パイプラインでアプリケーションコードをデプロイする際にブランチを使用する方法について説明します。
+description: Git で最初のブランチを設定する方法と、CI／CD パイプラインでアプリケーションコードをデプロイする際にブランチを使用する方法について説明します。
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
 
 # ブランチの設定 {#configuring-branches}
 
-Git で最初のブランチを設定する方法と、CI/CD パイプラインでアプリケーションコードをデプロイする際にブランチを使用する方法について説明します。
+Git で最初のブランチを設定する方法と、CI／CD パイプラインでアプリケーションコードをデプロイする際にブランチを使用する方法について説明します。
 
 ## Git での最初のブランチの設定 {#setting-up-your-first-branch-in-git}
 
-最初は空の Git リポジトリが 1 つ [がプロビジョニングされている](/help/requirements/environment-provisioning.md) Cloud Manager でオンボーディングされるプログラムごとに このリポジトリには、開発プロセスで必要な数のブランチを含めることができますが、CI/CD パイプラインでステージング環境および実稼動環境にアプリケーションコードをデプロイするために使用するブランチが少なくとも 1 つ必要です。 このブランチの名前として`main`を使用することをお勧めします。好都合なことに、これは、新しいプロジェクトを設定する際の Git クライアントのデフォルトの動作です。
+Cloud Manager でオンボーディングされるプログラムごとに、最初は空の Git リポジトリが 1 つ[プロビジョニングされます](/help/requirements/environment-provisioning.md)。このリポジトリには、開発プロセスで対象とする数のブランチを格納できますが、アプリケーションコードをステージングおよび実稼動環境にデプロイするために CI／CD パイプラインで使用されるブランチが少なくとも 1 つ必要です。このブランチの名前として `main` を使用することをお勧めします。好都合なことに、これは、新規プロジェクトを設定する際の Git クライアントのデフォルト動作になっています。
 
-例えば、新しいプロジェクトを設定する場合、次のような一連のコマンドを実行します。
+例えば、新規プロジェクトを設定する場合、次のような一連のコマンドを実行します。
 
 ```shell
 $ git init
@@ -50,11 +50,11 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->必ずしも、コマンドラインクライアントを使用する必要はありません。スタンドアロンアプリケーションとして、または Eclipse や IntelliJ などの統合開発環境 (IDE) の一部として使用できる様々なグラフィカル Git クライアントがあります。 クライアントアプリケーションが HTTPS で Git をサポートしている限り、 [!UICONTROL Cloud Manager].
+>必ずしも、コマンドラインクライアントを使用する必要はありません。スタンドアロンアプリケーションとして、または Eclipse や IntelliJ などの統合開発環境（IDE）の一部として使用できるグラフィカルな Git クライアントが各種あります。クライアントアプリケーションが HTTPS で Git をサポートしている限り、[!UICONTROL Cloud Manager] と互換性がある必要があります。
 
 ## 最初のブランチのプッシュ {#pushing-your-first-branch}
 
-少なくとも 1 つのリビジョンをコミットしたら、 [!UICONTROL Cloud Manager] リモートリポジトリとしてリポジトリを作成し、そのリポジトリにコミットをプッシュします。
+1 つ以上のリビジョンをコミットしたら、[!UICONTROL Cloud Manager] リポジトリをリモートとして追加した後、そのリポジトリにコミットをプッシュできます。
 
 ```shell
 $ git remote add adobe <url>
@@ -78,4 +78,4 @@ To <url>
 
 >[!TIP]
 >
->一般的な Git コマンドについては、 [Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
+>よく使用される Git コマンドについては、[Git チートシート](https://github.github.com/training-kit/downloads/github-git-cheat-sheet)を参照してください。
