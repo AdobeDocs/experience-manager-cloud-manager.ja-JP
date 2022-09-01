@@ -2,10 +2,10 @@
 title: 初回ログイン
 description: 一般設定をセットアップし、Cloud Manager を初めて使用する準備が整っている場合は、このページの手順に従ってください。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: d033b7cf53d4d9faf074f1dc09e2958eb91afe3b
-workflow-type: ht
-source-wordcount: '194'
-ht-degree: 100%
+source-git-commit: 43d05eed9c2e7c4cf6c3becdbc3e4522428722b7
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
-1. Adobe [!UICONTROL Experience Cloud] にログインすると、プログラムのリストが表示されます。
+1. Adobeにログイン [!UICONTROL Experience Cloud] そして、プログラムのリストが見えます。
 
 1. プログラムを選択します。
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 1. 「**プログラムを設定**」をクリックして、プログラムの説明を設定し、主要業績評価指標 （KPI）を定義します。
 
-プログラムを設定する次の手順については、[プログラム設定](https://helpx.adobe.com/jp/experience-manager/cloud-manager/using/program-setup.html)のドキュメントに進んでください。
+プログラムを設定する次の手順については、[プログラム設定](/help/getting-started/program-setup.md)のドキュメントに進んでください。
 
 ## Cloud Manager アクティビティ {#activity}
 
