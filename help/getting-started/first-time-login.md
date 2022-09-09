@@ -2,10 +2,10 @@
 title: 初回ログイン
 description: 一般設定をセットアップし、Cloud Manager を初めて使用する準備が整っている場合は、このページの手順に従ってください。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 43d05eed9c2e7c4cf6c3becdbc3e4522428722b7
+source-git-commit: d8f16deacfe52c76ff6b0aee0344d50bfe2b9c74
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 93%
+source-wordcount: '261'
+ht-degree: 66%
 
 ---
 
@@ -39,3 +39,7 @@ ht-degree: 93%
 ## Cloud Manager アクティビティ {#activity}
 
 Cloud Manager では、プログラムのアクティビティの表示を統合し、実稼動と実稼動以外の両方の CI／CD パイプライン実行をすべて一覧表示して、過去と現在のアクティビティを可視化します。
+
+>[!NOTE]
+>
+>デフォルトでは、AEM環境へのアクセス権を持つユーザーは、Cloud Manager のユーザーロールも持ちます。 およびその他のでのこの役割は、ユーザーにプログラムの詳細表示へのアクセス権を与えるには不十分です。 Cloud Manager のユーザーロールのみを持つユーザーは、プログラムメニューオプションからAEM環境のオーサー URL（環境が存在する場合）に移動できます。 プログラムレベルのアクセス権を取得したい場合は、管理者に問い合わせる必要があります。
