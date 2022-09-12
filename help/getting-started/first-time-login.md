@@ -5,7 +5,7 @@ exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: d8f16deacfe52c76ff6b0aee0344d50bfe2b9c74
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 66%
+ht-degree: 71%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 66%
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
-1. Adobeにログイン [!UICONTROL Experience Cloud] そして、プログラムのリストが見えます。
+1. Adobe [!UICONTROL Experience Cloud] にログインすると、プログラムのリストが表示されます。
 
 1. プログラムを選択します。
 
