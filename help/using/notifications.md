@@ -2,7 +2,7 @@
 title: 通知
 description: Cloud Manager による重要なイベントの通知方法を説明します。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 804b537bbd61105a92b42960d44ecedabfb13099
+source-git-commit: e767d9ff5e3df0047d2cf47d7b0842854101a01a
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 24%
@@ -82,7 +82,7 @@ Cloud Manager による重要なイベントの通知方法を説明します。
 * **アラートは、解除するまで画面に表示され続けます**  — アクティブに解除しない限りアラートを保持するかどうかを制御します
 * **期間**  — アラートを画面に表示しておく期間を選択していない場合に、アラートを画面に表示しておく期間を定義します。
 
-## 電子メール {#emails}
+### 電子メール {#emails}
 
 通知は、Adobe全体の Web ユーザーインターフェイスで使用できます [!UICONTROL Experience Cloud] ソリューション また、これらの通知を電子メールで送信する場合は、 **電子メール** 」セクションに入力します。
 
