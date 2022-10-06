@@ -1,19 +1,19 @@
 ---
-title: リリースノート（2022.9.0）
-description: Cloud Manager リリース 2022.9.0 のリリースノートです。
+title: リリースノート（2022.10.0）
+description: Cloud Manager リリース 2022.10.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: e74d386d0b2d50a7e276bb7ead7594ef448742ae
-workflow-type: ht
-source-wordcount: '200'
-ht-degree: 100%
+source-git-commit: 69c1c8a1136c037a5eea635a75f2d4d187f2ac4d
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 62%
 
 ---
 
 
-# Cloud Manager リリース 2022.9.0 のリリースノート {#release-notes}
+# Cloud Manager リリース 2022.10.0 のリリースノート {#release-notes}
 
-このページは、[!UICONTROL Cloud Manager] リリース 2022.9.0 のリリースノートです。
+このページは、[!UICONTROL Cloud Manager] リリース 2022.10.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,16 +21,12 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] リリース 2022.9.0 のリリース日は 2022年9月8日（PT）です。次回のリリースは 2022年10月6日（PT）に予定されています。
+のリリース日 [!UICONTROL Cloud Manager] リリース2022.10.0は 2022 年 10 月 7 日です。 次回のリリースは 2022 年 11 月 3 日に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* Cloud Manager での水平方向の複数地域の自動スケーリングに対するサポート。
-* Cloud Manager ユーザーの役割のみを持つユーザー向けにカスタマイズされ、このようなユーザーに AEM 環境への移動方法やプログラムアクセスの制限に関するガイドを提供する、新しいようこそページカード。
-* Cloud Manager の役割を持たないお客様は、プログラムの詳細にアクセスできません。ただし、CM ランディングページからオーサーエンドポイントに移動することはできます。
-* 回復性の向上を実現することで、再試行の失敗によるパイプライン障害を排除します。
+* のバージョン。 [AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) Cloud Manager で使用されているをバージョン 39 に更新しました。
 
 ## バグ修正 {#bug-fixes}
 
-* Maven がプライベートリポジトリへの接続に関する問題に直面した場合の、顧客の AEM アプリビルドに関する顧客のフィードバックを改善しました。
-* ヘルスチェックシステムで有効なヘルススコアを取得できない場合、自動スケールイベントがトリガーされないことが稀にあります。
+* 特定の条件下での再試行を追加することで、Assets のパフォーマンステストの信頼性が向上しました。
