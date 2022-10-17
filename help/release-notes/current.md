@@ -4,9 +4,9 @@ description: Cloud Manager リリース 2022.10.0 のリリースノートです
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 69c1c8a1136c037a5eea635a75f2d4d187f2ac4d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '124'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 62%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!UICONTROL Cloud Manager] リリース2022.10.0は 2022 年 10 月 7 日です。 次回のリリースは 2022 年 11 月 3 日に予定されています。
+[!UICONTROL Cloud Manager] リリース 2022.10.0 のリリース日は 2022年10月6日（PT）です。次回のリリースは 2022年11月3日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* のバージョン。 [AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) Cloud Manager で使用されているをバージョン 39 に更新しました。
+* Cloud Manager で使用される [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)のバージョンが 39 に更新されました。
 
 ## バグ修正 {#bug-fixes}
 
