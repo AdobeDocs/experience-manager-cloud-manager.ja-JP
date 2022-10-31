@@ -2,10 +2,10 @@
 title: ユーザーと役割の追加
 description: Admin Consoleを使用して、ユーザーと役割を追加し、プロファイルを作成する方法について説明します。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
-workflow-type: ht
-source-wordcount: '581'
-ht-degree: 100%
+source-git-commit: dd96d773ea3e6b9c45886fe41b28d3dd70cb8a61
+workflow-type: tm+mt
+source-wordcount: '780'
+ht-degree: 58%
 
 ---
 
@@ -48,10 +48,6 @@ ht-degree: 100%
 
 Admin Console では、組織全体にわたるアドビ製品の使用権限を一元的に管理できます。Adobe Admin Console について詳しくは、[Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) のドキュメントを参照してください。
 
->[!NOTE]
->
->Admin Console にアクセスしてチーム（ユーザーと役割）を設定するには、[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) を参照してください。
-
 ロールに基づく適切な権限を [!UICONTROL Cloud Manager] ユーザーに与えるには、お客様の組織内の管理者が 4 つの [!UICONTROL Cloud Manager] の役割に対応する新しい製品プロファイルを [!UICONTROL AEM Managed Services] 製品コンテキストの下に作成する必要があります。
 
 * ビジネスオーナー
@@ -61,31 +57,62 @@ Admin Console では、組織全体にわたるアドビ製品の使用権限を
 
 Admin Console を使用して、これらの製品プロファイルにユーザーやグループを作成または追加できます。
 
-1. Admin Console にログインし、「**新規プロファイル**」をクリックして新しいプロファイルを追加します。
+1. 次の場所にあるAdmin Consoleにログインします。 [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
 
-   ![新しいプロファイル](/help/assets/admin_console_roles-1.png)
+1. をクリックします。 **概要** 」タブで、変更する製品を **製品とサービス** カード。 リストにない場合は、 **製品** タブをクリックして製品を検索し、クリックします。
+
+   ![Admin Console の「概要」タブ](/help/assets/admin-console-overview.png)
+
+1. の **製品** 「 」タブで、製品プロファイルにユーザー/グループを追加する環境をクリックします。
+
+   ![Admin Console の「製品」タブ](/help/assets/admin-console-product.png)
+
+1. の **製品プロファイル** 」タブで、 **新しいプロファイル** をクリックして、新しいプロファイルを追加します。
+
+   ![新しいプロファイル](/help/assets/admin-console-product-profiles.png)
 
 1. [!UICONTROL Cloud Manager] の新しい役割を設定するための情報を入力します。
 
-   * **プロファイル名**
-   * **表示名**
-   * **権限グループ**
+   * **プロファイル名** - **プロファイル名** は何でもかまいませんが、混乱を避けるために、 **推奨プロファイル名** 列。
+   * **表示名** - **表示名** は、で定義された技術的な値である必要があります [!UICONTROL Cloud Manager] （次の表を参照）。
+   * **権限グループ** ：プロファイルの権限グループを選択できます（常に使用可能とは限りません）。
 
-1. 「**完了**」をクリックして、プロファイル作成手順を完了します。
+   ![新規プロファイルの作成](/help/assets/screen_shot_2018-05-04at171819.png)
 
-これらの製品プロファイルを作成する際、**表示名**&#x200B;は、[!UICONTROL Cloud Manager] で定義されている技術値（以下の表を参照）である必要があります。**プロファイル名**&#x200B;は任意の名前にすることができますが、混乱を避けるために、**推奨されるプロファイル名**&#x200B;列の値を使用することをお勧めします。それには、製品プロファイルの作成時に「**プロファイル名と同じ**」チェックボックスをオフにし、対応する値を「**表示名**」として指定します。
+   | 役割 | 表示名（必須） | 推奨プロファイル名 |
+   |---|---|---|
+   | ビジネスオーナー | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - ビジネスオーナーの役割 |
+   | デプロイメントマネージャー | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - デプロイメントマネージャーの役割 |
+   | デベロッパー | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - デベロッパーの役割 |
+   | プログラムマネージャー | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - プログラムマネージャーの役割 |
 
-| **役割** | **表示名（必須）** | **推奨プロファイル名** |
-|---|---|---|
-| ビジネスオーナー | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - ビジネスオーナーの役割 |
-| デプロイメントマネージャー | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - デプロイメントマネージャーの役割 |
-| デベロッパー | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - デベロッパーの役割 |
-| プログラムマネージャー | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - プログラムマネージャーの役割 |
 
-![新規プロファイルの作成](/help/assets/screen_shot_2018-05-04at171819.png)
+1. クリック **完了** をクリックして、新しいプロファイルを保存します。
 
-製品プロファイルを作成したら、それらの製品プロファイルにユーザー（またはグループ）を追加できます。
+## ユーザーまたはユーザーグループへのプロファイルの割り当て {#assign-profiles}
 
-![ユーザーの編集](/help/assets/image2018-4-9_15-19-26.png)
+製品プロファイルを作成したら、それらにユーザーまたはユーザーグループを割り当てることができます。
 
-![ユーザーグループ](/help/assets/image2018-4-9_15-16-47.png)
+1. 次の場所にあるAdmin Consoleにログインします。 [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+
+1. Admin Consoleで、 **ユーザー** タブをクリックします。
+
+   ![「ユーザー」タブ](/help/assets/admin-console-users.png)
+
+1. クリック **ユーザー** 左側のナビゲーションパネルで、ユーザーをクリックして変更します。
+
+1. 「 **製品** 「 」セクションで「 」を選択します。 **編集**.
+
+   ![ユーザーを編集](/help/assets/admin-console-edit-user.png)
+
+1. 内 **製品とユーザーグループの編集** ダイアログで、「+」ボタンをクリックし、ユーザーに割り当てるプロファイルを選択します。
+
+   * ユーザーが既に役割に割り当てられている場合、プラスボタンは編集ボタン（鉛筆）になりますが、同じように機能します。
+
+   ![製品とユーザーグループの編集](/help/assets/admin-console-edit-products-and-user-groups.png)
+
+1. クリック **保存** をクリックして、ユーザーにプロファイルを保存します。
+
+同じ手順を繰り返して、プロファイルをユーザーグループに割り当てますが、「 」を選択します。 **ユーザーグループ** を、 **ユーザー** タブをクリックします。 ユーザーグループをクリックし、 **割り当てられた製品プロファイル** タブをクリックし、 **製品プロファイルを割り当て** をクリックしてプロファイルを割り当てます。
+
+![プロファイルをグループに割り当て](/help/assets/admin-console-edit-user-groups.png)
