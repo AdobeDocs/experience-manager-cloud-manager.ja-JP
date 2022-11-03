@@ -6,9 +6,9 @@ breadcrumb-title: Cloud Manager のドキュメント（AEM 6.x 用）
 user-guide-description: Cloud Manager を使用して、クラウド内の AMS 用の Adobe Experience Manager を自己管理する方法について説明します。
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
-source-git-commit: 101177e49ec276b8203a32767392538dc257394a
-workflow-type: ht
-source-wordcount: '309'
+source-git-commit: fcc39abd5c33b3839ea5d6010200bddf17fec03e
+workflow-type: tm+mt
+source-wordcount: '312'
 ht-degree: 100%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 100%
 + リリースノート {#release-notes}
    + [最新のリリースノート](release-notes/current.md)
    + 2022 {#2022}
+      + [リリースノート（2022.10.0）](release-notes/2022/2022-10-0.md)
       + [リリースノート（2022.9.0）](release-notes/2022/2022-9-0.md)
       + [リリースノート（2022.8.0）](release-notes/2022/2022-8-0.md)
       + [リリースノート（2022.7.0）](release-notes/2022/2022-7-0.md)
