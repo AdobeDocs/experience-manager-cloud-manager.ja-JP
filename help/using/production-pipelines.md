@@ -2,10 +2,10 @@
 title: 実稼動パイプラインの設定
 description: Cloud Manager を使用して、コードをデプロイするための実稼動パイプラインを作成および設定する方法について説明します。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 99325c28c379103db2ba4c19bb6d206849c6e126
-workflow-type: ht
+source-git-commit: 39b38da17ed1cadf4f2e9633a9e76b537325316f
+workflow-type: tm+mt
 source-wordcount: '1302'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -93,8 +93,9 @@ Cloud Manager を使用して、コードをデプロイするための実稼動
 
             1. 「**パス**」で、コンテンツパスを指定します。
             1. 「**種類**」で、そのパスに対して実行するアクションを選択します。
-            * **フラッシュ** - コンテンツがオーサーインスタンスからパブリッシュインスタンスに対してアクティベートされる場合と同様に、キャッシュの無効化を実行します。
-            * **無効化** - キャッシュの削除を実行します。
+
+               * **フラッシュ**  — キャッシュの削除を実行します。
+               * **無効化**  — コンテンツがオーサーインスタンスからパブリッシュインスタンスに対してアクティベートされる場合と同様に、キャッシュの無効化を実行します。
             1. 「**パスを追加**」をクリックして、指定したパスを追加します。環境につき最大 100 個のパスを追加できます。
 
          ![Dispatcher 設定](/help/assets/configure-pipelines/dispatcher-stage.png)
@@ -125,7 +126,6 @@ Cloud Manager を使用して、コードをデプロイするための実稼動
             ![実稼動デプロイメントオプション](/help/assets/configure-pipelines/prod-deploymentoptions.png)
 
          * **Dispatcher 設定** - 実稼動環境の Dispatcher 設定を定義します。オプションは、ステージング環境のオプションと同じです。
-
 
 
 
