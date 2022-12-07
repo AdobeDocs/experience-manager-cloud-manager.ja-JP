@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 1fe5fb860da07105ac7e8ce21fce683b238637c1
 workflow-type: tm+mt
 source-wordcount: '124'
-ht-degree: 54%
+ht-degree: 62%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 54%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!UICONTROL Cloud Manager] リリース2022.12.0は 2022 年 11 月 29 日です。 次回のリリースは 2023 年 1 月 19 日に予定されています。
+[!UICONTROL Cloud Manager] リリース 2022.12.0 のリリース日は 2022年11月29日（PT）です。次回のリリースは 2023 年 1 月 19 日に予定されています。
 
 ## 新機能 {#what-is-new}
 
