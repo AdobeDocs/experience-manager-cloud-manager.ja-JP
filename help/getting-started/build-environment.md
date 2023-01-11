@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager ユーザーがコードを作成およびテストするための専用のビルド環境について説明します。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
-workflow-type: ht
-source-wordcount: '1044'
-ht-degree: 100%
+source-git-commit: 60a6fd062a3878230dafdc34d9ce289ade361120
+workflow-type: tm+mt
+source-wordcount: '1139'
+ht-degree: 91%
 
 ---
 
@@ -127,6 +127,28 @@ Cloud Manager のビルド環境には、次の属性があります。
 | `CM_PROGRAM_ID` | 数値プログラム識別子 |
 | `CM_PROGRAM_NAME` | プログラム名 |
 | `ARTIFACTS_VERSION` | ステージングパイプラインまたは実稼動パイプラインの場合、Cloud Manager で生成された合成バージョン |
+
+### 標準環境変数の可用性 {#availability}
+
+標準の環境変数は、様々な場所で使用できます。
+
+#### 作成、プレビュー、公開 {#author-preview-publish}
+
+通常の環境変数とシークレットは、オーサリング、プレビューおよび公開の各環境で使用できます。
+
+#### Dispatcher {#dispatcher}
+
+Dispatcher で使用できるのは、通常の環境変数のみです。 シークレットは使用できません。
+
+ただし、環境変数は `IfDefine` ディレクティブ。
+
+>[!TIP]
+>
+>環境変数の使用を検証するには、 [ローカルでの dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) デプロイする前に
+
+#### OSGi 設定 {#osgi}
+
+通常の環境変数とシークレットは、OSGi 設定で使用できます。
 
 ### パイプライン変数 {#pipeline-variables}
 
