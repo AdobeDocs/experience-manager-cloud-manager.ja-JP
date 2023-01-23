@@ -5,7 +5,7 @@ exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
 workflow-type: tm+mt
 source-wordcount: '1152'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -130,21 +130,21 @@ Cloud Manager のビルド環境には、次の属性があります。
 
 ### 標準環境変数の可用性 {#availability}
 
-標準の環境変数は、様々な場所で使用できます。
+標準環境変数は、様々な場所で使用できます。
 
-#### 作成、プレビュー、公開 {#author-preview-publish}
+#### オーサー、プレビュー、パブリッシュ {#author-preview-publish}
 
-通常の環境変数とシークレットは、オーサリング、プレビューおよび公開の各環境で使用できます。
+オーサー、プレビュー、パブリッシュの各環境では、通常の環境変数とシークレットの両方を使用できます。
 
 #### Dispatcher {#dispatcher}
 
-で使用できるのは通常の環境変数のみです [dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja) シークレットは使用できません。
+で使用できるのは通常の環境変数のみです [dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja)シークレットは使用できません。
 
-ただし、環境変数は `IfDefine` ディレクティブ。
+ただし、環境変数は `IfDefine` ディレクティブでは使用できません。
 
 >[!TIP]
 >
->環境変数の使用を検証するには、 [ローカルでの dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) デプロイする前に
+>デプロイする前に、[Dispatcher をローカルで](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=ja)使用して、環境変数の使用を検証する必要があります。
 
 #### OSGi 設定 {#osgi}
 
