@@ -1,10 +1,10 @@
 ---
 title: コンテンツコピーツール
 description: Cloud Manager のコンテンツコピーツールを使用すると、可変コンテンツをオンデマンドでAEM実稼動環境から低レベルの環境にコピーして、テスト目的でコピーできます。
-source-git-commit: e32e51f7d10e753b7ecb2a63adb36d1b6c90fcc1
+source-git-commit: 360cbf7e3a21e530a4e43f13f6d414dae4afa104
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 8%
+source-wordcount: '1017'
+ht-degree: 7%
 
 ---
 
@@ -33,12 +33,7 @@ Cloud Manager のコンテンツコピーツールを使用すると、可変コ
 
 ## 権限 {#permissions}
 
-コンテンツコピーツールを使用するには、ソース環境とターゲット環境の両方で特定の権限が必要です。
-
-| コンテンツコピー機能 | AEM Administrator Group で | デプロイメントマネージャーの役割で |
-|---|---|---|
-| 作成および変更 [コンテンツセット](#create-content-set) | はい | いいえ |
-| を開始またはキャンセルする [コンテンツコピープロセス](#copy-content) | はい | はい |
+コンテンツコピーツールを使用するには、ユーザーを **デプロイメントマネージャー** の役割がソース環境とターゲット環境に存在することを確認します。
 
 ## コンテンツセットの作成 {#create-content-set}
 
