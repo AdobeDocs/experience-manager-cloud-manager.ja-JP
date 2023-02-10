@@ -3,9 +3,9 @@ title: ビルド環境
 description: Cloud Manager ユーザーがコードを作成およびテストするための専用のビルド環境について説明します。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1152'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -138,7 +138,7 @@ Cloud Manager のビルド環境には、次の属性があります。
 
 #### Dispatcher {#dispatcher}
 
-で使用できるのは通常の環境変数のみです [dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja)シークレットは使用できません。
+[Dispatcher で使用できるのは、通常の環境変数のみです。](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja)シークレットは使用できません。
 
 ただし、環境変数は `IfDefine` ディレクティブでは使用できません。
 
@@ -148,7 +148,7 @@ Cloud Manager のビルド環境には、次の属性があります。
 
 #### OSGi 設定 {#osgi}
 
-通常の環境変数とシークレットは、 [OSGi 設定。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=ja)
+[OSGi 設定](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=ja)では、通常の環境変数とシークレットの両方を使用できます。
 
 ### パイプライン変数 {#pipeline-variables}
 
