@@ -8,8 +8,8 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 source-git-commit: 3b11d8e703120412e9a20f3b3f49b9de1dff4276
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '324'
+ht-degree: 100%
 
 ---
 
@@ -63,9 +63,9 @@ ht-degree: 0%
    + [評価](product-update-wizard/evaluation.md)
 + リリースノート {#release-notes}
    + [最新のリリースノート](release-notes/current.md)
-   + 2023年度 {#2023}
+   + 2023年 {#2023}
       + [リリースノート（2023.1.0）](release-notes/2023/2023-1-0.md)
-   + 2022年度 {#2022}
+   + 2022年 {#2022}
       + [リリースノート（2022.12.0）](release-notes/2022/2022-12-0.md)
       + [リリースノート（2022.11.0）](release-notes/2022/2022-11-0.md)
       + [リリースノート（2022.10.0）](release-notes/2022/2022-10-0.md)
