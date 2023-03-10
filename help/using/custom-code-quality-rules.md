@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール
 description: AEM Engineering のベストプラクティスに基づいて、Cloud Manager がコード品質テストの一環として実行するカスタムコード品質ルールについて詳しく説明します。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 5fe0d20d9020e6b90353ef5a54e49c93be5c00be
-workflow-type: ht
-source-wordcount: '3575'
-ht-degree: 100%
+source-git-commit: 611cd8f874e8e0d21a475365f4aceb6ae2565644
+workflow-type: tm+mt
+source-wordcount: '3537'
+ht-degree: 86%
 
 ---
 
@@ -16,7 +16,7 @@ AEM Engineering のベストプラクティスに基づいて、Cloud Manager �
 
 >[!NOTE]
 >
->ここで提供されるコードサンプルは、例としてのみ使用されています。概念と品質ルールについて詳しくは、[SonarQube の概念に関するドキュメント](https://docs.sonarqube.org/7.4/user-guide/concepts/)を参照してください。
+>ここで提供されるコードサンプルは、例としてのみ使用されています。詳しくは、 [SonarQube の概念に関するドキュメント](https://docs.sonarqube.org/latest/) の概念と品質ルールについて学びます。
 
 ## SonarQube ルール {#sonarqube-rules}
 
@@ -104,7 +104,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **深刻度**：致命的
 * **最初の対象バージョン**：バージョン 2018.6.0
 
-AEM アプリケーション内から HTTP 要求を実行する場合、不要なスレッドの使用を防ぐために、適切なタイムアウトが設定されていることを確認することが重要です。ただし、Java のデフォルト HTTP クライアント（`java.net.HttpUrlConnection`）および一般的に使用される Apache HTTP コンポーネントクライアントのデフォルトの動作はタイムアウトしないので、タイムアウトを明示的に設定する必要があります。また、ベストプラクティスとして、これらのタイムアウトは 60 秒以内に設定する必要があります。
+AEM アプリケーション内から HTTP 要求を実行する場合、不要なスレッドの使用を防ぐために、適切なタイムアウトが設定されていることを確認することが重要です。残念ながら、Java™のデフォルト HTTP クライアントのデフォルトの動作は、 `java.net.HttpUrlConnection`タイムアウトは常にタイムアウトしないため、タイムアウトを明示的に設定する必要があります。 また、ベストプラクティスとして、これらのタイムアウトは 60 秒以内に設定する必要があります。
 
 #### 準拠していないコード {#non-compliant-code-2}
 
@@ -181,7 +181,7 @@ public void orDoThis() {
 
 `ResourceResolverFactory` から取得された `ResourceResolver` オブジェクトは、システムリソースを使用します。`ResourceResolver` が使用されなくなった場合に、これらのリソースを再利用する指標がありますが、`close()` メソッドを呼び出し、開いている `ResourceResolver` オブジェクトを明示的に閉じるほうが効率的です。
 
-比較的一般的な誤解として、既存の JCR セッションを使用して作成された `ResourceResolver` オブジェクトは明示的に閉じることはできず、そうすると基になる JCR セッションを閉じてしまうというものがあります。これは該当しません。どの方法で `ResourceResolver` を開いても、使用しなくなったら閉じる必要があります。`ResourceResolver` は閉じることのできる `Closeable` インターフェイスを実装するので、`close()` を明示的に呼び出す代わりに、`try-with-resources` 構文を使用することもできます。
+よくある誤解は `ResourceResolver` 既存の JCR セッションを使用して作成されたオブジェクトは、明示的に閉じたり、基になる JCR セッションを閉じたりしてはなりません。 これは該当しません。どの方法で `ResourceResolver` を開いても、使用しなくなったら閉じる必要があります。`ResourceResolver` は閉じることのできる `Closeable` インターフェイスを実装するので、`close()` を明示的に呼び出す代わりに、`try-with-resources` 構文を使用することもできます。
 
 #### 準拠していないコード {#non-compliant-code-4}
 
@@ -221,7 +221,7 @@ public void orDoThis(Session session) throws Exception {
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-[Sling ドキュメント](http://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明されているように、パスによってサーブレットをバインドすることは推奨されません。パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
+[Sling ドキュメント](https://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明されているように、パスによってサーブレットをバインドすることは推奨されません。パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
 
 #### 準拠していないコード {#non-compliant-code-5}
 
@@ -283,7 +283,7 @@ public void orDoThis() throws MyCustomException {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-もうひとつの避けるべき一般的なパターンは、メッセージをログに記録してからすぐに例外をスローすることです。これは一般に、ログファイルで例外メッセージが重複することを示します。
+もうひとつの避けるべき一般的なパターンは、メッセージをログに記録してからすぐに例外をスローすることです。これは、通常、例外メッセージがログファイルに複製されることを示します。
 
 #### 準拠していないコード {#non-compliant-code-7}
 
@@ -337,7 +337,7 @@ public void doGet() throws Exception {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-ベストプラクティスとして、ログメッセージは、アプリケーション内での問題の発生場所に関するコンテキスト情報を提供する必要があります。また、スタックトレースを使用してコンテキストを判断することもできます。これにより、一般的にログメッセージが読みやすく、わかりやすくなります。結果として、例外をログに記録する場合、例外のメッセージをログメッセージとして使用するのは望ましくありません。例外メッセージには発生した問題の説明を含めるのに対して、ログメッセージでは、例外が発生したときにアプリケーションが何を実行していたかを示す必要があります。例外メッセージは、引き続きログに記録されます。独自のメッセージを指定すると、ログが分かりやすくなります。
+ベストプラクティスとして、ログメッセージは、アプリケーション内での問題の発生場所に関するコンテキスト情報を提供する必要があります。また、スタックトレースを使用してコンテキストを判断することもできます。これにより、一般的にログメッセージが読みやすく、わかりやすくなります。その結果、例外をログに記録する際に、例外のメッセージをログメッセージとして使用するのは適切ではありません。例外メッセージには、何が起こったかが含まれますが、ログメッセージは、例外が発生したときにアプリケーションが何を実行していたかをログリーダーに伝えるために使用する必要があります。例外メッセージはログに記録されます。独自のメッセージを指定すると、ログがわかりやすくなります。
 
 #### 準拠していないコード {#non-compliant-code-9}
 
@@ -370,7 +370,7 @@ public void doThis() {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-その名のとおり、Java の例外は常に例外的な状況で使用する必要があります。結果として、例外が検出されたときには、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。これにより、これらのメッセージがログに正しく表示されます。
+名前が示すように、Java™ の例外は常に例外的な状況で使用する必要があります。結果として、例外が検出されたときには、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。これにより、これらのメッセージがログに正しく表示されます。
 
 #### 準拠していないコード {#non-compliant-code-10}
 
@@ -436,7 +436,7 @@ public void doThis() {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-AEM にログインする場合は、常にログフレームワーク（SLF4J）を使用してログインする必要があります。標準出力または標準エラーストリームに直接出力すると、ログフレームワークによって提供される構造およびコンテキスト情報が失われ、場合によってはパフォーマンスの問題が発生することがあります。
+AEM にログインする場合は、常にログフレームワーク（SLF4J）を使用してログインする必要があります。標準出力または標準エラーストリームに直接出力すると、ログフレームワークによって提供される構造およびコンテキスト情報が失われ、パフォーマンスの問題が発生する場合があります。
 
 #### 準拠していないコード {#non-compliant-code-12}
 
@@ -494,9 +494,9 @@ public void doThis(Resource resource) {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-Sling スケジューラーは、確実な実行を必要とするタスクには使用しないでください。Sling スケジュールジョブは実行を保証し、クラスター化ジョブと非クラスター化環境の両方に適しています。
+確実な実行を必要とするタスクには、 Sling スケジューラーを使用しないでください。Sling スケジュールジョブは実行を保証し、クラスター化環境と非クラスター化環境の両方に適しています。
 
-Sling ジョブがクラスター環境で処理される方法について詳しくは、[Apache Sling のイベントとジョブの取り扱い](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)を参照してください。
+参照： [Apache Sling Eventing and Job Handling ドキュメント](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) を参照して、Sling ジョブがクラスター環境で処理される方法について確認してください。
 
 ### AEM の非推奨 API は使用しない {#sonarqube-aem-deprecated}
 
@@ -507,9 +507,9 @@ Sling ジョブがクラスター環境で処理される方法について詳�
 
 AEM API の表面は、使用が推奨されず非推奨と見なされる API を識別するために継続的に見直しされます。
 
-多くの場合、これらの API は、標準の Java *@Deprecated* 注釈を使用して非推奨とされ、その結果、`squid:CallToDeprecatedMethod` によって識別されます。
+多くの場合、これらの API は標準の Java™を使用して非推奨（廃止予定）になっています *@Deprecated* 注釈と、 `squid:CallToDeprecatedMethod`.
 
-ただし、API が AEM のコンテキストで非推奨となるものの、他のコンテキストでは非推奨とならない場合があります。このルールは、この 2 番目のクラスを識別します。
+ただし、AEMのコンテキストで API が非推奨となるが、他のコンテキストでは非推奨とならない場合があります。 このルールは、この 2 番目のクラスを識別します。
 
 ## OakPAL コンテンツルール {#oakpal-rules}
 
@@ -526,11 +526,11 @@ AEM API の表面は、使用が推奨されず非推奨と見なされる API �
 * **深刻度**：致命的
 * **最初の対象バージョン**：バージョン 2018.7.0
 
-AEM API には、カスタムコードによる使用のみ（ただし実装はしない）を意図した Java インターフェイスおよびクラスが含まれています。例えば、インターフェイス `com.day.cq.wcm.api.Page` は、AEM のみによって実装されるように設計されています。
+AEM API には、カスタムコードで使用する（ただし実装しない）Java™インターフェイスとクラスが含まれています。 例えば、インターフェイス `com.day.cq.wcm.api.Page` はAEMでのみ実装されます。
 
 これらのインターフェイスに新しいメソッドが追加される場合、それらの追加メソッドは、これらのインターフェイスを使用する既存のコードには影響しません。その結果、これらのインターフェイスへの新しいメソッドの追加は、後方互換性があると見なされます。ただし、カスタムコードがこれらのインターフェイスのいずれかを実装する場合、そのカスタムコードによってお客様に後方互換性のリスクがもたらされます。
 
-AEM によってのみ実装されることを意図されたインターフェイスおよびクラスは、`org.osgi.annotation.versioning.ProviderType`（場合によっては、従来の類似の注釈の `aQute.bnd.annotation.ProviderType`）で注釈が付けられます。このルールは、カスタムコードによってこのようなインターフェイスが実装されている（またはクラスが拡張されている）場合を特定します。
+AEMでの実装のみを意図したインターフェイスおよびクラスには、 `org.osgi.annotation.versioning.ProviderType` または、従来の注釈と似た注釈を使用する場合もあります。 `aQute.bnd.annotation.ProviderType`. このルールは、カスタムコードによってこのようなインターフェイスが実装されている（またはクラスが拡張されている）場合を特定します。
 
 #### 準拠していないコード {#non-compliant-code-3}
 
@@ -549,7 +549,7 @@ public class DontDoThis implements Page {
 * **重大度**：ブロッカー
 * **最初の対象バージョン**：バージョン 2019.6.0
 
-AEM コンテンツリポジトリ内の `/libs` コンテンツツリーを読み取り専用と見なすことは長年のベストプラクティスとなっています。`/libs` 下のノードやプロパティを変更すると、メジャーアップデートおよびマイナーアップデートの際に重大な問題が発生する可能性があります。`/libs` への変更は、アドビの公式チャネルを通じてのみ行うことができます。
+AEM コンテンツリポジトリ内の `/libs` コンテンツツリーを読み取り専用と見なすことは長年のベストプラクティスとなっています。`/libs` 下のノードやプロパティを変更すると、メジャーアップデートおよびマイナーアップデートの際に重大な問題が発生する可能性があります。変更先 `/libs` は、公式チャネルを通じてAdobeによってのみ作成されます。
 
 ### パッケージには重複する OSGi 設定を含めない {#oakpal-package-osgi}
 
@@ -558,7 +558,7 @@ AEM コンテンツリポジトリ内の `/libs` コンテンツツリーを読�
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2019.6.0
 
-複雑なプロジェクトでよく発生する問題は、同じ OSGi コンポーネントが複数回設定されることです。その結果、どの設定が使用可能かがあいまいになります。このルールは「実行モード対応」です。つまり、同じコンポーネントが同じ実行モード（または実行モードの組み合わせ）で複数回設定されている問題のみを特定します。
+複雑なプロジェクトでよく発生する問題は、同じ OSGi コンポーネントが複数回設定されることです。これにより、どの設定が操作可能かがあいまいになります。 このルールは「実行モード対応」です。つまり、同じ実行モードまたは実行モードの組み合わせで同じコンポーネントが複数回設定される問題のみを識別します。
 
 #### 準拠していないコード {#non-compliant-code-osgi}
 
@@ -590,7 +590,7 @@ AEM コンテンツリポジトリ内の `/libs` コンテンツツリーを読�
 
 セキュリティ上の理由から、`/config/` と `/install/` を含むパスを判読できるのは AEM の管理者ユーザーのみで、これらは OSGi 設定と OSGi バンドルにのみ使用する必要があります。これらのセグメントを含むパスの下に他のタイプのコンテンツを配置すると、アプリケーションの動作が管理者ユーザーと非管理者ユーザーとで意図せず異なることになります。
 
-よくある問題としては、コンポーネントダイアログ内や、インライン編集にリッチテキストエディター設定を指定する際に、`config` というノードを使用するケースがあります。これを解決するには、問題のあるノードを適切な名前に変更する必要があります。リッチテキストエディター設定については、`cq:inplaceEditing` ノードの `configPath` プロパティを使用して新しい場所を指定します。
+よくある問題としては、コンポーネントダイアログ内や、インライン編集にリッチテキストエディター設定を指定する際に、`config` というノードを使用するケースがあります。これを解決するには、問題のあるノードの名前を、準拠した名前に変更する必要があります。 リッチテキストエディター設定については、`cq:inplaceEditing` ノードの `configPath` プロパティを使用して新しい場所を指定します。
 
 #### 準拠していないコード {#non-compliant-code-config-install}
 
@@ -627,7 +627,7 @@ AEM コンテンツリポジトリ内の `/libs` コンテンツツリーを読�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内でデフォルトのオーサリングモードを定義します。[AEM 6.4 以降、クラシック UI は非推奨となった](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=ja)ため、デフォルトのオーサリングモードがクラシック UI に設定されている場合、問題が発生するようになりました。
+OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内でデフォルトのオーサリングモードを定義します。理由： [クラシック UI は、AEM 6.4 以降、非推奨（廃止予定）となりました。](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=ja) デフォルトのオーサリングモードがクラシック UI に設定されている場合、問題が発生するようになりました。
 
 ### タッチ UI ダイアログが必要なダイアログを持つコンポーネント {#oakpal-components-dialogs}
 
@@ -651,7 +651,7 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-Cloud Service デプロイメントモデルとの互換性を保つには、個々のコンテンツパッケージに、リポジトリの不変領域（`/apps` および `/libs`）または可変領域（`/apps` または `/libs`）のいずれかのコンテンツが含まれている必要がありますが、両方が含まれている必要はありません。例えば、`/apps/myco/components/text and /etc/clientlibs/myco` の両方を含むパッケージは Cloud Service と互換性がなく、問題が報告されます。
+Cloud Service デプロイメントモデルとの互換性を保つには、個々のコンテンツパッケージに、リポジトリの不変領域（`/apps` および `/libs`）または可変領域（`/apps` または `/libs`）のいずれかのコンテンツが含まれている必要がありますが、両方が含まれている必要はありません。例えば、両方を含むパッケージ `/apps/myco/components/text and /etc/clientlibs/myco` はCloud Serviceと互換性がなく、問題が報告される原因となります。
 
 詳しくは、[AEM プロジェクト構造のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=ja)を参照してください。
 
@@ -719,7 +719,7 @@ AEM Cloud Service 上でアセット処理を行うために Assets マイクロ
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-従来、AEM プロジェクトは静的テンプレートを使用することが一般的でしたが、編集可能なテンプレートは最も柔軟性が高く、静的なテンプレートにはない追加機能をサポートしているため、このテンプレートの使用を強くお勧めします。詳しくは、[ページテンプレート - 編集可能なドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=ja)を参照してください。
+静的テンプレートの使用は従来AEMプロジェクトで一般的でしたが、編集可能なテンプレートは、静的テンプレートにない追加機能を最も柔軟に提供し、サポートするので、強くお勧めします。 詳しくは、[ページテンプレート - 編集可能なドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=ja)を参照してください。
 
 静的なテンプレートから編集可能なテンプレートへの移行は、[AEM 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/) を使用して、ほとんど自動化することができます。
 
@@ -734,14 +734,14 @@ AEM Cloud Service 上でアセット処理を行うために Assets マイクロ
 
 この変換は、[AEM 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)で容易に行うことができます。
 
-### サポートされている実行モード名および順序のみを使用する {#oakpal-supported-runmodes}
+### サポートされている実行モード名と順序のみを使用する必要があります {#oakpal-supported-runmodes}
 
 * **キー**：SupportedRunmode
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、実行モード名には厳密な命名ポリシーと実行モードな厳密な順序が適用されます。サポートされている実行モードのリストは、[AEM as a Cloud Service へのデプロイのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ja#runmodes)から確認でき、このリストからの逸脱は問題として特定されます。
+AEM Cloud Serviceでは、実行モード名に対して厳密な命名ポリシーが適用され、それらの実行モードに対して厳密な順序が適用されます。 サポートされている実行モードの一覧は、 [AEMへのデプロイas a Cloud Serviceドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ja#runmodes) これから逸脱した場合は、問題と見なされます。
 
 ### カスタム検索インデックス定義ノードは、/oak:index の直接の子にする必要がある {#oakpal-custom-search}
 
@@ -768,7 +768,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（`oak:Que
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-カスタム検索インデックス定義ノードに順序なしの子ノードがある場合、トラブルシューティングしにくい問題が発生するおそれがあります。これを避けるために、`oak:QueryIndexDefinition` ノードのすべての子孫ノードは、タイプを `nt:unstructured` にすることをお勧めします。
+カスタム検索インデックス定義ノードに順不同の子ノードがある場合、トラブルシューティングが困難な問題が発生する可能性があります。 これを避けるために、`oak:QueryIndexDefinition` ノードのすべての子孫ノードは、タイプを `nt:unstructured` にすることをお勧めします。
 
 ### カスタム検索インデックス定義ノードには、子を持つ indexRules という名前の子ノードを含める {#oakpal-custom-search-index}
 
@@ -847,10 +847,10 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 
 * [各 Dispatcher ファームには、一意の名前が必要](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
 
-* [Dispatcher 公開ファームキャッシュには、ignoreUrlParams 規則を許可リスト方法で設定する](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+* [Dispatcher パブリッシュファームキャッシュには、ignoreUrlParams ルールを適切な方法で設定する必要がありま許可リストす。](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
 
-* [Dispatcher 公開ファームのフィルターは、許可されている Sling セレクターを許可リストで指定する](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+* [Dispatcher パブリッシュファームフィルターでは、許可される Sling セレクターを適切な方法で指定する必要がありま許可リストす。](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
 
-* [Dispatcher 公開ファームフィルターは、許可されている Sling サフィックスパターンを許可リストで指定する](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+* [Dispatcher パブリッシュファームフィルターでは、許可される Sling サフィックスパターンを適切な方法で指定する必要がありま許可リストす。](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
-* [「すべての許可が必要」ディレクティブは、ルートディレクトリパスを持つ VirtualHost ディレクトリセクションでは使用できない](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
+* [VirtualHost Directory セクションの「Require all granted」ディレクティブをルートディレクトリパスと共に使用しないでください](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
