@@ -1,19 +1,19 @@
 ---
-title: リリースノート（2023.2.0）
-description: Cloud Manager リリース 2023.2.0 のリリースノートです。
+title: リリースノート（2023.3.0）
+description: Cloud Manager リリース 2023.3.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: ab1747e14be783004544681f9aefefaa0587302e
-workflow-type: ht
-source-wordcount: '82'
-ht-degree: 100%
+source-git-commit: 6ff44d7a7ccccc64f937df4dca854788c973bfd0
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 82%
 
 ---
 
 
-# Cloud Manager リリース 2023.2.0 のリリースノート {#release-notes}
+# Cloud Manager リリース 2023.3.0 のリリースノート {#release-notes}
 
-このページは、[!UICONTROL Cloud Manager] リリース 2023.2.0 のリリースノートです。
+このページは、[!UICONTROL Cloud Manager] リリース 2023.3.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,4 +21,8 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] リリース 2023.1.0 のリリース日は 2023年2月16日（PT）です。次回のリリースは 2023年3月16日（PT）の予定です。
+[!UICONTROL Cloud Manager] リリース 2023.3.0 のリリース日は 2023年3月16日（PT）です。次回のリリースは 2023年4月13日（PT）に予定されています。
+
+## バグの修正 {#bug-fixes}
+
+* 上のコマースタイル **学ぶ** Cloud Manager の「 」タブで、ユーザーを正しいページに移動するようになりました。
