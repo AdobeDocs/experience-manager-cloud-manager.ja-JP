@@ -3,7 +3,7 @@ title: カスタムコード品質ルール
 description: AEM Engineering のベストプラクティスに基づいて、Cloud Manager がコード品質テストの一環として実行するカスタムコード品質ルールについて詳しく説明します。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: ef87e13eb81faf5605cdd16c6fd46d5f7b3233a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3531'
 ht-degree: 100%
 
@@ -627,7 +627,7 @@ AEM コンテンツリポジトリ内の `/libs` コンテンツツリーを読�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内でデフォルトのオーサリングモードを定義します。AEM 6.4 以降、クラシック UI は非推奨となったため、デフォルトのオーサリングモードがクラシック UI に設定されている場合、問題が発生するようになりました。
+OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内でデフォルトのオーサリングモードを定義します。AEM 6.4 以降、クラシック UI は非推奨となったので、デフォルトのオーサリングモードがクラシック UI に設定されている場合、問題が発生するようになりました。
 
 ### タッチ UI ダイアログが必要なダイアログを持つコンポーネント {#oakpal-components-dialogs}
 
