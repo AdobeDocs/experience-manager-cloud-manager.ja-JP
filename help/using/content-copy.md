@@ -1,10 +1,10 @@
 ---
 title: コンテンツコピーツール
 description: Cloud Manager のコンテンツコピーツールを使用すると、可変コンテンツをオンデマンドで AEM 実稼動環境から下位の環境にテスト目的でコピーできます。
-source-git-commit: 7ab5bdea2b388f3e9e199a6d32a1a80977eba35b
-workflow-type: ht
-source-wordcount: '1074'
-ht-degree: 100%
+source-git-commit: 5b10ac5e47052cabd7478050651a4ca04287a8f0
+workflow-type: tm+mt
+source-wordcount: '1082'
+ht-degree: 99%
 
 ---
 
@@ -30,6 +30,10 @@ Cloud Manager のコンテンツコピーツールを使用すると、可変コ
 
 * 宛先環境でコンテンツが変更されている場合、パスが同じであれば、ソースのコンテンツで上書きされます。
 * パスが異なる場合、ソースのコンテンツは宛先のコンテンツと結合されます。
+
+   >[!NOTE]
+   >
+   >ファイルデータストアベースのトポロジのみがサポートされます。
 
 ## 権限 {#permissions}
 
