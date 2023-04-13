@@ -1,13 +1,13 @@
 ---
 title: コンテンツコピーツール
 description: Cloud Manager のコンテンツコピーツールを使用すると、可変コンテンツをオンデマンドで AEM 実稼動環境から下位の環境にテスト目的でコピーできます。
-source-git-commit: 5b10ac5e47052cabd7478050651a4ca04287a8f0
+exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
+source-git-commit: 7ef29a244688de82537da0b879fbf397900427c0
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 99%
+source-wordcount: '1083'
+ht-degree: 98%
 
 ---
-
 
 # コンテンツコピーツール {#content-copy}
 
@@ -87,7 +87,7 @@ Cloud Manager のコンテンツコピーツールを使用すると、可変コ
 
 >[!NOTE]
 >
->コンテンツセットには、最大 50 個のパスを追加できます。
+>1 つのコンテンツセットに最大 50 個のパスを追加できます。
 >除外されるパスに制限はありません。
 
 ## コンテンツセットの編集 {#edit-content-set}
