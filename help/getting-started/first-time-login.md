@@ -2,10 +2,10 @@
 title: 初回ログイン
 description: 一般設定をセットアップし、Cloud Manager を初めて使用する準備が整っている場合は、このページの手順に従ってください。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: d8f16deacfe52c76ff6b0aee0344d50bfe2b9c74
-workflow-type: ht
+source-git-commit: 413edd167b5eda51c207113aaa00a92c808fb09f
+workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 100%
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
-1. Adobe [!UICONTROL Experience Cloud] にログインすると、プログラムのリストが表示されます。
+1. Cloud Manager( ) にログインします。 [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) プログラムのリストが表示されます。
 
-1. プログラムを選択します。
+   ![Cloud Manager コンソール](/help/assets/cloud-manager-console.png)
 
-1. プログラムのカードで、省略記号ボタンを選択したあと、**Cloud Manager** を選択して、Cloud Manager の&#x200B;**概要**&#x200B;ページに移動します。
+1. プログラムのカードで、省略記号ボタンを選択し、 **プログラムの概要** Cloud Manager の **概要** ページ。
 
-   ![Cloud Manager オプション](/help/assets/navigate-cm1.png)
+   ![Cloud Manager オプション](/help/assets/program-overview-option.png)
 
 1. Cloud Manager が開いて、**概要**&#x200B;ページが表示されます。
 
