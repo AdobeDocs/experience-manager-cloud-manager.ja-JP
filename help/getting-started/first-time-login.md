@@ -3,9 +3,9 @@ title: 初回ログイン
 description: 一般設定をセットアップし、Cloud Manager を初めて使用する準備が整っている場合は、このページの手順に従ってください。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: 413edd167b5eda51c207113aaa00a92c808fb09f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 86%
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
-1. Cloud Manager( ) にログインします。 [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) プログラムのリストが表示されます。
+1. [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインすると、プログラムのリストが表示されます。
 
    ![Cloud Manager コンソール](/help/assets/cloud-manager-console.png)
 
-1. プログラムのカードで、省略記号ボタンを選択し、 **プログラムの概要** Cloud Manager の **概要** ページ。
+1. プログラムのカードで、省略記号ボタンを選択したあと、**プログラムの概要**&#x200B;を選択して、Cloud Manager の&#x200B;**概要**&#x200B;ページに移動します。
 
    ![Cloud Manager オプション](/help/assets/program-overview-option.png)
 
