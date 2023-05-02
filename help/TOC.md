@@ -7,7 +7,7 @@ user-guide-description: Cloud Manager を使用して、クラウド内の AMS �
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 source-git-commit: 5cc645ee28761d692cc5b50d235e13d9d21e468e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
 ht-degree: 100%
 
