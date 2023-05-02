@@ -1,12 +1,12 @@
 ---
-title: リリースノート（2023.4.0）
+title: 2023.4.0 のリリースノート
 description: Cloud Manager リリース（2023.4.0）のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 0ea63c0c8a4fa216ac3d70db1fb12add7f036495
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '118'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 79%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] リリース 2023.4.0 のリリース日は 2023年4月13日（PT）です。次回のリリースは 2023年11月5日（PT）に予定されています。
+[!UICONTROL Cloud Manager] リリース 2023.4.0 のリリース日は 2023年4月13日（PT）です。次回のリリースは 2023年5月11日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* [AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) はバージョン 41 に更新されました。
+* [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)は、バージョン 41 に更新されました。
 
 ## バグの修正 {#bug-fixes}
 
-* 青い Dispatcher が緑の ELB に接続されなくなった ( [blue/green デプロイメント](/help/introduction.md#blue-green) 失敗しました。
+* [ブルー／グリーンデプロイメント](/help/introduction.md#blue-green)が失敗した場合、ブルーの Dispatcher はグリーン ELB に接続されなくなりました。
