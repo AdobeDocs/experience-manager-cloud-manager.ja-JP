@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール
 description: AEM Engineering のベストプラクティスに基づいて、Cloud Manager がコード品質テストの一環として実行するカスタムコード品質ルールについて詳しく説明します。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: ef87e13eb81faf5605cdd16c6fd46d5f7b3233a9
-workflow-type: ht
-source-wordcount: '3531'
-ht-degree: 100%
+source-git-commit: 1ba4ed6c311eeaff9c71313d265531f427ef2736
+workflow-type: tm+mt
+source-wordcount: '3566'
+ht-degree: 99%
 
 ---
 
@@ -17,6 +17,10 @@ AEM Engineering のベストプラクティスに基づいて、Cloud Manager �
 >[!NOTE]
 >
 >ここで提供されるコードサンプルは、例としてのみ使用されています。概念と品質ルールについて詳しくは、[SonarQube の概念に関するドキュメント](https://docs.sonarqube.org/latest/)を参照してください。
+
+>[!NOTE]
+>
+>完全な SonarQube ルールは、Adobe固有の情報が原因で、ダウンロードできません。 [このリンクを使用して、ルールの完全なリストをダウンロードできます。](/help/assets/CodeQuality-rules-latest-AMS.xlsx) ルールの説明と例については、このドキュメントを引き続きお読みください。
 
 ## SonarQube ルール {#sonarqube-rules}
 
