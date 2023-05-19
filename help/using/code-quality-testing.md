@@ -3,9 +3,9 @@ title: コード品質テスト
 description: パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 38cf86a5effa201afdc8e00d8f33582fc06214d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2867'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -152,7 +152,7 @@ Cloud Manager で実行される仮想ユーザーまたはコンテナの数は
 30 分のテスト期間が開始される前に、Cloud Manager は、カスタマーサクセスエンジニアが設定した 1 つ以上のシード URL セットを使用してステージング環境をクロールします。これらの URL から、各ページの HTML を調べ、幅優先方式でリンクが走査されます。
 
 * このクロール処理は、デフォルトで最大 5000 ページに制限されています。
-* テストする最大ページ数は、 [パイプライン変数](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES`.
+* テストされるページの最大数は、[パイプライン変数](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES` を設定して上書きできます。
    * 使用できる値は `2000`～`7000` です。
 * クローラーからのリクエストのタイムアウトは 10 秒に固定されています。
 
