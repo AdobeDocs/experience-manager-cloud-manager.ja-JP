@@ -4,9 +4,9 @@ description: Cloud Manager リリース（2023.5.0）のリリースノートで
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 5a92ceb98de68025ca917c9b9cb358d54282b235
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '111'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -25,4 +25,4 @@ ht-degree: 75%
 
 ## 新機能 {#what-is-new}
 
-* [セルフサービスのコンテンツコピー](/help/using/content-copy.md) は、Cloud Manager UI を使用して、より高い環境からより低い環境へと利用できるようになりました。 詳しくは、カスタマーサクセスエンジニアにお問い合わせください。
+* [セルフサービスのコンテンツコピー](/help/using/content-copy.md) は、Cloud Manager UI を使用して、上位環境から下位環境へと利用できるようになりました。詳しくは、カスタマーサクセスエンジニアにお問い合わせください。
