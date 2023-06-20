@@ -4,9 +4,9 @@ description: Cloud Manager リリース（2023.6.0）のリリースノートで
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 1bbdc88a2c7a86e258d5fd56fab504aa7232e9fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '99'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 77%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] リリース 2023.6.0 のリリース日は 2023年6月8日（PT）です。次回のリリースは 2023 年 7 月 7 日に予定されています。
+[!UICONTROL Cloud Manager] リリース 2023.6.0 のリリース日は 2023年6月8日（PT）です。次回のリリースは 2023年7月6日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* を再開する際 [実稼動パイプライン](/help/using/production-pipelines.md) 承認ステップに確認ダイアログが表示されるようになりました。
+* [実稼動パイプライン](/help/using/production-pipelines.md)を再開する際、承認ステップで確認ダイアログが表示されるようになりました。
