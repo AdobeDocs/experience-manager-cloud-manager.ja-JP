@@ -1,19 +1,19 @@
 ---
-title: リリースノート（2023.6.0）
-description: Cloud Manager リリース（2023.6.0）のリリースノートです。
+title: リリースノート（2023.7.0）
+description: Cloud Manager リリース（2023.7.0）のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 1bbdc88a2c7a86e258d5fd56fab504aa7232e9fc
-workflow-type: ht
-source-wordcount: '99'
-ht-degree: 100%
+source-git-commit: 950fef5781c53f9bccf4c33c8b9d958edd5a0327
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 68%
 
 ---
 
 
-# Cloud Manager リリース（2023.6.0）のリリースノート {#release-notes}
+# Cloud Manager リリース（2023.7.0）のリリースノート {#release-notes}
 
-このページは、[!UICONTROL Cloud Manager] リリース（2023.6.0）のリリースノートです。
+このページは、[!UICONTROL Cloud Manager] リリース（2023.7.0）のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,8 +21,9 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] リリース 2023.6.0 のリリース日は 2023年6月8日（PT）です。次回のリリースは 2023年7月6日（PT）に予定されています。
+[!UICONTROL Cloud Manager] リリース 2023.7.0 のリリース日は 2023年6月29日（PT）です。次回のリリースは 2023年8月10日（PT）に予定されています。
 
-## 新機能 {#what-is-new}
+## バグの修正 {#bug-fixes}
 
-* [実稼動パイプライン](/help/using/production-pipelines.md)を再開する際、承認ステップで確認ダイアログが表示されるようになりました。
+* Cloud Manager ランディングページのカードに、 [セキュリティの強化](/help/getting-started/program-setup.md) は、プログラムで有効になっています。
+* 条件 [実稼動パイプラインの編集](/help/using/managing-pipelines.md#editing-pipelines) ユーザーが **ステージテスト** 「 」タブに入力すると、エラーが表示されます。
