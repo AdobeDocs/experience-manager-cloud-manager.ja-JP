@@ -2,10 +2,10 @@
 title: AMS 用 Cloud Manager の概要
 description: ここでは、Adobe Managed Services（AMS）用 Cloud Manager の概要と、組織がクラウドで Adobe Experience Manager を自己管理できるようにする仕組みについて説明します。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 14e35882765783b234ca35da14257279af5130a0
+source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 100%
+source-wordcount: '1322'
+ht-degree: 99%
 
 ---
 
@@ -115,7 +115,9 @@ Cloud Manager には、特定の環境設定やニーズに応じた、プロジ
 | 5 | テスト用に一時停止（最大 24 時間） | - |
 | 6 | グリーンのインフラストラクチャが実稼動用ロードバランサーに追加されます | - |
 | 7 | ブルーのインフラストラクチャが実稼働用ロードバランサーから削除されます - |
-| 8 | ブルーのインフラストラクチャは自動的に終了します | - |
+| 8 | 最終的なサインオフのために一時停止します（最大 24 時間） | - |
+| 9 | ブルーのインフラストラクチャは自動的に終了します | - |
+| 10 | パイプライン完了 | - |
 
 #### ブルー／グリーンの実装 {#implementing}
 
