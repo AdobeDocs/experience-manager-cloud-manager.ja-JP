@@ -2,9 +2,9 @@
 title: カスタムコード品質ルール
 description: AEM Engineering のベストプラクティスに基づいて、Cloud Manager がコード品質テストの一環として実行するカスタムコード品質ルールについて詳しく説明します。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 1ba4ed6c311eeaff9c71313d265531f427ef2736
-workflow-type: ht
-source-wordcount: '3566'
+source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
+workflow-type: tm+mt
+source-wordcount: '3377'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ AEM Engineering のベストプラクティスに基づいて、Cloud Manager �
 
 >[!NOTE]
 >
->完全な SonarQube ルールは、アドビ独自の情報が原因でダウンロードできません。[このリンクを使用して、ルールの完全なリストをダウンロードできます。](/help/assets/CodeQuality-rules-latest-AMS.xlsx)ルールの説明と例については、このドキュメントを引き続き参照してください。
+>完全な SonarQube ルールは、アドビ独自の情報が原因でダウンロードできません。ルールの完全なリストをダウンロードするには、[このリンクを使用します。](/help/assets/CodeQuality-rules-latest-AMS.xlsx)ルールの説明と例については、このドキュメントを引き続き参照してください。
 
 ## SonarQube ルール {#sonarqube-rules}
 
@@ -648,21 +648,6 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内�
 
 AEM 最新化ツールのドキュメントには、コンポーネントをクラシック UI からタッチ UI に変換する方法に関する詳細とツールが記載されています。詳しくは、[AEM 最新化ツールのドキュメント](https://opensource.adobe.com/aem-modernize-tools/)を参照してください。
 
-### 可変コンテンツと不変コンテンツをパッケージに混在させない {#oakpal-packages-immutable}
-
-* **キー**：ImmutableMutableMixedPackage
-* **タイプ**：コードスメル／Cloud Service との互換性
-* **深刻度**：軽度
-* **最初の対象バージョン**：バージョン 2020.5.0
-
-Cloud Service デプロイメントモデルとの互換性を保つには、個々のコンテンツパッケージに、リポジトリの不変領域（`/apps` および `/libs`）または可変領域（`/apps` または `/libs`）のいずれかのコンテンツが含まれている必要がありますが、両方が含まれている必要はありません。例えば、`/apps/myco/components/text and /etc/clientlibs/myco` の両方を含むパッケージは Cloud Service と互換性がなく、問題が報告されます。
-
-詳しくは、[AEM プロジェクト構造のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=ja)を参照してください。
-
->[!NOTE]
->
->[顧客パッケージでは /libs 下のノードを作成／変更しない](#oakpal-customer-package)のルールが常に適用されます。
-
 ### リバースレプリケーションエージェントは使用しない {#oakpal-reverse-replication}
 
 * **キー**：ReverseReplication
@@ -737,15 +722,6 @@ AEM Cloud Service 上でアセット処理を行うために Assets マイクロ
 一部の AEM リリースでは、従来の基盤コンポーネント（`/libs/foundation` 下のコンポーネントなど）は廃止され、コアコンポーネント[に置き換わりました。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) 使用する方法がオーバーレイであろうと継承であろうと、従来の基盤コンポーネントに基づいてカスタムコンポーネントを作成することは、お勧めしません。対応するコアコンポーネントに移行してください。
 
 この変換は、[AEM 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)で容易に行うことができます。
-
-### サポートされている実行モード名と順序のみを使用する必要がある {#oakpal-supported-runmodes}
-
-* **キー**：SupportedRunmode
-* **タイプ**：コードスメル
-* **深刻度**：軽度
-* **最初の対象バージョン**：バージョン 2021.2.0
-
-AEM Cloud Service では、実行モード名に対して厳密な命名ポリシーを適用し、それらの実行モードに対して厳密な順序を指定します。サポートされている実行モードのリストは、[AEM as a Cloud Service へのデプロイのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ja#runmodes)から確認でき、このリストからの逸脱は問題として特定されます。
 
 ### カスタム検索インデックス定義ノードは、/oak:index の直接の子にする必要がある {#oakpal-custom-search}
 

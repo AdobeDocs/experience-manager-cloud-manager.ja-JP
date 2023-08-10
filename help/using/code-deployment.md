@@ -2,10 +2,10 @@
 title: コードのデプロイメント
 description: コードをデプロイする方法と、デプロイ時に Cloud Manager で何が行われるかを説明します。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: ht
-source-wordcount: '1609'
-ht-degree: 100%
+source-git-commit: b85bd1bdf38360885bf2777d75bf7aa97c6da7ee
+workflow-type: tm+mt
+source-wordcount: '1655'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 100%
 * **セキュリティテスト**：このステップでは、AEM 環境でのアプリケーションコードのセキュリティに対する影響を評価します。テストプロセスについて詳しくは、[テスト結果について](/help/using/code-quality-testing.md)のドキュメントを参照してください。
    * **パフォーマンステスト**：このステップでは、コードのパフォーマンスを評価します。テストプロセスについて詳しくは、[テスト結果について](/help/using/code-quality-testing.md)を参照してください。
 
-   ![ステージテスト](/help/assets/Stage_Testing1.png)
+  ![ステージテスト](/help/assets/Stage_Testing1.png)
 
 ### 実稼動デプロイメントステップ {#production-deployment}
 
@@ -68,7 +68,7 @@ ht-degree: 100%
 * **実稼動デプロイメントをスケジュール**
    * このオプションは、パイプラインの設定時に有効になっています。
    * スケジュールされた日時は、ユーザーのタイムゾーンで指定されます。
-      ![デプロイメントのスケジュール設定](/help/assets/Production_Deployment1.png)
+     ![デプロイメントのスケジュール設定](/help/assets/Production_Deployment1.png)
 * **CSE サポート**（有効な場合）
 * **実稼働環境にデプロイ**
 
@@ -111,6 +111,7 @@ Cloud Manager が実稼動以外のトポロジにデプロイされる場合、
 1. 各 AEM アーティファクトは、パッケージマネージャー API を介して各 AEM インスタンスにデプロイされ、パッケージの依存関係がデプロイメントの順序を決定します。
 
    * 新機能のインストール、インスタンス間のコンテンツの転送、リポジトリコンテンツのバックアップにパッケージを使用する方法について詳しくは、[パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=ja)のドキュメントを参照してください。
+
    >[!NOTE]
    >
    >すべての AEM アーティファクトは、オーサーとパブリッシャーの両方にデプロイされます。ノード専用の設定が必要な場合は、実行モードを使用する必要があります。実行モードを使用して、特定の目的のために AEM インスタンスを調整する方法について詳しくは、[ドキュメント「AEM as a Cloud Service へのデプロイ」の実行モードの節](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ja#runmodes)を参照してください。
@@ -175,17 +176,21 @@ AEM サイト訪問者への影響を最小限に抑えるために、実稼動�
 $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 ```
 
-## 実稼動デプロイメントの再実行 {#re-execute-deployment}
+## 実稼動デプロイメントの再実行 {#reexecute-deployment}
 
-実稼動デプロイメント手順の再実行は、実稼動デプロイ手順が完了した実行に対して利用できます。完了のタイプは重要ではありません。デプロイメントは、成功（AMS プログラムの場合のみ）、キャンセル、失敗のいずれかになります。最も多いユースケースは、一時的な理由で実稼動のデプロイメント手順が失敗した場合です。再実行の場合は、同じパイプラインを使用して新しい実行が作成されます。 この新しい実行は、次の 3 つのステップで構成されます。
+まれに、一時的な理由で実稼動のデプロイメント手順が失敗することがあります。 この場合、実稼動デプロイメント手順の再実行は、完了のタイプ（成功、キャンセル、失敗など）に関係なく、実稼動デプロイメント手順が完了した限りサポートされます。 再実行は、3 つのステップで構成される同じパイプラインを使用して新しい実行を作成します。
 
-1. **検証ステップ** - 通常のパイプライン実行時に行われる検証と基本的に同じです。
-1. **ビルドステップ** - 再実行のコンテキストでは、ビルドステップは、新しいビルドプロセスを実際に実行するのではなく、アーティファクトをコピーします。
-1. **実稼動デプロイメントステップ** - 通常のパイプライン実行における実稼動デプロイメントステップと同じ設定およびオプションを使用します。
+1. **検証手順**  — これは、基本的に、通常のパイプライン実行中に発生する検証と同じです。
+1. **ビルドステップ**  — 再実行のコンテキストでは、ビルドステップはアーティファクトをコピーし、実際には新しいビルドプロセスを実行しません。
+1. **実稼動のデプロイメント手順**  — これは、通常のパイプライン実行の実稼動デプロイメントステップと同じ設定およびオプションを使用します。
 
-ビルドステップのラベルが UI で異なる場合がありますが、これは、アーティファクトを再ビルドではなくコピーしていることを表しています。
+再実行が可能な状況では、実稼動パイプラインのステータスページに **再実行** 通常の **ビルドログをダウンロード** オプション。
 
-![再実行](/help/assets/Re-deploy.png)
+![パイプラインの概要ウィンドウの「再実行」オプション](/help/assets/re-execute.png)
+
+>[!NOTE]
+>
+>再実行では、UI でビルドステップのラベルが付けられ、再構築ではなくアーティファクトをコピーしていることが示されます。
 
 ### 制限事項 {#limitations}
 
@@ -193,15 +198,21 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 * ロールバック実行やプッシュ更新の実行には、再実行は使用できません。
 * 実稼動デプロイメントステップ以前の任意の時点で最後の実行が失敗した場合、再実行はできません。
 
-### 再実行の識別 {#identifying}
 
-実行が再実行であるかどうかを識別するために、`trigger` フィールドを調べることができます。その値は `RE_EXECUTE` になります。
+### 再実行 API {#reexecute-api}
 
-### 再実行のトリガー {#triggering}
+UI で使用できる以外に、 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) を使用して、トリガーの再実行と、再実行としてトリガーされた実行を識別します。
 
-再実行をトリガーするには、実稼働デプロイメントステップの状態で HAL リンク（`http://ns.adobe.com/adobecloud/rel/pipeline/reExecute`）に対して `PUT` リクエストを行う必要があります。 このリンクが存在する場合は、そのステップから実行を再開できます。 存在しない場合は、そのステップから実行を再開することはできません。 このリンクは、実稼動デプロイメントステップにのみ存在します
+#### 再実行のトリガー {#triggering}
 
-```Javascript
+再実行をトリガーするには、実稼働デプロイメントステップの状態で HAL リンク（`http://ns.adobe.com/adobecloud/rel/pipeline/reExecute`）に対して `PUT` リクエストを行う必要があります。 
+
+* このリンクが存在する場合は、そのステップから実行を再開できます。 
+* 存在しない場合は、そのステップから実行を再開することはできません。 
+
+このリンクは、実稼動のデプロイ手順でのみ使用できます。
+
+```javascript
  {
   "_links": {
     "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
@@ -236,6 +247,10 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
   "status": "FINISHED"
 ```
 
-HAL リンクの `href` 値の構文は、基準として使用するためのものではありません。実際の値は、常に HAL リンクから読み取られるべきものであり、生成されるものではありません。
+HAL リンクの構文 `href` の値は単なる例であり、実際の値は常に HAL リンクから読み取られ、生成されない必要があります。
 
 このエンドポイントに `PUT` リクエストを送信すると、成功した場合は `201` 応答が返され、応答の本文には新しい実行が表現されています。これは、API を使用して通常の実行を開始する場合と似ています。
+
+#### 再実行の識別 {#identifying}
+
+再実行される実行は、値で識別できます `RE_EXECUTE` （内） `trigger` フィールドに入力します。
