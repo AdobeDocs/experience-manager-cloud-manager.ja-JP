@@ -3,7 +3,7 @@ title: カスタムコード品質ルール
 description: AEM Engineering のベストプラクティスに基づいて、Cloud Manager がコード品質テストの一環として実行するカスタムコード品質ルールについて詳しく説明します。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3377'
 ht-degree: 100%
 
