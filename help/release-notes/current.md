@@ -1,19 +1,18 @@
 ---
-title: リリースノート（2023.9.0）
-description: Cloud Manager リリース 2023.9.0 のリリースノートです。
+title: 2023.8.0 のリリースノート
+description: Cloud Manager リリース 2023.8.0 のリリースノートです。
 feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 74381d5d154f7c61135a990d2806fa9e39be7690
+source-git-commit: 26c4c945e18f21b812f65dbabc14a4e8ab9f6b43
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 54%
+source-wordcount: '216'
+ht-degree: 100%
 
 ---
 
 
-# Cloud Manager リリース 2023.9.0 のリリースノート {#release-notes}
+# Cloud Manager リリース 2023.8.0 のリリースノート {#release-notes}
 
-このページは、[!UICONTROL Cloud Manager] リリース 2023.9.0 のリリースノートです。
+このページは、[!UICONTROL Cloud Manager] リリース 2023.8.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,14 +20,18 @@ ht-degree: 54%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] リリース 2023.9.0 のリリース日は 2023年9月7日（PT）です。次回のリリースは 2023年10月5日（PT）に予定されています。
+[!UICONTROL Cloud Manager] リリース 2023.8.0 のリリース日は 2023年8月10日（PT）です。次回のリリースは 2023年9月14日（PT）に予定されています。
 
 ## 新着情報 {#what-is-new}
 
-このリリースにはバグ修正が含まれています。
+* Cloud Manager UI のエラーメッセージのわかりやすさと表示を改善するための機能強化が行われました。
 
 ## バグ修正 {#bug-fixes}
 
-* プログラムを削除すると、関連する実行中のパイプラインも削除され、パイプラインが失敗ステータスと誤って指定されないようにします。
-* パイプラインの実行のすべてのステップが「完了」した場合、パイプラインのステータスが「実行中」と見なされ、停止状態になっているように見えることがあります。 「完了」と表示されます。
-* コードジェネレーターアーキタイプを使用して生成されたリポジトリブランチの場合、CI/CD パイプラインは失敗します。
+* [コンテンツコピー](/help/using/content-copy.md)プロセスがまれに動かなくなることがある問題に対処しました。
+* New Relic One を使用していないお客様でテスト時に一時的に発生することがある問題が解決されました。
+* [カスタムコード品質ルール](/help/using/custom-code-quality-rules.md) `SupportedRunmode` および `ImmutableMutableMixedPackage` は、AEM as a Cloud Service にのみ適用できるものなので、SonarQube から削除されました。
+* 動かなくなったパイプラインが実行状態のように見えることはなくなります。
+* **[コンテンツをコピー](/help/using/content-copy.md)**&#x200B;モーダルをトリガーした後、**環境**&#x200B;メニューが閉じるようになりました。
+* 前回の実行でビルドフェーズの状態に `commitId` が設定されていない場合、[パイプラインの再実行](/help/using/code-deployment.md#reexecute-deployment)は許可されなくなりました。
+* ユーザーが&#x200B;**アクティビティ**&#x200B;画面または&#x200B;**パイプライン**&#x200B;画面でパイプラインをクリックすると、まれなエラーに対して、よりわかりやすいメッセージが表示されるようになりました。
