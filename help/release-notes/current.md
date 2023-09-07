@@ -3,10 +3,10 @@ title: リリースノート（2023.9.0）
 description: Cloud Manager リリース 2023.9.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 326e47e769c4f183fa3ee7d26952cb0f58e5067a
+source-git-commit: 74381d5d154f7c61135a990d2806fa9e39be7690
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 100%
+source-wordcount: '159'
+ht-degree: 54%
 
 ---
 
@@ -23,6 +23,12 @@ ht-degree: 100%
 
 [!UICONTROL Cloud Manager] リリース 2023.9.0 のリリース日は 2023年9月7日（PT）です。次回のリリースは 2023年10月5日（PT）に予定されています。
 
-## 新機能 {#what-is-new}
+## 新着情報 {#what-is-new}
 
-## バグの修正 {#bug-fixes}
+このリリースにはバグ修正が含まれています。
+
+## バグ修正 {#bug-fixes}
+
+* プログラムを削除すると、関連する実行中のパイプラインも削除され、パイプラインが失敗ステータスと誤って指定されないようにします。
+* パイプラインの実行のすべてのステップが「完了」した場合、パイプラインのステータスが「実行中」と見なされ、停止状態になっているように見えることがあります。 「完了」と表示されます。
+* コードジェネレーターアーキタイプを使用して生成されたリポジトリブランチの場合、CI/CD パイプラインは失敗します。
