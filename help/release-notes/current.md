@@ -3,10 +3,10 @@ title: リリースノート（2023.10.0）
 description: Cloud Manager リリース 2023.10.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: a5a304541409bc1775090eef2a669e1e0bcf005e
+source-git-commit: 851364e74864c28b3bcd9285dfbe06ddb530eb10
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 58%
+source-wordcount: '226'
+ht-degree: 49%
 
 ---
 
@@ -29,5 +29,8 @@ ht-degree: 58%
    * これらのキャッシュアクションは、コンテンツパッケージがデプロイされた直後に、デプロイメントパイプラインステップの一部として実行されます。
    * これらの設定では、AEM Dispatcher の標準的な動作を使用します。
 * 2023 年 10 月の Cloud Manager リリースでは、段階的なロールアウトにより Java バージョンが更新されます。
-   * Java のバージョンは、OracleJDK 8u371 およびOracleJDK 11.0.20 に更新されています。
+   * Java 8 および 11 および Maven のマイナーバージョンが更新され、今後 2 ヶ月間で段階的に展開される予定です。 新しいバージョンには、複数のセキュリティ修正とバグ修正が含まれています。 新しいバージョンは次のとおりです。
+   * *Maven: 3.8.8*
+   * *Java 8 バージョン： /usr/lib/jvm/jdk1.8.0_371*
+   * *Java 11 バージョン： /usr/lib/jvm/jdk-11.0.20*
    * [OpenJDK のアドバイザリを参照](https://openjdk.org/groups/vulnerability/advisories/) セキュリティおよびバグ修正の詳細については、これらの JDK の更新を参照してください。
