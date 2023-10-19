@@ -1,5 +1,5 @@
 ---
-title: リリースノート（2023.10.0）
+title: 2023.10.0 のリリースノート
 description: Cloud Manager リリース 2023.10.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
@@ -23,7 +23,7 @@ ht-degree: 49%
 
 [!UICONTROL Cloud Manager] リリース 2023.10.0 のリリース日は 2023年10月5日（PT）です。次回のリリースは 2023年11月2日（PT）に予定されています。
 
-## 新着情報 {#what-is-new}
+## 新機能 {#what-is-new}
 
 * The **デプロイメントマネージャー** 役割が可能です [実稼動以外のパイプラインの実行時にAEM Dispatcher キャッシュから無効化またはフラッシュする一連のコンテンツパスを設定します。](/help/using/non-production-pipelines.md)
    * これらのキャッシュアクションは、コンテンツパッケージがデプロイされた直後に、デプロイメントパイプラインステップの一部として実行されます。
