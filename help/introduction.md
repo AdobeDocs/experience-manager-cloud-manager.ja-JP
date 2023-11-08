@@ -3,7 +3,7 @@ title: AMS 用 Cloud Manager の概要
 description: ここでは、Adobe Managed Services（AMS）用 Cloud Manager の概要と、組織がクラウドで Adobe Experience Manager を自己管理できるようにする仕組みについて説明します。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 100%
 
