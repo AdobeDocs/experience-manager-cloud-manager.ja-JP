@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager を使用して、クラウド内の AMS �
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: f1f1d53181362e4a92ad6918182107d710724496
-workflow-type: ht
-source-wordcount: '348'
-ht-degree: 100%
+source-git-commit: 76a3dc6df41032488a3cfe11d0c72769562b96df
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 97%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 100%
    + [ソースコードリポジトリ](/help/requirements/source-code-repository.md)
    + [役割ベースの権限](/help/requirements/role-based-permissions.md)
    + [ユーザーと役割のセットアップ](/help/requirements/users-and-roles.md)
+   + [カスタム権限](/help/using/custom-permissions.md)
    + [環境のプロビジョニング](/help/requirements/environment-provisioning.md)
 + はじめに {#getting-started}
    + [初回ログイン](/help/getting-started/first-time-login.md)
@@ -59,12 +60,14 @@ ht-degree: 100%
    + [リポジトリ](/help/managing-code/repositories.md)
    + [Git との統合](/help/managing-code/git-integration.md)
    + [複数 Git リポジトリの操作](/help/managing-code/multiple-git-repos.md)
+   + [独自の GitHub リポジトリーの操作](/help/managing-code/byo-github.md)
 + 製品アップデートウィザード {#product-update-wizard}
    + [概要](/help/product-update-wizard/overview.md)
    + [評価](/help/product-update-wizard/evaluation.md)
 + リリースノート {#release-notes}
    + [最新のリリースノート](/help/release-notes/current.md)
    + 2023年度 {#2023}
+      + [2023.10.0 のリリースノート](/help/release-notes/2023/2023-10-0.md)
       + [リリースノート（2023.9.0）](/help/release-notes/2023/2023-9-0.md)
       + [2023.8.0 のリリースノート](/help/release-notes/2023/2023-8-0.md)
       + [リリースノート（2023.7.0）](/help/release-notes/2023/2023-7-0.md)

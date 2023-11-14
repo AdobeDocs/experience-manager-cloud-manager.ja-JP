@@ -2,10 +2,10 @@
 title: パイプラインの管理
 description: 既存のパイプラインの管理方法（編集、実行、削除を含む）を説明します。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 99325c28c379103db2ba4c19bb6d206849c6e126
-workflow-type: ht
-source-wordcount: '517'
-ht-degree: 100%
+source-git-commit: 28ab641ec85335d8330aeb465c07bf0264218fe4
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 67%
 
 ---
 
@@ -33,6 +33,38 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 * **すべて表示** - ユーザーを&#x200B;**パイプライン**&#x200B;画面に移動して、すべてのパイプラインをより詳細なテーブルに表示します
 * **リポジトリ情報にアクセス** - Cloud Manager の Git リポジトリへのアクセスに必要な情報を表示します
 * **詳細情報** - CI／CD パイプラインのドキュメントリソースに移動します。
+
+## パイプラインウィンドウ {#pipelines}
+
+The **パイプライン** ウィンドウには、選択したプログラムのすべてのパイプラインの完全なリストが表示されます。 これは、 [パイプラインカード。](#pipeline-card)
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+
+1. 次から： **プログラムの概要** ページ、タップまたはクリック **パイプライン** タブをクリックして、 **パイプライン** ウィンドウ
+
+1. ここには、プログラムのすべてのパイプラインのリストと、でのように、パイプライン実行の開始と停止が表示されます。 **パイプラインカード**.
+
+パイプラインが実行中に、その **ステータス** 列に実行に関する詳細が表示されます。
+
+![パイプライン実行の詳細](/help/assets/configure-pipelines/pipeline-status.png)
+
+タップまたはクリック **詳細を表示** あなたを連れて行く [パイプライン実行の詳細。](#view-details)
+
+## アクティビティウィンドウ {#activity}
+
+The **アクティビティ** ウィンドウに、選択したプログラムのすべてのパイプライン実行の完全なリストが表示されます。
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+
+1. 次から： **プログラムの概要** ページ、タップまたはクリック **アクティビティ** タブをクリックして、 **アクティビティ** ウィンドウ
+
+1. ここには、現在および過去の実行を含む、プログラムのすべてのパイプライン実行のリストが表示されます。
+
+パイプラインが実行中に、その **ステータス** 列に実行に関する詳細が表示されます。
+
+![パイプライン実行の詳細](/help/assets/configure-pipelines/pipeline-activity.png)
+
+タップまたはクリック **詳細を表示** あなたを連れて行く [パイプライン実行の詳細。](#view-details)
 
 ## パイプラインの実行 {#running-pipelines}
 
@@ -85,6 +117,16 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 ![パイプラインの詳細](/help/assets/configure-pipelines/pipeline-running-details.png)
 
 ここから、診断の目的で、パイプラインの様々なステップのステータスを確認し、ビルドログを取得できます。詳しくは、[コードのデプロイメント](/help/using/code-deployment.md)のドキュメントを参照してください。
+
+パイプライン実行のすべてのステップは、まだ開始されていないステップが灰色表示になって表示されます。 完了したステップには、期間が表示されます。
+
+パイプラインのステップが完了すると、概要が表示されます。
+
+![手順の概要](/help/assets/configure-pipelines/pipeline-step.png)
+
+をタップまたはクリックします。 **詳細を表示** リンクをクリックして、 **期間** 」セクションに入力します。 これには、そのプログラムの過去のトレンドに基づくパイプラインの平均期間が含まれます。
+
+![デュレーション](/help/assets/configure-pipelines/duration.png)
 
 >[!NOTE]
 >

@@ -2,8 +2,8 @@
 title: ビルド環境
 description: Cloud Manager ユーザーがコードを作成およびテストするための専用のビルド環境について説明します。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
-workflow-type: ht
+source-git-commit: 7f9866976667b485124cef60453ec3908ba41ec8
+workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
 
@@ -19,9 +19,11 @@ Cloud Manager ユーザーがコードを作成およびテストするための
 Cloud Manager のビルド環境には、次の属性があります。
 
 * ビルド環境は Linux ベースで、Ubuntu 18.04 から派生しています。
-* Apache Maven 3.6.0 がインストールされています。
-* インストールされる Java バージョンは Oracle JDK 8u202 と Oracle JDK 11.0.2 です。
-* デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_202` に設定されています。これには、Oracle JDK 8u202 が含まれています。詳しくは、[Maven 実行の代替 JDK バージョン](#alternate-maven)の節を参照してください。
+* Apache Maven 3.8.8 がインストールされています。
+* インストールされる Java バージョンは Oracle JDK 8u371 と Oracle JDK 11.0.20 です。
+   * `/usr/lib/jvm/jdk1.8.0_371`
+   * `/usr/lib/jvm/jdk-11.0.20`
+* デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_371` に設定されています。これには、Oracle JDK 8u371 が含まれています。詳しくは、[Maven 実行の代替 JDK バージョン](#alternate-maven)の節を参照してください。
 * 必要に応じてインストールされる追加のシステムパッケージが、次のようにいくつかあります。
    * `bzip2`
    * `unzip`
@@ -47,7 +49,6 @@ Cloud Manager のビルド環境には、次の属性があります。
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [API 統合の作成](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
 >* [API の権限](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-
 
 ## 特定の Java バージョンの使用 {#using-java-version}
 
@@ -138,7 +139,7 @@ Cloud Manager のビルド環境には、次の属性があります。
 
 #### Dispatcher {#dispatcher}
 
-[Dispatcher で使用できるのは、通常の環境変数のみです。](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja)シークレットは使用できません。
+通常の環境変数のみが、[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja) で使用できます。シークレットは使用できません。
 
 ただし、環境変数は `IfDefine` ディレクティブでは使用できません。
 
