@@ -3,10 +3,10 @@ title: リリースノート（2023.11.0）
 description: Cloud Manager リリース 2023.11.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: c7803c75bcfcc967877808214704c5746015481d
+source-git-commit: 264c7ffcbc9e10903880a511a4ca605be666f7e8
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 23%
+source-wordcount: '386'
+ht-degree: 21%
 
 ---
 
@@ -28,8 +28,10 @@ ht-degree: 23%
 * [パイプライン実行の詳細ページ](/help/using/managing-pipelines.md#view-details) が、まだ開始されていないステップが灰色表示になった状態で、パイプライン実行のすべてのステップを表示するようになりました。
 * 両方で **[アクティビティ](/help/using/managing-pipelines.md#activity)** および **[パイプライン](/help/using/managing-pipelines.md#pipelines)** 実行中ステータスのパイプラインをクリックしたときに、パイプライン実行の概要を表示できるようになりました。
 * 新しい **期間** セクションが [パイプラインの詳細ページ](/help/using/managing-pipelines.md#view-details) この期間には、そのプログラムの過去のトレンドに基づく、パイプラインステップの平均期間が含まれます。
-* パイプライン実行ページで、完了したステップに期間が表示されるようになりました
+* 次の日： [パイプライン実行ページ](/help/using/managing-pipelines.md#activity-window) 完了したステップに期間が表示されるようになりました。
 * Cloud Manager [コンテンツコピーツール](/help/using/content-copy.md) を使用すると、可変コンテンツを AMS でホストされているAEM 6.x の実稼動環境から低い環境にオンデマンドでコピーして、テスト目的でコピーできます。
+* 実行数 [ビルドアーティファクトを再利用](/help/getting-started/project-setup.md#build-artifact-reuse) これで、これらのアーティファクトを最初に構築した実行へのリンクが表示されるようになります。
+* 選択するオプション **重要な指標のエラー** 設定可能になりました。 [コード品質パイプライン](/help/using/non-production-pipelines.md) 同様に。
 
 ## 早期採用プログラム {#early-adoption}
 
