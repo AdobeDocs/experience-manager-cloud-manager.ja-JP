@@ -4,9 +4,9 @@ description: Cloud Manager リリース 2023.11.0 のリリースノートです
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 264c7ffcbc9e10903880a511a4ca605be666f7e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
-ht-degree: 21%
+ht-degree: 100%
 
 ---
 
@@ -25,26 +25,26 @@ ht-degree: 21%
 
 ## 新機能 {#what-is-new}
 
-* [パイプライン実行の詳細ページ](/help/using/managing-pipelines.md#view-details) が、まだ開始されていないステップが灰色表示になった状態で、パイプライン実行のすべてのステップを表示するようになりました。
-* 両方で **[アクティビティ](/help/using/managing-pipelines.md#activity)** および **[パイプライン](/help/using/managing-pipelines.md#pipelines)** 実行中ステータスのパイプラインをクリックしたときに、パイプライン実行の概要を表示できるようになりました。
-* 新しい **期間** セクションが [パイプラインの詳細ページ](/help/using/managing-pipelines.md#view-details) この期間には、そのプログラムの過去のトレンドに基づく、パイプラインステップの平均期間が含まれます。
-* 次の日： [パイプライン実行ページ](/help/using/managing-pipelines.md#activity-window) 完了したステップに期間が表示されるようになりました。
-* Cloud Manager [コンテンツコピーツール](/help/using/content-copy.md) を使用すると、可変コンテンツを AMS でホストされているAEM 6.x の実稼動環境から低い環境にオンデマンドでコピーして、テスト目的でコピーできます。
-* 実行数 [ビルドアーティファクトを再利用](/help/getting-started/project-setup.md#build-artifact-reuse) これで、これらのアーティファクトを最初に構築した実行へのリンクが表示されるようになります。
-* 選択するオプション **重要な指標のエラー** 設定可能になりました。 [コード品質パイプライン](/help/using/non-production-pipelines.md) 同様に。
+* [パイプライン実行の詳細ページ](/help/using/managing-pipelines.md#view-details)には、パイプライン実行のすべての手順が表示され、まだ開始されていない手順はグレーアウトされます。
+* **[アクティビティ](/help/using/managing-pipelines.md#activity)**&#x200B;ページと&#x200B;**[パイプライン](/help/using/managing-pipelines.md#pipelines)**&#x200B;ページの両方で、実行ステータスのパイプラインをクリックすると、パイプライン実行の概要が表示されるようになりました。
+* 新しい&#x200B;**期間**&#x200B;の節を[パイプラインの詳細ページ](/help/using/managing-pipelines.md#view-details)に追加しました。そのプログラムの過去のトレンドに基づいたパイプライン手順の平均期間が含まれます。
+* [パイプライン実行ページ](/help/using/managing-pipelines.md#activity-window)で、完了した手順の期間が表示されるようになりました
+* Cloud Manager の[コンテンツコピーツール](/help/using/content-copy.md)を使用すると、可変コンテンツをオンデマンドで AMS でホストされている AEM 実稼動環境から下位の環境にテスト目的でコピーできます。
+* [ビルドアーティファクトを再利用](/help/getting-started/project-setup.md#build-artifact-reuse)する実行では、これらのアーティファクトを最初にビルドした実行へのリンクが表示されるようになりました。
+* 「**重要な指標のエラー**」を選択するオプションを、[コード品質パイプライン](/help/using/non-production-pipelines.md)に対しても設定できるようになりました。
 
-## 早期採用プログラム {#early-adoption}
+## 早期導入プログラム {#early-adoption}
 
-初期の採用プログラムに参加し、今後の機能をテストする機会を得る
+早期導入プログラムに参加して、今後の機能をテストする機会を得ることができます
 
-### 独自の GitHub を持ち込む {#byo-github}
+### 独自の GitHub の導入 {#byo-github}
 
-GitHub を使用してリポジトリを管理する場合は、 [Cloud Manager を使用して、GitHub リポジトリ内で直接コードを検証できるようになりました。](/help/managing-code/byo-github.md) この統合により、コードをAdobeリポジトリと一貫して同期する必要がなくなり、プルリクエストを確認してからメインブランチにマージできます。
+GitHub を使用してリポジトリを管理している場合は、[Cloud Manager を通じて GitHub リポジトリ内でコードを直接検証できるようになりました。](/help/managing-code/byo-github.md)ここの統合により、コードを Adobe リポジトリと一貫して同期する必要がなくなり、プルリクエストをメインブランチに結合する前に検証できるようになります。
 
-この新機能のテストとフィードバックの共有に関心がある場合は、に電子メールを送信してください。 `Grp-CloudManager_BYOG@adobe.com` Adobe IDに関連付けられた電子メールアドレスから。
+この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `Grp-CloudManager_BYOG@adobe.com` にメールを送信してください。
 
 ### カスタム権限 {#custom-permissions}
 
-[Cloud Manager のカスタム権限](/help/using/custom-permissions.md) では、設定可能な権限を持つ新しいカスタム権限プロファイルを作成して、Cloud Manager ユーザーのプログラム、パイプライン、環境へのアクセスを制限できます。
+[Cloud Manager のカスタム権限](/help/using/custom-permissions.md)を使用すると、Cloud Manager ユーザーのプログラム、パイプライン、環境へのアクセスを制限する設定可能な権限を持つ新しいカスタム権限プロファイルを作成できます。
 
-この新機能のテストやフィードバックの共有に関心がある場合は、電子メールでお問い合わせください `Grp-CloudManager_ams_custompermissions@adobe.com` Adobe IDに関連付けられた電子メールアドレスから。
+この新機能をテストしてフィードバックを共有することに関心をお持ちの方は、Adobe ID に関連付けられたメールアドレスから `Grp-CloudManager_ams_custompermissions@adobe.com` にメールを送信してください。
