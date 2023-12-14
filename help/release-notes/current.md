@@ -1,19 +1,19 @@
 ---
-title: リリースノート（2023.11.0）
-description: Cloud Manager リリース 2023.11.0 のリリースノートです。
+title: 2023.12.0 のリリースノート
+description: Cloud Manager リリース 2023.12.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 264c7ffcbc9e10903880a511a4ca605be666f7e8
-workflow-type: ht
-source-wordcount: '386'
-ht-degree: 100%
+source-git-commit: 16eef51d86647ae4f2515f3f3c4cb2d15e948854
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 95%
 
 ---
 
 
-# Cloud Manager リリース 2023.11.0 のリリースノート {#release-notes}
+# Cloud Manager リリース 2023.12.0 のリリースノート {#release-notes}
 
-このページは、[!UICONTROL Cloud Manager] リリース 2023.11.0 のリリースノートです。
+このページは、[!UICONTROL Cloud Manager] リリース 2023.12.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,17 +21,11 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] リリース 2023.11.0 のリリース日は 2023年11月14日（PT）です。次回のリリースは 2023年12月7日（PT）に予定されています。
+[!UICONTROL Cloud Manager] リリース 2023.12.0 のリリース日は 2023 年 12 月 14 日です。次回のリリースは 2024 年 1 月 18 日に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* [パイプライン実行の詳細ページ](/help/using/managing-pipelines.md#view-details)には、パイプライン実行のすべての手順が表示され、まだ開始されていない手順はグレーアウトされます。
-* **[アクティビティ](/help/using/managing-pipelines.md#activity)**&#x200B;ページと&#x200B;**[パイプライン](/help/using/managing-pipelines.md#pipelines)**&#x200B;ページの両方で、実行ステータスのパイプラインをクリックすると、パイプライン実行の概要が表示されるようになりました。
-* 新しい&#x200B;**期間**&#x200B;の節を[パイプラインの詳細ページ](/help/using/managing-pipelines.md#view-details)に追加しました。そのプログラムの過去のトレンドに基づいたパイプライン手順の平均期間が含まれます。
-* [パイプライン実行ページ](/help/using/managing-pipelines.md#activity-window)で、完了した手順の期間が表示されるようになりました
-* Cloud Manager の[コンテンツコピーツール](/help/using/content-copy.md)を使用すると、可変コンテンツをオンデマンドで AMS でホストされている AEM 実稼動環境から下位の環境にテスト目的でコピーできます。
-* [ビルドアーティファクトを再利用](/help/getting-started/project-setup.md#build-artifact-reuse)する実行では、これらのアーティファクトを最初にビルドした実行へのリンクが表示されるようになりました。
-* 「**重要な指標のエラー**」を選択するオプションを、[コード品質パイプライン](/help/using/non-production-pipelines.md)に対しても設定できるようになりました。
+* [Cloud Manager のカスタム権限](/help/using/custom-permissions.md)を使用すると、Cloud Manager ユーザーのプログラム、パイプライン、環境へのアクセスを制限する設定可能な権限を持つ新しいカスタム権限プロファイルを作成できます。
 
 ## 早期導入プログラム {#early-adoption}
 
@@ -42,9 +36,3 @@ ht-degree: 100%
 GitHub を使用してリポジトリを管理している場合は、[Cloud Manager を通じて GitHub リポジトリ内でコードを直接検証できるようになりました。](/help/managing-code/byo-github.md)ここの統合により、コードを Adobe リポジトリと一貫して同期する必要がなくなり、プルリクエストをメインブランチに結合する前に検証できるようになります。
 
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `Grp-CloudManager_BYOG@adobe.com` にメールを送信してください。
-
-### カスタム権限 {#custom-permissions}
-
-[Cloud Manager のカスタム権限](/help/using/custom-permissions.md)を使用すると、Cloud Manager ユーザーのプログラム、パイプライン、環境へのアクセスを制限する設定可能な権限を持つ新しいカスタム権限プロファイルを作成できます。
-
-この新機能をテストしてフィードバックを共有することに関心をお持ちの方は、Adobe ID に関連付けられたメールアドレスから `Grp-CloudManager_ams_custompermissions@adobe.com` にメールを送信してください。
