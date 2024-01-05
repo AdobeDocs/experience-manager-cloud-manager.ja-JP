@@ -3,9 +3,9 @@ title: ビルド環境
 description: Cloud Manager ユーザーがコードを作成およびテストするための専用のビルド環境について説明します。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 2ac254508e4015fea21c4fcd087703ac5fbeeec6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1283'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager のビルド環境には、次の属性があります。
 
 * ビルド環境は Linux ベースで、Ubuntu 22.04 から派生しています。
 * Apache Maven 3.8.8 がインストールされています。
-   * Adobeが推奨するユーザー [HTTP の代わりに HTTPS を使用するように Maven リポジトリを更新します。](#https-maven)
+   * アドビでは、ユーザーに [HTTP ではなく HTTPS を使用するように Maven リポジトリを更新](#https-maven)することをお勧めします。
 * インストールされる Java バージョンは Oracle JDK 8u371 と Oracle JDK 11.0.20 です。
    * `/usr/lib/jvm/jdk1.8.0_371`
    * `/usr/lib/jvm/jdk-11.0.20`
@@ -39,7 +39,7 @@ Cloud Manager のビルド環境には、次の属性があります。
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven は、`settings.xml` ファイルを使用してシステムレベルで設定されます。このファイルには、`adobe-public` というプロファイルを使用したアドビの公開アーティファクトリポジトリが自動的に含まれています。
    * 詳しくは、[アドビの公開 Maven リポジトリ](https://repo1.maven.org/)を参照してください。
-* Node.js 18 は [フロントエンドパイプラインとフルスタックパイプライン。](/help/overview/ci-cd-pipelines.md)
+* Node.js 18 は、[フロントエンドパイプラインとフルスタックパイプライン](/help/overview/ci-cd-pipelines.md)で使用できます。
 
 >[!NOTE]
 >
@@ -54,11 +54,11 @@ Cloud Manager のビルド環境には、次の属性があります。
 
 ## HTTPS Maven リポジトリ {#https-maven}
 
-Cloud Manager [リリース2023.10.0](/help/release-notes/2023/2023-10-0.md) ビルド環境のローリングアップデートを開始しました ( リリース2023.12.0で完了 )。Maven 3.8.8 のアップデートが含まれています。Maven 3.8.1 で導入された大きな変更は、潜在的な脆弱性の軽減を目的としたセキュリティ強化です。 特に、Maven は安全でないすべてのを無効にします `http://*` デフォルトでミラー ( [Maven リリースノート。](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [リリース 2023.10.0](/help/release-notes/2023/2023-10-0.md) では、Maven 3.8.8 へのアップデートを含む、ビルド環境へのローリングアップデートが開始されました（リリース 2023.12.0 で完了）。Maven 3.8.1 で導入された重要な変更は、潜在的な脆弱性を軽減することを目的としたセキュリティ強化でした。具体的には、[Maven リリースノート](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)で説明するように、Maven では安全でないすべての `http://*` ミラーをデフォルトで無効にするようになりました。
 
-このセキュリティ強化の結果、特に安全でない HTTP 接続を使用する Maven リポジトリからアーティファクトをダウンロードする場合に、ビルド手順で問題が発生する場合があります。
+このセキュリティ強化の結果、一部のユーザーには、ビルド手順で、特に安全でない HTTP 接続を使用する Maven リポジトリからアーティファクトをダウンロードする際に問題が発生する場合があります。
 
-更新バージョンでスムーズな操作を実現するために、Adobeでは、HTTP ではなく HTTPS を使用するように Maven リポジトリを更新することをお勧めします。 この調整は、業界がセキュアな通信プロトコルに移行し、安全で信頼性の高いビルドプロセスを維持するのに役立ちます。
+アップデートされたバージョンでスムーズなエクスペリエンスを実現するために、アドビでは、ユーザーが Mavenリポジトリを更新して HTTP ではなく HTTPS を使用することをお勧めします。この調整は、業界でセキュアな通信プロトコルへの移行が進むのに合わせて行われ、安全で信頼性の高いビルドプロセスを維持するのに役立ちます。
 
 ## 特定の Java バージョンの使用 {#using-java-version}
 
