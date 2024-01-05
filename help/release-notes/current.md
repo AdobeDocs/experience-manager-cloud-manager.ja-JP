@@ -4,9 +4,9 @@ description: Cloud Manager リリース 2023.12.0 のリリースノートです
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 2ac254508e4015fea21c4fcd087703ac5fbeeec6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '305'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -26,14 +26,14 @@ ht-degree: 70%
 ## 新機能 {#what-is-new}
 
 * [Cloud Manager のカスタム権限](/help/using/custom-permissions.md)を使用すると、Cloud Manager ユーザーのプログラム、パイプライン、環境へのアクセスを制限する設定可能な権限を持つ新しいカスタム権限プロファイルを作成できます。
-* 更新のロールアウト： [ビルド環境](/help/getting-started/build-environment.md) それは [10 月の Cloud Manager リリースで発表および開始された](/help/release-notes/2023/2023-10-0.md) が完了しました。
-   * ノード 18 のサポートが、 [フロントエンドパイプラインとフルスタックパイプライン。](/help/overview/ci-cd-pipelines.md)
-   * Java 8 のマイナーバージョンがに更新されました。 `jdk1.8.0_371`.
-   * Java 11 のマイナーバージョンがに更新されました。 `jdk-11.0.20`.
-   * Maven がバージョン 3.8.8 に更新されました。
-      * Maven でセキュリティで保護されていないすべてのを無効化 `http://*` デフォルトではミラーされます。
-      * [Adobeが推奨](/help/getting-started/build-environment.md#https-maven) ユーザーは、HTTP の代わりに HTTPS を使用するように Maven リポジトリを更新します。
-* ビルドコンテナのベースイメージが Ubuntu 22.04 に更新されました。
+* [Cloud Manager の 10月リリースで発表され、開始された](/help/release-notes/2023/2023-10-0.md)[ビルド環境](/help/getting-started/build-environment.md)への更新のロールアウトが完了しました。
+   * [フロントエンドパイプラインとフルスタックパイプライン](/help/overview/ci-cd-pipelines.md)に Node 18 のサポートを追加しました。
+   * Java 8 のマイナーバージョンを `jdk1.8.0_371` にアップデートしました。
+   * Java 11 のマイナーバージョンを `jdk-11.0.20` にアップデートしました。
+   * Maven のバージョンを 3.8.8 にアップデートしました
+      * Maven では、安全でないすべての `http://*` ミラーをデフォルトで無効にするようになりました。
+      * [アドビでは](/help/getting-started/build-environment.md#https-maven)、ユーザーが Maven リポジトリを更新し、HTTP ではなく HTTPS を使用することをお勧めします。
+* ビルドコンテナのベース画像を Ubuntu 22.04 にアップデートしました。
 
 ## 早期導入プログラム {#early-adoption}
 
