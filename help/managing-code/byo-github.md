@@ -2,7 +2,8 @@
 title: Cloud Manager での独自の GitHub リポジトリの操作
 description: 独自の GitHub リポジトリを操作するために Cloud Manager を設定する方法について説明します。
 feature: Release Information
-source-git-commit: 76a3dc6df41032488a3cfe11d0c72769562b96df
+exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
+source-git-commit: 3bb59686a3c25e47e5c747bb8d5f626055e54a06
 workflow-type: ht
 source-wordcount: '753'
 ht-degree: 100%
@@ -54,7 +55,7 @@ Cloud Manager は GitHub リポジトリを認識しましたが、引き続き�
    ![プライベートリポジトリの所有権の検証](/help/assets/repositories/private-repo-validate.png)
 
 1. Cloud Manager は、GitHub アプリを使用して、リポジトリと安全にやり取りします。
-   * GitHub 組織の所有者は、`https://github.com/apps/cloud-manager-for-aem-stage` にあるアプリをインストールし、リポジトリへのアクセス権を付与する必要があります。
+   * GitHub 組織の所有者は、`https://github.com/apps/cloud-manager-for-aem` にあるアプリをインストールし、リポジトリへのアクセス権を付与する必要があります。
    * これを行う方法について詳しくは、GitHub のドキュメントを参照してください。
 
 1. セキュリティを強化するには、リポジトリのデフォルトのブランチに秘密鍵ファイルを作成する必要があります。「**生成**」をタップまたはクリックします。
