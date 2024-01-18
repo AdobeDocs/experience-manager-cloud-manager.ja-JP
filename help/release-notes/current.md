@@ -1,19 +1,19 @@
 ---
-title: 2023.12.0 のリリースノート
-description: Cloud Manager リリース 2023.12.0 のリリースノートです。
+title: リリースノート（2024.1.0）
+description: Cloud Manager リリース 2024.1.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 2ac254508e4015fea21c4fcd087703ac5fbeeec6
-workflow-type: ht
-source-wordcount: '305'
-ht-degree: 100%
+source-git-commit: b901c7bf9d821f6e84fc513e5e6cba5eab8ea894
+workflow-type: tm+mt
+source-wordcount: '178'
+ht-degree: 92%
 
 ---
 
 
-# Cloud Manager リリース 2023.12.0 のリリースノート {#release-notes}
+# Cloud Manager リリース 2024.1.0 のリリースノート {#release-notes}
 
-このページは、[!UICONTROL Cloud Manager] リリース 2023.12.0 のリリースノートです。
+このページは、[!UICONTROL Cloud Manager] リリース 2024.1.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,19 +21,7 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] リリース 2023.12.0 のリリース日は 2023年12月14日（PT）です。次回のリリースは 2024年1月18日（PT）の予定です。
-
-## 新機能 {#what-is-new}
-
-* [Cloud Manager のカスタム権限](/help/using/custom-permissions.md)を使用すると、Cloud Manager ユーザーのプログラム、パイプライン、環境へのアクセスを制限する設定可能な権限を持つ新しいカスタム権限プロファイルを作成できます。
-* [Cloud Manager の 10月リリースで発表され、開始された](/help/release-notes/2023/2023-10-0.md)[ビルド環境](/help/getting-started/build-environment.md)への更新のロールアウトが完了しました。
-   * [フロントエンドパイプラインとフルスタックパイプライン](/help/overview/ci-cd-pipelines.md)に Node 18 のサポートを追加しました。
-   * Java 8 のマイナーバージョンを `jdk1.8.0_371` にアップデートしました。
-   * Java 11 のマイナーバージョンを `jdk-11.0.20` にアップデートしました。
-   * Maven のバージョンを 3.8.8 にアップデートしました
-      * Maven では、安全でないすべての `http://*` ミラーをデフォルトで無効にするようになりました。
-      * [アドビでは](/help/getting-started/build-environment.md#https-maven)、ユーザーが Maven リポジトリを更新し、HTTP ではなく HTTPS を使用することをお勧めします。
-* ビルドコンテナのベース画像を Ubuntu 22.04 にアップデートしました。
+のリリース日 [!UICONTROL Cloud Manager] リリース 2024.1.0 は 2024 年 1 月 17 日です。
 
 ## 早期導入プログラム {#early-adoption}
 
