@@ -1,5 +1,5 @@
 ---
-title: リリースノート（2024.1.0）
+title: 2024.1.0 のリリースノート
 description: Cloud Manager リリース 2024.1.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
