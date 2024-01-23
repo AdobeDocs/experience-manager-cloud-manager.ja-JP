@@ -2,10 +2,10 @@
 title: コードのデプロイメント
 description: コードをデプロイする方法と、デプロイ時に Cloud Manager で何が行われるかを説明します。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: b85bd1bdf38360885bf2777d75bf7aa97c6da7ee
-workflow-type: ht
-source-wordcount: '1655'
-ht-degree: 100%
+source-git-commit: 70e68f8af17b0acf644176c2ed3afaf8fc219063
+workflow-type: tm+mt
+source-wordcount: '1650'
+ht-degree: 99%
 
 ---
 
@@ -84,12 +84,13 @@ ht-degree: 100%
 
 | ステップ | タイムアウト |
 |--- |--- |
-| コード品質テスト | 14 日 |
-| セキュリティテスト | 14 日 |
-| パフォーマンステスト | 14 日 |
-| アプリケーションの承認 | 14 日 |
+| コード品質テスト | 7 日 |
+| セキュリティテスト | 7 日 |
+| パフォーマンステスト | 7 日 |
+| 承認の申請（ステージ） | 7 日 |
+| 承認申請（実稼動） | 14 日 |
 | 実稼動デプロイメントをスケジュール | 14 日 |
-| CSE サポート | 14 日 |
+| 実稼動の管理によるデプロイメント | 14 日 |
 
 ## デプロイメントプロセスの詳細 {#deployment-process}
 
