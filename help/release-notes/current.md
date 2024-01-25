@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: b235e398b42e9da3dd2efacdc0ef38b6803bd213
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 68%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!UICONTROL Cloud Manager] リリース 2024.1.0 は 2024 年 1 月 17 日です。 次回のリリースは 2024 年 2 月 16 日に予定されています。
+[!UICONTROL Cloud Manager] リリース 2024.1.0 のリリース日は 2024年1月17日（PT）です。次回のリリースは 2024年2月16日（PT）の予定です。
 
 ## 早期導入プログラム {#early-adoption}
 
@@ -35,5 +35,5 @@ GitHub を使用してリポジトリを管理している場合は、[Cloud Man
 
 ## バグの修正 {#bug-fixes}
 
-* テストアプリケーションでデータがどのように解釈されるかが原因でダウンロードが失敗し、合計エラー率がテストに失敗する場合があると、エラーが修正されました。
-* ビルドステップが「 」ステータスで終了したとき `FAILED` 原因は `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`の場合、宛先ブランチとの結合の競合が原因でエラーとして適切に説明されるようになりました。
+* テストアプリケーションがデータをどう解釈したかによってダウンロードが失敗し、合計エラー率がテストで不合格となる、いくつかの特殊なケースのエラーを修正しました。
+* `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR` によりビルドステップが `FAILED` ステータスで終了した場合、宛先分岐との結合の競合によるエラーとして、適切に記述されるようになりました。
