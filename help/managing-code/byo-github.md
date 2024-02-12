@@ -3,10 +3,10 @@ title: Cloud Manager での独自の GitHub リポジトリの操作
 description: 独自の GitHub リポジトリを操作するために Cloud Manager を設定する方法について説明します。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 3bb59686a3c25e47e5c747bb8d5f626055e54a06
+source-git-commit: b5907179d3de329e8b86546bb8aa99608a5b351a
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 100%
+source-wordcount: '767'
+ht-degree: 98%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 100%
 >[!NOTE]
 >
 >この機能は、[早期導入プログラム](/help/release-notes/current.md#early-adoption)でのみ利用できます。
+
+>[!NOTE]
+>
+>この機能は、パブリック GitHub 専用です。 自己ホスト型 GitHub はサポートされていません。
 
 ## 設定 {#configuration}
 
