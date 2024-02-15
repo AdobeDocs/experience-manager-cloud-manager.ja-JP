@@ -4,9 +4,9 @@ description: 独自の GitHub リポジトリを操作するために Cloud Mana
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: b5907179d3de329e8b86546bb8aa99608a5b351a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '767'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->この機能は、パブリック GitHub 専用です。 自己ホスト型 GitHub はサポートされていません。
+>この機能は、パブリック GitHub 専用です。自己ホスト型 GitHub のサポートは利用できません。
 
 ## 設定 {#configuration}
 
