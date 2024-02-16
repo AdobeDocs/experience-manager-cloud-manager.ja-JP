@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager ユーザーがコードを作成およびテストするための専用のビルド環境について説明します。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 2ac254508e4015fea21c4fcd087703ac5fbeeec6
-workflow-type: ht
-source-wordcount: '1283'
-ht-degree: 100%
+source-git-commit: dc0b83fa045208fcd333af10f90f9590c2aa96b8
+workflow-type: tm+mt
+source-wordcount: '1280'
+ht-degree: 97%
 
 ---
 
@@ -19,12 +19,12 @@ Cloud Manager ユーザーがコードを作成およびテストするための
 Cloud Manager のビルド環境には、次の属性があります。
 
 * ビルド環境は Linux ベースで、Ubuntu 22.04 から派生しています。
-* Apache Maven 3.8.8 がインストールされています。
+* Apache Maven 3.9.4 がインストールされています。
    * アドビでは、ユーザーに [HTTP ではなく HTTPS を使用するように Maven リポジトリを更新](#https-maven)することをお勧めします。
-* インストールされる Java バージョンは Oracle JDK 8u371 と Oracle JDK 11.0.20 です。
-   * `/usr/lib/jvm/jdk1.8.0_371`
-   * `/usr/lib/jvm/jdk-11.0.20`
-* デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_371` に設定されています。これには、Oracle JDK 8u371 が含まれています。詳しくは、[Maven 実行の代替 JDK バージョン](#alternate-maven)の節を参照してください。
+* インストールされる Java のバージョンは、OracleJDK 8u401 およびOracleJDK 11.0.22 です。
+   * `/usr/lib/jvm/jdk1.8.0_401`
+   * `/usr/lib/jvm/jdk-11.0.22`
+* デフォルトでは、 `JAVA_HOME`  環境変数はに設定されます。 `/usr/lib/jvm/jdk1.8.0_401` oracleJDK 8u401 を含む 詳しくは、[Maven 実行の代替 JDK バージョン](#alternate-maven)の節を参照してください。
 * 必要に応じてインストールされる追加のシステムパッケージが、次のようにいくつかあります。
    * `bzip2`
    * `unzip`
@@ -39,7 +39,7 @@ Cloud Manager のビルド環境には、次の属性があります。
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven は、`settings.xml` ファイルを使用してシステムレベルで設定されます。このファイルには、`adobe-public` というプロファイルを使用したアドビの公開アーティファクトリポジトリが自動的に含まれています。
    * 詳しくは、[アドビの公開 Maven リポジトリ](https://repo1.maven.org/)を参照してください。
-* Node.js 18 は、[フロントエンドパイプラインとフルスタックパイプライン](/help/overview/ci-cd-pipelines.md)で使用できます。
+* Node.js 18 は [フロントエンドパイプライン。](/help/overview/ci-cd-pipelines.md)
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ Cloud Manager [リリース 2023.10.0](/help/release-notes/2023/2023-10-0.md) �
 
 また、Maven 実行全体の JDK として Oracle 8 または Oracle 11 を選択することもできます。この場合は、ツールチェーンオプションとは異なり、ツールチェーン設定も指定される場合を除き、すべてのプラグインに使用される JDK が変更されます。ツールチェーン設定が指定される場合は、そのツールチェーン設定が引き続きツールチェーン対応 Maven プラグインに適用されます。その結果、[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) を使用して Java バージョンを確認および強制することができます。
 
-それには、パイプラインで使用される Git リポジトリーブランチに `.cloudmanager/java-version` というファイルを作成します。このファイルの内容は `11` か `8` のどちらかにすることができます。その他の値は無視されます。`11` を指定した場合は、Oracle 11 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk-11.0.2` に設定されます。`8` を指定した場合は、Oracle 8 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk1.8.0_202` に設定されます。
+それには、パイプラインで使用される Git リポジトリーブランチに `.cloudmanager/java-version` というファイルを作成します。このファイルの内容は `11` か `8` のどちらかにすることができます。その他の値は無視されます。`11` を指定した場合は、Oracle 11 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk-11.0.22` に設定されます。`8` を指定した場合は、Oracle 8 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk1.8.0_401` に設定されます。
 
 ## 環境変数 {#environment-variables}
 
