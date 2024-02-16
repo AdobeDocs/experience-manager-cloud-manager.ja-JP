@@ -3,7 +3,7 @@ title: リリースノート（2024.2.0）
 description: Cloud Manager リリース 2024.2.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 524471a87217c15dae96c3e6aee57426b43dcccb
+source-git-commit: cc87246503ab63d6dd60c691f15fc4759fcf6939
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 61%
@@ -21,7 +21,7 @@ ht-degree: 61%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!UICONTROL Cloud Manager] リリース 2024.2.0 は 2024 年 2 月 16 日です。 次回のリリースは 2024 年 3 月 16 日に予定されています。
+のリリース日 [!UICONTROL Cloud Manager] リリース 2024.2.0 は 2024 年 2 月 15 日です。 次回のリリースは 2024 年 3 月 16 日に予定されています。
 
 ## 新機能 {#what-is-new}
 
@@ -41,3 +41,4 @@ GitHub を使用してリポジトリを管理している場合は、[Cloud Man
 ## バグの修正 {#bug-fixes}
 
 * ビルドコンテナの JDK が、解決するバージョンに更新されました。 [JDK-8313765。](https://bugs.openjdk.org/browse/JDK-8313765)
+§
