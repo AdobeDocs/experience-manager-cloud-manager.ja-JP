@@ -4,9 +4,9 @@ description: Cloud Manager リリース 2024.2.0 のリリースノートです�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: cc87246503ab63d6dd60c691f15fc4759fcf6939
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '299'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 61%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!UICONTROL Cloud Manager] リリース 2024.2.0 は 2024 年 2 月 15 日です。 次回のリリースは 2024 年 3 月 16 日に予定されています。
+[!UICONTROL Cloud Manager] リリース 2024.2.0 のリリース日は 2024年2月15日（PT）です。次回のリリースは 2024年3月16日（PT）の予定です。
 
 ## 新機能 {#what-is-new}
 
-* の一部として [デプロイメント](/help/using/code-deployment.md) Dispatcher キャッシュは、 **Dispatcher の添付** 手順 アプリケーションロードバランサーにコードをデプロイした後、各ノードで変更をテストできるように、特定のパブリッシャーにコードをデプロイした後、Dispatcher をロードバランサーにアタッチする前に、関連する Dispatcher から直接変更をテストできます。
-* [ビルド環境](/help/getting-started/build-environment.md) は、Maven バージョン 3.9.4 および JDK バージョン jdk-11.0.22 および jdk1.8.0_401 に更新されました。
+* [デプロイメント](/help/using/code-deployment.md)の一環として、**Dispatcher のアタッチ**&#x200B;ステップで Dispatcher のキャッシュがフラッシュされました。アプリケーションロードバランサーにノードをアタッチする前に各ノードで変更をテストできるようにするために、コードを特定のパブリッシャーにデプロイした後、関連付けられた Dispatcher をロードバランサーにアタッチする前に、その Dispatcher から直接変更をテストできるようになりました。
+* [ビルド環境](/help/getting-started/build-environment.md)は、Maven バージョン 3.9.4、JDK バージョン jdk-11.0.22 および jdk1.8.0_401 に更新されました。
 
 ## 早期導入プログラム {#early-adoption}
 
@@ -40,5 +40,5 @@ GitHub を使用してリポジトリを管理している場合は、[Cloud Man
 
 ## バグの修正 {#bug-fixes}
 
-* ビルドコンテナの JDK が、解決するバージョンに更新されました。 [JDK-8313765。](https://bugs.openjdk.org/browse/JDK-8313765)
+* ビルドコンテナの JDK は、[JDK-8313765](https://bugs.openjdk.org/browse/JDK-8313765) を解決するバージョンに更新されました。
 §
