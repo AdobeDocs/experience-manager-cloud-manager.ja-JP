@@ -2,10 +2,10 @@
 title: 役割ベースの権限
 description: Cloud Manager の事前設定された役割ベースの権限によるクラウドリソースへのアクセスの管理について説明します。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 522e5fbc650a8159602eb1aeaf42d64f4e23e8b4
-workflow-type: ht
-source-wordcount: '565'
-ht-degree: 100%
+source-git-commit: 10297789ac8f905f242ac52bdc6fc4812b989e8a
+workflow-type: tm+mt
+source-wordcount: '602'
+ht-degree: 93%
 
 ---
 
@@ -13,6 +13,12 @@ ht-degree: 100%
 # 役割に基づく権限 {#role-based-permissions}
 
 [!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みの役割が用意されています。例えば、デベロッパーには、コードを開発して Git リポジトリにプッシュする権限があります。ビジネスオーナーには、主要業績評価指標（KPI）を定義したりデプロイメントを承認したりできる様々な権限があります。
+
+>[!NOTE]
+>
+>このドキュメントでは、AdobeManaged Services(AMS) 用の Cloud Manager に対するロールベースの権限について説明します。
+>
+>AEM as a Cloud Serviceに関する同等のドキュメントは、ドキュメントを参照してください。 [Cloud Manager の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions) (AEM as a Cloud Serviceドキュメント ) を参照してください。
 
 ## ユーザーの役割 {#user-roles}
 
@@ -48,7 +54,7 @@ Admin Console で割り当てることができる役割の一覧を次の表に
 | 実行における実稼動環境へのデプロイメントの承認 | 運用開始を承認します | x | x | x |  |  |
 | 実行における実稼動環境へのデプロイメントのスケジュール設定 | 実稼働デプロイメントのスケジュールを設定します | x | x | x |  | x |
 | 実行における実稼動環境へのデプロイメント | CSE による監督のために一時停止した際にアプリケーションを実稼動環境にデプロイします |  |  |  |  | x |
-| 実行のキャンセル | 現在の実行をキャンセルします |  |  | x |  |  |
+| 実行のキャンセル | 現在の実行のキャンセル |  |  | x |  |  |
 | 実行における品質ゲートエラーのオーバーライド | 重大な品質ゲートエラーを承認します | x | x | x |  |  |
 | パイプラインの作成 | パイプラインをセットアップ／編集します |  | x |  |  |  |
 | パイプラインの読み取り | パイプラインの詳細を参照します | x | x | x | x | x |
@@ -57,6 +63,6 @@ Admin Console で割り当てることができる役割の一覧を次の表に
 | パイプラインにおける管理対象デプロイメントの変更 | CSE 監督オプションの編集を許可します |  | × |  |  |  |
 | パイプラインの削除 | パイプラインの削除を許可します |  | x |  |  |  |
 | ステップの読み取り | ステップの品質指標の結果を参照します | x | x | x | x | x |
-| 個人用アクセストークンの生成 | Git にアクセスします |  | x |  | x |  |
+| 個人用アクセストークンの生成 | Git へのアクセス |  | x |  | x |  |
 
 ユーザーのセットアップ方法について詳しくは、[ユーザーと役割のセットアップ](/help/requirements/users-and-roles.md)のドキュメントを参照してください。
