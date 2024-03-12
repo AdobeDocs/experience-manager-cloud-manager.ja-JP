@@ -3,9 +3,9 @@ title: 役割ベースの権限
 description: Cloud Manager の事前設定された役割ベースの権限によるクラウドリソースへのアクセスの管理について説明します。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: 10297789ac8f905f242ac52bdc6fc4812b989e8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '602'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->このドキュメントでは、AdobeManaged Services(AMS) 用の Cloud Manager に対するロールベースの権限について説明します。
+>このドキュメントでは、Adobe Managed Services（AMS）用 Cloud Manager の役割ベースの権限について説明します。
 >
->AEM as a Cloud Serviceに関する同等のドキュメントは、ドキュメントを参照してください。 [Cloud Manager の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions) (AEM as a Cloud Serviceドキュメント ) を参照してください。
+>AEM as a Cloud Service の同等のドキュメントについては、AEM as a Cloud Service ドキュメントの [Cloud Manager の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html?lang=ja#role-based-permissions)ドキュメントを参照してください。
 
 ## ユーザーの役割 {#user-roles}
 
