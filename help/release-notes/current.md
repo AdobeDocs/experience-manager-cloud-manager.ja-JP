@@ -3,10 +3,10 @@ title: 2024.3.0 のリリースノート
 description: Cloud Manager リリース 2024.3.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 95a7a7be3ba20e05311ff90b91bd0773f6e77a07
+source-git-commit: 22730ba281f7c1c4720158a3a813c56b815a0af1
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 63%
+source-wordcount: '268'
+ht-degree: 68%
 
 ---
 
@@ -25,8 +25,7 @@ ht-degree: 63%
 
 ## 新機能 {#what-is-new}
 
-* Blue/Green デプロイメント中に作成されたインスタンスで、サーバーの正常性やレビューログなどを検証できるようになりました。
-   * 緑のサーバーの IP/DNS(FQDN) 情報を含む詳細が、Cloud Manager の UI に表示されるようになりました。
+* 緑のサーバーの IP/DNS(FQDN) 情報を含む詳細が、Cloud Manager UI に表示されるようになりました。
 
 ## 早期導入プログラム {#early-adoption}
 
