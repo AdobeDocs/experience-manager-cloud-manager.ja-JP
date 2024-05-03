@@ -2,10 +2,10 @@
 title: 役割ベースの権限
 description: Cloud Manager の事前設定された役割ベースの権限によるクラウドリソースへのアクセスの管理について説明します。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 10297789ac8f905f242ac52bdc6fc4812b989e8a
-workflow-type: ht
-source-wordcount: '602'
-ht-degree: 100%
+source-git-commit: 1c0c3a751ba2023fc2c2dd5d0d54f914373ad95b
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 97%
 
 ---
 
@@ -66,3 +66,7 @@ Admin Console で割り当てることができる役割の一覧を次の表に
 | 個人用アクセストークンの生成 | Git へのアクセス |  | x |  | x |  |
 
 ユーザーのセットアップ方法について詳しくは、[ユーザーと役割のセットアップ](/help/requirements/users-and-roles.md)のドキュメントを参照してください。
+
+>[!TIP]
+>
+>設定可能な権限を持つカスタム権限プロファイルも使用できます。 ドキュメントを参照してください [カスタム権限](/help/using/custom-permissions.md) を参照してください。
