@@ -3,9 +3,9 @@ title: 役割ベースの権限
 description: Cloud Manager の事前設定された役割ベースの権限によるクラウドリソースへのアクセスの管理について説明します。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: 1c0c3a751ba2023fc2c2dd5d0d54f914373ad95b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '620'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -69,4 +69,4 @@ Admin Console で割り当てることができる役割の一覧を次の表に
 
 >[!TIP]
 >
->設定可能な権限を持つカスタム権限プロファイルも使用できます。 ドキュメントを参照してください [カスタム権限](/help/using/custom-permissions.md) を参照してください。
+>設定可能な権限を持つカスタム権限プロファイルも使用できます。詳しくは、[カスタム権限](/help/using/custom-permissions.md)のドキュメントを参照してください。
