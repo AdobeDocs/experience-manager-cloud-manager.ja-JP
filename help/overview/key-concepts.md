@@ -2,10 +2,10 @@
 title: 主な概念
 description: すべての強力なツールと同様に、Cloud Manager には様々な概念や用語が含まれています。このドキュメントでは、Cloud Manager の使用を開始する際に最も重要な事項の一部をまとめます。
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: 73e322cf93dc7709b7581860974079c8d94034ba
-workflow-type: ht
-source-wordcount: '419'
-ht-degree: 100%
+source-git-commit: 67621fb2dbb0c32371b2ffc16ec45f47daf04e05
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## アプリケーション {#application}
 
-また、アプリケーションは、特定の使用例とニーズに応じて基盤となる[ソリューション](#solution)（AEM Sites や AEM Assets など）を適応させるために顧客が作成したカスタマイズと設定のセットです。アプリケーションは、複数の[アーティファクト](#artifact)で構成される論理単位です。
+アプリケーションは、基盤となるを適応させるために顧客が作成したカスタマイズと設定のセットです [解決策](#solution) （AEM SitesやAEM Assetsなど）具体的なユースケースとニーズに対応する。 アプリケーションは、複数の[アーティファクト](#artifact)で構成される論理単位です。
 
 アプリケーションの例は、架空の [WKND ライフスタイルアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)です。
 

@@ -7,9 +7,9 @@ user-guide-description: Cloud Manager を使用して、クラウド内の AMS �
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 664f43f8ec92da01af16721d9c847e0b03eb4e96
-workflow-type: ht
-source-wordcount: '498'
+source-git-commit: fbbc8b7aee04d1c153aeac87cc086883c0c6b980
+workflow-type: tm+mt
+source-wordcount: '499'
 ht-degree: 100%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 100%
    + [環境のプロビジョニング](/help/requirements/environment-provisioning.md)
 + はじめに {#getting-started}
    + [初回ログイン](/help/getting-started/first-time-login.md)
+   + [ナビゲーション](/help/getting-started/navigation.md)
    + [プログラム設定](/help/getting-started/program-setup.md)
    + AEM プロジェクトの作成 {#project-creation}
       + [ウィザードの使用](/help/getting-started/using-the-wizard.md)

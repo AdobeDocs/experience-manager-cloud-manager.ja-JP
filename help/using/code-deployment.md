@@ -2,9 +2,9 @@
 title: コードのデプロイメント
 description: コードをデプロイする方法と、デプロイ時に Cloud Manager で何が行われるかを説明します。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 70e68f8af17b0acf644176c2ed3afaf8fc219063
-workflow-type: ht
-source-wordcount: '1650'
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+workflow-type: tm+mt
+source-wordcount: '1648'
 ht-degree: 100%
 
 ---
@@ -55,8 +55,6 @@ ht-degree: 100%
 
 * **セキュリティテスト**：このステップでは、AEM 環境でのアプリケーションコードのセキュリティに対する影響を評価します。テストプロセスについて詳しくは、[テスト結果について](/help/using/code-quality-testing.md)のドキュメントを参照してください。
    * **パフォーマンステスト**：このステップでは、コードのパフォーマンスを評価します。テストプロセスについて詳しくは、[テスト結果について](/help/using/code-quality-testing.md)を参照してください。
-
-  ![ステージテスト](/help/assets/Stage_Testing1.png)
 
 ### 実稼動デプロイメントステップ {#production-deployment}
 

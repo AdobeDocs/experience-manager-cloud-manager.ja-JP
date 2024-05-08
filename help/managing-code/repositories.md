@@ -2,10 +2,10 @@
 title: Cloud Manager リポジトリー
 description: Cloud Manager プログラムのリポジトリにアクセス、作成、編集する方法について説明します。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: 63cbcf8724a840efa67b8fafc4c321e04a5d70d9
-workflow-type: ht
-source-wordcount: '796'
-ht-degree: 100%
+source-git-commit: 1d4ab9704fdb743b097e24be335fbf069d1e78bd
+workflow-type: tm+mt
+source-wordcount: '762'
+ht-degree: 98%
 
 ---
 
@@ -26,11 +26,7 @@ Cloud Manager からセルフサービスで Git リポジトリにアクセス�
 
    ![「リポジトリ情報にアクセス」ボタン](/help/assets/access-repo1.png)
 
-1. 「**実稼動以外**」のパイプラインタブに切り替えると、[パイプライン用に設定](/help/using/non-production-pipelines.md)されている「**リポジトリ情報にアクセス**」オプションも使用できます。
-
-   ![実稼動以外のパイプライン](/help/assets/access-repo-nonprod.png)
-
-1. 「**リポジトリ情報にアクセス**」ボタンをクリックして、次のダイアログを開きます。
+1. 「」をタップまたはクリックします **リポジトリ情報にアクセス** ボタンをクリックして以下のダイアログを開きます。
 
    * Git リポジトリへの URL
    * ユーザー名
@@ -68,8 +64,6 @@ Cloud Manager でリポジトリを追加するには、次の手順に従いま
 1. 「**保存**」を選択します。
 
 新しく作成されたリポジトリが表示されます。
-
-![新しいリポジトリが作成されました](/help/assets/create-repo3.png)
 
 Cloud Manager で作成されたリポジトリは、[パイプラインを作成](/help/overview/ci-cd-pipelines.md)するときに選択できます。
 

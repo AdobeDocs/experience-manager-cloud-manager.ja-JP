@@ -2,10 +2,10 @@
 title: パイプラインの管理
 description: 既存のパイプラインの管理方法（編集、実行、削除を含む）を説明します。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 28ab641ec85335d8330aeb465c07bf0264218fe4
-workflow-type: ht
-source-wordcount: '807'
-ht-degree: 100%
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+workflow-type: tm+mt
+source-wordcount: '800'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. ここでは、プログラムのすべてのパイプラインのリストを確認できるほか、**パイプラインカード**&#x200B;の場合と同様にパイプラインの実行を開始および停止することができます。
 
-パイプラインが実行中の場合、**ステータス**&#x200B;列にポインタを合わせると、実行に関する詳細が表示されます。
+をタップまたはクリック `i` アイコンをクリックすると、パイプラインの前回または現在の実行に関する詳細が表示されます。
 
 ![パイプライン実行の詳細](/help/assets/configure-pipelines/pipeline-status.png)
 
@@ -60,7 +60,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. ここでは、現在および過去の実行を含む、プログラムのすべてのパイプライン実行のリストを確認できます。
 
-パイプラインが実行中の場合、**ステータス**&#x200B;列にポインタを合わせると、実行に関する詳細が表示されます。
+をタップまたはクリック `i` アイコンをクリックすると、選択したパイプライン実行の実行に関する詳細が表示されます。
 
 ![パイプライン実行の詳細](/help/assets/configure-pipelines/pipeline-activity.png)
 
