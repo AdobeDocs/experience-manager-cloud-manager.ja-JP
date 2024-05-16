@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager を使用して、クラウド内の AMS �
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: fbbc8b7aee04d1c153aeac87cc086883c0c6b980
+source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 100%
+source-wordcount: '509'
+ht-degree: 99%
 
 ---
 
@@ -46,6 +46,7 @@ ht-degree: 100%
    + CI／CD パイプライン {#pipelines}
       + [実稼動パイプラインの設定](/help/using/production-pipelines.md)
       + [実稼動以外のパイプラインの設定](/help/using/non-production-pipelines.md)
+      + [ステージングおよび実稼動専用パイプライン](/help/using/stage-prod-only.md)
       + [パイプラインの管理](/help/using/managing-pipelines.md)
    + [コードのデプロイメント](/help/using/code-deployment.md)
    + [コード品質テスト](/help/using/code-quality-testing.md)
@@ -68,6 +69,7 @@ ht-degree: 100%
 + リリースノート {#release-notes}
    + [最新のリリースノート](/help/release-notes/current.md)
    + 2024年度 {#2024}
+      + [リリースノート（2024.4.0）](/help/release-notes/2024/2024-4-0.md)
       + [2024.3.0 のリリースノート](/help/release-notes/2024/2024-3-0.md)
       + [リリースノート（2024.2.0）](/help/release-notes/2024/2024-2-0.md)
       + [2024.1.0 のリリースノート](/help/release-notes/2024/2024-1-0.md)

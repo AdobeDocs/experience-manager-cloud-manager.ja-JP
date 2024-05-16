@@ -1,13 +1,13 @@
 ---
 title: Cloud Manager UI の操作
 description: Cloud Manager UI の整理方法と、プログラムと環境を管理する方法について説明します。
-source-git-commit: 95736be8c38488c3f16164784247e160a967ecb7
+exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
+source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1292'
 ht-degree: 18%
 
 ---
-
 
 # Cloud Manager UI の操作 {#navigation}
 
@@ -101,7 +101,6 @@ Cloud Manager UI の整理方法と、プログラムと環境を管理する方
 * プログラム画像（設定されている場合）
 * プログラム名
 * サービスタイプ： **Experience Manager雲** （用） [AEMas a Cloud Serviceプログラム](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home) または **Experience Manager** AMS プログラムの場合
-* [プログラムタイプ](/help/getting-started/program-setup.md)：サンドボックスまたは実稼動
 * ステータス
 * 設定済みのソリューション
 * 作成日
