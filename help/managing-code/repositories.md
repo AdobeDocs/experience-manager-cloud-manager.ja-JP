@@ -3,9 +3,9 @@ title: Cloud Manager リポジトリー
 description: Cloud Manager プログラムのリポジトリにアクセス、作成、編集する方法について説明します。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 1d4ab9704fdb743b097e24be335fbf069d1e78bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Cloud Manager からセルフサービスで Git リポジトリにアクセス�
 
    ![「リポジトリ情報にアクセス」ボタン](/help/assets/access-repo1.png)
 
-1. 「」をタップまたはクリックします **リポジトリ情報にアクセス** ボタンをクリックして以下のダイアログを開きます。
+1. 「**リポジトリ情報にアクセス**」ボタンをタップまたはクリックして、表示されるダイアログを開きます。
 
    * Git リポジトリへの URL
    * ユーザー名
