@@ -4,9 +4,9 @@ description: Cloud Manager リリース 2024.5.0 のリリースノートです�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 395fe2a42fc2d6413dff38c9e4620c62039f87e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 68%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!UICONTROL Cloud Manager] リリース 2024.5.0 は 2024 年 5 月 9 日です。 次回のリリースは 2024 年 6 月 6 日（PT）に予定されています。
+[!UICONTROL Cloud Manager] リリース 2024.5.0 のリリース日は 2024年5月9日（PT）です。次回のリリースは 2024年6月6日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* パイプラインの実行中にコンテンツ監査手順をスキップするようになりました [緊急モード。](/help/using/code-deployment.md#emergency-pipeline)
+* パイプラインが[緊急モード](/help/using/code-deployment.md#emergency-pipeline)で実行されている場合、コンテンツ監査の手順はスキップされるようになりました。
 
 ## 早期導入プログラム {#early-adoption}
 
@@ -33,9 +33,9 @@ ht-degree: 68%
 
 ### ステージング専用パイプラインと実稼動専用パイプライン {#staging-production-only-pipelines}
 
-のサポート [ステージング専用パイプラインと実稼動専用パイプライン](/help/using/stage-prod-only.md) が導入され、フルスタックの実稼動デプロイメントパイプラインを、より小さな専用のデプロイメントに分割できるようになりました。
+[ステージング専用パイプラインと実稼動専用パイプライン](/help/using/stage-prod-only.md)のサポートが導入され、フルスタックの実稼動デプロイメントパイプラインをより小さな特殊なデプロイメントに分割できるようになりました。
 
-この新機能のテストやフィードバックの共有に関心がある場合は、にメールを送信してください。  `Grp-cloudmanager_splitpipelines@adobe.com` Adobe IDに関連付けられたメールアドレスから。
+この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `Grp-cloudmanager_splitpipelines@adobe.com` にメールを送信してください。
 
 ### 独自の GitHub の導入 {#byo-github}
 

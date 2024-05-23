@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 99%
    + CI／CD パイプライン {#pipelines}
       + [実稼動パイプラインの設定](/help/using/production-pipelines.md)
       + [実稼動以外のパイプラインの設定](/help/using/non-production-pipelines.md)
-      + [ステージングおよび実稼動専用パイプライン](/help/using/stage-prod-only.md)
+      + [ステージング専用パイプラインと実稼動専用パイプライン](/help/using/stage-prod-only.md)
       + [パイプラインの管理](/help/using/managing-pipelines.md)
    + [コードのデプロイメント](/help/using/code-deployment.md)
    + [コード品質テスト](/help/using/code-quality-testing.md)
