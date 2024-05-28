@@ -2,10 +2,10 @@
 title: 役割ベースの権限
 description: Cloud Manager の事前設定された役割ベースの権限によるクラウドリソースへのアクセスの管理について説明します。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 1c0c3a751ba2023fc2c2dd5d0d54f914373ad95b
-workflow-type: ht
+source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
+workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Admin Console で割り当てることができる役割の一覧を次の表に
 | デプロイメントマネージャー | このユーザーは、[!UICONTROL Cloud Manager] でデプロイメント操作を管理してステージングおよび実稼動デプロイメントを実行し、必要に応じて重大な 3 層エラーを承認し、Git リポジトリにアクセスできます。 |
 | デベロッパー | このユーザーは、カスタムアプリケーションコードの開発およびテストを担当し、主に [!UICONTROL Cloud Manager] を使用してデプロイメントステータスを確認するほか、Git リポジトリにコミットすることができます。 |
 | カスタマーサクセスエンジニア | このユーザーは、通常、AMS 顧客のカスタマーサクセスをサポートし、カスタマーサクセスエンジニア（CSE）による監督が必要なデプロイメントを実行する目的で [!UICONTROL Cloud Manager] を操作します。 |
-| コンテンツ作成者 | このユーザーは、通常、[!UICONTROL Cloud Manager] を操作しませんが、[!UICONTROL Cloud Manager] プログラムスイッチャー（[!UICONTROL Experience Cloud] からナビゲート）を使用して Adobe Experience Manager（AEM）にアクセスする場合があります。 |
+| コンテンツ作成者 | このユーザーは、通常、Cloud Manager を操作しませんが、Cloud Manager プログラムスイッチャー（Experience Cloudからナビゲート）を使用してAdobe Experience Manager（AEM）にアクセスする場合があります。 |
 
 ## ユーザーの権限 {#user-permissions}
 
