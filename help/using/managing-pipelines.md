@@ -2,10 +2,10 @@
 title: パイプラインの管理
 description: 既存のパイプラインの管理方法（編集、実行、削除を含む）を説明します。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
-workflow-type: ht
-source-wordcount: '800'
-ht-degree: 100%
+source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
+workflow-type: tm+mt
+source-wordcount: '901'
+ht-degree: 88%
 
 ---
 
@@ -96,6 +96,10 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 >
 >実行中のパイプラインは編集できません。
 
+>[!NOTE]
+>
+>Web 層および設定パイプラインは、プライベートリポジトリではサポートされていません。 ドキュメントを参照してください [Cloud Manager でのプライベートリポジトリの追加](/help/managing-code/private-repositories.md) 制限の詳細と完全なリストについて説明します。
+
 ## パイプラインの削除 {#deleting-pipelines}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
@@ -127,6 +131,15 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 「**詳細を表示**」リンクをタップまたはクリックすると、「**期間**」セクションが表示されます。これには、そのプログラムの過去のトレンドに基づくパイプラインの平均期間が含まれます。
 
 ![期間](/help/assets/configure-pipelines/duration.png)
+
+パイプラインにが含まれている場合 **コードスキャン** 問題が発生したステップ。をタップまたはクリックします **詳細をダウンロード** のリストを表示するボタン [コード品質テスト](/help/using/code-quality-testing.md) それは通らなかった。
+
+![コード品質の問題](assets/managing-pipelines-code-quality-issues.png)
+
+A **プロジェクト ファイルの場所** csv ファイル内の列を使用して、問題のあるコードの場所を示すことができます。 この列はプロジェクトに関連するパスであるのに対して、 **ファイルの場所** 列は Maven で生成されます。
+
+![プロジェクト コード スキャン問題の詳細](assets/managing-pipelines-code-quality-details.png)
+
 
 >[!NOTE]
 >

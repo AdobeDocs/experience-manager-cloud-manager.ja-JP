@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager を使用して、クラウド内の AMS �
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+source-git-commit: 3beee350dda077c16975ea628bd4c7b80d7d9160
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 96%
 
 ---
 
@@ -58,17 +58,23 @@ ht-degree: 100%
    + [カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)
    + [コンテンツのコピー](/help/using/content-copy.md)
 + コードの管理 {#managing-code}
+   + [Cloud Manager でのリポジトリの管理](/help/managing-code/managing-repositories.md)
+   + [リポジトリのアクセス情報](/help/managing-code/accessing-repositories.md)
+   + [Adobeリポジトリーの追加](/help/managing-code/adobe-repositories.md)
+   + [プライベートリポジトリーの追加](/help/managing-code/private-repositories.md)
+   + [Git サブモジュールのサポート](/help/managing-code/git-submodules.md)
+   + [GitHub チェック設定](/help/managing-code/github-check-config.md)
+   + [GitHub チェック注釈](/help/managing-code/github-annotations.md)
    + [Maven プロジェクトのバージョン処理](/help/managing-code/maven-project-version.md)
-   + [リポジトリ](/help/managing-code/repositories.md)
    + [Git との統合](/help/managing-code/git-integration.md)
    + [複数 Git リポジトリの操作](/help/managing-code/multiple-git-repos.md)
-   + [独自の GitHub リポジトリの操作](/help/managing-code/byo-github.md)
 + 製品アップデートウィザード {#product-update-wizard}
    + [概要](/help/product-update-wizard/overview.md)
    + [評価](/help/product-update-wizard/evaluation.md)
 + リリースノート {#release-notes}
    + [最新のリリースノート](/help/release-notes/current.md)
    + 2024年度 {#2024}
+      + [2024.5.0 のリリースノート](/help/release-notes/2024/2024-5-0.md)
       + [リリースノート（2024.4.0）](/help/release-notes/2024/2024-4-0.md)
       + [2024.3.0 のリリースノート](/help/release-notes/2024/2024-3-0.md)
       + [リリースノート（2024.2.0）](/help/release-notes/2024/2024-2-0.md)

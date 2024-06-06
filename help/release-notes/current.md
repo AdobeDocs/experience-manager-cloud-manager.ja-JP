@@ -1,19 +1,19 @@
 ---
-title: 2024.5.0 のリリースノート
-description: Cloud Manager リリース 2024.5.0 のリリースノートです。
+title: 2024.6.0 のリリースノート
+description: Cloud Manager リリース 2024.6.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 395fe2a42fc2d6413dff38c9e4620c62039f87e2
-workflow-type: ht
-source-wordcount: '287'
-ht-degree: 100%
+source-git-commit: a41ea35cb685d4e88e016bc887eb2465963747e1
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 48%
 
 ---
 
 
-# Cloud Manager リリース 2024.5.0 のリリースノート {#release-notes}
+# Cloud Manager リリース 2024.6.0 のリリースノート {#release-notes}
 
-このページは、[!UICONTROL Cloud Manager] リリース 2024.5.0 のリリースノートです。
+このページは、[!UICONTROL Cloud Manager] リリース 2024.6.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,11 +21,16 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] リリース 2024.5.0 のリリース日は 2024年5月9日（PT）です。次回のリリースは 2024年6月6日（PT）に予定されています。
+のリリース日 [!UICONTROL Cloud Manager] リリース 2024.6.0 は 2024 年 6 月 6 日です。 次回のリリースは 2024 年 7 月 11 日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* パイプラインが[緊急モード](/help/using/code-deployment.md#emergency-pipeline)で実行されている場合、コンテンツ監査の手順はスキップされるようになりました。
+* これで、 [独自の GitHub リポジトリの使用](/help/managing-code/private-repositories.md) フルスタックパイプラインとフロントエンドパイプラインの両方のソースとして。
+   * さらに、で GitHub リポジトリを利用できます [git サブモジュール](/help/managing-code/git-submodules.md) プルリクエストの検証に使用される自動生成パイプラインの制御を強化し、コードスキャン段階で重要な指標の動作を定義できるようになりました。
+   * [また、次の選択肢があります](/help/managing-code/github-check-config.md) github のレポート履歴を保持するには、パイプラインに名前を付け、必要に応じてパイプライン変数を設定します。
+* 新しい OakPal ルールがに追加されました [Cloud Manager のコード品質スキャン。](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
+   * 2024 年 6 月の時点で追加されたすべての新しいルールは、改行のない変更です。
+   * これらの新しいルールは、Cloud Manager の 2024 年 8 月のリリース以降にパイプラインでエラーが発生する可能性があるので、できるだけ早くこれらの問題に対処することをお勧めします。
 
 ## 早期導入プログラム {#early-adoption}
 
@@ -36,13 +41,3 @@ ht-degree: 100%
 [ステージング専用パイプラインと実稼動専用パイプライン](/help/using/stage-prod-only.md)のサポートが導入され、フルスタックの実稼動デプロイメントパイプラインをより小さな特殊なデプロイメントに分割できるようになりました。
 
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `Grp-cloudmanager_splitpipelines@adobe.com` にメールを送信してください。
-
-### 独自の GitHub の導入 {#byo-github}
-
-GitHub を使用してリポジトリを管理している場合は、[Cloud Manager を通じて GitHub リポジトリ内でコードを直接検証できるようになりました。](/help/managing-code/byo-github.md)この統合により、コードを Adobe リポジトリと一貫して同期する必要がなくなり、プルリクエストをメインブランチに結合する前に検証できるようになります。この機能は、パブリック GitHub 専用です。自己ホスト型 GitHub のサポートは利用できません。
-
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `Grp-CloudManager_BYOG@adobe.com` にメールを送信してください。
-
-## バグの修正 {#bug-fixes}
-
-* Cloud Manager が誤ったコミットハッシュでアーティファクトを再利用するバグを修正しました。

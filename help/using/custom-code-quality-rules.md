@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール
 description: AEM Engineering のベストプラクティスに基づいて、Cloud Manager がコード品質テストの一環として実行するカスタムコード品質ルールについて詳しく説明します。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
-workflow-type: ht
-source-wordcount: '3377'
-ht-degree: 100%
+source-git-commit: 48ae41cb23f6a94fbaf31423f9c5cea3bfd45020
+workflow-type: tm+mt
+source-wordcount: '3513'
+ht-degree: 92%
 
 ---
 
@@ -794,6 +794,74 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 * **最初の対象バージョン**：バージョン 2021.2.0
 
 AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `reindex` という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja#how-to-use)を参照してください。
+
+### インデックス定義ノードを UI コンテンツパッケージにデプロイしないでください {#oakpal-ui-content-package}
+
+* **キー**: IndexNotUnderUIContent
+* **タイプ**：改善点
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2024.6.0
+
+AEM Cloud Serviceでは、カスタム検索インデックス定義（タイプのノード）が禁止されています `oak:QueryIndexDefinition`）に含まれます。
+
+>[!WARNING]
+>
+>で始まるパイプラインのエラーを引き起こすことになるので、この問題にはできるだけ早く対処するよう促します。 [Cloud Manager 2024 年 8 月リリース。](/help/release-notes/current.md)
+
+### damAssetLucene タイプのカスタムフルテキストインデックス定義には、「damAssetLucene」というプレフィックスを正しく付ける必要があります {#oakpal-dam-asset-lucene}
+
+* **キー**:DamAssetCheck の CustomFulltextIndexesOfTheDamAssetCheck
+* **タイプ**：改善点
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2024.6.0
+
+AEM Cloud Serviceでは、タイプのカスタムフルテキストインデックス定義が禁止されています `damAssetLucene` ～以外の何かを前に付けることから `damAssetLucene`.
+
+>[!WARNING]
+>
+>で始まるパイプラインのエラーを引き起こすことになるので、この問題にはできるだけ早く対処するよう促します。 [Cloud Manager 2024 年 8 月リリース。](/help/release-notes/current.md)
+
+### インデックス定義ノードに同じ名前のプロパティを含めることはできません {#oakpal-index-property-name}
+
+* **キー**:DuplicateNameProperty
+* **タイプ**：改善点
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2024.6.0
+
+AEM Cloud Serviceでは、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に同じ名前のプロパティが含まれている
+
+>[!WARNING]
+>
+>で始まるパイプラインのエラーを引き起こすことになるので、この問題にはできるだけ早く対処するよう促します。 [Cloud Manager 2024 年 8 月リリース。](/help/release-notes/current.md)
+
+### 特定の OOTB インデックス定義のカスタマイズは禁止されています {#oakpal-customizing-ootb-index}
+
+* **キー**:RestrictIndexCustomization
+* **タイプ**：改善点
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2024.6.0
+
+AEM Cloud Serviceでは、次の OOTB インデックスを無許可で変更することは禁止されています。
+
+* `nodetypeLucene`
+* `slingResourceResolver`
+* `socialLucene`
+* `appsLibsLucene`
+* `authorizables`
+* `pathReference`
+
+>[!WARNING]
+>
+>で始まるパイプラインのエラーを引き起こすことになるので、この問題にはできるだけ早く対処するよう促します。 [Cloud Manager 2024 年 8 月リリース。](/help/release-notes/current.md)
+
+### アナライザーのトークナイザーの構成は、「tokenizer」という名前で作成する必要があります {#oakpal-tokenizer}
+
+* **キー**:AnalyzerTokenizerConfigCheck
+* **タイプ**：改善点
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2024.6.0
+
+AEM Cloud Serviceでは、アナライザーで間違った名前のトークナイザーを作成できません。 Tokenizer は、常に次のように定義する必要があります `tokenizer`.
 
 ## Dispatcher 最適化ツール {#dispatcher-optimization-tool-rules}
 

@@ -2,8 +2,8 @@
 title: Cloud Manager UI の操作
 description: Cloud Manager UI の整理方法と、プログラムと環境を管理する操作方法について説明します。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
-workflow-type: ht
+source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
+workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 100%
 
@@ -168,7 +168,7 @@ Cloud Manager ヘッダーには、自動的に開くハンバーガーメニュ
 * 概要 - 現在のドキュメントに記載されているプログラムの概要
 * [アクティビティ](/help/using/managing-pipelines.md#activity) - プログラムのパイプライン実行の履歴
 * [パイプライン](/help/using/managing-pipelines.md#pipelines) - プログラムに対して設定されたすべてのパイプライン
-* [リポジトリ](/help/managing-code/repositories.md) - プログラムに対して設定されたすべてのリポジトリ
+* [リポジトリ](/help/managing-code/managing-repositories.md) - プログラムに対して設定されたすべてのリポジトリ
 * [レポート](/help/using/monitoring-environments.md#system-monitoring-overview) - SLA データなどの指標
 * [環境](/help/using/managing-environments.md) - プログラムに対して設定されたすべての環境
 * [コンテンツセット](/help/using/content-copy.md) - コピー目的に対して作成されたコンテンツのセット
