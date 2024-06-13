@@ -3,7 +3,7 @@ title: Cloud Manager UI の操作
 description: Cloud Manager UI の整理方法と、プログラムと環境を管理する操作方法について説明します。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1292'
 ht-degree: 100%
 

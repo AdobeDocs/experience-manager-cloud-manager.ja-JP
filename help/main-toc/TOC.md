@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 3beee350dda077c16975ea628bd4c7b80d7d9160
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -60,8 +60,8 @@ ht-degree: 96%
 + コードの管理 {#managing-code}
    + [Cloud Manager でのリポジトリの管理](/help/managing-code/managing-repositories.md)
    + [リポジトリのアクセス情報](/help/managing-code/accessing-repositories.md)
-   + [Adobeリポジトリーの追加](/help/managing-code/adobe-repositories.md)
-   + [プライベートリポジトリーの追加](/help/managing-code/private-repositories.md)
+   + [Adobe リポジトリの追加](/help/managing-code/adobe-repositories.md)
+   + [プライベートリポジトリの追加](/help/managing-code/private-repositories.md)
    + [Git サブモジュールのサポート](/help/managing-code/git-submodules.md)
    + [GitHub チェック設定](/help/managing-code/github-check-config.md)
    + [GitHub チェック注釈](/help/managing-code/github-annotations.md)

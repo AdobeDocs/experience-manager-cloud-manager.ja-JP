@@ -3,7 +3,7 @@ title: 実稼動以外のパイプラインの設定
 description: Cloud Manager を使用して、コードをデプロイするための実稼動以外のパイプラインを作成および設定する方法について説明します。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
 ht-degree: 100%
 

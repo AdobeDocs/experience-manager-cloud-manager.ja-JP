@@ -4,9 +4,9 @@ description: Cloud Manager リリース 2024.6.0 のリリースノートです�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: a41ea35cb685d4e88e016bc887eb2465963747e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 48%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!UICONTROL Cloud Manager] リリース 2024.6.0 は 2024 年 6 月 6 日です。 次回のリリースは 2024 年 7 月 11 日（PT）に予定されています。
+[!UICONTROL Cloud Manager] リリース 2024.6.0 のリリース日は 2024年6月6日（PT）です。次回のリリースは 2024年7月11日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* これで、 [独自の GitHub リポジトリの使用](/help/managing-code/private-repositories.md) フルスタックパイプラインとフロントエンドパイプラインの両方のソースとして。
-   * さらに、で GitHub リポジトリを利用できます [git サブモジュール](/help/managing-code/git-submodules.md) プルリクエストの検証に使用される自動生成パイプラインの制御を強化し、コードスキャン段階で重要な指標の動作を定義できるようになりました。
-   * [また、次の選択肢があります](/help/managing-code/github-check-config.md) github のレポート履歴を保持するには、パイプラインに名前を付け、必要に応じてパイプライン変数を設定します。
-* 新しい OakPal ルールがに追加されました [Cloud Manager のコード品質スキャン。](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
-   * 2024 年 6 月の時点で追加されたすべての新しいルールは、改行のない変更です。
-   * これらの新しいルールは、Cloud Manager の 2024 年 8 月のリリース以降にパイプラインでエラーが発生する可能性があるので、できるだけ早くこれらの問題に対処することをお勧めします。
+* フルスタックパイプラインとフロントエンドパイプラインの両方のソースとして、[独自の GitHub リポジトリを使用](/help/managing-code/private-repositories.md)できるようになりました。
+   * さらに、[Git サブモジュール](/help/managing-code/git-submodules.md)を備えた GitHub リポジトリを活用すると、プルリクエストの検証に使用される自動生成パイプラインのコントロールが強化され、コードスキャンフェーズ中に重要な指標の動作を定義できます。
+   * [また](/help/managing-code/github-check-config.md)、ニーズに合わせて、GitHub にレポート履歴を保存し、パイプラインに名前を付け、パイプライン変数を設定することもできます。
+* 新しい OakPal ルールが、[Cloud Manager コード品質スキャン](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)に追加されました。
+   * 2024年6月の時点で追加されたすべての新しいルールは、重大な変更ではありません。
+   * Cloud Manager 2024年8月リリース以降、これらの新しいルールによりパイプラインでエラーが発生する可能性があるので、できるだけ早くこれらのルールに対処することをお勧めします。
 
 ## 早期導入プログラム {#early-adoption}
 
