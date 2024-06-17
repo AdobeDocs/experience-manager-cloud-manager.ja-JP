@@ -3,9 +3,9 @@ title: Cloud Manager でのリポジトリの管理
 description: Cloud Manager で Git リポジトリを作成、表示および編集する方法について説明します。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 73add7bee892769d1b3864e3238aff26bf96162d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '660'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Cloud Manager で作成されたリポジトリは、パイプラインの追加
 
 * リポジトリのタイプ
    * **アドビ**&#x200B;は、アドビが管理するリポジトリを示します
-   * **GitHub** 管理するプライベート GitHub リポジトリを示します
+   * **GitHub**&#x200B;は、ユーザーが管理するプライベート GitHub リポジトリを示します
 * 作成日時
 * リポジトリに関連付けられているパイプライン
 
@@ -77,12 +77,12 @@ Cloud Manager は、アドビが管理するリポジトリ（**Adobe リポジ�
 
 ## ブランチを確認 {#check-branches}
 
-この **ブランチを確認/ プロジェクトを作成** アクションは、リポジトリの状態に応じて 2 つの機能を実行します。
+**ブランチを確認／プロジェクトを作成**&#x200B;アクションでは、リポジトリの状態に応じて 2 つの機能を実行します。
 
-* リポジトリーを新しく作成する場合、このアクションにより基づいてサンプルプロジェクトが作成されます [AEM プロジェクトアーキタイプ。](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/overview)
-* サンプルプロジェクトがリポジトリで既に作成されている場合は、リポジトリとそのブランチの状態を確認し、サンプルプロジェクトが既に存在するかどうかを報告します。
+* リポジトリを新しく作成する場合、アクションにより、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/overview)に基づいてサンプルプロジェクトが作成されます。
+* リポジトリにサンプルプロジェクトが既に作成されている場合は、リポジトリとこのブランチの状態を確認し、サンプルプロジェクトが既に存在するかどうかを報告します。
 
-![ブランチの確認アクション](assets/check-branches.png)
+![ブランチを確認アクション](assets/check-branches.png)
 
 ## リポジトリ URL を作成 {#copy-url}
 

@@ -4,9 +4,9 @@ description: 独自のプライベート GitHub リポジトリを操作する�
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: 6f14a8e9ff8e56f9f7b84799733e26b4c0ff8dcb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -124,7 +124,7 @@ Cloud Manager で GitHub リポジトリを検証すると統合が完了し、C
 
 Cloud Manager でプライベートリポジトリを使用する場合は、特定の制限が適用されます。
 
-* Cloud Manager から GitHub チェックを使用してプルリクエストの検証を一時停止することはできません。
+* Cloud Manager の GitHub チェックを使用して、プルリクエストの検証を一時停止することはできません。
    * GitHub リポジトリが Cloud Manager で検証されている場合、Cloud Manager は常に、そのリポジトリに対して作成されたプルリクエストの検証を試みます。
 * Adobe GitHub アプリを GitHb 組織から削除すると、すべてのリポジトリのプルリクエスト検証機能が削除されます。
 * 実稼動のフルスタックパイプラインでプライベートリポジトリを使用する場合、Git タグは作成およびプッシュされません。
