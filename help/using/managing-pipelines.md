@@ -2,9 +2,9 @@
 title: パイプラインの管理
 description: 既存のパイプラインの管理方法（編集、実行、削除を含む）を説明します。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
-workflow-type: ht
-source-wordcount: '901'
+source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
+workflow-type: tm+mt
+source-wordcount: '872'
 ht-degree: 100%
 
 ---
@@ -95,10 +95,6 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 >[!NOTE]
 >
 >実行中のパイプラインは編集できません。
-
->[!NOTE]
->
->Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。制限の詳細と完全なリストについては、[Cloud Manager でのプライベートリポジトリの追加](/help/managing-code/private-repositories.md)ドキュメントを参照してください。
 
 ## パイプラインの削除 {#deleting-pipelines}
 

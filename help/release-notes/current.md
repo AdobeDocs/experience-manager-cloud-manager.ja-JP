@@ -3,10 +3,10 @@ title: 2024.6.0 のリリースノート
 description: Cloud Manager リリース 2024.6.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: a41ea35cb685d4e88e016bc887eb2465963747e1
-workflow-type: ht
-source-wordcount: '291'
-ht-degree: 100%
+source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 新機能 {#what-is-new}
 
-* フルスタックパイプラインとフロントエンドパイプラインの両方のソースとして、[独自の GitHub リポジトリを使用](/help/managing-code/private-repositories.md)できるようになりました。
+* これで、 [独自の GitHub リポジトリの使用](/help/managing-code/private-repositories.md) フルスタックパイプラインのソースとして。
    * さらに、[Git サブモジュール](/help/managing-code/git-submodules.md)を備えた GitHub リポジトリを活用すると、プルリクエストの検証に使用される自動生成パイプラインのコントロールが強化され、コードスキャンフェーズ中に重要な指標の動作を定義できます。
    * [また](/help/managing-code/github-check-config.md)、ニーズに合わせて、GitHub にレポート履歴を保存し、パイプラインに名前を付け、パイプライン変数を設定することもできます。
 * 新しい OakPal ルールが、[Cloud Manager コード品質スキャン](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)に追加されました。

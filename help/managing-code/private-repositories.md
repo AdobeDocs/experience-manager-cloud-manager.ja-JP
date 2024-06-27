@@ -3,10 +3,10 @@ title: Cloud Manager でのプライベートリポジトリの追加
 description: 独自のプライベート GitHub リポジトリを操作するために Cloud Manager を設定する方法について説明します。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 6f14a8e9ff8e56f9f7b84799733e26b4c0ff8dcb
-workflow-type: ht
-source-wordcount: '868'
-ht-degree: 100%
+source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
+workflow-type: tm+mt
+source-wordcount: '855'
+ht-degree: 98%
 
 ---
 
@@ -114,11 +114,7 @@ Cloud Manager で GitHub リポジトリを検証すると統合が完了し、C
 
 ## プライベートリポジトリとパイプラインの関連付け {#pipelines}
 
-検証済みのプライベートリポジトリは、[フルスタックパイプラインおよびフロントエンドパイプライン](/help/overview/ci-cd-pipelines.md)に関連付けることができます。
-
->[!NOTE]
->
->Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。
+検証済みのプライベートリポジトリは、次と関連付けることができます [フルスタックパイプライン。](/help/overview/ci-cd-pipelines.md)
 
 ## 制限事項 {#limitations}
 
