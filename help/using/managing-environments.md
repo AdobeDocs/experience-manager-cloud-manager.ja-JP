@@ -2,10 +2,10 @@
 title: 環境の管理
 description: Cloud Manager を使用して環境を管理する方法について説明します。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
-workflow-type: ht
-source-wordcount: '264'
-ht-degree: 100%
+source-git-commit: 116a930eea08b2bb9d288ec153519699754e0374
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 95%
 
 ---
 
@@ -51,6 +51,10 @@ Cloud Manager の&#x200B;**概要**&#x200B;ページには、管理対象のす�
 * 黄 - 使用不可
 
 ![「環境」タブ](/help/assets/Environments-tab.png)
+
+>[!NOTE]
+>
+>環境の詳細（名前など）は、プロビジョニング後は変更できません。
 
 >[!NOTE]
 >
