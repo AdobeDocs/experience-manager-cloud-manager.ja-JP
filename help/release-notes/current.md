@@ -3,10 +3,10 @@ title: 2024.6.0 のリリースノート
 description: Cloud Manager リリース 2024.6.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
-workflow-type: ht
+source-git-commit: 851b556c0917d9f6d97d958a0c8e8aeff4141079
+workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] リリース 2024.6.0 のリリース日は 2024年6月6日（PT）です。次回のリリースは 2024年7月11日（PT）に予定されています。
+[!UICONTROL Cloud Manager] リリース 2024.6.0 のリリース日は 2024年6月6日（PT）です。次回のリリースは 2024 年 7 月 18 日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
