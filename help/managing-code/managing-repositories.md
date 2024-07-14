@@ -3,7 +3,7 @@ title: Cloud Manager でのリポジトリの管理
 description: Cloud Manager で Git リポジトリを作成、表示および編集する方法について説明します。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 73add7bee892769d1b3864e3238aff26bf96162d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Cloud Manager で作成されたリポジトリは、パイプラインの追加
 
 * リポジトリのタイプ
    * **アドビ**&#x200B;は、アドビが管理するリポジトリを示します
-   * **GitHub**&#x200B;は、ユーザーが管理するプライベート GitHub リポジトリを示します
+   * **GitHub** は、ユーザーが管理するプライベート GitHub リポジトリを示します
 * 作成日時
 * リポジトリに関連付けられているパイプライン
 

@@ -1,13 +1,13 @@
 ---
 title: Git サブモジュールのサポート
 description: Git サブモジュールを使用して、ビルド時に Git リポジトリ間で複数のブランチのコンテンツを結合する方法について説明します。
-source-git-commit: aa30c0024e422c96f0dfbaa2804e75143faf14dc
-workflow-type: ht
+exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
+source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 100%
 
 ---
-
 
 # Adobe リポジトリに対する Git サブモジュールのサポート {#git-submodule-support}
 
@@ -79,7 +79,7 @@ Git サブモジュールを使用する場合は、次の点に注意してく�
 
 ## プライベートリポジトリに対する Git サブモジュールのサポート {#private-repositories}
 
-[プライベートリポジトリ](private-repositories.md)を使用する場合の Git サブモジュールのサポートは、Adobe リポジトリを使用する場合とほとんど同じです。
+[プライベートリポジトリ](private-repositories.md)を使用する際の Git サブモジュールのサポートは、Adobe リポジトリを使用する際とほとんど同じです。
 
 ただし、`pom.xml` ファイルを設定して `git submodule` コマンドを実行した後、Cloud Manager でサブモジュールの設定を検出するために、集積リポジトリのルートディレクトリに `.gitmodules` ファイルを追加する必要があります。
 
@@ -91,7 +91,7 @@ Git サブモジュールを使用する場合は、次の点に注意してく�
 
 プライベートリポジトリで Git サブモジュールを使用する場合は、次の制限事項に注意してください。
 
-* サブモジュールの Git URL は、HTTPS 形式または SSH 形式のいずれかになりますが、github.com リポジトリにリンクする必要があります。
+* サブモジュールの Git URL は、HTTPS 形式または SSH 形式のいずれかですが、github.com リポジトリにリンクする必要があります
    * Adobe リポジトリサブモジュールを GitHub 集積リポジトリに追加したり、その逆を行ったりすることはできません。
-* GitHub サブモジュールでは、Adobe GitHub アプリにアクセスできる必要があります。
+* GitHub サブモジュールは、Adobe GitHub アプリからアクセスできる必要があります。
 * また、[アドビが管理するリポジトリで Git サブモジュールを使用する場合の制限事項](#limitations-recommendations)も適用されます。

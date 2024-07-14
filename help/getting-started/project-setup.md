@@ -3,8 +3,8 @@ title: プロジェクトのセットアップ
 description: Cloud Manager でプロジェクトを管理およびデプロイできるようにプロジェクトを設定する方法について説明します。
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: ht
-source-wordcount: '1432'
+workflow-type: tm+mt
+source-wordcount: '1428'
 ht-degree: 100%
 
 ---
@@ -316,7 +316,7 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 両方のブランチのコミット ID が同じです。
 
-1. 開発パイプラインは、`foo` のビルドと実行をおこないます。
+1. 開発パイプラインは、`foo` のビルドと実行を行います。
 1. その後、実稼動パイプラインが `bar` をビルドおよび実行します。
 
 この場合、同じコミットハッシュが特定されたので、`foo` のアーティファクトは実稼動パイプラインで再利用されます。

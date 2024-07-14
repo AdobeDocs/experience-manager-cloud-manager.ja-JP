@@ -3,8 +3,8 @@ title: ユーザージャーニー
 description: このドキュメントでは、様々なオンボーディングシナリオを説明し、Cloud Manager の使用を開始する手順について説明します。
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
-workflow-type: ht
-source-wordcount: '546'
+workflow-type: tm+mt
+source-wordcount: '539'
 ht-degree: 100%
 
 ---
@@ -32,7 +32,7 @@ AMS を初めて使用する場合と、既存の AMS ユーザーでは、オ�
 
 新規のお客様は、Adobe Managed Services のオンボーディングプロセスの一環として [!UICONTROL Cloud Manager] にオンボーディングされます。
 
-オンボーディングプロセスの一環として、次の内容のお知らせメールが届きます。
+オンボーディングプロセスの一環として、次の内容のウェルカムメールが届きます。
 
 * [!UICONTROL Cloud Manager] にアクセスする URL
 * [!UICONTROL Experience Cloud] へのログイン手順

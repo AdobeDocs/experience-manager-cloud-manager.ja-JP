@@ -4,8 +4,8 @@ description: Admin Consoleを使用して、ユーザーと役割を追加し、
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 source-git-commit: dd96d773ea3e6b9c45886fe41b28d3dd70cb8a61
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 100%
+source-wordcount: '774'
+ht-degree: 96%
 
 ---
 
@@ -73,7 +73,7 @@ Admin Console を使用して、これらの製品プロファイルにユーザ
 
 1. [!UICONTROL Cloud Manager] の新しい役割を設定するための情報を入力します。
 
-   * **プロファイル名** - 「**プロファイル名**」は何でも構いません、混乱を避けるために、**推奨プロファイル名**&#x200B;列の値を使用することをお勧めします。
+   * **プロファイル名** - **プロファイル名** は何でも構いません、混乱を避けるために、**推奨プロファイル名** 列の値を使用することをお勧めします。
    * **表示名** - 「**表示名**」は、[!UICONTROL Cloud Manager] で定義されている技術値（以下の表を参照）にする必要があります。
    * **権限グループ** - プロファイルの権限グループを選択できます（常に使用可能とは限りません）。
 

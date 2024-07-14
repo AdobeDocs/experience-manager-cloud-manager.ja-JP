@@ -3,8 +3,8 @@ title: 新規プロジェクトウィザードの使用
 description: このページでは、ウィザードを使用して AEM アプリケーションプロジェクトを作成する方法を説明します
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 source-git-commit: cb791a4f148ba394687b5e824b75fe1386d83c18
-workflow-type: ht
-source-wordcount: '330'
+workflow-type: tm+mt
+source-wordcount: '326'
 ht-degree: 100%
 
 ---

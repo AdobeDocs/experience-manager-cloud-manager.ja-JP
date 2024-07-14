@@ -1,13 +1,13 @@
 ---
 title: Cloud Manager での Adobe リポジトリの追加
 description: Cloud Manager でアドビが管理するリポジトリを作成する方法について説明します。
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: ht
+exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
+source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%
 
 ---
-
 
 # Cloud Manager での Adobe リポジトリの追加 {#adobe-repositories}
 
@@ -15,7 +15,7 @@ Cloud Manager でアドビが管理するリポジトリを作成する方法に
 
 ## アドビが管理するリポジトリの追加 {#add-adobe-repository}
 
-**リポジトリ**&#x200B;ウィンドウを使用すると、アドビが管理するリポジトリをプログラムに簡単に追加できます。
+**リポジトリ**&#x200B;ウィンドウを使用すると、アドビが管理するリポジトリをプログラムに容易に追加できます。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 

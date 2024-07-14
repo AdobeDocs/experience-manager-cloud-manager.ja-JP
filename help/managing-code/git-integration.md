@@ -3,8 +3,8 @@ title: Adobe Cloud Manager と Git の統合
 description: このビデオシリーズでは、顧客管理（オンプレミス）の Git リポジトリと Adobe Cloud Manager のセットアップおよび統合について順を追って説明します。
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 source-git-commit: 91e909273bf2b21d7f6413731923011915079e45
-workflow-type: ht
-source-wordcount: '347'
+workflow-type: tm+mt
+source-wordcount: '340'
 ht-degree: 100%
 
 ---

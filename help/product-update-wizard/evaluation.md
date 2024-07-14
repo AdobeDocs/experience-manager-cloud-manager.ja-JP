@@ -4,8 +4,8 @@ seo-title: Evaluation Phase
 description: 製品アップデートウィザードの評価フェーズで、パターン検出を使用してアップグレードの複雑さを評価する方法について説明します。
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
 source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
-workflow-type: ht
-source-wordcount: '296'
+workflow-type: tm+mt
+source-wordcount: '289'
 ht-degree: 100%
 
 ---

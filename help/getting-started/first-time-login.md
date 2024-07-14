@@ -3,7 +3,7 @@ title: 初回ログイン
 description: 一般設定をセットアップし、Cloud Manager を初めて使用する準備が整っている場合は、このページの手順に従ってください。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: 1417d3bfa5a844641e0942d1fe1bd7bf84e41997
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
 

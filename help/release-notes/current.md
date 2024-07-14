@@ -4,7 +4,7 @@ description: Cloud Manager リリース 2024.6.0 のリリースノートです�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 851b556c0917d9f6d97d958a0c8e8aeff4141079
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: セキュリティとプライバシー
 description: Cloud Manager でのコードおよびアーティファクトアセットのセキュリティとプライバシーについて説明します。
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
 source-git-commit: d7751757c1d3bda3d60406a1d39cb41c61f5c863
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%
 

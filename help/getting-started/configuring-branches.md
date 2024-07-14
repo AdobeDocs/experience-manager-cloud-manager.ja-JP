@@ -3,8 +3,8 @@ title: ブランチの設定
 description: Git で最初のブランチを設定する方法と、CI／CD パイプラインでアプリケーションコードをデプロイする際にブランチを使用する方法について説明します。
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
-workflow-type: ht
-source-wordcount: '329'
+workflow-type: tm+mt
+source-wordcount: '325'
 ht-degree: 100%
 
 ---

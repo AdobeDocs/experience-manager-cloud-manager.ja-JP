@@ -3,7 +3,7 @@ title: 環境の監視
 description: Cloud Manager で環境を監視する方法について説明します。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 100%
 

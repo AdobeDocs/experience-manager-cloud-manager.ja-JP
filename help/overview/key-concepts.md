@@ -3,7 +3,7 @@ title: 主な概念
 description: すべての強力なツールと同様に、Cloud Manager には様々な概念や用語が含まれています。このドキュメントでは、Cloud Manager の使用を開始する際に最も重要な事項の一部をまとめます。
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 source-git-commit: 67621fb2dbb0c32371b2ffc16ec45f47daf04e05
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
 

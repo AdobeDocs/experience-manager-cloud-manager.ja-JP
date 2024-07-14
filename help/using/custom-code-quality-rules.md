@@ -3,7 +3,7 @@ title: カスタムコード品質ルール
 description: AEM Engineering のベストプラクティスに基づいて、Cloud Manager がコード品質テストの一環として実行するカスタムコード品質ルールについて詳しく説明します。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 48ae41cb23f6a94fbaf31423f9c5cea3bfd45020
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3513'
 ht-degree: 100%
 
@@ -802,11 +802,11 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2024.6.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（タイプ `oak:QueryIndexDefinition` のノード）を UI コンテンツパッケージにデプロイすることが禁止されています。
+AEM Cloud Service では、UI コンテンツパッケージでカスタム検索インデックス定義（タイプ `oak:QueryIndexDefinition` のノード）をデプロイすることは禁止されています。
 
 >[!WARNING]
 >
->[Cloud Manager 2024年8月リリース。](/help/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします
+>[Cloud Manager 2024年8月リリース](/help/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします
 
 ### damAssetLucene タイプのカスタムフルテキストインデックス定義には、「damAssetLucene」というプレフィックスを正しく付ける {#oakpal-dam-asset-lucene}
 
@@ -819,7 +819,7 @@ AEM Cloud Service では、`damAssetLucene` タイプのカスタムフルテキ
 
 >[!WARNING]
 >
->[Cloud Manager 2024年8月リリース。](/help/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします
+>[Cloud Manager 2024年8月リリース](/help/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします
 
 ### インデックス定義ノードに同じ名前のプロパティを含めない {#oakpal-index-property-name}
 
@@ -832,7 +832,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（つま�
 
 >[!WARNING]
 >
->[Cloud Manager 2024年8月リリース。](/help/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします
+>[Cloud Manager 2024年8月リリース](/help/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします
 
 ### 特定の OOTB インデックス定義のカスタマイズは禁止されている {#oakpal-customizing-ootb-index}
 
@@ -852,9 +852,9 @@ AEM Cloud Service では、次の OOTB インデックスの許可されてい�
 
 >[!WARNING]
 >
->[Cloud Manager 2024年8月リリース。](/help/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします
+>[Cloud Manager 2024年8月リリース](/help/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします
 
-### アナライザーの Tokenizers の設定は、「tokenizer」という名前で作成する {#oakpal-tokenizer}
+### アナライザーのトークナイザーの設定は、「tokenizer」という名前で作成する {#oakpal-tokenizer}
 
 * **キー**：AnalyzerTokenizerConfigCheck
 * **タイプ**：改善点

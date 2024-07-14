@@ -3,7 +3,7 @@ title: コンテンツコピーツール
 description: Cloud Manager のコンテンツコピーツールを使用すると、可変コンテンツをオンデマンドで AMS でホストされている AEM 6.x 実稼動環境から下位の環境にテスト目的でコピーできます。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 655111cdf7327e92e03ac7eedd9eedd87cd4b2f1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 100%
 
