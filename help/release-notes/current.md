@@ -3,10 +3,10 @@ title: 2024.7.0 のリリースノート
 description: Cloud Manager リリース 2024.7.0 のリリースノートです。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: d536cd96d135e48039f94fd01142a63305b6eeae
+source-git-commit: 87c603a89b99f6984828280cba2041da8c72e839
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 61%
+source-wordcount: '238'
+ht-degree: 59%
 
 ---
 
@@ -28,6 +28,8 @@ ht-degree: 61%
 * コミット時にパイプラインを開始するための [ 実稼動パイプライン ](/help/using/production-pipelines.md#adding-production-pipeline) および [ 実稼動以外のパイプライン ](/help/using/non-production-pipelines.md#adding-non-production-pipeline)トリガー&#x200B;**Git の変更時** が [ プライベートリポジトリ ](/help/managing-code/private-repositories.md) で使用できるようになりました。
 * 実稼動前のパイプラインは手動でのみトリガーでき、**Git の変更時** として設定することはできません。
 * 実稼動専用パイプラインの場合、昇格可能な実行のリストには、実稼動環境にデプロイされたアーティファクトのバージョンよりも大きいアーティファクトのバージョンが含まれます。
+* [AEM プロジェクトアーキタイプ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) が [ バージョン 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49) に更新されました。
+
 
 ## 早期導入プログラム {#early-adoption}
 
