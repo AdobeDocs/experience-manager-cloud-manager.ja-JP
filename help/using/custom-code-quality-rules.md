@@ -3,9 +3,9 @@ title: カスタムコード品質ルール
 description: AEM Engineering のベストプラクティスに基づいて、Cloud Manager がコード品質テストの一環として実行するカスタムコード品質ルールについて詳しく説明します。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 8f0f5e819cf312ef25beac815beca92d4e3ac255
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3544'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -863,14 +863,14 @@ AEM Cloud Service では、次の OOTB インデックスの許可されてい�
 
 AEM Cloud Service では、アナライザーで正しくない名前の tokenizer を作成することが禁止されています。Tokenizer は、常に `tokenizer` として定義する必要があります。
 
-### インデックス定義の設定にスペースを含めることはできません {#oakpal-indexing-definitions-spaces}
+### インデックス作成定義の設定にスペースを含めることはできない {#oakpal-indexing-definitions-spaces}
 
-* **キー**:PathSpacesCheck
+* **キー**：PathSpacesCheck
 * **タイプ**：改善点
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2024.7.0
 
-AEM Cloud Serviceでは、スペースを含んだプロパティを含むインデックス作成定義を作成できません。
+AEM Cloud Service では、プロパティにスペースを使用したインデックス作成定義の作成が禁止されています。
 
 ## Dispatcher 最適化ツール {#dispatcher-optimization-tool-rules}
 
