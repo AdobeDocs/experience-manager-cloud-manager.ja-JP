@@ -2,12 +2,13 @@
 title: Cloud Manager UI の操作
 description: Cloud Manager UI の整理方法と、プログラムと環境を管理する操作方法について説明します。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
+source-git-commit: d4d9a9f38c5a969f276140dca98731c670547a3d
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 100%
+source-wordcount: '1439'
+ht-degree: 80%
 
 ---
+
 
 # Cloud Manager UI の操作 {#navigation}
 
@@ -15,10 +16,10 @@ Cloud Manager UI の整理方法と、プログラムと環境を管理する操
 
 Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェイスで構成されます。
 
-* [マイプログラムコンソール](#my-programs)：すべてのプログラムを表示および管理できます。
+* [マイプログラムコンソール](#my-programs-console)：すべてのプログラムを表示および管理できます。
 * [プログラムの概要ウィンドウ](#program-overview)：個々のプログラムの詳細を確認して管理できます。
 
-## マイプログラムコンソール {#my-programs}
+## マイプログラムコンソール {#my-programs-console}
 
 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択すると、**マイプログラム**&#x200B;コンソールが表示されます。
 
@@ -27,8 +28,13 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 マイプログラムコンソールには、選択した組織でアクセス権を持つすべてのプログラムの概要が表示されます。複数のパーツで構成されます。
 
 1. [ツールバー](#toolbars-my-programs-toolbars)：組織の選択、アラート、アカウント設定を行います。
-1. [統計とコールトゥアクション](#statistics)：最近のアクティビティの概要を確認します。
-1. [プログラムとライセンス](#programs-license)：現在のライセンスステータスを把握し、プログラムを管理します。
+1. プログラムの現在の表示を切り替えることができるタブです。
+   * **ホーム** ビュー（デフォルト）：すべてのプログラムの概要を表示する **マイプログラム** ビューを選択します
+   * **License**：ライセンスダッシュボードにアクセスします。 ライセンスダッシュボードは、AEM as a Cloud Service プログラムにのみ適用され、AMS プログラムには適用されません。
+      * プログラムのサービスの種類（AMS または AEMaaCS）を判断するには、このドキュメントの [ プログラムカードの節 ](#program-cards) を参照してください。
+   * タブはデフォルトで閉じられ、[Cloud Managerヘッダーのハンバーガーメニューで表示されることに注意してください。](#cloud-manager-header)
+1. 最近のアクティビティの概要については、[ コールトゥアクションと統計 ](#cta-statistics) を参照してください
+1. [**マイプログラム** セクション ](#my-programs-section) と、すべてのプログラムの概要
 1. [クイックリンク](#quick-links)：関連するリソースに簡単にアクセスします。
 
 >[!TIP]
@@ -45,6 +51,9 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 ![Experience Cloud ヘッダー](assets/experience-cloud-header.png)
 
+1. ハンバーガーメニューには、タブへのアクセスが可能で、コンテキストに応じて、個々のプログラムのの特定の部分に移動したり、ライセンスダッシュボードと **[マイプログラム](#my-programs-console)** コンソールを切り替えたりできます。
+   * ライセンスダッシュボードは、AEM as a Cloud Service プログラムにのみ適用され、AMS プログラムには適用されません。
+   * プログラムのサービスの種類（AMS または AEMaaCS）を判断するには、このドキュメントの [ プログラムカードの節 ](#program-cards) を参照してください。
 1. Cloud Manager ボタンをクリックすると、Cloud Manager のどこにいても、Cloud Manager のマイプログラムコンソールコンソールに戻ります。
 1. 「フィードバック」ボタンをタップまたはクリック、Cloud Manager に関するフィードバックをアドビに送信します。
 1. 組織セレクターには、現在ログインしている組織（この例では、Foundation 内部）が表示されます。Adobe ID が複数の組織に関連付けられている場合、別の組織に切り替えるには、タップまたはクリックします。
@@ -64,9 +73,9 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
    * オンボーディングジャーニーは、AMS のクラウドサービスではなく、AEM as a Cloud Service 向けに設計されていますが、多くの概念は同じです。
 1. アクションボタンを使用すると、新しいプログラムの作成など、コンテキストに適したアクションを実行できます。
 
-### 統計 {#statistics}
+### コールトゥアクションと統計 {#cta-statistics}
 
-統計セクションでは、組織の集計データが提供されます。例えば、プログラムを正常に設定した場合、過去 90 日間のアクティビティの統計には、次の内容が表示されることがあります。
+「コールトゥアクションと統計」セクションには、組織の集計データが表示されます。例えば、プログラムを正常に設定した場合、過去 90 日間のアクティビティの統計に次のような情報が表示されます。
 
 * [デプロイ](/help/using/code-deployment.md)数
 * 特定された[コード品質の問題](/help/using/code-quality-testing.md)の数
@@ -74,13 +83,13 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 組織の設定を開始したばかりの場合は、次の手順やドキュメントのリソースに関するヒントが表示される場合があります。
 
-### プログラムとライセンス {#programs-license}
+### マイ プログラム セクション {#my-programs-section}
 
-マイプログラムコンソールの主なコンテンツは、プログラムのリストとライセンスのステータスです。
+マイプログラムコンソールの主なコンテンツは、プログラムを個々のカードとして一覧表示する **マイプログラム** セクションです。 カードをタップまたはクリックすると、**プログラムの概要**&#x200B;ページにアクセスしてプログラムの詳細を確認できます。
 
-#### 「プログラム」タブ {#programs}
-
-「**プログラム**」タブには、アクセス権のある各プログラムを表すカードが一覧表示されます。カードをタップまたはクリックすると、**プログラムの概要**&#x200B;ページにアクセスしてプログラムの詳細を確認できます。
+>[!NOTE]
+>
+>権限によっては、特定のプログラムを選択できない場合があります。
 
 並べ替えオプションを使用すると、必要なプログラムを見つけやすくなります。
 
@@ -94,13 +103,17 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 * グリッド表示（デフォルト）
 * リスト表示
 
+#### プログラムカード {#program-cards}
+
 すべてのプログラムはカード（またはテーブルの行）で表され、プログラムの概要と、アクションを実行するためのクイックリンクを提供します。
 
 ![プログラムカード](assets/program-card.png)
 
 * プログラム画像（設定されている場合）
 * プログラム名
-* サービスタイプ：[AEM as a Cloud Service プログラム](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/home)の **Experience Manager Cloud** または AMS プログラムの **Experience Manager**
+* サービスタイプ：
+   * AMS プログラムの **Experience Manager**
+   * [AEM as a Cloud Service プログラム用の **0}Experience Managerクラウド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/home)**
 * ステータス
 * 設定済みのソリューション
 * 作成日
@@ -118,17 +131,13 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 * [プログラムを編集](/help/getting-started/program-setup.md)
 * モニタリングを表示
 
-#### 「ライセンス」タブ {#license-tab}
-
-「**ライセンス**」タブからライセンスダッシュボードにすばやくアクセスできます。
-
 ### クイックリンク {#quick-links}
 
 「クイックリンク」セクションでは、一般的に使用される関連リソースにアクセスできます。
 
 ## プログラムの概要ウィンドウ {#program-overview}
 
-マイプログラムコンソールでプログラムを選択すると、プログラムの概要に移動できます。
+[**マイプログラム** コンソールでプログラムを選択すると ](#my-programs-console) プログラムの概要に移動します。
 
 ![プログラムの概要](assets/program-overview.png)
 
