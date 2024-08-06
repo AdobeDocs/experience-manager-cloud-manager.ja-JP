@@ -1,17 +1,16 @@
 ---
-source-git-commit: db9e8c7fe003f2199b4bc529f6f1768681c35654
-workflow-type: ht
-translation-type: ht
-source-wordcount: '75'
-ht-degree: 100%
+source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
+workflow-type: tm+mt
+source-wordcount: '74'
+ht-degree: 86%
 
 ---
 # Adobe Experience Manager Cloud Manager ドキュメント
 
-Adobe Experience Manager Cloud Manager ドキュメントのリポジトリです。
+このリポジトリは、Adobe Experience Manager Cloud Manager ドキュメント用です。
 
-ドキュメントに対する貢献を歓迎します。次のリソースを参照してください。
+ドキュメントへの投稿を歓迎します。次のリソースを参照してください。
 
-* [contributing.md](contributing.md)：ドキュメントに対する貢献方法の概要。
+* [contributing.md](contributing.md)：ドキュメントへの投稿方法の概要。
 * [guidelines.md](guidelines.md)：投稿で期待される内容とドキュメント投稿の作成方法の概要。
-* [code-of-conduct.md](code-of-conduct.md)：このドキュメントプロジェクトへの投稿時に期待される行動の基準の概要。
+* [code-of-conduct.md](code-of-conduct.md)：このドキュメントプロジェクトへの貢献時にアドビが期待する行動の基準の概要。
