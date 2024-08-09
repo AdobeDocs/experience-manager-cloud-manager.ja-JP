@@ -1,8 +1,8 @@
 ---
 source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '74'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 # Adobe Experience Manager Cloud Manager ドキュメント
