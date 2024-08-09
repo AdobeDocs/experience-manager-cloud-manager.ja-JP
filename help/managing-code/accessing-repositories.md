@@ -2,10 +2,10 @@
 title: リポジトリのアクセス情報
 description: Cloud Manager でセルフサービスの Git アカウント管理を使用して、アドビが管理する Git リポジトリにアクセスして管理する方法について説明します。
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '394'
+ht-degree: 82%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager では、パイプラインカードの目立つ位置にある「
 
    ![環境カードの「リポジトリ情報にアクセス」ボタン](assets/pipelines-card.png)
 
-1. 「**リポジトリ情報にアクセス**」ボタンをタップまたはクリックして、**リポジトリ情報**&#x200B;ダイアログを開き、次の情報を表示します。
+1. 「**リポジトリ情報にアクセス**」ボタンをクリックして **リポジトリ情報** ダイアログを開き、次の情報を表示します。
 
    * Git ユーザー名。
    * Git パスワード。
@@ -32,9 +32,9 @@ Cloud Manager では、パイプラインカードの目立つ位置にある「
 
    ![リポジトリ情報ウィンドウ](assets/access-repo-info.png)
 
-1. パスワードにアクセスするには、新しいパスワードを生成する必要があります。これを行うには、「**パスワードを生成**」ボタンをタップまたはクリックします。
+1. パスワードにアクセスするには、新しいパスワードを生成する必要があります。これを行うには、「**パスワードの生成** ボタンをクリックします。
 
-1. **...してもよろしいですか？**&#x200B;と表示されるダイアログで「**パスワードを生成**」をタップまたはクリックして、パスワードの生成を確認します。
+1. **パスワードを生成** をクリックして、**よろしいですか…** ダイアログボックスでパスワードの生成を確認します。
 
    ![パスワードの生成を確認](assets/confirm-password-generation.png)
 
@@ -55,10 +55,10 @@ Cloud Manager では、パイプラインカードの目立つ位置にある「
 
 ## リポジトリウィンドウからのリポジトリ情報へのアクセス {#repositories-window}
 
-[**リポジトリ**&#x200B;ウィンドウのツールバーには、「**リポジトリ情報にアクセス**」ボタンもあります。](managing-repositories.md)アドビが管理するリポジトリへのアクセスに関する、同じ情報が表示されます。
+「**リポジトリ情報にアクセス**」ボタンは、「[**リポジトリ**」ウィンドウのツールバーでも使用できます。このボタンには ](managing-repositories.md)Adobeが管理するリポジトリへのアクセスに関する同じ情報が表示されます。
 
 ## アクセスパスワードの失効 {#revoke-password}
 
-アクセスパスワードはいつでも失効できます。これを行うには、[このリクエストに対するサポートチケットを作成](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager&amp;support-tab=home#support)してください。
+アクセスパスワードはいつでも失効できます。それには、[ このリクエストのサポートチケットを作成 ](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager&amp;support-tab=home#support) します。
 
 チケットは高い優先度で処理され、1 日以内に失効されます。

@@ -2,10 +2,10 @@
 title: ユーザーと役割の追加
 description: Admin Consoleを使用して、ユーザーと役割を追加し、プロファイルを作成する方法について説明します。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: dd96d773ea3e6b9c45886fe41b28d3dd70cb8a61
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 96%
+source-wordcount: '769'
+ht-degree: 80%
 
 ---
 
@@ -57,9 +57,9 @@ Admin Console では、組織全体にわたるアドビ製品の使用権限を
 
 Admin Console を使用して、これらの製品プロファイルにユーザーやグループを作成または追加できます。
 
-1. Admin Console（[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)）にログインします。
+1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) からAdmin Consoleにログインします。
 
-1. 「**概要**」タブをクリックし、変更する製品を&#x200B;**製品とサービス**&#x200B;カードでクリックします。該当する製品がリストにない場合は、「**製品**」タブをクリックして製品を検索し、クリックします。
+1. **概要** タブをクリックし、変更する製品を **製品とサービス** カードでクリックします。 該当する製品がリストにない場合は、「**製品**」タブをクリックして製品を検索し、クリックします。
 
    ![Admin Console の「概要」タブ](/help/assets/admin-console-overview.png)
 
@@ -93,21 +93,21 @@ Admin Console を使用して、これらの製品プロファイルにユーザ
 
 製品プロファイルを作成したら、それにユーザーまたはユーザーグループを割り当てることができます。
 
-1. Admin Console（[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)）にログインします。
+1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) からAdmin Consoleにログインします。
 
 1. Admin Console で、「**ユーザー**」タブを選択します。
 
    ![「ユーザー」タブ](/help/assets/admin-console-users.png)
 
-1. 左側のナビゲーションパネルで「**ユーザー**」をクリックしたあと、ユーザーをクリックして変更します。
+1. 左側のナビゲーションパネルで **ユーザー** をクリックしたあと、ユーザーをクリックして変更します。
 
-1. 「**製品**」セクションの省略記号ボタンをクリックし、「**編集**」を選択します。
+1. 「**製品**」セクションの省略記号ボタンをクリックし、「**編集** を選択します。
 
    ![ユーザーの編集](/help/assets/admin-console-edit-user.png)
 
-1. **製品とユーザーグループの編集**&#x200B;ダイアログで、「+」ボタンをクリックし、ユーザーに割り当てるプロファイルを選択します。
+1. **製品とユーザーグループの編集** ダイアログボックスで、「+」ボタンをクリックし、ユーザーに割り当てるプロファイルを選択します。
 
-   * ユーザーが役割に既に割り当てられている場合、「+」ボタンは編集ボタン（鉛筆）になりますが、同じように機能します。
+   * ユーザーが既に役割に割り当てられている場合、「+」ボタンは編集ボタン（鉛筆）ですが、同じように機能します。
 
    ![製品とユーザーグループの編集](/help/assets/admin-console-edit-products-and-user-groups.png)
 

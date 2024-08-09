@@ -2,10 +2,10 @@
 title: プライベートリポジトリの GitHub チェック設定
 description: プライベートリポジトリへの各プルリクエストを検証するために自動的に作成されるパイプラインを制御する方法について説明します。
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## GitHub チェックの設定 {#configuration}
 
-[プライベートリポジトリ](private-repositories.md#using)を使用すると、[フルスタックコード品質パイプライン](/help/overview/ci-cd-pipelines.md)が自動的に作成されます。このパイプラインは、プルリクエストの更新のたびに開始されます。
+[ プライベートリポジトリ ](private-repositories.md#using) を使用する場合、[ フルスタックコード品質パイプライン ](/help/overview/ci-cd-pipelines.md) が自動的に作成されます。 このパイプラインは、プルリクエストの更新のたびに開始されます。
 
 プライベートリポジトリのデフォルトブランチに `.cloudmanager/pr_pipelines.yml` ファイルを作成して、これらのチェックを制御できます。
 

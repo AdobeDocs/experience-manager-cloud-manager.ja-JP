@@ -2,10 +2,10 @@
 title: 環境の管理
 description: Cloud Manager を使用して環境を管理する方法について説明します。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 116a930eea08b2bb9d288ec153519699754e0374
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 100%
+source-wordcount: '275'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ Cloud Manager の&#x200B;**概要**&#x200B;ページには、管理対象のす�
 
 ## 環境の管理 {#managing-environments-with-cloud-manager}
 
-**環境**&#x200B;タイルで、任意の環境の行をタップまたはクリックして&#x200B;**環境**&#x200B;画面を表示します。
+**環境** タイルで、任意の環境の行をクリックして **環境** 画面を表示します。
 
 **環境**&#x200B;画面には、プログラムの実稼動環境およびステージ環境が表示されます。 環境の名前は各カードの上部に表示されます。 カードには、環境内のノードの表と、CPU（T シャツサイズで表示）、ストレージ、地域およびステータスが含まれます。
 

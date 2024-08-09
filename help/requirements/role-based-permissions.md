@@ -2,10 +2,10 @@
 title: 役割ベースの権限
 description: Cloud Manager の事前設定された役割ベースの権限によるクラウドリソースへのアクセスの管理について説明します。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 100%
+source-wordcount: '617'
+ht-degree: 88%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 ## ユーザーの役割 {#user-roles}
 
-[!UICONTROL Cloud Manager] の役割管理は、[Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を使用して行います。[!UICONTROL Cloud Manager] のユーザーはすべて、顧客の IMS 組織のメンバーであり、Adobe Managed Services 製品コンテキストを持っている必要があります。特定の役割のメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
+[!UICONTROL Cloud Manager] の役割管理は、[Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を使用して行われます。 [!UICONTROL Cloud Manager] のすべてのユーザーは、顧客の IMS 組織のメンバーであり、AdobeのManaged Services Product Context を持っている必要があります。 特定の役割のメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
 
-役割のセットアップ方法について詳しくは、[ユーザーと役割のセットアップ](/help/requirements/users-and-roles.md)を参照してください。
+役割の設定方法について詳しくは、[ ユーザーと役割の設定 ](/help/requirements/users-and-roles.md) を参照してください。
 
 Admin Console で割り当てることができる役割の一覧を次の表に示します。
 
@@ -65,8 +65,8 @@ Admin Console で割り当てることができる役割の一覧を次の表に
 | ステップの読み取り | ステップの品質指標の結果を参照します | x | x | x | x | x |
 | 個人用アクセストークンの生成 | Git へのアクセス |  | x |  | x |  |
 
-ユーザーのセットアップ方法について詳しくは、[ユーザーと役割のセットアップ](/help/requirements/users-and-roles.md)のドキュメントを参照してください。
+ユーザーの設定方法について詳しくは、[ ユーザーと役割の設定 ](/help/requirements/users-and-roles.md) を参照してください。
 
 >[!TIP]
 >
->設定可能な権限を持つカスタム権限プロファイルも使用できます。詳しくは、[カスタム権限](/help/using/custom-permissions.md)のドキュメントを参照してください。
+>設定可能な権限を持つカスタム権限プロファイルも使用できます。詳しくは、[ カスタム権限 ](/help/using/custom-permissions.md) を参照してください。

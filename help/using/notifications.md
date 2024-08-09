@@ -2,10 +2,10 @@
 title: 通知
 description: Cloud Manager による重要なイベントの通知方法を説明します。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: e767d9ff5e3df0047d2cf47d7b0842854101a01a
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 100%
+source-wordcount: '571'
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ Cloud Manager による重要なイベントの通知方法を説明します。
 
 ## Cloud Manager の通知 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] では、実稼動パイプラインの開始時および終了時（正常終了時または失敗時）、実稼動デプロイメントの開始時、また **運用開始承認**&#x200B;ステップおよび&#x200B;**スケジュール済み**&#x200B;ステップに達すると、ユーザーは通知を受け取ることができます。これらの通知は、[!UICONTROL Experience Cloud] の通知システムを介して送信されます。
+[!UICONTROL Cloud Manager] では、実稼動パイプラインの開始時および終了時（正常終了時または失敗時）、実稼動デプロイメントの開始時、**運用開始承認** ステップおよび **スケジュール済み** ステップに達すると、ユーザーは通知を受け取ることができます。 これらの通知は、[!UICONTROL Experience Cloud] の通知システムを介して送信されます。
 
 >[!NOTE]
 >

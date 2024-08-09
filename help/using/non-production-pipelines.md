@@ -2,16 +2,16 @@
 title: 実稼動以外のパイプラインの設定
 description: Cloud Manager を使用して、コードをデプロイするための実稼動以外のパイプラインを作成および設定する方法について説明します。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 100%
+source-wordcount: '710'
+ht-degree: 94%
 
 ---
 
 # 実稼動以外のパイプラインの設定 {#configuring-non-production-pipelines}
 
-Cloud Manager を使用して、コードをデプロイするための実稼動以外のパイプラインを作成および設定する方法について説明します。Cloud Manager でのパイプラインの動作に関する概念的な概要を最初に把握したい場合は、[CI／CD パイプライン](/help/overview/ci-cd-pipelines.md)のドキュメントを参照してください。
+Cloud Manager を使用して、コードをデプロイするための実稼動以外のパイプラインを作成および設定する方法について説明します。Cloud Managerでのパイプラインの動作に関する概念的な概要については、[CI/CD パイプライン ](/help/overview/ci-cd-pipelines.md) を参照してください。
 
 ## 概要 {#overview}
 
@@ -20,7 +20,7 @@ Cloud Manager を使用して、コードをデプロイするための実稼動
 * **実稼動パイプライン** - 実稼動パイプラインは、ソースコードを最終的に実稼動環境に取り込むために調整された一連のステップで構成される専用のパイプラインです。
 * **実稼動以外のパイプライン** - 実稼動以外のパイプラインは、コード品質スキャンの実行または開発環境へのソースコードのデプロイを目的としています。
 
-このドキュメントでは、実稼動以外のパイプラインに焦点を当てます。実稼動パイプラインの設定方法について詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)のドキュメントを参照してください。
+このドキュメントでは、実稼動以外のパイプラインに焦点を当てます。実稼動パイプラインの設定方法について詳しくは、ドキュメント [ 実稼動パイプラインの設定 ](/help/using/production-pipelines.md) を参照してください。
 
 実稼動以外のパイプラインには次の 2 種類があります。
 
@@ -80,7 +80,7 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 
 ## 次の手順 {#the-next-steps}
 
-パイプラインを設定したら、コードをデプロイする必要があります。詳しくは、[コードのデプロイメント](/help/using/code-deployment.md)のドキュメントを参照してください。
+パイプラインを設定したら、コードをデプロイする必要があります。詳しくは、[ コードのデプロイメント ](/help/using/code-deployment.md) を参照してください。
 
 ## ビデオチュートリアル {#video-tutorial}
 

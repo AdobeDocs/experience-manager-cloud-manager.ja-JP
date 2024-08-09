@@ -2,10 +2,10 @@
 title: CI／CD パイプライン
 description: CI/CD パイプラインと、Cloud Manager でステージング環境および実稼動環境へのデプロイメントを処理する方法について説明します。
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ CI/CD パイプラインと、Cloud Manager でステージング環境および
 
 ### CI／CD パイプラインの設定方法 {#how-to-setup-a-ci-cd-pipeline}
 
-パイプラインの設定について詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)および[実稼動以外のパイプラインの設定](/help/using/non-production-pipelines.md)のドキュメントを参照してください。 
+パイプラインの設定について詳しくは、[ 実稼動パイプラインの設定 ](/help/using/production-pipelines.md) および [ 実稼動以外のパイプラインの設定 ](/help/using/non-production-pipelines.md) のドキュメントを参照してください。
 
 ## 品質ゲート {#quality-gates}
 

@@ -2,10 +2,10 @@
 title: ソースコードリポジトリ
 description: Cloud Manager 内のプログラムごとにプロビジョニングされる Git リポジトリについて説明します。
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 83%
 
 ---
 
@@ -20,9 +20,9 @@ Cloud Manager 内のプログラムごとにプロビジョニングされる Gi
 
 ベストプラクティスとして、常に Cloud Manager の Git リポジトリを使用してください。このリポジトリは、ブランチの設定やサンプルプロジェクトがない空の状態で提供されます。Cloud Manager の Git リポジトリを使用するために、任意の Git クライアントを使用してブランチの作成、コードの保存および取得、コミット履歴の一覧表示などを行うためのプライベートアクセストークンが提供されます。
 
-Git にブランチをセットアップする方法について詳しくは、[リリースブランチの設定](/help/getting-started/configuring-branches.md)を参照してください。
+Git にブランチをセットアップする方法について詳しくは、[ リリースブランチの設定 ](/help/getting-started/configuring-branches.md) を参照してください。
 
-Cloud Manager の Git リポジトリを CI／CDパイプラインで使用する方法について詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)および[実稼動以外のパイプラインの設定](/help/using/non-production-pipelines.md)のドキュメントを参照してください。
+Cloud Managerの Git リポジトリを CI/CD パイプラインで使用する方法について詳しくは、[ 実稼動パイプラインの設定 ](/help/using/production-pipelines.md) および [ 実稼動以外のパイプラインの設定 ](/help/using/non-production-pipelines.md) を参照してください。
 
 ## オンプレミスリポジトリ {#on-premise-repository}
 

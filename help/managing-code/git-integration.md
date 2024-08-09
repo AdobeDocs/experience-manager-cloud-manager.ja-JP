@@ -2,10 +2,10 @@
 title: Adobe Cloud Manager と Git の統合
 description: このビデオシリーズでは、顧客管理（オンプレミス）の Git リポジトリと Adobe Cloud Manager のセットアップおよび統合について順を追って説明します。
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
-source-git-commit: 91e909273bf2b21d7f6413731923011915079e45
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 100%
+source-wordcount: '337'
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Cloud Manager には、Cloud Manager の CI／CD パイプラインを使�
 
 このビデオシリーズで概要を説明する手順と命名規則は、顧客管理 Git リポジトリーと Cloud Manager を使用する際のベストプラクティスです。規則とワークフローは、個々の開発チームに合わせて調整してください。
 
-Cloud Manager のすべての概要については、[Cloud Manager の概要](/help/introduction.md)のドキュメントを参照してください。
+Cloud Managerの概要については、[Cloud Managerの概要 ](/help/introduction.md) を参照してください。
 
 ## 初期同期 {#initial-sync}
 
@@ -40,7 +40,7 @@ Cloud Manager のすべての概要については、[Cloud Manager の概要](/
 
 ## 基本分岐戦略 {#branching-strategy}
 
-Cloud Manager の[実稼動パイプライン](/help/using/production-pipelines.md)と[実稼動以外のパイプライン](/help/using/non-production-pipelines.md)を活用するために、基本的なブランチ戦略を設定します。
+Cloud Managerの [ 実稼動用パイプライン ](/help/using/production-pipelines.md) および [ 実稼動以外のパイプライン ](/help/using/non-production-pipelines.md) を活用するために、基本的なブランチ戦略を設定します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 

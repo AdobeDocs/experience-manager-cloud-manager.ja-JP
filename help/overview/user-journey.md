@@ -2,10 +2,10 @@
 title: ユーザージャーニー
 description: このドキュメントでは、様々なオンボーディングシナリオを説明し、Cloud Manager の使用を開始する手順について説明します。
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
-source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ AMS を初めて使用する場合と、既存の AMS ユーザーでは、オ�
 
 また、AEM 環境に新しいコードの変更をデプロイするために、[!UICONTROL Cloud Manager] の使用を開始する際には、既存の AEM プロジェクトを、推奨されるベストプラクティスに従う必要があります。
 
-AEM 6.5 へのアップグレードの利点について詳しくは、[AEM 6.5 へのアップグレード](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=ja)のドキュメントを参照してください。
+AEM 6.5 へのアップグレードの利点について詳しくは、[AEM 6.5 へのアップグレード ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=ja) を参照してください。
 
 ## [!UICONTROL Cloud Manager] へのアクセス {#accessing-cloud-manager}
 
@@ -56,7 +56,7 @@ Adobe Identity Management 資格情報を使用して [!UICONTROL Experience Clo
 
 [!UICONTROL Cloud Manager] を使い始めるには、[初回ログイン](/help/getting-started/first-time-login.md)のドキュメントを参照してください。
 
-AEM について詳しくは、[デプロイとメンテナンス](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=ja)のドキュメントを参照してください。
+AEMについて詳しくは、「デプロイとメンテナンス [ のドキュメントを参照し ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=ja) ください。
 
 ## [!UICONTROL Cloud Manager] の概要 {#getting-started-with-cloud-manager}
 

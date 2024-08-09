@@ -2,10 +2,10 @@
 title: セキュリティとプライバシー
 description: Cloud Manager でのコードおよびアーティファクトアセットのセキュリティとプライバシーについて説明します。
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
-source-git-commit: d7751757c1d3bda3d60406a1d39cb41c61f5c863
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 100%
+source-wordcount: '202'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,7 @@ Cloud Manager でのコードおよびアーティファクトアセットのセ
 
 [!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが用意されています。
 
-Admin Console で割り当てることができるロールおよび各ユーザーロールの権限については、[ロールに基づく権限](/help/requirements/role-based-permissions.md)のドキュメントを参照してください。
+Admin Consoleで割り当てることができるロールおよび各ユーザーロールの権限については、[ ロールに基づく権限 ](/help/requirements/role-based-permissions.md) を参照してください。
 
 ## リソースの分離 {#resource-isolation}
 

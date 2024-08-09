@@ -3,10 +3,10 @@ title: 評価段階
 seo-title: Evaluation Phase
 description: 製品アップデートウィザードの評価フェーズで、パターン検出を使用してアップグレードの複雑さを評価する方法について説明します。
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 85%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->パターン検出について詳しくは、[パターン検出を使用したアップグレードの複雑性の評価](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=ja)を参照してください。
+>パターン検出について詳しくは、[ パターン検出を使用したアップグレードの複雑性の評価 ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=ja) を参照してください。
 
 ## 評価の実行 {#running}
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 次の手順に従って、評価レポートを生成します。
 
-1. [製品アップデートウィザード](/help/product-update-wizard/overview.md)ドキュメントの説明に従って、ウィザードを起動します。
+1. ドキュメント [ 製品アップデートウィザード ](/help/product-update-wizard/overview.md) の説明に従って、ウィザードを起動します。
 
 1. 「**[!UICONTROL 評価を実行]**」をクリックします。
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 1. ウィザードから、アクションのステータスが通知されます。評価レポートの生成中に、**進行中**&#x200B;または&#x200B;**完了**&#x200B;が適宜表示されます。
 
-1. レポートが生成されたら、「**[!UICONTROL レポートのダウンロード]**」をクリックしてコピーを保存できます。
+1. レポートを生成したら、「**[!UICONTROL レポートをダウンロード]**」をクリックしてコピーを保存できます。
 
    ![作成されたレポート](/help/assets/Evaluation-1.png)
 

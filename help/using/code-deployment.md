@@ -2,10 +2,10 @@
 title: コードのデプロイメント
 description: コードをデプロイする方法と、デプロイ時に Cloud Manager で何が行われるかを説明します。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 100%
+source-wordcount: '1637'
+ht-degree: 96%
 
 ---
 
@@ -109,16 +109,16 @@ Cloud Manager が実稼動以外のトポロジにデプロイされる場合、
 
 1. 各 AEM アーティファクトは、パッケージマネージャー API を介して各 AEM インスタンスにデプロイされ、パッケージの依存関係がデプロイメントの順序を決定します。
 
-   * 新機能のインストール、インスタンス間のコンテンツの転送、リポジトリコンテンツのバックアップにパッケージを使用する方法について詳しくは、[パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=ja)のドキュメントを参照してください。
+   * 新機能のインストール、インスタンス間のコンテンツの転送、リポジトリコンテンツのバックアップにパッケージを使用する方法について詳しくは、[ パッケージマネージャー ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=ja) を参照してください。
 
    >[!NOTE]
    >
-   >すべての AEM アーティファクトは、オーサーとパブリッシャーの両方にデプロイされます。ノード専用の設定が必要な場合は、実行モードを使用する必要があります。実行モードを使用して、特定の目的のために AEM インスタンスを調整する方法について詳しくは、[ドキュメント「AEM as a Cloud Service へのデプロイ」の実行モードの節](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ja#runmodes)を参照してください。
+   >すべての AEM アーティファクトは、オーサーとパブリッシャーの両方にデプロイされます。ノード専用の設定が必要な場合は、実行モードを使用する必要があります。実行モードを使用して、特定の目的のためにAEM インスタンスを調整する方法について詳しくは、[AEM as a Cloud Serviceへのデプロイ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ja#runmodes) ドキュメントの実行モードの節を参照してください。
 
 1. Dispatcher のアーティファクトは、以下のように各 Dispatcher にデプロイされます。
 
    1. 現在の設定はバックアップされ、一時的な場所にコピーされます。
-   1. すべての設定は、不変ファイルを除いて削除されます。詳しくは、ドキュメント [Dispatcher の設定](/help/getting-started/dispatcher-configurations.md)を参照してください。これにより、孤立したファイルが残らないようにディレクトリがクリアされます。
+   1. すべての設定は、不変ファイルを除いて削除されます。詳しくは、[Dispatcher設定 ](/help/getting-started/dispatcher-configurations.md) を参照してください。 これにより、孤立したファイルが残らないようにディレクトリがクリアされます。
    1. アーティファクトは、`httpd` ディレクトリに抽出されます。不変ファイルは上書きされません。Git リポジトリー内の不変ファイルに対して加えた変更は、デプロイメント時に無視されます。これらのファイルは、AMS ディスパッチャーフレームワークのコアであり、変更できません。
    1. Apache が設定テストを実行します。エラーが見つからない場合は、サービスが再読み込みされます。エラーが発生した場合、設定がバックアップから復元され、サービスが再読み込みされて、エラーが Cloud Manager にレポートされます。
    1. パイプライン設定で指定された各パスは、無効化または Dispatcher キャッシュからフラッシュされます。

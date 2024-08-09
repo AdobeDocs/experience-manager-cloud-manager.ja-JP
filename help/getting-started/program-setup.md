@@ -2,10 +2,10 @@
 title: プログラム設定
 description: オンボーディング後、ビジネスオーナーはプログラムの初期設定を行う必要があります。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 100%
+source-wordcount: '584'
+ht-degree: 92%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 変更は Cloud Manager に直ちに保存されますが、次のパイプラインが実行されるまで環境に反映されません。
 
-まだパイプラインを作成していない場合は、[実稼動パイプラインの設定](/help/using/production-pipelines.md)および[実稼動以外のパイプラインの設定](/help/using/non-production-pipelines.md)のドキュメントを参照してください。
+まだパイプラインを作成していない場合は、ドキュメント [ 実稼動パイプラインの設定 ](/help/using/production-pipelines.md) および [ 実稼動以外のパイプラインの設定 ](/help/using/non-production-pipelines.md) を参照してください。
 
 ## プログラム間の切り替え {#swithing-programs}
 
@@ -86,7 +86,7 @@ Sites KPI は、ステージング環境で実行されるテストで測定さ�
 
 例えば、実稼動環境で 1 分あたり平均 1,000 ページビューを期待し、実稼動環境に 4 つの Dispatcher/パブリッシュサーバーがある場合、これを 1 分あたり 250 ページビューに拡大縮小する必要があります。これは、ステージング環境が 1 つの Dispatcher とパブリッシュサーバーのペアのみで構成されていると想定しています。
 
-Assets のパフォーマンステストでは、30 分間のテスト期間中にアセットを繰り返しアップロードし、各アセットの処理時間および様々なシステムレベルの指標を測定します。
+Assetsのパフォーマンステストでは、30 分間のテスト期間中にアセットを繰り返しアップロードし、各アセットの処理時間および様々なシステムレベルの指標を測定します。
 
 実稼動環境の前に、Akamai や CloudFront などのコンテンツ配信ネットワーク（CDN）がある場合があります。[!UICONTROL Cloud Manager] はステージング環境に対して直接テストするので、KPI は、CDN を経由すると予想されるトラフィック（つまり、キャッシュミス）のみを反映している必要があります。通常、これは実稼動トラフィック全体の比較的小さいサブセットになります。
 

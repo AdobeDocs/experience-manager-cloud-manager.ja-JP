@@ -2,10 +2,10 @@
 title: Cloud Manager FAQ
 description: このドキュメントでは、AMS のお客様向けに Cloud Manager に関する最もよくある質問に対する回答を示します。
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 6be659e02df0657ec7d3dbce8c18c44a327a36f4
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 100%
+source-wordcount: '746'
+ht-degree: 93%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 100%
 
 はい。Java 11 の正しい設定で `maven-toolchains-plugin` を追加する必要があります。
 
-* このプロセスについては、[こちら](/help/getting-started/using-the-wizard.md)を参照してください。
-* 例として、[WKND サンプルプロジェクトコード](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)を参照してください。
+* このプロセスについては、[ こちら ](/help/getting-started/using-the-wizard.md) を参照してください。
+* 例として、[wknd サンプルプロジェクトコード ](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75) を参照してください。
 
 ## Java 8 から Java 11 に切り替えた後、maven-scr-plugin に関するエラーでビルドが失敗します。どうすればいいですか？ {#maven-src-plugin}
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-このプラグインを削除する方法については、[こちら](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)を参照してください。
+このプラグインを削除する手順については、[ こちらを参照 ](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/) してください。
 
 ## Java 8 から Java 11 に切り替えた後、RequireJavaVersion に関するエラーでビルドが失敗します。 どうすればいいですか？ {#requirejavaversion}
 
@@ -60,7 +60,7 @@ Cloud Manager のビルドの場合、`maven-enforcer-plugin` は次のエラー
    * `20` 秒を超えるページ読み込みは `504` エラーとなります。
 * サイトでユーザー認証が必要な場合、サイトに対する認証のテストを設定する方法については、[テスト結果について](/help/using/code-quality-testing.md#authenticated-performance-testing)のドキュメントを参照してください。
 
-品質チェックについて詳しくは、[テスト結果について](/help/using/code-quality-testing.md) を参照してください。
+品質チェックについて詳しくは、[ テスト結果について ](/help/using/code-quality-testing.md) を参照してください。
 
 ## Maven プロジェクトのバージョンに SNAPSHOT を使用できますか？ {#snapshot}
 
@@ -70,11 +70,11 @@ Cloud Manager のビルドの場合、`maven-enforcer-plugin` は次のエラー
 
 また、ステージおよび実稼働ビルドまたはデプロイメントのバージョンを `-SNAPSHOT` に設定することもできます。Cloud Manager では、適切なバージョン番号を自動的に設定し、Git にタグを作成します。このタグは、必要に応じて後で参照できます。
 
-バージョン処理について詳しくは、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html?lang=ja)を参照してください。
+バージョン処理の詳細は、[こちらで説明しています](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html?lang=ja)。
 
 ## パッケージとバンドルのバージョン管理は、ステージングと実稼動のデプロイメントでどのように機能しますか？ {#staging-production}
 
-ステージングおよび実稼働のデプロイメントでは、自動バージョンが生成されます（[こちら](/help/managing-code/maven-project-version.md)を参照）。
+ステージングおよび実稼働のデプロイメントでは、自動バージョンが生成されます [ こちらを参照 ](/help/managing-code/maven-project-version.md)。
 
 ステージングと実稼働のデプロイメントでカスタムバージョン管理を行うには、`1.0.0` のように、3 つの部分から成る適切な Maven バージョンを設定します。実稼動にデプロイするたびに、バージョンを増やします。
 

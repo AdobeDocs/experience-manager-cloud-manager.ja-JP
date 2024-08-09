@@ -2,10 +2,10 @@
 title: GitHub チェック注釈
 description: GitHub チェックがプライベートリポジトリの PR を注釈して、役立つフィードバックを提供する方法について説明します。
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 210d40a5e12b40fd84efc461c6a1c48559120837
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 100%
+source-wordcount: '251'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ Cloud Manager プログラムに[プライベートリポジトリ](private-repo
 
 ![コードに関する問題の注釈の例](assets/github-check-annotations-example.png)
 
-問題のあるコードの正確な行が提供され、これをクリックすると、関連するコードを表示できます。これらの注釈は、プルリクエストで変更された問題だけでなく、すべてのコードの問題に対して提供されます。
+イシューと正確に一致するコード行が提供されるので、それをクリックして関連するコードを表示できます。 これらの注釈は、プルリクエストで変更された問題だけでなく、すべてのコードの問題に対して提供されます。
 
 ![コードに関する問題の注釈例](assets/github-check-annotations-example-code.png)
 
@@ -40,4 +40,4 @@ Cloud Manager プログラムに[プライベートリポジトリ](private-repo
 
 ![注釈の例](assets/github-check-annotations-code-quality-2.png)
 
-また、問題を CSV 形式で視覚化することもできます。これは、[Cloud Manager でパイプライン実行の詳細を表示](/help/using/managing-pipelines.md)して取得できます。
+また、問題を CSV 形式で視覚化することもできます。これを取得するには、[Cloud Managerでのパイプライン実行の詳細の表示 ](/help/using/managing-pipelines.md) を参照します。

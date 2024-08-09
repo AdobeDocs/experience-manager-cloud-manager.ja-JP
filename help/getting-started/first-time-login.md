@@ -2,10 +2,10 @@
 title: 初回ログイン
 description: 一般設定をセットアップし、Cloud Manager を初めて使用する準備が整っている場合は、このページの手順に従ってください。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 1417d3bfa5a844641e0942d1fe1bd7bf84e41997
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '293'
+ht-degree: 75%
 
 ---
 
@@ -24,15 +24,15 @@ ht-degree: 100%
 
    ![Cloud Manager コンソール](/help/assets/cloud-manager-console.png)
 
-1. プログラムのカードをタップまたはクリックすると、Cloud Manager の&#x200B;**概要**&#x200B;ページに移動できます。
+1. プログラムのカードをクリックして、Cloud Manager **概要** ページに移動します。
 
 1. Cloud Manager が開いて、**概要**&#x200B;ページが表示されます。
 
    ![Cloud Manager の概要ページ](/help/assets/program-overview-page.png)
 
-1. プログラムをまだ設定していない場合は、[コールトゥアクション](/help/getting-started/navigation.md#cta)の「**プログラムを設定**」をタップまたはクリックして、プログラムの説明を設定し、主要業績評価指標（KPI）を定義します。プログラムを既に設定している場合は、CTA で追加の次の手順を提供する場合があります。
+1. プログラムがまだ設定されていない場合は、[ コールトゥアクション ](/help/getting-started/navigation.md#cta) の **プログラムを設定** をクリックして、プログラムの説明を設定し、主要業績評価指標（KPI）を定義します。 プログラムを既に設定している場合は、CTA で追加の次の手順を提供する場合があります。
 
-プログラムを設定する次の手順については、[プログラム設定](/help/getting-started/program-setup.md)のドキュメントに進んでください。
+プログラムを設定する次の手順については、ドキュメント [ プログラム設定 ](/help/getting-started/program-setup.md) に進んでください。
 
 ## Cloud Manager アクティビティ {#activity}
 
@@ -40,7 +40,7 @@ Cloud Manager では、プログラムのアクティビティの表示を統合
 
 >[!TIP]
 >
->Cloud Manager UI の使用方法について詳しくは、[Cloud Manager UI の操作](/help/getting-started/navigation.md)ドキュメントを参照してください。
+>Cloud Manager UI の使用方法について詳しくは、[Cloud Manager UI の操作 ](/help/getting-started/navigation.md) を参照してください。
 
 >[!NOTE]
 >

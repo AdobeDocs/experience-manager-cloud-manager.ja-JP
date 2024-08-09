@@ -2,10 +2,10 @@
 title: AMS 用 Cloud Manager の概要
 description: ここでは、Adobe Managed Services（AMS）用 Cloud Manager の概要と、組織がクラウドで Adobe Experience Manager を自己管理できるようにする仕組みについて説明します。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 100%
+source-wordcount: '1295'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager の [!UICONTROL Cloud Manager] を使用すると、開
 >
 >このドキュメントでは、Adobe Managed Services（AMS）用 Cloud Manager の特長と機能について具体的に説明します。
 >
->AEM as a Cloud Service の同等のドキュメントについては、[AEM as a Cloud Service のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html?lang=ja)を参照してください。
+>AEM as a Cloud Serviceの同等のドキュメントについては、[AEM as a Cloud Service ドキュメント ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html?lang=ja) を参照してください。
 
 Cloud Manager を使用すると、開発チームは次の機能を利用できます。
 
@@ -55,7 +55,7 @@ Cloud Manager を使用すると、開発チームは次の機能を利用でき
 
 アプリケーション特有の主要業績評価指標（KPI）（1 分あたりのピークページビュー数とページ読み込みに対する予想応答時間）を定義します。これが、最終的にデプロイメントが成功したかどうかを測定するための基礎となります。様々なチームメンバーの役割と権限を簡単に定義できます。セルフサービスインターフェイスによって制御が可能となりますが、必要に応じて必要なガイダンスを提供するアドビ内のエキスパートにアクセスできます。
 
-[!UICONTROL Cloud Manager] の UI を確認して使用を開始するには、[初回ログイン](/help/getting-started/first-time-login.md)のドキュメントを参照してください。
+[!UICONTROL Cloud Manager] の UI を確認して使用を開始するには、[ 初回ログイン ](/help/getting-started/first-time-login.md) のドキュメントを参照してください。
 
 ### CI／CD パイプライン {#ci-cd-pipeline}
 
@@ -63,7 +63,7 @@ Cloud Manager を使用すると、開発チームは次の機能を利用でき
 
 [!UICONTROL Cloud Manager] UI を使用して、CI／CD パイプラインを設定および開始できます。このパイプラインの一部として、徹底したコードスキャンが実行され、高品質なアプリケーションのみが実稼動環境へ渡されるようにします。
 
-[!UICONTROL Cloud Manager] の UI からのパイプラインの設定について詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)および[実稼動以外のパイプラインの設定](/help/using/non-production-pipelines.md)を参照してください。
+[!UICONTROL Cloud Manager] の UI からのパイプラインの設定について詳しくは、[ 実稼動パイプラインの設定 ](/help/using/production-pipelines.md) および [ 実稼動以外のパイプラインの設定 ](/help/using/non-production-pipelines.md) を参照してください。
 
 ### 柔軟なデプロイメントモード {#flexible-deployment-modes}
 
@@ -73,11 +73,11 @@ Cloud Manager を使用すると、開発チームは次の機能を利用でき
 
 デプロイメントトリガーとは無関係に、デプロイメントがトリガーされるたびに、CI／CD パイプライン実行の一環として品質チェックが常に実行されます。品質チェックには、お客様およびパートナーに負担をかけることなく、すぐに使えるコード検査、セキュリティテストおよびパフォーマンステストが含まれています。
 
-コードと品質チェックのデプロイについて詳しくは、[コードのデプロイ](/help/using/code-deployment.md)のドキュメントを参照してください。
+コードと品質チェックのデプロイについて詳しくは、ドキュメント [ コードのデプロイ ](/help/using/code-deployment.md) を参照してください。
 
 ## Cloud Manager のオプション機能 {#optional-features-in-cloud-manager}
 
-Cloud Manager には、特定の環境設定やニーズに応じた、プロジェクトに役立つ追加の高度な機能が用意されています。これらの機能にご興味があれば、カスタマーサクセスエンジニア（CSE）またはアドビ担当者に詳細をお問い合わせください。
+Cloud Manager には、特定の環境設定やニーズに応じた、プロジェクトに役立つ追加の高度な機能が用意されています。これらの機能にご興味があれば、カスタマーサクセスエンジニア（CSE）またはAdobe担当者に詳細をお問い合わせください。
 
 ### 自動スケーリング {#autoscaling}
 
@@ -89,7 +89,7 @@ Cloud Manager には、特定の環境設定やニーズに応じた、プロジ
 
 >[!NOTE]
 >
->自動スケーリングがアプリケーションに適しているかどうかを確認したい場合は、担当の CSE またはアドビ担当者にお問い合わせください。
+>自動スケーリングがアプリケーションに適しているかどうかを確認したい場合は、担当の CSE またはAdobe担当者にお問い合わせください。
 
 ### ブルー／グリーンデプロイメント {#blue-green}
 
@@ -123,7 +123,7 @@ Cloud Manager には、特定の環境設定やニーズに応じた、プロジ
 
 実稼動デプロイメントに Cloud Manager を使用しているすべての AMS ユーザーは、ブルー／グリーンのデプロイメントを使用する資格があります。ただし、ブルー／グリーンデプロイメントを使用する場合は、環境の追加検証およびアドビ CSE による設定が必要です。
 
-ブルー／グリーンデプロイメントにご興味がある場合は、次の要件と制限事項を考慮し、担当の CSE にお問い合わせください。
+ブルー/グリーンデプロイメントに関心がある場合は、次の要件と制限事項を考慮し、担当の CSE にお問い合わせください。
 
 #### 要件と制限事項 {#limitations}
 
@@ -131,5 +131,5 @@ Cloud Manager には、特定の環境設定やニーズに応じた、プロジ
 * プレビューの Dispatcher とパブリッシュのペアは、ブルー／グリーンデプロイメントには含まれていません。
 * すべての Dispatcherとパブリッシュのペアは、他のすべての Dispatcherとパブリッシュのペアと同じです。
 * ブルー／グリーンは、実稼動環境でのみ使用できます。
-* Azure だけでなく、AWS でもブルー／グリーンが利用できます。
+* ブルー/グリーンは、AWSおよび Azure で使用できます。
 * Assets のみのお客様は、ブルー／グリーンを利用できません。

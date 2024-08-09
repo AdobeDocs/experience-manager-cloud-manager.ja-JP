@@ -2,10 +2,10 @@
 title: 環境のプロビジョニング
 description: Cloud Manager のオンボーディングプロセスの一環として環境をプロビジョニングする方法について説明します。
 exl-id: eade4255-89b5-4c65-a498-1c6d4e8c73ff
-source-git-commit: d033b7cf53d4d9faf074f1dc09e2958eb91afe3b
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '312'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager のオンボーディングプロセスの一環として環境を
 
 ## ウェルカムメール {#welcome-email}
 
-環境プロビジョニングプロセスが完了すると、Adobe [!UICONTROL Experience Cloud] へのアクセス権を付与されたことを確認するウェルカムメールが顧客側の指定管理者に届きます。このウェルカムメールには、[!UICONTROL Experience Cloud] サービス、[!UICONTROL AEM Managed Services] クラウド環境および [!UICONTROL Cloud Manager] セルフサービスポータルの使用を開始する方法が詳しく記載されています。さらに、このメールには、カスタマーサクセスエンジニア（CSE）の連絡先情報のほか、サポートリソース、フォーラム、FAQ などの URL といった重要な情報も含まれています。このメールに記載されているリソースの一覧には、AEM クラウド環境の [!UICONTROL Cloud Manager] にアクセスする方法の詳細も記載されています。
+環境プロビジョニングプロセスが完了すると、Adobe [!UICONTROL Experience Cloud] へのアクセス権を付与されたことを確認するウェルカムメールが顧客側の指定管理者に届きます。お知らせメールには、[!UICONTROL Experience Cloud] サービス、[!UICONTROL AEM Managed Services] クラウド環境、[!UICONTROL Cloud Manager] セルフサービスポータルの使用を開始する方法が詳しく記載されています。 さらに、このメールには、カスタマーサクセスエンジニア（CSE）の連絡先情報のほか、サポートリソース、フォーラム、FAQ などの URL といった重要な情報も含まれています。このメールに記載されているリソースの一覧には、AEM クラウド環境の [!UICONTROL Cloud Manager] にアクセスする方法の詳細も記載されています。
 
 ## 次の手順 {#next-steps}
 
