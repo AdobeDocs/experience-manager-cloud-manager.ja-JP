@@ -2,19 +2,19 @@
 title: Dispatcher の設定
 description: Cloud Manager を使用して Dispatcher 設定ファイルをデプロイする方法について説明します.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
 
-# Dispatcher の設定 {#manage-your-dispatcher-configurations}
+# Dispatcherの設定 {#manage-your-dispatcher-configurations}
 
 Cloud Manager を使用して Dispatcher 設定ファイルをデプロイする方法について説明します
 
-## Cloud Manager での Dispatcher 設定のデプロイ {#deploying-dispatcher-configurations}
+## Cloud Managerを使用したDispatcher設定のデプロイ {#deploying-dispatcher-configurations}
 
 Cloud Manager では、通常の AEM コンテンツパッケージに加えて、web サーバーと Dispatcher の設定ファイルも Git リポジトリに格納されていると仮定して、それらの設定ファイルをデプロイできます。
 
@@ -24,7 +24,7 @@ Cloud Manager では、通常の AEM コンテンツパッケージに加えて�
 
 Dispatcher インスタンスにデプロイすると、Dispatcher インスタンス上のこれらのディレクトリの内容が Git リポジトリ内の内容で上書きされます。Web サーバーおよび Dispatcher 設定ファイルは頻繁に環境特有の情報を必要とするので、この機能を正しく使用するには、最初にカスタマーサクセスエンジニア（CSE）に依頼して、これらの環境変数を `/etc/sysconfig/httpd` で設定する必要があります。
 
-## 既存の Managed Services のお客様向けの Dispatcher 設定 {#steps-for-configuring-dispatcher}
+## 既存の managed service のお客様向けのDispatcher設定 {#steps-for-configuring-dispatcher}
 
 最初の Dispatcher 設定を完了するには、次の手順に従います。
 
@@ -48,7 +48,7 @@ Dispatcher インスタンスにデプロイすると、Dispatcher インスタ�
 
    ここでは任意の名前を使用できますが、この手順で作成したディレクトリ名は手順 6 で使用する名前と同じにする必要があります。
 
-1. このサブディレクトリには、Maven Assembly Plugin を使用して Dispatcher .zip ファイルを構築する Maven モジュールが含まれます。これを開始するには、`dispatcher` ディレクトリにこのコンテンツを含む `pom.xml` ファイルを作成し、必要に応じて `parent` 参照、`artifactId` および `name` を変更します。
+1. このサブディレクトリには、Maven Assembly プラグインを使用してDispatcherの.zip ファイルを構築する Maven モジュールが含まれます。 これを開始するには、`dispatcher` ディレクトリにこのコンテンツを含む `pom.xml` ファイルを作成し、必要に応じて `parent` 参照、`artifactId` および `name` を変更します。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -90,7 +90,7 @@ Dispatcher インスタンスにデプロイすると、Dispatcher インスタ�
 
    * 手順 1 と同様に、ここにある artifactId と名前は、必要に応じて他の値にすることができます。 `dispatcher` は、ここでは例として使用しています。
 
-1. Maven Assembly Plugin には、.zip ファイルの作成方法を定義する `descriptor` が必要です。この記述子を作成するには、`dispatcher` サブディレクトリに `assembly.xml` という名前のファイルを次のコンテンツで作成します。このファイル名は、上記の `pom.xml` ファイルの 26 行目で参照されることに注意してください。
+1. Maven アセンブリプラグインでは、.zip ファイルの作成方法を定義する `descriptor` が必要です。 この記述子を作成するには、`dispatcher` サブディレクトリに `assembly.xml` という名前のファイルを次のコンテンツで作成します。このファイル名は、上記の `pom.xml` ファイルの 26 行目で参照されることに注意してください。
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"

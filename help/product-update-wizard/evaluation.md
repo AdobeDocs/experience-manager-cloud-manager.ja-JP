@@ -3,10 +3,10 @@ title: 評価段階
 seo-title: Evaluation Phase
 description: 製品アップデートウィザードの評価フェーズで、パターン検出を使用してアップグレードの複雑さを評価する方法について説明します。
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 85%
+source-wordcount: '280'
+ht-degree: 75%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 85%
 >
 >パターン検出について詳しくは、[ パターン検出を使用したアップグレードの複雑性の評価 ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=ja) を参照してください。
 
-## 評価の実行 {#running}
+## 評価レポートの実行 {#running}
 
 パターン検出はどのような環境でも実行できます。ただし、検出率を高め、ビジネスクリティカルなインスタンスの速度低下を回避するために、Cloud Manager はオーサーインスタンスのステージング環境でパターン検出を実行します。
 
-次の手順に従って、評価レポートを生成します。
+**評価レポートを実行するには：**
 
 1. ドキュメント [ 製品アップデートウィザード ](/help/product-update-wizard/overview.md) の説明に従って、ウィザードを起動します。
 
@@ -39,7 +39,7 @@ ht-degree: 85%
 
    ![評価を実行](/help/assets/Run-Evaluation.png)
 
-1. ウィザードから、アクションのステータスが通知されます。評価レポートの生成中に、**進行中**&#x200B;または&#x200B;**完了**&#x200B;が適宜表示されます。
+1. ウィザードから、アクションのステータスが通知されます。評価レポートの生成時に、該当する **処理中** または **完了** があることに注意してください。
 
 1. レポートを生成したら、「**[!UICONTROL レポートをダウンロード]**」をクリックしてコピーを保存できます。
 

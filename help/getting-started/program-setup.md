@@ -2,10 +2,10 @@
 title: プログラム設定
 description: オンボーディング後、ビジネスオーナーはプログラムの初期設定を行う必要があります。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 92%
+source-wordcount: '582'
+ht-degree: 86%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 92%
 
 1. Cloud Manager のホーム画面でソリューションに移動します。
 
-1. 「**プログラムを編集**」をクリックして、**概要**&#x200B;ページからプログラムを更新または変更します。
+1. **プログラムを編集** をクリックして、**概要** ページからプログラムを更新または変更します。
 
    ![プログラムオプションを編集](/help/assets/set-up-program/edit-program1.png)
 
@@ -72,7 +72,7 @@ ht-degree: 92%
 
 まだパイプラインを作成していない場合は、ドキュメント [ 実稼動パイプラインの設定 ](/help/using/production-pipelines.md) および [ 実稼動以外のパイプラインの設定 ](/help/using/non-production-pipelines.md) を参照してください。
 
-## プログラム間の切り替え {#swithing-programs}
+## プログラムを切り替える {#swithing-programs}
 
 プログラムを操作する際に、Cloud Manager の概要ページに戻ることなく、別のプログラムにすばやく切り替えることができます。
 

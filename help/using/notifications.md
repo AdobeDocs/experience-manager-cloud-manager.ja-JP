@@ -2,10 +2,10 @@
 title: 通知
 description: Cloud Manager による重要なイベントの通知方法を説明します。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 94%
+source-wordcount: '564'
+ht-degree: 83%
 
 ---
 
@@ -46,7 +46,7 @@ Cloud Manager による重要なイベントの通知方法を説明します。
 
 通知の受信方法と受信する通知をカスタマイズできます。
 
-通知サイドバーの上部にある歯車のアイコンをクリックします。
+通知サイドバーの上部にある歯車アイコンをクリックします。
 
 ![通知設定アイコン](/help/assets/notifications-configuration.png)
 
@@ -58,7 +58,7 @@ Cloud Manager による重要なイベントの通知方法を説明します。
 
 ![通知の購読](/help/assets/notifications-subscriptions.png)
 
-デフォルトでは、すべての製品に関するすべての通知を受信します。 製品の横にある「**カスタマイズ**」をクリックすると、その製品に対して受信する通知のタイプを定義できます。
+デフォルトでは、すべての製品に関するすべての通知を受信します。 製品の横にある **カスタマイズ** をクリックすると、その製品に対して受信する通知のタイプを定義できます。
 
 ![通知購読のカスタマイズ](/help/assets/notifications-subscriptions-customize.png)
 

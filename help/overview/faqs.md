@@ -2,7 +2,7 @@
 title: Cloud Manager FAQ
 description: このドキュメントでは、AMS のお客様向けに Cloud Manager に関する最もよくある質問に対する回答を示します。
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 93%
@@ -29,7 +29,7 @@ ht-degree: 93%
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-このプラグインを削除する手順については、[ こちらを参照 ](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/) してください。
+このプラグインを削除する方法については、[ こちらを参照 ](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/) してください。
 
 ## Java 8 から Java 11 に切り替えた後、RequireJavaVersion に関するエラーでビルドが失敗します。 どうすればいいですか？ {#requirejavaversion}
 

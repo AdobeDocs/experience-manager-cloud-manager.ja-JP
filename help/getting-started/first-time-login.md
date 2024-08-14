@@ -2,10 +2,10 @@
 title: 初回ログイン
 description: 一般設定をセットアップし、Cloud Manager を初めて使用する準備が整っている場合は、このページの手順に従ってください。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 75%
+ht-degree: 66%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 75%
 
 プログラムを設定する次の手順については、ドキュメント [ プログラム設定 ](/help/getting-started/program-setup.md) に進んでください。
 
-## Cloud Manager アクティビティ {#activity}
+## Cloud Managerアクティビティ {#activity}
 
 Cloud Manager では、プログラムのアクティビティの表示を統合し、実稼動と実稼動以外の両方の CI／CD パイプライン実行をすべて一覧表示して、過去と現在のアクティビティを可視化します。
 

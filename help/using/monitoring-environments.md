@@ -2,10 +2,10 @@
 title: 環境の監視
 description: Cloud Manager で環境を監視する方法について説明します。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 93%
+source-wordcount: '903'
+ht-degree: 79%
 
 ---
 
@@ -21,8 +21,6 @@ Cloud Manager で環境を監視する方法について説明します。
 指標が重大しきい値を超えた場合は、重大な状態にあると見なされます。指標が警告しきい値を超えた（ただし、重大しきい値は下回る）場合は、警告状態にあると見なされます。しきい値は Adobe Managed Services で設定され、[!UICONTROL Cloud Manager] で視覚化できます。ほとんどの場合、しきい値は顧客間で統一されていますが、特定の顧客要件に合わせて Adobe Managed Services がしきい値を変更する場合もあります。しきい値に関するご質問は、担当のカスタマーサクセスエンジニア（CSE）にお問い合わせください。
 
 ## システム監視へのアクセス {#accessing-system-monitoring}
-
-システム監視にアクセスするには、次の手順に従います。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -112,14 +110,14 @@ Cloud Manager で環境を監視する方法について説明します。
 
 ![イベント分析](/help/assets/sla-reporting3.png)
 
-## SLA 指標 {#sla-metrics}
+## SLA指標 {#sla-metrics}
 
-* **作成者契約**：これは、Adobe Managed Services との契約で定義される作成者層用の SLA です。
-* **AMS 作成者 SLA**：これは、アドビまたはアドビのベンダーが原因となって発生したインシデントを組み込んだ、実稼動作成者層の測定稼動時間です。
-* **作成者 SLA**：これは、メンテナンスウィンドウなどスケジュールされたダウンタイムを無視した、作成者層の測定稼動時間です。
-* **エンドユーザー契約**：これは、Adobe Managed Services との契約で定義されるパブリッシュ層用の SLA です。
-* **AMS エンドユーザー SLA**：これは、アドビまたはアドビのベンダーが原因となって発生したインシデントを組み込んだ、実稼動パブリッシュ層の測定稼動時間です。
-* **エンドユーザー SLA**：これは、メンテナンスウィンドウなどスケジュールされたダウンタイムを無視した、パブリッシュ層の測定稼動時間です。
+* **オーサーコントラクト**:AdobeManaged Servicesとの契約で定義されたSLA（オーサー層）です。
+* **AMS オーサーSLA**:Adobeまたはアドビのベンダーが原因となって発生したインシデントを組み込んだ、実稼動作成者層の測定稼動時間。
+* **オーサーSLA**：メンテナンスウィンドウなどの計画的なダウンタイムを無視した、オーサー層の測定稼動時間。
+* **エンドユーザーコントラクト**:AdobeManaged Servicesとの契約で定義されたSLA（パブリッシュ層）です。
+* **AMS エンドユーザーSLA**：ベンダーまたはAdobeが原因となって発生したインシデントを組み込んだ、実稼動パブリッシュ層の測定稼動時間。
+* **エンドユーザーSLA**：メンテナンスウィンドウなどのスケジュールされたダウンタイムを無視した、パブリッシュ層の測定稼動時間。
 
 ## ビデオチュートリアル {#video-tutorial}
 

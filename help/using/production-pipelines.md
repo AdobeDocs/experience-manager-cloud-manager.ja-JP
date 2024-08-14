@@ -2,10 +2,10 @@
 title: 実稼動パイプラインの設定
 description: Cloud Manager を使用して、コードをデプロイするための実稼動パイプラインを作成および設定する方法について説明します。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 91%
+source-wordcount: '1285'
+ht-degree: 87%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager を使用して、コードをデプロイするための実稼動
 >
 >パイプラインは、関連する Git リポジトリが少なくとも 1 つの分岐を持ち、[プログラム設定](/help/getting-started/program-setup.md)が完了するまで、設定できません。
 
-## 新しい実稼動パイプラインの追加 {#adding-production-pipeline}
+## 新しい実稼動パイプラインを追加 {#adding-production-pipeline}
 
 [!UICONTROL Cloud Manager] UI を使用してプログラムを設定し、少なくとも 1 つの環境を用意したら、実稼動パイプラインを追加する準備が整います。
 
@@ -124,7 +124,7 @@ Cloud Manager を使用して、コードをデプロイするための実稼動
 
          * **Dispatcher 設定** - 実稼動環境の Dispatcher 設定を定義します。オプションは、ステージング環境のオプションと同じです。
 
-1. 「**続行**」をクリックして「**ステージテスト**」タブに進み、ライセンスを取得した製品に応じて、AEM Sites と AEM Assets のパフォーマンステストを設定できます。
+1. 「**続行**」をクリックして「**ステージテスト**」タブに進み、ライセンスを取得した製品に応じて、AEM SitesとAEM Assetsのパフォーマンステストを設定できます。
 
    >[!TIP]
    >

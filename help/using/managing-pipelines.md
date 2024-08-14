@@ -2,10 +2,10 @@
 title: パイプラインの管理
 description: 既存のパイプラインの管理方法（編集、実行、削除を含む）を説明します。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 83%
+source-wordcount: '847'
+ht-degree: 80%
 
 ---
 
@@ -34,7 +34,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 * **リポジトリ情報にアクセス** - Cloud Manager の Git リポジトリへのアクセスに必要な情報を表示します
 * **詳細情報** - CI／CD パイプラインのドキュメントリソースに移動します。
 
-## パイプラインウィンドウ {#pipelines}
+## 「パイプライン」ウィンドウ {#pipelines}
 
 **パイプライン**&#x200B;ウィンドウには、選択したプログラムのすべてのパイプラインの完全なリストが表示されます。[ パイプラインカード ](#pipeline-card) で使用可能な情報よりも包括的な情報を提供できるので、これは便利です。
 
@@ -66,7 +66,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 「**詳細を表示**」をクリックすると、[ パイプライン実行の詳細 ](#view-details) に移動します。
 
-## パイプラインの実行 {#running-pipelines}
+## Ruu パイプライン {#running-pipelines}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -120,7 +120,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 パイプライン実行のすべての手順が表示され、まだ開始されていない手順はグレーアウトされます。完了した手順には、期間が表示されます。
 
-パイプラインの手順が完了すると、概要が表示されます。
+パイプラインステップが完了すると、概要が表示されます。
 
 ![手順の概要](/help/assets/configure-pipelines/pipeline-step.png)
 

@@ -2,10 +2,10 @@
 title: ユーザーと役割の追加
 description: Admin Consoleを使用して、ユーザーと役割を追加し、プロファイルを作成する方法について説明します。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 80%
+source-wordcount: '768'
+ht-degree: 78%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 80%
 >
 >Admin Console の開発者ペルソナは、[!UICONTROL Cloud Manager] のデベロッパーの役割とは無関係です。
 
-## Admin Console を使用したプロファイルの作成 {#using-admin-console-to-create-a-profile}
+## Admin console を使用したプロファイルの作成 {#using-admin-console-to-create-a-profile}
 
 [!UICONTROL Cloud Manager] の役割は、Admin Console から管理されます。特定の役割のメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
 
