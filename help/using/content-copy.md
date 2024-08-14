@@ -2,10 +2,10 @@
 title: コンテンツコピーツール
 description: Cloud Managerのコンテンツコピーツールを使用すると、可変コンテンツをオンデマンドで AMS でホストされているAEM 6.x 実稼動環境から下位のテスト用の環境にコピーできます。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 2563c58431e58d2fc5917a2ad88835bbdd4224f2
+source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 48%
+source-wordcount: '1144'
+ht-degree: 41%
 
 ---
 
@@ -165,11 +165,10 @@ Cloud Managerのコンテンツコピーツールを使用すると、可変コ�
 * コンテンツのコピー操作を同じ環境で同時に実行することはできません。
 * CI/CD パイプラインなどの宛先またはソース環境でアクティブな操作が実行されている場合、コンテンツのコピーは実行できません。
 * コンテンツセットごとに最大 50 個のパスを指定できます。除外されるパスに制限はありません。
-* コンテンツのコピーツールは、ソース上の移動されたコンテンツや削除されたコンテンツを追跡できないので、クローンまたはミラーリングツールとして使用しないでください。
-* コンテンツコピーを開始した後は、一時停止やキャンセルができません。
-* コンテンツのコピーツールは、Dynamic Media 関連のメタデータと共に、上位環境から選択した下位環境にアセットをコピーします。
-   * コピーしたアセットは、それぞれの Dynamic Media 設定を使用するために、下位環境で [DAM プロセスアセットワークフロー](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=ja)を使用して再処理する必要があります。
-* バージョン履歴をコピーしない場合、コンテンツのコピープロセスは大幅に高速になります。
+* コンテンツのコピーツールは、ソース上の移動されたコンテンツや削除されたコンテンツをトラックできないので、クローンまたはミラーリングツールとして使用しないでください。
+* コンテンツコピーは、開始後に一時停止したりキャンセルしたりすることはできません。
+* コンテンツコピーツールは、アセットとDynamic Mediaのメタデータを、上位環境から選択した下位環境にコピーします。 コピーしたアセットは、それぞれのDynamic Media設定を使用するために、下位環境で [DAM プロセスアセットワークフロー ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/using/assets-workflow) を使用して再処理する必要があります。
+* バージョン履歴がコピーされない場合、コンテンツのコピープロセスは大幅に高速になります。
 * [ アセットサイズが 2 GB を超えるDynamic Media設定は有効になっていま ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)。サポートされていません。
 * バージョン履歴がコピーされない場合、コンテンツのコピープロセスが大幅に高速になります。
 * ターゲット環境の地域は、ソース環境の地域と同じまたはサブセットである必要があります。
