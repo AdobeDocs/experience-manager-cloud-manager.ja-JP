@@ -2,10 +2,10 @@
 title: AMS 用 Cloud Manager の概要
 description: ここでは、Adobe Managed Services（AMS）用 Cloud Manager の概要と、組織がクラウドで Adobe Experience Manager を自己管理できるようにする仕組みについて説明します。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 57%
+source-wordcount: '1256'
+ht-degree: 49%
 
 ---
 
@@ -33,17 +33,15 @@ Adobe Experience Manager の [!UICONTROL Cloud Manager] を使用すると、開
 
 Cloud Manager を使用すると、開発チームは次の機能を利用できます。
 
-* コードの継続的インテグレーション／継続的配信（CI／CD）により、数か月／数週間かかっていた市場投入時間を数日／数時間へと短縮します。
+* コードの継続的統合/継続的配信（CI/CD）により、数か月/数週間かかっていた市場投入時間を数日/数時間へと短縮します。
 
 * 実稼動にプッシュする前に、ベストプラクティスに基づいたコード検査、パフォーマンステストおよびセキュリティ検証を行い、実稼動の中断を最小限に抑えることができます。
 
-* 既存の DevOps プロセスを補完する API 接続
+* 既存の DevOps プロセスを補完する API 接続。
 
-* 自動スケーリング機能により、容量増加の必要性をインテリジェントに検出し、Dispatcher／パブリッシュの追加セグメントを自動的にオンラインにします。
+* 自動スケーリング機能により、容量増加の必要性がインテリジェントに検出され、追加のDispatcher/公開セグメントが自動的にオンラインになります。
 
-この画像は、[!UICONTROL Cloud Manager] で使用される CI／CD プロセスフローを示します。
-
-![CI／CD フロー](/help/assets/screen_shot_2018-05-12at73843pm.png)
+![CI/CD フロー ](/help/assets/screen_shot_2018-05-12at73843pm.png)[!UICONTROL Cloud Manager] で使用される CI/CD プロセスフロー。
 
 ## [!UICONTROL Cloud Manager] の主な機能 {#key-features-in-cloud-manager}
 
@@ -57,7 +55,7 @@ Cloud Manager を使用すると、開発チームは次の機能を利用でき
 
 [!UICONTROL Cloud Manager] の UI を確認して使用を開始するには、[初回ログイン](/help/getting-started/first-time-login.md)を参照してください。
 
-### CI／CD パイプライン {#ci-cd-pipeline}
+### CI/CD パイプライン {#ci-cd-pipeline}
 
 [!UICONTROL Cloud Manager] の主要機能の 1 つは、最適化された CI／CD パイプラインを使用して、Web サイト上の新しいコンポーネントの追加などのカスタムコードやアップデートの配信を高速化する機能です。
 
@@ -75,7 +73,7 @@ Cloud Manager を使用すると、開発チームは次の機能を利用でき
 
 コードと品質チェックのデプロイについて詳しくは、[ コードのデプロイ ](/help/using/code-deployment.md) を参照してください。
 
-## Cloud Manager のオプション機能 {#optional-features-in-cloud-manager}
+## Cloud Managerのオプション機能 {#optional-features-in-cloud-manager}
 
 Cloud Managerには、特定の環境設定やニーズに応じた、プロジェクトに役立つ追加の高度な機能が用意されています。 これらの機能にご興味があれば、カスタマーサクセスエンジニア（CSE）またはAdobe担当者に詳細をお問い合わせください。
 
@@ -91,7 +89,7 @@ Cloud Managerには、特定の環境設定やニーズに応じた、プロジ�
 >
 >自動スケーリングがアプリケーションに適しているかどうかを確認したい場合は、担当の CSE またはAdobe担当者にお問い合わせください。
 
-### ブルー／グリーンデプロイメント {#blue-green}
+### ブルー/グリーンデプロイメント {#blue-green}
 
 ブルー／グリーンデプロイメントは、ブルーとグリーンと呼ばれる 2 つの同一の実稼動環境を実行することで、ダウンタイムとリスクを低減する手法です。
 
@@ -102,7 +100,7 @@ Cloud Managerには、特定の環境設定やニーズに応じた、プロジ�
 * グリーンのロードバランサーが設定の一部として作成されます。 このロードバランサーは変更されることはなく、グリーンまたは「テスト」 URL を示す必要があります。
 * ブルー/グリーンデプロイメント中に、既存のDispatcher/公開層の正確なレプリカが作成されます。
 
-#### ブルー／グリーンデプロイメントのフロー {#flow}
+#### ブルー/グリーンデプロイメントフロー {#flow}
 
 ブルー／グリーンデプロイメントが有効な場合、デプロイメントフローは標準の Cloud Service デプロイメントフローとは異なります。
 
@@ -119,7 +117,7 @@ Cloud Managerには、特定の環境設定やニーズに応じた、プロジ�
 | 9 | ブルーのインフラストラクチャは自動的に終了します | - |
 | 10 | パイプライン完了 | - |
 
-#### ブルー／グリーンの実装 {#implementing}
+#### ブルー/グリーンの実装 {#implementing}
 
 実稼動デプロイメントにCloud Managerを使用しているすべての AMS ユーザーは、ブルー/グリーンデプロイメントを使用する資格があります。 ただし、ブルー/グリーンデプロイメントを使用する場合は、環境の追加の検証と、AdobeCSE による設定が必要です。
 

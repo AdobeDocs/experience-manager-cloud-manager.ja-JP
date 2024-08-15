@@ -1,25 +1,25 @@
 ---
 title: Cloud Manager FAQ
-description: このドキュメントでは、AMS のお客様向けに Cloud Manager に関する最もよくある質問に対する回答を示します。
+description: AMS のお客様向けにCloud Managerに関する最もよくある質問への回答を説明します。
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 93%
+source-wordcount: '748'
+ht-degree: 57%
 
 ---
 
 
 # Cloud Manager FAQ {#cloud-manager-faqs}
 
-このドキュメントでは、AMS のお客様向けに Cloud Manager に関する最もよくある質問に対する回答を示します。
+このドキュメントでは、AMS のお客様向けにCloud Managerに関する最もよくある質問に対する回答を示します。
 
 ## Cloud Manager ビルドで Java 11 を使用することは可能ですか？ {#java-11}
 
 はい。Java 11 の正しい設定で `maven-toolchains-plugin` を追加する必要があります。
 
 * このプロセスについては、[ こちら ](/help/getting-started/using-the-wizard.md) を参照してください。
-* 例として、[wknd サンプルプロジェクトコード ](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75) を参照してください。
+* 例として、[WKND サンプルプロジェクトコード ](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75) を参照してください。
 
 ## Java 8 から Java 11 に切り替えた後、maven-scr-plugin に関するエラーでビルドが失敗します。どうすればいいですか？ {#maven-src-plugin}
 
@@ -29,7 +29,7 @@ ht-degree: 93%
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-このプラグインを削除する方法については、[ こちらを参照 ](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/) してください。
+このプラグインを削除する方法については、[ こちらを参照 ](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/) してください。
 
 ## Java 8 から Java 11 に切り替えた後、RequireJavaVersion に関するエラーでビルドが失敗します。 どうすればいいですか？ {#requirejavaversion}
 
@@ -39,26 +39,24 @@ Cloud Manager のビルドの場合、`maven-enforcer-plugin` は次のエラー
 [main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion
 ```
 
-これは既知の問題です。Cloud Manager で、コードのコンパイル時と異なるバージョンの Java を使用して maven コマンドを実行することが原因です。この問題を解決するには、`maven-enforcer-plugin` の設定から `requireJavaVersion` を省略するだけです。
+この既知の問題は、Cloud Managerで別のバージョンの Java を使用してコードのコンパイル用の Maven コマンドを実行することが原因です。 `maven-enforcer-plugin` 設定から `requireJavaVersion` を省略します。
 
-## コード品質チェックに失敗し、デプロイメントが停止しています。このチェックを回避する方法はありますか？ {#deployment-stuck}
+## コード品質チェックに失敗し、デプロイメントが停止します。 このチェックを回避する方法はありますか？ {#deployment-stuck}
 
-はい。セキュリティ評価以外のコード品質エラーはすべて重要指標ではないので、結果の UI で項目を展開することで、デプロイメントパイプラインの一部として考慮しないようにできます。
+はい。セキュリティ評価を除くすべてのコード品質エラーは、重要な指標ではありません。 そのため、結果の UI で項目を展開することで、デプロイメントパイプラインの一部として回避できます。
 
-[デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナー](/help/requirements/users-and-roles.md#role-definitions)の役割を持つユーザーは、問題をオーバーライドでき、その場合、パイプラインは続行されます。または、問題を受け入れることもでき、その場合、パイプラインはエラーで停止します。
+[ デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナー ](/help/requirements/users-and-roles.md#role-definitions) の役割を持つユーザーは、問題を上書きできます。 この場合、パイプラインは進行します。 または、問題を受け入れることもでき、その場合、パイプラインはエラーで停止します。
 
 詳しくは、[パイプライン実行中の 3 層ゲート](/help/using/code-quality-testing.md#three-tier-gates-while-running-a-pipeline)および[実稼動以外のパイプラインの設定](/help/using/non-production-pipelines.md#understanding-the-flow)を参照してください。
 
-## Cloud Manager のデプロイメントが、Adobe Managed Services 環境のパフォーマンステストステップで失敗します。重要な指標を渡すには、どのようにデバッグすればよいでしょうか？ {#debug-critical-metrics}
+## Cloud Manager のデプロイメントが、Adobe Managed Services 環境のパフォーマンステストステップで失敗します。重要な指標を渡すために、このイシューをどのようにデバッグできますか？ {#debug-critical-metrics}
 
-この質問に対する答えは一つではありません。 ただし、これらはパフォーマンステストステップに関する重要なポイントであり、留意する必要があります。
+この質問に対する答えは一つではありません。 ただし、パフォーマンステストの手順に関する次の点が役に立つ場合があります。
 
-* このステップは web パフォーマンスステップです。つまり、このステップで、web ブラウザーを使用してページが読み込まれます。
+* この手順は、web パフォーマンス手順です。 つまり、web ブラウザーを使用してページを読み込む時間です。
 * 結果の .csv ファイルにリストされている URL が、テスト中に Cloud Manager インフラストラクチャの Chrome ブラウザーに読み込まれます。
-* よく失敗する指標は、エラー率です。
-   * URL を渡すには、メイン URL が `200` ステータスで、かつ `20` 秒未満に読み込まれる必要があります。
-   * `20` 秒を超えるページ読み込みは `504` エラーとなります。
-* サイトでユーザー認証が必要な場合、サイトに対する認証のテストを設定する方法については、[テスト結果について](/help/using/code-quality-testing.md#authenticated-performance-testing)のドキュメントを参照してください。
+* 一般的な失敗指標は、エラー率です。 そのため、URL を渡すには、メイン URL が `200` ステータスで、かつ `20` 秒未満に読み込まれる必要があります。 ページの読み込みが `20` 秒を超えると、`504` エラーとマークされます。
+* サイトでユーザー認証が必要な場合は、サイトに対する認証を行えるようにテストを設定する方法について、[ テスト結果について ](/help/using/code-quality-testing.md#authenticated-performance-testing) を参照してください。
 
 品質チェックについて詳しくは、[ テスト結果について ](/help/using/code-quality-testing.md) を参照してください。
 
@@ -66,11 +64,11 @@ Cloud Manager のビルドの場合、`maven-enforcer-plugin` は次のエラー
 
 はい。開発者向けデプロイメントの場合、Git ブランチの `pom.xml` ファイルには、`<version>` 値の最後に `-SNAPSHOT` が含まれている必要があります。
 
-これにより、バージョンが変更されなかった場合でも、その後のデプロイメントを引き続きインストールできます。デベロッパーデプロイメントでは、maven ビルドの自動バージョンは追加または生成されません。
+これにより、バージョンが変更されなかった場合でも、以降のデプロイメントを引き続きインストールできます。 デベロッパーデプロイメントでは、maven ビルドの自動バージョンは追加または生成されません。
 
 また、ステージおよび実稼働ビルドまたはデプロイメントのバージョンを `-SNAPSHOT` に設定することもできます。Cloud Manager では、適切なバージョン番号を自動的に設定し、Git にタグを作成します。このタグは、必要に応じて後で参照できます。
 
-バージョン処理の詳細は、[こちらで説明しています](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html?lang=ja)。
+バージョン処理の詳細は、[こちらで説明しています](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling)。
 
 ## パッケージとバンドルのバージョン管理は、ステージングと実稼動のデプロイメントでどのように機能しますか？ {#staging-production}
 
