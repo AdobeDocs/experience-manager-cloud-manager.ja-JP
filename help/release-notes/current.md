@@ -2,9 +2,9 @@
 title: Cloud Manager 2024.8.0 のリリースノート
 description: Cloud Manager 2024.8.0 のリリースノートについて説明します。
 feature: Release Information
-source-git-commit: dd764bb17127ba0a1e88e85592329cc9ddff42e3
+source-git-commit: 5ced643fabe0a670e456cbea72f9da8196ac774a
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '266'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 5%
 
 ## 早期導入プログラム {#early-adoption}
 
-Adobeの早期導入プログラムに参加して、今後の機能をテストする機会を得ます。
+Cloud Managerの早期導入プログラムに参加して、今後の機能をテストする機会を得ます。
 
 ### ステージング専用パイプラインと実稼動専用パイプライン {#staging-production-only-pipelines}
 
