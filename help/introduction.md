@@ -18,8 +18,8 @@ ht-degree: 49%
 >id="aemcloud_cloudmanager_introduction"
 >title="AMS 用 Cloud Manager の概要"
 >abstract="組織がクラウドで Adobe Experience Manager を自己管理できるようにします。このサービスには継続的インテグレーションと継続的デリバリー（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="プログラムの作成"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="環境の作成"
+>additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="プログラムの作成"
+>additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="環境の作成"
 
 ## はじめに {#introduction}
 
