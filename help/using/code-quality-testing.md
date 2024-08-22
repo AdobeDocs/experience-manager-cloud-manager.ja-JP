@@ -2,10 +2,10 @@
 title: コード品質テスト
 description: パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '2763'
-ht-degree: 94%
+source-wordcount: '2764'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 94%
 
 >[!TIP]
 >
->ルールの完全なリストをダウンロードできます [ このリンクを使用 ](/help/assets/CodeQuality-rules-latest-AMS.xlsx)。
+>ルールの完全なリストをダウンロードするには、[このリンクを使用](/help/assets/CodeQuality-rules-latest-AMS.xlsx)します。
 
 コード品質テストの結果は、次の表にまとめた評価として提供されます。
 
@@ -71,9 +71,9 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->[!UICONTROL Cloud Manager] で実行されるカスタムコード品質ルールについて詳しくは、[ カスタムコード品質ルール ](custom-code-quality-rules.md) を参照してください。
+>[!UICONTROL Cloud Manager] で実行されるカスタムコード品質ルールについて詳しくは、[カスタムコード品質ルール](custom-code-quality-rules.md)を参照してください。
 
-### 誤検出の処理 {#dealing-with-false-positives}
+### 偽陽性の処理 {#dealing-with-false-positives}
 
 品質スキャンプロセスは完璧ではありません。実際には問題がないにもかかわらず、誤って問題として特定することもあります。このシナリオは誤検出と呼ばれます。
 
@@ -139,7 +139,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | web サーバーが、クリックジャッキングを防止するように設定されている。 | Web サーバー設定 | 重要 |
 | レプリケーションが `admin` ユーザーを使用していない。 | レプリケーションとトランスポートユーザー | 情報 |
 
-## パフォーマンステスト {#performance-testing}
+## パフォーマンスのテスト {#performance-testing}
 
 ### AEM Sites {#aem-sites}
 
@@ -172,7 +172,7 @@ Cloud Manager では、**ビジネスオーナー**&#x200B;の役割で設定し
 
 ##### 選択したページセットをまたいだトラフィックの配分 {#distribution-of-traffic}
 
-[ パイプライン設定 ](/help/using/production-pipelines.md) の **テスト** タブで、1 セットから全 3 セットまでのいずれかを選択できます。 トラフィックの配分は、選択したセットの数に基づきます。 つまり、3 つすべてを選択した場合、合計ページビューの 33％が各セットに入れられます。2 つを選択した場合、50％が各セットに入れられます。1 つを選択した場合、トラフィックの 100％がそのセットに入れられます。
+[パイプライン設定](/help/using/production-pipelines.md)の「**テスト**」タブで、1 セットから全 3 セットまでのいずれかを選択できます。トラフィックの配分は、選択したセットの数に基づきます。つまり、3 つすべてを選択した場合、合計ページビューの 33％が各セットに入れられます。2 つを選択した場合、50％が各セットに入れられます。1 つを選択した場合、トラフィックの 100％がそのセットに入れられます。
 
 この例を考えてみましょう。
 
@@ -188,7 +188,7 @@ Cloud Manager では、**ビジネスオーナー**&#x200B;の役割で設定し
 
 #### テストとレポート {#testing-reporting}
 
-Cloud Manager は、ステージングパブリッシュサーバーで 30 分のテスト期間、デフォルトで認証されていないユーザーとしてページをリクエストすることで、AEM Sites プログラムのパフォーマンステストを実行します。各ページの仮想ユーザー生成指標（応答時間、エラー率、1 分あたりのビュー数など）と、すべてのインスタンスの様々なシステムレベルの指標（CPU、メモリ、ネットワークデータ）を測定します。
+Cloud Manager は、ステージングパブリッシュサーバーで 30 分のテスト期間、デフォルトで認証されていないユーザーとしてページをリクエストすることで、AEM Sites プログラムのパフォーマンステストを実行します。各ページの仮想的なユーザー生成指標（応答時間、エラー率、1 分あたりのビュー数など）と、すべてのインスタンスに対して様々なシステムレベルの指標（CPU、メモリ、ネットワークデータ）を測定します。
 
 3 層ゲートシステムを使用したパフォーマンステストマトリックスの概要を次の表に示します。
 
@@ -204,7 +204,7 @@ Cloud Manager は、ステージングパブリッシュサーバーで 30 分�
 | ネットワーク帯域幅使用量 | 重要 | >= 90% |
 | 1 分あたりのリクエスト数 | 情報 | >= 6000 |
 
-Sites とAssetsのパフォーマンステストで基本的な認証を使用する方法について詳しくは、[ 認証済みパフォーマンステスト ](#authenticated-performance-testing) を参照してください。
+Sites とAssetsのパフォーマンステストで基本認証を使用する方法について詳しくは、[ 認証済みパフォーマンステスト ](#authenticated-performance-testing) を参照してください。
 
 >[!NOTE]
 >
@@ -224,7 +224,7 @@ Cloud Manager CLI を使用してこれらの変数を設定するには、次�
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-API の使用方法については、[Patch User Pipeline Variables](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables)（ユーザーパイプライン変数へのパッチ適用）の API ドキュメントを参照してください。
+API の使用方法については、[ ユーザーパイプライン変数のパッチ適用 ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API ドキュメントを参照してください。
 
 ### AEM Assets {#aem-assets}
 
@@ -236,13 +236,13 @@ Assets のパフォーマンステストの場合、お客様のカスタマー�
 
 このメソッドは、権限を変更せずにオーサーインスタンスに残す必要があります。変更または削除すると、Assets のパフォーマンステストが失敗する可能性があります。
 
-#### テスト用の画像とアセット {#assets-for-testing}
+#### テスト用の画像とAssets {#assets-for-testing}
 
 顧客は、独自のアセットをアップロードしてテストできます。このプロセスは、**パイプライン設定**&#x200B;または&#x200B;**編集**&#x200B;画面で行うことができます。JPEG、PNG、GIF、BMP などの一般的な画像形式のほか、Photoshop ファイル、Illustrator ファイル、Postscript ファイルがサポートされています。
 
 ただし、画像がアップロードされない場合、Cloud Manager では、デフォルトの画像と PDF ドキュメントがテストに使用されます。
 
-#### テスト用アセットの配分 {#distribution-of-assets}
+#### テスト用Assetsの配布 {#distribution-of-assets}
 
 1 分ごとにアップロードされる各タイプのアセット数の配分は、**パイプライン設定**&#x200B;または&#x200B;**編集**&#x200B;画面で設定します。
 
@@ -250,15 +250,15 @@ Assets のパフォーマンステストの場合、お客様のカスタマー�
 
 #### テストとレポート {#testing-and-reporting}
 
-Cloud Manager は、CSE にセットアップされたユーザー名とパスワードを使用して、オーサーインスタンス上にフォルダーを作成します。その後、オープンソースライブラリを使用してアセットがフォルダーにアップロードされます。Assetsのテスト手順で実行されるテストは、[ オープンソースライブラリ ](https://github.com/adobe/toughday2) を使用して記述されます。 30 分のテスト期間にわたって、各アセットの処理時間と、様々なシステムレベルの指標の両方が測定されます。 この機能では、画像と PDF ドキュメントの両方をアップロードできます。
+Cloud Manager は、CSE にセットアップされたユーザー名とパスワードを使用して、オーサーインスタンス上にフォルダーを作成します。その後、オープンソースライブラリを使用してアセットがフォルダーにアップロードされます。アセットのテスト手順で実行されるテストは、この[オープンソースライブラリ](https://github.com/adobe/toughday2)を使用して記述されます。30 分のテスト期間にわたって、各アセットの処理時間と、様々なシステムレベルの指標の両方が測定されます。この機能では、画像と PDF ドキュメントの両方をアップロードできます。
 
 >[!TIP]
 >
->詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)を参照してください。プログラムのセットアップ方法と KPI の定義方法については、[プログラムのセットアップ](/help/getting-started/program-setup.md)のドキュメントを参照してください。
+>詳しくは、[ 実稼動パイプラインの設定 ](/help/using/production-pipelines.md) を参照してください。 プログラムのセットアップ方法と KPI の定義方法については、[プログラムのセットアップ](/help/getting-started/program-setup.md)のドキュメントを参照してください。
 
 ### パフォーマンステスト結果のグラフ {#performance-testing-results-graphs}
 
-様々な指標を&#x200B;**パフォーマンステストダイアログ**&#x200B;で使用できます
+様々な指標を「パフォーマンステストダイアログボックス **で使用でき** す。
 
 ![指標のリスト](/help/assets/understand_test-results-screen1.png)
 

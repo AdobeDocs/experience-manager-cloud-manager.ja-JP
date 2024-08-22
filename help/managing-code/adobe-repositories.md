@@ -2,18 +2,18 @@
 title: Cloud Manager での Adobe リポジトリの追加
 description: Cloud Manager でアドビが管理するリポジトリを作成する方法について説明します。
 exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 79%
+ht-degree: 93%
 
 ---
 
-# Cloud Manager での Adobe リポジトリの追加 {#adobe-repositories}
+# Cloud ManagerでのAdobeリポジトリの追加 {#adobe-repositories}
 
 Cloud Manager でアドビが管理するリポジトリを作成する方法について説明します。
 
-## アドビが管理するリポジトリの追加 {#add-adobe-repository}
+## Adobeが管理するリポジトリの追加 {#add-adobe-repository}
 
 **リポジトリ**&#x200B;ウィンドウを使用すると、アドビが管理するリポジトリをプログラムに容易に追加できます。
 
@@ -29,8 +29,8 @@ Cloud Manager でアドビが管理するリポジトリを作成する方法に
 
    ![リポジトリーを追加ダイアログ](assets/add-repository-wizard.png)
 
-ウィザードが閉じると、新しいリポジトリが&#x200B;**リポジトリ**&#x200B;ウィンドウのテーブルに表示されます。[CI/CD パイプライン ](/help/overview/ci-cd-pipelines.md) を関連付けたり、[**リポジトリ** ウィンドウ ](managing-repositories.md) 内で管理したりできるようになりました。
+ウィザードが閉じると、新しいリポジトリが&#x200B;**リポジトリ**&#x200B;ウィンドウのテーブルに表示されます。これで、[CI/CD パイプライン](/help/overview/ci-cd-pipelines.md)を関連付けることや、[**リポジトリ**&#x200B;ウィンドウ](managing-repositories.md)内で管理することができます。
 
 >[!TIP]
 >
->また、自分を [ プライベートリポジトリ ](private-repositories.md) として管理する GitHub リポジトリを追加することもできます。
+>また、自分で管理する GitHub リポジトリを[プライベートリポジトリ](private-repositories.md)として追加することもできます。

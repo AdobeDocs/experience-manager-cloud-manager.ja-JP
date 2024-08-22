@@ -1,17 +1,17 @@
 ---
 title: 実稼動以外のパイプラインの設定
-description: Cloud Manager を使用して、コードをデプロイするための実稼動以外のパイプラインを作成および設定する方法について説明します。
+description: Cloud Manager を使用して、コードをデプロイする実稼動以外のパイプラインを作成および設定する方法について説明します。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 55%
+ht-degree: 64%
 
 ---
 
 # 実稼動以外のパイプラインの設定 {#configuring-non-production-pipelines}
 
-Cloud Manager を使用して、コードをデプロイするための実稼動以外のパイプラインを作成および設定する方法について説明します。Cloud Managerでのパイプラインの動作に関する概念的な概要については、[CI/CD パイプライン ](/help/overview/ci-cd-pipelines.md) を参照してください。
+Cloud Manager を使用して、コードをデプロイする実稼動以外のパイプラインを作成および設定する方法について説明します。Cloud Manager でのパイプラインの動作に関する概念的な概要を最初に把握したい場合は、[CI／CD パイプライン](/help/overview/ci-cd-pipelines.md)を参照してください。
 
 ## 概要 {#overview}
 
@@ -20,7 +20,7 @@ Cloud Manager を使用して、コードをデプロイするための実稼動
 * **実稼動パイプライン** - 実稼動パイプラインは、ソースコードを最終的に実稼動環境に取り込むために調整された一連のステップで構成される専用のパイプラインです。
 * **実稼動以外のパイプライン** - 実稼動以外のパイプラインは、コード品質スキャンの実行または開発環境へのソースコードのデプロイを目的としています。
 
-このドキュメントでは、実稼動以外のパイプラインに焦点を当てます。実稼動パイプラインの設定方法について詳しくは、ドキュメント [ 実稼動パイプラインの設定 ](/help/using/production-pipelines.md) を参照してください。
+このドキュメントでは、実稼動以外のパイプラインに焦点を当てます。実稼動パイプラインの設定方法について詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)のドキュメントを参照してください。
 
 実稼動以外のパイプラインには次の 2 種類があります。
 
@@ -29,9 +29,9 @@ Cloud Manager を使用して、コードをデプロイするための実稼動
 
 >[!NOTE]
 >
->パイプラインは、関連する Git リポジトリに 1 つの以上の分岐を設定し、[ プログラム設定 ](/help/getting-started/program-setup.md) が完了するまで、設定できません。 Cloud Managerでリポジトリを追加および管理する方法については ](/help/managing-code/managing-repositories.md)[Cloud Manager リポジトリ } を参照してください。
+>パイプラインは、関連する Git リポジトリーが少なくとも 1 つの分岐を持ち、[ プログラム設定 ](/help/getting-started/program-setup.md) が完了するまで、設定できません。 Cloud Managerでリポジトリを追加および管理する方法については ](/help/managing-code/managing-repositories.md)[Cloud Manager リポジトリ } を参照してください。
 
-## 実稼動以外のパイプラインを追加 {#add-non-production-pipeline}
+## 実稼動以外のパイプラインの追加 {#add-non-production-pipeline}
 
 Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環境を用意したら、次の手順に従って実稼動以外のパイプラインを追加する準備が整います。
 
@@ -81,7 +81,7 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 
 ## 次の手順 {#the-next-steps}
 
-パイプラインを設定したら、コードをデプロイできます。 詳しくは、[ コードのデプロイメント ](/help/using/code-deployment.md) を参照してください。
+パイプラインを設定したら、コードをデプロイできます。 詳しくは、[コードのデプロイメント](/help/using/code-deployment.md)を参照してください。
 
 ## ビデオチュートリアル {#video-tutorial}
 

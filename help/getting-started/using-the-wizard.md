@@ -2,23 +2,23 @@
 title: 新規プロジェクトウィザードの使用
 description: このページでは、ウィザードを使用して AEM アプリケーションプロジェクトを作成する方法を説明します
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 33%
+ht-degree: 30%
 
 ---
 
 
 # 新規プロジェクト ウィザードの使用 {#using-the-wizard}
 
-新しいカスタマーとしてCloud Managerにオンボーディングされた際に、空の Git リポジトリーが提供されていました。 最初に、Cloud Manger は、出発点として [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)に基づいて最小限の AEM プロジェクトを作成するためのウィザードを提供します。
+新規ユーザーとしてCloud Managerにオンボーディングされた際には、空の Git リポジトリーが提供されていました。 最初に、Cloud Manger は、出発点として [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)に基づいて最小限の AEM プロジェクトを作成するためのウィザードを提供します。
 
 ウィザードを使用して AEM プロジェクトを作成するには、次の手順に従います。
 
 1. [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. まだ作成していない場合は、[ プログラムを作成 ](program-setup.md) します。 プログラムを作成すると、Cloud Managerはリポジトリがまだ設定されていないことを検出します。 特別なコールトゥアクションカードが **概要** 画面に表示されます。
+1. まだ作成していない場合は、[プログラムを作成](program-setup.md)します。プログラムを作成すると、Cloud Managerはリポジトリがまだ設定されていないことを検出します。 特別なコールトゥアクションカードが **概要** 画面に表示されます。
 
    ![プロジェクト CTA を作成](/help/assets/image2018-10-3_14-29-44.png)
 
@@ -33,7 +33,7 @@ ht-degree: 33%
 
    ![詳細なアーキタイプパラメーター](/help/assets/screen_shot_2018-10-08at60032am.png)
 
-1. 「**作成**」をクリックして、アーキタイプを使用してスタータープロジェクトを作成し、名前付き Git ブランチにコミットします。
+1. **作成** をクリックして、アーキタイプを使用してスタータープロジェクトを作成し、名前付き Git ブランチにコミットします。
 
 これで、ベースプロジェクトが作成されました。 パイプラインを設定する時間です。
 

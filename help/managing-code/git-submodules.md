@@ -2,10 +2,10 @@
 title: Git サブモジュールのサポート
 description: Git サブモジュールを使用して、ビルド時に Git リポジトリ間で複数のブランチのコンテンツを結合する方法について説明します。
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 28%
+ht-degree: 20%
 
 ---
 
@@ -91,4 +91,4 @@ Git サブモジュールを使用する場合は、次の点に注意してく�
 
 * サブモジュールの Git URL は、HTTPS 形式または SSH 形式のいずれかですが、Github.com リポジトリにリンクする必要があります。 Adobeリポジトリサブモジュールを GitHub アグリゲータリポジトリーに、またはその逆に追加しても、機能しません。
 * GitHub サブモジュールは、Adobe GitHub アプリからアクセスできる必要があります。
-* また、[アドビが管理するリポジトリで Git サブモジュールを使用する場合の制限事項](#limitations-recommendations)も適用されます。
+* [Git サブモジュールをAdobeが管理するリポジトリで使用する場合の制限 ](#limitations-recommendations) も適用されます。

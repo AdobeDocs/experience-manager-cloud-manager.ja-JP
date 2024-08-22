@@ -2,9 +2,9 @@
 title: ユーザージャーニー
 description: 様々なオンボーディングシナリオとCloud Managerの基本を学びます。
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
-source-git-commit: 6a5615c0db91c62fc8858b967021b46c7b383aa0
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '532'
 ht-degree: 24%
 
 ---
@@ -52,7 +52,7 @@ AEM 6.5 へのアップグレードの利点について詳しくは、[AEM 6.5 
 
 AdobeのIdentity Management資格情報を使用して ]Experience Cloud} ランディングページにログインします。 [!UICONTROL ソリューション切り替えボタンで「AEM」を選択すると、[!UICONTROL Cloud Manager] およびAEM環境にアクセスできます。
 
-[!UICONTROL Cloud Manager] に初めてログインした後、[!UICONTROL Cloud Manager] UI から直接AEM環境にアクセスできるようになります。 最初のコードブランチをステージ環境および実稼動環境にデプロイすると、この時点で、[!UICONTROL Cloud Manager] のすべての機能を確認する準備が整います。
+[!UICONTROL Cloud Manager] に初めてログインした後、[!UICONTROL Cloud Manager] UI から直接AEM環境にアクセスできます。 最初のコードブランチをステージ環境および実稼動環境にデプロイすると、この時点で、[!UICONTROL Cloud Manager] のすべての機能を確認する準備が整います。
 
 [!UICONTROL Cloud Manager] を使い始めるには、[ 初回ログイン ](/help/getting-started/first-time-login.md) を参照してください。
 

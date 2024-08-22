@@ -2,10 +2,10 @@
 title: 役割ベースの権限
 description: Cloud Manager の事前設定された役割ベースの権限によるクラウドリソースへのアクセスの管理について説明します。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 54%
+ht-degree: 60%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 54%
 
 ## ユーザーの役割 {#user-roles}
 
-[!UICONTROL Cloud Manager] の役割管理は、[Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を使用して行われます。 [!UICONTROL Cloud Manager] のすべてのユーザーは、顧客の IMS 組織のメンバーであり、AdobeのManaged Services Product Context を持っている必要があります。 特定の役割のメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
+[!UICONTROL Cloud Manager] の役割管理は、[Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を使用して行います。[!UICONTROL Cloud Manager] のユーザーはすべて、顧客の IMS 組織のメンバーであり、Adobe Managed Services 製品コンテキストを持っている必要があります。特定の役割のメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
 
 役割の設定方法について詳しくは、[ ユーザーと役割の設定 ](/help/requirements/users-and-roles.md) を参照してください。
 
@@ -51,7 +51,7 @@ Admin Consoleで割り当てることができるロールの一覧を次の表�
 | 実行の読み取り | 実行ステータスを参照します | x | x | x | x | x |
 | 実行の再開 | 一時停止した実行を再開する機能 | x | x | x | | x |
 | 実行における実稼動環境へのデプロイメントの承認 | 運用開始を承認します | x | x | x | | |
-| 実行における実稼動環境へのデプロイメントのスケジュール設定 | 実稼働デプロイメントのスケジュールを設定します | x | x | x | | x |
+| 実行における実稼動環境へのデプロイメントのスケジュール設定 | 実稼動デプロイメントをスケジュール | x | x | x | | x |
 | 実行における実稼動環境へのデプロイメント | CSE による監督のために一時停止した際にアプリケーションを実稼動環境にデプロイします | | | | | x |
 | 実行のキャンセル | 現在の実行のキャンセル | | | x | | |
 | 実行における品質ゲートエラーのオーバーライド | 重大な品質ゲートエラーを承認します | x | x | x | | |
@@ -59,13 +59,13 @@ Admin Consoleで割り当てることができるロールの一覧を次の表�
 | パイプラインの読み取り | パイプラインの詳細を参照します | x | x | x | x | x |
 | パイプラインへの書き込み | パイプラインをセットアップ／編集します | | x | | | |
 | パイプラインにおける承認変更 | ビジネスオーナーオプションの編集を許可します | | x | | | |
-| パイプラインにおける管理対象デプロイメントの変更 | CSE 監督オプションの編集を許可します | | × | | | |
+| パイプラインにおける管理対象デプロイメントの変更 | CSE 監督オプションの編集を許可します | | x | | | |
 | パイプラインの削除 | パイプラインの削除を許可します | | x | | | |
 | ステップの読み取り | ステップの品質指標の結果を参照します | x | x | x | x | x |
-| 個人用アクセストークンの生成 | Git へのアクセス | | x | | x | |
+| 個人用アクセストークンの生成 | Git にアクセス | | x | | x | |
 
 ユーザーの設定方法について詳しくは、[ ユーザーと役割の設定 ](/help/requirements/users-and-roles.md) を参照してください。
 
 >[!TIP]
 >
->設定可能な権限を持つカスタム権限プロファイルも使用できます。詳しくは、[ カスタム権限 ](/help/using/custom-permissions.md) を参照してください。
+>設定可能な権限を持つカスタム権限プロファイルも使用できます。詳しくは、[カスタム権限](/help/using/custom-permissions.md)を参照してください。

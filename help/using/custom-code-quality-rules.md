@@ -2,17 +2,17 @@
 title: カスタムコード品質ルール
 description: コード品質テスト中に Cloud Manager で実行されるカスタムコード品質ルールの詳細を確認します。これらのルールは、AEM Engineering のベストプラクティスに基づいています。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '3482'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # カスタムコード品質ルール {#custom-code-quality-rules}
 
-AEM Engineering のベストプラクティスに基づいて、Cloud Managerが [ コード品質テスト ](/help/using/code-quality-testing.md) の一環として実行するカスタムコード品質ルールについて詳しく説明します。
+AEM Engineering のベストプラクティスに基づいて、Cloud Manager が[コード品質テスト](/help/using/code-quality-testing.md)の一環として実行するカスタムコード品質ルールについて詳しく説明します。
 
 >[!NOTE]
 >
@@ -500,7 +500,7 @@ public void doThis(Resource resource) {
 
 確実な実行を必要とするタスクには、 Sling スケジューラーを使用しないでください。Sling スケジュールジョブは実行を保証し、クラスター化環境と非クラスター化環境の両方に適しています。
 
-Sling ジョブがクラスター環境で処理される方法について詳しくは、[Apache Sling のイベントとジョブの取り扱い ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) を参照してください。
+Sling ジョブがクラスター環境で処理される方法について詳しくは、[Apache Sling のイベントとジョブの取り扱い](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)を参照してください。
 
 ### AEM の非推奨 API は使用しない {#sonarqube-aem-deprecated}
 
@@ -655,7 +655,7 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-リバースレプリケーションのサポートは、[ リリースノート：レプリケーションエージェントの削除 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents) で説明しているように、Cloud Serviceのデプロイでは利用できません。
+リバースレプリケーションのサポートは、[リリースノート：レプリケーションエージェントの削除](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents)で説明しているように、Cloud Service のデプロイメントでは利用できません。
 
 リバースレプリケーションを使用するお客様は、アドビに問い合わせて、代替ソリューションをご利用ください。
 
@@ -666,7 +666,7 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM クライアントライブラリには、画像やフォントなどの静的なリソースが含まれる場合があります。[ クライアント側ライブラリの使用のドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors) で説明しているように、プロキシ化されたクライアントライブラリを使用する場合、パブリッシュインスタンスで効果的に参照するために、これらの静的リソースを `resources` という名前の子フォルダーに格納する必要があります。
+AEM クライアントライブラリには、画像やフォントなどの静的なリソースが含まれる場合があります。[クライアントサイドライブラリの使用のドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors)で説明されるように、プロキシ化されたクライアントライブラリを使用する場合、パブリッシュインスタンスで効果的に参照するために、これらの静的リソースを `resources` という名前の子フォルダーに格納する必要があります。
 
 #### 非準拠コード {#non-compliant-proxy-enabled}
 
@@ -708,7 +708,7 @@ AEM Cloud Service 上でアセット処理を行う Assets マイクロサービ
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-従来、AEM プロジェクトでは静的テンプレートを使用するのが一般的でしたが、最も柔軟性が高く、静的なテンプレートにはない追加機能をサポートしている編集可能なテンプレートを強くお勧めします。詳しくは、[ ページテンプレート – 編集可能なドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable) を参照してください。
+従来、AEM プロジェクトでは静的テンプレートを使用するのが一般的でしたが、最も柔軟性が高く、静的なテンプレートにはない追加機能をサポートしている編集可能なテンプレートを強くお勧めします。詳しくは、[ページテンプレート - 編集可能なドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable)を参照してください。
 
 静的なテンプレートから編集可能なテンプレートへの移行は、[AEM 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)を使用して、大幅に自動化できます。
 
@@ -719,7 +719,7 @@ AEM Cloud Service 上でアセット処理を行う Assets マイクロサービ
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-一部のAEM リリースでは、従来の基盤コンポーネント（`/libs/foundation` 下のコンポーネント）は廃止され、[ コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction) に置き換わりました。 使用する方法がオーバーレイであろうと継承であろうと、従来の基盤コンポーネントに基づいてカスタムコンポーネントを作成することは、お勧めしません。対応するコアコンポーネントに移行してください。
+一部の AEM リリースでは、従来の基盤コンポーネント（`/libs/foundation` 下のコンポーネントなど）は廃止され、[コアコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction)に置き換わりました。使用する方法がオーバーレイであろうと継承であろうと、従来の基盤コンポーネントに基づいてカスタムコンポーネントを使用することは、お勧めしません。対応するコアコンポーネントに変換してください。
 
 [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/) を使用すると、この変換が容易になります。
 
@@ -730,7 +730,7 @@ AEM Cloud Service 上でアセット処理を行う Assets マイクロサービ
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノードなど）が `/oak:index` の直接の子ノードである必要があります。AEM Cloud Service と互換性を持たせるため、他の場所にあるインデックスは移動する必要があります。検索インデックスの詳細については、[ コンテンツ検索とインデックス作成のドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/indexing) を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノードなど）が `/oak:index` の直接の子ノードである必要があります。AEM Cloud Service と互換性を持たせるため、他の場所にあるインデックスは移動する必要があります。検索インデックスについて詳しくは、[コンテンツ検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/indexing)を参照してください。
 
 ### カスタム検索インデックス定義ノードの compatVersion は 2 にする {#oakpal-custom-search-compatVersion}
 
@@ -739,7 +739,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（`oak:Que
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）の `compatVersion` プロパティを `2` に設定する必要があります。AEM Cloud Service は、その他の値をサポートしていません。検索インデックスの詳細については、[ コンテンツ検索とインデックス作成のドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/indexing) を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）の `compatVersion` プロパティを `2` に設定する必要があります。AEM Cloud Service は、その他の値をサポートしていません。検索インデックスについて詳しくは、[コンテンツ検索とインデックス作成のドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/operations/indexing)を参照してください。
 
 ### カスタム検索インデックス定義ノードの子孫ノードのタイプは、`nt:unstructured` にする {#oakpal-descendent-nodes}
 
@@ -757,7 +757,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（`oak:Que
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-適切に定義されたカスタム検索インデックス定義ノードには、`indexRules` という名前の子ノードが含まれている必要があり、このノードに少なくとも 1 つの子が必要です。詳しくは、[Oak ドキュメント ](https://jackrabbit.apache.org/oak/docs/query/lucene.html) を参照してください。
+適切に定義されたカスタム検索インデックス定義ノードには、`indexRules` という名前の子ノードが含まれている必要があり、このノードに少なくとも 1 つの子が必要です。詳しくは、[Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html)を参照してください。
 
 ### カスタム検索インデックス定義ノードは命名規則に従う {#oakpal-custom-search-definitions}
 
