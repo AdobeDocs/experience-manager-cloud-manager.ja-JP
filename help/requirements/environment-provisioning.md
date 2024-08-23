@@ -5,7 +5,7 @@ exl-id: eade4255-89b5-4c65-a498-1c6d4e8c73ff
 source-git-commit: 4c977cdfbef438fdabd90ee104d98887f2467b49
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 27%
+ht-degree: 36%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager のオンボーディングプロセスの一環として環境を
 
 ## お知らせメール {#welcome-email}
 
-環境プロビジョニング・プロセスが完了すると、Adobe[!UICONTROL Experience Cloud] へのアクセス権が付与されたことを確認するお知らせメールが顧客側の指定管理者に届きます。 お知らせメールには、[!UICONTROL Experience Cloud] サービス、[!UICONTROL AEM Managed Services] クラウド環境、[!UICONTROL Cloud Manager] セルフサービスポータルの使用を開始する方法が詳しく記載されています。 さらに、このメールには、カスタマーサクセスエンジニア（CSE）の連絡先情報のほか、サポートリソース、フォーラム、FAQ などの URL といった重要な情報も含まれています。このメールに記載されているリソースの一覧には、AEM クラウド環境の [!UICONTROL Cloud Manager] にアクセスする方法の詳細も記載されています。
+環境プロビジョニング・プロセスが完了すると、Adobe[!UICONTROL Experience Cloud] へのアクセス権が付与されたことを確認するお知らせメールが顧客側の指定管理者に届きます。 ウェルカムメールには、[!UICONTROL Experience Cloud] サービス、[!UICONTROL AEM Managed Services] クラウド環境および [!UICONTROL Cloud Manager] セルフサービスポータルの使用を開始する方法が詳しく記載されています。さらに、このメールには、カスタマーサクセスエンジニア（CSE）の連絡先情報のほか、サポートリソース、フォーラム、FAQ などの URL といった重要な情報も含まれています。このメールに記載されているリソースの一覧には、AEM クラウド環境の [!UICONTROL Cloud Manager] にアクセスする方法の詳細も記載されています。
 
 ## 次の手順 {#next-steps}
 

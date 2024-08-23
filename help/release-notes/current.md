@@ -5,7 +5,7 @@ feature: Release Information
 source-git-commit: 5ced643fabe0a670e456cbea72f9da8196ac774a
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 5%
+ht-degree: 28%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->AEM as a Cloud ServiceのCloud Managerの最新のリリースノートについては、[AEM as a Cloud ServiceのCloud Managerの最新のリリースノート ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/cloud-manager/current) を参照してください。
+>AEM as a Cloud ServiceのCloud Managerの最新のリリースノートについては、[AEM as a Cloud ServiceのCloud Managerの最新のリリースノート ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/cloud-manager/current) を参照してください。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.8.0 のリリース日は 2024 年 8 月 14 日です。 次回のリリースは 2024年9月14日（PT）に予定されています。
+[!UICONTROL Cloud Manager] 2024.8.0 のリリース日は 2024年8月14日（PT）です。次回のリリースは 2024年9月14日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
@@ -38,7 +38,7 @@ Adobeは、（ステージング専用パイプラインと実稼動専用パイ
 
 ## バグ修正
 
-* パイプラインが削除された後、パイプラインステップが実行中であることが判明するまれな問題を修正しました。
+* パイプラインの削除後にパイプライン手順が実行中であることが検出されるというまれな問題を修正しました。
 * パイプラインの再実行が最初の試行で動作するようになりました。再実行を複数回開始しなければならない稀な問題を修正しました。
 * フルスタックパイプラインのスケジュールされたデプロイメントステップで、選択したスケジュール日が適用されるようになり、「今すぐ **に戻さなくなりました**。
 * コンテンツのコピータスクの失敗したステータスが正しく反映されるようになり、まれに誤って `In Progress` ステータスが表示されなくなりました。

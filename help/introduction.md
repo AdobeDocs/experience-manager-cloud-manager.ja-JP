@@ -5,7 +5,7 @@ exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
 source-wordcount: '1256'
-ht-degree: 49%
+ht-degree: 56%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager の [!UICONTROL Cloud Manager] を使用すると、開
 >
 >このドキュメントでは、Adobe Managed Services（AMS）用 Cloud Manager の特長と機能について具体的に説明します。
 >
->AEM as a Cloud Serviceの同等のドキュメントについては、[AEM as a Cloud Service ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/home) を参照してください。
+>AEM as a Cloud Service の同等のドキュメントについて詳しくは、[AEM as a Cloud Service のドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/home)を参照してください。
 
 Cloud Manager を使用すると、開発チームは次の機能を利用できます。
 
@@ -75,7 +75,7 @@ Cloud Manager を使用すると、開発チームは次の機能を利用でき
 
 ## Cloud Managerのオプション機能 {#optional-features-in-cloud-manager}
 
-Cloud Managerには、特定の環境設定やニーズに応じた、プロジェクトに役立つ追加の高度な機能が用意されています。 これらの機能にご興味があれば、カスタマーサクセスエンジニア（CSE）またはAdobe担当者に詳細をお問い合わせください。
+Cloud Managerには、特定の環境設定やニーズに応じた、プロジェクトに役立つ追加の高度な機能が用意されています。 これらの機能にご興味があれば、カスタマーサクセスエンジニア（CSE）またはアドビ担当者に詳細をお問い合わせください。
 
 ### 自動スケーリング {#autoscaling}
 
@@ -87,7 +87,7 @@ Cloud Managerには、特定の環境設定やニーズに応じた、プロジ�
 
 >[!NOTE]
 >
->自動スケーリングがアプリケーションに適しているかどうかを確認したい場合は、担当の CSE またはAdobe担当者にお問い合わせください。
+>自動スケーリングがアプリケーションに適しているかどうかを確認したい場合は、担当の CSE またはアドビ担当者にお問い合わせください。
 
 ### ブルー/グリーンデプロイメント {#blue-green}
 
@@ -104,7 +104,7 @@ Cloud Managerには、特定の環境設定やニーズに応じた、プロジ�
 
 ブルー／グリーンデプロイメントが有効な場合、デプロイメントフローは標準の Cloud Service デプロイメントフローとは異なります。
 
-| 手順 | ブルー／グリーンデプロイメント | 標準デプロイメント |
+| ステップ | ブルー／グリーンデプロイメント | 標準デプロイメント |
 |---|---|---|
 | 1 | オーサーへのデプロイメント | オーサーへのデプロイメント |
 | 2 | テスト用に一時停止 | - |
@@ -121,7 +121,7 @@ Cloud Managerには、特定の環境設定やニーズに応じた、プロジ�
 
 実稼動デプロイメントにCloud Managerを使用しているすべての AMS ユーザーは、ブルー/グリーンデプロイメントを使用する資格があります。 ただし、ブルー/グリーンデプロイメントを使用する場合は、環境の追加の検証と、AdobeCSE による設定が必要です。
 
-ブルー/グリーンデプロイメントに関心がある場合は、次の要件と制限事項を考慮し、担当の CSE にお問い合わせください。
+ブルー／グリーンデプロイメントにご興味がある場合は、次の要件と制限事項を考慮し、担当の CSE にお問い合わせください。
 
 #### 要件と制限事項 {#limitations}
 
@@ -129,5 +129,5 @@ Cloud Managerには、特定の環境設定やニーズに応じた、プロジ�
 * プレビューの Dispatcher とパブリッシュのペアは、ブルー／グリーンデプロイメントには含まれていません。
 * すべてのDispatcherとパブリッシュのペアは、他のすべてのDispatcherとパブリッシャーのペアと同じです。
 * ブルー／グリーンは、実稼動環境でのみ使用できます。
-* ブルー/グリーンは、AWSおよび Azure で使用できます。
+* ブルー／グリーンは、AWS と Azure で使用できます。
 * Assetsのみのお客様は、ブルー/グリーンを利用できません。

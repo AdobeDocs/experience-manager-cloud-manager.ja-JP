@@ -6,7 +6,7 @@ exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
 source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
 workflow-type: tm+mt
 source-wordcount: '279'
-ht-degree: 17%
+ht-degree: 31%
 
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 17%
 
 **評価レポートを実行するには：**
 
-1. ドキュメント [ 製品アップデートウィザード ](/help/product-update-wizard/overview.md) の説明に従って、ウィザードを起動します。
+1. [製品アップデートウィザード](/help/product-update-wizard/overview.md)ドキュメントの説明に従って、ウィザードを起動します。
 
 1. 「**[!UICONTROL 評価を実行]**」をクリックします。
 
    ![評価を実行](/help/assets/Run-Evaluation.png)
 
-1. ウィザードから、アクションのステータスが通知されます。評価レポートの生成時に、該当する **処理中** または **完了** があることに注意してください。
+1. ウィザードから、アクションのステータスが通知されます。評価レポートの生成中に、**進行中**&#x200B;または&#x200B;**完了**&#x200B;が適宜表示されます。
 
 1. レポートの生成後に、「**[!UICONTROL レポートをダウンロード]**」をクリックしてコピーを保存できます。
 
