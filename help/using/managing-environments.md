@@ -2,10 +2,10 @@
 title: 環境の管理
 description: Cloud Manager を使用して環境を管理する方法について説明します。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 84%
+source-wordcount: '273'
+ht-degree: 86%
 
 ---
 
@@ -58,7 +58,7 @@ Cloud Manager の&#x200B;**概要**&#x200B;ページには、管理対象のす�
 
 >[!NOTE]
 >
->環境ログが必要な場合は、カスタマーサクセスエンジニアからリクエストできます。
+>カスタマーサクセスエンジニア経由で環境ログをリクエストします。
 
 ## ビデオチュートリアル {#video-tutorial}
 
