@@ -2,7 +2,7 @@
 title: 環境の管理
 description: Cloud Manager を使用して環境を管理する方法について説明します。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
+source-git-commit: 0b7c926120798e2fdb635752192f4ab2e12c1e24
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 86%
@@ -64,4 +64,6 @@ Cloud Manager の&#x200B;**概要**&#x200B;ページには、管理対象のす�
 
 次のビデオでは、AEM オーサリング、パブリッシング、および Dispatcher インスタンスで構成される Cloud Manager 環境の概要について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/) （3 分、1 秒）
+>[!VIDEO](https://video.tv.adobe.com/v/26318/)
+
+*（3 分、1 秒）*
