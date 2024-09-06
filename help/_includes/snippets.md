@@ -1,7 +1,7 @@
 ---
-source-git-commit: c772b3c576cac3a76433b67dc8a5233802996813
+source-git-commit: 4ff440250b4ed0770c34a7042ec7d22c79ffe05e
 workflow-type: tm+mt
-source-wordcount: '66'
+source-wordcount: '64'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## コンテンツコピーの既知の問題 {#content-copy-known-issues}
 
-[ コンテンツのコピー機能 ](/help/using/content-copy.md) を使用する際には、次の既知の問題に注意してください。
+[ コンテンツのコピー機能 ](/help/using/content-copy.md) を使用する場合は、次の既知の問題があります。
 
 * ソース環境のリソースの名前を変更すると、ターゲット環境で UUID が競合するので、コンテンツのコピー操作が失敗する可能性があります。
    * このエラーを回避するには、リソース名を変更する代わりに、最初にリソースを削除してから、新しいリソース名で再作成します。
