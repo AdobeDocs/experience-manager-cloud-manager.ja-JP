@@ -1,34 +1,37 @@
 ---
-title: Cloud Manager 2024.8.0 のリリースノート
-description: Cloud Manager 2024.8.0 のリリースノートについて説明します。
+title: Cloud Manager 2024.9.0 のリリースノート
+description: Cloud Manager 2024.9.0 のリリースノートについて説明します。
 feature: Release Information
-source-git-commit: 5ced643fabe0a670e456cbea72f9da8196ac774a
+source-git-commit: 3671772a1369273d89fde101ba084a6e2f8ce8dc
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 28%
+source-wordcount: '184'
+ht-degree: 37%
 
 ---
 
+# Cloud Manager 2024.9.0 のリリースノート {#release-notes}
 
-# Cloud Manager 2024.8.0 のリリースノート {#release-notes}
-
-このページは、[!UICONTROL Cloud Manager] 2024.8.0 のリリースノートです。
+このページは、[!UICONTROL Cloud Manager] 2024.9.0 のリリースノートです。
 
 >[!NOTE]
 >
->AEM as a Cloud ServiceのCloud Managerの最新のリリースノートについては、[AEM as a Cloud ServiceのCloud Managerの最新のリリースノート ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/cloud-manager/current) を参照してください。
+>AEM as a Cloud Service の Cloud Manager の最新リリースノートについては、[AEM as a Cloud Service の Cloud Manager の最新リリースノート](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/cloud-manager/current)を参照してください。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.8.0 のリリース日は 2024年8月14日（PT）です。次回のリリースは 2024年9月14日（PT）に予定されています。
+Cloud Managerの 9 月リリースには、注目すべきバグや機能はありません。
+
+次回のリリースは 2024年10月3日（PT）に予定されています。
+
 
 ## 新機能 {#what-is-new}
 
-* ステージング専用パイプラインと実稼動専用パイプライン（（早期導入プログラム [ の一部として利用可能 ](#staging-production-only-pipelines)）の場合、ステージテストをスキップして [ 緊急モード ](/help/using/stage-prod-only.md#emergency-mode) で実行できるようになりました。
+* ステージング専用および実稼動専用のパイプライン（（早期導入プログラム [ の一部として利用可能 ](#staging-production-only-pipelines) の場合、ステージテストをスキップして、[ 緊急モード ](/help/using/stage-prod-only.md#emergency-mode) で実行できるようになりました。
 
 ## 早期導入プログラム {#early-adoption}
 
 Cloud Managerの早期導入プログラムに参加して、今後の機能をテストする機会を得ます。
+
 
 ### ステージング専用パイプラインと実稼動専用パイプライン {#staging-production-only-pipelines}
 
@@ -36,13 +39,10 @@ Adobeは、（ステージング専用パイプラインと実稼動専用パイ
 
 この機能をテストしてフィードバックを提供したい場合は、Adobe IDに関連付けられたメールアドレスを使用して `Grp-cloudmanager_splitpipelines@adobe.com` ールを送信します。
 
-## バグ修正
+<!-- ## Bug fixes
 
-* パイプラインの削除後にパイプライン手順が実行中であることが検出されるというまれな問題を修正しました。
-* パイプラインの再実行が最初の試行で動作するようになりました。再実行を複数回開始しなければならない稀な問題を修正しました。
-* フルスタックパイプラインのスケジュールされたデプロイメントステップで、選択したスケジュール日が適用されるようになり、「今すぐ **に戻さなくなりました**。
-* コンテンツのコピータスクの失敗したステータスが正しく反映されるようになり、まれに誤って `In Progress` ステータスが表示されなくなりました。
+* text
 
-## 既知の問題 {#known-issues}
+## Known Issues {#known-issues}
 
-{{content-copy-known-issues}}
+{{content-copy-known-issues}} LEAVE IN??? -->
