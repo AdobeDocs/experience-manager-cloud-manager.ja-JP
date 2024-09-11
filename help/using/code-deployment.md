@@ -3,9 +3,9 @@ title: コードのデプロイメント
 description: コードをデプロイする方法と、デプロイ時に Cloud Manager で何が行われるかを説明します。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1637'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 コードをデプロイする方法と、デプロイ時に Cloud Manager で何が行われるかを説明します。
 
-## Cloud Managerを使用したコードのデプロイ {#deploying-code-with-cloud-manager}
+## Cloud Manager でのコードのデプロイ {#deploying-code-with-cloud-manager}
 
 必要なリポジトリと環境を含む実稼動パイプラインを設定すると、コードをデプロイする準備が整います。
 
@@ -30,7 +30,7 @@ ht-degree: 97%
 
 * ステージデプロイメント
 * ステージテスト
-* 実稼動のデプロイメント
+* 実稼動デプロイメント
 
 テスト条件のログを表示したり結果を確認したりすることで、様々なデプロイメントプロセスのステップを確認できます。
 
@@ -38,7 +38,7 @@ ht-degree: 97%
 
 デプロイメントの各ステップでは、多数のアクションが実行されます。この節では、これらについて説明します。コード自体の内部的なデプロイ方法に関する技術的な詳細については、[デプロイメントプロセスの詳細](#deployment-process)を参照してください。
 
-### ステージデプロイメントステップ {#stage-deployment}
+### ステージデプロイメント手順 {#stage-deployment}
 
 **ステージデプロイメント**&#x200B;ステップには、次のアクションが含まれます。
 
@@ -56,7 +56,7 @@ ht-degree: 97%
 * **セキュリティテスト**：このステップでは、AEM 環境でのアプリケーションコードのセキュリティに対する影響を評価します。テストプロセスについて詳しくは、[テスト結果について](/help/using/code-quality-testing.md)のドキュメントを参照してください。
    * **パフォーマンステスト**：このステップでは、コードのパフォーマンスを評価します。テストプロセスについて詳しくは、[テスト結果について](/help/using/code-quality-testing.md)を参照してください。
 
-### 実稼動デプロイメントステップ {#production-deployment}
+### 実稼動デプロイメント手順 {#production-deployment}
 
 **実稼動デプロイメント**&#x200B;ステップには、次のアクションが含まれます。
 
@@ -159,7 +159,7 @@ Cloud Manager が実稼動以外のトポロジにデプロイされる場合、
 >
 >緊急パイプライン実行モード機能は、プログラム単位でアクティベートされます。アクティベーションは、カスタマーサクセスエンジニアが行います。
 
-### 緊急パイプライン実行モードを使用 {#using-emergency-pipeline}
+### 緊急パイプライン実行モードの使用 {#using-emergency-pipeline}
 
 実稼動パイプラインの実行を開始する際に、ダイアログボックスから通常モードまたは緊急モードのいずれかを選択できます。このオプションは、プログラムに対して緊急パイプライン実行モード機能がアクティベートされている場合に使用できます。この選択は、機能を有効にすると使用できます。
 
@@ -198,7 +198,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 * 実稼動デプロイメントステップ以前の任意の時点で最後の実行が失敗した場合、再実行はできません。
 
 
-### 再実行 API {#reexecute-api}
+### API の再実行 {#reexecute-api}
 
 UI で使用できるだけでなく、[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) を使用して再実行をトリガーしたり、再実行としてトリガーされた実行を識別したりすることもできます。
 
@@ -250,6 +250,6 @@ HAL リンクの `href` 値の構文は例にすぎません。実際の値は�
 
 このエンドポイントに `PUT` リクエストを送信すると、成功した場合は `201` 応答が返されます。応答の本文には、新しい実行が表示されます。この機能は、API を使用して通常の実行を開始する場合と似ています。
 
-#### 再実行の識別 {#identifying}
+#### 再実行された実行の識別 {#identifying}
 
 再実行された実行は、トリガーフィールドの値 `RE_EXECUTE` によって識別されます。

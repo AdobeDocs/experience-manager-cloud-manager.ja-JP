@@ -3,9 +3,9 @@ title: コンテンツコピーツール
 description: Cloud Manager のコンテンツコピーツールを使用すると、可変コンテンツをオンデマンドで AMS でホストされている AEM 6.x 実稼動環境から下位の環境にテスト目的でコピーできます。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1144'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -119,8 +119,8 @@ Cloud Manager のコンテンツコピーツールを使用すると、可変コ
    >* ユーザーに適切な権限がない。
    >* 環境でパイプラインが実行されているか、コンテンツのコピー操作が処理中。
 
-1. **コンテンツをコピー** ダイアログボックスで、コンテンツのコピーアクションのソース環境と宛先環境を指定します。
-   * ターゲット環境の地域は、ソース環境の地域と同じまたはサブセットである必要があります。
+1. **コンテンツをコピー**&#x200B;ダイアログボックスで、コンテンツコピーアクションのソースおよび宛先環境を指定します。
+   * ターゲット環境の地域は、ソース環境の地域と同じにするか、そのサブセットにする必要があります。
 
 1. 宛先環境で除外パスを削除または保持するよう選択できます。コンテンツセットで指定した `exclude paths` を保持するには、`Do not delete exclude paths from destination` チェックボックスをオンにします。チェックボックスをオフにすると、ターゲット環境で除外パスが削除されます。
 
@@ -167,11 +167,11 @@ Cloud Manager のコンテンツコピーツールを使用すると、可変コ
 * コンテンツセットごとに最大 50 個のパスを指定できます。除外されるパスに制限はありません。
 * コンテンツのコピーツールは、ソース上の移動されたコンテンツや削除されたコンテンツをトラックできないので、クローンまたはミラーリングツールとして使用しないでください。
 * コンテンツコピーは、開始後に一時停止したりキャンセルしたりすることはできません。
-* コンテンツコピーツールは、アセットとDynamic Mediaのメタデータを、上位環境から選択した下位環境にコピーします。 コピーしたアセットは、それぞれの Dynamic Media 設定を使用するために、下位環境で [DAM プロセスアセットワークフロー](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/using/assets-workflow)を使用して再処理する必要があります。
-* バージョン履歴がコピーされない場合、コンテンツのコピープロセスは大幅に高速になります。
-* [ アセットサイズが 2 GB を超えるDynamic Media設定は有効になっていま ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)。サポートされていません。
+* コンテンツコピーツールは、アセットと Dynamic Media メタデータを上位環境から選択した下位環境にコピーします。コピーしたアセットは、それぞれの Dynamic Media 設定を使用するために、下位環境で [DAM プロセスアセットワークフロー](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/using/assets-workflow)を使用して再処理する必要があります。
 * バージョン履歴をコピーしない場合、コンテンツのコピープロセスは大幅に高速になります。
-* ターゲット環境の地域は、ソース環境の地域と同じまたはサブセットである必要があります。
+* [2 GB を超えるアセットサイズが有効になっている Dynamic Media 設定](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)はサポートされていません。
+* バージョン履歴をコピーしない場合、コンテンツのコピープロセスは大幅に高速になります。
+* ターゲット環境の地域は、ソース環境の地域と同じにするか、そのサブセットにする必要があります。
 
 ## 既知の問題 {#known-issues}
 

@@ -1,24 +1,24 @@
 ---
-title: ブランチの設定
-description: Git で最初のブランチを設定する方法と、CI/CD パイプラインでアプリケーションコードをデプロイするためにブランチを使用する方法について説明します。
+title: 分岐の設定
+description: Git で最初の分岐を設定する方法と、CI/CD パイプラインでアプリケーションコードをデプロイする際に分岐を使用する方法について説明します。
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
-# ブランチの設定 {#configuring-branches}
+# 分岐の設定 {#configuring-branches}
 
-Git で最初のブランチを設定する方法と、CI/CD パイプラインでアプリケーションコードをデプロイするためにブランチを使用する方法について説明します。
+Git で最初の分岐を設定する方法と、CI/CD パイプラインでアプリケーションコードをデプロイする際に分岐を使用する方法について説明します。
 
-## Git での最初のブランチの設定 {#setting-up-your-first-branch-in-git}
+## Git での最初の分岐の設定 {#setting-up-your-first-branch-in-git}
 
-Cloud Managerでオンボーディングされるプログラムごとに、最初は空の Git リポジトリーが 1 つ [ プロビジョニングされます ](/help/requirements/environment-provisioning.md)。 このリポジトリーには、開発プロセスで必要な数のブランチを格納できますが、アプリケーションコードをステージングおよび実稼動環境にデプロイするために CI/CD パイプラインで使用されるブランチが少なくとも 1 つ必要です。 このブランチの名前として `main` を使用することをお勧めします。好都合なことに、この方法は、新規プロジェクトを設定する際の Git クライアントのデフォルトの動作になっています。
+Cloud Manager でオンボーディングされるプログラムごとに、最初は空の Git リポジトリが 1 つ[プロビジョニングされます](/help/requirements/environment-provisioning.md)。このリポジトリには、開発プロセスで対象とする数の分岐を格納できますが、アプリケーションコードをステージング環境および実稼動環境にデプロイする CI/CD パイプラインで使用される分岐が少なくとも 1 つ必要です。この分岐の名前として `main` を使用することをお勧めします。好都合なことに、このアプローチは、新規プロジェクトを設定する際の Git クライアントのデフォルト動作になっています。
 
-例えば、新しいプロジェクトを設定する場合は、次のような一連のコマンドを実行します。
+例えば、新規プロジェクトを設定する場合、次のような一連のコマンドを実行します。
 
 ```shell
 $ git init
@@ -50,11 +50,11 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->コマンドラインクライアントを使用する必要はありません。 スタンドアロンアプリケーションとして、または Eclipse や IntelliJ などの統合開発環境（IDE）の一部として使用できるグラフィカルな Git クライアントが各種あります。 クライアントアプリケーションが HTTPS で Git をサポートしている限り、[!UICONTROL Cloud Manager] と互換性がある必要があります。
+>必ずしも、コマンドラインクライアントを使用する必要はありません。スタンドアロンアプリケーションとして、または Eclipse や IntelliJ などの統合開発環境（IDE）の一部として使用できるグラフィカルな Git クライアントが各種あります。クライアントアプリケーションが HTTPS で Git をサポートしている限り、[!UICONTROL Cloud Manager] と互換性がある必要があります。
 
-## 最初のブランチのプッシュ {#pushing-your-first-branch}
+## 最初の分岐のプッシュ {#pushing-your-first-branch}
 
-1 つ以上のリビジョンをコミットした場合は、[!UICONTROL Cloud Manager] リポジトリをリモートとして追加した後、そのリポジトリにコミットをプッシュできます。
+1 つ以上のリビジョンをコミットしたら、[!UICONTROL Cloud Manager] リポジトリをリモートとして追加した後、そのリポジトリにコミットをプッシュできます。
 
 ```shell
 $ git remote add adobe <url>
@@ -70,12 +70,12 @@ To <url>
 
 >[!NOTE]
 >
->[!UICONTROL Cloud Manager] のオンボーディング中に、AdobeCSE （カスタマーサクセスエンジニア）から具体的な URL と資格情報が提供されます。
+>[!UICONTROL Cloud Manager] のオンボーディング中に、アドビ CSE（カスタマーサクセスエンジニア）からユーザーに具体的な URL と資格情報が提供されます。
 
-## 追加のブランチ {#additional-branches}
+## 追加の分岐 {#additional-branches}
 
-非常に単純なプロジェクトでは 1 つの `main` ブランチで十分な場合もありますが、ほとんどの場合、より複雑なブランチ戦略が必要になります。 多くのお客様は、「`develop`」というブランチで日々の開発活動を実行するプロセスに従います。 開発ブランチは、デプロイメントの時期になると `main` ブランチに結合されます。
+非常にシンプルなプロジェクトにはただ 1 つの `main` 分岐でも十分なことがありますが、ほとんどの場合は、より複雑な分岐戦略が必要になります。多くのお客様は、`develop` という分岐で日常的な開発アクティビティを実行するプロセスに従います。デプロイメントの際に、開発分岐は `main` 分岐に結合されます。
 
 >[!TIP]
 >
->よく使用される Git コマンドについては、[Git チートシート ](https://training.github.com/downloads/github-git-cheat-sheet) を参照してください。
+>よく使用される Git コマンドについて詳しくは、[Git チートシート](https://training.github.com/downloads/github-git-cheat-sheet)を参照してください。

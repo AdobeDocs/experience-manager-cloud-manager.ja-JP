@@ -1,30 +1,30 @@
 ---
 title: Cloud Manager でのリポジトリの管理
-description: Cloud Managerで Git リポジトリを作成、表示、編集する方法について説明します。
+description: Cloud Manager で Git リポジトリを作成、表示および編集する方法について説明します。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '641'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 
 # Cloud Manager リポジトリ {#cloud-manager-repos}
 
-Cloud Managerで Git リポジトリを作成、表示、編集する方法について説明します。
+Cloud Manager で Git リポジトリを作成、表示および編集する方法について説明します。
 
 ## 概要 {#overview}
 
 リポジトリは、Git を使用してプロジェクトのコードを保存および管理するために使用されます。Cloud Manager で作成するすべてのプログラムには、アドビが管理するリポジトリが作成されます。
 
-Adobeが管理するリポジトリを作成し、独自のプライベートリポジトリを追加することもできます。 プログラムに関連付けられているすべてのリポジトリは、**リポジトリ**&#x200B;ウィンドウで表示できます。
+アドビが管理する追加のリポジトリの作成や、独自のプライベートリポジトリの追加を選択できます。プログラムに関連付けられているすべてのリポジトリは、**リポジトリ**&#x200B;ウィンドウで表示できます。
 
-Cloud Managerで作成されたリポジトリは、パイプラインの追加や編集の際にも使用できます。 詳しくは、[CI／CD パイプライン](/help/overview/ci-cd-pipelines.md)を参照してください。
+Cloud Manager で作成されたリポジトリは、パイプラインの追加や編集の際にも選択できます。詳しくは、[CI／CD パイプライン](/help/overview/ci-cd-pipelines.md)を参照してください。
 
-どのパイプラインにも、単一のプライマリリポジトリまたはブランチがあります。[Git サブモジュールのサポート ](git-submodules.md) を使用すると、ビルド時に多数のセカンダリブランチを含めることができます。
+どのパイプラインにも、単一のプライマリリポジトリまたはブランチがあります。[Git サブモジュールのサポート](git-submodules.md)を使用すると、ビルド時に多数のセカンダリ分岐を含めることができます。
 
-## リポジトリーウィンドウ {#repositories-window}
+## リポジトリウィンドウ {#repositories-window}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -51,7 +51,7 @@ Cloud Managerで作成されたリポジトリは、パイプラインの追加�
 
 ![リポジトリのアクション](assets/repository-actions.png)
 
-## リポジトリーの追加 {#adding-repositories}
+## リポジトリを追加 {#adding-repositories}
 
 **リポジトリ**&#x200B;ウィンドウの「**リポジトリを追加**」ボタンをクリックして、**リポジトリを追加**&#x200B;ウィザードを開始します。
 
@@ -59,8 +59,8 @@ Cloud Managerで作成されたリポジトリは、パイプラインの追加�
 
 Cloud Manager は、アドビが管理するリポジトリ（**Adobe リポジトリ**）と、独自に管理するリポジトリ（**プライベートリポジトリ**）の両方をサポートします。必須フィールドは、追加するリポジトリのタイプによって異なります。
 
-[Cloud ManagerでのAdobeリポジトリの追加 ](adobe-repositories.md) を参照してください。
-[Cloud Managerでのプライベートリポジトリの追加 ](private-repositories.md) を参照してください。
+詳しくは、[Cloud Manager での Adobe リポジトリの追加](adobe-repositories.md)を参照してください。
+詳しくは、[Cloud Manager でのプライベートリポジトリの追加](private-repositories.md)を参照してください。
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Cloud Manager は、アドビが管理するリポジトリ（**Adobe リポジ�
 >
 >特定の企業または IMS 組織のすべてのプログラムで使用できるリポジトリは 300 個までです。
 
-## リポジトリ情報へのアクセス {#repo-info}
+## リポジトリ情報へアクセス {#repo-info}
 
 **リポジトリ**&#x200B;ウィンドウでリポジトリを表示する際に、ツールバーの「**リポジトリ情報へアクセス**」ボタンをクリックすると、アドビが管理するリポジトリにプログラムでアクセスする方法の詳細を表示できます。
 
@@ -76,17 +76,17 @@ Cloud Manager は、アドビが管理するリポジトリ（**Adobe リポジ�
 
 **リポジトリ情報**&#x200B;ウィンドウが開き、詳細が表示されます。リポジトリ情報へのアクセスについて詳しくは、[リポジトリ情報へのアクセス](accessing-repositories.md)を参照してください。
 
-## ブランチを確認 {#check-branches}
+## 分岐を確認 {#check-branches}
 
-**ブランチを確認／プロジェクトを作成**&#x200B;アクションでは、リポジトリの状態に応じて 2 つの機能を実行します。
+**分岐を確認／プロジェクトを作成**&#x200B;アクションでは、リポジトリの状態に応じて 2 つの機能を実行します。
 
-リポジトリを新しく作成する場合は、[AEM プロジェクトアーキタイプ ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/overview) に基づいてサンプルプロジェクトが作成されます。
+リポジトリが新しく作成されている場合、アクションにより、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/overview)に基づいてサンプルプロジェクトが作成されます。
 
 リポジトリにサンプルプロジェクトが既に作成されている場合は、リポジトリとこのブランチの状態を確認し、サンプルプロジェクトが既に存在するかどうかを報告します。
 
 ![ブランチを確認アクション](assets/check-branches.png)
 
-## リポジトリー URL をコピー {#copy-url}
+## リポジトリ URL をコピー {#copy-url}
 
 **リポジトリ URL をコピー**&#x200B;アクションでは、**リポジトリ**&#x200B;ウィンドウで選択したリポジトリの URL をクリップボードにコピーし、他の場所で使用できます。
 
@@ -98,12 +98,12 @@ Cloud Manager は、アドビが管理するリポジトリ（**Adobe リポジ�
 
 ## 削除 {#delete}
 
-**削除**&#x200B;アクションでは、プロジェクトからリポジトリを削除します。リポジトリは、パイプラインに関連付けられている場合、削除できません。
+**削除**&#x200B;アクションでは、プロジェクトからリポジトリを削除します。リポジトリがパイプラインに関連付けられている場合は、削除できません。
 
 ![削除](assets/delete.png)
 
-Cloud Managerでリポジトリを削除すると、削除済みとマークされ、ユーザーからアクセスできなくなります。 ただし、回復のためにシステム内で維持されます。
+Cloud Manager でリポジトリを削除すると、そのリポジトリは削除済みとしてマークされ、ユーザーはアクセスできなくなります。ただし、復元の目的でシステム内で維持されます。
 
-同じ名前のリポジトリを削除した後に新しいリポジトリを作成しようとすると、`An error has occurred while trying to create repository. Contact your CSE or Adobe Support.` というエラーメッセージが表示されます。
+同じ名前のリポジトリを削除した後に新しいリポジトリを作成しようとすると、次のエラーメッセージが表示されます。`An error has occurred while trying to create repository. Contact your CSE or Adobe Support.`
 
 このエラーメッセージが表示された場合は、アドビサポートに連絡し、削除したリポジトリの名前を変更するか、新しいリポジトリ用に別の名前を選択します。

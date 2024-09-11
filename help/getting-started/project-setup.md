@@ -3,9 +3,9 @@ title: プロジェクトの設定
 description: Cloud Manager でプロジェクトを管理およびデプロイできるようにプロジェクトを設定する方法について説明します。
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1395'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager でプロジェクトを管理およびデプロイできるよう
 既存の AEM プロジェクトは、Cloud Manager で正常にビルドおよびデプロイするように、いくつかの基本ルールに従う必要があります。
 
 * プロジェクトは Apache Maven を使用してビルドする必要があります。
-* Git リポジトリのルートには `pom.xml` ファイルが必要です。
+* Git リポジトリのルートに `pom.xml` ファイルが必要です。
    * この `pom.xml` ファイルでは、必要な数のサブモジュール（その中にさらに他のサブモジュールを含む場合があります）を参照できます。
    * 追加の Maven アーティファクトリポジトリへの参照を `pom.xml` ファイルに追加できます。
    * 設定時には、[パスワードで保護されたアーティファクトリポジトリー](#password-protected-maven-repositories)へのアクセスがサポートされます。ただし、ネットワークで保護されたアーティファクトリポジトリーへのアクセスはサポートされていません。
@@ -116,7 +116,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 >
 >パスワードで保護された Maven リポジトリのアーティファクトは、使用されることはまれです。AEM に関連付けられていないコードに対してのみ使用してください。
 
-パスワードで保護された Maven リポジトリーをCloud Managerから使用するには、パスワード（および任意でユーザー名）をシークレット [ パイプライン変数 ](/help/getting-started/build-environment.md#pipeline-variables) として指定し、Git リポジトリーの `.cloudmanager/maven/settings.xml` という名前のファイル内でそのシークレットを参照します。 このファイルは、[Maven 設定ファイル](https://maven.apache.org/settings.html)スキーマに従います。
+Cloud Manager からのパスワードで保護された Maven リポジトリを使用するには、パスワード（および任意でユーザー名）を秘密の[パイプライン変数](/help/getting-started/build-environment.md#pipeline-variables)として指定し、Git リポジトリの `.cloudmanager/maven/settings.xml` という名前のファイル内でその秘密鍵を参照します。このファイルは、[Maven 設定ファイル](https://maven.apache.org/settings.html)スキーマに従います。
 
 Cloud Manager のビルドプロセスが開始すると、このファイル内の `<servers>` 要素が、Cloud Manager から提供されるデフォルトの `settings.xml` ファイルに結合されます。カスタムサーバーでは、`adobe` および `cloud-manager` で始まるサーバー ID を使用しないでください。このような ID は予約済みと見なされます。Cloud Manager は、指定したプレフィックスの 1 つまたはデフォルトの ID `central` に一致するサーバー ID のみをミラーリングします。
 
@@ -276,7 +276,7 @@ Cloud Manager では、ビルドは、任意の数のコンテンツパッケー
 
 ## ビルドアーティファクトの再利用 {#build-artifact-reuse}
 
-多くの場合、同じコードが複数の AEM 環境にデプロイされます。Cloud Managerは、複数のフルスタックパイプライン実行で同じ Git コミットが使用されていることを検出した場合、コードベースの再ビルドを可能な限り避けます。
+多くの場合、同じコードが複数の AEM 環境にデプロイされます。Cloud Manager は、複数のフルスタックパイプライン実行で同じ Git コミットが使用されていることを検出した場合、コードベースの再ビルドを可能な限り避けます。
 
 実行が開始されると、ブランチパイプラインの現在の HEAD コミットが抽出されます。コミットハッシュは、API を使用して UI に表示されます。ビルドステップが正常に完了すると、結果として生成されたアーティファクトはそのコミットハッシュに基づいて保存され、後続のパイプライン実行で再利用できます。
 

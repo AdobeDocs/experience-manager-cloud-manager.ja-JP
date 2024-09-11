@@ -1,11 +1,11 @@
 ---
 title: ユーザーと役割の追加
-description: Admin Consoleを使用して、ユーザーと役割を追加し、プロファイルを作成する方法を説明します。
+description: Admin Console を使用して、ユーザーと役割を追加し、プロファイルを作成する方法について説明します。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '758'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 65%
 
 [!UICONTROL Cloud Manager] の多くの機能には、使用するための特定の権限が必要です。例えば、プログラムの主要業績評価指標（KPI）を設定できるのは、特定のユーザーだけです。これらの権限は、論理的にグループ化されて役割になります。
 
-[!UICONTROL Cloud Manager] は現在、特定の機能を使用できるかどうかを制御する次の 4 つのユーザーロールを定義しています。
+[!UICONTROL Cloud Manager] では、現在、特定の機能を使用できるかどうかを制御する次の 4 つのユーザー役割を定義しています。
 
 * ビジネスオーナー
 * プログラムマネージャー
 * デプロイメントマネージャー
-* デベロッパー
+* 開発者
 
 >[!NOTE]
 >
@@ -27,39 +27,39 @@ ht-degree: 65%
 
 ## 役割の定義 {#role-definitions}
 
-次の表に、Cloud Managerのロールの概要を示します。
+次の表に、Cloud Manager の役割の概要を示します。
 
 | [!UICONTROL Cloud Manager] の役割 | 説明 |
 | --- | --- |
-| ビジネスオーナー | KPI の定義、実稼動デプロイメントの承認および必要に応じて重大な 3 層エラーの上書きを担当します。 |
-| プログラムマネージャー | [!UICONTROL Cloud Manager] を使用して、チームの設定、ステータスの確認、KPI の表示を行い、必要に応じて重大な 3 層エラーの承認も行うことができます。 |
-| デプロイメントマネージャー | デプロイメント操作を管理し、[!UICONTROL Cloud Manager] を使用してステージングおよび実稼動デプロイメントを実行、CI/CD パイプラインを編集、必要に応じて重大な 3 層エラーを承認します。 また、Git リポジトリーにもアクセスできます。 |
-| デベロッパー | カスタムアプリケーションコードの開発およびテストを行い、主に ]0}Cloud Manager} を使用してデプロイメントステータスを表示し、コードコミットの Git リポジトリにアクセスできます。[!UICONTROL  |
-| カスタマーサクセスエンジニア | CSE は、通常、AMS のお客様のカスタマーサクセスをサポートします。 CSE 管理が必要なデプロイメントを実行する目的で ]0}Cloud Manager} を操作します。[!UICONTROL  |
-| コンテンツ作成者 | 通常、[!UICONTROL Cloud Managerを操作しませんが ][!UICONTROL Cloud Manager] プログラムスイッチャーを使用してAEMにアクセスすることができます。 |
+| ビジネスオーナー | KPI の定義、実稼動デプロイメントの承認、必要に応じて重要な 3 層エラーのオーバーライドを担当します。 |
+| プログラムマネージャー | [!UICONTROL Cloud Manager] を使用して、チームの設定を実行、ステータスを確認、KPI を表示し、必要に応じて重要な 3 層エラーを承認できます。 |
+| デプロイメントマネージャー | デプロイメント操作を管理し、[!UICONTROL Cloud Manager] を使用してステージングおよび実稼動デプロイメントを実行、CI/CD パイプラインを編集、必要に応じて重要な 3 層エラーを承認します。また、Git リポジトリにもアクセスできます。 |
+| 開発者 | カスタムアプリケーションコードの開発およびテストを担当し、主に [!UICONTROL Cloud Manager] を使用してデプロイメントステータスを表示し、コードコミットの Git リポジトリにアクセスできます。 |
+| カスタマーサクセスエンジニア | CSE は AMS のお客様のカスタマーサクセスを全般的にサポートします。CSE 管理が必要なデプロイメントを実行するために、[!UICONTROL Cloud Manager] を操作します。 |
+| コンテンツ作成者 | 通常、[!UICONTROL Cloud Manager] を使用しませんが、[!UICONTROL Cloud Manager] プログラムスイッチャーを使用して AEM にアクセスすることができます。 |
 
 >[!NOTE]
 >
 >Admin Console の開発者ペルソナは、[!UICONTROL Cloud Manager] のデベロッパーの役割とは無関係です。
 
-## Admin Consoleを使用したプロファイルの作成 {#using-admin-console-to-create-a-profile}
+## Admin Console を使用したプロファイルの作成 {#using-admin-console-to-create-a-profile}
 
 [!UICONTROL Cloud Manager] の役割は、Admin Console から管理されます。特定の役割のメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
 
-Admin Console では、組織全体にわたるアドビ製品の使用権限を一元的に管理できます。Adobe Admin Consoleについて詳しくは、[Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を参照してください。
+Admin Console では、組織全体にわたるアドビ製品の使用権限を一元的に管理できます。Adobe Admin Console について詳しくは、[Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を参照してください。
 
-管理者は、[!UICONTROL AEM Managed Services] 製品コンテキストの下で新しい製品プロファイルを作成し、[!UICONTROL Cloud Manager] ユーザー（4 つの [!UICONTROL Cloud Manager] の役割に対応）に対する役割ベースの権限を割り当てる必要があります。
+管理者は、[!UICONTROL AEM Managed Services] 製品コンテキストの下に新しい製品プロファイルを作成し、[!UICONTROL Cloud Manager] ユーザー（4 つの [!UICONTROL Cloud Manager] の役割に対応）に役割ベースの権限を割り当てる必要があります。
 
 * ビジネスオーナー
 * デプロイメントマネージャー
-* デベロッパー
+* 開発者
 * プログラムマネージャー
 
-Admin Consoleを使用して、これらの製品プロファイルにユーザーやグループを作成または追加できます。
+Admin Console を使用して、これらの製品プロファイルにユーザーやグループを作成または追加できます。
 
 1. Admin Console（[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)）にログインします。
 
-1. **概要** タブをクリックし、編集する製品を **製品とサービス** カードでクリックします。 該当する製品がリストにない場合は、「**製品**」タブをクリックして製品を検索し、クリックします。
+1. 「**概要**」タブをクリックし、編集する製品を&#x200B;**製品とサービス**&#x200B;カードでクリックします。該当する製品がリストにない場合は、「**製品**」タブをクリックして製品を検索し、クリックします。
 
    ![Admin Console の「概要」タブ](/help/assets/admin-console-overview.png)
 
@@ -83,7 +83,7 @@ Admin Consoleを使用して、これらの製品プロファイルにユーザ�
    |---|---|---|
    | ビジネスオーナー | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - ビジネスオーナーの役割 |
    | デプロイメントマネージャー | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - デプロイメントマネージャーの役割 |
-   | デベロッパー | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - デベロッパーの役割 |
+   | 開発者 | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - デベロッパーの役割 |
    | プログラムマネージャー | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - プログラムマネージャーの役割 |
 
 

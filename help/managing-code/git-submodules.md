@@ -3,25 +3,25 @@ title: Git サブモジュールのサポート
 description: Git サブモジュールを使用して、ビルド時に Git リポジトリ間で複数のブランチのコンテンツを結合する方法について説明します。
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
-# Adobeリポジトリーに対する Git サブモジュールのサポート {#git-submodule-support}
+# Adobe リポジトリに対する Git サブモジュールのサポート {#git-submodule-support}
 
 Git サブモジュールを使用すると、ビルド時に Git リポジトリ間で複数のブランチのコンテンツを結合できます。
 
-Cloud Managerのビルドプロセスを実行すると、まずパイプラインのリポジトリをクローンし、設定済みのブランチをチェックアウトします。 ブランチのルートディレクトリに `.gitmodules` ファイルが含まれている場合は、コマンドが実行されます。
+Cloud Manager のビルドプロセスを実行すると、最初にパイプラインのリポジトリが複製され、設定済みのブランチがチェックアウトされます。ブランチのルート ディレクトリに `.gitmodules` ファイルが含まれる場合は、コマンドが実行されます。
 
 ```
 $ git submodule update --init
 ```
 
-このプロセスは、各サブモジュールを適切なディレクトリにチェックアウトします。 この手法は、Git サブモジュールの使用に慣れており、外部マージプロセスの管理を希望しない組織にとって、[ 複数のソース Git リポジトリでの操作 ](/help/managing-code/multiple-git-repos.md) の代わりに使用できる可能性があります。
+このプロセスにより、各サブモジュールが適切なディレクトリにチェックアウトされます。この手法は、Git サブモジュールの使用に慣れていて、外部マージプロセスの管理を望まない組織にとっては、[複数のソース Git リポジトリの操作](/help/managing-code/multiple-git-repos.md)の代わりになる可能性があります。
 
-例えば、3 つのリポジトリがあり、それぞれに `main` という名前のブランチが 1 つあるとします。「プライマリ」リポジトリ（パイプラインで設定されたもの）の `main` ブランチには、他の 2 つのリポジトリに含まれるプロジェクトを宣言する `pom.xml` ファイルが含まれます。
+例えば、3 つのリポジトリがあり、それぞれに `main` という名前のブランチが 1 つあるとします。プライマリリポジトリ（パイプラインで設定されたもの）の `main` ブランチには、他の 2 つのリポジトリに含まれるプロジェクトを宣言している `pom.xml` ファイルがあります。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -42,7 +42,7 @@ $ git submodule update --init
 </project>
 ```
 
-次に、他の 2 つのリポジトリ用のサブモジュールを追加します。
+この状況で、他の 2 つのリポジトリにサブモジュールを追加します。
 
 ```shell
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
@@ -62,22 +62,22 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
     branch = main
 ```
 
-Git サブモジュールについて詳しくは、[Git リファレンスマニュアル ](https://git-scm.com/book/ja/v2/Git-Tools-Submodules) を参照してください。
+Git サブモジュールについて詳しくは、[Git リファレンスマニュアル](https://git-scm.com/book/ja/v2/Git-Tools-Submodules)を参照してください。
 
 ## 制限事項 {#limitations}
 
-Git サブモジュールを使用する場合は、次の点に注意してください。
+Git サブモジュールを使用する場合は、次に注意してください。
 
 * Git の URL は、上記の構文に正確に一致している必要があります。
 * セキュリティ上の理由から、これらの URL に資格情報を埋め込まないでください。
 * ブランチのルートにあるサブモジュールのみがサポートされます。
-* Git サブモジュール参照は、特定の Git コミットに保存されます。 その結果、サブモジュールリポジトリに対して変更を加える場合は、参照されるコミットを更新する必要があります。 例えば、`git submodule update --remote` を使用します。
-* 特に必要がない限り、Adobeでは、各サブモジュールに対して `git config -f .gitmodules submodule.<submodule path>.shallow true` を実行して、「シャロー」サブモジュールを使用することをお勧めします。
+* Git サブモジュール参照は、特定の Git コミットに保存されます。その結果、サブモジュールリポジトリに対して変更を加えた場合は、 参照されるコミットを更新する必要があります。`git submodule update --remote` を使用する例は、次のとおりです。
+* 特に必要がない限り、アドビでは、各サブモジュールに対して `git config -f .gitmodules submodule.<submodule path>.shallow true` を実行して、「シャロー」サブモジュールを使用することをお勧めします。
 
 
 ## プライベートリポジトリに対する Git サブモジュールのサポート {#private-repositories}
 
-[ プライベートリポジトリー ](private-repositories.md) を使用する場合の Git サブモジュールのサポートは、Adobeリポジトリーを使用する場合とほぼ同じです。
+[プライベートリポジトリ](private-repositories.md)を使用する場合の Git サブモジュールのサポートは、Adobe リポジトリを使用する場合とほとんど同じです。
 
 ただし、`pom.xml` ファイルを設定して `git submodule` コマンドを実行した後、Cloud Manager でサブモジュールの設定を検出するために、集積リポジトリのルートディレクトリに `.gitmodules` ファイルを追加する必要があります。
 
@@ -89,6 +89,6 @@ Git サブモジュールを使用する場合は、次の点に注意してく�
 
 プライベートリポジトリで Git サブモジュールを使用する場合は、次の制限事項に注意してください。
 
-* サブモジュールの Git URL は、HTTPS 形式または SSH 形式のいずれかですが、Github.com リポジトリにリンクする必要があります。 Adobeリポジトリサブモジュールを GitHub アグリゲータリポジトリーに、またはその逆に追加しても、機能しません。
+* サブモジュールの Git URL は、HTTPS 形式または SSH 形式のいずれかになりますが、Github.com リポジトリにリンクする必要があります。Adobe リポジトリサブモジュールを GitHub 集積リポジトリに追加したり、その逆を行ったりすることはできません。
 * GitHub サブモジュールは、Adobe GitHub アプリからアクセスできる必要があります。
-* [Git サブモジュールをAdobeが管理するリポジトリで使用する場合の制限 ](#limitations-recommendations) も適用されます。
+* また、[アドビが管理するリポジトリで Git サブモジュールを使用する場合の制限事項](#limitations-recommendations)も適用されます。

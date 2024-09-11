@@ -3,9 +3,9 @@ title: コード品質テスト
 description: パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2764'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 96%
 >
 >[!UICONTROL Cloud Manager] で実行されるカスタムコード品質ルールについて詳しくは、[カスタムコード品質ルール](custom-code-quality-rules.md)を参照してください。
 
-### 偽陽性の処理 {#dealing-with-false-positives}
+### 誤検出の処理 {#dealing-with-false-positives}
 
 品質スキャンプロセスは完璧ではありません。実際には問題がないにもかかわらず、誤って問題として特定することもあります。このシナリオは誤検出と呼ばれます。
 
@@ -204,7 +204,7 @@ Cloud Manager は、ステージングパブリッシュサーバーで 30 分�
 | ネットワーク帯域幅使用量 | 重要 | >= 90% |
 | 1 分あたりのリクエスト数 | 情報 | >= 6000 |
 
-Sites とAssetsのパフォーマンステストで基本認証を使用する方法について詳しくは、[ 認証済みパフォーマンステスト ](#authenticated-performance-testing) を参照してください。
+Sites と Assets のパフォーマンステストで基本的な認証を使用する方法について詳しくは、[認証済みパフォーマンステスト](#authenticated-performance-testing)を参照してください。
 
 >[!NOTE]
 >
@@ -224,7 +224,7 @@ Cloud Manager CLI を使用してこれらの変数を設定するには、次�
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-API の使用方法については、[ ユーザーパイプライン変数のパッチ適用 ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API ドキュメントを参照してください。
+API の使用方法について詳しくは、[Patch User Pipeline Variables](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables)（ユーザーパイプライン変数へのパッチ適用）の API ドキュメントを参照してください。
 
 ### AEM Assets {#aem-assets}
 
@@ -236,13 +236,13 @@ Assets のパフォーマンステストの場合、お客様のカスタマー�
 
 このメソッドは、権限を変更せずにオーサーインスタンスに残す必要があります。変更または削除すると、Assets のパフォーマンステストが失敗する可能性があります。
 
-#### テスト用の画像とAssets {#assets-for-testing}
+#### テスト用の画像とアセット {#assets-for-testing}
 
 顧客は、独自のアセットをアップロードしてテストできます。このプロセスは、**パイプライン設定**&#x200B;または&#x200B;**編集**&#x200B;画面で行うことができます。JPEG、PNG、GIF、BMP などの一般的な画像形式のほか、Photoshop ファイル、Illustrator ファイル、Postscript ファイルがサポートされています。
 
 ただし、画像がアップロードされない場合、Cloud Manager では、デフォルトの画像と PDF ドキュメントがテストに使用されます。
 
-#### テスト用Assetsの配布 {#distribution-of-assets}
+#### テスト用アセットの配分 {#distribution-of-assets}
 
 1 分ごとにアップロードされる各タイプのアセット数の配分は、**パイプライン設定**&#x200B;または&#x200B;**編集**&#x200B;画面で設定します。
 
@@ -254,11 +254,11 @@ Cloud Manager は、CSE にセットアップされたユーザー名とパス�
 
 >[!TIP]
 >
->詳しくは、[ 実稼動パイプラインの設定 ](/help/using/production-pipelines.md) を参照してください。 プログラムのセットアップ方法と KPI の定義方法については、[プログラムのセットアップ](/help/getting-started/program-setup.md)のドキュメントを参照してください。
+>詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)を参照してください。プログラムのセットアップ方法と KPI の定義方法について詳しくは、[プログラムのセットアップ](/help/getting-started/program-setup.md)のドキュメントを参照してください。
 
 ### パフォーマンステスト結果のグラフ {#performance-testing-results-graphs}
 
-様々な指標を「パフォーマンステストダイアログボックス **で使用でき** す。
+様々な指標を&#x200B;**パフォーマンステストダイアログボックス**&#x200B;で使用できます。
 
 ![指標のリスト](/help/assets/understand_test-results-screen1.png)
 

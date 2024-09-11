@@ -3,9 +3,9 @@ title: Cloud Manager UI の操作
 description: Cloud Manager UI の整理方法と、プログラムと環境を管理する操作方法について説明します。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1435'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 Cloud Manager UI の整理方法と、プログラムと環境を管理する操作方法について説明します。
 
-Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェイスで構成されています。
+Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェイスで構成されます。
 
 * [マイプログラムコンソール](#my-programs-console)：すべてのプログラムを表示および管理できます。
 * [プログラムの概要ウィンドウ](#program-overview)：個々のプログラムの詳細を確認して管理できます。
