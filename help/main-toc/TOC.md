@@ -40,7 +40,7 @@ ht-degree: 100%
       + [ウィザードの使用](/help/getting-started/using-the-wizard.md)
       + [プロジェクトのセットアップ](/help/getting-started/project-setup.md)
       + [ビルド環境](/help/getting-started/build-environment.md)
-   + [ブランチの設定](/help/getting-started/configuring-branches.md)
+   + [分岐の設定](/help/getting-started/configuring-branches.md)
    + [Dispatcher の設定](/help/getting-started/dispatcher-configurations.md)
 + 使用 {#using}
    + CI／CD パイプライン {#pipelines}
@@ -74,9 +74,9 @@ ht-degree: 100%
 + リリースノート {#release-notes}
    + [最新のリリースノート](/help/release-notes/current.md)
    + 2024年度 {#rn-2024}
-      + [2024.8.0 のリリースノート](/help/release-notes/2024/2024-8-0.md)
+      + [リリースノート（2024.8.0）](/help/release-notes/2024/2024-8-0.md)
       + [2024.7.0 のリリースノート](/help/release-notes/2024/2024-7-0.md)
-      + [2024.6.0 のリリースノート](/help/release-notes/2024/2024-6-0.md)
+      + [リリースノート（2024.6.0）](/help/release-notes/2024/2024-6-0.md)
       + [2024.5.0 のリリースノート](/help/release-notes/2024/2024-5-0.md)
       + [リリースノート（2024.4.0）](/help/release-notes/2024/2024-4-0.md)
       + [2024.3.0 のリリースノート](/help/release-notes/2024/2024-3-0.md)
@@ -87,7 +87,7 @@ ht-degree: 100%
       + [リリースノート（2023.11.0）](/help/release-notes/2023/2023-11-0.md)
       + [2023.10.0 のリリースノート](/help/release-notes/2023/2023-10-0.md)
       + [リリースノート（2023.9.0）](/help/release-notes/2023/2023-9-0.md)
-      + [2023.8.0 のリリースノート](/help/release-notes/2023/2023-8-0.md)
+      + [リリースノート（2023.8.0）](/help/release-notes/2023/2023-8-0.md)
       + [リリースノート（2023.7.0）](/help/release-notes/2023/2023-7-0.md)
       + [リリースノート（2023.6.0）](/help/release-notes/2023/2023-6-0.md)
       + [リリースノート（2023.5.0）](/help/release-notes/2023/2023-5-0.md)

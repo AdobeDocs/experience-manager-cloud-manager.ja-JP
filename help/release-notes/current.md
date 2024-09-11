@@ -5,7 +5,7 @@ feature: Release Information
 source-git-commit: 3671772a1369273d89fde101ba084a6e2f8ce8dc
 workflow-type: tm+mt
 source-wordcount: '184'
-ht-degree: 37%
+ht-degree: 80%
 
 ---
 
@@ -30,14 +30,14 @@ Cloud Managerの 9 月リリースには、注目すべきバグや機能はあ�
 
 ## 早期導入プログラム {#early-adoption}
 
-Cloud Managerの早期導入プログラムに参加して、今後の機能をテストする機会を得ます。
+Cloud Manager の早期導入プログラムに参加すると、今後の機能をテストする機会を得ることができます。
 
 
 ### ステージング専用パイプラインと実稼動専用パイプライン {#staging-production-only-pipelines}
 
-Adobeは、（ステージング専用パイプラインと実稼動専用パイプライン [ のサポートを導入しましたので、お知らせ ](/help/using/stage-prod-only.md) ます。 この新機能を使用すると、フルスタックの実稼動デプロイメントパイプラインを、より小さく、より特殊なデプロイメントに分割できます。
+[ステージング専用パイプラインと実稼動専用パイプライン](/help/using/stage-prod-only.md)のサポートの導入をお知らせします。この新機能により、フルスタックの実稼動デプロイメントパイプラインをより小さな、より特殊なデプロイメントに分割できます。
 
-この機能をテストしてフィードバックを提供したい場合は、Adobe IDに関連付けられたメールアドレスを使用して `Grp-cloudmanager_splitpipelines@adobe.com` ールを送信します。
+この機能をテストしてフィードバックを提供する場合は、Adobe ID に関連付けられているメールアドレスを使用して `Grp-cloudmanager_splitpipelines@adobe.com` にメールを送信します。
 
 <!-- ## Bug fixes
 
