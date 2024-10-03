@@ -3,10 +3,10 @@ title: Cloud Manager でのプライベートリポジトリの追加
 description: 独自のプライベート GitHub リポジトリを操作する Cloud Manager を設定する方法について説明します。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
-workflow-type: ht
-source-wordcount: '795'
-ht-degree: 100%
+source-git-commit: 5090d7ee9a6742d71122acda9901d074bc254305
+workflow-type: tm+mt
+source-wordcount: '818'
+ht-degree: 98%
 
 ---
 
@@ -30,6 +30,8 @@ Cloud Manager をプライベート GitHub リポジトリで設定すると、G
 1. [リポジトリを追加](#add-repo)
 1. [プライベートリポジトリの所有権の検証](#validate-ownership)
 
+
+
 ### リポジトリを追加 {#add-repo}
 
 1. Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページで、「**リポジトリ**」タブをクリックして&#x200B;**リポジトリ**&#x200B;ページに切り替え、「**リポジトリを追加**」をクリックします。
@@ -49,6 +51,8 @@ Cloud Manager をプライベート GitHub リポジトリで設定すると、G
 >[!TIP]
 >
 >Cloud Manager でのリポジトリ管理について詳しくは、[Cloud Manager リポジトリ](/help/managing-code/managing-repositories.md)を参照してください。
+
+
 
 ### プライベートリポジトリの所有権の検証 {#validate-ownership}
 
@@ -88,9 +92,13 @@ Cloud Manager は GitHub リポジトリを認識しましたが、引き続き�
 
 後でリポジトリに戻って検証を完了するには、**リポジトリ**&#x200B;ページに移動します。追加した GitHub リポジトリの横にある省略記号ボタンをクリックし、ドロップダウンメニューから「**所有権の検証**」を選択します。
 
+
+
 ## Cloud Manager でのプライベートリポジトリの使用 {#using}
 
 Cloud Manager で GitHub リポジトリを検証すると統合が完了し、Cloud Manager でリポジトリを使用できるようになります。
+
+**Cloud Managerでプライベートリポジトリを使用するには：**
 
 1. プルリクエストを作成すると、GitHub チェックが自動的に開始します。
 
@@ -112,16 +120,21 @@ Cloud Manager で GitHub リポジトリを検証すると統合が完了し、C
 >
 >プライベートリポジトリに対する各プルリクエストを検証するために自動的に作成されるパイプラインを制御できます。詳しくは、[プライベートリポジトリに対する GitHub チェック設定](github-check-config.md)を参照してください。
 
+
+
 ## プライベートリポジトリとパイプラインの関連付け {#pipelines}
 
-検証済みのプライベートリポジトリは、[フルスタックパイプライン](/help/overview/ci-cd-pipelines.md)に関連付けることができます。
+検証済みのプライベートリポジトリは、[フルスタックパイプラインおよびフロントエンドパイプライン](/help/overview/ci-cd-pipelines.md)に関連付けることができます。
+
+
 
 ## 制限事項 {#limitations}
 
 Cloud Manager でプライベートリポジトリを使用する場合は、特定の制限が適用されます。
 
-* Cloud Manager の GitHub チェックを使用して、プルリクエストの検証を一時停止することはできません。GitHub リポジトリが Cloud Manager で検証されている場合、Cloud Manager は、そのリポジトリに対して作成されたプルリクエストの検証を試みます。
-* Adobe GitHub アプリを GitHb 組織から削除すると、このアクションはすべてのリポジトリのプルリクエスト検証機能を削除します。
+* Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。
 * 実稼動のフルスタックパイプラインでプライベートリポジトリを使用する場合、Git タグは作成およびプッシュされません。
+* Adobe GitHub アプリを GitHb 組織から削除すると、このアクションはすべてのリポジトリのプルリクエスト検証機能を削除します。
 * プライベートリポジトリとコミット時のビルドトリガーを使用するパイプラインは、選択したブランチに新しいコミットがプッシュされた場合に自動的に開始されません。
 * [アーティファクト再利用機能](/help/getting-started/project-setup.md#build-artifact-reuse)は、プライベートリポジトリには適用されません。
+* Cloud Manager の GitHub チェックを使用して、プルリクエストの検証を一時停止することはできません。GitHub リポジトリが Cloud Manager で検証されている場合、Cloud Manager は、そのリポジトリに対して作成されたプルリクエストの検証を試みます。

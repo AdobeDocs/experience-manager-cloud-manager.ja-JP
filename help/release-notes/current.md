@@ -1,48 +1,72 @@
 ---
-title: Cloud Manager 2024.9.0 のリリースノート
-description: Cloud Manager 2024.9.0 のリリースノートについて説明します。
+title: Cloud Manager 2024.10.0 のリリースノート
+description: Cloud Manager 2024.10.0 のリリースノートについて説明します。
 feature: Release Information
-source-git-commit: 3671772a1369273d89fde101ba084a6e2f8ce8dc
-workflow-type: ht
-source-wordcount: '184'
-ht-degree: 100%
+source-git-commit: 94d5f3487408f9d8908bb15221c48ef768390527
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 26%
 
 ---
 
-# Cloud Manager 2024.9.0 のリリースノート {#release-notes}
+# Cloud Manager 2024.10.0 のリリースノート {#release-notes}
 
-このページは、[!UICONTROL Cloud Manager] 2024.9.0 のリリースノートです。
+このページは、[!UICONTROL Cloud Manager] 2024.10.0 のリリースノートです。
 
 >[!NOTE]
 >
 >AEM as a Cloud Service の Cloud Manager の最新リリースノートについては、[AEM as a Cloud Service の Cloud Manager の最新リリースノート](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/cloud-manager/current)を参照してください。
 
+
+
 ## リリース日 {#release-date}
 
-Cloud Manager の 9月リリースには、注目すべきバグや機能はありません。
+<!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-次回のリリースは 2024年10月3日（PT）に予定されています。
+[!UICONTROL Cloud Manager] 2024.10.0 のリリース日は 2024 年 10 月 3 日です。
+
+次回のリリースは 2024年11月14日（PT）に予定されています。
+
 
 
 ## 新機能 {#what-is-new}
 
-* ステージング専用パイプラインと実稼動専用パイプライン（[早期導入プログラム](#staging-production-only-pipelines)の一部として使用可能）については、ステージテストをスキップして、[緊急モード](/help/using/stage-prod-only.md#emergency-mode)で実行できるようになりました。
+* <!-- BOTH CS & AMS --> Cloud Managerで使用されるAEM アーキタイプのバージョンが、バージョン 26 に更新されました。 [https://github.com/adobe/aem-project-archetype/releasesを参照してください ](https://github.com/adobe/aem-project-archetype/releases)
+<!-- (CMGR-59817) -->
+
+
 
 ## 早期導入プログラム {#early-adoption}
 
-Cloud Manager の早期導入プログラムに参加すると、今後の機能をテストする機会を得ることができます。
+Cloud Managerの早期導入プログラムに参加して、今後の機能をテストする機会を得ます。
 
+### 独自の Git の導入 – GitLab と Bitbucket をサポート {#gitlab-bitbucket}
+
+<!-- BOTH CS & AMS -->
+
+**独自の Git を取り込む** 機能が拡張され、GitLab や Bitbucket などの外部リポジトリがサポートされるようになりました。 この新しいサポートは、プライベートおよびエンタープライズ GitHub リポジトリの既存のサポートに加わるものです。 これらの新しいリポジトリを追加する際に、パイプラインに直接リンクすることもできます。 これらのリポジトリは、パブリッククラウドプラットフォーム上、またはプライベートクラウドやインフラストラクチャ内でホストできます。 また、この統合により、Adobeリポジトリとの継続的なコード同期が不要になり、メインブランチにマージする前にプルリクエストを検証できるようになります。
+
+[Cloud Managerでの外部リポジトリの追加 ](/help/managing-code/external-repositories.md) を参照してください。
+
+![ リポジトリを追加ダイアログボックス ](/help/release-notes/assets/repositories-add-release-notes.png)
+
+>[!NOTE]
+>
+>現在、標準のプルリクエストコード品質チェックは、GitHub でホストされるリポジトリ専用ですが、この機能を他の Git ベンダーに拡張する更新が現在進行中です。
+
+この新機能のテストやフィードバックの提供に関心がある場合は、Adobe IDに関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) にメールを送信してください。 使用する Git プラットフォームと、プライベート/パブリックまたはエンタープライズリポジトリ構造のいずれを使用しているかをを必ず含めてください。
 
 ### ステージング専用パイプラインと実稼動専用パイプライン {#staging-production-only-pipelines}
 
-[ステージング専用パイプラインと実稼動専用パイプライン](/help/using/stage-prod-only.md)のサポートの導入をお知らせします。この新機能により、フルスタックの実稼動デプロイメントパイプラインをより小さな、より特殊なデプロイメントに分割できます。
+Adobeは、[ ステージング専用パイプラインと実稼動専用パイプライン ](/help/using/stage-prod-only.md) のサポートを導入することをお知らせします。 この新機能により、フルスタックの実稼動デプロイメントパイプラインをより小さな、より特殊なデプロイメントに分割できます。
 
-この機能をテストしてフィードバックを提供する場合は、Adobe ID に関連付けられているメールアドレスを使用して `Grp-cloudmanager_splitpipelines@adobe.com` にメールを送信します。
+この機能をテストしてフィードバックを提供したい場合は、Adobe IDに関連付けられたメールアドレスから [Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) にメールを送信してください。
 
 <!-- ## Bug fixes
 
 * text
+-->
 
-## Known Issues {#known-issues}
+## 既知の問題 {#known-issues}
 
-{{content-copy-known-issues}} LEAVE IN??? -->
+{{content-copy-known-issues}}

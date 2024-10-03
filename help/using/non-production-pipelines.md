@@ -1,15 +1,15 @@
 ---
-title: 実稼動以外のパイプラインの設定
+title: 実稼動以外のパイプラインを追加
 description: Cloud Manager を使用して、コードをデプロイする実稼動以外のパイプラインを作成および設定する方法について説明します。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '685'
-ht-degree: 100%
+source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 98%
 
 ---
 
-# 実稼動以外のパイプラインの設定 {#configuring-non-production-pipelines}
+# 実稼動以外のパイプラインの追加 {#configuring-non-production-pipelines}
 
 Cloud Manager を使用して、コードをデプロイする実稼動以外のパイプラインを作成および設定する方法について説明します。Cloud Manager でのパイプラインの動作に関する概念的な概要を最初に把握したい場合は、[CI／CD パイプライン](/help/overview/ci-cd-pipelines.md)を参照してください。
 
@@ -31,7 +31,7 @@ Cloud Manager を使用して、コードをデプロイする実稼動以外の
 >
 >パイプラインは、関連する Git リポジトリが少なくとも 1 つの分岐を持ち、[プログラム設定](/help/getting-started/program-setup.md)が完了するまで、設定できません。Cloud Manager でリポジトリを追加および管理する方法について詳しくは、[Cloud Manager リポジトリ](/help/managing-code/managing-repositories.md)を参照してください。
 
-## 実稼動以外のパイプラインの追加 {#add-non-production-pipeline}
+## 実稼動以外の新しいパイプラインを追加します。 {#add-non-production-pipeline}
 
 Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環境を用意したら、次の手順に従って実稼動以外のパイプラインを追加する準備が整います。
 
