@@ -2,10 +2,10 @@
 title: Cloud Manager 2024.10.0 のリリースノート
 description: Cloud Manager 2024.10.0 のリリースノートについて説明します。
 feature: Release Information
-source-git-commit: 94d5f3487408f9d8908bb15221c48ef768390527
+source-git-commit: 74e8f7c0f3896e0e33a02b62c003db322c0d50d8
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 26%
+source-wordcount: '369'
+ht-degree: 27%
 
 ---
 
@@ -48,7 +48,7 @@ Cloud Managerの早期導入プログラムに参加して、今後の機能を�
 
 [Cloud Managerでの外部リポジトリの追加 ](/help/managing-code/external-repositories.md) を参照してください。
 
-![ リポジトリを追加ダイアログボックス ](/help/release-notes/assets/repositories-add-release-notes.png)
+![リポジトリを追加ダイアログボックス](/help/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >
@@ -67,6 +67,6 @@ Adobeは、[ ステージング専用パイプラインと実稼動専用パイ�
 * text
 -->
 
-## 既知の問題 {#known-issues}
+<!-- Known Issues {#known-issues}
 
-{{content-copy-known-issues}}
+ -->
