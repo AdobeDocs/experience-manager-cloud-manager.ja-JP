@@ -1,18 +1,18 @@
 ---
-title: 実稼動パイプラインを追加
-description: Cloud Manager を使用して、コードをデプロイするための実稼動パイプラインを作成および設定する方法について説明します。
+title: 実稼動パイプラインの追加
+description: Cloud Manager を使用して、コードをデプロイする実稼動パイプラインを作成および設定する方法について説明します。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1249'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# 実稼動パイプラインを追加 {#configuring-production-pipelines}
+# 実稼動パイプラインの追加 {#configuring-production-pipelines}
 
-Cloud Manager を使用して、コードをデプロイするための実稼動パイプラインを作成および設定する方法について説明します。Cloud Manager でのパイプラインの動作に関する概念的な概要を最初に把握したい場合は、[CI／CD パイプライン](/help/overview/ci-cd-pipelines.md)を参照してください。
+Cloud Manager を使用して、コードをデプロイする実稼動パイプラインを作成および設定する方法について説明します。Cloud Manager でのパイプラインの動作に関する概念的な概要を最初に把握したい場合は、[CI／CD パイプライン](/help/overview/ci-cd-pipelines.md)を参照してください。
 
 ## 概要 {#overview}
 

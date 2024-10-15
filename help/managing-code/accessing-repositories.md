@@ -3,9 +3,9 @@ title: リポジトリのアクセス情報
 description: Cloud Manager からセルフサービスの Git アカウント管理を使用し、アドビが管理する Git リポジトリにアクセスして管理する方法について説明します。
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
 source-git-commit: 04fbc4a3fdba8b108055d66a4fdb1a31994cb18e
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '381'
+ht-degree: 100%
 
 ---
 

@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '342'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -40,13 +40,13 @@ ht-degree: 73%
       + [ウィザードの使用](/help/getting-started/using-the-wizard.md)
       + [プロジェクトのセットアップ](/help/getting-started/project-setup.md)
       + [ビルド環境](/help/getting-started/build-environment.md)
-   + [ブランチの設定](/help/getting-started/configuring-branches.md)
+   + [分岐の設定](/help/getting-started/configuring-branches.md)
    + [Dispatcher の設定](/help/getting-started/dispatcher-configurations.md)
-+ 使用方法 {#using}
-   + CI／CD パイプライン {#pipelines}
++ {#using} 使用方法
+   + CI/CD パイプライン {#pipelines}
       + [実稼動パイプラインの設定](/help/using/production-pipelines.md)
       + [実稼動以外のパイプラインの設定](/help/using/non-production-pipelines.md)
-      + [ステージパイプラインと実稼動専用パイプラインの分割（早期導入）](/help/using/stage-prod-only.md)
+      + [ステージング専用パイプラインと実稼動専用パイプラインの分割（早期導入）](/help/using/stage-prod-only.md)
       + [パイプラインの管理](/help/using/managing-pipelines.md)
    + [コードのデプロイメント](/help/using/code-deployment.md)
    + [コード品質テスト](/help/using/code-quality-testing.md)
@@ -57,10 +57,10 @@ ht-degree: 73%
    + [通知](/help/using/notifications.md)
    + [カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)
    + [コンテンツのコピー](/help/using/content-copy.md)
-+ コード {#managing-code} の管理
-   + [Cloud Managerでのリポジトリの管理](/help/managing-code/managing-repositories.md)
++ コードの管理 {#managing-code}
+   + [Cloud Manager でのリポジトリの管理](/help/managing-code/managing-repositories.md)
    + [リポジトリのアクセス情報](/help/managing-code/accessing-repositories.md)
-   + [Adobeリポジトリーを追加](/help/managing-code/adobe-repositories.md)
+   + [Adobe リポジトリの追加](/help/managing-code/adobe-repositories.md)
    + [プライベートリポジトリの追加](/help/managing-code/private-repositories.md)
    + [外部リポジトリの追加（早期導入）](/help/managing-code/external-repositories.md)
    + [Git サブモジュールのサポート](/help/managing-code/git-submodules.md)
@@ -148,7 +148,7 @@ ht-degree: 73%
       + [2019.3.0](/help/release-notes/2019/2019-3-0.md)
       + [2019.2.0](/help/release-notes/2019/2019-2-0.md)
       + [2019.1.0](/help/release-notes/2019/2019-1-0.md)
-   + 2018年 {#rn-2018}
+   + 2018年度 {#rn-2018}
       + [2018.9.0](/help/release-notes/2018/2018-9-0.md)
       + [2018.8.0](/help/release-notes/2018/2018-8-0.md)
       + [2018.7.0](/help/release-notes/2018/2018-7-0.md)
