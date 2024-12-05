@@ -1,13 +1,13 @@
 ---
 title: Cloud Manager での外部リポジトリの追加（早期導入）
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub、GitLab、Bitbucket リポジトリとの統合をサポートしています。
-source-git-commit: 054c214be3c8c6e8a8bd4691b70ae2098263ef5b
-workflow-type: ht
-source-wordcount: '740'
-ht-degree: 100%
+exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
+source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Cloud Manager での外部リポジトリの追加 {#external-repositories}
 
@@ -98,5 +98,9 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 
 ## 制限事項
 
-* 外部リポジトリは、設定パイプラインにリンクできません。
-* 外部リポジトリ（GitHub でホストされているリポジトリを除く）を使用するパイプラインと、[!UICONTROL **Git 変更時**]&#x200B;の「**デプロイメントトリガー**」オプションでは、トリガーは自動的に開始されません。これらは手動で開始する必要があります。
+外部リポジトリは、設定パイプラインにリンクできません。
+
+<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY
+
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
