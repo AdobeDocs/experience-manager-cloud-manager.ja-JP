@@ -1,20 +1,20 @@
 ---
-title: コンテンツコピーツール
+title: コンテンツのコピーによる環境の整合性の確保
 description: Cloud Managerのコンテンツコピーツールを使用すると、可変コンテンツをオンデマンドでAdobeのManaged ServicesでホストされているAdobe Experience Manager 6.x 実稼動環境から下位の環境にコピーして、テストできます。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: de9cfaa07dc9ff4a6d1cb200d14c5e776d27767d
+source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1364'
 ht-degree: 43%
 
 ---
 
 
-# コンテンツコピーツール {#content-copy}
+# 環境の一貫性を保つためのコンテンツのコピー {#content-copy}
 
 Cloud Managerのコンテンツコピーツールを使用すると、可変コンテンツをオンデマンドでAdobeのManaged ServicesでホストされているAdobe Experience Manager 6.x 実稼動環境から下位の環境にコピーして、テストできます。
 
-## コンテンツコピーツールについて{#introduction}
+## コンテンツコピーについて {#introduction}
 
 現在の実際のデータは、テスト、検証、ユーザー受け入れの目的で役立ちます。コンテンツコピーツールを使用すると、AMS でホストされている AEM 6.x 実稼動環境からステージング環境または開発環境にコンテンツをコピーできます。このワークフローは、様々なテストシナリオをサポートします。
 
