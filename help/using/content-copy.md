@@ -2,9 +2,9 @@
 title: コンテンツのコピーによる環境の整合性の確保
 description: Cloud Managerのコンテンツコピーを使用すると、可変コンテンツをオンデマンドでAdobeのManaged ServicesでホストされているAdobe Experience Manager 6.x 実稼動環境から下位のテスト用の環境にコピーできます。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 228006b424504306e916014bbe8543dc41ba43b5
+source-git-commit: 16cc1aa0ff45126df9100f337b6259a3f248038f
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1321'
 ht-degree: 34%
 
 ---
@@ -35,7 +35,7 @@ Cloud Managerのコンテンツコピーを使用すると、可変コンテン�
 * 宛先環境でコンテンツを編集する場合、パスが一致すると、ソースのコンテンツによって上書きされます。
 * パスが異なる場合、ソースのコンテンツは宛先のコンテンツと結合されます。
 
-## 権限 {#permissions}
+### 権限 {#permissions}
 
 コンテンツのコピー機能を使用するには、ソース環境とターゲット環境で、ユーザーを **デプロイメントマネージャー** の役割に割り当てる必要があります。
 
@@ -142,11 +142,11 @@ Cloud Managerのコンテンツコピーを使用すると、可変コンテン�
 
 1. 「**コピー**」をクリックします。コピープロセスのステータスは、選択したコンテンツセットのコンソールに反映されます。
 
-## コンテンツのコピーステータスの監視 {#copy-activity}
+## コンテンツコピーのステータスの確認 {#copy-activity}
 
 コピープロセスのステータスは、**コンテンツをコピーアクティビティ**&#x200B;ページで監視できます。
 
-**コンテンツのコピーステータスを監視するには：**
+**コンテンツのコピーのステータスを確認するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -179,6 +179,6 @@ Cloud Managerのコンテンツコピーを使用すると、可変コンテン�
 * [2 GB を超えるアセットサイズが有効になっている Dynamic Media 設定](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)はサポートされていません。
 * ターゲット環境の地域は、ソース環境の地域と同じにするか、そのサブセットにする必要があります。
 
-## 既知の問題 {#known-issues}
+## コンテンツのコピーに関する既知の問題 {#known-issues}
 
 {{content-copy-known-issues}}
