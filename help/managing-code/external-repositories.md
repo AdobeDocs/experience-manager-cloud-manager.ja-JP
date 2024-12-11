@@ -3,9 +3,9 @@ title: Cloud Manager での外部リポジトリの追加（早期導入）
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
 source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '0'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
