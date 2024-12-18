@@ -3,9 +3,9 @@ title: カスタムコード品質ルール
 description: コード品質テスト中に Cloud Manager で実行されるカスタムコード品質ルールの詳細を確認します。これらのルールは、AEM Engineering のベストプラクティスに基づいています。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 8811ed130b2c7a37a0c811c308b57acf0872e9c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3514'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -872,14 +872,14 @@ AEM Cloud Service では、アナライザーで正しくない名前の tokeniz
 
 AEM Cloud Service では、プロパティにスペースを使用したインデックス作成定義の作成が禁止されています。
 
-### インデックス定義の構成に haystack0 プロパティを含めることはできません {#oakpal-indexing-haystack0-property}
+### インデック作成定義の設定に haystack0 プロパティを含めることはできない {#oakpal-indexing-haystack0-property}
 
-* **キー**: HayStackPropertyCheck
+* **キー**：HayStackPropertyCheck
 * **タイプ**：改善点
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2024.12.0
 
-AEM Cloud Serviceでは、haystack プロパティを含むインデックス作成定義を作成できません。
+AEM Cloud Service では、haystack プロパティを含むインデックス作成定義の作成が禁止されています。
 
 ## Dispatcher 最適化ツール {#dispatcher-optimization-tool-rules}
 

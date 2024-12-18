@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '349'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 98%
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [通知](/help/using/notifications.md)
    + [カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)
-   + [コンテンツのコピーによる環境の整合性の確保](/help/using/content-copy.md)
+   + [環境の一貫性を目的とするコンテンツコピー](/help/using/content-copy.md)
 + コードの管理 {#managing-code}
    + [Cloud Manager でのリポジトリの管理](/help/managing-code/managing-repositories.md)
    + [リポジトリのアクセス情報](/help/managing-code/accessing-repositories.md)
