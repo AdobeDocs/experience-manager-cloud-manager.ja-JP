@@ -3,9 +3,9 @@ title: 環境の一貫性を目的とするコンテンツコピー
 description: Cloud Manager のコンテンツコピーを使用すると、可変コンテンツをオンデマンドで Adobe Managed Services でホストされている Adobe Experience Manager 6.x 実稼動環境から下位の環境にテスト目的でコピーできます。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -154,13 +154,13 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 
    ![コンテンツをコピーアクティビティ](/help/assets/copy-content-activity.png)
 
-   コンテンツのコピープロセスのステータスは次のいずれかになります。
+   コンテンツコピープロセスは以下のいずれかになります。
 
    | ステータス | 説明 |
    | --- | --- |
-   | 処理中 | コンテンツのコピープロセスが進行中です。 |
-   | 完了 | コンテンツのコピープロセスが正常に完了しました。 |
-   | 失敗 | コンテンツのコピープロセスに失敗しました。 |
+   | 処理中 | コンテンツコピープロセスが進行中です。 |
+   | 完了 | コンテンツコピープロセスが正常に完了しました。 |
+   | 失敗 | コンテンツコピープロセスに失敗しました。 |
 
 ## コンテンツコピーの制限事項 {#limitations}
 
