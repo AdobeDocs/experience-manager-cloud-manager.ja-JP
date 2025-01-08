@@ -2,7 +2,7 @@
 title: コード品質テスト
 description: パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
 workflow-type: tm+mt
 source-wordcount: '2793'
 ht-degree: 98%
@@ -48,9 +48,9 @@ ht-degree: 98%
 
 汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)と呼ばれます。
 
+ルールの現在の完全なリストをダウンロードできます [ このリンクを使用 ](/help/assets/CodeQuality-rules-latest-AMS.xlsx)。
+
 >[!IMPORTANT]
->
->ルールの現在の完全なリストをダウンロードできます [ このリンクを使用 ](/help/assets/CodeQuality-rules-latest-AMS.xlsx)。
 >
 >2025 年 2 月 13 日木曜日（PT）（Cloud Manager 2025.2.0）より、Cloud Manager Code Quality では、更新された SonarQube 9.9 バージョンと、更新されたルールのリストを使用しています [ ここからダウンロードしてください ](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx)。
 
