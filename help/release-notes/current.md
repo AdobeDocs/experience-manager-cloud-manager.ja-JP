@@ -3,10 +3,10 @@ title: Cloud Manager 2024.12.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2024.12.0 のリリースについて説明します。
 feature: Release Information
 exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
-source-git-commit: e266a4192e2a897f142a6c83ae5766483946320d
-workflow-type: ht
-source-wordcount: '312'
-ht-degree: 100%
+source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 87%
 
 ---
 
@@ -28,9 +28,13 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2024.12.0 のリリース�
 
 次回のリリース予定は 2025年1月23日（PT）です。
 
-<!-- ## What's new {#what-is-new} -->
+## 新機能 {#what-is-new}
 
 <!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
+
+* 2025 年 2 月 13 日木曜日（PT）より、Cloud Manager コード品質ステップで、アップグレードされた SonarQube バージョン 9.9.5.90363 が使用されるようになりました。
+
+  [ このリンク ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-quality-testing#code-quality-testing-step) で AMS で使用可能な更新されたルールにより、Cloud Manager パイプラインのセキュリティスコアとコード品質が決まります。 この更新は、品質ゲートに影響を与え、デプロイメントをブロックする可能性があります。
 
 ## 早期導入プログラム {#early-adoption}
 

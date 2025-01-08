@@ -2,10 +2,10 @@
 title: コード品質テスト
 description: パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '2764'
-ht-degree: 100%
+source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+workflow-type: tm+mt
+source-wordcount: '2793'
+ht-degree: 98%
 
 ---
 
@@ -48,14 +48,16 @@ ht-degree: 100%
 
 汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)と呼ばれます。
 
->[!TIP]
+>[!IMPORTANT]
 >
->ルールの完全なリストをダウンロードするには、[このリンクを使用](/help/assets/CodeQuality-rules-latest-AMS.xlsx)します。
+>ルールの現在の完全なリストをダウンロードできます [ このリンクを使用 ](/help/assets/CodeQuality-rules-latest-AMS.xlsx)。
+>
+>2025 年 2 月 13 日木曜日（PT）（Cloud Manager 2025.2.0）より、Cloud Manager Code Quality では、更新された SonarQube 9.9 バージョンと、更新されたルールのリストを使用しています [ ここからダウンロードしてください ](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx)。
 
 コード品質テストの結果は、次の表にまとめた評価として提供されます。
 
 | 名前 | 定義 | カテゴリ | 不合格のしきい値 |
-|--- |--- |--- |--- |
+| --- | --- | --- | --- |
 | セキュリティ評価 | A = 脆弱性なし<br/>B = 軽度の脆弱性が 1 つ以上<br/>C = 重要な脆弱性が 1 つ以上<br/>D = 重大な脆弱性が 1 つ以上<br/>E = 致命的な脆弱性が 1 つ以上 | 重大 | &lt; B |
 | 信頼性評価 | A = バグなし<br/>B = 軽度のバグが 1 つ以上<br/>C = 重要なバグが 1 つ以上<br/>D = 重大なバグが 1 つ以上<br/>E = 致命的なバグが 1 つ以上 | 重要 | &lt; C |
 | 保守性評価 | コードスメルの未処理の修正コストによって、アプリケーションに既に投入された時間の割合として定義されます。<br/><ul><li>A = &lt;=5%</li><li>B = 6～10%</li><li>C = 11～20%</li><li>D = 21～50%</li><li>E = >50%</li></ul> | 重要 | &lt; A |
@@ -67,7 +69,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->詳しくは、[SonarQube の指標の定義](https://docs.sonarsource.com/sonarqube/latest/user-guide/code-metrics/metrics-definition)を参照してください。
+>詳しくは、[SonarQube の指標の定義](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/)を参照してください。
 
 >[!NOTE]
 >
