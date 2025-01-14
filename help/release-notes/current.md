@@ -6,7 +6,7 @@ exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
 source-git-commit: 60db60be95318ebf6f2af91a94a9475604a15003
 workflow-type: tm+mt
 source-wordcount: '359'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -32,9 +32,9 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2024.12.0 のリリース�
 
 <!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
 
-* 2025 年 2 月 13 日木曜日（PT）より、Cloud Manager コード品質ステップで、アップグレードされた SonarQube バージョン 9.9.5.90363 が使用されるようになりました。
+* 2025年2月13日木曜日（PT）以降、Cloud Manager コード品質ステップでは、アップグレードされた SonarQube バージョン 9.9.5.90363 が使用されるようになりました。
 
-  [ このリンク ](/help/using/code-quality-testing.md#code-quality-testing-step) で AMS で使用可能な更新されたルールにより、Cloud Manager パイプラインのセキュリティスコアとコード品質が決まります。 この更新は、品質ゲートに影響を与え、デプロイメントをブロックする可能性があります。
+  [このリンク](/help/using/code-quality-testing.md#code-quality-testing-step)の AMS に使用可能な更新されたルールにより、Cloud Manager パイプラインのセキュリティスコアとコード品質が決定されます。 この更新は、品質ゲートに影響を与え、デプロイメントをブロックする可能性があります。
 
 ## 早期導入プログラム {#early-adoption}
 
@@ -44,7 +44,7 @@ Cloud Manager の早期導入プログラムに参加すると、今後の機能
 
 <!-- BOTH CS & AMS -->
 
-**独自の Git の導入**&#x200B;機能が拡張され、GitLab や Bitbucket などの外部リポジトリのサポートが含まれるようになりました。この新しいサポートは、プライベートおよびエンタープライズ GitHub リポジトリに対する既存のサポートに追加されます。これらの新しいリポジトリを追加すると、パイプラインに直接リンクすることもできます。これらのリポジトリは、パブリッククラウドプラットフォーム上や、プライベートクラウドまたはインフラストラクチャ内でホストできます。また、この統合により、Adobe リポジトリと常にコード同期を行う必要がなくなり、プルリクエストをメイン分岐に結合する前に検証できるようになります。
+**独自の Git の導入**&#x200B;機能が拡張され、GitLab や Bitbucket などの外部リポジトリのサポートが含まれるようになりました。 この新しいサポートは、プライベートおよびエンタープライズ GitHub リポジトリに対する既存のサポートに追加されます。 これらの新しいリポジトリを追加すると、パイプラインに直接リンクすることもできます。 これらのリポジトリは、パブリッククラウドプラットフォーム上や、プライベートクラウドまたはインフラストラクチャ内でホストできます。 また、この統合により、Adobe リポジトリと常にコード同期を行う必要がなくなり、プルリクエストをメイン分岐に結合する前に検証できるようになります。
 
 外部リポジトリ（GitHub でホストされているリポジトリを除く）を使用するパイプラインと、**Git 変更時**&#x200B;に設定した&#x200B;**デプロイメントトリガー**&#x200B;が自動的に開始されるようになりました。
 
@@ -56,7 +56,7 @@ Cloud Manager の早期導入プログラムに参加すると、今後の機能
 >
 >現在、標準のプルリクエストコード品質チェックは、GitHub でホストされるリポジトリ専用ですが、この機能を他の Git ベンダーに拡張する更新が進行中です。
 
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) にメールを送信します。使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
+この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
 
 
 <!-- ## Bug fixes {#bug-fixes}
