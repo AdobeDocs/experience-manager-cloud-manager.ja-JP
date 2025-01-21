@@ -2,10 +2,10 @@
 title: 環境の一貫性を目的とするコンテンツコピー
 description: Cloud Manager のコンテンツコピーを使用すると、可変コンテンツをオンデマンドで Adobe Managed Services でホストされている Adobe Experience Manager 6.x 実稼動環境から下位の環境にテスト目的でコピーできます。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
-workflow-type: ht
+source-git-commit: 84b3366481c2efd497583627eac67046452f6c38
+workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -64,7 +64,7 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 
    `/content`、`/conf`、`/etc`、`/var/workflow/models` または `/var/commerce` で始まるパスのみが含める対象となります。
 
-1. **![フォルダーの追加アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg)「パスを追加**」をクリックして、コンテンツセットにパスを追加します（または含めます）。
+1. ![ フォルダー追加アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg)**パスを追加** をクリックして、コンテンツセットにパスを追加（または含める）します。
 
 1. （オプション）必要に応じて、前の 2 つの手順を繰り返して、追加パス（最大 50）を追加します。それ以外の場合は、次の手順に進みます。
 
