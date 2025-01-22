@@ -1,20 +1,19 @@
 ---
-title: Cloud Manager 2024.12.0 のリリースノート
-description: Adobe Managed Services の Cloud Manager 2024.12.0 のリリースについて説明します。
+title: Cloud Manager 2025.1.0 のリリースノート
+description: Adobe Managed Services の Cloud Manager 2025.1.0 のリリースについて説明します。
 feature: Release Information
-exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
-source-git-commit: 60db60be95318ebf6f2af91a94a9475604a15003
+source-git-commit: c25508b24f00b8f8cfa7bae3cc4b0d6ecf684db3
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 100%
+source-wordcount: '193'
+ht-degree: 40%
 
 ---
 
-# Adobe Managed Services の Cloud Manager 2024.12.0 のリリースノート {#release-notes}
+# Adobe Managed Services の Cloud Manager 2025.1.0 のリリースノート {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release -->
 
-Adobe Managed Services の [!UICONTROL Cloud Manager] 2024.12.0 のリリースについて説明します。
+Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.1.0 のリリースについて説明します。
 
 >[!NOTE]
 >
@@ -24,39 +23,33 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2024.12.0 のリリース�
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-[!UICONTROL Cloud Manager] 2024.12.0 のリリース日は 2024年12月5日（PT）です。
+[!UICONTROL Cloud Manager] 2025.1.0 のリリース日は 2024年1月22日（PT）です。
 
-次回のリリース予定は 2025年1月23日（PT）です。
+次回のリリース予定は 2025年2月13日（PT）です。
 
 ## 新機能 {#what-is-new}
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
+**コード品質ルール：** Cloud Managerのコード品質ステップは、2025 年 2 月 13 日木曜日（PT）に予定されているCloud Manager 2025.2.0 リリースで SonarQube Server 9.9 の使用を開始します。
 
-* 2025年2月13日木曜日（PT）以降、Cloud Manager コード品質ステップでは、アップグレードされた SonarQube バージョン 9.9.5.90363 が使用されるようになりました。
+準備のために、更新された SonarQube ルールが [ コード品質ルール ](/help/using/code-quality-testing.md#code-quality-testing-step) で利用できるようになりました。
 
-  [このリンク](/help/using/code-quality-testing.md#code-quality-testing-step)の AMS に使用可能な更新されたルールにより、Cloud Manager パイプラインのセキュリティスコアとコード品質が決定されます。 この更新は、品質ゲートに影響を与え、デプロイメントをブロックする可能性があります。
+次のパイプラインテキスト変数を設定することにより、新しいルールを「アーリーチェック」することができます（下のスクリーンショットを参照）。
 
-## 早期導入プログラム {#early-adoption}
+`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-Cloud Manager の早期導入プログラムに参加すると、今後の機能をテストする機会を得ることができます。
+さらに、次の変数を設定して、コード品質ステップが同じコミットに対して実行されるようにします（通常、同じコ `commitId` ットに対してスキップされます）。
 
-### 独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました {#gitlab-bitbucket}
+`CM_DISABLE_BUILD_REUSE` = `true`
 
-<!-- BOTH CS & AMS -->
-
-**独自の Git の導入**&#x200B;機能が拡張され、GitLab や Bitbucket などの外部リポジトリのサポートが含まれるようになりました。 この新しいサポートは、プライベートおよびエンタープライズ GitHub リポジトリに対する既存のサポートに追加されます。 これらの新しいリポジトリを追加すると、パイプラインに直接リンクすることもできます。 これらのリポジトリは、パブリッククラウドプラットフォーム上や、プライベートクラウドまたはインフラストラクチャ内でホストできます。 また、この統合により、Adobe リポジトリと常にコード同期を行う必要がなくなり、プルリクエストをメイン分岐に結合する前に検証できるようになります。
-
-外部リポジトリ（GitHub でホストされているリポジトリを除く）を使用するパイプラインと、**Git 変更時**&#x200B;に設定した&#x200B;**デプロイメントトリガー**&#x200B;が自動的に開始されるようになりました。
-
-[Cloud Manager でのプライベートリポジトリの追加](/help/managing-code/external-repositories.md)を参照してください。
-
-![リポジトリを追加ダイアログボックス](/help/release-notes/assets/repositories-add-release-notes.png)
+![ 変数設定ページ ](/help/release-notes/assets/variables-config.png)
 
 >[!NOTE]
 >
->現在、標準のプルリクエストコード品質チェックは、GitHub でホストされるリポジトリ専用ですが、この機能を他の Git ベンダーに拡張する更新が進行中です。
+>Adobeでは、メインの実稼動パイプラインと同じブランチに設定された新しい CI/CD コード品質パイプラインを作成することをお勧めします。 2025 年 2 月 13 日（PT）リリースより前に *適切な変数を設定し、新しく適用されたルールにブロッカーが導入されないことを検証します*。
 
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
+<!-- ## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
 
 
 <!-- ## Bug fixes {#bug-fixes}

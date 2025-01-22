@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール
 description: コード品質テスト中に Cloud Manager で実行されるカスタムコード品質ルールの詳細を確認します。これらのルールは、AEM Engineering のベストプラクティスに基づいています。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 8811ed130b2c7a37a0c811c308b57acf0872e9c8
-workflow-type: ht
-source-wordcount: '3514'
-ht-degree: 100%
+source-git-commit: 1b7b703f7cba69878bd98aa971844741ebea7dba
+workflow-type: tm+mt
+source-wordcount: '3490'
+ht-degree: 99%
 
 ---
 
@@ -16,11 +16,13 @@ AEM Engineering のベストプラクティスに基づいて、Cloud Manager �
 
 >[!NOTE]
 >
->ここで提供されるコードサンプルは、例としてのみ使用されています。概念と品質ルールについて詳しくは、[SonarQube の概念に関するドキュメント](https://docs.sonarsource.com/sonarqube/latest/)を参照してください。
+>ここで提供されるコードサンプルは、例としてのみ使用されています。概念と品質ルールについて詳しくは、[SonarQube の概念に関するドキュメント](https://docs.sonarsource.com/sonarqube-server/latest/)を参照してください。
 
->[!NOTE]
+完全な SonarQube ルールは、アドビ独自の情報が原因でダウンロードできません。ルールの完全なリストをダウンロードするには、[このリンクを使用](/help/assets/CodeQuality-rules-latest-AMS.xlsx)します。ルールの説明と例については、このドキュメントを引き続き参照してください。
+
+>[!IMPORTANT]
 >
->完全な SonarQube ルールは、アドビ独自の情報が原因でダウンロードできません。ルールの完全なリストをダウンロードするには、[このリンクを使用](/help/assets/CodeQuality-rules-latest-AMS.xlsx)します。ルールの説明と例については、このドキュメントを引き続き参照してください。
+>2025年2月13日木曜日（PT）（Cloud Manager 2025.2.0）以降、Cloud Manager コード品質では、更新された SonarQube 9.9 バージョンと、[ここからダウンロード](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx)できる更新されたルールのリストが使用されます。
 
 ## SonarQube ルール {#sonarqube-rules}
 
@@ -179,7 +181,7 @@ public void orDoThis() {
 ### オブジェクト `ResourceResolver` は常に閉じる必要がある {#resourceresolver-objects-should-always-be-closed}
 
 * **キー**：CQRules:CQBP-72
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -221,7 +223,7 @@ public void orDoThis(Session session) throws Exception {
 ### サーブレットの登録に Sling サーブレットパスを使用しない {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **キー**：CQRules:CQBP-75
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -241,7 +243,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### キャッチされた例外は、ログに記録またはスローする必要があるが、両方は行わない {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **キー**：CQRules:CQBP-44---CatchAndEitherLogOrThrow
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -283,7 +285,7 @@ public void orDoThis() throws MyCustomException {
 ### ログステートメントの直後にスローステートメントを使用しない {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **キー**：CQRules:CQBP-44---ConsecutivelyLogAndThrow
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -309,7 +311,7 @@ public void doThis() throws Exception {
 ### GET または HEAD 要求の処理時に INFO でログに記録しない {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **キー**：CQRules:CQBP-44---LogInfoInGetOrHeadRequests
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 
 一般的に、INFO ログレベルは重要なアクションを区切るために使用し、デフォルトでは、AEM は INFO レベル以上をログに記録するように設定されています。GET および HEAD メソッドは読み取り専用操作に過ぎず、重要なアクションを構成しません。GET または HEAD 要求に応答して INFO レベルでログに記録すると、大量のログノイズが作成されるので、ログファイル内の有用な情報を特定するのが難しくなります。GET または HEAD リクエストを処理する際に、問題が発生した場合、ログには WARN または ERROR レベルで記録する必要があります。詳細なトラブルシューティング情報の場合、ログには DEBUG またはTRACE レベルで記録する必要があります。
@@ -337,7 +339,7 @@ public void doGet() throws Exception {
 ### `Exception.getMessage()` をログステートメントの最初のパラメーターとして使用しない {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **キー**：CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -370,7 +372,7 @@ public void doThis() {
 ### catch ブロックのログは、WARN または ERROR レベルにする必要がある {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **キー**：CQRules:CQBP-44---WrongLogLevelInCatchBlock
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -403,7 +405,7 @@ public void doThis() {
 ### コンソールにスタックトレースをプリントしない {#do-not-print-stack-traces-to-the-console}
 
 * **キー**：CQRules:CQBP-44---ExceptionPrintStackTrace
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -436,7 +438,7 @@ public void doThis() {
 ### 標準出力または標準エラーに出力しない {#do-not-output-to-standard-output-or-standard-error}
 
 * **キー**：CQRules:CQBP-44—LogLevelConsolePrinters
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -469,7 +471,7 @@ public void doThis() {
 ### ハードコードされた `/apps` および `/libs` パスを使用しない {#avoid-hardcoded-apps-and-libs-paths}
 
 * **キー**：CQRules:CQBP-71
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
@@ -494,7 +496,7 @@ public void doThis(Resource resource) {
 ### Sling スケジューラーは使用しない {#sonarqube-sling-scheduler}
 
 * **キー**：CQRules:AMSCORE-554
-* **タイプ**：コードスメル／Cloud Service との互換性
+* **種類**:`Code Smell`/Cloud Serviceの互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -505,7 +507,7 @@ Sling ジョブがクラスター環境で処理される方法について詳�
 ### AEM の非推奨 API は使用しない {#sonarqube-aem-deprecated}
 
 * **キー**：AMSCORE-553
-* **タイプ**：コードスメル／Cloud Service との互換性
+* **種類**:`Code Smell`/Cloud Serviceの互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -627,7 +629,7 @@ AEM コンテンツリポジトリ内の `/libs` コンテンツツリーを読�
 ### デフォルトのオーサリングモードをクラシック UI にしない {#oakpal-default-authoring}
 
 * **キー**：ClassicUIAuthoringMode
-* **タイプ**：コードスメル／Cloud Service との互換性
+* **種類**:`Code Smell`/Cloud Serviceの互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -636,7 +638,7 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内�
 ### ダイアログボックスを持つコンポーネントはタッチ UI ダイアログボックスが必要 {#oakpal-components-dialogs}
 
 * **キー**：ComponentWithOnlyClassicUIDialog
-* **タイプ**：コードスメル／Cloud Service との互換性
+* **種類**:`Code Smell`/Cloud Serviceの互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -651,7 +653,7 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 ### リバースレプリケーションエージェントは使用しない {#oakpal-reverse-replication}
 
 * **キー**：ReverseReplication
-* **タイプ**：コードスメル／Cloud Service との互換性
+* **種類**:`Code Smell`/Cloud Serviceの互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -693,7 +695,7 @@ AEM クライアントライブラリには、画像やフォントなどの静�
 ### Cloud Service と互換性のないワークフロープロセスの使用 {#oakpal-usage-cloud-service}
 
 * **キー**：CloudServiceIncompatibleWorkflowProcess
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **重大度**：ブロッカー
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -704,7 +706,7 @@ AEM Cloud Service 上でアセット処理を行う Assets マイクロサービ
 ### 静的なテンプレートより編集可能なテンプレートの使用を推奨 {#oakpal-static-template}
 
 * **キー**：StaticTemplateUsage
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -715,7 +717,7 @@ AEM Cloud Service 上でアセット処理を行う Assets マイクロサービ
 ### 従来の基盤コンポーネントの使用は推奨されない {#oakpal-usage-legacy}
 
 * **キー**：LegacyFoundationComponentUsage
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -726,7 +728,7 @@ AEM Cloud Service 上でアセット処理を行う Assets マイクロサービ
 ### カスタム検索インデックス定義ノードは、`/oak:index` の直接の子にする必要がある {#oakpal-custom-search}
 
 * **キー**：OakIndexLocation
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -735,7 +737,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（`oak:Que
 ### カスタム検索インデックス定義ノードの compatVersion は 2 にする {#oakpal-custom-search-compatVersion}
 
 * **キー**：IndexCompatVersion
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -744,7 +746,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（`oak:Que
 ### カスタム検索インデックス定義ノードの子孫ノードのタイプは、`nt:unstructured` にする {#oakpal-descendent-nodes}
 
 * **キー**：IndexDescendantNodeType
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -753,7 +755,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（`oak:Que
 ### カスタム検索インデックス定義ノードには、子を持つ `indexRules` という名前の子ノードを含める {#oakpal-custom-search-index}
 
 * **キー**：IndexRulesNode
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -762,7 +764,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（`oak:Que
 ### カスタム検索インデックス定義ノードは命名規則に従う {#oakpal-custom-search-definitions}
 
 * **キー**：IndexName
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -771,7 +773,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 ### カスタム検索インデックス定義ノードでは lucene 型のインデックスを使用する {#oakpal-index-type-lucene}
 
 * **キー**：IndexType
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -780,7 +782,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（`oak:Que
 ### カスタム検索インデックス定義ノードに `seed` という名前のプロパティを含めない {#oakpal-property-name-seed}
 
 * **キー**：IndexSeedProperty
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
@@ -789,7 +791,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 ### カスタム検索インデックス定義ノードに `reindex` という名前のプロパティを含めない {#oakpal-reindex-property}
 
 * **キー**：IndexReindexProperty
-* **タイプ**：コードスメル
+* **タイプ**：`Code Smell`
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
