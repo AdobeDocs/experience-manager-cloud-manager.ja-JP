@@ -3,9 +3,9 @@ title: カスタムコード品質ルール
 description: コード品質テスト中に Cloud Manager で実行されるカスタムコード品質ルールの詳細を確認します。これらのルールは、AEM Engineering のベストプラクティスに基づいています。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 1b7b703f7cba69878bd98aa971844741ebea7dba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3490'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ AEM Engineering のベストプラクティスに基づいて、Cloud Manager �
 
 >[!IMPORTANT]
 >
->2025年2月13日木曜日（PT）（Cloud Manager 2025.2.0）以降、Cloud Manager コード品質では、更新された SonarQube 9.9 バージョンと、[ここからダウンロード](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx)できる更新されたルールのリストが使用されます。
+>2025年2月13日木曜日（PT）（Cloud Manager 2025.2.0）以降、Cloud Manager コード品質では、更新された SonarQube 9.9 バージョンと、更新されたルールのリスト（[ここからダウンロード](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx)できます）が使用されます。
 
 ## SonarQube ルール {#sonarqube-rules}
 
@@ -496,7 +496,7 @@ public void doThis(Resource resource) {
 ### Sling スケジューラーは使用しない {#sonarqube-sling-scheduler}
 
 * **キー**：CQRules:AMSCORE-554
-* **種類**:`Code Smell`/Cloud Serviceの互換性
+* **タイプ**：`Code Smell`／Cloud Service との互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -507,7 +507,7 @@ Sling ジョブがクラスター環境で処理される方法について詳�
 ### AEM の非推奨 API は使用しない {#sonarqube-aem-deprecated}
 
 * **キー**：AMSCORE-553
-* **種類**:`Code Smell`/Cloud Serviceの互換性
+* **タイプ**：`Code Smell`／Cloud Service との互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -629,7 +629,7 @@ AEM コンテンツリポジトリ内の `/libs` コンテンツツリーを読�
 ### デフォルトのオーサリングモードをクラシック UI にしない {#oakpal-default-authoring}
 
 * **キー**：ClassicUIAuthoringMode
-* **種類**:`Code Smell`/Cloud Serviceの互換性
+* **タイプ**：`Code Smell`／Cloud Service との互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -638,7 +638,7 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内�
 ### ダイアログボックスを持つコンポーネントはタッチ UI ダイアログボックスが必要 {#oakpal-components-dialogs}
 
 * **キー**：ComponentWithOnlyClassicUIDialog
-* **種類**:`Code Smell`/Cloud Serviceの互換性
+* **タイプ**：`Code Smell`／Cloud Service との互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
@@ -653,7 +653,7 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 ### リバースレプリケーションエージェントは使用しない {#oakpal-reverse-replication}
 
 * **キー**：ReverseReplication
-* **種類**:`Code Smell`/Cloud Serviceの互換性
+* **タイプ**：`Code Smell`／Cloud Service との互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
