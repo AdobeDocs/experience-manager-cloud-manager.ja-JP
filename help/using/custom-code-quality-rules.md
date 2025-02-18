@@ -3,9 +3,9 @@ title: カスタムコード品質ルール
 description: コード品質テスト中に Cloud Manager で実行されるカスタムコード品質ルールの詳細を確認します。これらのルールは、AEM Engineering のベストプラクティスに基づいています。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: c50eb54b5603b4370f2d7907a2194477dcc3ba21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3523'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -883,14 +883,14 @@ AEM Cloud Service では、プロパティにスペースを使用したイン�
 
 AEM Cloud Service では、haystack プロパティを含むインデックス作成定義の作成が禁止されています。
 
-### インデックス作成定義の設定には、次のプロパティを含めないでください：async-previous {#oakpal-indexing-async-previous-property}
+### インデック作成定義の設定に async-previous プロパティを含めることはできません {#oakpal-indexing-async-previous-property}
 
-* **キー**: IndexAsyncPreviousCheck
+* **キー**：IndexAsyncPreviousCheck
 * **タイプ**：改善点
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2025.2.0
 
-AEM Cloud Service では、async-previous プロパティを含むインデックス作成定義の作成は禁止されています。
+AEM Cloud Service では、async-previous プロパティを含むインデックス作成定義の作成が禁止されています。
 
 ## Dispatcher 最適化ツール {#dispatcher-optimization-tool-rules}
 
