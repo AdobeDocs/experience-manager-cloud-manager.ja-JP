@@ -5,9 +5,9 @@ feature: Release Information
 exlid: 669b1f2d8fc68526eb091e0f93f70ab93033d193
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 source-git-commit: 51dd060ec9b922ace9ce537cac669c61154284e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '241'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 26%
 
 Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.2.0 のリリースについて説明します。
 
-[Adobe Experience Manager as a Cloud Serviceの最新のリリースノート ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/home) も参照してください。
+[Adobe Experience Manager as a Cloud Service の最新のリリースノート](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/home)も参照してください。
 
 ## リリース日 {#release-date}
 
@@ -31,22 +31,22 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.2.0 のリリース�
 
 * **アップグレードされた SonarQube**
 
-  2025 年 2 月 13 日木曜日（PT）より、Cloud Managerのコード品質ステップで SonarQube 9.9.5.90363 が使用されるようになりました。
+  2025年2月13日木曜日（PT）以降、Cloud Manager コード品質ステップでは、SonarQube 9.9.5.90363 が使用されるようになりました。
 
-  [ このリンク ](/help/using/code-quality-testing.md#code-quality-testing-step) で AMS で使用可能な更新されたルールにより、Cloud Manager パイプラインのセキュリティスコアとコード品質が決まります。
+  [このリンク](/help/using/code-quality-testing.md#code-quality-testing-step)の AMS に使用可能な更新されたルールにより、Cloud Manager パイプラインのセキュリティスコアとコード品質が決定されます。
 
 * SonarQube 9.9 は、すべてのお客様に対するデフォルトのコード品質スキャンエンジンになりました。
 
 * **Java 17 および Java 21 ビルド環境のサポート**
 
-  お客様は、オプションで Java 17 または Java 21 を使用してビルドできるようになり、パフォーマンスの向上と新しい言語機能のメリットを享受できます。 Maven プロジェクトの説明や特定のライブラリバージョンの更新を含む設定手順については、[ ビルド環境 ](/help/getting-started/build-environment.md) を参照してください。
+  お客様は、オプションで Java 17 または Java 21 を使用してビルドし、パフォーマンス向上と新しい言語機能のメリットを享受できます。Maven プロジェクトの説明と特定のライブラリバージョンのアップデートを含む設定手順について詳しくは、[ビルド環境](/help/getting-started/build-environment.md)を参照してください。
 
   >[!NOTE]
-  >Cloud Service環境の場合、ビルドバージョンが Java 17 または Java 21 に設定されていると、ランタイムのデフォルトが Java 21 になります。
+  >Cloud Service 環境の場合、ビルドバージョンを Java 17 または Java 21 に設定した際、ランタイムはデフォルトで Java 21 です。
 
-* **コンテンツのコピー検証の拡張**
+* **コンテンツのコピー検証の強化**
 
-  コンテンツのコピー検証ルールが更新されました。 このリリースでは、ソース環境または宛先環境のいずれかにアクティブなパイプライントリガーがある場合、ユーザーはコンテンツコピーを実行できなくなりました。 ユーザーは、進行中のすべてのパイプライン実行が完了するのを待ってから、コンテンツのコピーを開始する必要があります。
+  コンテンツのコピー検証ルールが更新されました。このリリースでは、ソース環境または宛先環境のいずれかでアクティブなパイプライン実行がある場合、ユーザーはコンテンツのコピーをトリガーできなくなりました。ユーザーは、コンテンツのコピーを開始する前に、進行中のすべてのパイプライン実行が完了するまで待機する必要があります。
 
 <!-- 
 ## Early adoption program {#early-adoption}
