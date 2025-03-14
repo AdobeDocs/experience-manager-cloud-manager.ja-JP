@@ -1,73 +1,61 @@
 ---
-title: Cloud Manager 2025.2.0 のリリースノート
-description: Adobe Managed Services の Cloud Manager 2025.2.0 のリリースについて説明します。
+title: Cloud Manager 2025.3.0 のリリースノート
+description: Adobe Managed Services の Cloud Manager 2025.3.0 のリリースについて説明します。
 feature: Release Information
-exlid: 669b1f2d8fc68526eb091e0f93f70ab93033d193
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 51dd060ec9b922ace9ce537cac669c61154284e8
-workflow-type: ht
-source-wordcount: '241'
-ht-degree: 100%
+source-git-commit: 31ae069c9e121963b4609af3f10ac08ab5539fb8
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 33%
 
 ---
 
-# Adobe Managed Services の Cloud Manager 2025.2.0 のリリースノート {#release-notes}
+# Adobe Managed Services の Cloud Manager 2025.3.0 のリリースノート {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.02.0+Release -->
 
-Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.2.0 のリリースについて説明します。
+Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.3.0 のリリースについて説明します。
 
 [Adobe Experience Manager as a Cloud Service の最新のリリースノート](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/home)も参照してください。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] 2025.2.0 のリリース日は 2025年2月13日（PT）です。
+[!UICONTROL Cloud Manager] 2025.3.0 のリリース日は 2025年3月13日（PT）です。
 
-次回のリリース予定は 2025年3月13日木曜日（PT）です。
+次回のリリース予定は 2025年4月10日木曜日（PT）です。
 
 ## 新機能 {#what-is-new}
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
+* **複数のパイプラインの実行**
 
-* **アップグレードされた SonarQube**
+  パイプライン ページに複数のパイプラインを同時に実行する機能が導入されました。 ユーザーは、1 つ以上 10 以下のパイプラインを選択する必要があります。 パイプライン ページの右上隅付近にある「**選択した実行（x）**」をクリックします。 モーダルダイアログボックスが表示され、開始できないパイプラインが一覧表示されます。 **実行** をクリックして、有効なすべてのパイプラインを開始します。
 
-  2025年2月13日木曜日（PT）以降、Cloud Manager コード品質ステップでは、SonarQube 9.9.5.90363 が使用されるようになりました。
+  ![ 選択したパイプラインを実行ダイアログボックス ](/help/release-notes/assets/run-selected-pipelines.png)
 
-  [このリンク](/help/using/code-quality-testing.md#code-quality-testing-step)の AMS に使用可能な更新されたルールにより、Cloud Manager パイプラインのセキュリティスコアとコード品質が決定されます。
 
-* SonarQube 9.9 は、すべてのお客様に対するデフォルトのコード品質スキャンエンジンになりました。
 
-* **Java 17 および Java 21 ビルド環境のサポート**
+## 早期導入プログラム {#early-adoption}
 
-  お客様は、オプションで Java 17 または Java 21 を使用してビルドし、パフォーマンス向上と新しい言語機能のメリットを享受できます。Maven プロジェクトの説明と特定のライブラリバージョンのアップデートを含む設定手順について詳しくは、[ビルド環境](/help/getting-started/build-environment.md)を参照してください。
+Cloud Manager の早期導入プログラムに参加すると、今後の機能をテストする機会を得ることができます。
 
-  >[!NOTE]
-  >Cloud Service 環境の場合、ビルドバージョンを Java 17 または Java 21 に設定した際、ランタイムはデフォルトで Java 21 です。
+### AMS Cloud Managerのお客様向けのセルフサービスパックのアップデート
 
-* **コンテンツのコピー検証の強化**
+Adobe Managed Services Cloud Managerのお客様は、早期導入プログラムの一環として、**Cloud Manager** ユーザーインターフェイスを通じてセルフサービスパックのアップデートを実行できるようになりました。 この機能は現在 *開発環境のみ* 利用可能で、エラーに関する限定的なエラーレポートが含まれています。
 
-  コンテンツのコピー検証ルールが更新されました。このリリースでは、ソース環境または宛先環境のいずれかでアクティブなパイプライン実行がある場合、ユーザーはコンテンツのコピーをトリガーできなくなりました。ユーザーは、コンテンツのコピーを開始する前に、進行中のすべてのパイプライン実行が完了するまで待機する必要があります。
+お客様は、**プログラムの概要** ページの「**環境**」セクションでサービスパックの更新を確認できます（**3 ドットメニュー**）。
 
-<!-- 
-## Early adoption program {#early-adoption}
+![ 「更新をチェック」メニューオプション ](/help/release-notes/assets/check-for-updates-1.png)
 
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
 
-### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
+![ サービスパックを更新ダイアログボックス ](/help/release-notes/assets/check-for-updates-2.png)
 
-The **Bring Your Own Git** feature has been expanded to include support for external repositories, such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
+インストールおよびアップグレードプロセスは、「**アクティビティ** ページでトラッキングできます。
 
-Pipelines using external repositories (excluding GitHub-hosted ones) and the **Deployment Trigger** set to **On Git Changes** now start automatically.
+プロセスが完了したら、サービスパックのアップグレードを正常に完了するには、お客様が **実行を承認** する必要があります。
 
-See [Add external repositories in Cloud Manager](/help/managing-code/external-repositories.md).
+![ サービスページの更新を承認 ](/help/release-notes/assets/check-for-updates-3.png)
 
-![Add Repository dialog box](/help/release-notes/assets/repositories-add-release-notes.png)
-
->[!NOTE]
->
->Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
-
-If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
+この新機能のテストやフィードバックの提供に関心がある場合は、Adobe カスタマーサクセスエンジニアにお問い合わせください。
 
 
 <!-- ## Bug fixes {#bug-fixes}
