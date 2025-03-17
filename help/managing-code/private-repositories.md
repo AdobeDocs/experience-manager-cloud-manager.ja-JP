@@ -3,10 +3,10 @@ title: Cloud Manager でのプライベートリポジトリの追加
 description: 独自のプライベート GitHub リポジトリを操作する Cloud Manager を設定する方法について説明します。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 5090d7ee9a6742d71122acda9901d074bc254305
-workflow-type: ht
-source-wordcount: '818'
-ht-degree: 100%
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 96%
 
 ---
 
@@ -90,8 +90,7 @@ Cloud Manager は GitHub リポジトリを認識しましたが、引き続き�
 
 **タイプ**&#x200B;列では、アドビ提供のリポジトリ（**Adobe**）と独自の GitHub リポジトリ（**GitHub**）を簡単に識別できます。
 
-後でリポジトリに戻って検証を完了するには、**リポジトリ**&#x200B;ページに移動します。追加した GitHub リポジトリの横にある省略記号ボタンをクリックし、ドロップダウンメニューから「**所有権の検証**」を選択します。
-
+後でリポジトリに戻って検証を完了するには、**リポジトリ**&#x200B;ページに移動します。追加した GitHub リポジトリの横にある ![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**所有権の検証** をクリックします。
 
 
 ## Cloud Manager でのプライベートリポジトリの使用 {#using}
@@ -106,7 +105,7 @@ Cloud Manager で GitHub リポジトリを検証すると統合が完了し、C
 
 1. プルリクエストごとに、[フルスタックコード品質パイプライン](/help/using/managing-pipelines.md)が自動的に作成されます。このパイプラインは、プルリクエストの更新のたびに開始されます。
 
-1. GitHub チェックは、コード品質チェックが完了するまで実行状態のままになります。コード品質の結果は、GitHub チェックに生成されます。
+1. GitHub チェックは、コード品質チェックが完了するまで、実行中状態のままになります。 コード品質の結果は、GitHub チェックに生成されます。
 
    ![GitHub コード品質チェック](/help/assets/repositories/github-code-quality.png)
 

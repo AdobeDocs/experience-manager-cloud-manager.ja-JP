@@ -3,10 +3,10 @@ title: Cloud Manager 2025.3.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.3.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 31ae069c9e121963b4609af3f10ac08ab5539fb8
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 33%
+source-wordcount: '307'
+ht-degree: 32%
 
 ---
 
@@ -46,7 +46,6 @@ Adobe Managed Services Cloud Managerのお客様は、早期導入プログラ�
 
 ![ 「更新をチェック」メニューオプション ](/help/release-notes/assets/check-for-updates-1.png)
 
-
 ![ サービスパックを更新ダイアログボックス ](/help/release-notes/assets/check-for-updates-2.png)
 
 インストールおよびアップグレードプロセスは、「**アクティビティ** ページでトラッキングできます。
@@ -56,6 +55,8 @@ Adobe Managed Services Cloud Managerのお客様は、早期導入プログラ�
 ![ サービスページの更新を承認 ](/help/release-notes/assets/check-for-updates-3.png)
 
 この新機能のテストやフィードバックの提供に関心がある場合は、Adobe カスタマーサクセスエンジニアにお問い合わせください。
+
+[ 開発環境のサービスパックの更新 – 早期導入 ](/help/using/service-packs-environments.md) も参照してください。
 
 
 <!-- ## Bug fixes {#bug-fixes}

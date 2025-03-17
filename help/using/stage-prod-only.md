@@ -1,21 +1,21 @@
 ---
-title: ステージ専用パイプラインと実稼動専用パイプライン
+title: ステージング専用パイプラインと実稼動専用パイプライン – 早期導入
 description: 専用パイプラインを使用してステージングデプロイメントと実稼動デプロイメントを分割する方法について説明します。
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 03f7429fd2c4a6dd4c8ae3228eff9c8cdab1ded8
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: 2c6f5692ffa31e02d7338e68063d0c1c03a0c73b
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 98%
 
 ---
 
-# ステージング専用パイプラインと実稼動専用パイプライン {#stage-prod-only}
+# ステージング専用パイプラインと実稼動専用パイプライン（早期導入） {#stage-prod-only}
 
 専用パイプラインを使用してステージングデプロイメントと実稼動デプロイメントを分割する方法について説明します。
 
 >[!NOTE]
 >
->この機能は、[早期導入プログラム](/help/release-notes/current.md#early-adoption)でのみ利用できます。
+>この機能は、[早期導入プログラム](/help/release-notes/2024/2024-8-0.md)でのみ利用できます。
 
 ## 概要 {#overview}
 
@@ -116,3 +116,4 @@ ht-degree: 100%
 実稼動専用パイプラインの場合は、実稼動環境にデプロイするソースアーティファクトを必ず特定します。詳しくは、**アーティファクトの準備**&#x200B;手順を参照してください。これらの実行に移動すると、詳細やログを確認できます。
 
 ![アーティファクトの詳細](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
+

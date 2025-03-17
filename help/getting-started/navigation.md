@@ -2,10 +2,10 @@
 title: Cloud Manager UI の操作
 description: Cloud Manager UI の整理方法と、プログラムと環境を管理する操作方法について説明します。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1435'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '1439'
+ht-degree: 96%
 
 ---
 
@@ -52,11 +52,11 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 ![Experience Cloud ヘッダー](assets/experience-cloud-header.png)
 
-1. ヘッダーの左側にあるハンバーガーアイコンは、個々のプログラムの特定の部分のタブにアクセスできるドロップダウンメニューです。コンテキストに応じてライセンスダッシュボードと&#x200B;**[マイプログラム](#my-programs-console)**&#x200B;コンソールを切り替えることもできます。
+1. ヘッダーの左側にある ![ メニューアイコン、ハンバーガーを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) アイコンは、個々のプログラムの特定部分のタブにアクセスできるドロップダウンメニューです。 コンテキストに応じてライセンスダッシュボードと&#x200B;**[マイプログラム](#my-programs-console)**&#x200B;コンソールを切り替えることもできます。
    * ライセンスダッシュボードは、AMS プログラムではなく、AEM as a Cloud Service プログラムにのみ適用されます。
    * プログラムが備えているサービスのタイプ（AMS または AEMaaCS）を特定するには、このドキュメントの[プログラムカードの節](#program-cards)を参照してください。
 1. Cloud Manager ボタンをクリックすると、Cloud Manager のどこにいても、Cloud Manager のマイプログラムコンソールコンソールに戻ります。
-1. Cloud Manager に関するフィードバックをアドビに送信するには、「フィードバック」ボタンをクリックします。
+1. Cloud Manager に関するフィードバックをアドビに送信するには、「**フィードバック**」をクリックします。
 1. 組織セレクターには、現在ログインしている組織（この例では、Foundation 内部）が表示されます。Adobe ID が複数の組織に関連付けられている場合、別の組織に切り替えるには、クリックします。
 1. ソリューション切り替えボタンをクリックすると、他の Experience Cloud ソリューションに素早くジャンプできます。
 1. ヘルプアイコンを使用すると、学習リソースやサポートリソースに素早くアクセスできます。
@@ -123,7 +123,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 ![情報](assets/information-view.png)
 
-省略記号アイコンを使用すると、プログラムに対して実行できる追加のアクションにアクセスできます。
+![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) を使用すると、プログラムに対して実行できる追加のアクションにアクセスできます。
 
 ![プログラムの省略記号ボタン](assets/program-ellipsis.png)
 

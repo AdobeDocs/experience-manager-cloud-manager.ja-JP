@@ -2,10 +2,10 @@
 title: パイプラインの管理
 description: 既存のパイプラインの管理方法（実行、編集、削除を含む）を説明します。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 9d910e1b1a4aad000a8389ddc22ce380bbccd4ef
-workflow-type: ht
-source-wordcount: '840'
-ht-degree: 100%
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 75%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 ![Cloud Manager のパイプラインカード](/help/assets/configure-pipelines/pipelines-card.png)
 
-各パイプラインの横にある省略記号ボタンをクリックすると、次の操作を実行できます。
+各パイプラインの横にある ![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックすると、次の操作を実行できます。
 
 * [パイプラインを実行](#running-pipelines)
 * [パイプラインを編集](#editing-pipelines)
@@ -70,45 +70,56 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
-1. 実行するパイプラインの横にある省略記号ボタンをクリックして、メニューから「**実行**」を選択します。
+1. 実行するパイプラインの横にある ![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**実行**」をクリックします。
 
    ステータス列は、パイプラインの実行が開始されたタイミングを示します。
 
-   実行の詳細を確認するには、省略記号ボタンをもう一度クリックし、「**[詳細を表示](#view-details)**」を選択します。
+   実行の詳細を確認するには、![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をもう一度クリックし、**[詳細を表示](#view-details)** をクリックします。
 
-   パイプラインのタイプによっては、省略記号ボタンをもう一度クリックして「**キャンセル**」を選択すると、実行をキャンセルできる場合があります。
+   パイプラインのタイプによっては、![ その他アイコン、省略記号）をもう一度クリックして **キャンセル ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックすると、実行をキャンセルできる場合があ** ます。
 
 ## パイプラインを編集 {#editing-pipelines}
 
+実行中のパイプラインは編集できません。
+
+**パイプラインを編集するには：**
+
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動し、編集するパイプラインの横にある省略記号ボタンをクリックして、メニューから「**編集**」を選択します。
+1. **プログラムの概要** ページから **パイプライン** カードに移動します。
 
-1. **実稼動パイプラインを編集**&#x200B;または&#x200B;**実稼動以外のパイプラインを編集**&#x200B;ダイアログボックスが表示されます。パイプラインの作成時に入力した内容と同じ詳細を編集できます。
+1. 編集するパイプラインの横にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 省略記号）をクリックし、「**編集**」をクリックします。
+
+1. **実稼動パイプラインを編集** または **実稼動以外のパイプラインを編集** ダイアログボックスでは、パイプラインの作成時に入力したのと同じ詳細を編集できます。
 
    パイプラインに使用できるフィールドと設定オプションについて詳しくは、[実稼動パイプラインを設定](/help/using/production-pipelines.md)および[実稼動以外のパイプラインを設定](/help/using/non-production-pipelines.md)を参照してください。
 
 1. 完了したら、「**更新**」をクリックします。
 
->[!NOTE]
->
->実行中のパイプラインは編集できません。
-
 ## パイプラインを削除 {#deleting-pipelines}
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+実行中のパイプラインは削除できません。
 
-1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動し、実行するパイプラインの横にある省略記号ボタンをクリックして、メニューから「**削除**」を選択します。
-
->[!NOTE]
->
->実行中のパイプラインは削除できません。
-
-## 詳細を表示 {#view-details}
+**パイプラインを削除するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動し、実行するパイプラインの横にある省略記号ボタンをクリックして、メニューから「**詳細を表示**」を選択します。
+1. **プログラムの概要** ページから **パイプライン** カードに移動します。
+
+1. 実行するパイプラインの横にある ![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**削除**」をクリックします。
+
+
+## パイプラインの詳細の表示 {#view-details}
+
+実行中または少なくとも 1 回実行されたパイプラインの詳細のみ表示できます。
+
+**パイプラインの詳細を表示するには：**
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+
+1. **プログラムの概要** ページから **パイプライン** カードに移動します。
+
+1. 実行するパイプラインの横にある ![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**詳細を表示** をクリックします。
 
 1. 実行中のパイプラインの詳細ページに移動します。
 
@@ -126,15 +137,10 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 ![期間](/help/assets/configure-pipelines/duration.png)
 
-パイプラインに問題が発生した&#x200B;**コードスキャン**&#x200B;ステップが含まれていた場合は、「**詳細をダウンロード**」ボタンをクリックして、合格しなかった[コード品質テスト](/help/using/code-quality-testing.md)のリストを表示できます。
+パイプラインに **コードスキャン** ステップが含まれており、問題が発生した場合は、「**詳細をダウンロード**」をクリックして、成功しなかった [ コード品質テスト ](/help/using/code-quality-testing.md) のリストを表示できます。
 
 ![コード品質の問題](assets/managing-pipelines-code-quality-issues.png)
 
 CSV ファイルには、問題のあるコードの場所を示す&#x200B;**プロジェクトファイルの場所**&#x200B;列があります。この列はプロジェクト相対パスですが、**ファイルの場所**&#x200B;列は Maven によって生成されます。
 
 ![プロジェクトコードスキャン問題の詳細](assets/managing-pipelines-code-quality-details.png)
-
-
->[!NOTE]
->
->実行中のパイプラインまたは少なくとも 1 回実行されたパイプラインの詳細のみ表示できます。
