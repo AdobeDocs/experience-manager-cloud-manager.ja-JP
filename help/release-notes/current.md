@@ -3,10 +3,10 @@ title: Cloud Manager 2025.3.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.3.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: bb57be6d2cbab8ff47b368bab59cb3072f78b235
+source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 32%
+source-wordcount: '150'
+ht-degree: 52%
 
 ---
 
@@ -32,31 +32,34 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.3.0 のリリース�
 
   ![ 選択したパイプラインを実行ダイアログボックス ](/help/release-notes/assets/run-selected-pipelines.png)
 
+  [ 複数のパイプラインの実行 ](/help/using/managing-pipelines.md#run-multiple-pipelines) も参照してください。
 
 
-## 早期導入プログラム {#early-adoption}
+<!--
+## Early adoption program {#early-adoption}
 
-Cloud Manager の早期導入プログラムに参加すると、今後の機能をテストする機会を得ることができます。
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
 
-### AMS Cloud Managerのお客様向けのセルフサービスパックのアップデート
+### Self-service Service Pack updates for AMS Cloud Manager customers 
 
-Adobe Managed Services Cloud Managerのお客様は、早期導入プログラムの一環として、**Cloud Manager** ユーザーインターフェイスを通じてセルフサービスパックのアップデートを実行できるようになりました。 この機能は現在 *開発環境のみ* 利用可能で、エラーに関する限定的なエラーレポートが含まれています。
+As part of the early adopters program, Adobe Managed Services Cloud Manager customers can now perform self-service service pack updates through the **Cloud Manager** user interface. This feature is currently available *only for development environments* and includes limited error reporting for failures.  
 
-お客様は、**プログラムの概要** ページの「**環境**」セクションでサービスパックの更新を確認できます（**3 ドットメニュー**）。
+Customers can check for service pack updates on the **Program Overview** page under the **Environments** section (**three-dot menu**).
 
-![ 「更新をチェック」メニューオプション ](/help/release-notes/assets/check-for-updates-1.png)
+![Check for updates menu option](/help/release-notes/assets/check-for-updates-1.png)
 
-![ サービスパックを更新ダイアログボックス ](/help/release-notes/assets/check-for-updates-2.png)
+![Update Service Pack dialog box](/help/release-notes/assets/check-for-updates-2.png)
 
-インストールおよびアップグレードプロセスは、「**アクティビティ** ページでトラッキングできます。
+The installation and upgrade process can be tracked on the **Activity** page. 
 
-プロセスが完了したら、サービスパックのアップグレードを正常に完了するには、お客様が **実行を承認** する必要があります。
+Once the process is complete, customers must **approve the execution** for the service pack upgrade to finalize successfully.
 
-![ サービスページの更新を承認 ](/help/release-notes/assets/check-for-updates-3.png)
+![Approve service page update](/help/release-notes/assets/check-for-updates-3.png)
 
-この新機能のテストやフィードバックの提供に関心がある場合は、Adobe カスタマーサクセスエンジニアにお問い合わせください。
+If you are interested in testing this new feature and sharing your feedback, contact your Adobe Customer Success Engineer.
 
-[ 開発環境のサービスパックの更新 – 早期導入 ](/help/using/service-packs-environments.md) も参照してください。
+See also [Service Pack Updates for Development Environments - Early Adopter](/help/using/service-packs-environments.md).
+-->
 
 
 
