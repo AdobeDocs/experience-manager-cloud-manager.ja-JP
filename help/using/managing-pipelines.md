@@ -2,9 +2,9 @@
 title: パイプラインの管理
 description: 既存のパイプラインの管理方法（実行、編集、削除を含む）を説明します。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
+source-git-commit: d4a7d9ab72947b97b0dabb2f822ef268e4972685
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1060'
 ht-degree: 61%
 
 ---
@@ -87,7 +87,7 @@ Cloud Managerを使用すると、複数のパイプラインを同時に実行�
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 1. 左側のメニューで、![ ワークフローアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **パイプライン** をクリックします。
 1. **パイプライン** ページのテーブルで、実行するパイプラインの横にあるチェックボックスをオンにします。
-必要に応じて、![ フィルターアイコン、ファネル ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)**フィルター** をクリックして、環境別、デプロイされたコードタイプ別、またはその両方でパイプラインを並べ替えます。
+必要に応じて、![ フィルターアイコン、ファネル ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)**フィルター** をクリックして、名前、環境、デプロイされたコードタイプ、またはこれら 3 つすべてを組み合わせてパイプラインを並べ替えます。
 1. ページの右上隅付近にある「**選択したファイル名を指定（x）**」をクリックします。
 1. **選択したパイプラインを実行（x）** ダイアログボックスで、「**実行（x）**」をクリックします。
 
