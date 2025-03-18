@@ -1,7 +1,8 @@
 ---
 title: 開発環境のサービスパックの更新 – 早期導入
 description: Cloud Manager ユーザーインターフェイスを使用して、開発環境のサービスパックのアップデートを開始する方法について説明します。
-source-git-commit: 8da0e6cb4587bc7dfc79bec415ff3aeef2d12e3e
+exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
+source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 3%
@@ -14,7 +15,7 @@ Cloud Manager ユーザーインターフェイスを使用して開発環境の
 
 >[!NOTE]
 >
->この機能は、[早期導入プログラム](/help/release-notes/current.md)でのみ利用できます。
+>この機能は、[早期導入プログラム](/help/release-notes/current.md#early-adoption)でのみ利用できます。
 
 ## 概要 {#service-pack-updates-overview}
 
@@ -91,5 +92,3 @@ Cloud Manager ユーザーインターフェイスを使用して、開発環境
 サービスパックのインストールがキャンセルされ、変更は適用されません。
 
    ![ サービスパックの拒否 ](/help/using/assets/service-pack-reject.png)
-
-
