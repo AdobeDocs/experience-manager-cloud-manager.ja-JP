@@ -3,7 +3,7 @@ title: Cloud Manager 2025.3.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.3.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
+source-git-commit: 36e5e666417508f24a7c142e96bace48abbcb735
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 52%
@@ -33,6 +33,7 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.3.0 のリリース�
   ![ 選択したパイプラインを実行ダイアログボックス ](/help/release-notes/assets/run-selected-pipelines.png)
 
   [ 複数のパイプラインの実行 ](/help/using/managing-pipelines.md#run-multiple-pipelines) も参照してください。
+
 
 
 <!--
