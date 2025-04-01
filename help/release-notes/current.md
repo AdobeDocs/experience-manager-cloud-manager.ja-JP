@@ -6,7 +6,7 @@ exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 source-git-commit: 81894345cd4e0921f3734f6e09a82c192d20f9dd
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.3.0 のリリース�
 
 * **複数のパイプラインの実行**
 
-  パイプライン ページに複数のパイプラインを同時に実行する機能が導入されました。 ユーザーは、1 つ以上 10 以下のパイプラインを選択する必要があります。 パイプライン ページの右上隅付近にある「**選択した実行（x）**」をクリックします。 モーダルダイアログボックスが表示され、開始できないパイプラインが一覧表示されます。 **実行** をクリックして、有効なすべてのパイプラインを開始します。
+  パイプラインページに、複数のパイプラインを同時に実行する機能が導入されました。ユーザーは 1 つの以上のパイプラインを選択する必要がありますが、最大 10 個まで選択できます。パイプラインページの右上隅付近にある「**選択されている実行（x）**」をクリックします。開始できないパイプラインを一覧表示するモーダルダイアログボックスが表示されます。「**実行**」をクリックして、すべての有効なパイプラインを開始します。
 
-  ![ 選択したパイプラインを実行ダイアログボックス ](/help/release-notes/assets/run-selected-pipelines.png)
+  ![選択されているパイプラインを実行ダイアログボックス](/help/release-notes/assets/run-selected-pipelines.png)
 
-  [ 複数のパイプラインの実行 ](/help/using/managing-pipelines.md#run-multiple-pipelines) も参照してください。
+  また、[複数のパイプラインの実行](/help/using/managing-pipelines.md#run-multiple-pipelines)も参照してください。
 
 
 
