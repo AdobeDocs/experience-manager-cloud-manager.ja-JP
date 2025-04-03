@@ -2,17 +2,17 @@
 title: 新規プロジェクトウィザードの使用
 description: このページでは、ウィザードを使用して AEM アプリケーションプロジェクトを作成する方法を説明します。
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: 7bc874a8dd14544c22201ef2c470faab84d31f8b
-workflow-type: ht
-source-wordcount: '321'
-ht-degree: 100%
+source-git-commit: f3617eb50147f5af33282cb0f25ada7dc423d434
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 92%
 
 ---
 
 
 # 新規プロジェクトウィザードの使用 {#using-the-wizard}
 
-新しい顧客として Cloud Manager にオンボーディングされると、空の Git リポジトリが提供されます。最初に、Cloud Manger は、出発点として [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)に基づいて最小限の AEM プロジェクトを作成するためのウィザードを提供します。
+新規ユーザーとしてCloud Managerにオンボーディングした際には、空の Git リポジトリーが提供されていました。 最初に、Cloud Manger は、出発点として [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)に基づいて最小限の AEM プロジェクトを作成するためのウィザードを提供します。
 
 ウィザードを使用して AEM プロジェクトを作成するには、次の手順に従います。
 
