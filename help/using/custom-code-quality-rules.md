@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール
 description: コード品質テスト中に Cloud Manager で実行されるカスタムコード品質ルールの詳細を確認します。これらのルールは、AEM Engineering のベストプラクティスに基づいています。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: c50eb54b5603b4370f2d7907a2194477dcc3ba21
-workflow-type: ht
-source-wordcount: '3523'
-ht-degree: 100%
+source-git-commit: 8388edb5510ed4583a7bc703f3781af03d976948
+workflow-type: tm+mt
+source-wordcount: '3644'
+ht-degree: 96%
 
 ---
 
@@ -883,14 +883,33 @@ AEM Cloud Service では、プロパティにスペースを使用したイン�
 
 AEM Cloud Service では、haystack プロパティを含むインデックス作成定義の作成が禁止されています。
 
-### インデック作成定義の設定に async-previous プロパティを含めることはできません {#oakpal-indexing-async-previous-property}
+### インデック作成定義の設定に async-previous プロパティを含めることはできません {#oakpal-indexing-unsupported-async-properties}
 
-* **キー**：IndexAsyncPreviousCheck
+* **キー**: IndexUnsupportedAsyncPropertiesCheck
 * **タイプ**：改善点
 * **深刻度**：軽度
-* **最初の対象バージョン**：バージョン 2025.2.0
+* **最初の対象バージョン**：バージョン 2025.3.0
 
-AEM Cloud Service では、async-previous プロパティを含むインデックス作成定義の作成が禁止されています。
+AEM Cloud Service では、サポートされていない非同期プロパティを含んだインデックス作成定義を作成できません。
+
+### インデックス作成定義の構成は、複数のインデックスで同じタグを持つことはできません {#oakpal-indexing-same-tag-multiple-indexes}
+
+* **キー**: SameTagInMultipleIndexes
+* **タイプ**：改善点
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2025.3.0
+
+AEM Cloud Service では、複数のインデックスに同じタグを含むインデックス作成の定義を作成できません。
+
+### インデックス作成定義の設定に、禁止されたパスのモード置換を含めることはできません {#oakpal-xml-mode-analysis}
+
+* **キー**:FilterXmlModeAnalysis
+* **タイプ**：改善点
+* **深刻度**：重大
+* **最初の対象バージョン**：バージョン 2025.4.0
+
+File Vault での「replacement」モードの使用は、/content の下のパスには許可されていません。/etc および/var の下のパスには使用しないでください。
+「置換」モードでは、リポジトリ内の既存のコンテンツがすべてコンテンツパッケージで提供されるコンテンツに置き換えられます。このアクションをトリガーするパッケージは、CloudManager を使用してデプロイされたパッケージに含まれるべきではありません。
 
 ## Dispatcher 最適化ツール {#dispatcher-optimization-tool-rules}
 
