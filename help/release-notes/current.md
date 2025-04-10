@@ -3,10 +3,10 @@ title: Cloud Manager 2025.4.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.4.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 40d093ce7d6839fff4ba16f790c61b96cb88dda5
+source-git-commit: 8c99baba6fb41dd702c338ba727efc237a0f1a8d
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 92%
+source-wordcount: '374'
+ht-degree: 93%
 
 ---
 
@@ -84,11 +84,11 @@ See also [Service Pack Updates for Development Environments - Early Adopter](/he
 -->
 
 
-
-## バグ修正 {#bug-fixes}
+<!--
+## Bug fixes {#bug-fixes}
 
 * A
 
-既知の問題 {#known-issues}
+Known Issues {#known-issues}
 
-* A —>
+* A -->
