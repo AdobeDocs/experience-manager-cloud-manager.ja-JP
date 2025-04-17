@@ -2,7 +2,7 @@
 title: Cloud Managerでの外部リポジトリの追加 – 早期導入
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Managerは、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: a63d996b283396efa139bf567c40a51e6f46d9bc
+source-git-commit: 5ba12cdfa4a0d790561fd2f3da738bf697133bee
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 74%
@@ -39,7 +39,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **マイプログラム**&#x200B;コンソールで、外部リポジトリをリンクするプログラムを選択します。
+1. **[マイプログラム](/help/getting-started/navigation.md#my-programs-console)**&#x200B;コンソールで、外部リポジトリをリンクするプログラムを選択します。
 
 1. サイドメニューの&#x200B;**プログラム**&#x200B;で、![フォルダーアウトラインアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **リポジトリ**&#x200B;をクリックします。
 
@@ -121,7 +121,7 @@ Cloud Managerは GitHub アプリを介して直接統合されるので、`GitH
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **マイプログラム**&#x200B;コンソールで、外部 Git リポジトリの webhook を設定するプログラムを選択します。
+1. **[マイプログラム](/help/getting-started/navigation.md#my-programs-console)**&#x200B;コンソールで、外部 Git リポジトリの webhook を設定するプログラムを選択します。
 
 1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左サイドメニューを表示します。
 
