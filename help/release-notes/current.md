@@ -3,10 +3,10 @@ title: Cloud Manager 2025.4.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.4.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 8c99baba6fb41dd702c338ba727efc237a0f1a8d
+source-git-commit: b46cb7fb178fc0e63fdc0c04239f461cb206802b
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -33,11 +33,11 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.4.0 のリリース�
 
 ## 早期導入プログラム {#early-adoption}
 
-Cloud Managerの早期導入プログラムに参加すると、一般リリース前に今後の機能を独占的に利用できます。
+Cloud Manager の早期導入プログラムに参加すると、一般リリース前に今後の機能に排他的にアクセスできます。
 
 現在、次の早期導入の機会が利用可能です。
 
-### 独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました {#gitlab-bitbucket}
+### 独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました。 {#gitlab-bitbucket}
 
 **独自の Git の導入**&#x200B;機能が拡張され、GitLab や Bitbucket などの外部リポジトリのサポートが含まれるようになりました。 この新しいサポートは、プライベートおよびエンタープライズ GitHub リポジトリに対する既存のサポートに追加されます。 これらの新しいリポジトリを追加すると、パイプラインに直接リンクすることもできます。 これらのリポジトリは、パブリッククラウドプラットフォーム上や、プライベートクラウドまたはインフラストラクチャ内でホストできます。 また、この統合により、Adobe リポジトリと常にコード同期を行う必要がなくなり、プルリクエストをメイン分岐に結合する前に検証できるようになります。
 
