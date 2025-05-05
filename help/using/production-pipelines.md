@@ -163,4 +163,4 @@ Cloud Manager を使用して、コードをデプロイする実稼動パイプ
 
 このビデオでは、パイプライン作成プロセスの概要を説明します。詳しくは、このドキュメントで説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
+>[!VIDEO](https://video.tv.adobe.com/v/327602?captions=jpn)

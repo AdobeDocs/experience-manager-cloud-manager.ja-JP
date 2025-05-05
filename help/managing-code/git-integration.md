@@ -16,7 +16,7 @@ Adobe Cloud Manager には、Cloud Manager の CI/CD パイプラインを使用
 
 ## Git 統合の概要
 
->[!VIDEO](https://video.tv.adobe.com/v/28710/)
+>[!VIDEO](https://video.tv.adobe.com/v/31425?captions=jpn)
 
 このビデオシリーズでは、顧客が管理する Git リポジトリと Cloud Manager の統合に関するユースケースをいくつか紹介します。
 
@@ -36,31 +36,31 @@ Cloud Manager の完全な概要については、[Cloud Manager の概要](/hel
 
 顧客が管理する Git リポジトリを Cloud Manager の Git リポジトリと同期する最初の手順。
 
->[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31424/?quality=12&captions=jpn)
 
 ## 基本分岐戦略 {#branching-strategy}
 
 Cloud Manager の[実稼動パイプライン](/help/using/production-pipelines.md)と[実稼動以外のパイプライン](/help/using/non-production-pipelines.md)を活用するには、基本的な分岐戦略を設定します。
 
->[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31423/?quality=12&captions=jpn)
 
 ## 機能分岐の開発 {#feature-development}
 
 機能分岐を使用して、顧客が管理する Git リポジトリ内のコード変更を分離し、Cloud Manager の Git リポジトリと同期して、コードの品質と検証テストに実稼動以外のパイプラインを使用します。
 
->[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31422/?quality=12&captions=jpn)
 
 ## 実稼動デプロイメント {#production-deployment}
 
 顧客管理 Git リポジトリで実稼動版リリースのコードを準備し、Cloud Manager の Git リポジトリと同期して、ステージング環境と実稼動環境にデプロイします。
 
->[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31421/?quality=12&captions=jpn)
 
 ## リリースタグの同期 {#sync-tags}
 
 Cloud Manager Git リポジトリのリリースタグを、顧客管理 Git リポジトリに同期できます。この機能により、ステージング環境と実稼動環境の両方にデプロイされたコードを把握できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31420/?quality=12&captions=jpn)
 
 ## その他のリソース {#additional-resources}
 
