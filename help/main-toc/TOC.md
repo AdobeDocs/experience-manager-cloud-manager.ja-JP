@@ -42,7 +42,7 @@ ht-degree: 97%
       + [ビルド環境](/help/getting-started/build-environment.md)
    + [分岐の設定](/help/getting-started/configuring-branches.md)
    + [Dispatcher の設定](/help/getting-started/dispatcher-configurations.md)
-+ {#using} 使用方法
++ 使用方法{#using}
    + CI/CD パイプライン {#pipelines}
       + [実稼動パイプラインの設定](/help/using/production-pipelines.md)
       + [実稼動以外のパイプラインの設定](/help/using/non-production-pipelines.md)
