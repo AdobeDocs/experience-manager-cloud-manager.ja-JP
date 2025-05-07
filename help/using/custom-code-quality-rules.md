@@ -2,7 +2,7 @@
 title: カスタムコード品質ルール
 description: コード品質テスト中に Cloud Manager で実行されるカスタムコード品質ルールの詳細を確認します。これらのルールは、AEM Engineering のベストプラクティスに基づいています。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 8388edb5510ed4583a7bc703f3781af03d976948
+source-git-commit: 54987d6ccd8c31dab677d90b40466c458743f936
 workflow-type: tm+mt
 source-wordcount: '3644'
 ht-degree: 96%
@@ -801,7 +801,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 
 * **キー**：IndexNotUnderUIContent
 * **タイプ**：改善点
-* **深刻度**：軽度
+* **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2024.6.0
 
 AEM Cloud Service では、UI コンテンツパッケージでカスタム検索インデックス定義（タイプ `oak:QueryIndexDefinition` のノード）をデプロイすることは禁止されています。
@@ -814,7 +814,7 @@ AEM Cloud Service では、UI コンテンツパッケージでカスタム検�
 
 * **キー**：CustomFulltextIndexesOfTheDamAssetCheck
 * **タイプ**：改善点
-* **深刻度**：軽度
+* **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2024.6.0
 
 AEM Cloud Service では、`damAssetLucene` タイプのカスタムフルテキストインデックス定義に `damAssetLucene` 以外のプレフィックスを付けることが禁止されています。
@@ -827,7 +827,7 @@ AEM Cloud Service では、`damAssetLucene` タイプのカスタムフルテキ
 
 * **キー**：DuplicateNameProperty
 * **タイプ**：改善点
-* **深刻度**：軽度
+* **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2024.6.0
 
 AEM Cloud Service では、カスタム検索インデックス定義（つまり、タイプ `oak:QueryIndexDefinition` のノード）に同じ名前のプロパティを含めることが禁止されています。
@@ -840,7 +840,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（つま�
 
 * **キー**：RestrictIndexCustomization
 * **タイプ**：改善点
-* **深刻度**：軽度
+* **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2024.6.0
 
 AEM Cloud Service では、次の OOTB インデックスの許可されていない変更が禁止されています。
