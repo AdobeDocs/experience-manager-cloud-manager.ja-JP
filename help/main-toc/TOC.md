@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager を使用して、クラウド内の AMS �
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 4c4ffeb689117620bd810f35d277f5ab20bda8d3
+source-git-commit: ecee095cfdf929e38823ace77f184db3108cab92
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 + [AMS 用の Cloud Manager](/help/introduction.md)
 + 概要 {#overview}
-   + [主要な概念](/help/overview/key-concepts.md)
+   + [主な概念](/help/overview/key-concepts.md)
    + [ユーザージャーニー](/help/overview/user-journey.md)
    + [CI／CD パイプライン](/help/overview/ci-cd-pipelines.md)
    + [セキュリティとプライバシー](/help/overview/security-and-privacy.md)
@@ -42,7 +42,7 @@ ht-degree: 97%
       + [ビルド環境](/help/getting-started/build-environment.md)
    + [分岐の設定](/help/getting-started/configuring-branches.md)
    + [Dispatcher の設定](/help/getting-started/dispatcher-configurations.md)
-+ 使用方法{#using}
++ 使用方法 {#using}
    + CI/CD パイプライン {#pipelines}
       + [実稼動パイプラインの設定](/help/using/production-pipelines.md)
       + [実稼動以外のパイプラインの設定](/help/using/non-production-pipelines.md)
@@ -58,7 +58,7 @@ ht-degree: 97%
    + [通知](/help/using/notifications.md)
    + [カスタムコード品質ルール](/help/using/custom-code-quality-rules.md)
    + [環境の一貫性を目的とするコンテンツコピー](/help/using/content-copy.md)
-+ コードの管理 {#managing-code}
++ コードを管理する {#managing-code}
    + [Cloud Manager でのリポジトリの管理](/help/managing-code/managing-repositories.md)
    + [リポジトリのアクセス情報](/help/managing-code/accessing-repositories.md)
    + [Adobe リポジトリの追加](/help/managing-code/adobe-repositories.md)
@@ -75,11 +75,12 @@ ht-degree: 97%
    + [評価](/help/product-update-wizard/evaluation.md)
 + リリースノート {#release-notes}
    + [現在](/help/release-notes/current.md)
-   + 2025年度 {#rn-2025}
+   + 2025 {#rn-2025}
+      + [2025.4.0](/help/release-notes/2025/2025-4-0.md)
       + [2025.3.0](/help/release-notes/2025/2025-3-0.md)
       + [2025.2.0](/help/release-notes/2025/2025-2-0.md)
       + [2025.1.0](/help/release-notes/2025/2025-1-0.md)
-   + 2024年度 {#rn-2024}
+   + 2024 {#rn-2024}
       + [2024.12.0](/help/release-notes/2024/2024-12-0.md)
       + [2024.11.0](/help/release-notes/2024/2024-11-0.md)
       + [2024.10.0](/help/release-notes/2024/2024-10-0.md)
@@ -92,7 +93,7 @@ ht-degree: 97%
       + [2024.3.0](/help/release-notes/2024/2024-3-0.md)
       + [2024.2.0](/help/release-notes/2024/2024-2-0.md)
       + [2024.1.0](/help/release-notes/2024/2024-1-0.md)
-   + 2023年度 {#rn-2023}
+   + 2023 {#rn-2023}
       + [2023.12.0](/help/release-notes/2023/2023-12-0.md)
       + [2023.11.0](/help/release-notes/2023/2023-11-0.md)
       + [2023.10.0](/help/release-notes/2023/2023-10-0.md)
@@ -105,7 +106,7 @@ ht-degree: 97%
       + [2023.3.0](/help/release-notes/2023/2023-3-0.md)
       + [2023.2.0](/help/release-notes/2023/2023-2-0.md)
       + [2023.1.0](/help/release-notes/2023/2023-1-0.md)
-   + 2022年度 {#rn-2022}
+   + 2022 {#rn-2022}
       + [2022.12.0](/help/release-notes/2022/2022-12-0.md)
       + [2022.11.0](/help/release-notes/2022/2022-11-0.md)
       + [2022.10.0](/help/release-notes/2022/2022-10-0.md)
@@ -118,7 +119,7 @@ ht-degree: 97%
       + [2022.3.0](/help/release-notes/2022/2022-3-0.md)
       + [2022.2.0](/help/release-notes/2022/2022-2-0.md)
       + [2022.1.0](/help/release-notes/2022/2022-1-0.md)
-   + 2021年度 {#rn-2021}
+   + 2021 {#rn-2021}
       + [2021.12.0](/help/release-notes/2021/2021-12-0.md)
       + [2021.11.0](/help/release-notes/2021/2021-11-0.md)
       + [2021.10.0](/help/release-notes/2021/2021-10-0.md)
@@ -130,7 +131,7 @@ ht-degree: 97%
       + [2021.4.0](/help/release-notes/2021/2021-4-0.md)
       + [2021.3.0](/help/release-notes/2021/2021-3-0.md)
       + [2021.2.0](/help/release-notes/2021/2021-2-0.md)
-   + 2020年度 {#rn-2020}
+   + 2020 {#rn-2020}
       + [2020.12.0](/help/release-notes/2020/2020-12-0.md)
       + [2020.11.0](/help/release-notes/2020/2020-11-0.md)
       + [2020.10.0](/help/release-notes/2020/2020-10-0.md)
@@ -143,7 +144,7 @@ ht-degree: 97%
       + [2020.3.0](/help/release-notes/2020/2020-3-0.md)
       + [2020.2.0](/help/release-notes/2020/2020-2-0.md)
       + [2020.1.0](/help/release-notes/2020/2020-1-0.md)
-   + 2019年度 {#rn-2019}
+   + 2019 {#rn-2019}
       + [2019.12.0](/help/release-notes/2019/2019-12-0.md)
       + [2019.11.0](/help/release-notes/2019/2019-11-0.md)
       + [2019.10.0](/help/release-notes/2019/2019-10-0.md)
@@ -156,7 +157,7 @@ ht-degree: 97%
       + [2019.3.0](/help/release-notes/2019/2019-3-0.md)
       + [2019.2.0](/help/release-notes/2019/2019-2-0.md)
       + [2019.1.0](/help/release-notes/2019/2019-1-0.md)
-   + 2018年度 {#rn-2018}
+   + 2018 {#rn-2018}
       + [2018.9.0](/help/release-notes/2018/2018-9-0.md)
       + [2018.8.0](/help/release-notes/2018/2018-8-0.md)
       + [2018.7.0](/help/release-notes/2018/2018-7-0.md)
