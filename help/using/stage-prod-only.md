@@ -1,22 +1,17 @@
 ---
-title: ステージ専用パイプラインと実稼動専用パイプライン
+title: ステージング専用パイプラインと実稼動専用パイプラインの分割
 description: 専用パイプラインを使用してステージングデプロイメントと実稼動デプロイメントを分割する方法について説明します。
-badge: label="早期導入者" type="Positive" url="/help/release-notes/current.md#staging-production-only-pipelines"
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
+source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 99%
+source-wordcount: '924'
+ht-degree: 98%
 
 ---
 
-# ステージング専用パイプラインと実稼動専用パイプライン {#stage-prod-only}
+# ステージのみのパイプラインと実稼動のみのパイプラインの分割 {#stage-prod-only}
 
 専用パイプラインを使用してステージングデプロイメントと実稼動デプロイメントを分割する方法について説明します。
-
->[!NOTE]
->
->この機能は、[早期導入プログラム](/help/release-notes/current.md#staging-production-only-pipelines)でのみ利用できます。
 
 ## 概要 {#overview}
 

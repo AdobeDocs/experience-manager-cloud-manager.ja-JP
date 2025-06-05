@@ -1,38 +1,51 @@
 ---
-title: Cloud Manager 2025.5.0 のリリースノート
+title: Cloud Manager 2025.6.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.5.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 802844e15dc2b610e658e9fac4f0304f0ec878c6
+source-git-commit: 13e6f33e7ef92f4a27ae30c7550351b20d3e86ed
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '560'
+ht-degree: 67%
 
 ---
 
-# Adobe Managed Services の Cloud Manager 2025.5.0 のリリースノート {#release-notes}
+# Adobe Managed Services の Cloud Manager 2025.6.0 のリリースノート {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.5.0 のリリースについて説明します。
+Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.6.0 のリリースについて説明します。
 
 [Adobe Experience Manager as a Cloud Service の最新のリリースノート](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/home)も参照してください。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] 2025.5.0 のリリース日は 2025年5月8日（PT）です。
+[!UICONTROL Cloud Manager] 2025.6.0 のリリース日は 2025年6月5日（PT）です。
 
-5 月のCloud Manager リリースには、重要な新機能やバグ修正はありません。
+<!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-次回のリリース予定は 2025年6月5日木曜日（PT）です。
+次回のリリース予定は 2025年7月10日（PT）です。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-<!--
-## What's new {#what-is-new}
 
-* 
--->
+## 新機能 {#what-is-new}
+
+* **（UI）ステージング専用パイプラインと実稼動専用パイプライン**
+
+  Cloud Managerでは、ステージング専用パイプラインと実稼動専用パイプラインをサポートするようになりました。 この機能を使用すると、フルスタックの実稼動デプロイメントを、より小さな目的別のパイプラインに分割できます。<!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
+
+  ![ 「フルスタックコード」ラジオボタンと「ステージ環境」が選択された状態の「実稼動以外のパイプラインを追加」ダイアログボックス ](/help/release-notes/assets/add-non-production-pipeline.png)
+
+  [ ステージング専用および実稼動専用パイプライン ](/help/using/stage-prod-only.md) を参照してください。
+
+* **（UI）パイプラインのお気に入り**
+
+  このリリースでは、Cloud Managerでお気に入りのパイプラインをピン留めし、特定のパイプラインをお気に入りとしてマークして、「**パイプライン**」ページのリストの上部に表示できるようになりました。 この機能強化により、頻繁にアクセスするパイプラインを見つけて実行しやすくなります。<!-- CMGR-68293 -->
+
+  ![ お気に入りとしてマークされたパイプライン ](/help/release-notes/assets/pipeline-favorites.png)*お気に入りとしてマークされた 2 つのパイプライン。*
+
+  [ パイプラインのお気に入りをマーク ](/help/using/managing-pipelines.md#pipeline-favorites) を参照してください。
 
 
 ## 早期導入プログラム {#early-adoption}
@@ -40,6 +53,16 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.5.0 のリリース�
 Cloud Manager の早期導入プログラムに参加すると、一般リリース前に今後の機能に排他的にアクセスできます。
 
 現在、次の早期導入の機会が利用可能です。
+
+
+### アクセストークンを管理{#access-tokens}
+
+Cloud Managerの **アクセストークンの管理** 機能を使用して、外部の Bring Your Own Git リポジトリ（GitHub Enterprise、GitLab、Bitbucket、Azure DevOps など）に関連付けられたアクセストークンを表示、名前変更および削除します。
+
+[ アクセストークンの管理 ](/help/managing-code/manage-access-tokens.md) を参照してください。
+
+この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
+
 
 ### 独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました。 {#gitlab-bitbucket}
 
@@ -57,18 +80,12 @@ Cloud Manager の早期導入プログラムに参加すると、一般リリー
 
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
 
-### ステージング専用パイプラインと実稼動専用パイプライン {#staging-production-only-pipelines}
 
-[ステージング専用パイプラインと実稼動専用パイプライン](/help/using/stage-prod-only.md)のサポートの導入をお知らせします。この新機能により、フルスタックの実稼動デプロイメントパイプラインをより小さな、より特殊なデプロイメントに分割できます。
+## バグ修正 {#bug-fixes}
 
-この機能をテストしてフィードバックを提供する場合は、Adobe ID に関連付けられているメールアドレスから [Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) にメールを送信してください。
-
+* AEM Cloud Managerは、お客様のアーティファクトを取得する際に、409 エラー（競合）が原因で発生した Maven ビルドエラーをお客様が原因のエラーに正しくマッピングするようになりました。 この変更により、内部エラーとお客様の環境の設定に関連する問題が区別され、エラーメッセージが改善されます。<!-- CMGR-66673 -->
 
 <!--
-## Bug fixes {#bug-fixes}
-
-* A
-
 Known Issues {#known-issues}
 
 * A -->
