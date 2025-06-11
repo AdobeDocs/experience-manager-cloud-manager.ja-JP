@@ -2,13 +2,13 @@
 title: Cloud Managerでのアクセストークンの管理
 description: Adobe Managed Services上のCloud Managerで独自の Git を取り込むために使用されるアクセストークンを表示、編集、削除する方法を説明します。
 badge: label="早期導入者" type="Positive" url="/help/release-notes/current.md#access-tokens"
-source-git-commit: aa0eff7eb1f6b0cde9b99b7cbbfb3410e0db94a6
+exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
+source-git-commit: 4d95981d14004bde4931bf59846f9be7e10e3083
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 11%
+source-wordcount: '415'
+ht-degree: 10%
 
 ---
-
 
 # 外部リポジトリのアクセストークンの管理 {#manage-access-tokens}
 
@@ -41,9 +41,9 @@ Cloud Managerはアクセストークンを使用して、外部 Git プラッ�
 ## アクセストークンの編集 {#edit-access-tokens}
 
 1. **アクセストークンの管理** ダイアログボックスで、トークン名の右側にある ![ 編集アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) をクリックします。
-1. **アクセストークンを編集** ダイアログボックスの **トークン名** テキストフィールドで、トークン名を更新します。
+1. **アクセストークンを編集** ダイアログボックスで、**トークン名** または **アクセストークン** の値、あるいはその両方を更新します。
 
-   アクセストークン秘密鍵自体は変更できません。
+   **アクセストークン** が現在使用中の場合は、関連するすべてのリポジトリが更新後に自動的に再検証されることを警告する通知が表示されます。
 
    ![ アクセストークンを編集ダイアログボックス ](/help/managing-code/assets/access-tokens-edit.png)
 
