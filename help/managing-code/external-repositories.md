@@ -1,12 +1,12 @@
 ---
 title: Cloud Manager での外部リポジトリの追加
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
-badge: label="早期導入者" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
+badge: label="プライベートベータ版" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 83ba61364d5a492bd7236d7fcaeabf8cf904627a
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '1871'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ Cloud Manager に外部リポジトリを追加する方法について説明し
 
 >[!NOTE]
 >
->この記事で説明する機能は、早期導入プログラムを通じてのみ使用できます。詳細と早期導入者としての新規登録について詳しくは、[独自の Git の導入](/help/release-notes/current.md#gitlab-bitbucket)を参照してください。
+>この記事で説明する機能は、非公開のベータ版プログラムでのみ使用できます。 詳細およびプライベートベータ版にサインアップするには、[ 独自の Git の取り込み ](/help/release-notes/current.md#gitlab-bitbucket) を参照してください。
 
 ## 外部リポジトリの設定
 
@@ -79,7 +79,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 
    >[!NOTE]
    >
-   >**新しいアクセストークンを追加**&#x200B;機能は現在、早期導入フェーズにあります。さらに機能の追加が予定されています。その結果、アクセストークンに必要な権限が変更される場合があります。また、トークンを管理するユーザーインターフェイスが更新され、トークンの有効期限などの機能が含まれる可能性もあります。さらに、リポジトリにリンクされたトークンが有効なままであることを確認する自動チェックが行われます。
+   >**新しいアクセストークンの追加** 機能は、現在、プライベートベータ段階にあります。 さらに機能の追加が予定されています。その結果、アクセストークンに必要な権限が変更される場合があります。また、トークンを管理するユーザーインターフェイスが更新され、トークンの有効期限などの機能が含まれる可能性もあります。さらに、リポジトリにリンクされたトークンが有効なままであることを確認する自動チェックが行われます。
 
 1. 「**検証**」をクリックします。
 

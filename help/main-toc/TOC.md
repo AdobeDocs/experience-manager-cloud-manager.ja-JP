@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager を使用して、クラウド内の AMS �
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 92%
    + [コード品質テスト](/help/using/code-quality-testing.md)
    + [環境の管理](/help/using/managing-environments.md)
    + [環境の監視](/help/using/monitoring-environments.md)
-   + [開発環境のサービスパックの更新（早期導入）](/help/using/service-packs-environments.md)
+   + [開発環境のサービスパックの更新（プライベートベータ版）](/help/using/service-packs-environments.md)
    + [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [通知](/help/using/notifications.md)
@@ -63,8 +63,8 @@ ht-degree: 92%
    + [リポジトリのアクセス情報](/help/managing-code/accessing-repositories.md)
    + [Adobe リポジトリの追加](/help/managing-code/adobe-repositories.md)
    + [プライベートリポジトリの追加](/help/managing-code/private-repositories.md)
-   + [外部リポジトリの追加（早期導入）](/help/managing-code/external-repositories.md)
-   + [アクセストークンの管理（早期導入）](/help/managing-code/manage-access-tokens.md)
+   + [外部リポジトリの追加（プライベートベータ版）](/help/managing-code/external-repositories.md)
+   + [アクセストークンの管理（プライベートベータ版）](/help/managing-code/manage-access-tokens.md)
    + [Git サブモジュールのサポート](/help/managing-code/git-submodules.md)
    + [GitHub チェック設定](/help/managing-code/github-check-config.md)
    + [GitHub チェック注釈](/help/managing-code/github-annotations.md)

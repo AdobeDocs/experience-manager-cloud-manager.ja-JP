@@ -1,12 +1,12 @@
 ---
 title: Cloud Managerでのアクセストークンの管理
 description: Adobe Managed Services上のCloud Managerで独自の Git を取り込むために使用されるアクセストークンを表示、編集、削除する方法を説明します。
-badge: label="早期導入者" type="Positive" url="/help/release-notes/current.md#access-tokens"
+badge: label="プライベートベータ版" type="Positive" url="/help/release-notes/current.md#access-tokens"
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
-source-git-commit: 4d95981d14004bde4931bf59846f9be7e10e3083
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '415'
-ht-degree: 10%
+ht-degree: 6%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Managerはアクセストークンを使用して、外部 Git プラッ�
 
 >[!NOTE]
 >
->この記事で説明する機能は、早期導入プログラムを通じてのみ使用できます。詳細および早期導入ユーザーとしてサインアップするには、[ アクセストークンの管理 ](/help/release-notes/current.md#access-tokens) を参照してください。
+>この記事で説明する機能は、非公開のベータ版プログラムでのみ使用できます。 詳細およびプライベートベータ版にサインアップするには、[ アクセストークンの管理 ](/help/release-notes/current.md#access-tokens) を参照してください。
 
 ## アクセストークンの表示 {#view-access-tokens}
 

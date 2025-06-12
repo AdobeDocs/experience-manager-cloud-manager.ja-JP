@@ -1,23 +1,23 @@
 ---
-title: 開発環境のサービスパックの更新 – 早期導入
+title: 開発環境のサービスパックの更新 – プライベートベータ版
 description: Cloud Manager ユーザーインターフェイスを使用して、開発環境のサービスパックのアップデートを開始する方法について説明します。
 hide: true
 hidefromtoc: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
-# 開発環境のサービスパックの更新（早期導入） {#stage-prod-only}
+# 開発環境のサービスパックの更新（プライベートベータ版） {#stage-prod-only}
 
 Cloud Manager ユーザーインターフェイスを使用して開発環境のサービスパックのアップデートを開始する方法について説明します。
 
 >[!NOTE]
 >
->この機能は、[早期導入プログラム](/help/release-notes/current.md#early-adoption)でのみ利用できます。
+>この機能は、[ プライベートベータプログラム ](/help/release-notes/current.md#beta-program) でのみ使用できます。
 
 ## 概要 {#service-pack-updates-overview}
 

@@ -3,10 +3,10 @@ title: Cloud Manager 2025.6.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.5.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: d0acd47ea6011dc5896d20d76ab0fcaa970df6ac
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '558'
-ht-degree: 67%
+ht-degree: 62%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.6.0 のリリース�
 
 * **ステージング専用パイプラインと実稼動専用パイプライン**
 
-  Cloud Managerでは、ステージング専用パイプラインと実稼動専用パイプラインをサポートするようになりました。 この機能を使用すると、フルスタックの実稼動デプロイメントを、より小さな目的別のパイプラインに分割できます。<!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
+  Cloud Managerでは、ステージング専用パイプラインと実稼動専用パイプラインをサポートするようになりました。 この機能を使用すると、フルスタックの実稼動デプロイメントを、より小さな目的別のパイプラインに分割できます。<!-- This feature went into GA from Private beta in the June 5, 2025 CM release -->
 
   ![ 「フルスタックコード」ラジオボタンと「ステージ環境」が選択された状態の「実稼動以外のパイプラインを追加」ダイアログボックス ](/help/release-notes/assets/add-non-production-pipeline.png)
 
@@ -48,11 +48,11 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.6.0 のリリース�
   [ パイプラインのお気に入りをマーク ](/help/using/managing-pipelines.md#pipeline-favorites) を参照してください。
 
 
-## 早期導入プログラム {#early-adoption}
+## プライベートベータプログラム {#beta-program}
 
-Cloud Manager の早期導入プログラムに参加すると、一般リリース前に今後の機能に排他的にアクセスできます。
+Cloud Managerの非公開ベータプログラムに参加すると、一般リリース前に今後リリースされる機能を独占的に利用できます。
 
-現在、次の早期導入の機会が利用可能です。
+現在、次のプライベートベータ版の機会を利用できます。
 
 
 ### アクセストークンを管理{#access-tokens}
