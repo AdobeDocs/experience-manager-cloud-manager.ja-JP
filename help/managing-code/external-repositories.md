@@ -3,10 +3,10 @@ title: Cloud Manager での外部リポジトリの追加
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 badge: label="プライベートベータ版" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: dfdbc66c6a447d47d669eb84e6ddf8dca86fc632
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 97%
+source-wordcount: '1864'
+ht-degree: 96%
 
 ---
 
@@ -23,8 +23,9 @@ Cloud Manager に外部リポジトリを追加する方法について説明し
 Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で構成されます。
 
 1. 選択したプログラムに[外部リポジトリを追加](#add-external-repo)します。
-1. 外部リポジトリへのアクセストークンを指定します。
-1. プライベート GitHub リポジトリの所有権の検証。
+1. [ 検証済みの外部リポジトリをパイプラインにリンクします ](#validate-ext-repo)。
+<!-- 1. Provide an access token to the external repository.
+1. Validate ownership of the private GitHub repository. -->
 1. 外部リポジトリに [webhook を設定](#configure-webhook)します。
 
 
