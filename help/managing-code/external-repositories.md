@@ -3,10 +3,10 @@ title: Cloud Manager での外部リポジトリの追加
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 badge: label="プライベートベータ版" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: dfdbc66c6a447d47d669eb84e6ddf8dca86fc632
+source-git-commit: 3958e36391eaca3450ef765676fcbbd485766318
 workflow-type: tm+mt
-source-wordcount: '1864'
-ht-degree: 96%
+source-wordcount: '2050'
+ht-degree: 97%
 
 ---
 
@@ -150,6 +150,12 @@ URL をプレーンテキストファイルにペーストします。コピー�
 
    各ベンダーに必要な web フック設定とイベントについて詳しくは、[外部リポジトリの追加](#add-ext-repo)を参照してください。手順 8 の表を参照してください。
 
+>[!BEGINTABS]
+
+>[!TAB GitHub Enterprise]
+
+### GitHub Enterprise
+
 1. ソリューションの **webhook** 設定セクションを見つけます。
 1. 前の手順でコピーした webhook URL を「URL」テキストフィールドにペーストします。
    1. Webhook URL の `api_key` クエリパラメーターを独自の実際の API キーに置き換えます。
@@ -159,11 +165,43 @@ URL をプレーンテキストファイルにペーストします。コピー�
 1. 前の手順でコピーした webhook 秘密鍵を「**秘密鍵**」（または「**秘密鍵**」、あるいは「**秘密鍵トークン**」）テキストフィールドにペーストします。
 1. Webhook を設定して、Cloud Manager が想定する必須のイベントを送信します。
 
-   | リポジトリ | 必須の webhook イベント |
-   | --- | --- |
-   | GitHub Enterprise | これらのイベントにより、Cloud Manager でプルリクエストの検証、パイプラインのプッシュベースのトリガー、Edge Delivery Services のコード同期などの GitHub アクティビティに応答できます。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト<li>プッシュ<li>コメントを発行</li></li></li></ul></ul></ul> |
-   | GitLab | これらの webhook イベントにより、コードをプッシュした際や結合リクエストを送信した際に、Cloud Manager でパイプラインをトリガーできます。また、プルリクエストの検証に関連するコメントも（メモイベントを通じて）追跡します。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プッシュイベント<li>結合リクエストイベント<li>メモイベント</li></li></li></ul></ul></ul> |
-   | Bitbucket | これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト：作成済み<li>プルリクエスト：更新済み<li>プルリクエスト：結合済み<li>プルリクエスト：コメント<li>リポジトリ：プッシュ</li></li></li></ul></ul></ul> |
+   | 必須の webhook イベント |
+   | --- |
+   | これらのイベントにより、Cloud Manager でプルリクエストの検証、パイプラインのプッシュベースのトリガー、Edge Delivery Services のコード同期などの GitHub アクティビティに応答できます。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト<li>プッシュ<li>コメントを発行</li></li></li></ul></ul></ul> |
+
+>[!TAB GitLab]
+
+1. ソリューションの **webhook** 設定セクションを見つけます。
+1. 前の手順でコピーした webhook URL を「URL」テキストフィールドにペーストします。
+   1. Webhook URL の `api_key` クエリパラメーターを独自の実際の API キーに置き換えます。
+
+      API キーを生成するには、Adobe Developer Console で統合プロジェクトを作成する必要があります。詳しくは、[API 統合プロジェクトの作成](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)を参照してください。
+
+1. 前の手順でコピーした webhook 秘密鍵を「**秘密鍵**」（または「**秘密鍵**」、あるいは「**秘密鍵トークン**」）テキストフィールドにペーストします。
+1. Webhook を設定して、Cloud Manager が想定する必須のイベントを送信します。
+
+   | 必須の webhook イベント |
+   | --- |
+   | これらの webhook イベントにより、コードをプッシュした際や結合リクエストを送信した際に、Cloud Manager でパイプラインをトリガーできます。また、プルリクエストの検証に関連するコメントも（メモイベントを通じて）追跡します。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プッシュイベント<li>結合リクエストイベント<li>メモイベント</li></li></li></ul></ul></ul> |
+
+>[!TAB Bitbucket]
+
+### Bitbucket
+
+1. ソリューションの **webhook** 設定セクションを見つけます。
+1. 前の手順でコピーした webhook URL を「URL」テキストフィールドにペーストします。
+   1. Webhook URL の `api_key` クエリパラメーターを独自の実際の API キーに置き換えます。
+
+      API キーを生成するには、Adobe Developer Console で統合プロジェクトを作成する必要があります。詳しくは、[API 統合プロジェクトの作成](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)を参照してください。
+
+1. 前の手順でコピーした webhook 秘密鍵を「**秘密鍵**」（または「**秘密鍵**」、あるいは「**秘密鍵トークン**」）テキストフィールドにペーストします。
+1. Webhook を設定して、Cloud Manager が想定する必須のイベントを送信します。
+
+   | 必須の webhook イベント |
+   | --- |
+   | これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト：作成済み<li>プルリクエスト：更新済み<li>プルリクエスト：結合済み<li>プルリクエスト：コメント<li>リポジトリ：プッシュ</li></li></li></ul></ul></ul> |
+
+>[!ENDTABS]
 
 ### Webhook を使用したプルリクエストの検証
 
