@@ -76,7 +76,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
     | トークンタイプ |説明 |
     | — | — |
     | **既存のアクセストークンを使用** |組織のリポジトリアクセストークンを既に指定していて、複数のリポジトリにアクセスできる場合、既存のトークンを選択できます。 「**トークン名**」ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。 そうでない場合は、新しいアクセストークンを追加します。 |
-    | **新しいアクセストークンの追加** |&lt;ul>&lt;li> 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。&lt;li>[GitHub ドキュメント ] （https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens）の手順に従って、個人用アクセストークンを作成します。&lt;li>GitHub Enterprise Personal Access Token （PAT）に必要な権限 &lt;br> これらの権限により、Cloud Managerはプルリクエストの検証、コミットステータスチェックの管理、必要なリポジトリ詳細へのアクセスを行えます。&lt;br>GitHub Enterprise で PAT を生成する場合は、次のリポジトリ権限が含まれていることを確認します。&lt;ul>&lt;li> プルリクエスト（読み取りおよび書き込み） &lt;li> コミットステータス（読み取りおよび書き込み） &lt;li> リポジトリメタデータ（読み取り専用） &lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>**アクセストークン**フィールドに、作成したトークンをを貼り付けます。 |
+    | **新しいアクセストークンの追加** |&lt;ul>&lt;li> 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。&lt;li>[GitHub ドキュメント ] （https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens）の手順に従って、個人用アクセストークンを作成します。&lt;li>GitHub Enterprise Personal Access Token （PAT）に必要な権限 &lt;br> これらの権限により、Cloud Managerはプルリクエストの検証、コミットステータスチェックの管理、必要なリポジトリ詳細へのアクセスを行えます。&lt;br>GitHub Enterprise で PAT を生成する場合は、次のリポジトリ権限が含まれていることを確認します。&lt;ul>&lt;li> プルリクエスト（読み取りおよび書き込み） &lt;li> コミットステータス（読み取りおよび書き込み） &lt;li> リポジトリメタデータ（読み取り専用） &lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>**アクセストークン**&#x200B;フィールドに、作成したトークンをを貼り付けます。 |
     
     1。 「**検証**」をクリックします。
     
@@ -103,7 +103,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
     | トークンタイプ |説明 |
     | — | — |
     | **既存のアクセストークンを使用** |組織のリポジトリアクセストークンを既に指定していて、複数のリポジトリにアクセスできる場合、既存のトークンを選択できます。 「**トークン名**」ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。 そうでない場合は、新しいアクセストークンを追加します。 |
-    | **新しいアクセストークンの追加** |&lt;ul>&lt;li> 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。&lt;li>[Bitbucket のドキュメント ] （https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/）を使用して、リポジトリのアクセストークンを作成します。&lt;li>Bitbucket Personal Access Token （PAT）に必要な権限 &lt;br> これらの権限により、Cloud Managerはリポジトリコンテンツへのアクセス、プルリクエストの管理、Webhook イベントの設定または対応を行うことができます。&lt;br>Bitbucket でアプリパスワードを作成する場合は、次の必須アプリパスワード権限が含まれていることを確認します。&lt;ul>&lt;li> リポジトリ（読み取り専用） &lt;li> プルリクエスト（読み取りと書き込み） &lt;li>Webhook （読み取りと書き込み） &lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>**アクセストークン**フィールドに、作成したトークンををを貼り付けます。 |
+    | **新しいアクセストークンの追加** |&lt;ul>&lt;li> 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。&lt;li>[Bitbucket のドキュメント ] （https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/）を使用して、リポジトリのアクセストークンを作成します。&lt;li>Bitbucket Personal Access Token （PAT）に必要な権限 &lt;br> これらの権限により、Cloud Managerはリポジトリコンテンツへのアクセス、プルリクエストの管理、Webhook イベントの設定または対応を行うことができます。&lt;br>Bitbucket でアプリパスワードを作成する場合は、次の必須アプリパスワード権限が含まれていることを確認します。&lt;ul>&lt;li> リポジトリ（読み取り専用） &lt;li> プルリクエスト（読み取りと書き込み） &lt;li>Webhook （読み取りと書き込み） &lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>**アクセストークン**&#x200B;フィールドに、作成したトークンををを貼り付けます。 |
     
     1。 「**検証**」をクリックします。
     
