@@ -3,10 +3,10 @@ title: Cloud Manager での外部リポジトリの追加
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 badge: label="プライベートベータ版" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: bacb4b6e79519e4fef4cf01e04154d492cc888e2
+source-git-commit: cd2a71bc83a8ac7173089daea9670d25b68e62ba
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 82%
+source-wordcount: '2003'
+ht-degree: 90%
 
 ---
 
@@ -75,7 +75,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 
 >[!TAB GitHub Enterprise]
 
-| トークンタイプ | 説明 |
+| アクセストークンオプション | 説明 |
 | --- | --- |
 | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
 | **新しいアクセストークンを追加** | <ul><li> 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitHub ドキュメント](https://docs.github.com/ja/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)の指示に従って、個人アクセストークンを作成します。<li>GitHub Enterprise 個人アクセストークン（PAT）に必須の権限<br>これらの権限により、Cloud Manager でプルリクエストの検証、コミットステータスチェックの管理、必要なリポジトリ詳細へのアクセスが可能になります。<br>GitHub Enterprise で PAT を生成する場合は、次のリポジトリ権限が含まれていることを確認します。<ul><li>プルリクエスト（読み取りおよび書き込み）<li>コミットステータス（読み取りおよび書き込み）<li>リポジトリメタデータ（読み取り専用）</li></li></ul></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
@@ -86,7 +86,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 
 >[!TAB GitLab]
 
-| トークンタイプ | 説明 |
+| アクセストークンオプション | 説明 |
 | --- | --- |
 | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
 | **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitLab ドキュメント](https://docs.gitlab.com/user/profile/personal_access_tokens/)の指示に従って、個人アクセストークンを作成します。<li>GitLab 個人アクセストークン（PAT）に必須の権限<br>これらのスコープにより、Cloud Manager で検証と webhook 統合の必要に応じてリポジトリデータとユーザー情報へのアクセスが可能になります。<br>GitLab で PAT を生成する場合、次のトークンスコープが含まれていることを確認します。<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
@@ -98,7 +98,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 
 >[!TAB Bitbucket]
 
-| トークンタイプ | 説明 |
+| アクセストークンオプション | 説明 |
 | --- | --- |
 | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
 | **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Bitbucket ドキュメント](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)を使用して、リポジトリアクセストークンを作成します。<li>Bitbucket 個人アクセストークン（PAT）に必須の権限<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントの構成または反応が可能になります。<br>Bitbucket でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）<li>プルリクエスト（読み取りおよび書き込み）<li>webhook（読み取りおよび書き込み）</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
@@ -188,21 +188,21 @@ URL をプレーンテキストファイルにペーストします。コピー�
 
 >[!TAB GitHub Enterprise]
 
-    |必要な Webhook イベント |
-    | — |
-    |これらのイベントを使用すると、プルリクエストの検証、パイプラインのプッシュベースのトリガー、Edge Delivery Services コード同期など、Cloud Managerが GitHub アクティビティに応答できます。&lt;br>Webhook が次の必要な Webhook イベントでトリガーするように設定されていることを確認します：&lt;ul>&lt;li> プルリクエスト &lt;li> プッシュ &lt;li> コメントを発行 &lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
+| 必須の webhook イベント |
+| --- |
+| これらのイベントにより、Cloud Manager でプルリクエストの検証、パイプラインのプッシュベースのトリガー、Edge Delivery Services のコード同期などの GitHub アクティビティに応答できます。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト<li>プッシュ<li>コメントを発行</li></li></li></ul></ul></ul> |
 
 >[!TAB GitLab]
 
-    |必要な Webhook イベント |
-    | — |
-    |これらの Webhook イベントを使用すると、コードがプッシュされた場合や結合リクエストが送信された場合に、Cloud Managerがパイプラインをトリガーできます。 また、プルリクエストの検証に関連するコメントも（メモイベントを通じて）追跡します。&lt;br> 次の必要な Webhook イベント &lt;ul>&lt;li> プッシュイベント &lt;li> 結合リクエストイベント &lt;li> メモイベント &lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> で Webhook がトリガーするように設定されていることを確認します |
+| 必須の webhook イベント |
+| --- |
+| これらの webhook イベントにより、コードをプッシュした際や結合リクエストを送信した際に、Cloud Manager でパイプラインをトリガーできます。また、プルリクエストの検証に関連するコメントも（メモイベントを通じて）追跡します。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プッシュイベント<li>結合リクエストイベント<li>メモイベント</li></li></li></ul></ul></ul> |
 
 >[!TAB Bitbucket]
 
-    |必要な Webhook イベント |
-    | — |
-    |これらのイベントにより、Cloud Managerでプルリクエストの検証、コードプッシュへの応答、パイプライン調整のためのコメントの操作ができるようになります。&lt;br> 次の必要な Webhook イベントに対して Webhook がトリガーするように設定されていることを確認します &lt;ul>&lt;li> プルリクエスト：作成日 &lt;li> プルリクエスト：更新日 &lt;li> プルリクエスト：結合日 &lt;li> プルリクエスト：コメント &lt;li> リポジトリ：プッシュ &lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul> |
+| 必須の webhook イベント |
+| --- |
+| これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト：作成済み<li>プルリクエスト：更新済み<li>プルリクエスト：結合済み<li>プルリクエスト：コメント<li>リポジトリ：プッシュ</li></li></li></ul></ul></ul> |
 
 >[!ENDTABS]
 
