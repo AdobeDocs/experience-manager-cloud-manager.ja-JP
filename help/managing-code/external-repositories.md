@@ -3,7 +3,7 @@ title: Cloud Manager での外部リポジトリの追加
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 badge: label="プライベートベータ版" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: cd2a71bc83a8ac7173089daea9670d25b68e62ba
+source-git-commit: c8ded11e36bc68d442a0296a599f40066be73867
 workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 90%
@@ -75,6 +75,8 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 
 >[!TAB GitHub Enterprise]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+
 | アクセストークンオプション | 説明 |
 | --- | --- |
 | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
@@ -85,6 +87,8 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 [ アクセストークンの管理 ](/help/managing-code/manage-access-tokens.md) も参照してください。
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | アクセストークンオプション | 説明 |
 | --- | --- |
@@ -97,6 +101,8 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 
 
 >[!TAB Bitbucket]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 | アクセストークンオプション | 説明 |
 | --- | --- |
@@ -188,17 +194,23 @@ URL をプレーンテキストファイルにペーストします。コピー�
 
 >[!TAB GitHub Enterprise]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+
 | 必須の webhook イベント |
 | --- |
 | これらのイベントにより、Cloud Manager でプルリクエストの検証、パイプラインのプッシュベースのトリガー、Edge Delivery Services のコード同期などの GitHub アクティビティに応答できます。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト<li>プッシュ<li>コメントを発行</li></li></li></ul></ul></ul> |
 
 >[!TAB GitLab]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
+
 | 必須の webhook イベント |
 | --- |
 | これらの webhook イベントにより、コードをプッシュした際や結合リクエストを送信した際に、Cloud Manager でパイプラインをトリガーできます。また、プルリクエストの検証に関連するコメントも（メモイベントを通じて）追跡します。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プッシュイベント<li>結合リクエストイベント<li>メモイベント</li></li></li></ul></ul></ul> |
 
 >[!TAB Bitbucket]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 | 必須の webhook イベント |
 | --- |
@@ -218,11 +230,15 @@ Webhook が正しく設定されると、Cloud Managerは自動的にリポジ�
 
 >[!TAB GitHub Enterprise]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+
 チェックを作成すると、次のスクリーンショットのように表示されます。`GitHub.com` との主な違いは、`GitHub.com` はチェック実行を使用するのに対して、GitHub Enterprise（個人用アクセストークンを使用）はコミットステータスを生成することです。
 
 ![GitHub Enterprise で PR 検証プロセスを示すコミットステータス](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 GitLab のインタラクションは、コメントにのみ依存します。検証を開始すると、コメントが追加されます。検証が完了すると（成功または失敗に関係なく）、最初のコメントは削除され、検証結果やエラーの詳細を含む新しいコメントに置き換えられます。
 
@@ -243,6 +259,8 @@ GitLab のインタラクションは、コメントにのみ依存します。�
 ![コード品質検証が顧客の問題により失敗した場合](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
 >[!TAB Bitbucket]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 コード品質検証が実行中の場合：
 
