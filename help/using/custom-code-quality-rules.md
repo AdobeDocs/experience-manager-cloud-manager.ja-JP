@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール
 description: コード品質テスト中に Cloud Manager で実行されるカスタムコード品質ルールの詳細を確認します。これらのルールは、AEM Engineering のベストプラクティスに基づいています。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 54987d6ccd8c31dab677d90b40466c458743f936
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '3644'
-ht-degree: 96%
+source-wordcount: '3636'
+ht-degree: 95%
 
 ---
 
@@ -227,7 +227,7 @@ public void orDoThis(Session session) throws Exception {
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-[Sling ドキュメント](https://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明されているように、パスによってサーブレットをバインドすることは推奨されません。パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
+[Sling のドキュメント ](https://sling.apache.org/documentation/the-sling-engine/servlets.html) で説明しているように、パスでサーブレットをバインドすることは推奨されていません。 パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
 
 #### 非準拠コード {#non-compliant-code-5}
 
@@ -475,7 +475,7 @@ public void doThis() {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-`/libs` および `/apps` で始まるパスは一般的にハードコードするべきではありません。これらのパスは通常、Sling 検索パス（デフォルトは `/libs,/apps`）に関連して保存されます。絶対パスを使用すると、プロジェクトライフサイクルの後になって初めて現れる、わかりにくい不具合が生じる可能性があります。
+`/libs` および `/apps` で始まるパスは一般的にハードコードするべきではありません。これらのパスは通常、`Sling` 検索パス（デフォルトは `/libs,/apps`）に対して相対的に保存されます。 絶対パスを使用すると、プロジェクトライフサイクルの後になって初めて現れる、わかりにくい不具合が生じる可能性があります。
 
 #### 非準拠コード {#non-compliant-code-13}
 
@@ -500,7 +500,7 @@ public void doThis(Resource resource) {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-確実な実行を必要とするタスクには、 Sling スケジューラーを使用しないでください。Sling スケジュールジョブは実行を保証し、クラスター化環境と非クラスター化環境の両方に適しています。
+確実な実行を必要とするタスクには、Sling スケジューラーを使用しないでください。 Sling スケジュールジョブは実行を保証し、クラスター化環境と非クラスター化環境の両方に適しています。
 
 Sling ジョブがクラスター環境で処理される方法について詳しくは、[Apache Sling のイベントとジョブの取り扱い](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)を参照してください。
 
@@ -810,14 +810,14 @@ AEM Cloud Service では、UI コンテンツパッケージでカスタム検�
 >
 >[Cloud Manager 2024年8月リリース](/help/release-notes/current.md)以降、パイプラインでエラーが発生する可能性があるので、できるだけ早く対処することをお勧めします。
 
-### `damAssetLucene` タイプのカスタムフルテキストインデックス定義には、`damAssetLucene` というプレフィックスを正しく付ける {#oakpal-dam-asset-lucene}
+### `damAssetLucene` タイプのカスタムフルテキストインデックス定義には、`damAssetLucene` という接頭辞を正しく付ける {#oakpal-dam-asset-lucene}
 
 * **キー**：CustomFulltextIndexesOfTheDamAssetCheck
 * **タイプ**：改善点
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2024.6.0
 
-AEM Cloud Service では、`damAssetLucene` タイプのカスタムフルテキストインデックス定義に `damAssetLucene` 以外のプレフィックスを付けることが禁止されています。
+AEM Cloud Service では、`damAssetLucene` タイプのカスタムフルテキストインデックス定義に `damAssetLucene` 以外の接頭辞を付けることが禁止されています。
 
 >[!WARNING]
 >
@@ -908,8 +908,7 @@ AEM Cloud Service では、複数のインデックスに同じタグを含む�
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2025.4.0
 
-File Vault での「replacement」モードの使用は、/content の下のパスには許可されていません。/etc および/var の下のパスには使用しないでください。
-「置換」モードでは、リポジトリ内の既存のコンテンツがすべてコンテンツパッケージで提供されるコンテンツに置き換えられます。このアクションをトリガーするパッケージは、CloudManager を使用してデプロイされたパッケージに含まれるべきではありません。
+File Vault での「replacement」モードの使用は、`/content` 以下のパスには許可されていません。`/etc` および `/var.` 以下のパスには使用しないでください。 「置換」モードでは、既存のリポジトリコンテンツがパッケージのコンテンツで上書きされます。 このアクションをトリガーにするパッケージは、Cloud Managerを通じてデプロイされるパッケージに含めないでください。
 
 ## Dispatcher 最適化ツール {#dispatcher-optimization-tool-rules}
 

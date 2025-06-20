@@ -3,10 +3,10 @@ title: Cloud Manager 2025.6.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.5.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 38d398caf2323b603afd293aa9152308fefd323f
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 58%
+source-wordcount: '556'
+ht-degree: 71%
 
 ---
 
@@ -39,13 +39,13 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.6.0 のリリース�
 
   [ ステージング専用および実稼動専用パイプライン ](/help/using/stage-prod-only.md) を参照してください。
 
-* **パイプラインのお気に入り**
+* **お気に入りのパイプライン**
 
-  このリリースでは、Cloud Managerでお気に入りのパイプラインをピン留めし、特定のパイプラインをお気に入りとしてマークして、「**パイプライン**」ページのリストの上部に表示できるようになりました。 この機能強化により、頻繁にアクセスするパイプラインを見つけて実行しやすくなります。<!-- CMGR-68293 -->
+  このリリースでは、Cloud Managerでお気に入りのパイプラインをピン留めし、特定のパイプラインをお気に入りとしてマークして、「**パイプライン**」ページのリストの上部に表示できるようになりました。 この機能強化により、頻繁にアクセスするパイプラインをより容易に見つけて実行しやすくなっています。<!-- CMGR-68293 -->
 
-  ![ お気に入りとしてマークされたパイプライン ](/help/release-notes/assets/pipeline-favorites.png)*お気に入りとしてマークされた 2 つのパイプライン。*
+  ![お気に入りとしてマークされたパイプライン](/help/release-notes/assets/pipeline-favorites.png)*お気に入りとしてマークされた 2 つのパイプライン。*
 
-  [ パイプラインのお気に入りをマーク ](/help/using/managing-pipelines.md#pipeline-favorites) を参照してください。
+  [パイプラインのお気に入りをマークする](/help/using/managing-pipelines.md#pipeline-favorites)を参照してください。
 
 
 ## プライベートベータプログラム {#beta-program}
@@ -73,16 +73,16 @@ Cloud Managerの非公開ベータプログラムに参加すると、一般リ�
 
 #### アクセストークンを管理{#access-tokens}
 
-外部の Bring Your Own Git リポジトリ （GitHub Enterprise、GitLab、Bitbucket、Azure DevOps など）に関連付けられたアクセストークンを表示、名前変更、削除するには、**アクセストークンの管理** 機能を BYOG と組み合わせて使用します。
+BYOG で **アクセストークンの管理** を使用して、外部 GitHub Enterprise、GitLab、Bitbucket、Azure DevOps などの独自の Git リポジトリに関連付けられたアクセストークンを表示、名前変更、削除します。
 
-[ アクセストークンの管理 ](/help/managing-code/manage-access-tokens.md) を参照してください。
+[アクセストークンを管理](/help/managing-code/manage-access-tokens.md)をご覧ください。
 
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
 
 
 ## バグ修正 {#bug-fixes}
 
-* AEM Cloud Managerは、お客様のアーティファクトを取得する際に、409 エラー（競合）が原因で発生した Maven ビルドエラーをお客様が原因のエラーに正しくマッピングするようになりました。 この変更により、内部エラーとお客様の環境の設定に関連する問題が区別され、エラーメッセージが改善されます。<!-- CMGR-66673 -->
+* AEM Cloud Managerは、お客様のアーティファクトを取得する際に、409 エラー（競合）が原因で発生した Maven ビルドエラーをお客様が原因のエラーに正しくマッピングするようになりました。この変更により、内部エラーとお客様の環境の設定に関連する問題が区別され、エラーメッセージが改善されます。<!-- CMGR-66673 -->
 
 <!--
 Known Issues {#known-issues}

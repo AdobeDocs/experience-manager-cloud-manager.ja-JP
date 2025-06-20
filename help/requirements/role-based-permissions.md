@@ -2,10 +2,10 @@
 title: 役割ベースの権限
 description: Cloud Manager の事前設定された役割ベースの権限によるクラウドリソースへのアクセスの管理について説明します。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 682b142f35bc233bad82b0ddfa69bc0f2d5b5fdb
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 100%
+source-wordcount: '560'
+ht-degree: 99%
 
 ---
 
@@ -43,26 +43,26 @@ Admin Console で割り当てることができる役割の一覧を次の表に
 
 | 権限 | 説明 | ビジネスオーナー | デプロイメントマネージャー | プログラムマネージャー | 開発者 | CSE |
 | --- | --- | --- | --- | --- | --- | --- |
-| アプリケーションの読み取り | プログラム KPI を読み取ります | x | x | x | x | x |
-| アプリケーションへの書き込み | プログラムの設定または編集 | x | | | | |
-| プログラムの追加 | 新規プログラムを追加します | x |  |  |  |  |
-| 環境の読み取り | 環境の詳細を参照します | x | x | x | x | x |
-| 実行の作成 | パイプラインを開始します | x | x | x | | |
-| 実行の読み取り | 実行ステータスを参照します | x | x | x | x | x |
-| 実行の再開 | 一時停止した実行を再開する機能 | x | x | x | | x |
-| 実行における実稼動環境へのデプロイメントの承認 | 運用開始を承認します | x | x | x | | |
-| 実行における実稼動環境へのデプロイメントのスケジュール設定 | 実稼動デプロイメントをスケジュール | x | x | x | | x |
-| 実行における実稼動環境へのデプロイメント | CSE による監督のために一時停止した際にアプリケーションを実稼動環境にデプロイします |  |  |  |  | x |
-| 実行のキャンセル | 現在の実行のキャンセル |  |  | x |  |  |
-| 実行における品質ゲートエラーのオーバーライド | 重大な品質ゲートエラーを承認します | x | x | x |  |  |
-| パイプラインの作成 | パイプラインをセットアップ／編集します |  | x |  |  |  |
-| パイプラインの読み取り | パイプラインの詳細を参照します | x | x | x | x | x |
-| パイプラインへの書き込み | パイプラインをセットアップ／編集します |  | x |  |  |  |
-| パイプラインにおける承認変更 | ビジネスオーナーオプションの編集を許可します |  | x |  |  |  |
-| パイプラインにおける管理対象デプロイメントの変更 | CSE 監督オプションの編集を許可します |  | x |  |  |  |
-| パイプラインの削除 | パイプラインの削除を許可します |  | x |  |  |  |
-| ステップの読み取り | ステップの品質指標の結果を参照します | x | x | x | x | x |
-| 個人用アクセストークンの生成 | Git にアクセス |  | x |  | x |  |
+| `Read the Application` | プログラム KPI を読み取ります | x | x | x | x | x |
+| `Write Application` | プログラムの設定または編集 | x | | | | |
+| `Add Program` | 新規プログラムを追加します | x |  |  |  |  |
+| `Read Environment` | 環境の詳細を参照します | x | x | x | x | x |
+| `Create Execution` | パイプラインを開始します | x | x | x | | |
+| `Read Execution` | 実行ステータスを参照します | x | x | x | x | x |
+| `Resume Execution` | 一時停止した実行を再開する機能 | x | x | x | | x |
+| `Execution Approve Deploy to Production` | 運用開始を承認します | x | x | x | | |
+| `Execution Schedule Deploy to Production` | 実稼動デプロイメントをスケジュール | x | x | x | | x |
+| `Execution Deploy to Production` | CSE による監督のために一時停止した際にアプリケーションを実稼動環境にデプロイします |  |  |  |  | x |
+| `Execution Cancel` | 現在の実行のキャンセル |  |  | x |  |  |
+| `Execution Override Quality Gate Failures` | 重大な品質ゲートエラーを承認します | x | x | x |  |  |
+| `Pipeline Create` | パイプラインをセットアップ／編集します |  | x |  |  |  |
+| `Pipeline Read` | パイプラインの詳細を参照します | x | x | x | x | x |
+| `Pipeline Write` | パイプラインをセットアップ／編集します |  | x |  |  |  |
+| P`ipeline Modify Approval` | ビジネスオーナーオプションの編集を許可します |  | x |  |  |  |
+| `Pipeline Modify Managed Deployment` | CSE 監督オプションの編集を許可します |  | x |  |  |  |
+| `Pipeline Delete` | パイプラインの削除を許可します |  | x |  |  |  |
+| `Step Read` | ステップの品質指標の結果を参照します | x | x | x | x | x |
+| `Generate Personal Access Token` | Git にアクセス |  | x |  | x |  |
 
 <!-- CQDOC-22080 | Download log files  |  |  | x |  | x |  | -->
 

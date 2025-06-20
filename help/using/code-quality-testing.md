@@ -2,10 +2,10 @@
 title: コード品質テスト
 description: パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '2793'
-ht-degree: 100%
+source-wordcount: '2783'
+ht-degree: 98%
 
 ---
 
@@ -126,18 +126,18 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | デシリアライゼーションファイアウォールが読み込まれている。 | [デシリアライゼーションファイアウォール読み込み](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | 重大 |
 | `AuthorizableNodeName` 実装において、認証可能な ID がノード名／パスで公開されていない。 | [認証可能なノード名生成](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/security-checklist#security) | 重大 |
 | デフォルトのパスワードが変更されている。 | [デフォルトのログインアカウント](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) | 重大 |
-| Sling のデフォルトの GET サーブレットが DOS 攻撃から保護されている | Sling Get Servlet | 重大 |
-| Sling JavaScript Handler は適切に設定されています。 | Sling JavaScript Handler | 重大 |
-| Sling JSP Script Handler が適切に設定されている。 | Sling JSP Script Handler | 重大 |
+| デフォルト `Sling`GET サーブレットは、DOS 攻撃から保護されています。 | `Sling Get` サーブレット | 重大 |
+| `Sling` JavaScript ハンドラーが適切に設定されている。 | `Sling` JavaScript ハンドラー | 重大 |
+| `Sling` JSP スクリプトハンドラーが適切に設定されている。 | `Sling` JSP スクリプトハンドラー | 重大 |
 | SSL が正しく設定されている。 | SSL 設定 | 重大 |
 | 明らかに安全ではないユーザープロファイルポリシーが見つからない。 | ユーザープロファイルへのデフォルトアクセス | 重大 |
-| Sling Referrer Filter が CSRF 攻撃を防止するように設定されている。 | [Sling Referrer Filter](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/security-checklist#security) | 重要 |
+| `Sling` リファラーフィルターは、CSRF 攻撃を防ぐように設定されています。 | [Sling Referrer Filter](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/security-checklist#security) | 重要 |
 | Adobe Granite HTML Library Manager が適切に設定されている。 | CQ HTML Library Manager 設定 | 重要 |
 | CRXDE サポートバンドルが無効である。 | CRXDE サポート | 重要 |
-| Sling DavEx のバンドルおよびサーブレットが無効である。 | DavEx ヘルスチェック | 重要 |
+| DavEx`Sling` バンドルおよびサーブレットが無効である。 | DavEx ヘルスチェック | 重要 |
 | サンプルコンテンツがインストールされていない。 | サンプルコンテンツパッケージ | 重要 |
 | WCM Request Filter と WCM Debug Filter が両方とも無効になっている。 | [WCM フィルター設定](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | 重要 |
-| Sling WebDAV のバンドルおよびサーブレットが適切に設定されている。 | WebDAV ヘルスチェック | 重要 |
+| WebDAV`Sling` バンドルおよびサーブレットが適切に設定されている。 | WebDAV ヘルスチェック | 重要 |
 | web サーバーが、クリックジャッキングを防止するように設定されている。 | Web サーバー設定 | 重要 |
 | レプリケーションが `admin` ユーザーを使用していない。 | レプリケーションとトランスポートユーザー | 情報 |
 

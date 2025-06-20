@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager ユーザーがコードを作成およびテストするための専用のビルド環境について説明します。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1263'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '1262'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager のビルド環境には、次の属性があります。
    * `graphicsmagick`
 * [追加のシステムパッケージのインストール](#installing-additional-system-packages)の節で説明されているように、ビルド時にその他のパッケージがインストールされる場合があります。
 * どのビルドも、初期状態の環境で実行されます。ビルドコンテナは実行間で状態を保持しません。
-* Maven は常に次の 3 つのコマンドで実行します。
+* Maven は、次の 3 つのコマンドで実行されます。
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
@@ -117,7 +117,7 @@ Cloud Manager [リリース 2023.10.0](/help/release-notes/2023/2023-10-0.md) �
 
 また、Maven 実行全体の JDK として Oracle 8 または Oracle 11 を選択することもできます。この場合は、ツールチェーンオプションとは異なり、ツールチェーン設定も指定される場合を除き、すべてのプラグインに使用される JDK が変更されます。ツールチェーン設定が指定される場合は、そのツールチェーン設定が引き続きツールチェーン対応 Maven プラグインに適用されます。その結果、[Apache Maven Enforcer Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) を使用して Java バージョンを確認および強制することができます。
 
-このプロセスを実行するには、パイプラインで使用される Git リポジトリ分岐に `.cloudmanager/java-version` というファイルを作成します。このファイルの内容は `11` か `8` のどちらかにすることができます。その他の値は無視されます。`11` を指定した場合は、Oracle 11 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk-11.0.22` に設定されます。`8` を指定した場合は、Oracle 8 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk1.8.0_401` に設定されます。
+このプロセスを実行するには、パイプラインで使用される Git リポジトリ分岐に `.cloudmanager/java-version` というファイルを作成します。このファイルの内容は `11` か `8` のどちらかにすることができます。その他の値は無視されます。`11` が指定されている場合は、Oracle 11 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk-11.0.22` に設定されます。 `8` が指定されている場合は、Oracle 8 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk1.8.0_401` に設定されます。
 
 ## 環境変数 {#environment-variables}
 

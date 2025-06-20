@@ -2,10 +2,10 @@
 title: Cloud Managerでのリポジトリの管理
 description: Cloud Manager で Git リポジトリを表示、追加および削除する方法について説明します。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: ee84c682b6bd2b9144b3f75d544dea33a5ad944b
-workflow-type: ht
-source-wordcount: '732'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,7 @@ Cloud Manager は、アドビが管理するリポジトリ（**Adobe リポジ�
 
 ## 分岐を確認／プロジェクトを作成 {#check-branches}
 
-**AEM Cloud Manager** では、**分岐を確認／プロジェクトを作成**&#x200B;アクションは、リポジトリの現在の状態に応じて 2 つの目的を果たします。
+**AEM Cloud Manager** の **ブランチを確認/プロジェクトを作成** には、リポジトリの現在のステータスに応じて、2 つの目的があります。
 
 * リポジトリが新しく作成されている場合、このアクションにより、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/overview)を使用してサンプルプロジェクトが生成されます。
 * リポジトリにサンプルプロジェクトが既に作成されている場合、アクションではリポジトリとその分岐のステータスを確認し、サンプルプロジェクトが既に存在するかどうかに関するフィードバックを提供します。

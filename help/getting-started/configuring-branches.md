@@ -2,10 +2,10 @@
 title: 分岐の設定
 description: Git で最初の分岐を設定する方法と、CI/CD パイプラインでアプリケーションコードをデプロイする際に分岐を使用する方法について説明します。
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '324'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 95%
 
 ---
 
@@ -74,7 +74,7 @@ To <url>
 
 ## 追加の分岐 {#additional-branches}
 
-非常にシンプルなプロジェクトにはただ 1 つの `main` 分岐でも十分なことがありますが、ほとんどの場合は、より複雑な分岐戦略が必要になります。多くのお客様は、`develop` という分岐で日常的な開発アクティビティを実行するプロセスに従います。デプロイメントの際に、開発分岐は `main` 分岐に結合されます。
+非常にシンプルなプロジェクトにはただ 1 つの `main` 分岐でも十分なことがありますが、ほとんどの場合は、より複雑な分岐戦略が必要になります。多くのお客様は、`develop` という分岐で日常的な開発アクティビティを実行するプロセスに従います。デプロイメントの時間になると、`develop` ブランチは `main` ブランチに結合されます。
 
 >[!TIP]
 >
