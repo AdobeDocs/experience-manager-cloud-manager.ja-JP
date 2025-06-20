@@ -125,4 +125,4 @@ Cloud Manager で環境を監視する方法について説明します。
 
 次のビデオでは、Cloud Manager レポートで作成されたグラフを、プログラム環境のビューに使用する方法の概要について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/)
+>[!VIDEO](https://video.tv.adobe.com/v/34274?captions=jpn)

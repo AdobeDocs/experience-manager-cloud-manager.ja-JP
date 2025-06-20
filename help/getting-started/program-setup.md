@@ -92,4 +92,4 @@ Assets のパフォーマンステストでは、30 分間にわたってアセ�
 
 ## ビデオの概要 {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/)
+>[!VIDEO](https://video.tv.adobe.com/v/34266?captions=jpn)
