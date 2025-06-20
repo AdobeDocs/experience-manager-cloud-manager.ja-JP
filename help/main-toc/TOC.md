@@ -7,9 +7,9 @@ user-guide-description: Cloud Manager を使用して、クラウド内の AMS �
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 91%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 91%
    + [アクセス権限](/help/requirements/access-rights.md)
    + [ソースコードリポジトリ](/help/requirements/source-code-repository.md)
    + [役割ベースの権限](/help/requirements/role-based-permissions.md)
-   + [ユーザーと役割の設定](/help/requirements/users-and-roles.md)
+   + [ユーザーと役割の追加](/help/requirements/users-and-roles.md)
    + [カスタム権限](/help/using/custom-permissions.md)
    + [環境のプロビジョニング](/help/requirements/environment-provisioning.md)
 + はじめに {#getting-started}

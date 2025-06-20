@@ -2,10 +2,10 @@
 title: ユーザーと役割の追加
 description: Admin Console を使用して、ユーザーと役割を追加し、プロファイルを作成する方法について説明します。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 90%
+source-wordcount: '872'
+ht-degree: 76%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 90%
 >
 >Admin Console の開発者ペルソナは、[!UICONTROL Cloud Manager] のデベロッパーの役割とは無関係です。
 
-## Admin Console を使用したプロファイルの作成 {#using-admin-console-to-create-a-profile}
+## Admin Consoleを使用した製品プロファイルの作成 {#using-admin-console-to-create-a-profile}
 
 [!UICONTROL Cloud Manager] の役割は、Admin Console から管理されます。特定の役割のメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
 
@@ -55,7 +55,13 @@ Admin Console では、組織全体にわたるアドビ製品の使用権限を
 * 開発者
 * プログラムマネージャー
 
-Admin Console を使用して、これらの製品プロファイルにユーザーやグループを作成または追加できます。
+Admin Consoleを使用して、これらの製品プロファイルにユーザーまたはグループを作成または追加します。
+
+>[!IMPORTANT]
+>
+>Admin ConsoleとCloud Managerにおける現在の制限により、**権限なし** を選択した状態でプロファイルを保存することはできません。 これを試みると、バックエンドエラーが発生します。 この動作は、デプロイメントマネージャープロファイルの作成に影響します。 回避策として、新しいプロファイルを作成する際は、少なくとも 1 つの権限を選択します。
+
+**Admin Consoleを使用して製品プロファイルを作成するには：**
 
 1. Admin Console（[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)）にログインします。
 
@@ -76,6 +82,10 @@ Admin Console を使用して、これらの製品プロファイルにユーザ
    * **プロファイル名** - **プロファイル名**&#x200B;は任意の名前を指定できますが、混乱を避けるために、**推奨プロファイル名**&#x200B;列の値を使用することをお勧めします。
    * **表示名** - 「**表示名**」は、[!UICONTROL Cloud Manager] で定義されている技術値（以下の表を参照）にする必要があります。
    * **権限グループ** - プロファイルの権限グループを選択できます（常に使用可能とは限りません）。
+
+     >[!IMPORTANT]
+     >
+     >Admin ConsoleとCloud Managerにおける現在の制限により、**権限なし** を選択した状態でプロファイルを保存することはできません。 これを試みると、バックエンドエラーが発生します。 この動作は、デプロイメントマネージャープロファイルの作成に影響します。 回避策として、新しいプロファイルを作成する際は、少なくとも 1 つの権限を選択します。
 
    ![新規プロファイルの作成](/help/assets/screen_shot_2018-05-04at171819.png)
 
