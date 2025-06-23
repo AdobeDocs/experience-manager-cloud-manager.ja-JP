@@ -2,10 +2,10 @@
 title: ユーザーと役割の追加
 description: Admin Console を使用して、ユーザーと役割を追加し、プロファイルを作成する方法について説明します。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
+source-git-commit: 9ad9af206fafea45f8bbf61b02950de0776b5a9f
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 76%
+source-wordcount: '770'
+ht-degree: 86%
 
 ---
 
@@ -57,9 +57,10 @@ Admin Console では、組織全体にわたるアドビ製品の使用権限を
 
 Admin Consoleを使用して、これらの製品プロファイルにユーザーまたはグループを作成または追加します。
 
+<!-- CQDOC-22790
 >[!IMPORTANT]
 >
->Admin ConsoleとCloud Managerにおける現在の制限により、**権限なし** を選択した状態でプロファイルを保存することはできません。 これを試みると、バックエンドエラーが発生します。 この動作は、デプロイメントマネージャープロファイルの作成に影響します。 回避策として、新しいプロファイルを作成する際は、少なくとも 1 つの権限を選択します。
+>Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
 **Admin Consoleを使用して製品プロファイルを作成するには：**
 
@@ -83,18 +84,19 @@ Admin Consoleを使用して、これらの製品プロファイルにユーザ�
    * **表示名** - 「**表示名**」は、[!UICONTROL Cloud Manager] で定義されている技術値（以下の表を参照）にする必要があります。
    * **権限グループ** - プロファイルの権限グループを選択できます（常に使用可能とは限りません）。
 
-     >[!IMPORTANT]
-     >
-     >Admin ConsoleとCloud Managerにおける現在の制限により、**権限なし** を選択した状態でプロファイルを保存することはできません。 これを試みると、バックエンドエラーが発生します。 この動作は、デプロイメントマネージャープロファイルの作成に影響します。 回避策として、新しいプロファイルを作成する際は、少なくとも 1 つの権限を選択します。
+<!-- CQDOC-22790
+      >[!IMPORTANT]
+      >
+      >Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
-   ![新規プロファイルの作成](/help/assets/screen_shot_2018-05-04at171819.png)
+![新規プロファイルの作成](/help/assets/screen_shot_2018-05-04at171819.png)
 
-   | 役割 | 表示名（必須） | 推奨プロファイル名 |
-   |---|---|---|
-   | ビジネスオーナー | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - ビジネスオーナーの役割 |
-   | デプロイメントマネージャー | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - デプロイメントマネージャーの役割 |
-   | 開発者 | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - デベロッパーの役割 |
-   | プログラムマネージャー | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - プログラムマネージャーの役割 |
+| 役割 | 表示名（必須） | 推奨プロファイル名 |
+|---|---|---|
+| ビジネスオーナー | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - ビジネスオーナーの役割 |
+| デプロイメントマネージャー | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - デプロイメントマネージャーの役割 |
+| 開発者 | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - デベロッパーの役割 |
+| プログラムマネージャー | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - プログラムマネージャーの役割 |
 
 
 1. 「**完了**」をクリックして、新しいプロファイルを保存します。
