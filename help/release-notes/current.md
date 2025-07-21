@@ -3,10 +3,10 @@ title: Cloud Manager 2025.7.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.7.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 106caded8056a8a667b6c702b573566f9358f401
+source-git-commit: a1f023b8ecc6fcae97832c5f3fad6bb8ae79ced1
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 68%
+source-wordcount: '528'
+ht-degree: 69%
 
 ---
 
@@ -48,11 +48,11 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.7.0 のリリース�
   [パイプラインのお気に入りをマークする](/help/using/managing-pipelines.md#pipeline-favorites)を参照してください。
 
 
-## 早期導入プログラム {#beta-program}
+## Alpha/Beta プログラム {#beta-program}
 
-Cloud Managerのアルファおよびベータ版プログラムに参加すると、一般リリース前に、今後の機能に早期に排他的にアクセスできます。
+Cloud Managerのアルファおよびベータ版プログラムに参加すると、一般リリース前に、今後の機能を独占的に利用できます。
 
-現在、次のオポチュニティを利用できます。
+現在、以下の機能が利用可能です。
 
 
 ### 独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました。 {#gitlab-bitbucket}
