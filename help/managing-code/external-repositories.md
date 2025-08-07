@@ -1,17 +1,28 @@
 ---
 title: Cloud Manager での外部リポジトリの追加
-description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
+description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket、 Azure DevOps リポジトリとの統合をサポートしています。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: d6f058c3f6dc010f08a5cb75a0fb152b56111e79
+source-git-commit: 73a094f47f518e2782ac96357e1adc4e923a0b63
 workflow-type: tm+mt
-source-wordcount: '1968'
-ht-degree: 96%
+source-wordcount: '2322'
+ht-degree: 93%
 
 ---
 
 # Cloud Manager での外部リポジトリの追加 {#external-repositories}
 
+<!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
+
 Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
+
+お客様は、最新の Azure DevOps リポジトリと従来の VSTS （Visual Studio Team Services）リポジトリの両方をサポートすることで、Azure DevOps （Beta） Git リポジトリをCloud Managerにオンボーディングできるようになりました。
+
+* Edge Delivery Services のユーザーは、オンボードされたリポジトリを使用して、サイトコードを同期およびデプロイできます。
+* AEM as a Cloud Service および Adobe Managed Services（AMS）のユーザーは、リポジトリをフルスタックパイプラインとフロントエンドパイプラインの両方にリンクできます。
+
+>[!NOTE]
+>
+>この記事で説明されている Azure DevOps のサポートの追加は、プライベートベータ版プログラムを通じてのみ利用できます。 詳細およびベータ版登録方法については、[ 独自の Git の公開 ](/help/release-notes/current.md) を参照してください。
 
 ## 外部リポジトリの設定
 
@@ -54,7 +65,7 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
    | --- | --- |
    | **リポジトリ名** | 必須。新しいリポジトリのわかりやすい名前。 |
    | **リポジトリ URL** | 必須。リポジトリの URL。<br><br>GitHub でホストされているリポジトリを使用している場合は、パスの末尾を `.git` にする必要があります。<br> 例：*`https://github.com/org-name/repo-name.git`* （URL パスは説明用です）。<br><br>外部リポジトリを使用している場合は、次の URL パス形式を使用する必要があります。<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> または <br>`https://self-hosted-domain/org-name/repo-name.git`<br>。Git ベンダーと一致させる必要があります。 |
-   | **リポジトリタイプを選択** | 必須。使用するリポジトリタイプを選択します。<ul><li>**GitHub**（GitHub Enterprise と自己ホスト型バージョンの GitHub）</li><li>**GitLab**（`gitlab.com` と自己ホスト型バージョンの GitLab の両方） </li><li>**Bitbucket**（`bitbucket.org`（クラウドバージョン）のみがサポートされています。Bitbucket の自己ホスト型バージョンは、2024年2月15日（PT）以降に非推奨（廃止予定）になりました。）</li></ul>上記のリポジトリ URL パスに GitLab や Bitbucket などの Git ベンダー名が含まれている場合、リポジトリタイプは既に事前に選択されています。 |
+   | **リポジトリタイプを選択** | 必須。使用するリポジトリタイプを選択します。<ul><li>**GitHub**（GitHub Enterprise と自己ホスト型バージョンの GitHub）</li><li>**GitLab**（`gitlab.com` と自己ホスト型バージョンの GitLab の両方） </li><li>**Bitbucket**（`bitbucket.org`（クラウドバージョン）のみがサポートされています。Bitbucket の自己ホスト型バージョンは、2024年2月15日（PT）以降に非推奨（廃止予定）になりました。）</li></ul>上記のリポジトリ URL パスに GitLab や Bitbucket などの Git ベンダー名が含まれている場合、リポジトリタイプは既に事前に選択されています。</li><li>**Azure DevOps**（`dev.azure.com`） </ul> |
    | **説明** | オプション。リポジトリの詳細な説明です。 |
 
 1. 「**保存**」を選択して、リポジトリを追加します。
@@ -108,6 +119,19 @@ Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で
 
 [アクセストークンの管理](/help/managing-code/manage-access-tokens.md)も参照してください。
 
+>[!TAB Azure DevOps （Beta） ]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
+
+| 「アクセストークン」オプション | 説明 |
+| --- | --- |
+| **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。**トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。それ以外の場合は、新しいアクセストークンを追加します。 |
+| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Azure DevOps ドキュメント](https://learn.microsoft.com/ja-jp/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)を使用して、リポジトリアクセストークンを作成します。<li>Azure DevOps 個人アクセストークン（PAT）に必須の権限。<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントを構成または反応できるようになります。<br>Azure DevOps でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）</li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+
+検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
+
+[アクセストークンの管理](/help/managing-code/manage-access-tokens.md)も参照してください。
+
 >[!ENDTABS]
 
 
@@ -145,7 +169,7 @@ Cloud Manager では、追加した外部 Git リポジトリの webhook を設�
 
 Cloud Manager は GitHub アプリを通じて直接統合されるので、`GitHub.com` でホストされているリポジトリでは webhook 設定は必要ありません。
 
-GitHub Enterprise、GitLab、Bitbucket など、アクセストークンを使用してオンボードされる他のすべての外部リポジトリでは、webhook 設定が使用可能で、手動で設定する必要があります。
+GitHub Enterprise、GitLab、Bitbucket、Azure DevOps など、アクセストークンを使用してオンボードされるその他のすべての外部リポジトリでは、web フック設定が使用可能であり、手動で設定する必要があります。
 
 **外部リポジトリの webhook を設定するには：**
 
@@ -172,7 +196,7 @@ URL をプレーンテキストファイルにペーストします。コピー�
    1. 「**Webhook 秘密鍵**&#x200B;トークン／キー」フィールドの横にある「**生成**」をクリックし、![コピーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックします。
 秘密鍵をプレーンテキストファイルにペーストします。コピーした秘密鍵は、Git ベンダーの webhook 設定に必要です。
 1. 「**閉じる**」をクリックします。
-1. Git ベンダーソリューション（GitHub Enterprise、GitLab、Bitbucket）に移動します。
+1. Git ベンダーソリューション（GitHub Enterprise、GitLab、Bitbucket、Azure DevOps）に移動します。
 
    各ベンダーに必要な web フック設定とイベントについて詳しくは、[外部リポジトリの追加](#add-ext-repo)を参照してください。手順 8 のタブ付きの表を参照してください。
 
@@ -210,6 +234,14 @@ URL をプレーンテキストファイルにペーストします。コピー�
 | 必須の web フックイベント |
 | --- |
 | これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト：作成済み<li>プルリクエスト：更新済み<li>プルリクエスト：結合済み<li>プルリクエスト：コメント<li>リポジトリ：プッシュ</li></li></li></ul></ul></ul> |
+
+>[!TAB Azure DevOps （Beta） ]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
+
+| 必須の Webhook イベントと認証 |
+| --- |
+| これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>リポジトリ：プッシュ</li></ul>認証の設定：<br>1。「**基本認証ユーザー名**」フィールドに「`cloudmanager`」と入力します。<br>2. 「**基本認証パスワード**」フィールドに、Cloud Manager ユーザーインターフェイスから生成された Webhook シークレットを入力します。 |
 
 >[!ENDTABS]
 

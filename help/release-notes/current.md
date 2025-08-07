@@ -3,10 +3,10 @@ title: Cloud Manager 2025.8.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.8.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: d6f058c3f6dc010f08a5cb75a0fb152b56111e79
+source-git-commit: 73a094f47f518e2782ac96357e1adc4e923a0b63
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 62%
+source-wordcount: '625'
+ht-degree: 73%
 
 ---
 
@@ -57,7 +57,37 @@ Cloud ManagerのBeta プログラムに参加すると、一般リリース前�
 現在、以下の機能が利用可能です。
 
 
-### 独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました。 {#gitlab-bitbucket}
+### 独自の Git の導入（BYOG） {#gitlab-bitbucket-azure-vsts}
+
+<!-- BOTH CS & AMS -->
+
+Azure DevOps Git リポジトリを Cloud Manager にオンボードできるようになりました。これは、最新の Azure DevOps リポジトリとレガシー VSTS（Visual Studio Team Services）リポジトリの両方に対応しています。
+
+* Edge Delivery Services のユーザーは、オンボードされたリポジトリを使用して、サイトコードを同期およびデプロイできます。
+* AEM as a Cloud Service および Adobe Managed Services（AMS）のユーザーは、リポジトリをフルスタックパイプラインとフロントエンドパイプラインの両方にリンクできます。
+
+追加のパイプラインタイプと、コード品質パイプラインを通じたプルリクエスト検証のサポートは、近日リリース予定です。
+
+[Cloud Manager でのプライベートリポジトリの追加](/help/managing-code/external-repositories.md)を参照してください。
+
+![リポジトリを追加ダイアログボックス](/help/release-notes/assets/azure-repo.png)
+
+この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
+
+#### アクセストークンを管理{#manage-access-tokens}
+
+Cloud Managerで「**アクセストークンの管理**」を使用して、外部 BYOG リポジトリ (GitHub Enterprise、GitLab、Bitbucket、Azure DevOps など) に関連付けられたアクセストークンを表示、名前変更、削除します。
+
+[アクセストークンを管理](/help/managing-code/manage-access-tokens.md)をご覧ください。
+
+この新機能をテストしてフィードバックを共有することに関心がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) にメールを送信してください。
+
+
+
+
+
+
+
 
 **独自の Git を持ち込む** （BYOG）機能が拡張され、GitLab や Bitbucket などの外部リポジトリがサポートされるようになりました。 この新しいサポートは、プライベートおよびエンタープライズ GitHub リポジトリに対する既存のサポートに追加されます。 これらの新しいリポジトリを追加すると、パイプラインに直接リンクすることもできます。 これらのリポジトリは、パブリッククラウドプラットフォーム上や、プライベートクラウドまたはインフラストラクチャ内でホストできます。 また、この統合により、Adobe リポジトリと常にコード同期を行う必要がなくなり、プルリクエストをメイン分岐に結合する前に検証できるようになります。
 
