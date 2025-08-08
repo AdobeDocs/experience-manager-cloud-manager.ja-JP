@@ -3,10 +3,10 @@ title: Cloud Manager 2025.8.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.8.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: a96bc45242ee6c6b06b4354756a67562150f385c
+source-git-commit: 03e2a9b8cd1ad0a9446fc59a430895302fba21a3
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 73%
+source-wordcount: '405'
+ht-degree: 72%
 
 ---
 
@@ -80,10 +80,7 @@ Cloud Managerで「**アクセストークンの管理**」を使用して、外
 
 [アクセストークンを管理](/help/managing-code/manage-access-tokens.md)をご覧ください。
 
-この新機能をテストしてフィードバックを共有することに関心がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) にメールを送信してください。
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
-
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
 ## バグ修正 {#bug-fixes}
 
