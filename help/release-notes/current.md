@@ -3,10 +3,10 @@ title: Cloud Manager 2025.8.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.8.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 03e2a9b8cd1ad0a9446fc59a430895302fba21a3
+source-git-commit: b64b8529e4c6072c9bcb7438dc2d89098d29115d
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 72%
+source-wordcount: '474'
+ht-degree: 61%
 
 ---
 
@@ -31,7 +31,11 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.8.0 のリリース�
 
 ## 新機能 {#what-is-new}
 
+* **Adobe Experience Hub近日公開予定**
 
+  2025 年 8 月 19 日（PT）より、AdobeはすべてのAdobe Experience Manager ユーザーに対して新しいExperience Hubの段階的なロールアウトを開始します。
+
+  Experience Hubは、状況に応じたパーソナライズされたエクスペリエンスを提供し、ユーザーの目標達成を支援する統合的な出発点です。 このロールアウトは 2025 年 8 月 26 日（PT）までに終了し、すべてのユーザーが使用できるようになります。 新しいExperience Hubには、[experience.adobe.com](https://experience.adobe.com/) から直接アクセスできます。 詳しくは、[Adobe Experience Hub](/help/experience-hub.md) を参照してください。
 
 * **ステージング専用パイプラインと実稼動専用パイプライン**
 
