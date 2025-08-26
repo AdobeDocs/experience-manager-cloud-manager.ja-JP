@@ -1,12 +1,13 @@
 ---
 title: Experience Hubについて
 description: Adobe Experience Hubのページについて説明します。
-hide: true
-hidefromtoc: true
-source-git-commit: b64b8529e4c6072c9bcb7438dc2d89098d29115d
+hide: false
+hidefromtoc: false
+exl-id: adc8996f-671a-4018-a195-1212ea662284
+source-git-commit: 2a67253253bb06b888bc0283d07838a6f0779532
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 7%
+source-wordcount: '547'
+ht-degree: 5%
 
 ---
 
@@ -14,9 +15,9 @@ ht-degree: 7%
 
 Experience Hubは、Adobe Experience Manager内のコンテンツ、アセット、サイトを一元的に管理するための出発点となります。 Experience Hubはパーソナライズされたエクスペリエンスを提供するように設計されており、ユーザーの役割と目標に応じてAEM エコシステムをシームレスに移動できます。 ガイドとして機能し、目的を効率的に達成するのに役立つ重要なインサイトと推奨されるアクションを提供します。明確なペルソナ駆動型のレイアウトにより、Experience Hubは重要なツールにすばやくアクセスでき、すべてのAEM機能で合理化された効果的なエクスペリエンスをサポートします。
 
-再考されたAEM Experience Hub Workspace のクイックツアー（1 分 27 秒）をご覧ください。
+再考されたAEM Experience Hub Workspace のクイックツアー（2 分 19 秒）をご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463268?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3470957?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -27,8 +28,8 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
    ![Adobe Experience Cloudのホームページ ](/help/assets/experience-cloud-experiencemanager.png)
 
-1. **クイックアクセス** グループ化で、**Experience Manager** をクリックします。
-1. **操作を教える** ページで目的のオプションをクリックして、Adobeがエクスペリエンスをカスタマイズできるようにします。
+1. **クイックアクセス** グループ化で、[**Experience Manager**](https://experience.adobe.com) をクリックします。
+1. 初めてアクセスするときは、「**操作を教えてください** ページで目的のオプションをクリックして、Adobeがエクスペリエンスをカスタマイズできるようにします。
 
    この環境設定はいつでも変更できます。
 
@@ -43,9 +44,17 @@ Adobe Experience Managerページが更新され、ナビゲーションが強�
 * Extension Manager
 * Brand Portal
 
-これらのソリューションは、「ツール **の下のメインナビゲーションに移動** ました。 さらに、{Sites **と** 2}Assets&rbrace; の新しいナビゲーション要素により **Assets、コレクション、Sites、コンテンツフラグメントなどのAdobe Experience Managerの主要機能にすばやくアクセスできます。**&#x200B;これらの機能は、アクセス権のあるプライマリ実稼動環境で使用できます。
+>[!IMPORTANT]
+>
+>表示されるウィジェット、ツールおよびアーティファクトは、ユーザーのペルソナ、使用権限およびAEM デプロイメントタイプ（AEM as a Cloud ServiceまたはManaged Services 6.5/6.5 LTS）によって異なります。
+
+これらのソリューションは、**ツール** または **サービス** の下のメインナビゲーションに移動しました。 さらに、新しいナビゲーション要素を使用すると、有効になっているソリューション（Assets、Sites、Forms、コンテンツフラグメント、ローンチなど）に固有の主なAdobe Experience Manager機能にすばやくアクセスできます。
 
 ![Experience Hub環境 ](/help/assets/experience-hub-author-environments.png)
+
+これらの機能は、アクセス権のあるプライマリ実稼動環境で使用できます。または、複数のAEM インスタンスにアクセスできる場合は、ターゲットにする特定の環境を選択できます。
+
+![ 実稼動環境とステージ環境 ](/help/assets/experience-hub-prod-stage.png)
 
 Adobe Experience Managerの中央ハブとして機能するExperience Hub ページには、各ユーザーロールに合わせた追加のウィジェットとアクションが拡張されています。 ページは完全にカスタマイズ可能で、画面に最適なレイアウトを選択できます。 ウィジェットをフィルタリングして、選択したウィジェットのみをメインページに表示し、パーソナライズされたエクスペリエンスを提供できます。
 
@@ -55,15 +64,21 @@ Adobe Experience Managerの中央ハブとして機能するExperience Hub ペ�
 
 ![Experience Hub ウィジェット ](/help/assets/experience-hub-widgets.png)
 
-「**オーサリング環境**」セクションには、アクセス可能なすべてのAEM環境が表示され、「**最近**」セクションには、AEM システム内で追跡された最近訪問したページのリストが表示されます。
+「**オーサリング環境**」セクションには、アクセス可能なすべてのAEM環境が表示され、使用可能なソリューションやページへの特定のショートカットも含まれています。また、リストの上部に表示する特定の環境をピン留めすることもできます。
 
-ナビゲーション要素にはAssets参照が含まれます。この参照は、ユーザーからアクセス可能な実稼動環境のリポジトリを読み込みます。
+次の図に示す **最近** セクションには、AEMで最近アクセスしたページが一覧表示されます。 テナントのライセンスに応じて、プログラム、パイプライン実行、Assets、ページエディター、フォームエディターなどがウィジェットに含まれる場合があります。
 
-![Experience Hub ナビゲーション要素 ](/help/assets/experience-hub-navigation.png)
+ページの左上隅付近にある **クイックショートカット** には、日々のタスクの開始に役立つ、設定可能なショートカットのリストが用意されています。 このリストはカスタマイズ可能で、各アクションは選択したAEM環境をターゲットにします。
 
-使用可能な実稼動 AEM Cloud Service 環境がない場合、ユーザーのオプションはグレー表示（使用不可）になります。
+![ オーサリング環境 ](/help/assets/experience-hub-recents.png)
+
+![Experience Hubのクイックショートカット ](/help/assets/experience-hub-quick-shortcuts.png)
+
+AEM Cloud Service またはManaged Servicesの実稼動環境が存在しない場合は、選択オプションがグレー表示され選択できません。
 
 ![Experience Hub実稼動環境がありません ](/help/assets/experience-hub-no-prod-environs.png)
 
+<!--
+## AI Assistant in AEM 6.5
 
-
+For customers who have [completed pre-requisite criteria](/help/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/ai-assistant-in-aem.md). -->

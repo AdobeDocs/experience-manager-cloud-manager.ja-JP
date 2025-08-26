@@ -3,10 +3,10 @@ title: Cloud Manager 2025.8.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.8.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: b64b8529e4c6072c9bcb7438dc2d89098d29115d
+source-git-commit: b34fe26f8c9a2d59a7df3d03717f302fe4456352
 workflow-type: tm+mt
 source-wordcount: '474'
-ht-degree: 61%
+ht-degree: 63%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.8.0 のリリース�
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-次回のリリース予定は 2025年9月4日（PT）です。
+次回のリリース予定は 2025年9月4日木曜日（PT）です。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
@@ -61,7 +61,7 @@ Cloud ManagerのBeta プログラムに参加すると、一般リリース前�
 現在、以下の機能が利用可能です。
 
 
-### 独自の Git の導入（BYOG） {#gitlab-bitbucket-azure-vsts}
+### Bring Your Own Git (BYOG) {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -88,7 +88,7 @@ Cloud Managerで「**アクセストークンの管理**」を使用して、外
 
 ## バグ修正 {#bug-fixes}
 
-7 月のCloud Manager リリースには重要なバグ修正はありません。
+Cloud Managerの 8 月のリリースには、重要なバグ修正はありません。
 
 <!--
 Known Issues {#known-issues}
