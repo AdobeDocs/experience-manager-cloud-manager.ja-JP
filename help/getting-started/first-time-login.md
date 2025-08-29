@@ -20,7 +20,7 @@ ht-degree: 88%
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
-1. [experience.adobe.com](https://experience.adobe.com/experiencemanager) でCloud Managerにログインします。 詳しくは、[Adobe Experience Hubについて ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) を参照してください。
+1. [experience.adobe.com](https://experience.adobe.com/experiencemanager) でCloud Managerにログインします。 詳しくは、[Adobe Experience Hubについて ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/experience-hub/experience-hub) を参照してください。
 1. 左側のパネルで、「**Cloud Manager**」をクリックします。
 
    ![Experience Managerの左側のパネルのCloud Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
