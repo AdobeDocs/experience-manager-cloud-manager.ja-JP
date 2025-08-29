@@ -2,10 +2,10 @@
 title: 初回ログイン
 description: 一般設定をセットアップし、Cloud Manager を初めて使用する準備が整っている場合は、このページの手順に従ってください。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '293'
-ht-degree: 100%
+source-git-commit: 89fa72fb3950f6040f42066fdcbca3a61bb76f5b
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 88%
 
 ---
 
@@ -20,15 +20,22 @@ ht-degree: 100%
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
-1. [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインすると、プログラムのリストが表示されます。
+1. [experience.adobe.com](https://experience.adobe.com/experiencemanager) でCloud Managerにログインします。 詳しくは、[Adobe Experience Hubについて ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) を参照してください。
+1. 左側のパネルで、「**Cloud Manager**」をクリックします。
 
-   ![Cloud Manager コンソール](/help/assets/cloud-manager-console.png)
+   ![Experience Managerの左側のパネルのCloud Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
 
-1. プログラムのカードをクリックすると、Cloud Manager の&#x200B;**概要**&#x200B;ページに移動できます。
+<!-- 
+1. Log into Cloud Manager at [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and you see your list of programs.
 
-1. Cloud Manager が開いて、**概要**&#x200B;ページが表示されます。
+   ![Cloud Manager console](/help/assets/cloud-manager-console.png)
 
-   ![Cloud Manager の概要ページ](/help/assets/program-overview-page.png)
+1. Click your program's card to navigate to Cloud Manager's **Overview** page. 
+
+1. Cloud Manager opens to the **Overview** page.
+
+   ![Cloud Manager overview page](/help/assets/program-overview-page.png) -->
+
 
 1. プログラムをまだ設定していない場合は、[コールトゥアクション](/help/getting-started/navigation.md#cta)の「**プログラムを設定**」をクリックして、プログラムの説明を設定し、主要業績評価指標（KPI）を定義します。プログラムを既に設定している場合は、CTA で追加の次の手順を提供する場合があります。
 

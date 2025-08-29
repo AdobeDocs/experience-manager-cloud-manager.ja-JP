@@ -2,10 +2,10 @@
 title: Cloud Manager UI の操作
 description: Cloud Manager UI の整理方法と、プログラムと環境を管理する操作方法について説明します。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+source-git-commit: 5cde30f97eb4fb9e784179cb85fba36eccca9dbc
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 96%
+source-wordcount: '1501'
+ht-degree: 61%
 
 ---
 
@@ -21,26 +21,20 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 ## マイプログラムコンソール {#my-programs-console}
 
-[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択すると、**マイプログラム**&#x200B;コンソールが表示されます。
+[experience.adobe.com](https://experience.adobe.com/experiencemanager) でCloud Managerにログインし、適切な組織を選択すると、**マイプログラム** コンソールに移動します。
 
-![マイプログラムコンソール](assets/my-programs-console.png)
+![マイプログラムコンソール](/help/getting-started/assets/cloud-manager-my-programs-console.png)
 
-マイプログラムコンソールには、選択した組織でアクセス権を持つすべてのプログラムの概要が表示されます。複数のパーツで構成されます。
+**マイプログラム** コンソールには、選択した組織でアクセス権を持つすべてのプログラムの概要が表示されます。 複数のパーツで構成されます。
 
-1. [ツールバー](#toolbars-my-programs-toolbars)：組織の選択、アラート、アカウント設定を行います。
-1. プログラムの現在のビューを切り替えることができるタブ。
+|   | 領域 | 説明 |
+| --- | --- | --- |
+| 1 | [ ツールバー ](#toolbars-my-programs-toolbars) | 組織の選択、アラート、アカウント設定に使用します。 |
+| 2 | 左側のパネルタブ | プログラムの現在の表示を切り替えるための様々なタブ。以下に例を示します。<br><ul><li>**Experience Manager** 様々なAEM ソリューションのホームページを開きます</li><li>**すべてのプログラム**：使用可能なすべてのプログラムが表示されます。</li><li>**ライセンス** ライセンスダッシュボードを開きます。 ライセンスダッシュボードは、*AEM as a Cloud Service プログラム* （AEMaaCS）にのみ適用され、AEM 6.5 やAEM 6.5 LTS などのAdobe Managed Services プログラムには適用されません。 プログラムのサービスの種類（AEMaaCS または AMS）を確認するには、この記事の [ プログラムカード ](#program-cards) の節を参照してください。 タブはデフォルトで閉じられ、![Cloud Manager ヘッダーの左側にある ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) メニューアイコン、ハンバーガーを表示 [ ドロップダウンメニューを使用して表示でき ](#cloud-manager-header) す。</li></ol> |
+| 3 | [ マイプログラム ](#my-programs-section) | 選択可能なすべての使用可能なプログラムを一覧表示します。<br> プログラムについて詳しくは、[ プログラムとプログラムタイプ ](/help/getting-started/program-setup.md) を参照してください。 |
+| 4 | [ コールトゥアクションと統計 ](#cta-statistics) | 最近のアクティビティの概要が表示されます。 |
+| 5 | [ クイックリンク ](#quick-links) | 関連リソースへのクイックアクセス。 |
 
-   * **ホーム**&#x200B;ビュー（デフォルト）：すべてのプログラムの概要を表示する&#x200B;**マイプログラム**&#x200B;ビューを選択します。
-   * **ライセンス**：ライセンスダッシュボードにアクセスします。ライセンスダッシュボードは、AMS プログラムではなく、*AEM as a Cloud Service プログラム*（AEMaaCS）にのみ適用されます。プログラムが備えているサービスのタイプ（AEMaaCS または AMS）を特定するには、この記事の[プログラムカードの節](#program-cards)を参照してください。
-   * タブはデフォルトで閉じられていますが、[Cloud Manager ヘッダー](#cloud-manager-header)の左側にあるハンバーガーアイコンのドロップダウンメニューを使用して表示できます。
-
-1. [コールトゥアクションと統計](#cta-statistics)：最近のアクティビティの概要を確認します。
-1. [**「マイプログラム」**&#x200B;セクション](#my-programs-section)：すべてのプログラムの概要を表示します
-1. [クイックリンク](#quick-links)：関連するリソースに簡単にアクセスします。
-
->[!TIP]
->
->プログラムについて詳しくは、[プログラムとプログラムタイプ](/help/getting-started/program-setup.md)を参照してください。
 
 ### ツールバー {#my-programs-toolbars}
 
@@ -50,29 +44,44 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 1 つ目は Cloud Manager ヘッダーです。このヘッダーは、Cloud Manager を操作する際に保持されます。Cloud Manager プログラム全体に適用される設定と情報にアクセスできるアンカーです。
 
-![Experience Cloud ヘッダー](assets/experience-cloud-header.png)
+![Experience Cloud ヘッダー](/help/getting-started/assets/cloud-manager-header.png)
 
-1. ヘッダーの左側にある ![ メニューアイコン、ハンバーガーを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) アイコンは、個々のプログラムの特定部分のタブにアクセスできるドロップダウンメニューです。 コンテキストに応じてライセンスダッシュボードと&#x200B;**[マイプログラム](#my-programs-console)**&#x200B;コンソールを切り替えることもできます。
-   * ライセンスダッシュボードは、AMS プログラムではなく、AEM as a Cloud Service プログラムにのみ適用されます。
-   * プログラムが備えているサービスのタイプ（AMS または AEMaaCS）を特定するには、このドキュメントの[プログラムカードの節](#program-cards)を参照してください。
-1. Cloud Manager ボタンをクリックすると、Cloud Manager のどこにいても、Cloud Manager のマイプログラムコンソールコンソールに戻ります。
-1. Cloud Manager に関するフィードバックをアドビに送信するには、「**フィードバック**」をクリックします。
-1. 組織セレクターには、現在ログインしている組織（この例では、Foundation 内部）が表示されます。Adobe ID が複数の組織に関連付けられている場合、別の組織に切り替えるには、クリックします。
-1. ソリューション切り替えボタンをクリックすると、他の Experience Cloud ソリューションに素早くジャンプできます。
-1. ヘルプアイコンを使用すると、学習リソースやサポートリソースに素早くアクセスできます。
-1. 通知アイコンには、現在割り当てられている未完了の[通知](/help/using/notifications.md)の数を示すバッジが付きます
-1. ユーザー設定にアクセスするには、ユーザーを表すアイコンを選択します。ユーザー画像を選択しない場合、アイコンがランダムに割り当てられます。
+|   | 領域 | 説明 |
+| --- | --- | --- |
+| 1 | ![ メニューアイコン、ハンバーガーを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | 個々のプログラムの特定の部分のタブにアクセスできるドロップダウンメニュー。<br> プログラムのサービスの種類（AMS または AEMaaCS）を確認するには、このドキュメントの [ プログラムカードの節 ](#program-cards) を参照してください。 |
+| 2 | Adobe Cloud Manager | Cloud Managerのどこにいても、Cloud Managerの **マイプログラム** コンソールをクリックして開きます。 |
+| 3 | 選択した組織 | 組織セレクターには、現在ログインしている組織（この例では、Foundation 内部）が表示されます。Adobe IDが複数の組織に関連付けられている場合、クリックすると別の組織に切り替わります。 |
+| 4 | フィードバックアイコン | クリックして、Cloud Managerに関するフィードバックをAdobeに送信します。 |
+| 5 | AI アシスタント アイコン | は、AEM関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。 [AI アシスタント ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) を参照してください |
+| 6 | ![ヘルプアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | クリックすると、学習リソースやサポートリソースにすばやくアクセスできます。 |
+| 7 | ![ ベルアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) | クリックすると、現在割り当てられている未完了 [ 通知 ](/help/using/notifications.md) の数が表示されます |
+| 8 | ![ アプリアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | クリックすると、AEMのホームページとAEM ソリューションをすばやく切り替えることができます |
+| 9 | アプリアイコン | クリックして **アカウント設定** および **プログラム設定** にアクセスするか、サインアウトします。 |
+
+
+<!--
+1. The ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) icon on the left side of the header is  
+   * The License Dashboard only applies to AEM as a Cloud Service programs, not AMS programs.
+   * To determine the type of service your program has (AMS or AEMaaCS), see the [Program Cards section](#program-cards) of this document.
+1. The **Adobe Cloud Manager** button takes you back to the **My Programs** console of Cloud Manager no matter where you are in Cloud Manager.
+1. Click **Feedback** to provide feedback to Adobe about Cloud Manager.
+1. The organization selector displays the organization that you are currently signed into (in this example, Foundation Internal). Click to switch to another organization if your Adobe ID is associated with multiple.
+1. Clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
+1. The Help icon provides quick access to learning and support resources.
+1. The notifications icon is badged with the number of currently assigned incomplete [notifications](/help/using/notifications.md)
+1. Select the icon representing your user to access your user settings. If you do not select a user picture, an icon is randomly assigned. -->
 
 #### プログラムツールバー {#program-toolbar}
 
 プログラムツールバーには、Cloud Manager プログラムとコンテキストに適したアクションを切り替えるリンクが表示されます。
 
-![プログラムツールバー](assets/program-toolbar.png)
+![Cloud Manager プログラムツールバー ](/help/getting-started/assets/cloud-manager-programs-toolbar.png)
 
-1. プログラムセレクターが開き、ドロップダウンで他のプログラムをすばやく選択したり、新しいプログラムの作成など、コンテキストに適したアクションを実行したりできます。
-1. 「はじめに」リンクから、[オンボーディングドキュメントジャーニー](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/overview)にアクセスして、Cloud Manager を使い始めることができます。
-オンボーディングジャーニーは、Adobe Experience Manager as a Cloud Service（AEMaaCS）上の Cloud Manager 向けに設計されています。Adobe Managed Services（AMS）上の Cloud Manager 向けではありません。ただし、多くの概念は同じです。
-1. アクションボタンを使用すると、新しいプログラムの作成など、コンテキストに適したアクションを実行できます。
+|   | 領域 | 説明 |
+| --- | --- | --- |
+| 1 | マイプログラム | ドロップダウンリストをクリックして開きます。このドロップダウンリストでは、プログラムを追加するか、他の既存のプログラムを選択するか、Experience Managerのホームページに戻ることができます。 |
+| 2 | はじめに | クリックして [ オンボーディングドキュメントジャーニー ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/overview) にアクセスし、Cloud Managerを使い始めます。<br> オンボーディングジャーニーは、Adobe Experience Manager as a Cloud ServiceのCloud Manager（AEMaaCS）向けに設計されており、Adobe Managed ServicesのCloud Manager（AMS）向けではありません。 ただし、多くの概念は同じです。 |
+| 3 | 動的アクションボタン | アクションボタンは、プログラムの追加、ドメインの追加、SSL 証明書の追加など、コンテキストに適したアクションを提供します。 |
 
 ### コールトゥアクションと統計 {#cta-statistics}
 
@@ -88,21 +97,18 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 マイプログラムコンソールのメインコンテンツは、プログラムを個々のカードとしてリストする「**マイプログラム**」セクションです。カードをクリックすると、**プログラムの概要**&#x200B;ページにアクセスしてプログラムの詳細を確認できます。
 
->[!NOTE]
->
->権限によっては、特定のプログラムを選択できない場合があります。
+権限によっては、特定のプログラムを選択できない場合があります。
 
-必要なプログラムを見つけやすくするには、次の並べ替えオプションを使用します。
+次の並べ替えオプションを使用すると、必要なプログラムをすばやく見つけることができます。
 
 ![並べ替えオプション](assets/my-programs-sorting.png)
 
-* 並べ替え
-   * 作成日（デフォルト）
+* 並べ替え：
+   * 作成日
    * プログラム名
    * ステータス
-* 昇順（デフォルト）／降順
-* グリッド表示（デフォルト）
-* リスト表示
+* ![ 並べ替え順の下のアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![ 並べ替え順の上のアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg) プログラムをそれぞれ下または上に並べ替えます。
+* ![ クラシックグリッド表示アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) / ![ テキスト箇条書きアイコンまたはリスト ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TextBulleted_18_N.svg) プログラムをそれぞれグリッド形式またはリスト形式で表示します。
 
 #### プログラムカード {#program-cards}
 
@@ -157,11 +163,9 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 #### Cloud Manager ヘッダー {#cloud-manager-header-2}
 
-Cloud Manager ヘッダーには、自動的に開くハンバーガーアイコンのドロップダウンメニューがあり、プログラムの概要の移動可能なタブを表示できます。
+Cloud Managerのヘッダーには、自動的に開く ![ メニューアイコン、ハンバーガーを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) ドロップダウンメニューがあり、プログラムの概要のナビゲート可能なタブを表示します。
 
-![Cloud Manager ハンバーガーアイコンのドロップダウンメニュー](assets/cloud-manager-hamburger.png)
-
-ハンバーガーアイコンをクリックすると、タブを非表示にできます。
+![ メニューアイコン、ハンバーガーを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、タブを非表示にします。
 
 #### プログラムツールバー {#program-toolbar-2}
 
@@ -169,7 +173,7 @@ Cloud Manager ヘッダーには、自動的に開くハンバーガーアイコ
 
 ![プログラムツールバー](assets/cloud-manager-program-toolbar.png)
 
-また、ハンバーガーアイコンを使用してタブを非表示にした場合でも、現在使用しているタブがツールバーに表示されます。
+さらに、![ メニューアイコン、ハンバーガーを表示 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) を使用してタブを非表示にした場合でも、現在表示しているタブをツールバーに表示できます。
 
 ### プログラムタブ {#program-tabs}
 
@@ -187,7 +191,7 @@ Cloud Manager ヘッダーには、自動的に開くハンバーガーアイコ
 
 デフォルトでは、プログラムを開くと、「**概要**」タブが表示されます。現在のタブがハイライト表示されます。別のタブを選択すると、その詳細が表示されます。
 
-[Cloud Manager ヘッダー](#cloud-manager-header-2)のハンバーガーアイコンを使用すると、タブが非表示になります。
+タブを非表示にするには、![Cloud Manager ヘッダーにある ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) メニューアイコン、ハンバーガーを表示 [ を使用 ](#cloud-manager-header-2) ます。
 
 ### コールトゥアクション {#cta}
 
