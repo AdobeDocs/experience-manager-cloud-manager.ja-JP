@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager を使用して、クラウド内の AMS �
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 3c4df2a4b935288e90b7e8b560fb5c609b7f8f92
+source-git-commit: 5df4852716a608c7497e93eef030b4b5bd27d42b
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 90%
+source-wordcount: '379'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 # Cloud Manager のドキュメント {#content}
 
 + [AMS 用の Cloud Manager](/help/introduction.md)
-+ [Experience Hub](/help/experience-hub.md)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + 概要 {#overview}
    + [主な概念](/help/overview/key-concepts.md)
    + [ユーザージャーニー](/help/overview/user-journey.md)
