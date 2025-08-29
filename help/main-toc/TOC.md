@@ -18,7 +18,7 @@ ht-degree: 91%
 # Cloud Manager のドキュメント {#content}
 
 + [AMS 用の Cloud Manager](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/experience-hub/experience-hub)
 + 概要 {#overview}
    + [主な概念](/help/overview/key-concepts.md)
    + [ユーザージャーニー](/help/overview/user-journey.md)
