@@ -3,10 +3,10 @@ title: Cloud Manager でのプライベートリポジトリの追加
 description: 独自のプライベート GitHub リポジトリを操作する Cloud Manager を設定する方法について説明します。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: 34c0b39d50dd4998cb75cc032d71d24798dee729
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 93%
+source-wordcount: '826'
+ht-degree: 90%
 
 ---
 
@@ -131,9 +131,9 @@ Cloud Manager で GitHub リポジトリを検証すると統合が完了し、C
 
 Cloud Manager でプライベートリポジトリを使用する場合は、特定の制限が適用されます。
 
-* Web 階層および設定パイプラインは、プライベートリポジトリではサポートされていません。
 * 実稼動のフルスタックパイプラインでプライベートリポジトリを使用する場合、Git タグは作成およびプッシュされません。
 * Adobe GitHub アプリを GitHb 組織から削除すると、このアクションはすべてのリポジトリのプルリクエスト検証機能を削除します。
 * プライベートリポジトリを使用するパイプラインと、コミット済みのビルドトリガーは、新しいコミットが選択したブランチにプッシュされても、自動的には開始されません。
 * [アーティファクト再利用機能](/help/getting-started/project-setup.md#build-artifact-reuse)は、プライベートリポジトリには適用されません。
 * Cloud Manager の GitHub チェックを使用して、プルリクエストの検証を一時停止することはできません。GitHub リポジトリが Cloud Manager で検証されている場合、Cloud Manager は、そのリポジトリに対して作成されたプルリクエストの検証を試みます。
+* GitHub 組織が IP 制限を実施する場合は、サポートケースを開いて、許可する必要がある IP アドレスのリストを取得します。

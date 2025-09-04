@@ -1,33 +1,35 @@
 ---
-title: プライベートリポジトリの GitHub チェック設定
+title: プライベートリポジトリのプルリクエストチェック
 description: プライベートリポジトリへの各プルリクエストを検証する自動的に作成されるパイプラインを制御する方法について説明します。
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '236'
-ht-degree: 100%
+source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 92%
 
 ---
 
-# プライベートリポジトリの GitHub チェック設定 {#github-check-config}
+# プライベートリポジトリのプルリクエストチェック {#github-check-config}
+
+<!--OLD TITLE THAT I THOUGHT WAS BETTER Check configuration for private repositories -->
 
 プライベートリポジトリへの各プルリクエストを検証する自動的に作成されるパイプラインを制御する方法について説明します。
 
-## GitHub チェック設定 {#configuration}
+## プライベートリポジトリのチェックの設定 {#configuration}
 
-[プライベートリポジトリ](private-repositories.md#using)を使用すると、[フルスタックコード品質パイプライン](/help/overview/ci-cd-pipelines.md)が自動的に作成されます。このパイプラインは、プルリクエストの更新のたびに開始されます。
+[プライベートリポジトリ](private-repositories.md#using)を使用すると、[フルスタックコード品質パイプライン](/help/overview/ci-cd-pipelines.md)が自動的に作成されます。このパイプラインは、プルリクエストを更新するたびに開始されます。
 
 プライベートリポジトリのデフォルトブランチに `.cloudmanager/pr_pipelines.yml` ファイルを作成して、これらのチェックを制御できます。
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
 pipelines:
   - type: CI_CD
     template:
       programId: 1234
       pipelineId: 456
-    namePrefix: Full Stack Code Quality Pipeline for PR 
+    namePrefix: Full Stack Code Quality Pipeline for PR
     importantMetricsFailureBehavior: CONTINUE
 ```
 
