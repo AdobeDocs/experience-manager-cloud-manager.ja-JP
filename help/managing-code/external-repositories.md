@@ -2,7 +2,7 @@
 title: Cloud Manager での外部リポジトリの追加
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket、 Azure DevOps リポジトリとの統合をサポートしています。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
+source-git-commit: 76a5cb04514bc1961c8f9008e9bea5d1d6fe1c19
 workflow-type: tm+mt
 source-wordcount: '2453'
 ht-degree: 90%
@@ -318,8 +318,6 @@ Azure DevOps は、ステータスチェックを通じてプルリクエスト�
 
 ![Webhook-4 を使用したプルリクエストの Azure DevOps 検証 ](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
 
-
->[!ENDTABS]
 
 >[!ENDTABS]
 
