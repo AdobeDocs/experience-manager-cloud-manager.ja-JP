@@ -2,10 +2,10 @@
 title: AMS 用 Cloud Manager の概要
 description: ここでは、Adobe Managed Services（AMS）用 Cloud Manager の概要と、組織がクラウドで Adobe Experience Manager を自己管理できるようにする仕組みについて説明します。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
-workflow-type: ht
-source-wordcount: '1256'
-ht-degree: 100%
+source-git-commit: 8f29a06f63b8dc10cb3d28e2f38da1ead84f32f5
+workflow-type: tm+mt
+source-wordcount: '1250'
+ht-degree: 95%
 
 ---
 
@@ -34,26 +34,23 @@ Adobe Experience Manager の [!UICONTROL Cloud Manager] を使用すると、開
 Cloud Manager を使用すると、開発チームは次の機能を利用できます。
 
 * コードの継続的インテグレーションおよび継続的デリバリー（CI/CD）により、数週間、数か月かかっていた市場投入時間を数時間、数日に短縮します。
-
 * 実稼動にプッシュする前に、ベストプラクティスに基づいたコード検査、パフォーマンステストおよびセキュリティ検証を行い、実稼動の中断を最小限に抑えることができます。
-
 * 既存の DevOps プロセスを補完する API 接続
-
 * 自動スケーリング機能により、容量増加の必要性をインテリジェントに検出し、Dispatcher／パブリッシュの追加セグメントを自動的にオンラインにします。
 
 ![CI/CD フロー](/help/assets/screen_shot_2018-05-12at73843pm.png)[!UICONTROL Cloud Manager] で使用される CI/CD プロセスフロー。
 
 ## [!UICONTROL Cloud Manager] の主な機能 {#key-features-in-cloud-manager}
 
-次に Cloud Manager の選択した主な機能について詳しく説明します。
+以下の節では、Cloud Managerの主な機能について重点的に説明します。
 
 ### セルフサービスインターフェイス {#self-service-interface}
 
-[!UICONTROL Cloud Manager] のユーザーインターフェイス（UI）を使用すると、Adobe Experience Manager アプリケーションのクラウド環境および CI/CD パイプラインに簡単にアクセスして管理できます。
+[!UICONTROL Cloud Manager] の UI を確認して使用を開始する方法について詳しくは、[初回ログイン](/help/getting-started/first-time-login.md)を参照してください。
+
+[!UICONTROL Cloud Manager] のユーザーインターフェイス （UI）を使用すると、Adobe Experience Manager アプリケーションのクラウド環境および CI/CD パイプラインに簡単にアクセスして管理できます。
 
 1 分あたりのピークページビュー数とページ読み込みに対する予想応答時間など、アプリケーション特有の主要業績評価指標（KPI）を定義します。これらの KPI は、デプロイメントの成功を測定する基盤として機能します。様々なチームメンバーの役割と権限を簡単に定義できます。セルフサービスインターフェイスによって、完全に制御できます。また、ベストプラクティスリソースへのリンクや、必要に応じてアドビのエキスパートからガイダンスを受けるアクセスも提供します。
-
-[!UICONTROL Cloud Manager] の UI を確認して使用を開始する方法について詳しくは、[初回ログイン](/help/getting-started/first-time-login.md)を参照してください。
 
 ### CI/CD パイプライン {#ci-cd-pipeline}
 
@@ -105,14 +102,14 @@ Cloud Manager には、特定の環境設定やニーズに応じた、プロジ
 ブルー／グリーンデプロイメントが有効な場合、デプロイメントフローは標準の Cloud Service デプロイメントフローとは異なります。
 
 | ステップ | ブルー／グリーンデプロイメント | 標準デプロイメント |
-|---|---|---|
+| --- | --- | --- |
 | 1 | オーサーへのデプロイメント | オーサーへのデプロイメント |
 | 2 | テスト用に一時停止 | - |
 | 3 | グリーンのインフラストラクチャが作成されます | - |
-| 4 | グリーンのパブリッシュ層／Dispatcher 層へのデプロイメント | パブリッシャーへのデプロイメント |
+| 4 | グリーンのパブリッシュ層/Dispatcher層へのデプロイメント | パブリッシャーへのデプロイメント |
 | 5 | テスト用に一時停止（最大 24 時間） | - |
 | 6 | グリーンのインフラストラクチャが実稼動用ロードバランサーに追加されます | - |
-| 7 | ブルーのインフラストラクチャが実稼働用ロードバランサーから削除されます - |
+| 7 | ブルーのインフラストラクチャが実稼動ロードバランサーから削除されます | - |
 | 8 | 最終的なサインオフ用に一時停止（最大 24 時間） | - |
 | 9 | ブルーのインフラストラクチャは自動的に終了します | - |
 | 10 | パイプライン完了 | - |
