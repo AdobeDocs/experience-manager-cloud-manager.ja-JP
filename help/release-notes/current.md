@@ -3,10 +3,10 @@ title: Cloud Manager 2025.9.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.9.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 68e546c1337122f823d63529ebd68d6966bb132a
+source-git-commit: 24ec1d82f9a700b57cd74c2c83c8d9d00b8bece1
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 75%
+source-wordcount: '376'
+ht-degree: 72%
 
 ---
 
@@ -31,13 +31,13 @@ Adobe Managed Services の [!UICONTROL Cloud Manager] 2025.9.0 のリリース�
 
 ## 新機能 {#what-is-new}
 
-* **Azure DevOps プライベートリポジトリのサポートが追加されました**
+* **Azure DevOps （プライベートリポジトリ）のサポートが追加されました**
 
   ドキュメントの更新には、Azure DevOps で独自の Git を取り込むための設定手順や、プルリクエストの検証が含まれています。 [Cloud Managerへの外部リポジトリの追加 ](/help/managing-code/external-repositories.md) を参照してください。
 
-* **プライベートリポジトリのプルリクエストチェック**
+* **独自の Git （BYOG）サポートを設定パイプライン（プライベートリポジトリ）に拡張**
 
-  Cloud Managerは、GitHub、Bitbucket、Azure DevOps、GitLab をまたいだプライベートリポジトリを使用した設定パイプラインをサポートするようになりました。 ![ プライベートリポジトリのプルリクエストチェック ](/help/managing-code/github-check-config.md) を参照してください。
+  Cloud Managerは、GitHub、Bitbucket、Azure DevOps、GitLab をまたいだプライベートリポジトリを使用した設定パイプラインをサポートするようになりました。 このサポートにより、開発サイクルがさらに加速します。 ![ プライベートリポジトリのプルリクエストチェック ](/help/managing-code/github-check-config.md) を参照してください。
 
 ## Beta プログラム {#beta-program}
 
