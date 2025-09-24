@@ -2,10 +2,10 @@
 title: ステージング専用パイプラインと実稼動専用パイプラインの分割
 description: 専用パイプラインを使用してステージングデプロイメントと実稼動デプロイメントを分割する方法について説明します。
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 34c0b39d50dd4998cb75cc032d71d24798dee729
+source-git-commit: 92237ea156e3921b5dc55cea3abdecee9d26b14b
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 96%
 
 ![ステージング専用パイプラインの実行](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-「**ビルドを昇格**」をクリックすると、関連するステージング専用パイプラインの実行を、通常または[緊急モード](#emergency-mode)で確認するように求められます。
+**構築を昇格** をクリックすると、関連する実稼動専用パイプラインの実行を、通常または [ 緊急モード ](#emergency-mode) で確認するように求められます。
 
 実稼動専用パイプラインが存在しない場合は、パイプラインを作成するよう求められます。
 
