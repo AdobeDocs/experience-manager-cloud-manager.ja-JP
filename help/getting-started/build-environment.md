@@ -41,7 +41,7 @@ Cloud Manager のビルド環境には、次の属性があります。
 * Node.js 18 は、[フロントエンドパイプライン](/help/overview/ci-cd-pipelines.md)で使用できます。
 
 >[!IMPORTANT]
->Maven ツールチェーンのサポートは、Cloud Manager 2025.06.0 で削除されました。JDK の選択は、`.cloudmanager/java-version` でのみサポートされるようになりました。 詳しくは、[ 特定の Java バージョンの使用 ](#using-java-version) を参照してください。
+>Maven ツールチェーンのサポートは、Cloud Manager 2025.06.0 で削除されました。JDK の選択は、`.cloudmanager/java-version` でのみサポートされるようになりました。 詳しくは、[&#x200B; 特定の Java バージョンの使用 &#x200B;](#using-java-version) を参照してください。
 
 >[!NOTE]
 >

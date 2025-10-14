@@ -19,7 +19,7 @@ Cloud Managerはアクセストークンを使用して、外部 Git プラッ�
 
 >[!NOTE]
 >
->この記事で説明する機能は、Private Beta プログラムを通じてのみ使用できます。詳細およびプライベートベータ版にサインアップするには、[ アクセストークンの管理 ](/help/release-notes/current.md#access-tokens) を参照してください。
+>この記事で説明する機能は、Private Beta プログラムを通じてのみ使用できます。詳細およびプライベートベータ版にサインアップするには、[&#x200B; アクセストークンの管理 &#x200B;](/help/release-notes/current.md#access-tokens) を参照してください。
 
 ## アクセストークンを表示する {#view-access-tokens}
 

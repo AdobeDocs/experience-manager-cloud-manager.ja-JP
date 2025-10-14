@@ -28,7 +28,7 @@ Cloud Manager で環境を監視する方法について説明します。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. 監視するプログラムの ![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. 監視するプログラムの ![&#x200B; 詳細アイコン、省略記号 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 1. メニューの **管理** で **監視を表示** をクリックして、システム監視情報を表示する **レポート** ページを開きます。
 
    ![設定](/help/assets/first-timea1.png)

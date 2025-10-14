@@ -90,7 +90,7 @@ Cloud Manager は GitHub リポジトリを認識しましたが、引き続き�
 
 **タイプ**&#x200B;列では、アドビ提供のリポジトリ（**Adobe**）と独自の GitHub リポジトリ（**GitHub**）を簡単に識別できます。
 
-後でリポジトリに戻って検証を完了するには、**リポジトリ**&#x200B;ページに移動します。追加した GitHub リポジトリの横にある ![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**所有権の検証** をクリックします。
+後でリポジトリに戻って検証を完了するには、**リポジトリ**&#x200B;ページに移動します。追加した GitHub リポジトリの横にある ![&#x200B; 詳細アイコン、省略記号 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**所有権の検証** をクリックします。
 
 
 ## Cloud Manager でのプライベートリポジトリの使用 {#using}

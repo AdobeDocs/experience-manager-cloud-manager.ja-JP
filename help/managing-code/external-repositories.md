@@ -30,7 +30,7 @@ Cloud Manager に外部リポジトリを追加する方法について説明し
 Cloud Manager での外部リポジトリの設定は、次の 3 つの手順で構成されます。
 
 1. 選択したプログラムに[外部リポジトリを追加](#add-external-repo)します。
-1. [ 検証済みの外部リポジトリをパイプラインにリンクします ](#validate-ext-repo)。
+1. [&#x200B; 検証済みの外部リポジトリをパイプラインにリンクします &#x200B;](#validate-ext-repo)。
 <!-- 1. Provide an access token to the external repository.
 1. Validate ownership of the private GitHub repository. -->
 1. 外部リポジトリに [webhook を設定](#configure-webhook)します。
@@ -184,7 +184,7 @@ GitHub Enterprise、GitLab、Bitbucket、Azure DevOps など、アクセスト�
 
 1. **リポジトリ**&#x200B;ページで、**タイプ**&#x200B;列を使用して選択し、必要なリポジトリを見つけて、その横にある ![省略記号 - その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
-   ![ 選択したリポジトリのドロップダウンメニューの「Webhook を設定」オプション](/help/managing-code/assets/repository-config-webhook.png)
+   ![&#x200B; 選択したリポジトリのドロップダウンメニューの「Webhook を設定」オプション](/help/managing-code/assets/repository-config-webhook.png)
 
 1. ドロップダウンメニューから、「**Webhook を設定**」をクリックします。
 
@@ -304,19 +304,19 @@ Azure DevOps は、ステータスチェックを通じてプルリクエスト�
 
 コード品質の検証中、ステータスチェックにプロセスが進行中であることが示されます。
 
-![Webhook-1 を使用したプルリクエストの Azure DevOps 検証 ](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)
+![Webhook-1 を使用したプルリクエストの Azure DevOps 検証 &#x200B;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)
 
 コード品質の検証が完了すると、ステータスチェックが更新され、結果が反映されます。
 
-![Webhook-2 を使用したプルリクエストの Azure DevOps 検証 ](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
+![Webhook-2 を使用したプルリクエストの Azure DevOps 検証 &#x200B;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
 
 検証が失敗した場合、詳細なエラー情報はステータスチェックの詳細に表示されます。 ステータスチェックをクリックすると、Cloud Managerで完全な検証の結果を表示できます。
 
-![Webhook-3 を使用したプルリクエストの Azure DevOps 検証 ](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
+![Webhook-3 を使用したプルリクエストの Azure DevOps 検証 &#x200B;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
 
 プルリクエストのコメントとフィードバックについては、Cloud Managerが Azure DevOps のプルリクエストに直接コメントを追加し、検証の詳細と必要なアクションを追加します。
 
-![Webhook-4 を使用したプルリクエストの Azure DevOps 検証 ](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
+![Webhook-4 を使用したプルリクエストの Azure DevOps 検証 &#x200B;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
 
 
 >[!ENDTABS]

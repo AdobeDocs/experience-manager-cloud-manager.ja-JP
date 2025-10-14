@@ -20,7 +20,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 ![Cloud Manager のパイプラインカード](/help/assets/configure-pipelines/pipelines-card.png)
 
-各パイプラインの横にある ![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックすると、次の操作を実行できます。
+各パイプラインの横にある ![&#x200B; 詳細アイコン、省略記号 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックすると、次の操作を実行できます。
 
 * [パイプラインを実行](#running-pipelines)
 * [パイプラインを編集](#editing-pipelines)
@@ -58,8 +58,8 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 1. **プログラムの概要**&#x200B;ページで、![パイプラインタブ - ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「**パイプライン**」タブをクリックします。
-1. **パイプライン** ページで、パイプライン名とタイプの左側にある「![ お気に入りから外したパイプラインの星形アウトラインアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg) をクリックして、お気に入りリストに追加します。
-または、![ お気に入りのパイプラインのスターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) をクリックして、お気に入りリストからパイプラインを削除します。
+1. **パイプライン** ページで、パイプライン名とタイプの左側にある「![&#x200B; お気に入りから外したパイプラインの星形アウトラインアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg) をクリックして、お気に入りリストに追加します。
+または、![&#x200B; お気に入りのパイプラインのスターアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) をクリックして、お気に入りリストからパイプラインを削除します。
 
 
 ## アクティビティページ {#activity}
@@ -82,13 +82,13 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
-1. 実行するパイプラインの横にある ![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**実行**」をクリックします。
+1. 実行するパイプラインの横にある ![&#x200B; 詳細アイコン、省略記号 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**実行**」をクリックします。
 
    ステータス列は、パイプラインの実行が開始されたタイミングを示します。
 
-   実行の詳細を確認するには、![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をもう一度クリックし、**[詳細を表示](#view-details)** をクリックします。
+   実行の詳細を確認するには、![&#x200B; 詳細アイコン、省略記号 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をもう一度クリックし、**[詳細を表示](#view-details)** をクリックします。
 
-   パイプラインのタイプによっては、![ その他アイコン、省略記号）をもう一度クリックして **キャンセル ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックすると、実行をキャンセルできる場合があ** ます。
+   パイプラインのタイプによっては、![&#x200B; その他アイコン、省略記号）をもう一度クリックして **キャンセル &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックすると、実行をキャンセルできる場合があ** ます。
 
 ## 複数のパイプラインの実行 {#run-multiple-pipelines}
 
@@ -117,7 +117,7 @@ Cloud Managerを使用すると、複数のパイプラインを同時に実行�
 
 1. **プログラムの概要** ページから **パイプライン** カードに移動します。
 
-1. 編集するパイプラインの横にある ![ 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 省略記号）をクリックし、「**編集**」をクリックします。
+1. 編集するパイプラインの横にある ![&#x200B; 詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 省略記号）をクリックし、「**編集**」をクリックします。
 
 1. **実稼動パイプラインを編集** または **実稼動以外のパイプラインを編集** ダイアログボックスでは、パイプラインの作成時に入力したのと同じ詳細を編集できます。
 
@@ -135,7 +135,7 @@ Cloud Managerを使用すると、複数のパイプラインを同時に実行�
 
 1. **プログラムの概要** ページから **パイプライン** カードに移動します。
 
-1. 実行するパイプラインの横にある ![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**削除**」をクリックします。
+1. 実行するパイプラインの横にある ![&#x200B; 詳細アイコン、省略記号 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**削除**」をクリックします。
 
 
 ## パイプラインの詳細の表示 {#view-details}
@@ -148,7 +148,7 @@ Cloud Managerを使用すると、複数のパイプラインを同時に実行�
 
 1. **プログラムの概要** ページから **パイプライン** カードに移動します。
 
-1. 実行するパイプラインの横にある ![ 詳細アイコン、省略記号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**詳細を表示** をクリックします。
+1. 実行するパイプラインの横にある ![&#x200B; 詳細アイコン、省略記号 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、**詳細を表示** をクリックします。
 
 1. 実行中のパイプラインの詳細ページに移動します。
 
@@ -166,7 +166,7 @@ Cloud Managerを使用すると、複数のパイプラインを同時に実行�
 
 ![期間](/help/assets/configure-pipelines/duration.png)
 
-パイプラインに **コードスキャン** ステップが含まれており、問題が発生した場合は、「**詳細をダウンロード**」をクリックして、成功しなかった [ コード品質テスト ](/help/using/code-quality-testing.md) のリストを表示できます。
+パイプラインに **コードスキャン** ステップが含まれており、問題が発生した場合は、「**詳細をダウンロード**」をクリックして、成功しなかった [&#x200B; コード品質テスト &#x200B;](/help/using/code-quality-testing.md) のリストを表示できます。
 
 ![コード品質の問題](assets/managing-pipelines-code-quality-issues.png)
 
