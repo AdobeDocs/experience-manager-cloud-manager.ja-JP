@@ -3,7 +3,7 @@ title: Cloud Manager 2025.10.0 のリリースノート
 description: Adobe Managed Services の Cloud Manager 2025.10.0 のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: f62191a1b9dd67ea1e999e2db0bb05de66bf73f2
+source-git-commit: 696fae5ea39bd33a92e5e066338e129aee432cb1
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 47%
@@ -41,11 +41,11 @@ Cloud ManagerのBeta プログラムに参加すると、一般リリース前�
 
 ### Experience Hubの拡張性とカスタマイズ {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/experience-hub/experience-hub) は、組織のニーズに合わせてカスタマイズされた、AEMへのエントリポイントとして機能します。 Adobeに既存のAEM UI 拡張機能を通知し、最小限の労力でExperience Hubで有効にできるようにします。
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) は、組織のニーズに合わせてカスタマイズされた、AEMへのエントリポイントとして機能します。 Adobeに既存のAEM UI 拡張機能を通知し、最小限の労力でExperience Hubで有効にできるようにします。
 
-![Experience Hubの拡張性とカスタマイズワークフローの図 &#x200B;](/help/release-notes/assets/experience-hub-extensibility-customization.png)
+![Experience Hubの拡張性とカスタマイズワークフローの図 ](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
-カスタムエクスペリエンスをExperience Hubに埋め込むと、組織のダッシュボードを拡張し、パーソナライズすることができます。 Adobeの組み込みウィジェットに加えて、[UI 拡張機能 &#x200B;](https://developer.adobe.com/uix/docs/) フレームワークを使用して独自のウィジェットを追加します。 JavaScript ベースの UI アプリを作成し、ビジネス固有の要件とワークフローを満たすようにユーザーに表示します。
+カスタムエクスペリエンスをExperience Hubに埋め込むと、組織のダッシュボードを拡張し、パーソナライズすることができます。 Adobeの組み込みウィジェットに加えて、[UI 拡張機能 ](https://developer.adobe.com/uix/docs/) フレームワークを使用して独自のウィジェットを追加します。 JavaScript ベースの UI アプリを作成し、ビジネス固有の要件とワークフローを満たすようにユーザーに表示します。
 
 ベータ版に興味がありますか？ Adobeの OrgID と作成するカスタマイズの簡単な説明を [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) にメールで送信します。
 
@@ -53,7 +53,7 @@ Cloud ManagerのBeta プログラムに参加すると、一般リリース前�
 
 新しいビルドモデルでは、（リポジトリ全体ではなく）変更されたモジュールのみを、モジュールレベルのキャッシュを使用してコンパイルし、ビルド時間を短縮します。 コード品質、フルスタック、ステージ専用のパイプラインに適用されます。
 
-![&#x200B; フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス &#x200B;](/help/release-notes/assets/non-production-pipeline-edit.png)
+![ フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス ](/help/release-notes/assets/non-production-pipeline-edit.png)
 *フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス。*
 
 **パイプラインを追加/編集** ダイアログボックスの「**Sourceコード**」タブにある新しい **ビルド方法** セクションで、次のいずれかのビルドオプションを選択できます。
@@ -63,7 +63,7 @@ Cloud ManagerのBeta プログラムに参加すると、一般リリース前�
 
 使用するパイプラインを制御できます **スマートビルド**。 ベータ版では、このオプションは **コード品質** パイプラインと **開発デプロイメント** パイプラインにのみ表示されます。
 
-興味ある？ Adobeの OrgID とプログラム ID を記載したメール [0&rbrace;beta_quickbuild_cmpipelines@adobe.com&rbrace; を送信します。](mailto:beta_quickbuild_cmpipelines@adobe.com)
+興味ある？ Adobeの OrgID とプログラム ID を記載したメール [0}beta_quickbuild_cmpipelines@adobe.com} を送信します。](mailto:beta_quickbuild_cmpipelines@adobe.com)
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline variables](/help/getting-started/build-environment.md#pipeline-variables). -->
 
