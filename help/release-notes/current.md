@@ -41,7 +41,7 @@ Cloud ManagerのBeta プログラムに参加すると、一般リリース前�
 
 ### Experience Hub の拡張性とカスタマイズ {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) は、組織のニーズに合わせてカスタマイズされた、AEM へのエントリポイントとして機能します。アドビに既存の AEM UI 拡張機能を通知すると、最小限の労力で Experience Hub で拡張機能を有効にできるようになります。
+[Experience Hub](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/experience-hub/experience-hub) は、組織のニーズに合わせてカスタマイズされた、AEM へのエントリポイントとして機能します。アドビに既存の AEM UI 拡張機能を通知すると、最小限の労力で Experience Hub で拡張機能を有効にできるようになります。
 
 ![Experience Hub の拡張性とカスタマイズワークフローの図](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
