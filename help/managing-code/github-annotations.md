@@ -16,7 +16,7 @@ GitHub チェックがプライベートリポジトリの PR に注釈を付け
 
 ## 概要 {#overview}
 
-Cloud Manager プログラムに [ プライベートリポジトリ ](private-repositories.md) を使用している場合、プルリクエストのたびに GitHub が自動的にチェックインされます。 これらのチェックには、コードに関する問題をできるだけ早く理解するのに役立つ有用な情報が注釈として付けられます。
+Cloud Manager プログラムに [&#x200B; プライベートリポジトリ &#x200B;](private-repositories.md) を使用している場合、プルリクエストのたびに GitHub が自動的にチェックインされます。 これらのチェックには、コードに関する問題をできるだけ早く理解するのに役立つ有用な情報が注釈として付けられます。
 
 ![GitHub チェック注釈の例](assets/github-check-annotations.png)
 
