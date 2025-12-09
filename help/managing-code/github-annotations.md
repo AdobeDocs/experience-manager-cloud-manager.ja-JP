@@ -2,10 +2,10 @@
 title: GitHub チェック注釈
 description: GitHub チェックがプライベートリポジトリの PR に注釈を付けて、役立つフィードバックを提供する方法について説明します。
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
-workflow-type: ht
-source-wordcount: '251'
-ht-degree: 100%
+source-git-commit: 75baacd1fd6f36ca1d6ea5c1993516569ab6ef47
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 92%
 
 ---
 
@@ -16,7 +16,7 @@ GitHub チェックがプライベートリポジトリの PR に注釈を付け
 
 ## 概要 {#overview}
 
-Cloud Manager プログラムに[プライベートリポジトリ](private-repositories.md)を使用している場合は、プルリクエストのたびに GitHub でのチェックが自動的に実行されます。これらのチェックには、コードに関する問題をできるだけ早く理解するのに役立つ有用な情報が注釈として付けられます。
+Cloud Manager プログラムに [ プライベートリポジトリ ](private-repositories.md) を使用している場合、プルリクエストのたびに GitHub が自動的にチェックインされます。 これらのチェックには、コードに関する問題をできるだけ早く理解するのに役立つ有用な情報が注釈として付けられます。
 
 ![GitHub チェック注釈の例](assets/github-check-annotations.png)
 
