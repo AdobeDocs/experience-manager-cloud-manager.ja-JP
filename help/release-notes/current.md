@@ -38,10 +38,10 @@ Adobe Managed Servicesでの [!UICONTROL Cloud Manager] 2026.3.0 のリリース
 
   ユーザーは、Cloud Manager設定パイプラインで直接シークレットを追加および管理できるようになりました。 これらのシークレットは、パイプライン設定仕様の値を安全に上書きし、柔軟な環境固有のデプロイメントをサポートします。
 
-  ![ 選択したパイプラインのドロップダウンメニューの「変数を表示/編集」オプション ](/help/release-notes/assets/view-edit-variables-option.png)
+  ![&#x200B; 選択したパイプラインのドロップダウンメニューの「変数を表示/編集」オプション &#x200B;](/help/release-notes/assets/view-edit-variables-option.png)
   *選択したパイプラインのドロップダウンメニューの「変数を表示/編集」オプション*
 
-  ![ 変数設定ダイアログボックス ](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*変数設定ダイアログボックス*
+  ![&#x200B; 変数設定ダイアログボックス &#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*変数設定ダイアログボックス*
 
 * **安定性、パフォーマンス、信頼性の向上**
 
@@ -70,7 +70,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 新しいビルドモデルでは、（リポジトリ全体ではなく）変更されたモジュールのみを、モジュールレベルのキャッシュを使用してコンパイルし、ビルド時間を短縮します。 これは、コード品質、フルスタック、ステージ専用のパイプラインに適用されます。
 
-![ フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス ](/help/release-notes/assets/non-production-pipeline-edit.png)
+![&#x200B; フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス &#x200B;](/help/release-notes/assets/non-production-pipeline-edit.png)
 *フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス。*
 
 **パイプラインを追加/編集** ダイアログボックスの「**Sourceコード**」タブにある新しい **ビルド方法** セクションで、次のいずれかのビルドオプションを選択できます。
