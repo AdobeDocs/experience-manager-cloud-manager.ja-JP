@@ -2,10 +2,10 @@
 title: Dispatcher の設定
 description: Cloud Manager を使用して Dispatcher 設定ファイルをデプロイする方法について説明します。
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '575'
-ht-degree: 100%
+source-git-commit: 037a296c21adde6f7fa731c71ee4a75cea042780
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 89%
 
 ---
 
@@ -18,11 +18,11 @@ Cloud Manager を使用して Dispatcher 設定ファイルをデプロイする
 
 Cloud Manager では、通常の AEM コンテンツパッケージに加えて、web サーバーと Dispatcher の設定ファイルも Git リポジトリに格納されていると仮定して、それらの設定ファイルをデプロイできます。
 
-この機能を活用するために、Maven ビルドでは、少なくとも 2 つのディレクトリ（`conf` および `conf.d`）を含む zip ファイルを作成する必要があります。この zip ファイルは、`maven-assembly-plugin` を使用して作成できます。
+この機能を活用するために、Maven ビルドでは、少なくとも 2 つのディレクトリ（`conf` および `conf.d`）を含む zip ファイルを作成する必要があります。 この zip ファイルは、`maven-assembly-plugin` を使用して作成できます。
 
-ビルトイン[プロジェクト作成ウィザード](/help/getting-started/using-the-wizard.md)を使用して、Cloud Manager で生成されたプロジェクトには適切な Maven プロジェクト構造が自動的に作成されます。Adobe Managed Services（AMS）を初めて使用する場合は、このパスをお勧めします。
+ビルトイン[プロジェクト作成ウィザード](/help/getting-started/using-the-wizard.md)を使用して、Cloud Manager で生成されたプロジェクトには適切な Maven プロジェクト構造が自動的に作成されます。 Adobe Managed Services（AMS）を初めて使用する場合は、このパスをお勧めします。
 
-Dispatcher インスタンスにデプロイすると、インスタンス上のディレクトリが Git リポジトリのディレクトリに置き換えられます。Web サーバーおよび Dispatcher の設定ファイルは頻繁に環境特有の情報を必要とするので、この機能を正しく使用する前に、カスタマーサクセスエンジニア（CSE）と協力して、適切な環境変数を `/etc/sysconfig/httpd` で設定する必要があります。
+Dispatcher インスタンスにデプロイすると、インスタンス上のディレクトリが Git リポジトリのディレクトリに置き換えられます。 Web サーバーおよび Dispatcher の設定ファイルは頻繁に環境特有の情報を必要とするので、この機能を正しく使用する前に、カスタマーサクセスエンジニア（CSE）と協力して、適切な環境変数を `/etc/sysconfig/httpd` で設定する必要があります。
 
 ## 既存の Managed Services のお客様向けの Dispatcher 設定 {#steps-for-configuring-dispatcher}
 
@@ -30,8 +30,8 @@ Dispatcher インスタンスにデプロイすると、インスタンス上の
 
 1. 現在の実稼動設定ファイルを CSE から入手します。
 1. ハードコーディングされた環境特有のデータ（例えば、公開レンダラー IP）を削除し、変数に置き換えます。
-1. 各ターゲット Dispatcher に対して必要な変数をキーと値のペアで定義し、CSE に依頼して各インスタンスの `/etc/sysconfig/httpd` に追加します。
-1. 更新後の設定をステージング環境でテストします。
+1. 各ターゲット Dispatcherに対して必要な変数をキーと値のペアで定義し、それらを各インスタンスの [variables](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=en#variables-files-(.vars)) フォルダーに追加します。
+1. 更新した設定をステージング環境でテストします。
 1. テストが完了したら、CSE に依頼して実稼動環境にデプロイします。
 1. ファイルを Git リポジトリにコミットします。
 1. Cloud Manager を使用してデプロイします。
@@ -48,7 +48,7 @@ Dispatcher インスタンスにデプロイすると、インスタンス上の
 
    ここでは任意の名前を使用できますが、この手順で作成したディレクトリ名は手順 6 で使用する名前と同じにする必要があります。
 
-1. このサブディレクトリには、Maven Assembly Plugin を使用して Dispatcher .zip ファイルを構築する Maven モジュールが含まれます。`dispatcher` ディレクトリにこのコンテンツを含む `pom.xml` ファイルを作成し、必要に応じて `parent` 参照、`artifactId` および `name` を変更します。
+1. このサブディレクトリには、Maven Assembly Plugin を使用して Dispatcher .zip ファイルを構築する Maven モジュールが含まれます。 `dispatcher` ディレクトリにこのコンテンツを含む `pom.xml` ファイルを作成し、必要に応じて `parent` 参照、`artifactId` および `name` を変更します。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -88,9 +88,9 @@ Dispatcher インスタンスにデプロイすると、インスタンス上の
    </project>
    ```
 
-   * 手順 1 と同様に、ここにある artifactId と名前は、必要に応じて他の値にすることができます。 `dispatcher` は、ここでは例として使用しています。
+   * 手順 1 と同様に、ここにある artifactId と名前は、必要に応じて他の値にすることができます。`dispatcher` は、ここでは例として使用しています。
 
-1. Maven Assembly Plug-in には、.zip ファイルの作成方法を定義する `descriptor` が必要です。この記述子を作成するには、`dispatcher` サブディレクトリに `assembly.xml` という名前のファイルを次のコンテンツで作成します。このファイル名は、上記の `pom.xml` ファイルの 26 行目で参照されることに注意してください。
+1. Maven Assembly Plug-in には、.zip ファイルの作成方法を定義する `descriptor` が必要です。 この記述子を作成するには、`dispatcher` サブディレクトリに `assembly.xml` という名前のファイルを次のコンテンツで作成します。 このファイル名は、上記の `pom.xml` ファイルの 26 行目で参照されることに注意してください。
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
@@ -113,9 +113,9 @@ Dispatcher インスタンスにデプロイすると、インスタンス上の
    </assembly>
    ```
 
-1. Dispatcher のサブディレクトリ内に（上記の 11 行目のアセンブリ記述子で参照された）`src` という名前のサブディレクトリを作成し、実際の Apache および Dispatcher の設定を保存します。この `src` ディレクトリ内に、`conf`、`conf.d`、`conf.dispatcher.d` および `conf.modules.d` という名前のディレクトリを作成します。
+1. Dispatcher のサブディレクトリ内に（上記の 11 行目のアセンブリ記述子で参照された）`src` という名前のサブディレクトリを作成し、実際の Apache および Dispatcher の設定を保存します。 この `src` ディレクトリ内に、`conf`、`conf.d`、`conf.dispatcher.d` および `conf.modules.d` という名前のディレクトリを作成します。
 
-1. `conf`、`conf.d`、`conf.dispatcher.d` および `conf.modules.d` ディレクトリに設定ファイルを格納します。例えば、デフォルト設定は、これらのファイルとシンボリックリンクで構成されています。
+1. `conf`、`conf.d`、`conf.dispatcher.d` および `conf.modules.d` ディレクトリに設定ファイルを格納します。 例えば、デフォルト設定は、これらのファイルとシンボリックリンクで構成されています。
 
    ```
    dispatcher
@@ -215,7 +215,7 @@ Dispatcher インスタンスにデプロイすると、インスタンス上の
 
    * 手順 1 で述べたように、`<module>` 要素の値は、作成したディレクトリ名と一致させる必要があります。
 
-1. テストするには、プロジェクトのルートディレクトリで `mvn clean package` を実行します。出力には以下のような行が表示されます。
+1. テストするには、プロジェクトのルートディレクトリで `mvn clean package` を実行します。 出力には以下のような行が表示されます。
 
    ```
    [INFO] --- maven-assembly-plugin:3.1.0:single (default) @ dispatcher ---
