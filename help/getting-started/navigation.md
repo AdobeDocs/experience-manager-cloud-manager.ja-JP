@@ -52,7 +52,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 | ![Adobeの赤と白のアイコン &#x200B;](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | Cloud Managerの場所に関係なく、Cloud Managerの&#x200B;**マイプログラム** コンソールをクリックして開きます。 |
 | *`Name of selected organization`* | 組織セレクターには、現在ログインしている組織（この例では、*Foundation Internal*）が表示されます。 Adobe IDが複数の組織に関連付けられている場合は、クリックして別の組織に切り替えます。 |
 | ![&#x200B; フィードバックアイコン &#x200B;](/help/getting-started/assets/AppComment.svg) フィードバック | クリックして、Cloud Managerに関するAdobeへのフィードバックを提供します。 |
-| ![AI アシスタント アイコン &#x200B;](/help/getting-started/assets/AIChat.svg) | AI アシスタントは、AEM関連のクエリに対する回答を効率的に見つけるように設計された、会話型インターフェイスを提供します。 [AI アシスタント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#)を参照 |
+| ![AI アシスタント アイコン &#x200B;](/help/getting-started/assets/AIChat.svg) | AI アシスタントは、AEM関連のクエリに対する回答を効率的に見つけるように設計された、会話型インターフェイスを提供します。 [AI アシスタント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#)を参照 |
 | ![ヘルプアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | クリックすると、学習およびサポートリソースに素早くアクセスできます。 |
 | ![&#x200B; ホワイトベルのアイコン &#x200B;](/help/getting-started/assets/Bell.svg) | クリックすると、現在割り当てられている未完了の[通知](/help/using/notifications.md)の数が表示されます |
 | ![&#x200B; アプリアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | AEM ホームページとAEM ソリューションの間をすばやく移動するには、クリックします |
