@@ -124,7 +124,7 @@ CQDOC-22790
 
 1. **製品とユーザーグループを編集** ダイアログボックスで、![追加アイコンとプラス記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)をクリックし、ユーザーに割り当てるプロファイルを選択します。
 
-   * ユーザーが既に役割に割り当てられている場合、![追加アイコン、プラス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) ボタンは編集ボタン（鉛筆）ですが、同じように機能します。
+   * ユーザーが既に役割に割り当てられている場合、![追加アイコン、プラス &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) ボタンは編集ボタン（鉛筆）ですが、同じように機能します。
 
    ![製品とユーザーグループの編集](/help/assets/admin-console-edit-products-and-user-groups.png)
 
