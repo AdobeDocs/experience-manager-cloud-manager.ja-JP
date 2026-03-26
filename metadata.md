@@ -1,27 +1,30 @@
 ---
 solution: Experience Manager, Experience Manager Cloud Manager
+landing-page-name: experience-manager
+landing-page-breadcrumb-title: AEM
 type: Documentation
 cloud: Experience Cloud
-git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.ja-JP
+git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.en
+index: true
 recommendations: noDisplay
-source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
-workflow-type: ht
-source-wordcount: '112'
-ht-degree: 100%
+source-git-commit: e8ef2dd8222d72be43e08e647c390b6ecacb385b
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 0%
 
 ---
 
 
-# 内部使用のメタデータ
+# 内部使用のためのメタデータ
 
-metadata.md ファイルには、リポジトリ内にあるユーザーガイドの TOC.md ファイルにパススルーされる、リポジトリレベルのメタデータが含まれています。 任意のユーザーガイドの metadata.md コンテンツを変更するには、任意の TOC.md ファイル内で行います。
+metadata.md ファイルには、リポジトリ内のユーザーガイド TOC.md ファイルに渡されるリポジトレベルのメタデータが含まれています。 任意のユーザーガイドのmetadata.md コンテンツを変更する場合は、任意のTOC.md ファイルで変更します。
 
 | メタデータ | 機能 |
 |--- |--- |
-| solution-title | 記事ヘッダーでリンクとして使用されます。 |
-| solution-hub-url | helpx ハブページを開きます。 |
+| solution-title | 記事ヘッダーにリンクとして使用 |
+| solution-hub-url | helpx ハブページを開きます |
 | solution-icon | ソリューションタイトルの横にソリューションアイコンを表示します。 まだ実装されていません |
-| getting-started-url | helpx の「はじめに」のページへのリンク |
-| tutorials-url | ビデオチュートリアル（helpx チュートリアルまたは KT チュートリアル）へのリンク |
-| mini-toc-levels | 右側のパネルに表示される見出しレベルの数を決定します。 デフォルトは 2 です。 |
-| git-repo | 内部使用のプライマリリポジトリの場所を指定します。 |
+| getting-started-url | Helpx入門ページへのリンク |
+| tutorials-url | ビデオチュートリアルへのリンク - helpx チュートリアルまたはKT チュートリアル |
+| ミニ目次レベル | 右側のパネルに表示される見出しレベルの数を指定します。 デフォルトは2です |
+| git-repo | 内部使用のプライマリリポジトリの場所を指定します |
