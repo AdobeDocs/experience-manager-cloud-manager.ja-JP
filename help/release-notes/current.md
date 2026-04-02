@@ -1,9 +1,9 @@
 ---
 title: Cloud Manager 2026.4.0のリリースノート
-description: Adobe Managed ServicesでのCloud Manager 2026.4.0のリリースについて説明します。
+description: Adobe Managed ServicesのCloud Manager 2026.4.0のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 4f2fdc8d04b0ab48d3d18cc7d2cacfe0075b48f9
+source-git-commit: 0ad5d533e6f8749a9c141d5a095f0a2fed37efcf
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 14%
