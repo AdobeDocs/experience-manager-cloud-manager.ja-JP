@@ -53,7 +53,7 @@ ht-degree: 87%
    + [コード品質テスト](/help/using/code-quality-testing.md)
    + [環境の管理](/help/using/managing-environments.md)
    + [環境の監視](/help/using/monitoring-environments.md)
-   + {hide-from-toc}[開発環境のサービスパックの更新（プライベートベータ版） ](/help/using/service-packs-environments.md)
+   + {hide-from-toc}[開発環境のサービスパックの更新（プライベートベータ版） &#x200B;](/help/using/service-packs-environments.md)
    + [CLOUD MANAGER API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [CLOUD MANAGER CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [通知](/help/using/notifications.md)
