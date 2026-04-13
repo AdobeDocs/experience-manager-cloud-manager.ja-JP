@@ -16,7 +16,7 @@ Cloud Manager ユーザーインターフェイスを使用して、開発環境
 
 >[!NOTE]
 >
->この機能は、[ プライベートベータプログラム ](/help/release-notes/current.md#beta-program)でのみ利用できます。
+>この機能は、[&#x200B; プライベートベータプログラム &#x200B;](/help/release-notes/current.md#beta-program)でのみ利用できます。
 
 ## 概要 {#service-pack-updates-overview}
 
@@ -40,9 +40,9 @@ Cloud Manager ユーザーインターフェイスを使用して、開発環境
 1. プログラム概要ページに移動します。
 1. 「環境」セクションで、![詳細アイコン、省略記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
 
-   ![ ドロップダウンメニューでサービスパックの更新を確認](/help/using/assets/service-pack-check-for-updates.png)
+   ![&#x200B; ドロップダウンメニューでサービスパックの更新を確認](/help/using/assets/service-pack-check-for-updates.png)
 
-1. ドロップダウンメニューから、![ ライトアイコンで開く](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) **アップデートを確認**&#x200B;をクリックして、使用可能なサービスパックのアップデートをスキャンします。
+1. ドロップダウンメニューから、![&#x200B; ライトアイコンで開く](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) **アップデートを確認**&#x200B;をクリックして、使用可能なサービスパックのアップデートをスキャンします。
 
    ![使用可能な更新プログラムのリストが表示されます](/help/using/assets/service-pack-versions.png)
 
@@ -61,11 +61,11 @@ Cloud Manager ユーザーインターフェイスを使用して、開発環境
 1. Cloud Manager ダッシュボードからアクティビティページに移動します。
 1. サービスパックインストール エントリを探します。
 
-   ![ サービスパックのインストール ](/help/using/assets/service-pack-installation.png)
+   ![&#x200B; サービスパックのインストール &#x200B;](/help/using/assets/service-pack-installation.png)
 
 1. エントリをクリックすると、次のような詳細な進行状況とステータスの更新が表示されます。
 
-   ![ サービスパックのインストールの進行状況](/help/using/assets/service-pack-progression.png)
+   ![&#x200B; サービスパックのインストールの進行状況](/help/using/assets/service-pack-progression.png)
 
 ### インストールエラーのトラブルシューティング
 
@@ -81,15 +81,15 @@ Cloud Manager ユーザーインターフェイスを使用して、開発環境
 1. Cloud Managerでアクティビティページを開きます。
 1. サービスパックの更新に対する保留中の承認リクエストを探します。
 
-   ![ サービスパックの更新を却下または承認](/help/using/assets/service-pack-reject-approve.png)
+   ![&#x200B; サービスパックの更新を却下または承認](/help/using/assets/service-pack-reject-approve.png)
 
 1. 次のいずれかの操作を行います。
 
    * 更新を確定するには、**承認**&#x200B;をクリックします。
 
-   ![ サービスパックの承認](/help/using/assets/service-pack-approve.png)
+   ![&#x200B; サービスパックの承認](/help/using/assets/service-pack-approve.png)
 
-   * 更新をキャンセルするには、**拒否**をクリックします。
+   * 更新をキャンセルするには、**拒否**&#x200B;をクリックします。
 サービスパックのインストールがキャンセルされ、変更は適用されません。
 
-   ![ サービスパックの拒否](/help/using/assets/service-pack-reject.png)
+   ![&#x200B; サービスパックの拒否](/help/using/assets/service-pack-reject.png)
