@@ -3,11 +3,21 @@ title: AMS 用 Cloud Manager の概要
 description: ここでは、Adobe Managed Services（AMS）用 Cloud Manager の概要と、組織がクラウドで Adobe Experience Manager を自己管理できるようにする仕組みについて説明します。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 TQID: https://experienceleague.adobe.com/VR-H6ubMFgVrkfzDvY4JWYlUtM-Dkztdewr5LiSZK1w
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754bid: ff09c71c-26a9-449a-85f8-2aeb8ce96100
-subfeature_v2: id: a4d14782-c381-4db2-89e3-8cf3f31b103cid: c14b2f98-ee16-4c49-b87b-919c91b01d9d
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+  - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+subfeature_v2:
+  - id: a4d14782-c381-4db2-89e3-8cf3f31b103c
+  - id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
 source-wordcount: 1299
@@ -43,7 +53,7 @@ Cloud Manager を使用すると、開発チームは次の機能を利用でき
 * 既存の DevOps プロセスを補完する API 接続
 * 自動スケーリング機能により、容量増加の必要性をインテリジェントに検出し、Dispatcher／パブリッシュの追加セグメントを自動的にオンラインにします。
 
-![CI/CD フロー](/help/assets/screen_shot_2018-05-12at73843pm.png)[!UICONTROL Cloud Manager] で使用される CI/CD プロセスフロー。
+![CI/CD フロー](/help/assets/screen_shot_2018-05-12at73843pm.png) [!UICONTROL Cloud Manager] で使用される CI/CD プロセスフロー。
 
 ## [!UICONTROL Cloud Manager] の主な機能 {#key-features-in-cloud-manager}
 

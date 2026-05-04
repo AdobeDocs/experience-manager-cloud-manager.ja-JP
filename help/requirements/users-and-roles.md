@@ -3,9 +3,13 @@ title: ユーザーと役割の追加
 description: Admin Console を使用して、ユーザーと役割を追加し、プロファイルを作成する方法について説明します。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 TQID: https://experienceleague.adobe.com/95vfyk6-SMg7GFaCVWkiaaGObo603DJqvExEgPFrwqw
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
 source-wordcount: 796
@@ -127,7 +131,7 @@ CQDOC-22790
 
 1. **製品とユーザーグループを編集** ダイアログボックスで、![追加アイコンとプラス記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)をクリックし、ユーザーに割り当てるプロファイルを選択します。
 
-   * ユーザーが既に役割に割り当てられている場合、![追加アイコン、プラス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) ボタンは編集ボタン（鉛筆）ですが、同じように機能します。
+   * ユーザーが既に役割に割り当てられている場合、![追加アイコン、プラス &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) ボタンは編集ボタン（鉛筆）ですが、同じように機能します。
 
    ![製品とユーザーグループの編集](/help/assets/admin-console-edit-products-and-user-groups.png)
 
