@@ -1,18 +1,27 @@
 ---
 title: 環境の一貫性を目的とするコンテンツコピー
-description: Cloud Manager のコンテンツコピーを使用すると、可変コンテンツをオンデマンドで Adobe Managed Services でホストされている Adobe Experience Manager 6.x 実稼動環境から下位の環境にテスト目的でコピーできます。
+description: Cloud Manager のコンテンツコピーを使用すると、可変コンテンツをオンデマンドで Adobe Managed Services でホストされている Adobe Experience Manager 6.x 本番環境から下位の環境にテスト目的でコピーできます。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 84b3366481c2efd497583627eac67046452f6c38
-workflow-type: ht
-source-wordcount: '1321'
-ht-degree: 100%
+TQID: https://experienceleague.adobe.com/ffcf9UNSOp7oIpDZdtLcoFWp-Ww-A1XV3kCDmKqJLSw
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 1452
+ht-degree: 99%
 
 ---
 
-
 # 環境の一貫性を目的とするコンテンツコピー {#content-copy}
 
-Cloud Manager のコンテンツコピーを使用すると、可変コンテンツをオンデマンドで Adobe Managed Services でホストされている Adobe Experience Manager 6.x 実稼動環境から下位の環境にテスト目的でコピーできます。
+Cloud Manager のコンテンツコピーを使用すると、可変コンテンツをオンデマンドで Adobe Managed Services でホストされている Adobe Experience Manager 6.x 本番環境から下位の環境にテスト目的でコピーできます。
 
 ## コンテンツコピーについて {#introduction}
 
@@ -75,7 +84,7 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
    1. 制限対象にする含まれるコンテンツパスの右側にある ![フォルダーの削除アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg) をクリックします。
    1. テキストフィールドに、ダイアログボックスに表示されるルートパスへの相対パスを入力します。
    1. ![フォルダーの削除アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg)「**除外パス**」をクリックします。
-   1. 必要に応じて、上記の手順 i. ～ iii. を繰り返して 除外パスをさらに追加します。制限はありません。 それ以外の場合は、次の手順に進みます。
+   1. 必要に応じて、手順iを繰り返します。 iiiへ。 除外パスをさらに追加します。制限はありません。 それ以外の場合は、次の手順に進みます。
 
    ![パスの除外](/help/assets/add-content-set-paths-excluded.png)
 

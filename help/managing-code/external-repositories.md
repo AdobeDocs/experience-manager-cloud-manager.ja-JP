@@ -2,10 +2,18 @@
 title: Cloud Manager での外部リポジトリの追加
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。 Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket、 Azure DevOps リポジトリとの統合をサポートしています。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
+TQID: https://experienceleague.adobe.com/uLIqzfR3sTBSMHCewIQPPADP9opdLQoT2PNQy5YZTKo
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '2560'
-ht-degree: 82%
+source-wordcount: 2568
+ht-degree: 92%
 
 ---
 
@@ -66,7 +74,7 @@ THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/C
    | フィールド | 説明 |
    | --- | --- |
    | **リポジトリ名** | 必須。 新しいリポジトリのわかりやすい名前。 |
-   | **リポジトリ URL** | 必須。 リポジトリのURL。<br><br>GitHubでホストされているリポジトリを使用している場合、パスは`.git`で終わる必要があります。<br>例：*`https://github.com/org-name/repo-name.git`* （URL パスはイラスト用のみ）。<br><br>外部リポジトリを使用している場合は、次のURL パス形式を使用する必要があります。<br>`https://git-vendor-name.com/org-name/repo-name.git`<br>または<br>`https://self-hosted-domain/org-name/repo-name.git`<br>Git ベンダーと一致します。 |
+   | **リポジトリ URL** | 必須。 リポジトリの URL。<br><br>GitHubでホストされたリポジトリを使用している場合、パスは`.git`で終わる必要があります。<br>例：*`https://github.com/org-name/repo-name.git`* （URL パスはイラスト用のみ）。<br><br>外部リポジトリを使用している場合は、次のURL パス形式を使用する必要があります。<br>`https://git-vendor-name.com/org-name/repo-name.git`<br>または<br>`https://self-hosted-domain/org-name/repo-name.git`<br>Git ベンダーと一致します。 |
    | **リポジトリタイプを選択** | 必須。 使用するリポジトリタイプを選択します。<ul><li>**GitHub**（GitHub Enterprise と自己ホスト型バージョンの GitHub）</li><li>**GitLab**（`gitlab.com` と自己ホスト型バージョンの GitLab の両方） </li><li>**Bitbucket**（`bitbucket.org`（クラウドバージョン）のみがサポートされています。 Bitbucket の自己ホスト型バージョンは、2024年2月15日（PT）以降に非推奨（廃止予定）になりました。）</li><li>**Azure DevOps**（`dev.azure.com`）</ul>上記のリポジトリ URL パスに GitLab や Bitbucket などの Git ベンダー名が含まれている場合、リポジトリタイプは既に事前に選択されています。</li> </ul> |
    | **説明** | オプション。 リポジトリの詳細な説明です。 |
 
@@ -76,7 +84,7 @@ THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/C
 
 1. **プライベートリポジトリの所有権の検証** ダイアログボックスで、外部リポジトリの所有権を検証するためのアクセストークンを指定してアクセスできるようにしてから、**検証**&#x200B;をクリックします。
 
-   ![リポジトリの既存のアクセストークンの選択](/help/managing-code/assets/repositories-exisiting-access-token.png)
+   ![&#x200B; リポジトリの既存のアクセストークンの選択](/help/managing-code/assets/repositories-exisiting-access-token.png)
    *BitBucket リポジトリの既存のアクセストークンを選択します（説明のみを目的としています）。*
 
 >[!BEGINTABS]
@@ -90,7 +98,7 @@ https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-se
 | 「アクセストークン」オプション | 説明 |
 | --- | --- |
 | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。 **トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。 それ以外の場合は、新しいアクセストークンを追加します。 |
-| **新しいアクセストークンを追加** | <ul><li> 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitHub ドキュメント](https://docs.github.com/ja/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)の指示に従って、個人アクセストークンを作成します。<li>GitHub Enterprise Personal Access Token （PAT）に必要な権限<br>これらの権限により、Cloud Managerがプルリクエストを検証し、コミット状態チェックを管理し、必要なリポジトリの詳細にアクセスできるようになります。<br>GitHub EnterpriseでPATを生成する際には、次のリポジトリ権限が含まれていることを確認してください。<ul><li>プルリクエスト（読み取りおよび書き込み）<li>コミットステータス（読み取りおよび書き込み）<li>リポジトリメタデータ（読み取り専用）</li></li></ul></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+| **新しいアクセストークンを追加** | <ul><li> 「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitHub ドキュメント](https://docs.github.com/ja/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)の指示に従って、個人アクセストークンを作成します。<li>GitHub Enterprise 個人アクセストークン（PAT）に必須の権限<br>これらの権限により、Cloud Manager でプルリクエストの検証、コミットステータスチェックの管理、必要なリポジトリ詳細へのアクセスが可能になります。<br>GitHub Enterprise で PAT を生成する場合は、次のリポジトリ権限が含まれていることを確認します。<ul><li>プルリクエスト（読み取りおよび書き込み）<li>コミットステータス（読み取りおよび書き込み）<li>リポジトリメタデータ（読み取り専用）</li></li></ul></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
 
 検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
 
@@ -105,7 +113,7 @@ https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-se
 | 「アクセストークン」オプション | 説明 |
 | --- | --- |
 | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。 **トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。 それ以外の場合は、新しいアクセストークンを追加します。 |
-| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitLab ドキュメント](https://docs.gitlab.com/user/profile/personal_access_tokens/)の指示に従って、個人アクセストークンを作成します。<li>GitLab Personal Access Token （PAT）に必要な権限<br>これらのスコープを使用すると、Cloud Managerは検証とWebhook統合のために必要に応じてリポジトリデータとユーザー情報にアクセスできます。<br>GitLabでPATを生成する際に、次のトークンスコープが含まれていることを確認します。<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[GitLab ドキュメント](https://docs.gitlab.com/user/profile/personal_access_tokens/)の指示に従って、個人アクセストークンを作成します。<li>GitLab 個人アクセストークン（PAT）に必須の権限<br>これらのスコープにより、Cloud Manager で検証と webhook 統合の必要に応じてリポジトリデータとユーザー情報へのアクセスが可能になります。<br>GitLab で PAT を生成する場合、次のトークンスコープが含まれていることを確認します。<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
 
 検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
 
@@ -121,7 +129,7 @@ https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-se
 | 「アクセストークン」オプション | 説明 |
 | --- | --- |
 | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。 **トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。 それ以外の場合は、新しいアクセストークンを追加します。 |
-| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Bitbucket ドキュメント](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)を使用して、リポジトリアクセストークンを作成します。<li>Bitbucket Personal Access Token （PAT）に必要な権限<br>これらの権限により、Cloud Managerはリポジトリコンテンツへのアクセス、プルリクエストの管理、Webhook イベントの設定または操作を行うことができます。<br>Bitbucketでアプリパスワードを作成する場合は、次の必須アプリパスワード権限が含まれていることを確認してください。<ul><li>リポジトリ（読み取り専用）<li>プルリクエスト（読み取りおよび書き込み）<li>webhook（読み取りおよび書き込み）</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Bitbucket ドキュメント](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)を使用して、リポジトリアクセストークンを作成します。<li>Bitbucket 個人アクセストークン（PAT）に必須の権限<br>これらの権限により、Cloud Manager でリポジトリコンテンツへのアクセス、プルリクエストの管理、webhook イベントの構成または反応が可能になります。<br>Bitbucket でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>リポジトリ（読み取り専用）<li>プルリクエスト（読み取りおよび書き込み）<li>webhook（読み取りおよび書き込み）</li></li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
 
 検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
 
@@ -136,7 +144,7 @@ https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-se
 | 「アクセストークン」オプション | 説明 |
 | --- | --- |
 | **既存のアクセストークンを使用** | 組織にリポジトリアクセストークンを既に指定し、複数のリポジトリにアクセスできる場合は、既存のトークンを選択できます。 **トークン名**&#x200B;ドロップダウンリストを使用して、リポジトリに適用するトークンを選択します。 それ以外の場合は、新しいアクセストークンを追加します。 |
-| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Azure DevOps ドキュメント](https://learn.microsoft.com/ja-jp/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)を使用して、リポジトリアクセストークンを作成します。<li>Azure DevOps Personal Access Token （PAT）に必要な権限。<br>これらの権限により、Cloud Managerはリポジトリコンテンツへのアクセス、プルリクエストの管理、Webhook イベントの設定または操作を行うことができます。<br>Azure DevOpsでアプリパスワードを作成する場合は、次の必須アプリパスワード権限が含まれていることを確認してください。<ul><li>コード（読み取り）</li><li>コード（ステータス）</li><li>プルリクエストスレッド（読み取りおよび書き込み）</li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
+| **新しいアクセストークンを追加** | <ul><li>「**トークン名**」テキストフィールドに、作成するアクセストークンの名前を入力します。<li>[Azure DevOps ドキュメント](https://learn.microsoft.com/ja-jp/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)を使用して、リポジトリアクセストークンを作成します。<li>Azure DevOps Personal Access Token （PAT）に必要な権限。<br>これらの権限により、Cloud Managerはリポジトリコンテンツへのアクセス、プルリクエストの管理、Webhook イベントの設定または操作を行うことができます。<br>Azure DevOps でアプリパスワードを作成する場合は、次の必須のアプリパスワード権限が含まれていることを確認します。<ul><li>コード（読み取り）</li><li>コード（ステータス）</li><li>プルリクエストスレッド（読み取りおよび書き込み）</li></ul></li></li></ul></ul></ul><ul><li>「**アクセストークン**」フィールドに、作成したトークンをペーストします。 |
 
 検証後、外部リポジトリを使用してパイプラインにリンクする準備が整います。
 
@@ -152,7 +160,7 @@ https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-se
    * [実稼動以外のパイプラインの追加](/help/using/non-production-pipelines.md#add-non-production-pipeline)
    * [パイプラインの編集](/help/using/managing-pipelines.md#editing-pipelines)
 
-   ![パイプラインのソースコードリポジトリと Git 分岐](/help/managing-code/assets/pipeline-repo-gitbranch.png)
+   ![&#x200B; パイプラインのソースコードリポジトリとGit ブランチ](/help/managing-code/assets/pipeline-repo-gitbranch.png)
    *選択したリポジトリと Git 分岐を含む実稼動以外のパイプラインを追加ダイアログボックス。*
 
 1. パイプラインの追加または編集時に、新しいパイプラインまたは既存のパイプラインの&#x200B;**ソースコード**&#x200B;の場所を指定するには、**リポジトリ**&#x200B;ドロップダウンリストから使用する外部リポジトリを選択します。
@@ -227,7 +235,7 @@ URL をプレーンテキストファイルにペーストします。 コピー
 
 | 必須の web フックイベント |
 | --- |
-| これらのイベントにより、Cloud Managerは、プルリクエスト検証、パイプラインのプッシュベースのトリガー、Edge Delivery Services コード同期などのGitHub アクティビティに対応できます。<br>次の必須Webhook イベントでWebhookがトリガーするように設定されていることを確認します。<ul><li>プルリクエスト<li>プッシュ<li>コメントを発行</li></li></li></ul></ul></ul> |
+| これらのイベントにより、Cloud Manager でプルリクエストの検証、パイプラインのプッシュベースのトリガー、Edge Delivery Services のコード同期などの GitHub アクティビティに応答できます。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト<li>プッシュ<li>コメントを発行</li></li></li></ul></ul></ul> |
 
 >[!TAB GitLab]
 
@@ -243,7 +251,7 @@ URL をプレーンテキストファイルにペーストします。 コピー
 
 | 必須の web フックイベント |
 | --- |
-| これらのイベントにより、Cloud Managerでプルリクエストを検証し、コードのプッシュに応答し、パイプライン調整のためにコメントとやり取りできるようになります。<br>次の必須Webhook イベントでWebhookがトリガーするように設定されていることを確認します<ul><li>プルリクエスト：作成済み<li>プルリクエスト：更新済み<li>プルリクエスト：結合済み<li>プルリクエスト：コメント<li>リポジトリ：プッシュ</li></li></li></ul></ul></ul> |
+| これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プルリクエスト：作成済み<li>プルリクエスト：更新済み<li>プルリクエスト：結合済み<li>プルリクエスト：コメント<li>リポジトリ：プッシュ</li></li></li></ul></ul></ul> |
 
 >[!TAB Azure DevOps]
 
@@ -251,7 +259,7 @@ URL をプレーンテキストファイルにペーストします。 コピー
 
 | 必須の Webhook イベントと認証 |
 | --- |
-| これらのイベントにより、Cloud Managerでプルリクエストを検証し、コードのプッシュに応答し、パイプライン調整のためにコメントとやり取りできるようになります。<br>次の必須Webhook イベントでWebhookがトリガーするように設定されていることを確認します<ul><li>プッシュ済みコード</li><li>コメント済みプルリクエスト</li><li>作成済みプルリクエスト</li><li>更新済みプルリクエスト</li></ul>認証の設定：<br>1。 **基本認証ユーザー名** フィールドに、`cloudmanager`.<br>2と入力します。 「**基本認証パスワード**」フィールドに、Cloud Manager ユーザーインターフェイスから生成された Webhook シークレットを入力します。 |
+| これらのイベントにより、Cloud Manager でプルリクエストの検証、コードプッシュへの応答、パイプライン調整用のコメントでのやり取りが可能になります。<br>次の必須の webhook イベントで webhook がトリガーするように設定されていることを確認します。<ul><li>プッシュ済みコード</li><li>コメント済みプルリクエスト</li><li>作成済みプルリクエスト</li><li>更新済みプルリクエスト</li></ul>認証の設定：<br>1。 **基本認証ユーザー名** フィールドに、`cloudmanager`.<br>2と入力します。 「**基本認証パスワード**」フィールドに、Cloud Manager ユーザーインターフェイスから生成された Webhook シークレットを入力します。 |
 
 >[!ENDTABS]
 

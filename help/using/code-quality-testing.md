@@ -2,13 +2,27 @@
 title: コード品質テスト
 description: パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/gAO8BdTx9-Sq8evIuI3hIaHIUixk-IulQagCI-Jssrc
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+  - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '2783'
-ht-degree: 98%
+source-wordcount: 2911
+ht-degree: 97%
 
 ---
-
 
 # コード品質テスト {#code-quality-testing}
 
@@ -16,7 +30,7 @@ ht-degree: 98%
 
 ## はじめに {#introduction}
 
-パイプライン実行中、ソフトウェアは多数の指標を取得します。 次に、これらの指標は、ビジネスオーナーが定義した主要業績評価指標（KPI）、または Adobe Managed Services によって設定された標準と比較されます。
+パイプライン実行中、ソフトウェアは多数の指標を取得します。 次に、これらの指標は、ビジネスオーナーが定義した主要業績評価指標（KPI）、 または Adobe Managed Services によって設定された標準と比較されます。
 
 これらの結果は、3 層評価システムを使用して報告されます。
 
@@ -32,7 +46,7 @@ ht-degree: 98%
 
 * **重大** - パイプラインの即時失敗を引き起こす問題です。
 * **重要** - パイプラインの一時停止状態を引き起こす問題です。 デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドできます。 この場合、パイプラインは意図したとおりに続行されます。 または、問題を受け入れて、パイプラインがエラーで停止する可能性もあります。 重要なエラーのオーバーライドは、[タイムアウト](/help/using/code-deployment.md#timeouts)の影響を受けます。
-* **情報** - 情報提供だけを目的とした問題です。パイプラインの実行には影響しません。
+* **情報** - 情報提供だけを目的とした問題です。パイプライン実行には影響しません。
 
 >[!NOTE]
 >
@@ -64,7 +78,7 @@ ht-degree: 98%
 | カバレッジ | 次の式を使用して、単体テストラインのカバレッジと条件のカバレッジを組み合わせて定義します。<br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` = 単体テストの実行中に少なくとも 1 回は `true` と評価された条件</li><li>`CF` = 単体テストの実行中に少なくとも 1 回は `false` と評価された条件</li><li>`LC` = 被覆線 = lines_to_cover - uncovered_lines</li><li>`B` = 条件の合計数</li><li>`EL` = 実行可能な行の総数 (lines_to_cover)</li></ul> | 重要 | &lt; 50％ |
 | スキップした単体テスト | スキップした単体テストの数 | 情報 | > 1 |
 | 未解決の問題 | 問題の全体的なタイプ - 脆弱性、バグ、コードスメル | 情報 | > 0 |
-| 重複行 | 重複したブロックに含まれる行の数として定義されます。 コードブロックは、次の条件下で重複していると見なされます。<br>Java 以外のプロジェクト：<ul><li>100 個以上の連続した重複トークンが必要です。</li><li>これらのトークンは、少なくとも次の場所に分散している必要があります。 </li><li>30 行の COBOL コード </li><li>20 行の ABAP コード </li><li>10 行の他言語コード</li></ul>Java プロジェクト：<ul></li><li> トークンと行の数にかかわらず、10 個以上の連続した重複ステートメントが必要です。</li></ul>重複を検出する際は、インデントの違いと文字列リテラルの違いは無視されます。 | 情報 | > 1％ |
+| 重複行 | 重複したブロックに含まれる行の数として定義されます。 コード ブロックは、次の条件で重複していると見なされます。<br>Java以外のプロジェクト：<ul><li>100 個以上の連続した重複トークンが必要です。</li><li>これらのトークンは、少なくとも次の場所に分散している必要があります。 </li><li>30 行の COBOL コード </li><li>20 行の ABAP コード </li><li>10 行の他言語コード</li></ul>Java プロジェクト：<ul></li><li> トークンと行の数にかかわらず、10 個以上の連続した重複ステートメントが必要です。</li></ul>重複を検出する際は、インデントの違いと文字列リテラルの違いは無視されます。 | 情報 | > 1％ |
 | Cloud Service の互換性 | 特定された Cloud Service の互換性に関する問題の数 | 情報 | > 0 |
 
 >[!NOTE]
@@ -126,18 +140,18 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | デシリアライゼーションファイアウォールが読み込まれている。 | [デシリアライゼーションファイアウォール読み込み](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | 重大 |
 | `AuthorizableNodeName` 実装において、認証可能な ID がノード名／パスで公開されていない。 | [認証可能なノード名生成](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/security-checklist#security) | 重大 |
 | デフォルトのパスワードが変更されている。 | [デフォルトのログインアカウント](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) | 重大 |
-| デフォルト `Sling`GET サーブレットは、DOS 攻撃から保護されています。 | `Sling Get` サーブレット | 重大 |
-| `Sling` JavaScript ハンドラーが適切に設定されている。 | `Sling` JavaScript ハンドラー | 重大 |
-| `Sling` JSP スクリプトハンドラーが適切に設定されている。 | `Sling` JSP スクリプトハンドラー | 重大 |
+| `Sling`の既定のGET サーブレットは、DOS攻撃から保護されています。 | `Sling Get` サーブレット | 重大 |
+| `Sling` JavaScript ハンドラーが適切に設定されています。 | `Sling` JavaScript ハンドラー | 重大 |
+| `Sling` JSP スクリプト ハンドラーが適切に設定されています。 | `Sling` JSP スクリプト ハンドラー | 重大 |
 | SSL が正しく設定されている。 | SSL 設定 | 重大 |
 | 明らかに安全ではないユーザープロファイルポリシーが見つからない。 | ユーザープロファイルへのデフォルトアクセス | 重大 |
-| `Sling` リファラーフィルターは、CSRF 攻撃を防ぐように設定されています。 | [Sling Referrer Filter](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/security-checklist#security) | 重要 |
+| `Sling` リファラーフィルターは、CSRF攻撃を防ぐように設定されています。 | [Sling Referrer Filter](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/security-checklist#security) | 重要 |
 | Adobe Granite HTML Library Manager が適切に設定されている。 | CQ HTML Library Manager 設定 | 重要 |
 | CRXDE サポートバンドルが無効である。 | CRXDE サポート | 重要 |
-| DavEx`Sling` バンドルおよびサーブレットが無効である。 | DavEx ヘルスチェック | 重要 |
+| `Sling`個のDavEx バンドルとサーブレットが無効です。 | DavEx ヘルスチェック | 重要 |
 | サンプルコンテンツがインストールされていない。 | サンプルコンテンツパッケージ | 重要 |
 | WCM Request Filter と WCM Debug Filter が両方とも無効になっている。 | [WCM フィルター設定](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | 重要 |
-| WebDAV`Sling` バンドルおよびサーブレットが適切に設定されている。 | WebDAV ヘルスチェック | 重要 |
+| `Sling`個のWebDAV バンドルとサーブレットが適切に設定されています。 | WebDAV ヘルスチェック | 重要 |
 | web サーバーが、クリックジャッキングを防止するように設定されている。 | Web サーバー設定 | 重要 |
 | レプリケーションが `admin` ユーザーを使用していない。 | レプリケーションとトランスポートユーザー | 情報 |
 

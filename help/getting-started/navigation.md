@@ -2,13 +2,20 @@
 title: Cloud Manager UI の操作
 description: Cloud Manager UI の整理方法と、プログラムと環境を管理する操作方法について説明します。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
+TQID: https://experienceleague.adobe.com/qTv4G7eSJahDusX68iNXzcw64Aq8xxP6SRAtn-SB0t4
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: 1660
 ht-degree: 54%
 
 ---
-
 
 # Cloud Manager UI の操作 {#navigation}
 
@@ -31,7 +38,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 | --- | --- | --- |
 | 1 | [&#x200B; ツールバー](#toolbars-my-programs-toolbars) | 組織の選択、アラート、アカウントの設定に使用します。 |
 | 2 | 左側のパネルタブ | プログラムの現在のビューを切り替える様々なタブがあります。次のタブがあります。<br><ul><li>**Experience Manager**&#x200B;は、様々なAEM ソリューションのホームページを開きます</li><li>すべての利用可能なプログラムを表示する&#x200B;**すべてのプログラム**。</li><li>**ライセンス**&#x200B;がライセンスダッシュボードを開きます。 ライセンスダッシュボードは、*AEM as a Cloud Service プログラム* （AEMaaCS）にのみ適用され、AEM 6.5やAEM 6.5 LTSなどのAdobe Managed Services プログラムには適用されません。 プログラムが持つサービスの種類（AEMaaCSまたはAMS）を判断するには、この記事の「[&#x200B; プログラムカード」の節](#program-cards)を参照してください。 タブはデフォルトで閉じられ、[Cloud Manager ヘッダー](#cloud-manager-header)の左側にある![&#x200B; メニューアイコン、ハンバーガー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) ドロップダウンメニューを使用して表示できます。</li></ol> |
-| 3 | [自分のプログラム &#x200B;](#my-programs-section) | 選択できる利用可能なすべてのプログラムが一覧表示されます。<br> プログラムの詳細については、[&#x200B; プログラムとプログラムの種類](/help/getting-started/program-setup.md)を参照してください。 |
+| 3 | [自分のプログラム &#x200B;](#my-programs-section) | 選択できる利用可能なすべてのプログラムが一覧表示されます。プログラムの詳細については、<br> プログラムとプログラムの種類[&#128279;](/help/getting-started/program-setup.md)を参照してください。 |
 | 4 | [&#x200B; コールトゥアクションと統計](#cta-statistics) | 最近のアクティビティの概要を表示します。 |
 | 5 | [&#x200B; クイックリンク &#x200B;](#quick-links) | 関連情報へのすばやいアクセス。 |
 
@@ -48,7 +55,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 | 領域 | 説明 |
 | --- | --- |
-| ![&#x200B; メニューアイコン、ハンバーガー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)を表示 | 個々のプログラムの特定の部分に対するタブへのアクセスを提供するドロップダウンメニュー。<br> プログラムのサービスの種類（AMSまたはAEMaaCS）を決定するには、このドキュメントの[&#x200B; プログラムカードの節](#program-cards)を参照してください。 |
+| ![&#x200B; メニューアイコン、ハンバーガー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)を表示 | 個々のプログラムの特定の部分に対するタブへのアクセスを提供するドロップダウンメニュー。<br> プログラムのサービスの種類（AMSまたはAEMaaCS）を判断するには、このドキュメントの[&#x200B; プログラムカードの節](#program-cards)を参照してください。 |
 | ![Adobeの赤と白のアイコン &#x200B;](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | Cloud Managerの場所に関係なく、Cloud Managerの&#x200B;**マイプログラム** コンソールをクリックして開きます。 |
 | *`Name of selected organization`* | 組織セレクターには、現在ログインしている組織（この例では、*Foundation Internal*）が表示されます。 Adobe IDが複数の組織に関連付けられている場合は、クリックして別の組織に切り替えます。 |
 | ![&#x200B; フィードバックアイコン &#x200B;](/help/getting-started/assets/AppComment.svg) フィードバック | クリックして、Cloud Managerに関するAdobeへのフィードバックを提供します。 |
@@ -56,7 +63,7 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 | ![ヘルプアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | クリックすると、学習およびサポートリソースに素早くアクセスできます。 |
 | ![&#x200B; ホワイトベルのアイコン &#x200B;](/help/getting-started/assets/Bell.svg) | クリックすると、現在割り当てられている未完了の[通知](/help/using/notifications.md)の数が表示されます |
 | ![&#x200B; アプリアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | AEM ホームページとAEM ソリューションの間をすばやく移動するには、クリックします |
-| *`Dynamic Account icon`* | ユーザー画像をクリックして、**アカウント設定**&#x200B;および&#x200B;**プログラム設定**&#x200B;にアクセスするか、ログアウトします。<br> ユーザー画像を追加しないことを選択した場合、アイコンがランダムに割り当てられます（上のツールバー画像を参照）。 |
+| *`Dynamic Account icon`* | ユーザーの写真をクリックして、**アカウント設定**&#x200B;および&#x200B;**プログラム設定**&#x200B;にアクセスするか、ログアウトします。<br> ユーザー画像を追加しないことを選択した場合、アイコンがランダムに割り当てられます（上のツールバー画像を参照）。 |
 
 <!--
 1. The ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) icon on the left side of the header is  

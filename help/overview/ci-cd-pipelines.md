@@ -2,13 +2,26 @@
 title: CI／CD パイプライン
 description: CI/CD パイプラインと、Cloud Manager でステージング環境および本番環境へのデプロイメントを処理する方法について説明します。
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
-source-git-commit: b7e651b72d1943aef69c1c69915d4752a6163931
+TQID: https://experienceleague.adobe.com/BwkZH2MIbXrzSxf0yk9yeDZZIpw7-Ldue-OPQPkWrdg
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+  - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+subfeature_v2:
+  - id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: 639
 ht-degree: 81%
 
 ---
-
 
 # CI/CD パイプライン {#ci-cd-pipeline}
 
@@ -36,7 +49,7 @@ CI/CD パイプラインと、Cloud Manager でステージング環境および
 | &#x200B;6. AMS AEM ステージングへのアーティファクトの自動デプロイ | リリースアーティファクトはステージング環境にデプロイされます。 |
 | &#x200B;7. トリガーの自動テスト | [!UICONTROL Cloud Manager] は、アーティファクトに対してパフォーマンステストとセキュリティテストを実行します。 |
 | &#x200B;8. 実稼動トリガーの展開 | 自動テストの完了後、[!UICONTROL Cloud Manager] は実稼動環境へのデプロイメントを開始します。 |
-| &#x200B;9. [!UICONTROL Cloud Manager]が展開するアーティファクトを取得します | 保存したリリースアーティファクトを [!UICONTROL Cloud Manager] が取り込みます。 |
+| &#x200B;9. [!UICONTROL Cloud Manager]がアーティファクトをデプロイする | 保存したリリースアーティファクトを [!UICONTROL Cloud Manager] が取り込みます。 |
 | &#x200B;10. アーティファクトを実稼動環境にデプロイする | リリースアーティファクトは本番環境にデプロイされます。 |
 
 ### スマートビルドを使用したビルドの高速化 {#use=smart-build}

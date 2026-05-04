@@ -2,17 +2,22 @@
 title: Adobe Cloud Manager と Git の統合
 description: このビデオシリーズでは、顧客管理（オンプレミス）の Git リポジトリと Adobe Cloud Manager の設定および統合について順を追って説明します。
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
-source-git-commit: 75baacd1fd6f36ca1d6ea5c1993516569ab6ef47
+TQID: https://experienceleague.adobe.com/fyGrLuc1bIBY9ZAgYiULxxJQy-ZZBLYtAAdYgqzSLAM
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 99%
+source-wordcount: 367
+ht-degree: 95%
 
 ---
 
-
 # Adobe Cloud Manager と Git の統合
 
-Adobe Cloud Manager には、Cloud Manager の CI/CD パイプラインを使用したコードのデプロイに使用される単一の Git リポジトリがプロビジョニングされます。Cloud Manager の Git リポジトリをそのまま使用することもできますし、オンプレミスまたは顧客が管理する Git リポジトリを Cloud Manager と統合することもできます。
+Adobe Cloud Manager には、Cloud Manager の CI/CD パイプラインを使用したコードのデプロイに使用される単一の Git リポジトリがプロビジョニングされます。 Cloud Manager の Git リポジトリをそのまま使用することもできますし、オンプレミスまたは顧客が管理する Git リポジトリを Cloud Manager と統合することもできます。
 
 ## Git 統合の概要
 
@@ -26,9 +31,9 @@ Adobe Cloud Manager には、Cloud Manager の CI/CD パイプラインを使用
 * [実稼動のデプロイメント](#production-deployment)
 * [リリースタグの同期](#sync-tags)
 
-このビデオシリーズでは、Git とソース管理に関する基本的な知識を前提としています。Git について詳しくは、[以下のその他のリソース](#additional-resources)を参照してください。
+このビデオシリーズでは、Git とソース管理に関する基本的な知識を前提としています。 Git について詳しくは、[以下のその他のリソース](#additional-resources)を参照してください。
 
-このビデオシリーズで概要を説明する手順と命名規則は、顧客管理 Git リポジトリと Cloud Manager を使用する際のベストプラクティスです。規則とワークフローは、個々の開発チームに合わせて調整してください。
+このビデオシリーズで概要を説明する手順と命名規則は、顧客管理 Git リポジトリと Cloud Manager を使用する際のベストプラクティスです。 規則とワークフローは、個々の開発チームに合わせて調整してください。
 
 Cloud Manager の完全な概要については、[Cloud Manager の概要](/help/introduction.md)を参照してください。
 
@@ -58,13 +63,13 @@ Cloud Manager の[実稼動パイプライン](/help/using/production-pipelines.
 
 ## リリースタグの同期 {#sync-tags}
 
-Cloud Manager Git リポジトリのリリースタグを、顧客管理 Git リポジトリに同期できます。この機能により、ステージング環境と本番環境の両方にデプロイされたコードを把握できます。
+Cloud Manager Git リポジトリのリリースタグを、顧客管理 Git リポジトリに同期できます。 この機能により、ステージング環境と本番環境の両方にデプロイされたコードを把握できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/31420/?captions=jpn&quality=12)
 
 ## その他のリソース {#additional-resources}
 
 * [Cloud Manager の概要](/help/introduction.md)
-* [GitHub リソース](https://docs.github.com/en/get-started/git-basics/set-up-git)
-* [Atlassian Git チュートリアル](https://www.atlassian.com/git/tutorials/what-is-version-control)
+* [GitHubのリソース](https://docs.github.com/en/get-started/git-basics/set-up-git)
+* [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
