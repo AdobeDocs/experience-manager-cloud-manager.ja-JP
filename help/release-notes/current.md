@@ -1,6 +1,6 @@
 ---
-title: Cloud Manager 2026.4.0のリリースノート
-description: Adobe Managed ServicesのCloud Manager 2026.4.0のリリースについて説明します。
+title: Cloud Manager 2026.5.0のリリースノート
+description: Adobe Managed ServicesのCloud Manager 2026.5.0のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
@@ -11,72 +11,52 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
+source-git-commit: 0c2a9a946df6d5e1b0e4d5edb2715d8db98e9974
 workflow-type: tm+mt
-source-wordcount: 467
-ht-degree: 14%
+source-wordcount: 512
+ht-degree: 15%
 
 ---
 
 
-# Adobe Managed ServicesのCloud Manager 2026.4.0のリリースノート {#release-notes}
+# Adobe Managed ServicesのCloud Manager 2026.5.0のリリースノート {#release-notes}
 
 <!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Adobe Managed Servicesの[!UICONTROL Cloud Manager] 2026.4.0のリリースについて説明します。
+Adobe Managed Servicesの[!UICONTROL Cloud Manager] 2026.5.0のリリースについて説明します。
 
 [Adobe Experience Manager as a Cloud Service の最新のリリースノート](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/home)も参照してください。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] 2026.4.0のリリース日は2026年4月2日木曜日です。
+[!UICONTROL Cloud Manager] 2026.5.0のリリース日は2026年5月7日木曜日です。
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-次回のリリース予定は2026年5月7日木曜日です。
+次回のリリース予定は2026年6月4日木曜日（木）です。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 ## 新機能 {#what-is-new}
 
-* **AEM Experience Hubでのユーザーインターフェイスの拡張性のサポート。**
-
-  [AEM Experience Hub](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/experience-hub/experience-hub)のユーザーインターフェイス拡張機能のサポートが有効になり、Adobe App Builderを使用して構築されたカスタム機能とウィジェットでインターフェイスを拡張できるようになりました。
-
-  詳しくは、[AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/)を参照してください。
-
-* **設定パイプラインで、管理されたシークレットがサポートされるようになりました。**
-
-  Cloud Manager設定パイプラインで、シークレットを直接追加および管理できるようになりました。 これらのシークレットは、パイプライン設定仕様の値を安全に上書きし、柔軟で環境固有のデプロイメントをサポートします。
-
-  選択したパイプラインのドロップダウンメニューの「![変数の表示/編集」オプション](/help/release-notes/assets/view-edit-variables-option.png)
-  *選択したパイプラインのドロップダウンメニューの「変数の表示/編集」オプション。*
-
-  ![変数設定ダイアログボックス &#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*変数設定ダイアログボックス。*
-
-* **安定性、パフォーマンス、信頼性が向上しました。**
-
-  このリリースには、Cloud Managerの安定性、パフォーマンス、信頼性を向上させる最適化とメンテナンスのアップデートが含まれています。
-
+AMS版Cloud Managerの2026年5月リリースには、大きな新機能はありません。
 
 ## Beta プログラム {#beta-program}
 
-Cloud ManagerのBeta プログラムに参加して、一般リリースの前に今後の機能に限定でアクセスできます。
+Cloud Manager の Beta プログラムに参加すると、一般リリース前の新機能に特別アクセスできます。
 
-現在、次の機能が利用できます。
+>[!IMPORTANT]
+>
+>Beta リリースには欠陥が含まれている場合があり、いかなる保証もなしに「現状のまま」提供されます。 Adobeは、ベータ版のリリースを（Adobe サポートサービスまたはその他の方法により）維持、修正、更新、変更、またはその他の方法でサポートする義務を負いません。 Adobeでは、ベータ版リリースの正しい機能やパフォーマンス、または付随するドキュメントや資料に依存しないように注意することをお勧めします。 ベータ版の機能およびAPIは、予告なく変更される場合があります。 したがって、ベータ版リリースの使用は、完全にお客様の責任で行います。
 
-<!--
-### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
+現在、次のベータプログラムの機会が利用可能です。
 
-[Experience Hub](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+### AEM Managed Servicesのweb階層パイプライン {#web-tier-pipelines}
 
-![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
+Cloud Managerでは、AMS プログラム用の専用のWeb階層パイプラインがサポートされるようになりました。これにより、フルスタックのデプロイとは独立して、Dispatcherおよびweb階層設定をデプロイできます。 これにより、web層の変更の迅速な反復と、不要なパイプライン全体の実行の削減が可能になります。 Web階層パイプラインが設定されている場合、フルスタックパイプラインは、デプロイメントの競合を防ぐために、その環境のweb階層デプロイメントを自動的にスキップします。 Web階層パイプラインを削除すると、デフォルトのデプロイメント動作が自動的に復元されます。
 
-Embed custom experiences in Experience Hub to extend and personalize your organization's dashboard. In addition to Adobe's built-in widgets, add your own using the [UI Extensibility](https://developer.adobe.com/uix/docs/) framework. Build JavaScript-based UI apps and surface them to your users to meet business-specific requirements and workflows. 
-
-Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
--->
+Betaに参加するには、Adobe カスタマーサクセスエンジニアにお問い合わせください。
 
 ### モジュールのキャッシュによるビルドの高速化 {#quick-build-cm-pipelines}
 
@@ -100,7 +80,7 @@ Betaに参加するには、[beta_quickbuild_cmpipelines@adobe.com](mailto:beta_
 
 ## バグ修正 {#bug-fixes}
 
-AMS版Cloud Managerの2026年4月リリースには、重大なバグ修正はありません。
+AMS版Cloud Managerの2026年5月リリースには、重大なバグ修正はありません。
 
 <!--
 Known Issues {#known-issues}
