@@ -3,13 +3,9 @@ title: Dispatcher の設定
 description: Cloud Manager を使用して Dispatcher 設定ファイルをデプロイする方法について説明します。
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 TQID: https://experienceleague.adobe.com/KpGTN-444bigrhLddGnZvxkZsThcVc1B--oEoAKTdos
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
 source-wordcount: 595
@@ -37,7 +33,7 @@ Dispatcher インスタンスにデプロイすると、インスタンス上の
 
 1. 現在の実稼動設定ファイルを CSE から入手します。
 1. ハードコーディングされた環境特有のデータ（例えば、公開レンダラー IP）を削除し、変数に置き換えます。
-1. 各ターゲット Dispatcherのキーと値のペアで必要な変数を定義し、各インスタンスの[variables](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=ja#variables-files-(.vars)) フォルダーに追加します。
+1. 各ターゲット Dispatcherのキーと値のペアで必要な変数を定義し、各インスタンスの[variables](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=en#variables-files-(.vars)) フォルダーに追加します。
 1. ステージング環境で更新された設定をテストします。
 1. テストが完了したら、CSE に依頼して実稼動環境にデプロイします。
 1. ファイルを Git リポジトリにコミットします。
