@@ -3,23 +3,15 @@ title: CI／CD パイプライン
 description: CI/CD パイプラインと、Cloud Manager でステージング環境および本番環境へのデプロイメントを処理する方法について説明します。
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 TQID: https://experienceleague.adobe.com/BwkZH2MIbXrzSxf0yk9yeDZZIpw7-Ldue-OPQPkWrdg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-  - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
-subfeature_v2:
-  - id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754bid: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+subfeature_v2: id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
 workflow-type: tm+mt
-source-wordcount: 639
-ht-degree: 81%
+source-wordcount: 1091
+ht-degree: 70%
 
 ---
 
@@ -51,6 +43,63 @@ CI/CD パイプラインと、Cloud Manager でステージング環境および
 | &#x200B;8. 実稼動トリガーの展開 | 自動テストの完了後、[!UICONTROL Cloud Manager] は実稼動環境へのデプロイメントを開始します。 |
 | &#x200B;9. [!UICONTROL Cloud Manager]がアーティファクトをデプロイする | 保存したリリースアーティファクトを [!UICONTROL Cloud Manager] が取り込みます。 |
 | &#x200B;10. アーティファクトを実稼動環境にデプロイする | リリースアーティファクトは本番環境にデプロイされます。 |
+
+### コードのソース {#code-sources}
+
+パイプラインは、実稼動用と非実稼動用に加えて、デプロイするコードのタイプによっても異なる場合があります。
+
+* **[フルスタックパイプライン](#full-stack-pipeline)** - HTTPD/Dispatcher設定と共に、AEM アプリケーションコード全体をデプロイします。
+* **[Web階層設定パイプライン](#web-tier-config-pipelines)** - HTTPD/Dispatcher設定のみをデプロイします。
+
+### フルスタックパイプライン {#full-stack-pipeline}
+
+フルスタックパイプラインは、AEMのアプリケーションコード全体をAEM ランタイムにデプロイし、デフォルトではweb層設定もデプロイします。
+
+次の制限が適用されます。
+
+* パイプラインを設定または実行するには、ユーザーが&#x200B;**デプロイメントマネージャー**&#x200B;の役割でログインする必要があります。
+* フルスタックパイプラインは、常に 1 つの環境に 1 つしか存在できません。
+
+次に、フルスタックパイプラインが[web階層設定パイプライン ](#web-tier-config-pipelines)とどのように相互作用するかを説明します。
+
+* 環境のフルスタックパイプラインは、対応する web 階層設定パイプラインが存在する場合、Dispatcher 設定を無視します。
+* 環境に対応する web 階層設定パイプラインが存在しない場合、ユーザーは、Dispatcher 設定を含めるまたは無視するようにフルスタックパイプラインを設定できます。
+
+フルスタックパイプラインは、コード品質パイプラインとすることも、デプロイメントパイプラインとすることもできます。
+
+#### 実稼動以外のパイプラインの設定 {#configure-full-stack}
+
+[実稼動パイプラインの追加](/help/using/production-pipelines.md#full-stack-code)を参照してください。
+[実稼動以外のパイプラインの追加](/help/using/non-production-pipelines.md#add-non-production-pipeline)を参照してください。
+
+### Web 階層設定パイプライン {#web-tier-config-pipelines}
+
+Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定を他のコード変更から切り離して、この設定のみを AEM ランタイムにデプロイできます。 これは効率化されたパイプラインで、Dispatcher 設定変更のみをデプロイしたい場合に、ほんの数分で行うことができます。
+
+>[!TIP]
+>
+>Web 階層設定パイプラインを使用すると、プロジェクト構造に最適なものに応じて、フルスタックパイプラインと同じソースの場所または別のソースの場所に web 設定を保存できます。
+
+次の制限が適用されます。
+
+* パイプラインを設定または実行するには、ユーザーが&#x200B;**デプロイメントマネージャー**&#x200B;の役割でログインする必要があります。
+* Web 階層設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
+* 対応するフルスタックパイプラインの実行中は、web 階層設定パイプラインを設定できません。
+
+次に、Web階層設定パイプラインが[ フルスタックパイプライン ](#full-stack-pipeline)とどのように相互作用するかを説明します。
+
+* Web 階層設定パイプラインが環境に設定されていない場合、ユーザーは、フルスタックパイプラインの設定時に、Dispatcher 設定を含めるか無視するかを選択できます。
+* Web 階層設定パイプラインが環境に設定されると、対応するフルスタックパイプライン（存在する場合）では実行時およびデプロイメント時に Dispatcher 設定が無視されます。
+* Web階層設定パイプラインを削除すると、対応するフルスタックパイプライン（存在する場合）がリセットされ、実行中にDispatcher設定がデプロイされます。
+
+>[!NOTE]
+>
+>ブルーグリーンのデプロイメントが有効になっているAMS プログラムの場合、web層の更新では、デフォルトでローリングデプロイメントが使用されます。 Web層の変更にブルーグリーンのデプロイメントが必要な場合は、フルスタックパイプラインを使用します。
+
+#### Web階層パイプラインの設定 {#configure-web-tier}
+
+[実稼動パイプラインの追加](/help/using/production-pipelines.md#web-tier-config)を参照してください。
+[実稼動以外のパイプラインの追加](/help/using/non-production-pipelines.md#add-non-production-pipeline)を参照してください。
 
 ### スマートビルドを使用したビルドの高速化 {#use=smart-build}
 
