@@ -3,11 +3,19 @@ title: CI／CD パイプライン
 description: CI/CD パイプラインと、Cloud Manager でステージング環境および本番環境へのデプロイメントを処理する方法について説明します。
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 TQID: https://experienceleague.adobe.com/BwkZH2MIbXrzSxf0yk9yeDZZIpw7-Ldue-OPQPkWrdg
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754bid: ff09c71c-26a9-449a-85f8-2aeb8ce96100
-subfeature_v2: id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+  - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+subfeature_v2:
+  - id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 694d3e8dad6e2ba86186a4bf6fdda3739e1041da
 workflow-type: tm+mt
 source-wordcount: 1122
@@ -60,7 +68,7 @@ CI/CD パイプラインと、Cloud Manager でステージング環境および
 * パイプラインを設定または実行するには、ユーザーが&#x200B;**デプロイメントマネージャー**&#x200B;の役割でログインする必要があります。
 * フルスタックパイプラインは、常に 1 つの環境に 1 つしか存在できません。
 
-次に、フルスタックパイプラインが[web階層設定パイプライン ](#web-tier-config-pipelines)とどのように相互作用するかを説明します。
+次に、フルスタックパイプラインが[web階層設定パイプライン &#x200B;](#web-tier-config-pipelines)とどのように相互作用するかを説明します。
 
 * 環境のフルスタックパイプラインは、対応する web 階層設定パイプラインが存在する場合、Dispatcher 設定を無視します。
 * 環境に対応する web 階層設定パイプラインが存在しない場合、ユーザーは、Dispatcher 設定を含めるまたは無視するようにフルスタックパイプラインを設定できます。
@@ -85,7 +93,7 @@ Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定
 * Web 階層設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
 * 対応するフルスタックパイプラインの実行中は、web 階層設定パイプラインを設定できません。
 
-次に、Web階層設定パイプラインが[ フルスタックパイプライン ](#full-stack-pipeline)とどのように相互作用するかを説明します。
+次に、Web階層設定パイプラインが[&#x200B; フルスタックパイプライン &#x200B;](#full-stack-pipeline)とどのように相互作用するかを説明します。
 
 * Web 階層設定パイプラインが環境に設定されていない場合、ユーザーは、フルスタックパイプラインの設定時に、Dispatcher 設定を含めるか無視するかを選択できます。
 * Web 階層設定パイプラインが環境に設定されると、対応するフルスタックパイプライン（存在する場合）では実行時およびデプロイメント時に Dispatcher 設定が無視されます。
