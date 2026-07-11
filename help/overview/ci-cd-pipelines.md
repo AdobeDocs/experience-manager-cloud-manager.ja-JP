@@ -16,10 +16,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
+source-git-commit: 694d3e8dad6e2ba86186a4bf6fdda3739e1041da
 workflow-type: tm+mt
-source-wordcount: 1091
-ht-degree: 70%
+source-wordcount: 1122
+ht-degree: 72%
 
 ---
 
@@ -77,8 +77,7 @@ CI/CD パイプラインと、Cloud Manager でステージング環境および
 
 #### 実稼動以外のパイプラインの設定 {#configure-full-stack}
 
-[実稼動パイプラインの追加](/help/using/production-pipelines.md#full-stack-code)を参照してください。
-[実稼動以外のパイプラインの追加](/help/using/non-production-pipelines.md#add-non-production-pipeline)を参照してください。
+[実稼動パイプラインの追加](/help/using/production-pipelines.md#full-stack-code)を参照してください。[実稼動以外のパイプラインの追加](/help/using/non-production-pipelines.md#add-non-production-pipeline)を参照してください。
 
 ### Web 階層設定パイプライン {#web-tier-config-pipelines}
 
@@ -106,14 +105,13 @@ Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定
 
 #### Web階層パイプラインの設定 {#configure-web-tier}
 
-[実稼動パイプラインの追加](/help/using/production-pipelines.md#web-tier-config)を参照してください。
-[実稼動以外のパイプラインの追加](/help/using/non-production-pipelines.md#add-non-production-pipeline)を参照してください。
+[実稼動パイプラインの追加](/help/using/production-pipelines.md#web-tier-config)を参照してください。[実稼動以外のパイプラインの追加](/help/using/non-production-pipelines.md#add-non-production-pipeline)を参照してください。
 
 ### スマートビルドを使用したビルドの高速化 {#use=smart-build}
 
 Cloud Managerでは、モジュールレベルのキャッシュを使用してビルドプロセスを高速化する、**スマートビルド**&#x200B;と呼ばれる最適化されたビルド戦略を使用するようになりました。 各ビルドの間、変更されたモジュールのみが再ビルドされ、変更されていないモジュールはキャッシュから再利用されます。
 
-Smart Buildは、コード品質および開発フルスタックのデプロイメントパイプラインでのみ使用できます。
+Smart Buildは、コード品質およびフルスタックのデプロイメントパイプライン（開発、ステージ、実稼動）で使用できます。
 
 [実稼動以外のパイプラインの追加](/help/using/non-production-pipelines.md#add-non-production-pipeline)および[実稼動以外のパイプラインでのスマートビルドの使用について](/help/using/non-production-pipelines.md#about-smart-build)を参照してください。
 
