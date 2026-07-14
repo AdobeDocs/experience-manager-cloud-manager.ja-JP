@@ -3,31 +3,27 @@ title: 初回ログイン
 description: 一般設定をセットアップし、Cloud Manager を初めて使用する準備が整っている場合は、このページの手順に従ってください。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 TQID: https://experienceleague.adobe.com/2fA-qKPKPhxCCRzxWC5pujXWQCa9vcP8tJtnSXSdipU
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
 workflow-type: tm+mt
-source-wordcount: 305
-ht-degree: 89%
+source-wordcount: 294
+ht-degree: 30%
 
 ---
 
 # 初回ログイン {#first-time-login}
 
-[!UICONTROL Cloud Manager] の一般的な設定が完了したら、使用する準備が整っています。
+[!UICONTROL Cloud Manager]の一般的な設定が完了したら、それを使用する準備が整います。
 
 >[!NOTE]
 >
->[!UICONTROL Cloud Manager] で割り当てられた役割やアプリケーションの状態に応じて、表示される画面は図とは異なる場合があります。
+>[!UICONTROL Cloud Manager]で割り当てられたロールとアプリケーションの状態によって、表示される画面はイラストの画面とは異なります。
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
-1. [experiece.adobe.com](https://experience.adobe.com/experiencemanager) で Cloud Manager にログインします。 詳しくは、[Adobe Experience Hubについて](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/experience-hub/experience-hub)を参照してください。
+1. [experience.adobe.com](https://experience.adobe.com/experiencemanager)でCloud Managerにログインします。 詳しくは、[Adobe Experience Hubについて](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)を参照してください。
 1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
 
    ![Experience Managerの左側のパネルのCloud Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
@@ -45,13 +41,13 @@ ht-degree: 89%
 -->
 
 
-1. プログラムをまだ設定していない場合は、[コールトゥアクション](/help/getting-started/navigation.md#cta)の「**プログラムを設定**」をクリックして、プログラムの説明を設定し、主要業績評価指標（KPI）を定義します。 プログラムを既に設定している場合は、CTA で追加の次の手順を提供する場合があります。
+1. プログラムがまだ設定されていない場合は、[call-to-action](/help/getting-started/navigation.md#cta)の&#x200B;**プログラムの設定**&#x200B;をクリックして、プログラムの説明を設定し、主要業績評価指標（KPI）を定義します。 プログラムが既に設定されている場合は、CTAで次の手順が追加されます。
 
-プログラムを設定する次の手順について詳しくは、[プログラム設定](/help/getting-started/program-setup.md)のドキュメントに進んでください。
+プログラムの設定の次の手順については、ドキュメント [ プログラム設定](/help/getting-started/program-setup.md)に進むことができます。
 
 ## Cloud Manager アクティビティ {#activity}
 
-Cloud Manager では、プログラムのアクティビティの表示が統合されています。 実稼動環境と非実稼動環境の両方について、すべての CI/CD パイプライン実行が一覧表示されます。 このような機能により、過去および現在のアクティビティを可視化できます。
+Cloud Managerでは、プログラムのアクティビティを包括的に把握できます。 実稼動環境と非実稼動環境の両方について、すべての CI/CD パイプライン実行が一覧表示されます。 この機能は、過去と現在のアクティビティに関する情報を提供します。
 
 >[!TIP]
 >
@@ -59,4 +55,4 @@ Cloud Manager では、プログラムのアクティビティの表示が統合
 
 >[!NOTE]
 >
->デフォルトでは、AEM 環境へのアクセス権を持つユーザーは、Cloud Manager ユーザーの役割も持ちます。 この役割だけでは、ユーザーにプログラムの詳細表示へのアクセス権を与えるには不十分です。 Cloud Manager ユーザーの役割のみを持つユーザーは、プログラムメニューオプションから AEM 環境のオーサー URL（環境が存在する場合）に移動できます。 このようなユーザーがプログラムレベルのアクセス権を希望する場合は、管理者に問い合わせる必要があります。
+>デフォルトでは、AEM 環境へのアクセス権を持つユーザーは、Cloud Manager ユーザーの役割も持ちます。 この役割は、プログラムの詳細ビューへのアクセス権をユーザーに付与しません。 Cloud Manager ユーザーロールのみを持つユーザーは、プログラムメニューオプションを使用して、AEM環境のオーサーURL （環境が存在する場合）に移動できます。 これらのユーザーがプログラムレベルのアクセス権を取得する場合は、管理者に連絡する必要があります。

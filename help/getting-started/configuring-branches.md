@@ -3,27 +3,23 @@ title: 分岐の設定
 description: Git で最初の分岐を設定する方法と、CI/CD パイプラインでアプリケーションコードをデプロイする際に分岐を使用する方法について説明します。
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 TQID: https://experienceleague.adobe.com/Mxmx725a6m7J9UtwkI5o3tJGzZ7O3c3Bgv-fF393sZg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
 workflow-type: tm+mt
-source-wordcount: 332
-ht-degree: 95%
+source-wordcount: 314
+ht-degree: 47%
 
 ---
 
 # 分岐の設定 {#configuring-branches}
 
-Git で最初の分岐を設定する方法と、CI/CD パイプラインでアプリケーションコードをデプロイする際に分岐を使用する方法について説明します。
+Gitで最初のブランチを設定する方法と、CI/CD パイプラインがそれを使用してアプリケーションコードをデプロイする方法について説明します。
 
 ## Git での最初の分岐の設定 {#setting-up-your-first-branch-in-git}
 
-Cloud Manager でオンボーディングされるプログラムごとに、最初は空の Git リポジトリが 1 つ[プロビジョニングされます](/help/requirements/environment-provisioning.md)。 このリポジトリには、開発プロセスで対象とする数の分岐を格納できますが、アプリケーションコードをステージング環境および実稼動環境にデプロイする CI/CD パイプラインで使用される分岐が少なくとも 1 つ必要です。 この分岐の名前として `main` を使用することをお勧めします。 好都合なことに、このアプローチは、新規プロジェクトを設定する際の Git クライアントのデフォルト動作になっています。
+Cloud Manager でオンボーディングされるプログラムごとに、最初は空の Git リポジトリが 1 つ[プロビジョニングされます](/help/requirements/environment-provisioning.md)。 このリポジトリには、開発プロセスに必要な数のブランチを含めることができますが、CI/CD パイプラインは、アプリケーションコードをステージングおよび実稼動にデプロイするために、少なくとも1つのブランチを使用する必要があります。 この分岐の名前として `main` を使用することをお勧めします。 このアプローチは、新しいプロジェクトを設定する際のGit クライアントのデフォルトの動作です。
 
 例えば、新規プロジェクトを設定する場合、次のような一連のコマンドを実行します。
 
@@ -57,7 +53,7 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->必ずしも、コマンドラインクライアントを使用する必要はありません。 スタンドアロンアプリケーションとして、または Eclipse や IntelliJ などの統合開発環境（IDE）の一部として使用できるグラフィカルな Git クライアントが各種あります。 クライアントアプリケーションが HTTPS で Git をサポートしている限り、[!UICONTROL Cloud Manager] と互換性がある必要があります。
+>必ずしも、コマンドラインクライアントを使用する必要はありません。 スタンドアロンアプリケーションとして、または Eclipse や IntelliJ などの統合開発環境（IDE）の一部として使用できるグラフィカルな Git クライアントが各種あります。 クライアントアプリケーションがHTTPSを使用してGitをサポートしている限り、[!UICONTROL Cloud Manager]と互換性があります。
 
 ## 最初の分岐のプッシュ {#pushing-your-first-branch}
 
@@ -77,12 +73,12 @@ To <url>
 
 >[!NOTE]
 >
->[!UICONTROL Cloud Manager] のオンボーディング中に、アドビ CSE（カスタマーサクセスエンジニア）からユーザーに具体的な URL と資格情報が提供されます。
+>Adobe CSE （カスタマーサクセスエンジニア）は、[!UICONTROL Cloud Manager]のオンボーディング中に、資格情報と共に特定のURLを提供します。
 
 ## 追加の分岐 {#additional-branches}
 
-非常にシンプルなプロジェクトにはただ 1 つの `main` 分岐でも十分なことがありますが、ほとんどの場合は、より複雑な分岐戦略が必要になります。 多くのお客様は、`develop` という分岐で日常的な開発アクティビティを実行するプロセスに従います。 デプロイメントの時間になると、`develop` ブランチは`main` ブランチにマージされます。
+単純なプロジェクトには`main` ブランチで十分ですが、より複雑な分岐戦略をお勧めします。 多くのお客様は、`develop`というブランチで日常的な開発アクティビティが実行されるプロセスに従っています。 デプロイメントの時間になると、`develop` ブランチは`main` ブランチにマージされます。
 
 >[!TIP]
 >
->よく使用される Git コマンドについて詳しくは、[Git チートシート](https://training.github.com/downloads/github-git-cheat-sheet)を参照してください。
+>一般的なGit コマンドを表示するには、[Git リファレンスガイド ](https://training.github.com/downloads/github-git-cheat-sheet/)を参照してください。
