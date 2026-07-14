@@ -37,7 +37,7 @@ Dispatcher インスタンスにデプロイすると、インスタンス上の
 
 1. カスタマーサクセス チームから現在の実稼動設定ファイルを取得します。
 1. パブリッシュレンダラーIPなどの環境固有のデータを削除し、変数に置き換えます。
-1. 各ターゲット Dispatcherのキーと値のペアで必要な変数を定義し、各インスタンスの[variables](https://experienceleague.adobe.com/en/docs/experience-manager-learn/ams/dispatcher/variables) フォルダーに追加します。
+1. 各ターゲット Dispatcherのキーと値のペアで必要な変数を定義し、各インスタンスの[variables](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/ams/dispatcher/variables) フォルダーに追加します。
 1. ステージング環境で更新された設定をテストします。
 1. テストが完了したら、カスタマーサクセス部門に本番環境への導入を依頼します。
 1. ファイルを Git リポジトリにコミットします。
