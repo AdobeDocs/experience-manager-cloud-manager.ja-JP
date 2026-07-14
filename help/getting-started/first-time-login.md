@@ -3,9 +3,13 @@ title: 初回ログイン
 description: 一般設定をセットアップし、Cloud Manager を初めて使用する準備が整っている場合は、このページの手順に従ってください。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 TQID: https://experienceleague.adobe.com/2fA-qKPKPhxCCRzxWC5pujXWQCa9vcP8tJtnSXSdipU
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
 workflow-type: tm+mt
 source-wordcount: 294
@@ -43,7 +47,7 @@ ht-degree: 30%
 
 1. プログラムがまだ設定されていない場合は、[call-to-action](/help/getting-started/navigation.md#cta)の&#x200B;**プログラムの設定**&#x200B;をクリックして、プログラムの説明を設定し、主要業績評価指標（KPI）を定義します。 プログラムが既に設定されている場合は、CTAで次の手順が追加されます。
 
-プログラムの設定の次の手順については、ドキュメント [ プログラム設定](/help/getting-started/program-setup.md)に進むことができます。
+プログラムの設定の次の手順については、ドキュメント [&#x200B; プログラム設定](/help/getting-started/program-setup.md)に進むことができます。
 
 ## Cloud Manager アクティビティ {#activity}
 

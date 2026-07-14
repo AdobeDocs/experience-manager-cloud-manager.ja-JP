@@ -3,9 +3,13 @@ title: 分岐の設定
 description: Git で最初の分岐を設定する方法と、CI/CD パイプラインでアプリケーションコードをデプロイする際に分岐を使用する方法について説明します。
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 TQID: https://experienceleague.adobe.com/Mxmx725a6m7J9UtwkI5o3tJGzZ7O3c3Bgv-fF393sZg
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
 workflow-type: tm+mt
 source-wordcount: 314
@@ -81,4 +85,4 @@ To <url>
 
 >[!TIP]
 >
->一般的なGit コマンドを表示するには、[Git リファレンスガイド ](https://training.github.com/downloads/github-git-cheat-sheet/)を参照してください。
+>一般的なGit コマンドを表示するには、[Git リファレンスガイド &#x200B;](https://training.github.com/downloads/github-git-cheat-sheet/)を参照してください。
