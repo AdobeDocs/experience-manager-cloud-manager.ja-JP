@@ -3,15 +3,12 @@ title: プライベートリポジトリのプルリクエストチェック
 description: プライベートリポジトリへの各プルリクエストを検証する自動的に作成されるパイプラインを制御する方法について説明します。
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
 TQID: https://experienceleague.adobe.com/duceoXUt2SqWI0ZXzyuqZtszLfJkWr53G5O5ze4nxTY
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: b52942282fe5f825181123b3839ef155753c5e23
 workflow-type: tm+mt
 source-wordcount: 237
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +20,7 @@ ht-degree: 100%
 
 ## プライベートリポジトリのチェックの設定 {#configuration}
 
-[プライベートリポジトリ](private-repositories.md#using)を使用すると、[フルスタックコード品質パイプライン](/help/overview/ci-cd-pipelines.md)が自動的に作成されます。 このパイプラインは、プルリクエストを更新するたびに開始されます。
+[プライベートリポジトリ](private-repositories.md#using)を使用すると、[フルスタックコード品質パイプライン](/help/overview/ci-cd-pipelines.md)が自動的に作成されます。 このパイプラインは、プルリクエストの更新ごとに開始されます。
 
 プライベートリポジトリのデフォルトブランチに `.cloudmanager/pr_pipelines.yml` ファイルを作成して、これらのチェックを制御できます。
 
@@ -41,7 +38,7 @@ pipelines:
 
 | パラメーター | 可能な値 | デフォルト | 説明 |
 | --- | --- | --- | --- |
-| `shouldDeletePreviousComment` | `true` か `false` のどちらかにする必要があります。 | `false` | この GitHub プルリクエストで、コードスキャン結果の最後のコメントのみを保持するか、すべてを保持するか。 |
+| `shouldDeletePreviousComment` | `true` または `false` | `false` | この GitHub プルリクエストで、コードスキャン結果の最後のコメントのみを保持するか、すべてを保持するか。 |
 | `type` | `CI_CD` | 該当なし | CI/CD パイプラインの動作を定義します。 |
 | `template.programID` | 整数 | パイプライン変数は再使用されない | 既存のパイプラインに設定されている[パイプライン変数](/help/getting-started/build-environment.md#pipeline-variables)は再利用できます。このパイプラインは各 PR で自動的に作成されるものです。 |
 | `template.pipelineID` | 整数 | パイプライン変数は再使用されない | 既存のパイプラインに設定されている[パイプライン変数](/help/getting-started/build-environment.md#pipeline-variables)は再利用できます。このパイプラインは各 PR で自動的に作成されるものです。 |
