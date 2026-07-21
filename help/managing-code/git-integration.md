@@ -8,16 +8,16 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 2011f63c513689f571d21772752348388c2f342a
 workflow-type: tm+mt
-source-wordcount: 367
-ht-degree: 95%
+source-wordcount: 356
+ht-degree: 76%
 
 ---
 
 # Adobe Cloud Manager と Git の統合
 
-Adobe Cloud Manager には、Cloud Manager の CI/CD パイプラインを使用したコードのデプロイに使用される単一の Git リポジトリがプロビジョニングされます。 Cloud Manager の Git リポジトリをそのまま使用することもできますし、オンプレミスまたは顧客が管理する Git リポジトリを Cloud Manager と統合することもできます。
+Adobe Cloud Manager には、Cloud Manager の CI/CD パイプラインを使用したコードのデプロイに使用される単一の Git リポジトリがプロビジョニングされます。 提供されているCloud ManagerのGit リポジトリを使用するか、オンプレミスまたは顧客管理のGit リポジトリをCloud Managerと統合するオプションがあります。
 
 ## Git 統合の概要
 
@@ -31,9 +31,9 @@ Adobe Cloud Manager には、Cloud Manager の CI/CD パイプラインを使用
 * [実稼動のデプロイメント](#production-deployment)
 * [リリースタグの同期](#sync-tags)
 
-このビデオシリーズでは、Git とソース管理に関する基本的な知識を前提としています。 Git について詳しくは、[以下のその他のリソース](#additional-resources)を参照してください。
+このビデオシリーズでは、Gitとソース管理に関する基本的な知識が必要です。 Git について詳しくは、[以下のその他のリソース](#additional-resources)を参照してください。
 
-このビデオシリーズで概要を説明する手順と命名規則は、顧客管理 Git リポジトリと Cloud Manager を使用する際のベストプラクティスです。 規則とワークフローは、個々の開発チームに合わせて調整してください。
+このビデオシリーズで概要を説明する手順と命名規則は、顧客管理 Git リポジトリと Cloud Manager を使用する際のベストプラクティスです。 ここで示す規則とワークフローは、個々の開発チームに合わせて調整されています。
 
 Cloud Manager の完全な概要については、[Cloud Manager の概要](/help/introduction.md)を参照してください。
 
@@ -45,7 +45,7 @@ Cloud Manager の完全な概要については、[Cloud Manager の概要](/hel
 
 ## 基本分岐戦略 {#branching-strategy}
 
-Cloud Manager の[実稼動パイプライン](/help/using/production-pipelines.md)と[実稼動以外のパイプライン](/help/using/non-production-pipelines.md)を活用するには、基本的な分岐戦略を設定します。
+Cloud Managerの[実稼動環境](/help/using/production-pipelines.md)および[実稼動以外のパイプライン &#x200B;](/help/using/non-production-pipelines.md)を使用するように、基本的な分岐を設定します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/31423/?captions=jpn&quality=12)
 

@@ -8,10 +8,10 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: b52942282fe5f825181123b3839ef155753c5e23
 workflow-type: tm+mt
-source-wordcount: 387
-ht-degree: 82%
+source-wordcount: 382
+ht-degree: 75%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 82%
 
 Cloud Managerはアクセストークンを使用して、外部 Git プラットフォームにホストされるリポジトリを管理します。 以前は、トークンの有効期限が切れた場合、操作可能な状態を維持するために、関連するリポジトリを再度オンボーディングする必要がありました。
 
-現在、**アクセストークンの管理**&#x200B;では、トークンをより効率的に管理できます。 サポートされている外部 Git プロバイダー（GitHub Enterprise、GitLab、Bitbucket、Azure DevOps など）に接続されているトークンを表示、名前変更、削除できます。
+現在、**アクセストークンの管理**&#x200B;では、トークンをより効率的に管理できます。 サポートされているGit プロバイダー（GitHub Enterprise、GitLab、Bitbucket、Azure DevOps）のトークンを管理できます。
 
 [Cloud Manager での外部リポジトリの追加](/help/managing-code/external-repositories.md)も参照してください。
 
 ## アクセストークンを表示する {#view-access-tokens}
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)でCloud Managerにログインし、適切な組織を選択します。
 1. **[My Programs](/help/getting-started/navigation.md#my-programs-console)** コンソールで、Bring Your Own Git アクセストークンを管理するプログラムを選択します。
 1. サイドメニューの&#x200B;**プログラム**&#x200B;で、![フォルダーアウトラインアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **リポジトリ**&#x200B;をクリックします。
 1. ページの右上隅にある「**アクセストークンの管理**」をクリックします。
