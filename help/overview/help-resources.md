@@ -21,6 +21,6 @@ ht-degree: 64%
 
 [!UICONTROL Cloud Manager] に関するサポートについて詳しくは、Adobe Managed Services カスタマーサクセスエンジニア（CSE）にお問い合わせください。 問題を解決できるかどうか、またはサポートチケットをAdobe カスタマーケアに送信する必要があるかどうかを確認できます。
 
-[Enterprise サポート](https://experienceleague.adobe.com/?lang=ja&support-tab=home#support)にアクセスして、サポートチケットを作成します。
+[Enterprise サポート](https://experienceleague.adobe.com/ja?lang=ja&support-tab=home#support)にアクセスして、サポートチケットを作成します。
 
-アドビカスタマーケアでサポートチケットを作成する方法について詳しくは、[AEM サポートポータルへのアクセス](https://helpx.adobe.com/business/enterprise/get-help/support-and-expert-services.html)を参照してください。
+アドビカスタマーケアでサポートチケットを作成する方法について詳しくは、[AEM サポートポータルへのアクセス](https://helpx.adobe.com/jp/business/enterprise/get-help/support-and-expert-services.html)を参照してください。
