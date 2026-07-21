@@ -29,7 +29,7 @@ ht-degree: 85%
 
 ## ユーザーの役割 {#user-roles}
 
-[!UICONTROL Cloud Manager] の役割管理は、[Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html) を使用して行います。 [!UICONTROL Cloud Manager] のユーザーはすべて、顧客の IMS 組織のメンバーであり、Adobe Managed Services 製品コンテキストを持っている必要があります。 Admin Consoleの[!UICONTROL Cloud Manager]製品プロファイルにユーザーを追加することで、特定のロールメンバーシップを提供できます。
+[!UICONTROL Cloud Manager] の役割管理は、[Admin Console](https://helpx.adobe.com/jp/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html) を使用して行います。 [!UICONTROL Cloud Manager] のユーザーはすべて、顧客の IMS 組織のメンバーであり、Adobe Managed Services 製品コンテキストを持っている必要があります。 Admin Consoleの[!UICONTROL Cloud Manager]製品プロファイルにユーザーを追加することで、特定のロールメンバーシップを提供できます。
 
 役割の設定方法について詳しくは、[ユーザーと役割の設定](/help/requirements/users-and-roles.md)を参照してください。
 
