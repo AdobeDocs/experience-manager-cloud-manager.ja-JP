@@ -16,7 +16,7 @@ GitHubがプライベートリポジトリの注釈PRをチェックしてフィ
 
 ## 概要 {#overview}
 
-Cloud Manager プログラムに[&#x200B; プライベートリポジトリ &#x200B;](private-repositories.md)を使用している場合、GitHubのチェックは、プルリクエストごとに自動的に実行されます。 これらのチェックには、コードの問題をできるだけ早く特定するのに役立つ情報が注釈されています。
+Cloud Manager プログラムに[ プライベートリポジトリ ](private-repositories.md)を使用している場合、GitHubのチェックは、プルリクエストごとに自動的に実行されます。 これらのチェックには、コードの問題をできるだけ早く特定するのに役立つ情報が注釈されています。
 
 ![GitHub チェック注釈の例](assets/github-check-annotations.png)
 
@@ -34,7 +34,7 @@ Cloud Manager プログラムに[&#x200B; プライベートリポジトリ &#x2
 
 ## コード品質パイプライン {#code-quality-pipelines}
 
-[&#x200B; コード品質](/help/using/code-quality-testing.md)の結果は、**チェック** タブの下部にあるCloud Managerが自動的にトリガーするパイプラインにも表示されます。 プルリクエストのチェックの&#x200B;**Details**&#x200B;からもアクセスできます。
+[ コード品質](/help/using/code-quality-testing.md)の結果は、**チェック** タブの下部にあるCloud Managerが自動的にトリガーするパイプラインにも表示されます。 プルリクエストのチェックの&#x200B;**Details**&#x200B;からもアクセスできます。
 
 ![注釈の例](assets/github-check-annotations-code-quality.png)
 
