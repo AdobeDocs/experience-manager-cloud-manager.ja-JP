@@ -53,7 +53,7 @@ ht-degree: 76%
 
 [!UICONTROL Cloud Manager] の役割は、Admin Console から管理されます。 [!UICONTROL Cloud Manager]製品プロファイルにユーザーを追加すると、特定の役割のメンバーシップが提供されます。
 
-Admin Console では、組織全体にわたるアドビ製品の使用権限を一元的に管理できます。 Adobe Admin Console について詳しくは、[Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html) を参照してください。
+Admin Console では、組織全体にわたるアドビ製品の使用権限を一元的に管理できます。 Adobe Admin Console について詳しくは、[Admin Console](https://helpx.adobe.com/jp/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html) を参照してください。
 
 管理者は、[!UICONTROL AEM Managed Services] 製品コンテキストの下に新しい製品プロファイルを作成し、[!UICONTROL Cloud Manager] ユーザー（4 つの [!UICONTROL Cloud Manager] の役割に対応）に役割ベースの権限を割り当てる必要があります。
 
