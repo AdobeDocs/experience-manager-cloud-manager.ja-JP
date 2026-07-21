@@ -3,25 +3,21 @@ title: ユーザーと役割の追加
 description: Admin Console を使用して、ユーザーと役割を追加し、プロファイルを作成する方法について説明します。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 TQID: https://experienceleague.adobe.com/95vfyk6-SMg7GFaCVWkiaaGObo603DJqvExEgPFrwqw
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 130406286e65ad0e0651451766ca740f3458a9c1
 workflow-type: tm+mt
-source-wordcount: 796
-ht-degree: 86%
+source-wordcount: 797
+ht-degree: 76%
 
 ---
 
 # ユーザーと役割の追加 {#add-users-and-roles}
 
-[!UICONTROL Cloud Manager] の多くの機能には、使用するための特定の権限が必要です。 例えば、プログラムの主要業績評価指標（KPI）を設定できるのは、特定のユーザーだけです。 これらの権限は、論理的にグループ化されて役割になります。
+[!UICONTROL Cloud Manager] の多くの機能には、使用するための特定の権限が必要です。 たとえば、プログラムの主要業績評価指標（KPI）を設定できるのは、許可されたユーザーのみです。 これらの権限は、論理的にグループ化されて役割になります。
 
-[!UICONTROL Cloud Manager] では、現在、特定の機能を使用できるかどうかを制御する次の 4 つのユーザー役割を定義しています。
+[!UICONTROL Cloud Manager]は、ユーザーに対して4つの役割を定義し、特定の機能の利用可能性を管理します。
 
 * ビジネスオーナー
 * プログラムマネージャー
@@ -51,9 +47,9 @@ ht-degree: 86%
 
 ## Admin Consoleを使用した商品プロファイルの作成 {#using-admin-console-to-create-a-profile}
 
-[!UICONTROL Cloud Manager] の役割は、Admin Console から管理されます。 特定の役割のメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
+[!UICONTROL Cloud Manager] の役割は、Admin Console から管理されます。 [!UICONTROL Cloud Manager]製品プロファイルにユーザーを追加すると、特定の役割のメンバーシップが提供されます。
 
-Admin Console では、組織全体にわたるアドビ製品の使用権限を一元的に管理できます。 Adobe Admin Console について詳しくは、[Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を参照してください。
+Admin Console では、組織全体にわたるアドビ製品の使用権限を一元的に管理できます。 Adobe Admin Console について詳しくは、[Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html) を参照してください。
 
 管理者は、[!UICONTROL AEM Managed Services] 製品コンテキストの下に新しい製品プロファイルを作成し、[!UICONTROL Cloud Manager] ユーザー（4 つの [!UICONTROL Cloud Manager] の役割に対応）に役割ベースの権限を割り当てる必要があります。
 
@@ -87,11 +83,11 @@ CQDOC-22790
 
    ![新しいプロファイル](/help/assets/admin-console-product-profiles.png)
 
-1. [!UICONTROL Cloud Manager] の新しい役割を設定するための情報を入力します。
+1. [!UICONTROL Cloud Manager]の新しい役割を設定するには、次の情報を入力します。
 
    * **プロファイル名** - **プロファイル名**&#x200B;は任意の名前を指定できますが、混乱を避けるために、**推奨プロファイル名**&#x200B;列の値を使用することをお勧めします。
    * **表示名** - 「**表示名**」は、[!UICONTROL Cloud Manager] で定義されている技術値（以下の表を参照）にする必要があります。
-   * **権限グループ** - プロファイルの権限グループを選択できます（常に使用可能とは限りません）。
+   * **権限グループ** - プロファイルの権限グループを選択します（常に使用できるわけではありません）。
 
 <!-- 
 CQDOC-22790
@@ -131,12 +127,12 @@ CQDOC-22790
 
 1. **製品とユーザーグループを編集** ダイアログボックスで、![追加アイコンとプラス記号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)をクリックし、ユーザーに割り当てるプロファイルを選択します。
 
-   * ユーザーが既に役割に割り当てられている場合、![追加アイコン、プラス &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) ボタンは編集ボタン（鉛筆）ですが、同じように機能します。
+   * ユーザーが既に役割に割り当てられている場合、![追加アイコン、プラス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) ボタンは編集ボタン（鉛筆）ですが、同じように機能します。
 
    ![製品とユーザーグループの編集](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. 「**保存**」をクリックして、プロファイルをユーザーに保存します。
 
-同じ手順を繰り返して、プロファイルをユーザーグループに割り当てますが、「**ユーザー**」タブの左側のナビゲーションパネルから「**ユーザーグループ**」を選択します。 ユーザーグループをクリックし、**割り当て済み製品プロファイル**&#x200B;を選択し、**製品プロファイルの割り当て**&#x200B;をクリックしてプロファイルを割り当てます。
+同じ手順を繰り返して、プロファイルをユーザーグループに割り当てますが、「**ユーザー**」タブの左側のナビゲーションパネルから「**ユーザーグループ**」を選択します。 ユーザーグループをクリックし、**割り当てられた製品プロファイル**&#x200B;を選択してから、**製品プロファイルを割り当て**&#x200B;をクリックしてプロファイルを割り当てます。
 
 ![グループへのプロファイルの割り当て](/help/assets/admin-console-edit-user-groups.png)
