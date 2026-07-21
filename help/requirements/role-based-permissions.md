@@ -3,23 +3,19 @@ title: 役割ベースの権限
 description: Cloud Manager の事前設定された役割ベースの権限によるクラウドリソースへのアクセスの管理について説明します。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 TQID: https://experienceleague.adobe.com/JXI9QGaexNJga8o80oLNo7allavc1x021DWmef-AkTc
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: e94834c5e13825a468ef5344e77024c4fe4a29e6
 workflow-type: tm+mt
-source-wordcount: 592
-ht-degree: 99%
+source-wordcount: 596
+ht-degree: 85%
 
 ---
 
 # 役割ベースの権限 {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが用意されています。 例えば、デベロッパーには、開発したコードを Git リポジトリーにプッシュする権限があります。 ビジネスオーナーには、主要業績評価指標（KPI）を定義したりデプロイメントを承認したりできる様々な権限があります。
+[!UICONTROL Cloud Manager]には、適切な権限を持つ事前設定済みの役割が含まれています。 例えば、ソフトウェア開発者はコードを記述し、そのコードをGit リポジトリにプッシュする権限を持ちます。 ビジネスリードには様々な権限があり、主要業績評価指標（KPI）を定義したり、展開を承認したりすることができます。
 
 >[!NOTE]
 >
@@ -29,7 +25,7 @@ ht-degree: 99%
 
 ## ユーザーの役割 {#user-roles}
 
-[!UICONTROL Cloud Manager] の役割管理は、[Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を使用して行います。 [!UICONTROL Cloud Manager] のユーザーはすべて、顧客の IMS 組織のメンバーであり、Adobe Managed Services 製品コンテキストを持っている必要があります。 特定の役割のメンバーシップは、Admin Console でユーザーを [!UICONTROL Cloud Manager] 製品プロファイルに追加することで提供されます。
+[!UICONTROL Cloud Manager] の役割管理は、[Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html) を使用して行います。 [!UICONTROL Cloud Manager] のユーザーはすべて、顧客の IMS 組織のメンバーであり、Adobe Managed Services 製品コンテキストを持っている必要があります。 Admin Consoleの[!UICONTROL Cloud Manager]製品プロファイルにユーザーを追加することで、特定のロールメンバーシップを提供できます。
 
 役割の設定方法について詳しくは、[ユーザーと役割の設定](/help/requirements/users-and-roles.md)を参照してください。
 
@@ -46,7 +42,7 @@ Admin Console で割り当てることができる役割の一覧を次の表に
 
 ## ユーザーの権限 {#user-permissions}
 
-各役割には、特定の事前設定済み権限があります。 使用可能な権限とそれを実行できる役割の一覧を次の表に示します。
+各役割には、特定の事前設定済み権限があります。 次の表に、使用可能な権限とそれらを実行できる役割を示します。
 
 | 権限 | 説明 | ビジネスオーナー | デプロイメントマネージャー | プログラムマネージャー | 開発者 | CSE |
 | --- | --- | --- | --- | --- | --- | --- |
