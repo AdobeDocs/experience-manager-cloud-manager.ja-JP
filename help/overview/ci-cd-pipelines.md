@@ -16,10 +16,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 694d3e8dad6e2ba86186a4bf6fdda3739e1041da
+source-git-commit: f83ddaa74a656abd2328cd3969ff0cc10b79d729
 workflow-type: tm+mt
-source-wordcount: 1122
-ht-degree: 72%
+source-wordcount: 1085
+ht-degree: 64%
 
 ---
 
@@ -54,7 +54,7 @@ CI/CD パイプラインと、Cloud Manager でステージング環境および
 
 ### コードのソース {#code-sources}
 
-パイプラインは、実稼動用と非実稼動用に加えて、デプロイするコードのタイプによっても異なる場合があります。
+パイプラインは、実稼動用と非実稼動用に加えて、デプロイするコードの種類によっても異なる場合があります。
 
 * **[フルスタックパイプライン](#full-stack-pipeline)** - HTTPD/Dispatcher設定と共に、AEM アプリケーションコード全体をデプロイします。
 * **[Web階層設定パイプライン](#web-tier-config-pipelines)** - HTTPD/Dispatcher設定のみをデプロイします。
@@ -71,17 +71,18 @@ CI/CD パイプラインと、Cloud Manager でステージング環境および
 次に、フルスタックパイプラインが[web階層設定パイプライン &#x200B;](#web-tier-config-pipelines)とどのように相互作用するかを説明します。
 
 * 環境のフルスタックパイプラインは、対応する web 階層設定パイプラインが存在する場合、Dispatcher 設定を無視します。
-* 環境に対応する web 階層設定パイプラインが存在しない場合、ユーザーは、Dispatcher 設定を含めるまたは無視するようにフルスタックパイプラインを設定できます。
+* 環境に対応するweb階層設定パイプラインが存在しない場合、フルスタックパイプラインの設定時にDispatcher設定を含めることも、無視することもできます。
 
 フルスタックパイプラインは、コード品質パイプラインとすることも、デプロイメントパイプラインとすることもできます。
 
 #### 実稼動以外のパイプラインの設定 {#configure-full-stack}
 
-[実稼動パイプラインの追加](/help/using/production-pipelines.md#full-stack-code)を参照してください。[実稼動以外のパイプラインの追加](/help/using/non-production-pipelines.md#add-non-production-pipeline)を参照してください。
+[実稼動パイプラインの追加](/help/using/production-pipelines.md#full-stack-code)を参照してください。
+[実稼動以外のパイプラインの追加](/help/using/non-production-pipelines.md#add-non-production-pipeline)を参照してください。
 
 ### Web 階層設定パイプライン {#web-tier-config-pipelines}
 
-Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定を他のコード変更から切り離して、この設定のみを AEM ランタイムにデプロイできます。 これは効率化されたパイプラインで、Dispatcher 設定変更のみをデプロイしたい場合に、ほんの数分で行うことができます。
+Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定を他のコード変更から切り離して、この設定のみを AEM ランタイムにデプロイできます。 これは、Dispatcher設定の変更のみをデプロイするユーザーに、効率的な方法を提供する合理化されたパイプラインです。
 
 >[!TIP]
 >
@@ -105,7 +106,8 @@ Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定
 
 #### Web階層パイプラインの設定 {#configure-web-tier}
 
-[実稼動パイプラインの追加](/help/using/production-pipelines.md#web-tier-config)を参照してください。[実稼動以外のパイプラインの追加](/help/using/non-production-pipelines.md#add-non-production-pipeline)を参照してください。
+[実稼動パイプラインの追加](/help/using/production-pipelines.md#web-tier-config)を参照してください。
+[実稼動以外のパイプラインの追加](/help/using/non-production-pipelines.md#add-non-production-pipeline)を参照してください。
 
 ### スマートビルドを使用したビルドの高速化 {#use=smart-build}
 
@@ -131,7 +133,7 @@ CI／CD パイプラインは、品質ゲートつまり受け入れ条件を提
 これらのゲートごとに、次の 3 つのレベルの問題が特定されます。
 
 * **重大** - ゲートで特定される問題のうち、パイプラインの即時失敗につながるものです。
-* **重要** - ゲートで特定される問題のうち、パイプラインの一時停止につながるものです。 デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題を無視して、パイプラインを続行することができます。 または、問題を受け入れることもできますが、それによってエラーが発生した際にパイプラインが停止する可能性があります。
+* **重要** - ゲートで特定される問題のうち、パイプラインの一時停止につながるものです。 デプロイメントマネージャー、プロジェクトマネージャー、ビジネスリードがイシューを上書きし、パイプラインを続行できます。 または、問題を受け入れることもできますが、それによってエラーが発生した際にパイプラインが停止する可能性があります。
 * **情報** - ゲートで特定される問題のうち、情報提供だけを目的とするもので、パイプライン実行には影響しません。
 
 以下は、問題が特定されたコードスキャンの例です。

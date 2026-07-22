@@ -18,27 +18,27 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: ee4f497a8bb5fb2d37fd8283721ebc9891f9053a
 workflow-type: tm+mt
-source-wordcount: 1299
-ht-degree: 96%
+source-wordcount: 1266
+ht-degree: 69%
 
 ---
 
 # [!UICONTROL Cloud Manager]の概要（AMS 用） {#introduction-to-cloud-manager}
 
-ここでは、AMS 用の Cloud Manager（Adobe Managed Services）およびクラウド内の Adobe Experience Manager を組織で自己管理する方法について説明します。
+AMS向けCloud Manager（Adobe Managed Services）について、および組織がクラウドでAdobe Experience Managerを自己管理できるようにする方法については、こちらをご覧ください。
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cloudmanager_introduction"
 >title="AMS 用 Cloud Manager の概要"
->abstract="組織がクラウドで Adobe Experience Manager を自己管理できるようにします。 このサービスには継続的インテグレーションおよび継続的デリバリー（CI/CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを損なうことなくカスタマイズまやは更新を迅速に配信できます。"
+>abstract="CI/CD フレームワークを使用して、Adobe Experience Managerをクラウドで自己管理できます。 このフレームワークにより、パフォーマンスやセキュリティを犠牲にすることなく、カスタマイズや更新を迅速化できます。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="プログラムの作成"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="環境の作成"
 
 ## はじめに {#introduction}
 
-Adobe Experience Manager の [!UICONTROL Cloud Manager] を使用すると、開発者は、Adobe Experience Manager のベストプラクティスに基づいて構築された、合理化されたワークフローを通じて、効果的な顧客エクスペリエンスを作成できます。 Adobe Experience Manager に最適化された CI/CD パイプラインを使用すると、コードを確認するだけで開発ワークフローを簡単に結合し、本番の準備ができるまで進めることができます。 build フェーズでは、カスタムコードのアップデートはベストプラクティスに照らして徹底的にテストされ、信頼性の高いアプリケーションを顧客に提供します。 Cloud Manager は、オープン API アプローチを採用し、既存のプロセスやツールを中断することなくシステムとの統合を可能にします。
+Adobe Experience Manager の [!UICONTROL Cloud Manager] を使用すると、開発者は、Adobe Experience Manager のベストプラクティスに基づいて構築された、合理化されたワークフローを通じて、効果的な顧客エクスペリエンスを作成できます。 ADOBE EXPERIENCE MANAGER向けに最適化されたCI/CD パイプラインを使用すると、コードを確認して開発ワークフローを統合し、本番環境での使用に移行できます。 build フェーズでは、カスタムコードのアップデートはベストプラクティスに照らして徹底的にテストされ、信頼性の高いアプリケーションを顧客に提供します。 Cloud Manager は、オープン API アプローチを採用し、既存のプロセスやツールを中断することなくシステムとの統合を可能にします。
 
 >[!NOTE]
 >
@@ -48,10 +48,10 @@ Adobe Experience Manager の [!UICONTROL Cloud Manager] を使用すると、開
 
 Cloud Manager を使用すると、開発チームは次の機能を利用できます。
 
-* コードの継続的インテグレーションおよび継続的デリバリー（CI/CD）により、数週間、数か月かかっていた市場投入時間を数時間、数日に短縮します。
+* コードの継続的インテグレーション/継続的デリバリー（CI/CD）により、開発サイクルを数か月/数週間から数日/数時間に短縮。
 * 実稼動にプッシュする前に、ベストプラクティスに基づいたコード検査、パフォーマンステストおよびセキュリティ検証を行い、実稼動の中断を最小限に抑えることができます。
 * 既存の DevOps プロセスを補完する API 接続
-* 自動スケーリング機能により、容量増加の必要性をインテリジェントに検出し、Dispatcher／パブリッシュの追加セグメントを自動的にオンラインにします。
+* 自動スケーリングにより、容量を増やす必要がなくなり、Dispatcher/パブリッシングセグメントの追加を自動的にプロビジョニングできます。
 
 ![CI/CD フロー](/help/assets/screen_shot_2018-05-12at73843pm.png) [!UICONTROL Cloud Manager] で使用される CI/CD プロセスフロー。
 
@@ -69,11 +69,11 @@ Cloud Manager を使用すると、開発チームは次の機能を利用でき
 
 ### CI/CD パイプライン {#ci-cd-pipeline}
 
-[!UICONTROL Cloud Manager] の主要機能の 1 つは、最適化された CI／CD パイプラインを使用して、Web サイト上の新しいコンポーネントの追加などのカスタムコードやアップデートの配信を高速化する機能です。
+[!UICONTROL Cloud Manager]の主な機能の1つは、最適化されたCI/CD パイプラインを使用して、カスタムコードの配信や、web サイトでの新しいコンポーネントの追加などの更新を高速化できることです。
 
-[!UICONTROL Cloud Manager] UI を使用して、CI／CD パイプラインを設定および開始できます。 このパイプラインの一部として、徹底したコードスキャンが実行され、高品質なアプリケーションのみが本番環境へ渡されるようにします。
+[!UICONTROL Cloud Manager] UIを使用して、CI/CD パイプラインを設定および開始できます。 このパイプラインの一部として、徹底したコードスキャンが実行され、高品質なアプリケーションのみが本番環境へ渡されるようにします。
 
-[!UICONTROL Cloud Manager] の UI からのパイプラインの設定について詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)および[実稼動以外のパイプラインの設定](/help/using/non-production-pipelines.md)を参照してください。
+[!UICONTROL Cloud Manager]のUIからパイプラインを設定する方法について詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)および[実稼動以外のパイプラインの設定](/help/using/non-production-pipelines.md)を参照してください。
 
 ### 柔軟なデプロイメントモード {#flexible-deployment-modes}
 
@@ -81,19 +81,19 @@ Cloud Manager を使用すると、開発チームは次の機能を利用でき
 
 自動トリガーモードでは、コードコミットなどの特定のイベントに基づいて、コードが自動的に環境にデプロイされます。 また、業務時間外を含め、指定した期間、コードのデプロイメントをスケジュールすることもできます。
 
-デプロイメントトリガーとは無関係に、デプロイメントがトリガーされるたびに、CI／CD パイプライン実行の一環として品質チェックが常に実行されます。 品質チェックには、お客様およびパートナーに負担をかけることなく、すぐに使えるコード検査、セキュリティテストおよびパフォーマンステストが含まれています。
+デプロイメントトリガーとは無関係に、デプロイメントがトリガーされるたびに、CI／CD パイプライン実行の一環として品質チェックが常に実行されます。 品質チェックには、コード検査、セキュリティテスト、パフォーマンステストが含まれ、これらはすべて標準機能として提供され、お客様やパートナーの労力は必要ありません。
 
 コードと品質チェックのデプロイについて詳しくは、[コードのデプロイ](/help/using/code-deployment.md)を参照してください。
 
 ## Cloud Manager のオプション機能 {#optional-features-in-cloud-manager}
 
-Cloud Manager には、特定の環境設定やニーズに応じた、プロジェクトに役立つ追加の高度な機能が用意されています。 これらの機能にご興味があれば、カスタマーサクセスエンジニア（CSE）またはアドビ担当者に詳細をお問い合わせください。
+Cloud Managerには、特定の環境の設定とニーズに応じて、プロジェクトにメリットをもたらす高度な追加機能が用意されています。 さらに詳しくは、カスタマーサクセスエンジニア（CSE）またはAdobeの担当者にお問い合わせください。
 
 ### 自動スケーリング {#autoscaling}
 
-本番環境に異常な高負荷がかかると、[!UICONTROL Cloud Manager] は、追加容量の必要性を検出し、自動スケーリング機能を使用して追加容量を自動的にオンラインにします。
+本番環境が異常に高い負荷にさらされている場合、[!UICONTROL Cloud Manager]は、追加の容量の必要性を検出し、その自動スケーリング機能を使用して追加の容量を自動的にプロビジョニングします。
 
-このような場合、[!UICONTROL Cloud Manager] は自動スケーリングプロビジョニング処理を自動的にトリガーし、自動スケーリングイベントの通知を送信し、数分以内に追加容量をオンラインにします。 追加容量は本番環境において、実行中の Dispatcher／パブリッシュノードと同じシステム仕様に一致する同じ地域でプロビジョニングされます。
+このような場合、[!UICONTROL Cloud Manager]は自動スケーリングプロビジョニングプロセスを自動トリガーし、自動スケーリングイベントの通知を送信し、数分以内に追加容量をプロビジョニングします。 追加のキャパシティは、実稼動環境と同じリージョンでプロビジョニングされ、実行中のDispatcher/パブリッシングノードのシステム仕様と一致します。
 
 自動スケーリング機能は、Dispatcher／パブリッシュ層にのみ適用され、水平スケーリングを使用して、Dispatcher／パブリッシュのペアの 1～10 個のセグメントを追加します。 プロビジョニングされた追加容量は、アドビ CSE（カスタマーサクセスエンジニア）が指定した 10 営業日以内に、手動でスケーリングされます。
 
@@ -109,7 +109,7 @@ Cloud Manager には、特定の環境設定やニーズに応じた、プロジ
 
 * ブルー／グリーンデプロイメントは、Cloud Manager CI／CD パイプラインのアドオンで、パブリッシュインスタンスと Dispatcher インスタンスの 2 つ目のセット（グリーン）が作成され、デプロイメントに使用されます。 その後、グリーンのインスタンスが実稼動用ロードバランサーに接続され、古いインスタンス（ブルー）が削除されて終了します。
 * このブルー／グリーン実装はインスタンスを一時的なものとして扱い、ブルー／グリーンパイプライン反復ごとに、新しいパブリッシュサーバーと Dispatcher サーバーのセットが作成されます。
-* グリーンのロードバランサーが設定の一部として作成されます。 このロードバランサーは変更されることはなく、グリーンまたは「テスト」URL を示す必要があります。
+* グリーンのロードバランサーが設定の一部として作成されます。 このロードバランサーは変更されず、グリーン URLまたは「テスト」 URLのターゲットです。
 * ブルー／グリーンデプロイメント中に、既存のパブリッシュ層／Dispatcher 層の正確なレプリカが作成されます。
 
 #### ブルー／グリーンデプロイメントのフロー {#flow}
