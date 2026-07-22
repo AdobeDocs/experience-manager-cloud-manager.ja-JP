@@ -3,10 +3,15 @@ title: 環境の一貫性を目的とするコンテンツコピー
 description: Cloud Manager のコンテンツコピーを使用すると、可変コンテンツをオンデマンドで Adobe Managed Services でホストされている Adobe Experience Manager 6.x 本番環境から下位の環境にテスト目的でコピーできます。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 TQID: https://experienceleague.adobe.com/ffcf9UNSOp7oIpDZdtLcoFWp-Ww-A1XV3kCDmKqJLSw
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 845c182685d59844a2349c90d176d3e7c8a594cf
 workflow-type: tm+mt
 source-wordcount: 1435
@@ -54,7 +59,7 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 
 1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のサイドメニューを開きます。
 
-1. 左側のメニューの&#x200B;**サービス**&#x200B;で、![ ボックスアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **コンテンツセット**&#x200B;をクリックします。
+1. 左側のメニューの&#x200B;**サービス**&#x200B;で、![&#x200B; ボックスアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **コンテンツセット**&#x200B;をクリックします。
 
 1. ページの右上隅にある「**コンテンツセットを追加**」をクリックします。
 
@@ -76,7 +81,7 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 
 1. （オプション）コンテンツセットを絞り込むには、オプションで、除外する必要がある含まれるコンテンツパス内のサブパスを指定できます。
 
-   1. 除外する含まれているコンテンツパスの右側にある「![ フォルダー削除アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg)」をクリックします。
+   1. 除外する含まれているコンテンツパスの右側にある「![&#x200B; フォルダー削除アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg)」をクリックします。
    1. テキストフィールドに、ダイアログボックスに表示されるルートパスへの相対パスを入力します。
    1. ![フォルダーの削除アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg)「**除外パス**」をクリックします。
    1. さらに除外パスを追加するには、手順i、ii、およびiiiを繰り返します。制限はありません。 それ以外の場合は、次の手順に進みます。
@@ -154,7 +159,7 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 
 1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のサイドメニューを開きます。
 
-1. 左側のメニューの&#x200B;**サービス**&#x200B;で、![履歴アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) **コンテンツアクティビティをコピー**&#x200B;をクリックします。
+1. 左側のメニューの&#x200B;**サービス**&#x200B;で、![履歴アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) **コンテンツアクティビティをコピー**&#x200B;をクリックします。
 
    ![コンテンツをコピーアクティビティ](/help/assets/copy-content-activity.png)
 
