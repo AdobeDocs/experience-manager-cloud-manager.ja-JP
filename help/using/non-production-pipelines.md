@@ -3,8 +3,11 @@ title: 実稼動以外のパイプラインの追加
 description: Cloud Manager を使用して、コードをデプロイする実稼動以外のパイプラインを作成および設定する方法について説明します。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 TQID: https://experienceleague.adobe.com/Dj7SjKdao6RU-cIS7D1AQxg5qpKrJMTcYQJBfiqc-Gg
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 38a0aa1ab543c976c8e7526ac2ba78d06c9b06d6
 workflow-type: tm+mt
 source-wordcount: 2070
@@ -14,7 +17,7 @@ ht-degree: 20%
 
 # 実稼動以外のパイプラインの追加 {#configuring-non-production-pipelines}
 
-Cloud Manager を使用して、コードをデプロイする実稼動以外のパイプラインを作成および設定する方法について説明します。 Cloud Managerでのパイプラインの仕組みについて詳しくは、[CI/CD パイプライン ](/help/overview/ci-cd-pipelines.md)を参照してください。
+Cloud Manager を使用して、コードをデプロイする実稼動以外のパイプラインを作成および設定する方法について説明します。 Cloud Managerでのパイプラインの仕組みについて詳しくは、[CI/CD パイプライン &#x200B;](/help/overview/ci-cd-pipelines.md)を参照してください。
 
 ## 概要 {#overview}
 
@@ -32,7 +35,7 @@ Cloud Manager を使用して、コードをデプロイする実稼動以外の
 
 >[!NOTE]
 >
->関連付けられたGit リポジトリに少なくとも1つのブランチがあり、[ プログラムの設定](/help/getting-started/program-setup.md)が完了するまで、パイプラインを設定することはできません。 Cloud Managerでリポジトリを追加および管理する方法については、[Cloud Manager リポジトリ ](/help/managing-code/managing-repositories.md)を参照してください。
+>関連付けられたGit リポジトリに少なくとも1つのブランチがあり、[&#x200B; プログラムの設定](/help/getting-started/program-setup.md)が完了するまで、パイプラインを設定することはできません。 Cloud Managerでリポジトリを追加および管理する方法については、[Cloud Manager リポジトリ &#x200B;](/help/managing-code/managing-repositories.md)を参照してください。
 
 ## 実稼動以外のパイプラインの追加 {#add-non-production-pipeline}
 
@@ -96,7 +99,7 @@ Cloud Manager UIでプログラムと少なくとも1つの環境を設定した
 | --- | --- | --- |
 | **Source コード** | **リポジトリ** | ドロップダウンリストから、パイプラインがソースとして使用するGit リポジトリを選択します。 Cloud Managerは、ここで選択したリポジトリからコードをビルドします。 |
 |   | **Git ブランチ** | ドロップダウンリストから、選択したリポジトリ内のどのブランチからパイプラインを構築するかを選択します。 デフォルトは、`main` です。 パイプラインは、選択したブランチをビルドとデプロイメントのソースとして使用します。 必要に応じて、**更新**&#x200B;をクリックして、選択したリポジトリで使用可能なブランチのリストを更新します。 最近作成したブランチがリストに表示されない場合は、このオプションを使用します。 |
-|   | **戦略の構築** | <ul><li>**完全ビルド** - リポジトリ内のすべてのモジュールを毎回作成します<li>**スマートビルド** – 前回のコミット以降に変更されたモジュールのみをビルドします。<br>実稼動以外のパイプラインで[ スマートビルドを使用する方法について詳しく見る](#about-smart-build)。</li></ol> |
+|   | **戦略の構築** | <ul><li>**完全ビルド** - リポジトリ内のすべてのモジュールを毎回作成します<li>**スマートビルド** – 前回のコミット以降に変更されたモジュールのみをビルドします。<br>実稼動以外のパイプラインで[&#x200B; スマートビルドを使用する方法について詳しく見る](#about-smart-build)。</li></ol> |
 |   | **Web階層設定を無視** チェックボックス | フルスタックコードパイプラインでのweb階層設定のデプロイメントをスキップするには、このオプションを選択します。 パイプラインのコードと一緒にweb階層設定をデプロイする場合は、このオプションを選択しないままにします。 |
 | **パイプライン** | **エクスペリエンス監査** チェックボックス | パイプラインにエクスペリエンス監査ステップを含めるには、このオプションを選択します。 有効にすると、パイプラインには「Source コード」タブの後に「エクスペリエンス監査」ステップが含まれます。 |
 

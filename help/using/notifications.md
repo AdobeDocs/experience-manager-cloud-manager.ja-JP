@@ -3,8 +3,11 @@ title: 通知
 description: Cloud Manager による重要なイベントの通知方法を説明します。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 TQID: https://experienceleague.adobe.com/WBAHeIAH1XL6oVy342wLaUAoAHkUoN1AbcAl2Erkte4
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 65b260abe417925f26d647fb9857d32c30455f9b
 workflow-type: tm+mt
 source-wordcount: 562
@@ -80,7 +83,7 @@ Cloud Manager による重要なイベントの通知方法を説明します。
 
 アラートの動作を定義できます。
 
-* ****&#x200B;の通知を表示 – トリガーが通知する通知の種類を定義します。
+* **&#x200B;**&#x200B;の通知を表示 – トリガーが通知する通知の種類を定義します。
 * **アラートを閉じるまで画面に表示される** - アラートを閉じない限り、アラートを保持するかどうかを制御します。
 * **期間** – 画面に表示されることを選択していない場合に、アラートが画面に表示される期間を定義します。
 
