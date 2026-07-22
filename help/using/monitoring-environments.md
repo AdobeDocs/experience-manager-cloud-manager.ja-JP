@@ -135,4 +135,4 @@ Cloud Manager で環境を監視する方法について説明します。
 
 このビデオでは、Cloud Manager レポートで作成されたチャートを使用して、プログラム環境をモニターする方法の概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/)
+>[!VIDEO](https://video.tv.adobe.com/v/34274?captions=jpn)
