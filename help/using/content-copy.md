@@ -3,19 +3,14 @@ title: 環境の一貫性を目的とするコンテンツコピー
 description: Cloud Manager のコンテンツコピーを使用すると、可変コンテンツをオンデマンドで Adobe Managed Services でホストされている Adobe Experience Manager 6.x 本番環境から下位の環境にテスト目的でコピーできます。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 TQID: https://experienceleague.adobe.com/ffcf9UNSOp7oIpDZdtLcoFWp-Ww-A1XV3kCDmKqJLSw
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 845c182685d59844a2349c90d176d3e7c8a594cf
 workflow-type: tm+mt
-source-wordcount: 1452
-ht-degree: 99%
+source-wordcount: 1435
+ht-degree: 84%
 
 ---
 
@@ -27,7 +22,7 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 
 現在の実際のデータは、テスト、検証、ユーザー受け入れの目的で役立ちます。 コンテンツコピーを使用すると、AMS でホストされている AEM 6.x 実稼動環境からステージング環境または開発環境にコンテンツをコピーできます。 このワークフローは、様々なテストシナリオをサポートします。
 
-コンテンツセットは、コピーするコンテンツを定義します。 コンテンツセットには、コピーする可変コンテンツを含む JCR パスのリストが含まれます。 コンテンツがソース環境からターゲット環境に移動します。 すべてが、同じ Cloud Manager プログラム内で行われます。
+コンテンツセットは、コピーするコンテンツを定義します。 コンテンツセットには、コピーする可変コンテンツを含む JCR パスのリストが含まれます。 コンテンツがソース環境からターゲット環境に移動します。 この操作は、同じCloud Manager プログラム内で実行されます。
 
 コンテンツセットでは、次のパスを使用できます。
 
@@ -39,7 +34,7 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 /var/commerce/**
 ```
 
-コンテンツをコピーする場合、ソース環境が真のソースです。
+コンテンツをコピーする場合、ソース環境がプライマリリファレンスになります。
 
 宛先環境でコンテンツを編集する場合、パスが一致すると、ソースのコンテンツによって上書きされます。
 
@@ -51,7 +46,7 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 
 ## コンテンツセットの作成 {#create-content-set}
 
-コンテンツをコピーする前に、コンテンツセットを定義する必要があります。 定義すると、コンテンツセットを再使用してコンテンツをコピーできます。 コンテンツセットを作成するには、次の手順に従います。
+コンテンツをコピーする前に、コンテンツセットを定義する必要があります。 定義すると、コンテンツセットを再使用してコンテンツをコピーできます。
 
 **コンテンツセットを作成するには：**
 
@@ -59,7 +54,7 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 
 1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のサイドメニューを開きます。
 
-1. 左側のサイドメニューの&#x200B;**サービス**&#x200B;ページで、![ボックスアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg)「**コンテンツセット**」をクリックします。
+1. 左側のメニューの&#x200B;**サービス**&#x200B;で、![ ボックスアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **コンテンツセット**&#x200B;をクリックします。
 
 1. ページの右上隅にある「**コンテンツセットを追加**」をクリックします。
 
@@ -75,16 +70,16 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 
 1. ![フォルダーの追加アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg)「**パスを追加**」をクリックして、コンテンツセットにパスを追加します（または含めます）。
 
-1. （オプション）必要に応じて、前の 2 つの手順を繰り返して、追加パス（最大 50）を追加します。 それ以外の場合は、次の手順に進みます。
+1. （オプション）必要に応じて、前の2つの手順を繰り返してパスを追加（最大50）します。 それ以外の場合は、次の手順に進みます。
 
    ![コンテンツセットへのパスの追加](/help/assets/add-content-set-paths.png)
 
-1. （オプション）コンテンツセットを絞り込むには、オプションで、含まれるコンテンツパス内で除外するサブパスを指定できます。
+1. （オプション）コンテンツセットを絞り込むには、オプションで、除外する必要がある含まれるコンテンツパス内のサブパスを指定できます。
 
-   1. 制限対象にする含まれるコンテンツパスの右側にある ![フォルダーの削除アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg) をクリックします。
+   1. 除外する含まれているコンテンツパスの右側にある「![ フォルダー削除アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg)」をクリックします。
    1. テキストフィールドに、ダイアログボックスに表示されるルートパスへの相対パスを入力します。
    1. ![フォルダーの削除アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg)「**除外パス**」をクリックします。
-   1. 必要に応じて、手順iを繰り返します。 iiiへ。 除外パスをさらに追加します。制限はありません。 それ以外の場合は、次の手順に進みます。
+   1. さらに除外パスを追加するには、手順i、ii、およびiiiを繰り返します。制限はありません。 それ以外の場合は、次の手順に進みます。
 
    ![パスの除外](/help/assets/add-content-set-paths-excluded.png)
 
@@ -99,7 +94,7 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 
 ## コンテンツセットの編集または削除 {#edit-content-set}
 
-コンテンツセットを編集する際、除外されたサブパスを表示するには、設定されたパスの展開が必要になる場合があります。
+除外されたサブパスを表示するには、設定されたパスを展開します。
 
 **コンテンツセットを編集または削除するには：**
 
@@ -117,7 +112,7 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 
 コンテンツセットを作成した後、それを使用してコンテンツをコピーできます。
 
-次のいずれかの条件に該当する場合、環境を選択できないことがあります。
+次のいずれかの条件が当てはまる場合、環境を選択できません。
 
 * ユーザーに必要な権限がない。
 * パイプラインまたはコンテンツのコピー操作が環境で現在実行中である。
@@ -143,8 +138,8 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 
 1. （オプション）次のいずれかの操作を行います。
 
-   1. 宛先環境で除外されたパスを&#x200B;*保持*&#x200B;するには、「**`Do not delete exclude paths from destination`**」をオンにします。 この設定では、コンテンツセットで指定した除外パスはそのまま維持されます。
-   1. 宛先環境で除外されたパスを&#x200B;*削除*&#x200B;するには、「**`Do not delete exclude paths from destination`**」をオフにします。 この設定では、コンテンツセットで指定した除外パスが削除されます。
+   1. 宛先環境で除外されたパスを&#x200B;*保持*&#x200B;するには、「**`Do not delete excluded paths from destination`**」をオンにします。 この設定では、コンテンツセットで指定した除外パスはそのまま維持されます。
+   1. 宛先環境で除外されたパスを&#x200B;*削除*&#x200B;するには、「**`Do not delete excluded paths from destination`**」をオフにします。 この設定では、コンテンツセットで指定した除外パスが削除されます。
    1. ソース環境から宛先環境にパスのバージョン履歴をコピーするには、「**バージョンをコピー**」をオンにします。 バージョン履歴をコピー&#x200B;*しない*&#x200B;場合、コンテンツのコピープロセスは大幅に高速になります。
 
 1. 「**コピー**」をクリックします。 コピープロセスのステータスは、選択したコンテンツセットのコンソールに反映されます。
@@ -159,7 +154,7 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 
 1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のサイドメニューを開きます。
 
-1. 左側のサイドメニューの&#x200B;**サービス**&#x200B;で、![履歴アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg)「**コンテンツをコピーアクティビティ**」をクリックします。
+1. 左側のメニューの&#x200B;**サービス**&#x200B;で、![履歴アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) **コンテンツアクティビティをコピー**&#x200B;をクリックします。
 
    ![コンテンツをコピーアクティビティ](/help/assets/copy-content-activity.png)
 
@@ -174,15 +169,15 @@ Cloud Manager のコンテンツコピーを使用すると、可変コンテン
 ## コンテンツコピーの制限事項 {#limitations}
 
 * 下位環境から上位環境へのコンテンツのコピーは実行できません。
-* コンテンツのコピーは、同じ層内でのみ実行できます。 つまり、オーサーとオーサー間またはパブリッシュとパブリッシュ間である場合は実行できます。
+* コンテンツのコピーは、同じ層内でのみ実行できます。 具体的には、author-to-authorまたはpublish-to-publishを意味します。
 * プログラム間および地域間でのコンテンツのコピーはできません。
-* クラウドデータストアベースのトポロジのコンテンツのコピーは、ソース環境と宛先環境が同じクラウドプロバイダーおよび同じ地域上にある場合にのみ実行できます。
+* クラウドデータストアベースのトポロジのコンテンツコピーは、ソース環境と宛先環境が同じクラウドプロバイダーと同じ地域にある場合にのみ実行できます。
 * 同じ環境でコンテンツのコピー操作を同時に実行することはできません。
 * CI/CD パイプラインなどの宛先またはソース環境でアクティブな操作が実行されている場合、コンテンツのコピーは実行できません。
 * コンテンツコピーは、ソース上の移動されたコンテンツや削除されたコンテンツをトラックできないので、クローンまたはミラーリングツールとして使用しないでください。
 * コンテンツコピーは、開始後の一時停止またはキャンセルはできません。
-* コンテンツコピーは、アセットと Dynamic Media メタデータを上位環境から選択した下位環境に複製します。 それぞれの Dynamic Media 設定を使用するには、コピーしたアセットは、下位環境で [DAM プロセスアセットワークフロー](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/using/assets-workflow)を使用して再処理する必要があります。
-* [2 GB を超えるアセットサイズが有効になっている Dynamic Media 設定](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)はサポートされていません。
+* コンテンツコピーは、アセットと Dynamic Media メタデータを上位環境から選択した下位環境に複製します。 コピーしたアセットは、下位環境の[DAM プロセスアセット ワークフロー](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/using/assets-workflow)を使用して再処理する必要があります。 この再処理は、それぞれのDynamic Media設定を使用するために必要です。
+* アセットサイズが2 GBを超える[Dynamic Media設定はサポートされていません](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)。
 * ターゲット環境の地域は、ソース環境の地域と同じにするか、そのサブセットにする必要があります。
 
 ## コンテンツコピーの既知の問題 {#known-issues}
