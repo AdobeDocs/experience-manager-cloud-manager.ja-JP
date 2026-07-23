@@ -15,9 +15,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
+source-git-commit: b4846046c6c410642d3e23f2cc2c002a6d53b3b7
 workflow-type: tm+mt
-source-wordcount: 468
+source-wordcount: 455
 ht-degree: 2%
 
 ---
@@ -71,7 +71,7 @@ Cloud Manager ユーザーインターフェイスを使用して、開発環境
 **サービスパックの更新を追跡するには：**
 
 1. Cloud Manager ダッシュボードからアクティビティページに移動します。
-1. サービスパックインストール エントリを探します。
+1. サービスパックのインストール エントリを探します。
 
    ![&#x200B; サービスパックのインストール &#x200B;](/help/using/assets/service-pack-installation.png)
 
@@ -102,6 +102,6 @@ Cloud Manager ユーザーインターフェイスを使用して、開発環境
    ![&#x200B; サービスパックの承認](/help/using/assets/service-pack-approve.png)
 
    * 更新をキャンセルするには、**拒否**&#x200B;をクリックします。
-サービスパックのインストールがキャンセルされ、変更は適用されません。
+     サービスパックのインストールがキャンセルされ、変更は適用されません。
 
    ![&#x200B; サービスパックの拒否](/help/using/assets/service-pack-reject.png)
