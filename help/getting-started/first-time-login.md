@@ -3,14 +3,10 @@ title: 初回ログイン
 description: 一般設定をセットアップし、Cloud Manager を初めて使用する準備が整っている場合は、このページの手順に従ってください。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 TQID: https://experienceleague.adobe.com/2fA-qKPKPhxCCRzxWC5pujXWQCa9vcP8tJtnSXSdipU
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: dac18093bc590afbd33e358582b3f1c703ce23e1
 workflow-type: tm+mt
 source-wordcount: 294
 ht-degree: 30%
@@ -27,7 +23,7 @@ ht-degree: 30%
 
 ## 初めてのログイン {#logging-in-for-the-first-time}
 
-1. [experience.adobe.com](https://experience.adobe.com/experiencemanager)でCloud Managerにログインします。 詳しくは、[Adobe Experience Hubについて](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/experience-hub/experience-hub)を参照してください。
+1. [experience.adobe.com](https://experience.adobe.com/experiencemanager)でCloud Managerにログインします。 詳しくは、[Adobe Experience Hubについて](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)を参照してください。
 1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
 
    ![Experience Managerの左側のパネルのCloud Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
@@ -47,7 +43,7 @@ ht-degree: 30%
 
 1. プログラムがまだ設定されていない場合は、[call-to-action](/help/getting-started/navigation.md#cta)の&#x200B;**プログラムの設定**&#x200B;をクリックして、プログラムの説明を設定し、主要業績評価指標（KPI）を定義します。 プログラムが既に設定されている場合は、CTAで次の手順が追加されます。
 
-プログラムの設定の次の手順については、ドキュメント [&#x200B; プログラム設定](/help/getting-started/program-setup.md)に進むことができます。
+プログラムの設定の次の手順については、ドキュメント [ プログラム設定](/help/getting-started/program-setup.md)に進むことができます。
 
 ## Cloud Manager アクティビティ {#activity}
 
@@ -59,4 +55,4 @@ Cloud Managerでは、プログラムのアクティビティを包括的に把�
 
 >[!NOTE]
 >
->デフォルトでは、AEM 環境へのアクセス権を持つユーザーは、Cloud Manager ユーザーの役割も持ちます。 この役割は、プログラムの詳細ビューへのアクセス権をユーザーに付与しません。 Cloud Manager ユーザーロールのみを持つユーザーは、プログラムメニューオプションを使用して、AEM環境のオーサーURL （環境が存在する場合）に移動できます。 これらのユーザーがプログラムレベルのアクセス権を取得する場合は、管理者に連絡する必要があります。
+>デフォルトでは、AEM 環境へのアクセス権を持つユーザーは、Cloud Manager ユーザーの役割も持ちます。 この役割は、プログラムの詳細ビューへのユーザーアクセスを提供しません。 Cloud Manager ユーザーロールのみを持つユーザーは、プログラムメニューオプションを使用して、AEM環境のオーサーURL （環境が存在する場合）に移動できます。 これらのユーザーがプログラムレベルのアクセス権を取得する場合は、管理者に連絡する必要があります。
