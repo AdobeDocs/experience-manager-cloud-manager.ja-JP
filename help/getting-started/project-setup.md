@@ -3,8 +3,11 @@ title: プロジェクトの設定
 description: Cloud Manager でプロジェクトを管理およびデプロイできるようにプロジェクトを設定する方法について説明します。
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 TQID: https://experienceleague.adobe.com/OhaZ2-x6p1b6aF0xHwr2G-RNTYPd15pqHVxKVwv-GDM
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 4381c51e54aaf1286b69c149dbf57c77bcd9a8bd
 workflow-type: tm+mt
 source-wordcount: 1411
@@ -30,7 +33,7 @@ Cloud Manager でプロジェクトを管理およびデプロイできるよう
 * Cloud Managerは、`conf`および`conf.d`という名前の`target`のサブディレクトリに含まれる`zip`個のファイルをスキャンすることで、デプロイ可能なDispatcher アーティファクトを検出します。
 * 複数のコンテンツパッケージがある場合、パッケージデプロイメントの順序は保証されません。
   * 特定の順序が必要な場合は、コンテンツパッケージの依存関係を使用して順序を定義できます。
-* パッケージは、デプロイメントから[ スキップ ](#skipping-content-packages)できます。
+* パッケージは、デプロイメントから[&#x200B; スキップ &#x200B;](#skipping-content-packages)できます。
 
 ## Cloud Manager での Maven プロファイルのアクティベート {#activating-maven-profiles-in-cloud-manager}
 
@@ -122,7 +125,7 @@ Cloud Manager からのパスワードで保護された Maven リポジトリ�
 
 Cloud Manager のビルドプロセスが開始すると、このファイル内の `<servers>` 要素が、Cloud Manager から提供されるデフォルトの `settings.xml` ファイルに結合されます。 カスタムサーバーは、`adobe`または`cloud-manager`で始まらないサーバーIDを使用します。 このような ID は予約済みと見なされます。 Cloud Manager は、指定した接頭辞の 1 つまたはデフォルトの ID `central` に一致するサーバー ID のみをミラーリングします。
 
-このファイルが配置されている場合、サーバーIDは`pom.xml` ファイル内の`<repository>`要素および/または`<pluginRepository>`要素の中から参照されます。 これらの`<repository>`および/または`<pluginRepository>`要素は、[Cloud Manager固有のプロファイル ](#activating-maven-profiles-in-cloud-manager)内に含まれていますが、厳密には必要ではありません。
+このファイルが配置されている場合、サーバーIDは`pom.xml` ファイル内の`<repository>`要素および/または`<pluginRepository>`要素の中から参照されます。 これらの`<repository>`および/または`<pluginRepository>`要素は、[Cloud Manager固有のプロファイル &#x200B;](#activating-maven-profiles-in-cloud-manager)内に含まれていますが、厳密には必要ではありません。
 
 例えば、リポジトリが`https://repository.myco.com/maven2`で、Cloud Managerが使用するユーザー名が`cloudmanager`、パスワードが`secretword`であるとします。
 
