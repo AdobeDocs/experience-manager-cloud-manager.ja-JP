@@ -3,17 +3,13 @@ title: プログラム設定
 description: オンボーディング後、ビジネスオーナーはプログラムの初期設定を行う必要があります。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 TQID: https://experienceleague.adobe.com/AqaA4GSOptV11h2y4V1Mt15KmEhEYBaiM-RvBFjtfWY
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 4381c51e54aaf1286b69c149dbf57c77bcd9a8bd
 workflow-type: tm+mt
-source-wordcount: 549
-ht-degree: 65%
+source-wordcount: 548
+ht-degree: 61%
 
 ---
 
@@ -81,7 +77,7 @@ ht-degree: 65%
 
 ## プログラム間の切り替え {#swithing-programs}
 
-プログラムを操作する際に、Cloud Manager の概要ページに戻ることなく、別のプログラムにすばやく切り替えることができます。
+プログラムを操作する場合は、Cloud Managerの概要ページに戻ることなく、別のプログラムに切り替えることができます。
 
 別のプログラムへの切り替え、現在のプログラムの編集、新しいプログラムの追加を行うには、アクションバーを使用します。
 
@@ -91,12 +87,12 @@ ht-degree: 65%
 
 Sites KPI は、ステージング環境で実行されるテストで測定されます。 通常、これらのKPIは、ステージング環境の機能に合わせて調整されます。
 
-例えば、本番環境で1分間あたり平均1000 ページビューを期待し、本番環境に4台のDispatcher/パブリッシングサーバーを持つユーザーは、このシナリオを1分間あたり250 ページビューに減らします。 このシナリオでは、ステージング環境が1つのDispatcherとパブリッシュのサーバーペアのみで構成されることを前提としています。
+例えば、本番環境で1分間あたり平均1000 ページビューを期待し、本番環境に4台のDispatcher/パブリッシングサーバーを保有するチームは、このシナリオを1分間あたり250 ページビューに拡大します。 このシナリオでは、ステージング環境が1つのDispatcher/パブリッシングサーバーペアのみで構成されていることを前提としています。
 
 Assets のパフォーマンステストでは、30 分間にわたってアセットを繰り返しアップロードします。 各アセットの処理時間と、様々なシステムレベルの指標が、テスト全体にわたって測定されます。
 
-AkamaiやCloudFrontなどのコンテンツ配信ネットワーク（CDN）が本番環境用に設定されている。 [!UICONTROL Cloud Manager]はステージング環境に対して直接テストを行うため、CDNを通過すると予想されるトラフィックのみがKPIに反映されます。 つまり、キャッシュミスです。 通常、このトラフィックは総本番トラフィックの比較的小さなサブセットです。
+AkamaiやCloudFrontなどのコンテンツ配信ネットワーク（CDN）が本番環境用に設定されている。 [!UICONTROL Cloud Manager]はステージング環境に対して直接テストを行うため、CDNを通過すると予想されるトラフィックのみがKPIに反映されます。 これはキャッシュミスを指します。 通常、このトラフィックは総本番トラフィックの比較的小さなサブセットです。
 
 ## ビデオの概要 {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/34266?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)

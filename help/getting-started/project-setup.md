@@ -3,12 +3,9 @@ title: プロジェクトの設定
 description: Cloud Manager でプロジェクトを管理およびデプロイできるようにプロジェクトを設定する方法について説明します。
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 TQID: https://experienceleague.adobe.com/OhaZ2-x6p1b6aF0xHwr2G-RNTYPd15pqHVxKVwv-GDM
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 4381c51e54aaf1286b69c149dbf57c77bcd9a8bd
 workflow-type: tm+mt
 source-wordcount: 1411
 ht-degree: 66%
@@ -25,15 +22,15 @@ Cloud Manager でプロジェクトを管理およびデプロイできるよう
 
 * プロジェクトは Apache Maven を使用してビルドする必要があります。
 * Git リポジトリのルートに `pom.xml` ファイルが必要です。
-   * この`pom.xml` ファイルは、必要な数のサブモジュール （その後、他のサブモジュールを含む）を参照できます。
-   * 追加の Maven アーティファクトリポジトリへの参照を `pom.xml` ファイルに追加できます。
-   * 設定時には、[パスワードで保護されたアーティファクトリポジトリー](#password-protected-maven-repositories)へのアクセスがサポートされます。 ただし、ネットワークで保護されたアーティファクトリポジトリーへのアクセスはサポートされていません。
+  * この`pom.xml` ファイルは、必要な数のサブモジュール （その後、他のサブモジュールを含む）を参照できます。
+  * 追加の Maven アーティファクトリポジトリへの参照を `pom.xml` ファイルに追加できます。
+  * 設定時には、[パスワードで保護されたアーティファクトリポジトリー](#password-protected-maven-repositories)へのアクセスがサポートされます。 ただし、ネットワークで保護されたアーティファクトリポジトリーへのアクセスはサポートされていません。
 * Cloud Managerは、`target`という名前のディレクトリに含まれているコンテンツパッケージ .zip ファイルをスキャンして、デプロイ可能なコンテンツパッケージを検出します。
-   * 任意の数のサブモジュールがコンテンツパッケージを生成します。
+  * 任意の数のサブモジュールがコンテンツパッケージを生成します。
 * Cloud Managerは、`conf`および`conf.d`という名前の`target`のサブディレクトリに含まれる`zip`個のファイルをスキャンすることで、デプロイ可能なDispatcher アーティファクトを検出します。
 * 複数のコンテンツパッケージがある場合、パッケージデプロイメントの順序は保証されません。
-   * 特定の順序が必要な場合は、コンテンツパッケージの依存関係を使用して順序を定義できます。
-* パッケージは、デプロイメントから[&#x200B; スキップ &#x200B;](#skipping-content-packages)できます。
+  * 特定の順序が必要な場合は、コンテンツパッケージの依存関係を使用して順序を定義できます。
+* パッケージは、デプロイメントから[ スキップ ](#skipping-content-packages)できます。
 
 ## Cloud Manager での Maven プロファイルのアクティベート {#activating-maven-profiles-in-cloud-manager}
 
@@ -115,7 +112,7 @@ Cloud Manager ビルド環境内のMaven プロファイルのアクティベー
 
 ## パスワードで保護された Maven リポジトリのサポート {#password-protected-maven-repositories}
 
-パスワードで保護されたMaven リポジトリのアーティファクトは、この方法でデプロイされたコードは、Cloud Managerの品質基準によって実施される品質検査の対象にはならないため、慎重に使用する必要があります。 また、Adobeでは、Java ソースとプロジェクトのソースコード全体をバイナリと一緒にデプロイすることをお勧めします。
+パスワードで保護されたMaven リポジトリのアーティファクトは、この方法でデプロイされたコードは、Cloud Managerの品質基準によって実施される品質検査の対象ではないため、慎重に使用する必要があります。 また、Adobeでは、Java ソースとプロジェクトのソースコード全体をバイナリと一緒にデプロイすることをお勧めします。
 
 >[!TIP]
 >
@@ -125,7 +122,7 @@ Cloud Manager からのパスワードで保護された Maven リポジトリ�
 
 Cloud Manager のビルドプロセスが開始すると、このファイル内の `<servers>` 要素が、Cloud Manager から提供されるデフォルトの `settings.xml` ファイルに結合されます。 カスタムサーバーは、`adobe`または`cloud-manager`で始まらないサーバーIDを使用します。 このような ID は予約済みと見なされます。 Cloud Manager は、指定した接頭辞の 1 つまたはデフォルトの ID `central` に一致するサーバー ID のみをミラーリングします。
 
-このファイルが配置されている場合、サーバーIDは`pom.xml` ファイル内の`<repository>`要素および/または`<pluginRepository>`要素の中から参照されます。 これらの`<repository>`および/または`<pluginRepository>`要素は、[Cloud Manager固有のプロファイル &#x200B;](#activating-maven-profiles-in-cloud-manager)内に含まれていますが、厳密には必要ではありません。
+このファイルが配置されている場合、サーバーIDは`pom.xml` ファイル内の`<repository>`要素および/または`<pluginRepository>`要素の中から参照されます。 これらの`<repository>`および/または`<pluginRepository>`要素は、[Cloud Manager固有のプロファイル ](#activating-maven-profiles-in-cloud-manager)内に含まれていますが、厳密には必要ではありません。
 
 例えば、リポジトリが`https://repository.myco.com/maven2`で、Cloud Managerが使用するユーザー名が`cloudmanager`、パスワードが`secretword`であるとします。
 
@@ -339,7 +336,7 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 * コミット ハッシュが同じかどうかに関係なく、ビルド アーティファクトは異なるプログラム間で再利用されません。
 * ブランチやパイプラインが異なる場合でも、ビルドアーティファクトは同じプログラム内で再利用されます。
-* [Maven バージョン処理](/help/managing-code/maven-project-version.md)では、実稼動パイプラインでのみ、プロジェクトのバージョンを置き換えます。 同じコミットが開発パイプラインと実稼動パイプラインの両方で使用され、開発パイプラインが最初に実行された場合、バージョンはステージングおよび実稼動に変更なくデプロイされます。 ただし、この場合もタグは作成されます。
+* [Maven バージョン処理](/help/managing-code/maven-project-version.md)では、実稼動パイプラインでのみ、プロジェクトのバージョンを置き換えます。 同じコミットが開発パイプラインと実稼動パイプラインの両方で使用され、開発パイプラインが最初に実行された場合、バージョンはステージングと実稼動に変更なくデプロイされます。 ただし、この場合もタグは作成されます。
 * 保存されたアーティファクトが正常に取得されなかった場合、ビルドステップは、アーティファクトが保存されていない場合と同じように実行されます。
 * 以前に作成したビルドアーティファクトを Cloud Manager で再利用する場合、`CM_DISABLE_BUILD_REUSE` 以外のパイプライン変数は考慮されません。
 
