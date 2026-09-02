@@ -10,9 +10,9 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+source-git-commit: dac18093bc590afbd33e358582b3f1c703ce23e1
 workflow-type: tm+mt
-source-wordcount: 1641
+source-wordcount: 1640
 ht-degree: 37%
 
 ---
@@ -104,16 +104,16 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 
 マイプログラムコンソールのメインコンテンツは、プログラムを個々のカードとしてリストする「**マイプログラム**」セクションです。 カードをクリックすると、**プログラムの概要**&#x200B;ページにアクセスしてプログラムの詳細を確認できます。
 
-権限によっては、特定のプログラムを選択できない場合があります。
+権限によっては、特定のプログラムを選択できません。
 
 次の並べ替えオプションを使用して、必要なプログラムをすばやく見つけることができます。
 
 ![並べ替えオプション](/help/getting-started/assets/cloud-manager-my-programs-sorting.png)
 
 * 並べ替え：
-   * 作成日
-   * プログラム名
-   * ステータス
+  * 作成日
+  * プログラム名
+  * ステータス
 * ![並べ替え順序の下のアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![並べ替え順序の上のアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg) プログラムの上または下の並べ替えはそれぞれ。
 * ![従来のグリッド表示アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) / ![&#x200B; テキストの箇条書きアイコンまたはリスト &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TextBulleted_18_N.svg) グリッドフォームまたはリストフォーム内のプログラムをそれぞれ表示します。
 
@@ -126,8 +126,8 @@ Cloud Manager UI は、主に次の 2 つのグラフィカルインターフェ
 * プログラム画像（設定されている場合）
 * プログラム名（上記の例では、*WKND Magazine*）
 * サービスタイプ：
-   * AMS プログラムの **Experience Manager**
-   * [AEM as a Cloud Service プログラム](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/home)の **Experience Manager クラウド**
+  * AMS プログラムの **Experience Manager**
+  * [AEM as a Cloud Service プログラム](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/home)の **Experience Manager クラウド**
 * ステータス（上記の例では、*Ready*）
 * 設定済みのソリューション
 * 作成日
