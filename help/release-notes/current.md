@@ -1,6 +1,6 @@
 ---
-title: Cloud Manager 2026.8.0のリリースノート
-description: Adobe Managed ServicesのCloud Manager 2026.8.0のリリースについて説明します。
+title: Cloud Manager 2026.9.0のリリースノート
+description: Adobe Managed ServicesのCloud Manager 2026.9.0のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
@@ -11,36 +11,36 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 40d52d486e16f247b2edd249c9afaae2d91c0643
+source-git-commit: e10c3c15c01c28f6bad0a9cf0464288937402cb7
 workflow-type: tm+mt
-source-wordcount: 331
-ht-degree: 10%
+source-wordcount: 403
+ht-degree: 8%
 
 ---
 
 
-# Adobe Managed ServicesのCloud Manager 2026.8.0のリリースノート {#release-notes}
+# Adobe Managed ServicesのCloud Manager 2026.9.0のリリースノート {#release-notes}
 
 <!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Adobe Managed Servicesの[!UICONTROL Cloud Manager] 2026.8.0のリリースについて説明します。
+Adobe Managed Servicesの[!UICONTROL Cloud Manager] 2026.9.0のリリースについて説明します。
 
 [Adobe Experience Manager as a Cloud Service の最新のリリースノート](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/home)も参照してください。
 
 ## リリース日 {#release-date}
 
-2026.8.0年[!UICONTROL Cloud Manager]のリリース日は2026年8月6日木曜日です。
+2026.9.0年[!UICONTROL Cloud Manager]のリリース日は2026年9月3日木曜日です。
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-次回のリリース予定は2026年9月3日木曜日です。
+次回のリリース予定は2026年10月1日木曜日（木）です。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 ## 新機能 {#what-is-new}
 
-AMS版Cloud Managerの2026年6月リリースには、大きな新機能はありません。
+AMS版Cloud Managerの2026年9月リリースには、大きな新機能はありません。
 
 
 ## Beta プログラム {#beta-program}
@@ -49,9 +49,9 @@ AMS版Cloud Managerの2026年6月リリースには、大きな新機能はあ�
 
 >[!IMPORTANT]
 >
->Beta リリースには欠陥が含まれており、いかなる保証もなしに「現状のまま」提供されます。 Adobeは、ベータ版のリリースを（Adobe サポートサービスまたはその他の方法により）維持、修正、更新、変更、またはその他の方法でサポートする義務を負いません。 お客様は、ベータリリースを自分のリスクで使用します。 ベータ版リリースの正しい機能やパフォーマンス、または付随するドキュメントや資料に依存しないでください。 ベータ版の機能およびAPIは、予告なく変更される場合があります。 ベータ版リリースの使用は、完全にお客様の責任で行います。
+>Betaのリリースには欠陥が含まれており、いかなる保証もなしに提供されます。 Adobeは、ベータ版リリースを（Adobe サポートサービスを通じて、またはその他の方法で）維持、修正、更新、変更、またはその他の方法でサポートする義務を負いません。 お客様は、ベータリリースを自分のリスクで使用します。 ベータ版リリースの正しい機能やパフォーマンス、または付随するドキュメントや資料に依存しないでください。 ベータ版の機能およびAPIは、予告なく変更される場合があります。 ベータ版リリースの使用は、完全にお客様の責任で行います。
 
-現在、次のベータプログラムの機会が利用可能です。
+現在、次のベータプログラムの商談を利用できます。
 
 ### AEM Managed Servicesのweb階層パイプライン {#web-tier-pipelines}
 
@@ -62,10 +62,10 @@ Betaに参加するには、Adobe カスタマーサクセスエンジニアに�
 
 ## バグ修正 {#bug-fixes}
 
-AMS版Cloud Managerの2026年7月リリースには、重大なバグ修正はありません。
+* リポジトリアクセスのパスワードを再生成すると、古いパスワードが無効になります。 以前は、Git リポジトリのアクセス パスワードを再生成しても、以前のパスワードがすぐに無効になることはなく、古い資格情報は使用できるようになっていました。 パスワードを再生成すると、古い資格情報がすぐに無効になり、以前の資格情報を使用できなくなります。 （CMGR-41820）
+
+* 権限チェックが更新され、リソースの所有権が適用されました。 権限チェックの評価方法に関する問題を解決し、プログラムへのアクセスが常にそのプログラムを所有する組織に対して検証されるようにしました。 これにより、許可に基づくオペレーションのために、組織間の分離を強化できます。 （CMGR-79156）
 
 <!--
 Known Issues {#known-issues}
-
-* A 
 -->
