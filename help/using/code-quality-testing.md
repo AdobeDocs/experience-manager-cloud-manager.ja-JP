@@ -5,25 +5,33 @@ exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 TQID: https://experienceleague.adobe.com/gAO8BdTx9-Sq8evIuI3hIaHIUixk-IulQagCI-Jssrc
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
   - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+    internal-label: Implementation
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 source-git-commit: 7cd0317c081cdfdefb61b1c953fca179cd25eb1a
 workflow-type: tm+mt
-source-wordcount: 2880
+source-wordcount: '2880'
 ht-degree: 82%
-
 ---
-
 # コード品質テスト {#code-quality-testing}
 
 パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
@@ -45,7 +53,7 @@ ht-degree: 82%
 これらの各ゲートには、ゲートで特定される問題に対して 3 層構造があります。
 
 * **重大** - パイプラインの即時失敗を引き起こす問題です。
-* **重要** - パイプラインの一時停止状態を引き起こす問題です。 デプロイメントリード、プロジェクトリード、またはビジネスオーナーは、問題を上書きできます。 この場合、パイプラインは意図したとおりに続行されます。 または、問題を受け入れて、パイプラインがエラーで停止する可能性もあります。 重要なエラーの上書きには、[&#x200B; タイムアウト &#x200B;](/help/using/code-deployment.md#timeouts)が適用されます。
+* **重要** - パイプラインの一時停止状態を引き起こす問題です。 デプロイメントリード、プロジェクトリード、またはビジネスオーナーは、問題を上書きできます。 この場合、パイプラインは意図したとおりに続行されます。 または、問題を受け入れて、パイプラインがエラーで停止する可能性もあります。 重要なエラーの上書きには、[ タイムアウト ](/help/using/code-deployment.md#timeouts)が適用されます。
 * **情報** - 情報提供だけを目的とした問題です。パイプライン実行には影響しません。
 
 >[!NOTE]
@@ -240,7 +248,7 @@ Cloud Manager CLI を使用してこれらの変数を設定するには、次�
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-APIの使用方法については、[&#x200B; ユーザーパイプライン変数のパッチ &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/patchPipelineVariables) API ドキュメントを参照してください。
+APIの使用方法については、[ ユーザーパイプライン変数のパッチ ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/patchPipelineVariables) API ドキュメントを参照してください。
 
 ### AEM Assets {#aem-assets}
 
@@ -270,7 +278,7 @@ Cloud Managerは、CSEが設定したユーザー名とパスワードを使用�
 
 >[!TIP]
 >
->詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)を参照してください。 プログラムを設定し、KPIを定義する方法については、[&#x200B; プログラムの設定](/help/getting-started/program-setup.md)を参照してください。
+>詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)を参照してください。 プログラムを設定し、KPIを定義する方法については、[ プログラムの設定](/help/getting-started/program-setup.md)を参照してください。
 
 ### パフォーマンステスト結果のグラフ {#performance-testing-results-graphs}
 
