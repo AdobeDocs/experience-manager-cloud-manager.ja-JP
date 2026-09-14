@@ -53,7 +53,7 @@ ht-degree: 82%
 これらの各ゲートには、ゲートで特定される問題に対して 3 層構造があります。
 
 * **重大** - パイプラインの即時失敗を引き起こす問題です。
-* **重要** - パイプラインの一時停止状態を引き起こす問題です。 デプロイメントリード、プロジェクトリード、またはビジネスオーナーは、問題を上書きできます。 この場合、パイプラインは意図したとおりに続行されます。 または、問題を受け入れて、パイプラインがエラーで停止する可能性もあります。 重要なエラーの上書きには、[ タイムアウト ](/help/using/code-deployment.md#timeouts)が適用されます。
+* **重要** - パイプラインの一時停止状態を引き起こす問題です。 デプロイメントリード、プロジェクトリード、またはビジネスオーナーは、問題を上書きできます。 この場合、パイプラインは意図したとおりに続行されます。 または、問題を受け入れて、パイプラインがエラーで停止する可能性もあります。 重要なエラーの上書きには、[&#x200B; タイムアウト &#x200B;](/help/using/code-deployment.md#timeouts)が適用されます。
 * **情報** - 情報提供だけを目的とした問題です。パイプライン実行には影響しません。
 
 >[!NOTE]
@@ -248,7 +248,7 @@ Cloud Manager CLI を使用してこれらの変数を設定するには、次�
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-APIの使用方法については、[ ユーザーパイプライン変数のパッチ ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/patchPipelineVariables) API ドキュメントを参照してください。
+APIの使用方法については、[&#x200B; ユーザーパイプライン変数のパッチ &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/patchPipelineVariables) API ドキュメントを参照してください。
 
 ### AEM Assets {#aem-assets}
 
@@ -278,7 +278,7 @@ Cloud Managerは、CSEが設定したユーザー名とパスワードを使用�
 
 >[!TIP]
 >
->詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)を参照してください。 プログラムを設定し、KPIを定義する方法については、[ プログラムの設定](/help/getting-started/program-setup.md)を参照してください。
+>詳しくは、[実稼動パイプラインの設定](/help/using/production-pipelines.md)を参照してください。 プログラムを設定し、KPIを定義する方法については、[&#x200B; プログラムの設定](/help/getting-started/program-setup.md)を参照してください。
 
 ### パフォーマンステスト結果のグラフ {#performance-testing-results-graphs}
 
