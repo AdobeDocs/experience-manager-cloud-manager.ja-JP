@@ -61,7 +61,7 @@ Cloud Manager を使用すると、開発チームは次の機能を利用でき
 * 既存の DevOps プロセスを補完する API 接続
 * 自動スケーリングにより、容量を増やす必要がなくなり、Dispatcher/パブリッシングセグメントの追加を自動的にプロビジョニングできます。
 
-![CI/CD フロー](/help/assets/screen_shot_2018-05-12at73843pm.png)[!UICONTROL Cloud Manager] で使用される CI/CD プロセスフロー。
+![CI/CD フロー](/help/assets/screen_shot_2018-05-12at73843pm.png) [!UICONTROL Cloud Manager] で使用される CI/CD プロセスフロー。
 
 ## [!UICONTROL Cloud Manager] の主な機能 {#key-features-in-cloud-manager}
 
