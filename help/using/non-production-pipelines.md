@@ -248,4 +248,4 @@ Cloud Managerの&#x200B;**スマートビルド**&#x200B;は、実稼動以外�
 
 このビデオでは、このドキュメントで詳しく説明しているパイプライン作成プロセスの概要を紹介します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/)
+>[!VIDEO](https://video.tv.adobe.com/v/327616?captions=jpn)
