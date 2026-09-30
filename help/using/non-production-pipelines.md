@@ -5,16 +5,17 @@ exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 TQID: https://experienceleague.adobe.com/Dj7SjKdao6RU-cIS7D1AQxg5qpKrJMTcYQJBfiqc-Gg
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 38a0aa1ab543c976c8e7526ac2ba78d06c9b06d6
+    internal-label: Admin
+source-git-commit: caa4dcd788a1d80a5957a8ecc7c6e4c99a881aee
 workflow-type: tm+mt
-source-wordcount: 2070
+source-wordcount: '2070'
 ht-degree: 20%
-
 ---
-
 # 実稼動以外のパイプラインの追加 {#configuring-non-production-pipelines}
 
 Cloud Manager を使用して、コードをデプロイする実稼動以外のパイプラインを作成および設定する方法について説明します。 Cloud Managerでのパイプラインの仕組みについて詳しくは、[CI/CD パイプライン &#x200B;](/help/overview/ci-cd-pipelines.md)を参照してください。
@@ -245,6 +246,6 @@ Cloud Managerの&#x200B;**スマートビルド**&#x200B;は、実稼動以外�
 
 ## ビデオチュートリアル {#video-tutorial}
 
-このビデオでは、パイプライン作成プロセスの概要を説明します。詳しくは、このドキュメントで説明します。
+このビデオでは、このドキュメントで詳しく説明しているパイプライン作成プロセスの概要を紹介します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/327616?captions=jpn)
