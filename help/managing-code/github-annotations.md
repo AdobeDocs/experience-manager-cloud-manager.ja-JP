@@ -2,13 +2,16 @@
 title: GitHub チェック注釈
 description: GitHub チェックがプライベートリポジトリの PR に注釈を付けて、役立つフィードバックを提供する方法について説明します。
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 147eec6368875aabb252d759909c0309a82ef3db
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+source-git-commit: 26e8d7835883cd6a64913b3b4e3619041af63bf5
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 32%
-
 ---
-
 
 # GitHub チェック注釈 {#github-annotations}
 
@@ -16,7 +19,7 @@ GitHubがプライベートリポジトリの注釈PRをチェックしてフィ
 
 ## 概要 {#overview}
 
-Cloud Manager プログラムに[&#x200B; プライベートリポジトリ &#x200B;](private-repositories.md)を使用している場合、GitHubのチェックは、プルリクエストごとに自動的に実行されます。 これらのチェックには、コードの問題をできるだけ早く特定するのに役立つ情報が注釈されています。
+Cloud Manager プログラムに[ プライベートリポジトリ ](private-repositories.md)を使用している場合、GitHubのチェックは、プルリクエストごとに自動的に実行されます。 これらのチェックには、コードの問題をできるだけ早く特定するのに役立つ情報が注釈されています。
 
 ![GitHub チェック注釈の例](assets/github-check-annotations.png)
 
@@ -34,7 +37,7 @@ Cloud Manager プログラムに[&#x200B; プライベートリポジトリ &#x2
 
 ## コード品質パイプライン {#code-quality-pipelines}
 
-[&#x200B; コード品質](/help/using/code-quality-testing.md)の結果は、**チェック** タブの下部にあるCloud Managerが自動的にトリガーするパイプラインにも表示されます。 プルリクエストのチェックの&#x200B;**Details**&#x200B;からもアクセスできます。
+[ コード品質](/help/using/code-quality-testing.md)の結果は、**チェック** タブの下部にあるCloud Managerが自動的にトリガーするパイプラインにも表示されます。 プルリクエストのチェックの&#x200B;**Details**&#x200B;からもアクセスできます。
 
 ![注釈の例](assets/github-check-annotations-code-quality.png)
 
