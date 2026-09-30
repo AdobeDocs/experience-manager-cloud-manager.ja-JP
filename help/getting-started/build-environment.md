@@ -52,14 +52,14 @@ Cloud Manager のビルド環境には、次の属性があります。
 * インストールされる Java バージョンは Oracle JDK 8u401 と Oracle JDK 11.0.22 です。
   * `/usr/lib/jvm/jdk1.8.0_401`
   * `/usr/lib/jvm/jdk-11.0.22`
-* デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_401` に設定されています。これには、Oracle JDK 8u401 が含まれています。 詳しくは、[代替Maven実行JDK バージョン ](#alternate-maven) セクションを参照してください。
+* デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_401` に設定されています。これには、Oracle JDK 8u401 が含まれています。 詳しくは、[代替Maven実行JDK バージョン &#x200B;](#alternate-maven) セクションを参照してください。
 * 追加の必要なシステムパッケージがインストールされます。
   * `bzip2`
   * `unzip`
   * `libpng`
   * `imagemagick`
   * `graphicsmagick`
-* その他のパッケージは、[追加システムパッケージのインストール ](#installing-additional-system-packages)の節で説明されているように、ビルド時にインストールされます。
+* その他のパッケージは、[追加システムパッケージのインストール &#x200B;](#installing-additional-system-packages)の節で説明されているように、ビルド時にインストールされます。
 * あらゆる構築は、新しい環境で行われます。 ビルドコンテナは、実行間でデータを保持しません。
 * Mavenは、次の3つのコマンドで実行されます。
   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
@@ -102,7 +102,7 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)は、ビルド�
 >**移行ガイダンス：**
 >
 >1. ソースコントロールにコミットされている`org.apache.maven.plugins:maven-toolchains-plugin` エントリと`toolchains.xml`をすべて削除して、ツールチェーンを削除します。
->1. [代替Maven実行JDK バージョン ](#alternate-maven)の説明に従って、`.cloudmanager/java-version` （21、17または11）のJDKを選択します。
+>1. [代替Maven実行JDK バージョン &#x200B;](#alternate-maven)の説明に従って、`.cloudmanager/java-version` （21、17または11）のJDKを選択します。
 >1. Adobeでは、Cloud Manager ビルドキャッシュをクリアするか、新しいパイプライン実行をトリガーすることをお勧めします。
 >
 
