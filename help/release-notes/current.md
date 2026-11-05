@@ -1,6 +1,6 @@
 ---
-title: Cloud Manager 2026.10.0のリリースノート
-description: Adobe Managed ServicesのCloud Manager 2026.10.0のリリースについて説明します。
+title: Cloud Manager 2026.11.0のリリースノート
+description: Adobe Managed ServicesのCloud Manager 2026.11.0のリリースについて説明します。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: 'https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro'
@@ -21,34 +21,34 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 14893646d1f46cf53a9b5e40123a28613fdb9f6d
+source-git-commit: 772379fc5c641fcde07165a2beb2d49e964b481d
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 9%
 ---
 
-# Adobe Managed ServicesのCloud Manager 2026.10.0のリリースノート {#release-notes}
+# Adobe Managed ServicesのCloud Manager 2026.11.0のリリースノート {#release-notes}
 
 <!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Adobe Managed Servicesの[!UICONTROL Cloud Manager] 2026.10.0のリリースについて説明します。
+Adobe Managed Servicesの[!UICONTROL Cloud Manager] 2026.11.0のリリースについて説明します。
 
 [Adobe Experience Manager as a Cloud Service の最新のリリースノート](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/home)も参照してください。
 
 ## リリース日 {#release-date}
 
-[!UICONTROL Cloud Manager] 2026.10.0のリリース日は2026年10月1日木曜日です。
+[!UICONTROL Cloud Manager] 2026.11.0のリリース日は2026年11月5日木曜日です。
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-次回のリリース予定は2026年11月5日木曜日です。
+次回のリリース予定は2026年12月3日木曜日です。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 ## 新機能 {#new-features}
 
-AMS版Cloud Managerの2026年10月リリースには、重要な新機能はありません。
+AMS版Cloud Managerの2026年11月リリースには、大きな新機能はありません。
 
 
 ## Beta プログラム {#beta-program}
@@ -70,7 +70,7 @@ Betaに参加するには、Adobe カスタマーサクセスエンジニアに�
 
 ## バグ修正 {#bug-fixes}
 
-* 導入後のセキュリティテストが断続的に失敗する。 Adobe Managed Services プログラムでは、デプロイメント後のセキュリティテストのSSL設定チェックが多くのプログラムで断続的に失敗し、再試行に合格して、不要なパイプラインエラーが発生します。 チェックは安定しているため、予期せず失敗することはありません。 （CMGR-79870）
+* 導入後のセキュリティテストが断続的に失敗する。 Adobe Managed Services プログラムでは、デプロイメント後のセキュリティテストのSSL設定チェックが多くのプログラムで断続的に失敗し、再試行に合格して、不要なパイプラインエラーが発生します。 チェックが更新され、間違って失敗しなくなります。 （CMGR-79870）
 
 <!--
 Known Issues {#known-issues}

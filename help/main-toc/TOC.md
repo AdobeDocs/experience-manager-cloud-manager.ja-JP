@@ -7,16 +7,16 @@ user-guide-description: Cloud Manager を使用して、クラウドで AMS 用�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 8ad70f139304d55e3f6508e8ebf3c90b870e0541
+source-git-commit: 772379fc5c641fcde07165a2beb2d49e964b481d
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '342'
 ht-degree: 85%
 ---
 
 # Cloud Manager のドキュメント {#content}
 
 + [AMS 用の Cloud Manager](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + 概要 {#overview}
   + [主な概念](/help/overview/key-concepts.md)
   + [ユーザージャーニー](/help/overview/user-journey.md)
@@ -51,7 +51,7 @@ ht-degree: 85%
   + [コード品質テスト](/help/using/code-quality-testing.md)
   + [環境の管理](/help/using/managing-environments.md)
   + [環境の監視](/help/using/monitoring-environments.md)
-  + {hide-from-toc}[開発環境のサービスパックの更新（プライベートベータ版） &#x200B;](/help/using/service-packs-environments.md)
+  + {hide-from-toc}[開発環境のサービスパックの更新（プライベートベータ版） ](/help/using/service-packs-environments.md)
   + [CLOUD MANAGER API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api)
   + [CLOUD MANAGER CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
   + [通知](/help/using/notifications.md)
@@ -76,6 +76,7 @@ ht-degree: 85%
 + リリースノート {#release-notes}
   + [現在](/help/release-notes/current.md)
   + 2026 {#rn-2026}
+    + [2026.10.0](/help/release-notes/2026/2026-10-0.md)
     + [2026.9.0](/help/release-notes/2026/2026-9-0.md)
     + [2026.8.0](/help/release-notes/2026/2026-8-0.md)
     + [2026.7.0](/help/release-notes/2026/2026-7-0.md)
