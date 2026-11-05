@@ -54,7 +54,7 @@ Cloud Managerでは、AMS プログラム用の専用のWeb階層パイプライ
 
 Web階層パイプラインが設定されている場合、フルスタックパイプラインは、デプロイメントの競合を防ぐために、その環境のweb階層デプロイメントを自動的にスキップします。 Web階層パイプラインを削除すると、デフォルトのデプロイメント動作が自動的に復元されます。<!-- CMGR-27553 -->
 
-[Web階層設定パイプライン ](/help/overview/ci-cd-pipelines.md#web-tier-config-pipelines)を参照してください。
+[Web階層設定パイプライン &#x200B;](/help/overview/ci-cd-pipelines.md#web-tier-config-pipelines)を参照してください。
 
 ## Beta プログラム {#beta-program}
 
