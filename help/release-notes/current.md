@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 772379fc5c641fcde07165a2beb2d49e964b481d
+source-git-commit: b48085c8209c0802f6f2d321865bd1a1ee786139
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 9%
+source-wordcount: '324'
+ht-degree: 10%
 ---
 
 # Adobe Managed ServicesのCloud Manager 2026.11.0のリリースノート {#release-notes}
@@ -48,29 +48,37 @@ Adobe Managed Servicesの[!UICONTROL Cloud Manager] 2026.11.0のリリースに�
 
 ## 新機能 {#new-features}
 
-AMS版Cloud Managerの2026年11月リリースには、大きな新機能はありません。
+### AEM Managed Servicesのweb階層パイプライン {#web-tier-pipelines}
 
+Cloud Managerでは、AMS プログラム用の専用のWeb階層パイプラインがサポートされるようになりました。これにより、フルスタックのデプロイとは独立して、Dispatcherおよびweb階層設定をデプロイできます。 これにより、web層の変更の迅速な反復と、不要なパイプライン全体の実行の削減が可能になります。
+
+Web階層パイプラインが設定されている場合、フルスタックパイプラインは、デプロイメントの競合を防ぐために、その環境のweb階層デプロイメントを自動的にスキップします。 Web階層パイプラインを削除すると、デフォルトのデプロイメント動作が自動的に復元されます。<!-- CMGR-27553 -->
+
+[Web階層設定パイプライン ](/help/overview/ci-cd-pipelines.md#web-tier-config-pipelines)を参照してください。
 
 ## Beta プログラム {#beta-program}
 
-一般リリースの前に、今後の機能に限定でアクセスするには、Cloud Managerのベータプログラムに参加してください。
+現時点で利用可能なベータプログラムの機会はありません。
+
+<!--
+To get exclusive access to upcoming features before their general release, participate in Cloud Manager's beta programs.
 
 >[!IMPORTANT]
 >
->Beta リリースには問題が含まれており、いかなる保証も提供されません。 Adobeは、ベータ版リリースを（Adobe サポートサービスを通じて、またはその他の方法で）維持、修正、更新、変更、またはその他の方法でサポートする義務を負いません。 お客様は、ベータリリースを自分のリスクで使用します。 ベータ版リリースの正しい機能やパフォーマンス、または付随するドキュメントや資料に依存しないでください。 ベータ版の機能およびAPIは、予告なく変更される場合があります。 ベータ版リリースの使用は、完全にお客様の責任で行います。
+>Beta releases contain issues and are provided without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (through Adobe Support Services or otherwise) the beta releases. Customers use beta releases at their own risk. Do not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
-現在、次のベータプログラムの商談を利用できます。
-
-### AEM Managed Servicesのweb階層パイプライン {#web-tier-pipelines}
-
-Cloud Managerでは、AMS プログラム用の専用のWeb階層パイプラインがサポートされるようになりました。これにより、フルスタックのデプロイとは独立して、Dispatcherおよびweb階層設定をデプロイできます。 これにより、web層の変更の迅速な反復と、不要なパイプライン全体の実行の削減が可能になります。 Web階層パイプラインが設定されている場合、フルスタックパイプラインは、デプロイメントの競合を防ぐために、その環境のweb階層デプロイメントを自動的にスキップします。 Web階層パイプラインを削除すると、デフォルトのデプロイメント動作が自動的に復元されます。
-
-Betaに参加するには、Adobe カスタマーサクセスエンジニアにお問い合わせください。
-
+The following beta program opportunity is currently available:
+-->
 
 ## バグ修正 {#bug-fixes}
 
-* 導入後のセキュリティテストが断続的に失敗する。 Adobe Managed Services プログラムでは、デプロイメント後のセキュリティテストのSSL設定チェックが多くのプログラムで断続的に失敗し、再試行に合格して、不要なパイプラインエラーが発生します。 チェックが更新され、間違って失敗しなくなります。 （CMGR-79870）
+
+* 大規模なプロジェクトでコード品質スキャンが失敗する。 コード品質（SonarQube）スキャンは、マルチギガバイトのデバッグログを生成し、特定のバンドルライブラリをスキャンしてビルドに失敗すると強制終了されます。 スキャンが修正され、影響を受けるプロジェクトで正常に完了するようになりました。 （CMGR-80025）
+
+* サイトの使用状況CSVの書き出しでは、月のラベルが1か月ずつ変更されました。 ライセンス/サイト使用状況の詳細ページでは、CSV書き出しに、UTCより後のタイムゾーンのユーザーに対して1か月早くシフトされた月ラベルが表示されます。 書き出しでは、ユーザーのタイムゾーンに関係なく、正しい月ラベルが表示されるようになりました。 （CMGR-80903）
+
+* アクセストークン名を再利用しても、既存のトークンは上書きされなくなりました。 プログラム内で既存のアクセストークン名を再利用すると、共有トークンが上書きされ、重複したアクセストークンが作成されます。 Cloud Managerで、トークン名の再利用を正しく処理できるようになりました。これにより、誤った上書きや重複を防ぐことができます。 （CMGR-81236）
+
 
 <!--
 Known Issues {#known-issues}
